@@ -2,7 +2,7 @@ from collections import deque
 
 import pytest
 
-from main import distance, shortest_route
+from baselines.step_1 import distance, shortest_route
 
 
 def grid_optimum(start, targets, size=4):

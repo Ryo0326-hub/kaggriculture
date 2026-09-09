@@ -2,6 +2,8 @@
 
 Completed locally on September 9, 2026. The scope is a reliable experimentation foundation and a small exact optimization example. No Kaggle submission or server validation has been performed in this step.
 
+Historical checkpoint: commit `dc401062aadf4b6705d80859e247918c7fb0af3a`. Its artifact is now preserved in `baselines/step_1.py`; the current `main.py` is Step 2. To repeat the command below from the current checkout, add `--agent baselines/step_1.py` and replace the self-play opponent `main.py` with `baselines/step_1.py`.
+
 ## Validation
 
 - `uv run ruff check .`: passed.

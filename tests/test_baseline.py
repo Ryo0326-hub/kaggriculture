@@ -4,13 +4,13 @@ from copy import deepcopy
 import pytest
 from kaggle_environments import make
 
+from baselines.step_1 import agent
 from evaluate import ROOT, run_match, summarize
-from main import agent
 
 
 @pytest.fixture(scope="module")
 def full_games():
-    artifact = str(ROOT / "main.py")
+    artifact = str(ROOT / "baselines" / "step_1.py")
     return [
         run_match(artifact, "starter", 11, 0),
         run_match(artifact, "starter", 11, 1),

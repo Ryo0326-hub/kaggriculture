@@ -1,4 +1,4 @@
-# Mechanics checked for Step 1
+# Mechanics checked during implementation
 
 Authority for local execution: the installed `kaggle-environments==1.32.7` interpreter. Its source and specification hashes are recorded in every evaluation manifest. The Kaggle server version has not yet been checked against a server episode.
 
@@ -23,7 +23,11 @@ The user supplied two reference documents. They are game documentation, not proj
 | 720 recorded states include the initial state | Last actionable observation is step 718 for this version | Full seasons and a shorter boundary scenario |
 | Final reward is banked cash | Carried inventory is not a substitute for liquidation | Final inventory and reward assertions |
 
-The baseline uses four plots in the northwest corner adjacent to the central shed. It does not hire workers, buy land, use fertilizer, or raise livestock. Those engine probes establish foundations for subsequent steps without claiming those strategies are implemented.
+The frozen Step 1 baseline uses four plots next to the central shed. Step 2 operates up to 25 initially owned tiles with four hired hands. It still does not buy land, use fertilizer, or raise livestock.
+
+Step 2 adds tests for next-turn hire availability, coordinated planting reservations, shared deposit capacity, and all workers' crop actions over full seasons. Its `PLACE WHEAT n` deposits retain excess carried wheat when space runs out; `DROP` and end-of-day transfer can discard overflow. The supplied README's broad wording about `PLACE` overflow does not match this pinned engine's actual inventory retention, so a direct scenario verifies the behavior used by the policy.
+
+The official Python loader chooses the last callable by namespace insertion order. Defining a helper after `agent`, then merely redefining `agent`, does not move that existing name to the end. Keep the entry point last when assembling files. The matched-control generator and submission tests cover this failure mode.
 
 After any environment upgrade, regenerate the lock deliberately, rerun these checks, and compare local configuration with real competition episodes before promoting a strategy.
 

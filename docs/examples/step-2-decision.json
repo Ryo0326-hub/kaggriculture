@@ -1,0 +1,119 @@
+{
+  "source_sha256": "fc50a8154b898f95e6baae8a0f2918fadb77a8cf933753b53ae8df921a9303a3",
+  "seed": 11,
+  "player": 0,
+  "state_index": 30,
+  "day": 1,
+  "hour": 6,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "WATER"
+    ],
+    "hands": [
+      [
+        "WEST"
+      ],
+      [
+        "WATER"
+      ],
+      [
+        "NORTH"
+      ],
+      [
+        "WEST"
+      ]
+    ],
+    "market": []
+  },
+  "explanation": {
+    "step": 30,
+    "seeds_available": 0,
+    "seeds_used_now": 0,
+    "workers": [
+      {
+        "worker": 0,
+        "task": {
+          "position": [
+            2,
+            3
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 20000,
+        "action": [
+          "WATER"
+        ]
+      },
+      {
+        "worker": 1,
+        "task": {
+          "position": [
+            1,
+            3
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 19900,
+        "action": [
+          "WEST"
+        ]
+      },
+      {
+        "worker": 2,
+        "task": {
+          "position": [
+            1,
+            4
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 20000,
+        "action": [
+          "WATER"
+        ]
+      },
+      {
+        "worker": 3,
+        "task": {
+          "position": [
+            0,
+            4
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 19900,
+        "action": [
+          "NORTH"
+        ]
+      },
+      {
+        "worker": 4,
+        "task": {
+          "position": [
+            2,
+            2
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 19900,
+        "action": [
+          "WEST"
+        ]
+      }
+    ],
+    "planned_hires": 0,
+    "assignment_score": 99700,
+    "policy": "Four-hand cap; wheat only; priority scores are not cash or dual prices."
+  }
+}

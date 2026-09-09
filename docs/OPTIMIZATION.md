@@ -28,7 +28,7 @@ Here `v_j` estimates the task's additional terminal cash, `a_rj` measures requir
 
 This resembles the integer programs you have seen in CO250. It is a useful starting model, not the complete game: task values interact, market prices depend on both players' sales, and decisions consume time at specific positions.
 
-## 3. Today's exact optimization: a tiny routing problem
+## 3. Step 1's exact optimization: a tiny routing problem
 
 Suppose the farmer is at `s` and a selected task batch occupies distinct tiles `p_1, ..., p_k`, with `k <= 4`. Tiles can be traversed without obstacles, so the shortest movement distance between two tiles is
 
@@ -42,7 +42,7 @@ For a permutation `pi` of the targets, minimize
 d(s, p_pi(1)) + sum_{i=1}^{k-1} d(p_pi(i), p_pi(i+1)).
 ```
 
-`shortest_route` in `main.py` enumerates every permutation and returns a minimizer, using deterministic tie-breaking. With four targets there are only 24 candidate orders. Because the enumeration covers every possible order and each inter-target distance is exact, the chosen route is optimal for the stated open-route problem.
+`shortest_route` in the frozen `baselines/step_1.py` enumerates every permutation and returns a minimizer, using deterministic tie-breaking. With four targets there are only 24 candidate orders. Because the enumeration covers every possible order and each inter-target distance is exact, the chosen route is optimal for the stated open-route problem.
 
 An alternative CO250 formulation would introduce binary arc variables describing which target follows which, plus connectivity constraints. For just four targets, explicit enumeration is simpler than adding a solver dependency.
 
@@ -50,7 +50,9 @@ The independent test oracle performs breadth-first search over `(grid position, 
 
 The proof does **not** extend to the whole farming policy. The route ignores different task values, deadlines, return-to-shed requirements, and future tasks. The baseline handles those with simple outer priorities. Even the best route through a bad task selection is a bad farm strategy.
 
-## 4. Next step: worker assignment
+## 4. Step 2: worker assignment — now implemented
+
+The current agent implements a bounded exact assignment solver with a shared seed quota. [The Step 2 notes](STEP_2_OPTIMIZATION.md) explain the implemented model, dynamic program, execution rules, and replay explanations. The following model introduces that checkpoint.
 
 Let `x_wj = 1` mean worker `w` is assigned task `j`. With estimated net benefit `v_wj`, the basic assignment model is:
 
@@ -99,4 +101,4 @@ The intended strategy is to solve useful restricted problems well, execute feasi
 - Final carried/shed produce is sold in tested normal episodes.
 - Reports preserve environment and artifact provenance and distinguish errors from wins.
 
-The next checkpoint is coordinated worker assignment. Crop allocation, land acquisition, and uncertain-demand optimization are not implemented in Step 1.
+Coordinated worker assignment is now implemented in [Step 2](STEP_2_OPTIMIZATION.md). Crop allocation, land acquisition, and uncertain-demand optimization remain later checkpoints. These Step 1 notes preserve the original routing example rather than claiming the current multi-worker agent solves that same route problem.

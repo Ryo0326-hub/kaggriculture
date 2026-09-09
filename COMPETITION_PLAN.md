@@ -1,6 +1,6 @@
 # Kaggriculture: two-person medal plan
 
-Prepared September 9, 2026. This is the overall execution plan. Step 1 now has a local baseline and evaluation foundation; see [the implementation status](README.md) and [CO250 connections](docs/OPTIMIZATION.md). Later stages remain planned. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
+Prepared September 9, 2026. This is the overall execution plan. Steps 1 and 2 now provide a baseline, coordinated workers, evaluation, and isolated submission preparation; see [the implementation status](README.md), [CO250 connections](docs/OPTIMIZATION.md), and [worker assignment notes](docs/STEP_2_OPTIMIZATION.md). Kaggle server validation and later economic stages remain pending. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
 
 **Recommendation.** Build a reliable deterministic policy with an explicit economic model, coordinated worker scheduling, and automated parameter experiments. Add short-horizon planning only after the baseline is competitive. Use AI assistants during development for engine review, implementation, and replay analysis; keep the submitted policy self-contained.
 
@@ -28,7 +28,7 @@ Agree on a small Python interface on day one. Keep one working agent in the main
 5. Produce the farmer/hand commands and ordered market queue; validate before returning them.
 6. Reconcile against the next observation and repair failed or stale plans.
 
-Start with a greedy scheduler and compact geographic worker zones. Test predictable route templates against fully dynamic assignment; combine stable routes with local repair if that improves results. Prevent workers from switching targets every turn without completing work. A full general-purpose optimization framework is unnecessary for the first release.
+Step 2 uses a small exact assignment solver and a matched greedy control, with the initial quadrant as its bounded work area. Longer routes and stable worker zones remain experiments. Test predictable route templates against fully dynamic assignment; combine stable routes with local repair if that improves results. Monitor workers switching targets without completing work. A full general-purpose optimization framework is unnecessary for the first release.
 
 The published environment specifies `actTimeout = 1`. Measure p99 and worst-case decision latency with comfortable headroom, and verify the configuration used by the competition. No external information may enter or leave a submission during an episode. Sources: [environment specification](https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/kaggriculture/kaggriculture.json), [competition rules, section 2.12](https://www.kaggle.com/competitions/kaggriculture/rules).
 
@@ -121,15 +121,19 @@ Prefer one meaningful daily candidate over spending all five slots on untested c
 
 Choose the final two on broad performance and reliability. Distinct strategies are useful only if both are strong independently; they are not an ensemble whose scores combine. Rebuild and test the exact uploaded files, then ensure both intended bots are the latest two eligible submissions before the deadline.
 
-**Minimal working files to create during implementation.**
+**Working files and the next implementation checkpoint.**
 
 - `main.py`: submission entry point and assembled policy.
-- `policy.py`: coordinated planning and worker assignment.
-- `economy.py`: valuation, investment, and market decisions.
+- Worker assignment currently lives inside `main.py` to preserve the single-file artifact.
+- An economic module is a future option for valuation and investment experiments; packaging must remain self-contained.
 - `evaluate.py`: full-season matches, reproducible seeds, and result collection.
 - `tests/`: mechanics, terminal liquidation, and submission-contract scenarios.
-- `experiments.csv`: hypotheses, hashes, metrics, and promotion decisions.
-- `replays/`: local diagnostic artifacts, excluded from source control as appropriate.
+- `prepare_submission.py`: isolated full-season validation of the exact copied artifact.
+- `explain_turn.py`: decisions reconstructed from a source-matched replay.
+- `docs/benchmarks/`: committed hypotheses, hashes, metrics, and promotion evidence.
+- `artifacts/`: local releases, replays, and diagnostic logs, excluded from source control.
+
+For Step 3, begin with a small production and workforce model using observed prices, remaining productive time, labor requirements, and cash constraints. Compare additional net cash from an investment with its seed, labor, and displaced-work costs. Explain the variables, constraints, LP relaxation or integer choices, and any dual values in new implementation notes. Test crop/workforce changes independently against the frozen Step 2 candidate, retaining the isolated release gate. A valid initial server submission can proceed with Step 2; further optimization is not a prerequisite for uploading a working candidate.
 
 Keep competition collaboration within the registered team, preserve third-party license attribution, and follow the competition's public-sharing rules if publishing code. Source: [competition rules](https://www.kaggle.com/competitions/kaggriculture/rules).
 
