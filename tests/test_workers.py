@@ -1,4 +1,4 @@
-"""Joint-action feasibility and full-season checks for the current artifact."""
+"""Historical Step 2 joint-action feasibility and full-season checks."""
 
 import json
 from copy import deepcopy
@@ -6,15 +6,15 @@ from copy import deepcopy
 import pytest
 from kaggle_environments import make
 
+from baselines.step_2 import agent, plan_turn
 from evaluate import ROOT, run_match
-from main import agent, plan_turn
 
 PASS = {"farmer": ["PASS"], "hands": [], "market": []}
 
 
 @pytest.fixture(scope="module")
 def games():
-    artifact = str(ROOT / "main.py")
+    artifact = str(ROOT / "baselines/step_2.py")
     return [
         run_match(artifact, str(ROOT / "baselines/step_1.py"), 11, 0),
         run_match(artifact, str(ROOT / "baselines/step_1.py"), 11, 1),

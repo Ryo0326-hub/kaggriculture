@@ -58,6 +58,58 @@ def environment_metadata():
     }
 
 
+def economic_audit(env, seat):
+    """Order-cost accounting and production diagnostics; cash remains engine-authoritative."""
+    operations, harvested = Counter(), Counter()
+    hired, wages, seed_cost, lost_plants, seed_conflicts, duplicate_targets = 0, 0, 0, 0, 0, 0
+    for before, after in zip(env.steps, env.steps[1:]):
+        old, new = before[seat].observation, after[seat].observation
+        action = after[seat].action
+        if not isinstance(action, dict):
+            continue
+        farm = old.farms[seat]
+        commands = [action.get("farmer", ["PASS"]), *action.get("hands", [])]
+        plant_requests, targets = Counter(), []
+        for p, op in zip([farm["farmer"], *farm["hands"]], commands):
+            if not isinstance(op, list) or not op:
+                continue
+            operations[op[0]] += 1
+            tile = farm["tiles"][p[1]][p[0]]
+            if op[0] in {"PLANT", "WATER", "HARVEST", "DIG"}:
+                targets.append(tuple(p))
+            if op[0] == "PLANT" and len(op) > 1:
+                plant_requests[op[1]] += 1
+            if op[0] == "HARVEST" and isinstance(tile, dict) and tile.get("crop"):
+                harvested[tile["crop"]] += tile.get("yield_units", 0)
+        seed_conflicts += sum(n > old.private["seeds"].get(c, 0) for c, n in plant_requests.items())
+        duplicate_targets += len(targets) - len(set(targets))
+        hire_index = farm["hires_today"]
+        for order in action.get("market", []):
+            if order[0] == "HIRE":
+                hired += 1
+                wages += engine._hire_cost(hire_index, env.configuration.farmHandCostMult)
+                hire_index += 1
+            elif order[0] == "BUY_SEED" and len(order) >= 3 and order[1] in engine.CROPS:
+                seed_cost += engine.CROPS[order[1]]["seed"] * order[2]
+        for y, tiles in enumerate(farm["tiles"]):
+            for x, tile in enumerate(tiles):
+                following = new.farms[seat]["tiles"][y][x]
+                if isinstance(tile, dict) and tile.get("kind") == "PLANT":
+                    lost_plants += int(
+                        isinstance(following, dict) and following.get("kind") == "WEED"
+                    )
+    return {
+        "unit_actions": dict(operations),
+        "harvested_units": dict(harvested),
+        "hire_orders": hired,
+        "hire_order_cost": wages,
+        "seed_order_cost": seed_cost,
+        "plants_lost_to_weeds": lost_plants,
+        "seed_overrequests": seed_conflicts,
+        "duplicate_crop_targets": duplicate_targets,
+    }
+
+
 def run_match(candidate, opponent, seed, seat, episode_steps=720):
     if seat not in (0, 1):
         raise ValueError("seat must be 0 or 1")
@@ -108,11 +160,18 @@ def run_match(candidate, opponent, seed, seat, episode_steps=720):
         "resolved_seed": env.info["seed"],
         "elapsed_seconds": elapsed,
         "decision_max_seconds": max(durations, default=0),
+        "decision_p99_seconds": sorted(durations)[int(0.99 * (len(durations) - 1))]
+        if durations
+        else 0,
         "unsold_shed_units": sum(private["shed"].values()),
         "unsold_carried_units": sum(sum(inv.values()) for inv in private["inventories"]),
         "unused_seeds": sum(private["seeds"].values()),
         "farmer_actions": dict(actions),
         "failures": failures,
+        "economics": {
+            "candidate": economic_audit(env, seat),
+            "opponent": economic_audit(env, 1 - seat),
+        },
     }
     return record, env
 
@@ -205,7 +264,7 @@ def main():
         "interpretation": "Development baseline only; no leaderboard or medal-strength claim.",
     }
     (args.output / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
-    fields = [k for k in records[0] if k not in ("farmer_actions", "failures")]
+    fields = [k for k in records[0] if k not in ("farmer_actions", "failures", "economics")]
     with (args.output / "matches.csv").open("w", newline="") as output:
         writer = csv.DictWriter(output, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()

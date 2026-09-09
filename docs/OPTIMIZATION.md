@@ -2,6 +2,8 @@
 
 Your CO250 background is directly useful. We can model actions as decision variables, express scarce resources as constraints, use integer variables for indivisible choices, and use duality to reason about resource values. What we cannot honestly claim is that one ordinary LP exactly solves the full competition.
 
+Implementation history: [Step 1 routing](STEP_1_RESULTS.md), [Step 2 assignment](STEP_2_OPTIMIZATION.md), and [Step 3 production/hiring economics](STEP_3_OPTIMIZATION.md). Step 3 adds an enumerated integer lot model and marginal workforce comparisons; it does not calculate LP dual prices.
+
 ## 1. State the real objective
 
 Let `C_T` be our terminal cash and `C'_T` the opponent's terminal cash. Against a distribution of opponents and game randomness, the competition objective is to maximize
@@ -101,4 +103,4 @@ The intended strategy is to solve useful restricted problems well, execute feasi
 - Final carried/shed produce is sold in tested normal episodes.
 - Reports preserve environment and artifact provenance and distinguish errors from wins.
 
-Coordinated worker assignment is now implemented in [Step 2](STEP_2_OPTIMIZATION.md). Crop allocation, land acquisition, and uncertain-demand optimization remain later checkpoints. These Step 1 notes preserve the original routing example rather than claiming the current multi-worker agent solves that same route problem.
+Coordinated assignment is implemented in [Step 2](STEP_2_OPTIMIZATION.md), and two-crop allocation, hiring economics, and a finite supply stress case in [Step 3](STEP_3_OPTIMIZATION.md). Land acquisition and broader uncertain-demand planning remain future work. These notes preserve Step 1's routing example; they do not claim the current agent solves that same route problem.

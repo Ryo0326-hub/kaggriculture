@@ -1,0 +1,57 @@
+{
+  "submission_id": 56132050,
+  "episode_id": 107272004,
+  "type": "validation self-play",
+  "initial_rating": 600,
+  "seed": 0,
+  "module_version": "1.32.7",
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "cash": [
+    13297.0,
+    13297.0
+  ],
+  "recorded_states": 720,
+  "agent_sha256": "fc50a8154b898f95e6baae8a0f2918fadb77a8cf933753b53ae8df921a9303a3",
+  "replay_sha256": "ffaa6a9d4fe5b61e36dd179e3a406d957e68311188875c755bb440ca0ded6580",
+  "configuration": {
+    "actTimeout": 1,
+    "boardSize": 10,
+    "episodeSteps": 720,
+    "farmHandCostMult": 1,
+    "marketParams": {},
+    "maxMarketOrdersPerTurn": 10,
+    "runTimeout": 1200,
+    "seed": null,
+    "shedCapacity": 100,
+    "startingMoney": 3000,
+    "townCenterSellInterval": 24,
+    "townShopSellInterval": 4,
+    "townShopUnlockInterval": 3,
+    "turnsPerDay": 24,
+    "weedSpawnChance": 0.005
+  },
+  "logs": [
+    {
+      "player": 0,
+      "file_sha256": "1758ceddc9269d9da89f65d62e47be3a9a664c51b651493e7468e7d7ea7421ce",
+      "turns": 719,
+      "stderr_entries": 0,
+      "max_seconds": 0.016411,
+      "p99_seconds": 0.005399
+    },
+    {
+      "player": 1,
+      "file_sha256": "fb94856bcafab602053461b9d2041c6d9e96bc1c938645340dc4692432bac790",
+      "turns": 719,
+      "stderr_entries": 0,
+      "max_seconds": 0.017554,
+      "p99_seconds": 0.005498
+    }
+  ],
+  "local_resimulation_differences": [],
+  "local_resimulation_matches": true,
+  "interpretation": "Matches actions and economic state in this episode; does not certify unseen server source or competitive strength."
+}

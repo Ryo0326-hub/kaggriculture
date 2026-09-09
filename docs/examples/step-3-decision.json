@@ -1,0 +1,232 @@
+{
+  "source_sha256": "ddd775729432e51be0ecf4462866ca4c75673fb1b55a0b12c0395c40d0a5114a",
+  "seed": 11,
+  "player": 0,
+  "state_index": 96,
+  "day": 4,
+  "hour": 0,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "WATER"
+    ],
+    "hands": [],
+    "market": [
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        7
+      ]
+    ]
+  },
+  "explanation": {
+    "step": 96,
+    "plant_crop": "WHEAT",
+    "seeds_available": 0,
+    "seeds_used_now": 0,
+    "workers": [
+      {
+        "worker": 0,
+        "task": {
+          "position": [
+            4,
+            4
+          ],
+          "op": "WATER",
+          "priority": 20000,
+          "owner": null
+        },
+        "score": 20000,
+        "action": [
+          "WATER"
+        ]
+      }
+    ],
+    "planned_hires": 6,
+    "assignment_score": 20000,
+    "economics": {
+      "hands": 6,
+      "hire_cost": 20,
+      "seed_cost": 130,
+      "lots": {
+        "WHEAT": 11,
+        "CARROT": 1
+      },
+      "production_value": 210.83333333333334,
+      "capacity": 162,
+      "service_fraction": 1,
+      "model_value": 2206.8333333333335,
+      "required_work_estimate": 114,
+      "forecasts": {
+        "WHEAT": {
+          "inventory_at_harvest": 10158.0,
+          "visible_committed_units": 196,
+          "observed_daily_demand": 7.0,
+          "supply_buffer_units": 100,
+          "stress_inventory": 10258.0
+        },
+        "CARROT": {
+          "inventory_at_harvest": 10005.0,
+          "visible_committed_units": 0,
+          "observed_daily_demand": 1.0,
+          "supply_buffer_units": 75,
+          "stress_inventory": 10080.0
+        }
+      },
+      "crop_days_and_yield": {
+        "WHEAT": 4,
+        "CARROT": 3
+      },
+      "alternatives": [
+        {
+          "hands": 0,
+          "hire_cost": 0,
+          "seed_cost": 0,
+          "lots": {
+            "WHEAT": 0,
+            "CARROT": 0
+          },
+          "production_value": 0.0,
+          "capacity": 24,
+          "service_fraction": 0.21052631578947367,
+          "model_value": 424.4210526315789
+        },
+        {
+          "hands": 1,
+          "hire_cost": 1,
+          "seed_cost": 0,
+          "lots": {
+            "WHEAT": 0,
+            "CARROT": 0
+          },
+          "production_value": 0.0,
+          "capacity": 47,
+          "service_fraction": 0.41228070175438597,
+          "model_value": 830.1578947368421,
+          "marginal_operating_value": 406.7368421052632,
+          "marginal_hire_cost": 1,
+          "marginal_net_value": 405.7368421052632
+        },
+        {
+          "hands": 2,
+          "hire_cost": 2,
+          "seed_cost": 0,
+          "lots": {
+            "WHEAT": 0,
+            "CARROT": 0
+          },
+          "production_value": 0.0,
+          "capacity": 70,
+          "service_fraction": 0.6140350877192983,
+          "model_value": 1235.8947368421052,
+          "marginal_operating_value": 406.7368421052631,
+          "marginal_hire_cost": 1,
+          "marginal_net_value": 405.7368421052631
+        },
+        {
+          "hands": 3,
+          "hire_cost": 4,
+          "seed_cost": 0,
+          "lots": {
+            "WHEAT": 0,
+            "CARROT": 0
+          },
+          "production_value": 0.0,
+          "capacity": 93,
+          "service_fraction": 0.8157894736842105,
+          "model_value": 1640.6315789473683,
+          "marginal_operating_value": 406.7368421052631,
+          "marginal_hire_cost": 2,
+          "marginal_net_value": 404.7368421052631
+        },
+        {
+          "hands": 4,
+          "hire_cost": 7,
+          "seed_cost": 0,
+          "lots": {
+            "WHEAT": 0,
+            "CARROT": 0
+          },
+          "production_value": 0.0,
+          "capacity": 116,
+          "service_fraction": 1,
+          "model_value": 2009.0,
+          "marginal_operating_value": 371.3684210526317,
+          "marginal_hire_cost": 3,
+          "marginal_net_value": 368.3684210526317
+        },
+        {
+          "hands": 5,
+          "hire_cost": 12,
+          "seed_cost": 70,
+          "lots": {
+            "WHEAT": 5,
+            "CARROT": 1
+          },
+          "production_value": 105.83333333333333,
+          "capacity": 139,
+          "service_fraction": 1,
+          "model_value": 2109.8333333333335,
+          "marginal_operating_value": 105.83333333333348,
+          "marginal_hire_cost": 5,
+          "marginal_net_value": 100.83333333333348
+        },
+        {
+          "hands": 6,
+          "hire_cost": 20,
+          "seed_cost": 130,
+          "lots": {
+            "WHEAT": 11,
+            "CARROT": 1
+          },
+          "production_value": 210.83333333333334,
+          "capacity": 162,
+          "service_fraction": 1,
+          "model_value": 2206.8333333333335,
+          "marginal_operating_value": 105.0,
+          "marginal_hire_cost": 8,
+          "marginal_net_value": 97.0
+        }
+      ],
+      "params": {
+        "WHEAT": {
+          "base": 25,
+          "I0": 10000,
+          "T": 400,
+          "below_func": "sqrt",
+          "below_target": 0.8,
+          "above_func": "log",
+          "above_target": 0.2
+        },
+        "CARROT": {
+          "base": 35,
+          "I0": 10000,
+          "T": 450,
+          "below_func": "hinge",
+          "below_target": 1.0,
+          "above_func": "sqrt",
+          "above_target": 0.7
+        }
+      }
+    },
+    "policy": "Approximate crop/labor forecasts; assignment scores are not LP dual prices."
+  }
+}

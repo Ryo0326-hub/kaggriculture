@@ -1,6 +1,6 @@
 # Kaggriculture: two-person medal plan
 
-Prepared September 9, 2026. This is the overall execution plan. Steps 1 and 2 now provide a baseline, coordinated workers, evaluation, and isolated submission preparation; see [the implementation status](README.md), [CO250 connections](docs/OPTIMIZATION.md), and [worker assignment notes](docs/STEP_2_OPTIMIZATION.md). Kaggle server validation and later economic stages remain pending. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
+Prepared September 9, 2026. This is the overall execution plan. Steps 1–3 now provide a baseline, coordinated workers, production and hiring economics, evaluation, and isolated submission preparation; see [the implementation status](README.md), [CO250 connections](docs/OPTIMIZATION.md), and [economic model notes](docs/STEP_3_OPTIMIZATION.md). Step 2 passed Kaggle server validation; Step 3 is locally validated and has not been uploaded. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
 
 **Recommendation.** Build a reliable deterministic policy with an explicit economic model, coordinated worker scheduling, and automated parameter experiments. Add short-horizon planning only after the baseline is competitive. Use AI assistants during development for engine review, implementation, and replay analysis; keep the submitted policy self-contained.
 
@@ -125,7 +125,7 @@ Choose the final two on broad performance and reliability. Distinct strategies a
 
 - `main.py`: submission entry point and assembled policy.
 - Worker assignment currently lives inside `main.py` to preserve the single-file artifact.
-- An economic module is a future option for valuation and investment experiments; packaging must remain self-contained.
+- Production quantities, observed-demand forecasts, and workforce alternatives also live in `main.py`; packaging remains self-contained.
 - `evaluate.py`: full-season matches, reproducible seeds, and result collection.
 - `tests/`: mechanics, terminal liquidation, and submission-contract scenarios.
 - `prepare_submission.py`: isolated full-season validation of the exact copied artifact.
@@ -133,7 +133,9 @@ Choose the final two on broad performance and reliability. Distinct strategies a
 - `docs/benchmarks/`: committed hypotheses, hashes, metrics, and promotion evidence.
 - `artifacts/`: local releases, replays, and diagnostic logs, excluded from source control.
 
-For Step 3, begin with a small production and workforce model using observed prices, remaining productive time, labor requirements, and cash constraints. Compare additional net cash from an investment with its seed, labor, and displaced-work costs. Explain the variables, constraints, LP relaxation or integer choices, and any dual values in new implementation notes. Test crop/workforce changes independently against the frozen Step 2 candidate, retaining the isolated release gate. A valid initial server submission can proceed with Step 2; further optimization is not a prerequisite for uploading a working candidate.
+Step 3 implemented the small production/workforce model, marginal hiring comparisons, cash and estimated labor constraints, and an isolated release gate. Its [results](docs/STEP_3_RESULTS.md) show improvement over Step 2 and a forecast weakness: the control without a supply buffer beats it head-to-head on most fresh seeds. The buffer is not established as a competitive improvement.
+
+Step 4 should compare both forecast variants against the same broader opponent pool before selecting a new ladder candidate. Diagnose crop mix, realized sale prices, idle labor, and forecast error; test one change at a time and reserve new seeds for final selection. Then consider fertilizer, livestock, or land only with explicit setup, operating, displaced-work, and terminal liquidation costs. Continue writing CO explanations and preserve the valid Step 2 server artifact. The current local comparisons are much smaller and narrower than the final tournament gate above.
 
 Keep competition collaboration within the registered team, preserve third-party license attribution, and follow the competition's public-sharing rules if publishing code. Source: [competition rules](https://www.kaggle.com/competitions/kaggriculture/rules).
 

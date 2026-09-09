@@ -1,6 +1,8 @@
 # Step 2: coordinated-worker candidate
 
-Completed locally on September 9, 2026. The current `main.py` coordinates the farmer and up to four hands on the starting quadrant, with a bounded exact assignment solver inside a heuristic wheat policy. It has been prepared and validated as a self-contained Python file. No Kaggle upload or server validation has been performed.
+Completed locally on September 9, 2026. This checkpoint's artifact is now frozen in `baselines/step_2.py`; current `main.py` is Step 3. Step 2 coordinates the farmer and up to four hands on the starting quadrant, with a bounded exact assignment solver inside a heuristic wheat policy.
+
+Subsequent server checkpoint: submission `56132050` passed validation in episode `107272004`, showing an initial rating of 600 and 13,297 coins per farm in self-play. The supplied replay and both logs were audited and exactly reproduced locally for actions and economic state. [Server evidence](benchmarks/step-2-server.json) and [submission registry](SUBMISSIONS.md).
 
 ## Decision and evidence
 
@@ -36,7 +38,7 @@ During development, an overly aggressive final-day staffing reduction left dista
 ## Exact submission artifact
 
 ```bash
-uv run python prepare_submission.py --output artifacts/submission-step-2
+uv run python prepare_submission.py --source baselines/step_2.py --output artifacts/submission-step-2
 ```
 
 The prepared artifact is `artifacts/submission-step-2/main.py`, **10,049 bytes**, with SHA-256:
@@ -47,16 +49,16 @@ fc50a8154b898f95e6baae8a0f2918fadb77a8cf933753b53ae8df921a9303a3
 
 The copied file completed isolated official-loader self-play at seed 505: both players `DONE`, 720 states, no error statuses or agent stderr, no unsold produce, no leftover seeds, and terminal cash of 13,406 each. Maximum recorded decision time was 7.77 ms. The release uses no external imports, network calls, model files, or repository helpers.
 
-Submit only that `main.py` when ready; the validation JSON and log are local evidence. After an upload, record the submission ID and hash, verify Kaggle's validation outcome, inspect its episode/logs, and compare the server environment with the pinned local one. Preparing and testing a file does not perform that server step or consume a daily submission slot.
+That exact file was subsequently uploaded and passed the server checkpoint recorded above. The validation JSON and log remain local evidence. Preparing and testing another file does not perform an upload or consume a daily submission slot.
 
 ## Reproduce the experiment
 
 ```bash
-uv run python scripts/make_greedy_ablation.py --output artifacts/step-2-controls/greedy-v2.py
-uv run python evaluate.py --seeds 11 29 47 71 97 \
+uv run python scripts/make_greedy_ablation.py --source baselines/step_2.py --output artifacts/step-2-controls/greedy-v2.py
+uv run python evaluate.py --agent baselines/step_2.py --seeds 11 29 47 71 97 \
   --opponents baselines/step_1.py artifacts/step-2-controls/greedy-v2.py \
   --output artifacts/step-2-development-v2
-uv run python evaluate.py --seeds 101 137 173 211 257 293 337 379 419 463 \
+uv run python evaluate.py --agent baselines/step_2.py --seeds 101 137 173 211 257 293 337 379 419 463 \
   --opponents baselines/step_1.py artifacts/step-2-controls/greedy-v2.py \
   --output artifacts/step-2-validation
 ```
@@ -67,4 +69,4 @@ The environment remains `kaggle-environments==1.32.7`, with engine SHA-256 `bc8a
 
 ## Next checkpoint
 
-Step 3 will model production and workforce economics: observed sale prices, seed and labor costs, productive time, and resource constraints. Keep the current valid artifact as the benchmark, test one economic change at a time, and write a new CO explanation with each implementation checkpoint. Diversify the opponent pool before making any medal-strength claim.
+Step 3 subsequently implemented production and workforce economics: observed sale prices, seed and labor costs, productive time, and resource constraints. [Its results](STEP_3_RESULTS.md) preserve this Step 2 artifact as a benchmark and report matched controls and remaining weaknesses. Diversify the opponent pool before making any medal-strength claim.

@@ -23,6 +23,18 @@ def explain_replay(path, state_index, player):
     action, explanation = plan_turn(observation, replay["configuration"])
     if action != replay["steps"][state_index + 1][player]["action"]:
         raise ValueError("Recomputed action differs; choose the candidate seat and matching source")
+    previous = None
+    for option in explanation.get("economics", {}).get("alternatives", []):
+        if previous is not None:
+            option["marginal_operating_value"] = (
+                option["model_value"]
+                + option["hire_cost"]
+                - previous["model_value"]
+                - previous["hire_cost"]
+            )
+            option["marginal_hire_cost"] = option["hire_cost"] - previous["hire_cost"]
+            option["marginal_net_value"] = option["model_value"] - previous["model_value"]
+        previous = option
     return {
         "source_sha256": digest,
         "seed": replay["info"]["seed"],
