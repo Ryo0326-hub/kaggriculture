@@ -39,8 +39,11 @@ def compare(candidate_directory, reference_directory):
         "seats",
         "opponents",
         "episode_steps",
+        "evaluation_workers",
     ]:
-        if candidate[field] != reference[field]:
+        new_value = candidate.get(field, 1) if field == "evaluation_workers" else candidate[field]
+        old_value = reference.get(field, 1) if field == "evaluation_workers" else reference[field]
+        if new_value != old_value:
             raise ValueError(f"Unmatched comparison field: {field}")
     seeds = candidate["seeds"]
     if len(seeds) < 2:

@@ -1,0 +1,50 @@
+{
+  "hypothesis": "Shared maintenance routes with dedicated production-day service reduce wages without delaying installed-herd output. The unchanged investment rule may choose different purchases because available cash changes.",
+  "candidate_sha256": "70fa2f8a16316bb51fc2ce9eb01b08259fdb83c256359ffc29e847dd459d5816",
+  "reference_sha256": "0024dc48be607636775eba055eea8bde54d3c0679e5e851439791b5d6cb741f9",
+  "seeds": [
+    3001,
+    3011,
+    3019,
+    3023,
+    3037,
+    3041,
+    3049,
+    3061,
+    3067,
+    3079,
+    3083,
+    3089,
+    3109,
+    3119,
+    3121,
+    3137,
+    3163,
+    3167,
+    3169,
+    3181,
+    3187,
+    3191,
+    3203,
+    3209,
+    3217,
+    3221,
+    3229,
+    3251,
+    3253,
+    3257
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": [
+    "baselines/step_4.py",
+    "artifacts/step-5-controls/cows.py",
+    "artifacts/step-5-controls/sheep.py",
+    "artifacts/step-5-controls/six.py"
+  ],
+  "workers_per_run": 4,
+  "games_per_policy": 240,
+  "promotion": "No execution errors or unplanned animal escapes; empty final saleable inventory; fixed-herd production preserved; positive common-pool paired improvement with whole-seed 95% bootstrap interval above zero; investigate any opponent score regression beyond five percentage points. No code changes after inspecting validation results without retiring these seeds."
+}

@@ -9,6 +9,7 @@ import platform
 import statistics
 import sys
 from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
 from datetime import UTC, datetime
 from importlib.metadata import version
 from pathlib import Path
@@ -207,6 +208,19 @@ def summarize(records):
     }
 
 
+def run_job(job):
+    """Return compact results across processes; serialize only requested/error replays."""
+    candidate, opponent, seed, seat, save, episode_steps = job
+    row, env = run_match(candidate, opponent, seed, seat, episode_steps)
+    retain = save or row["outcome"] == "error"
+    return (
+        row,
+        dict(env.configuration),
+        json.dumps(env.toJSON()) if retain else None,
+        json.dumps(env.logs) if retain else None,
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--agent", default=str(ROOT / "main.py"))
@@ -214,9 +228,12 @@ def main():
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 29, 47])
     parser.add_argument("--output", type=Path, default=ROOT / "artifacts" / "baseline")
     parser.add_argument("--replays", choices=["first", "all", "none"], default="first")
+    parser.add_argument("--workers", type=int, default=1, help="Independent local CPU processes")
     args = parser.parse_args()
     if len(set(args.seeds)) != len(args.seeds):
         parser.error("Seeds must be unique; repeated deterministic games are not new evidence")
+    if not 1 <= args.workers <= 16:
+        parser.error("Workers must be between 1 and 16")
     try:
         candidate = agent_reference(args.agent)
         opponents = [agent_reference(value) for value in args.opponents]
@@ -236,35 +253,42 @@ def main():
         "episode_steps": 720,
         "runner_sha256": sha256(__file__),
         "lock_sha256": sha256(ROOT / "uv.lock"),
+        "evaluation_workers": args.workers,
     }
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     records = []
-    with (args.output / "matches.jsonl").open("w") as output:
-        for opponent in opponents:
-            for seed in args.seeds:
-                for seat in (0, 1):
-                    row, env = run_match(candidate, opponent, seed, seat)
-                    records.append(row)
-                    if len(records) == 1:
-                        manifest["configuration"] = dict(env.configuration)
-                        (args.output / "manifest.json").write_text(
-                            json.dumps(manifest, indent=2) + "\n"
-                        )
-                    output.write(json.dumps(row) + "\n")
-                    output.flush()
-                    index = len(records)
-                    save = args.replays == "all" or (args.replays == "first" and index == 1)
-                    if save or row["outcome"] == "error":
-                        (args.output / f"replay-{index:04d}.json").write_text(
-                            json.dumps(env.toJSON())
-                        )
-                        (args.output / f"logs-{index:04d}.json").write_text(json.dumps(env.logs))
-                    print(
-                        f"seed={seed} seat={seat} opponent={row['opponent']} "
-                        f"{row['outcome']} cash={row['candidate_cash']:.0f} "
-                        f"margin={row['margin']:+.0f}",
-                        flush=True,
+    jobs = []
+    for opponent in opponents:
+        for seed in args.seeds:
+            for seat in (0, 1):
+                save = args.replays == "all" or (args.replays == "first" and not jobs)
+                jobs.append((candidate, opponent, seed, seat, save, 720))
+    pool = ProcessPoolExecutor(max_workers=args.workers) if args.workers > 1 else None
+    try:
+        results = pool.map(run_job, jobs) if pool else map(run_job, jobs)
+        with (args.output / "matches.jsonl").open("w") as output:
+            for row, configuration, replay, logs in results:
+                records.append(row)
+                if len(records) == 1:
+                    manifest["configuration"] = configuration
+                    (args.output / "manifest.json").write_text(
+                        json.dumps(manifest, indent=2) + "\n"
                     )
+                output.write(json.dumps(row) + "\n")
+                output.flush()
+                index = len(records)
+                if replay is not None:
+                    (args.output / f"replay-{index:04d}.json").write_text(replay)
+                    (args.output / f"logs-{index:04d}.json").write_text(logs)
+                print(
+                    f"seed={row['seed']} seat={row['seat']} opponent={row['opponent']} "
+                    f"{row['outcome']} cash={row['candidate_cash']:.0f} "
+                    f"margin={row['margin']:+.0f}",
+                    flush=True,
+                )
+    finally:
+        if pool:
+            pool.shutdown(wait=True, cancel_futures=True)
     if (
         agent_metadata(candidate) != manifest["candidate"]
         or [agent_metadata(value) for value in opponents] != manifest["opponents"]

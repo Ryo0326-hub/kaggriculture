@@ -55,3 +55,15 @@ def test_comparison_rejects_missing_duplicate_and_failed_games(tmp_path):
     manifest_path.write_text(json.dumps(manifest))
     with pytest.raises(ValueError, match="configuration"):
         compare(a, b)
+
+
+def test_comparison_rejects_different_cpu_concurrency(tmp_path):
+    a, b = tmp_path / "a", tmp_path / "b"
+    write_run(a, ["win"] * 4)
+    write_run(b, ["draw"] * 4)
+    path = a / "manifest.json"
+    manifest = json.loads(path.read_text())
+    manifest["evaluation_workers"] = 4
+    path.write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="evaluation_workers"):
+        compare(a, b)

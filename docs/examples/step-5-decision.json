@@ -1,0 +1,224 @@
+{
+  "source_sha256": "70fa2f8a16316bb51fc2ce9eb01b08259fdb83c256359ffc29e847dd459d5816",
+  "seed": 3001,
+  "player": 0,
+  "state_index": 72,
+  "day": 3,
+  "hour": 0,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "PICKUP",
+      "WHEAT",
+      3
+    ],
+    "hands": [],
+    "market": [
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        6
+      ],
+      [
+        "HIRE"
+      ]
+    ]
+  },
+  "explanation": {
+    "step": 72,
+    "investment": {
+      "animal": null,
+      "alternatives": [
+        {
+          "animal": "COW",
+          "purchase_cost": 400,
+          "reserve": 630,
+          "affordable": false,
+          "marginal_value": 160.0,
+          "projection": {
+            "receipts": 20975.0,
+            "feed_cost": 6358.0,
+            "wages": 324,
+            "operating_value": 14293.0,
+            "daily_receipts": [
+              483,
+              473,
+              555,
+              1783,
+              1696,
+              2621,
+              1965,
+              1363,
+              1189,
+              1573,
+              735,
+              860,
+              595,
+              669,
+              488,
+              478,
+              382,
+              368,
+              352,
+              342,
+              325,
+              314,
+              298,
+              288,
+              272,
+              262,
+              246
+            ]
+          }
+        },
+        {
+          "animal": "SHEEP",
+          "purchase_cost": 500,
+          "reserve": 630,
+          "affordable": false,
+          "marginal_value": -43.0,
+          "projection": {
+            "receipts": 20872.0,
+            "feed_cost": 6358.0,
+            "wages": 324,
+            "operating_value": 14190.0,
+            "daily_receipts": [
+              483,
+              473,
+              555,
+              1783,
+              1696,
+              2621,
+              1965,
+              1963,
+              1059,
+              841,
+              746,
+              697,
+              652,
+              612,
+              563,
+              519,
+              478,
+              430,
+              385,
+              347,
+              325,
+              311,
+              302,
+              285,
+              272,
+              263,
+              246
+            ]
+          }
+        }
+      ],
+      "baseline": {
+        "receipts": 19205.0,
+        "feed_cost": 5283.0,
+        "wages": 189,
+        "operating_value": 13733.0,
+        "daily_receipts": [
+          483,
+          473,
+          463,
+          1694,
+          1610,
+          2538,
+          1885,
+          1286,
+          1115,
+          920,
+          706,
+          634,
+          592,
+          551,
+          509,
+          468,
+          426,
+          385,
+          343,
+          304,
+          290,
+          280,
+          270,
+          260,
+          250,
+          240,
+          230
+        ]
+      },
+      "live_animals": 5,
+      "pending": 0
+    },
+    "workers": [
+      {
+        "worker": 0,
+        "route": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "station": [
+          4,
+          4
+        ],
+        "action": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ]
+      }
+    ],
+    "routing": {
+      "mode": "shared",
+      "routes": [
+        [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "planned_steps": [
+        20,
+        16
+      ],
+      "daily_cover_feasible": true,
+      "target_hands": 1,
+      "protected_production_sites": [],
+      "objective": "Minimum workers covering required service; then minimum route steps."
+    },
+    "feed_target": 10,
+    "cash_reserved_after_orders": 360.0,
+    "policy": "Marginal projected cash with feed liquidity; forecasts are not LP dual prices."
+  }
+}
