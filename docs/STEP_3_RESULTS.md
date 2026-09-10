@@ -2,6 +2,8 @@
 
 Completed locally on September 9, 2026. The agent now chooses wheat/carrot production lots and up to six hired hands using seed costs, cash, estimated labor, observed demand, sale price impact, and remaining growing time. [The CO implementation notes](STEP_3_OPTIMIZATION.md) explain its integer model, marginal hiring comparisons, LP relaxation, and approximation limits.
 
+Historical checkpoint: this source is now frozen in `baselines/step_3.py`; active `main.py` is Step 4. Step 3 subsequently passed server validation as submission `56132659`, episode `107286447`, with 15,355 coins per farm and no stderr. [Server audit](benchmarks/step-3-server.json). The decisions below describe the original local checkpoint, before that upload.
+
 **Decision:** retain this as the implemented research checkpoint and a locally valid candidate that improves on Step 2 in the tested matches. The supply buffer is not established as an improvement: the matched control without it wins most fresh head-to-head games. Compare both forecast variants against the same broader opponent pool before selecting the next ladder candidate. No Step 3 file has been uploaded to Kaggle.
 
 ## Results and controlled comparisons
@@ -69,16 +71,18 @@ Step 2 separately passed Kaggle server validation in episode `107272004`; its in
 
 ## Reproduce and continue
 
-Generate controls using the commands in [the README](../README.md). To rerun the fresh comparison using new output paths:
+The economics generator now defaults to `baselines/step_3.py`. Generate `fixed-four.py`, `wheat-only.py`, and `no-buffer.py` with `--fixed-hands`, `--wheat-only`, and `--optimistic-prices` respectively. To rerun the fresh comparison using new output paths:
 
 ```bash
-uv run python evaluate.py --seeds 1009 1031 1061 1091 1151 1201 1237 1277 1301 1361 \
+uv run python evaluate.py --agent baselines/step_3.py --seeds 1009 1031 1061 1091 1151 1201 1237 1277 1301 1361 \
   --opponents baselines/step_2.py artifacts/controls/fixed-four.py \
     artifacts/controls/wheat-only.py artifacts/controls/no-buffer.py \
   --output artifacts/economics-validation-rerun
-uv run python prepare_submission.py --output artifacts/submission-step-3-rerun
+uv run python prepare_submission.py --source baselines/step_3.py --output artifacts/submission-step-3-rerun
 ```
 
 Renaming a control changes its display ID, but its source hash must match the corresponding recorded control. Repeated deterministic games do not add independent evidence. The evidence package contains full match records, source/environment hashes, configuration, summaries, cost metrics, and the isolated release report. Raw replays and local releases remain under ignored `artifacts/` directories. [The saved decision](examples/step-3-decision.json) illustrates the actual marginal hire calculation.
 
 Next, compare forecast variants against the same broader opponent pool, inspect prediction errors and unused seeds, and test workload estimates. Keep the current source frozen while screening a new hypothesis. The six-hand limit, fixed extra-field supply assumption, average shop demand, and blended service/production objective are modeling choices to improve through experiments; none is a proven optimum for the full game.
+
+Subsequent implementation: [Step 4](STEP_4_RESULTS.md) used actual ladder losses to prioritize livestock capital economics. For historical replay explanations, use a separate checkout of commit `3637b04`; the command deliberately rejects a replay whose hash differs from current source.

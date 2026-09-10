@@ -1,0 +1,180 @@
+{
+  "source_sha256": "0024dc48be607636775eba055eea8bde54d3c0679e5e851439791b5d6cb741f9",
+  "seed": 2003,
+  "player": 0,
+  "state_index": 0,
+  "day": 0,
+  "hour": 0,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "PASS"
+    ],
+    "hands": [],
+    "market": [
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        1
+      ],
+      [
+        "BUY_ANIMAL",
+        "SHEEP",
+        1
+      ]
+    ]
+  },
+  "explanation": {
+    "step": 0,
+    "investment": {
+      "animal": "SHEEP",
+      "alternatives": [
+        {
+          "animal": "COW",
+          "purchase_cost": 400,
+          "reserve": 81,
+          "affordable": true,
+          "marginal_value": 7535.0,
+          "projection": {
+            "receipts": 8782.0,
+            "feed_cost": 847.0,
+            "wages": 0,
+            "operating_value": 7935.0,
+            "daily_receipts": [
+              0,
+              0,
+              100,
+              100,
+              100,
+              99,
+              99,
+              99,
+              99,
+              1200,
+              98,
+              635,
+              98,
+              629,
+              98,
+              621,
+              97,
+              613,
+              97,
+              598,
+              96,
+              583,
+              96,
+              570,
+              96,
+              563,
+              95,
+              557,
+              95,
+              551
+            ]
+          }
+        },
+        {
+          "animal": "SHEEP",
+          "purchase_cost": 500,
+          "reserve": 81,
+          "affordable": true,
+          "marginal_value": 8409.0,
+          "projection": {
+            "receipts": 9756.0,
+            "feed_cost": 847.0,
+            "wages": 0,
+            "operating_value": 8909.0,
+            "daily_receipts": [
+              0,
+              0,
+              100,
+              100,
+              100,
+              99,
+              99,
+              1394,
+              99,
+              99,
+              948,
+              98,
+              98,
+              939,
+              98,
+              97,
+              924,
+              97,
+              97,
+              912,
+              96,
+              96,
+              902,
+              96,
+              96,
+              894,
+              95,
+              95,
+              893,
+              95
+            ]
+          }
+        }
+      ],
+      "baseline": {
+        "receipts": 0.0,
+        "feed_cost": 0.0,
+        "wages": 0,
+        "operating_value": 0.0,
+        "daily_receipts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "live_animals": 0,
+      "pending": 0
+    },
+    "workers": [
+      {
+        "worker": 0,
+        "station": [
+          4,
+          4
+        ],
+        "action": [
+          "PASS"
+        ]
+      }
+    ],
+    "feed_target": 1,
+    "cash_reserved_after_orders": 2440.0,
+    "policy": "Marginal projected cash with feed liquidity; forecasts are not LP dual prices."
+  }
+}

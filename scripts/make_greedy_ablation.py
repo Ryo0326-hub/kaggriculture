@@ -42,7 +42,7 @@ def build(source, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("main.py"))
+    parser.add_argument("--source", type=Path, default=Path("baselines/step_2.py"))
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     build(args.source, args.output)

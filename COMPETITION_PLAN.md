@@ -1,6 +1,6 @@
 # Kaggriculture: two-person medal plan
 
-Prepared September 9, 2026. This is the overall execution plan. Steps 1–3 now provide a baseline, coordinated workers, production and hiring economics, evaluation, and isolated submission preparation; see [the implementation status](README.md), [CO250 connections](docs/OPTIMIZATION.md), and [economic model notes](docs/STEP_3_OPTIMIZATION.md). Step 2 passed Kaggle server validation; Step 3 is locally validated and has not been uploaded. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
+Prepared September 9, 2026, updated through Step 4. The project now has frozen crop baselines, coordinated operations, economic models, a livestock investment policy, evaluation, and isolated submission preparation; see [the status](README.md), [CO connections](docs/OPTIMIZATION.md), and [livestock capital notes](docs/STEP_4_OPTIMIZATION.md). Steps 2 and 3 passed server validation; Step 4 is locally validated and has not been uploaded. Working assumption: both teammates can write Python and each can commit approximately 15–20 focused hours per week until September 30. If less time is available, preserve the baseline, evaluation, and release work and drop optional learning/search experiments.
 
 **Recommendation.** Build a reliable deterministic policy with an explicit economic model, coordinated worker scheduling, and automated parameter experiments. Add short-horizon planning only after the baseline is competitive. Use AI assistants during development for engine review, implementation, and replay analysis; keep the submitted policy self-contained.
 
@@ -124,8 +124,8 @@ Choose the final two on broad performance and reliability. Distinct strategies a
 **Working files and the next implementation checkpoint.**
 
 - `main.py`: submission entry point and assembled policy.
-- Worker assignment currently lives inside `main.py` to preserve the single-file artifact.
-- Production quantities, observed-demand forecasts, and workforce alternatives also live in `main.py`; packaging remains self-contained.
+- The active livestock investment model and station execution live inside `main.py`; packaging remains self-contained.
+- Frozen crop agents and their assignment/production models remain in `baselines/`.
 - `evaluate.py`: full-season matches, reproducible seeds, and result collection.
 - `tests/`: mechanics, terminal liquidation, and submission-contract scenarios.
 - `prepare_submission.py`: isolated full-season validation of the exact copied artifact.
@@ -135,7 +135,9 @@ Choose the final two on broad performance and reliability. Distinct strategies a
 
 Step 3 implemented the small production/workforce model, marginal hiring comparisons, cash and estimated labor constraints, and an isolated release gate. Its [results](docs/STEP_3_RESULTS.md) show improvement over Step 2 and a forecast weakness: the control without a supply buffer beats it head-to-head on most fresh seeds. The buffer is not established as a competitive improvement.
 
-Step 4 should compare both forecast variants against the same broader opponent pool before selecting a new ladder candidate. Diagnose crop mix, realized sale prices, idle labor, and forecast error; test one change at a time and reserve new seeds for final selection. Then consider fertilizer, livestock, or land only with explicit setup, operating, displaced-work, and terminal liquidation costs. Continue writing CO explanations and preserve the valid Step 2 server artifact. The current local comparisons are much smaller and narrower than the final tournament gate above.
+Step 4 audited two actual ladder losses: Step 3 earned roughly 21–22 thousand coins while livestock/premium-crop rivals earned 92–123 thousand. That evidence changed the immediate priority from tuning the crop buffer to modeling productive assets. The resulting cow/sheep policy includes fertilizer receipts, feed and wage costs, market impact on existing production, a liquidity gate, and executable station routes. The no-buffer crop policy remains in the broader pool; [Step 4 results](docs/STEP_4_RESULTS.md) compare the candidate and frozen Step 3 on matched fresh games.
+
+Step 5 should improve labor utilization and mixed production. Test shared-worker routes against the current one-worker-per-animal policy, then evaluate productive use of remaining plots. Add land only when incremental receipts cover purchase, setup, operating, logistics, and displaced-work costs before termination. Preserve both server-validated artifacts, write CO explanations, and use new validation seeds. The internal pool still does not include the actual reactive code of the stronger ladder rivals, and local results do not establish medal strength.
 
 Keep competition collaboration within the registered team, preserve third-party license attribution, and follow the competition's public-sharing rules if publishing code. Source: [competition rules](https://www.kaggle.com/competitions/kaggriculture/rules).
 

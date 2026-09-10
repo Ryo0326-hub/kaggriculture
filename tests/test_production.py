@@ -6,15 +6,15 @@ import pytest
 from kaggle_environments import make
 from kaggle_environments.envs.kaggriculture import kaggriculture as engine
 
+from baselines.step_3 import CROPS, MAX_HANDS, plan_turn
 from evaluate import ROOT, run_match
-from main import CROPS, MAX_HANDS, plan_turn
 
 PASS = {"farmer": ["PASS"], "hands": [], "market": []}
 
 
 @pytest.fixture(scope="module")
 def games():
-    artifact = str(ROOT / "main.py")
+    artifact = str(ROOT / "baselines/step_3.py")
     return [
         run_match(artifact, str(ROOT / "baselines/step_2.py"), 11, 0),
         run_match(artifact, str(ROOT / "baselines/step_2.py"), 29, 1),

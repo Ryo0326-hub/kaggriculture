@@ -34,6 +34,6 @@ def test_repository_import_is_not_available_in_isolated_release(tmp_path):
 
 def test_greedy_control_uses_the_correct_loader_entry_point(tmp_path):
     control = tmp_path / "greedy.py"
-    build(ROOT / "main.py", control)
+    build(ROOT / "baselines/step_2.py", control)
     row, _ = run_match(str(control), "pass", 5, 0, episode_steps=4)
     assert row["outcome"] != "error"

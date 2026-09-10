@@ -1,0 +1,679 @@
+{
+  "observed_at_utc": "2026-09-10T00:10:45.985880+00:00",
+  "step_3_submission_id": 56132659,
+  "rating_snapshot": {
+    "step_2": 366.7,
+    "step_3": 436.8
+  },
+  "episodes": [
+    {
+      "episode_id": 107287517,
+      "replay_sha256": "2ce6f6924a7300adb14b22c28a6a08df813aaedd7a05ab269173feb786c27153",
+      "candidate_seat": 1,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_cash": 21902.0,
+      "opponent_cash": 91625.0,
+      "source_action_mismatches": 0,
+      "players": [
+        {
+          "role": "candidate",
+          "unit_actions": {
+            "PASS": 602,
+            "PLANT": 172,
+            "WEST": 629,
+            "NORTH": 662,
+            "WATER": 763,
+            "EAST": 341,
+            "HARVEST": 169,
+            "SOUTH": 335,
+            "DROP": 92
+          },
+          "market_order_counts": {
+            "HIRE": 139,
+            "BUY_SEED WHEAT": 38,
+            "SELL WHEAT": 37,
+            "BUY_SEED CARROT": 48,
+            "SELL CARROT": 50
+          },
+          "maximum_tiles_by_type": {
+            "WHEAT": 25,
+            "CARROT": 22
+          },
+          "max_hands": 6,
+          "daily_cash": [
+            {
+              "day": 0,
+              "cash": 3000.0
+            },
+            {
+              "day": 1,
+              "cash": 2743.0
+            },
+            {
+              "day": 2,
+              "cash": 2739.0
+            },
+            {
+              "day": 3,
+              "cash": 2735.0
+            },
+            {
+              "day": 4,
+              "cash": 2731.0
+            },
+            {
+              "day": 5,
+              "cash": 4941.0
+            },
+            {
+              "day": 6,
+              "cash": 4870.0
+            },
+            {
+              "day": 7,
+              "cash": 4866.0
+            },
+            {
+              "day": 8,
+              "cash": 4862.0
+            },
+            {
+              "day": 9,
+              "cash": 5435.0
+            },
+            {
+              "day": 10,
+              "cash": 6993.0
+            },
+            {
+              "day": 11,
+              "cash": 6716.0
+            },
+            {
+              "day": 12,
+              "cash": 7032.0
+            },
+            {
+              "day": 13,
+              "cash": 7276.0
+            },
+            {
+              "day": 14,
+              "cash": 8995.0
+            },
+            {
+              "day": 15,
+              "cash": 8808.0
+            },
+            {
+              "day": 16,
+              "cash": 9771.0
+            },
+            {
+              "day": 17,
+              "cash": 10159.0
+            },
+            {
+              "day": 18,
+              "cash": 11680.0
+            },
+            {
+              "day": 19,
+              "cash": 11556.0
+            },
+            {
+              "day": 20,
+              "cash": 12133.0
+            },
+            {
+              "day": 21,
+              "cash": 13497.0
+            },
+            {
+              "day": 22,
+              "cash": 13877.0
+            },
+            {
+              "day": 23,
+              "cash": 15188.0
+            },
+            {
+              "day": 24,
+              "cash": 15104.0
+            },
+            {
+              "day": 25,
+              "cash": 17272.0
+            },
+            {
+              "day": 26,
+              "cash": 17384.0
+            },
+            {
+              "day": 27,
+              "cash": 18044.0
+            },
+            {
+              "day": 28,
+              "cash": 18518.0
+            },
+            {
+              "day": 29,
+              "cash": 20040.0
+            }
+          ]
+        },
+        {
+          "role": "opponent",
+          "unit_actions": {
+            "PASS": 1234,
+            "PICKUP": 202,
+            "BUILD_PASTURE": 11,
+            "PLACE": 302,
+            "FEED": 281,
+            "CARE": 244,
+            "WEST": 718,
+            "EAST": 576,
+            "NORTH": 530,
+            "COLLECT_FERTILIZER": 281,
+            "SOUTH": 334,
+            "HARVEST": 134,
+            "PLANT": 21,
+            "WATER": 233,
+            "FERTILIZE": 16,
+            "DIG": 5
+          },
+          "market_order_counts": {
+            "HIRE": 192,
+            "BUY_PRODUCT WHEAT": 102,
+            "BUY_ANIMAL SHEEP": 3,
+            "BUY_ANIMAL COW": 8,
+            "SELL FERTILIZER": 128,
+            "SELL WHEAT": 131,
+            "SELL WOOL": 23,
+            "SELL MILK": 49,
+            "BUY_SEED MELON": 11,
+            "BUY_SEED STRAWBERRY": 6,
+            "BUY_LAND": 1,
+            "SELL MELON": 10,
+            "SELL STRAWBERRY": 20,
+            "BUY_SEED WHEAT": 3,
+            "BUY_SEED CARROT": 1,
+            "BUY_PRODUCT FERTILIZER": 2,
+            "SELL CARROT": 1
+          },
+          "maximum_tiles_by_type": {
+            "PASTURE": 1,
+            "SHEEP": 3,
+            "COW": 8,
+            "MELON": 11,
+            "STRAWBERRY": 6,
+            "WEED": 3,
+            "WHEAT": 2,
+            "CARROT": 1
+          },
+          "max_hands": 9,
+          "daily_cash": [
+            {
+              "day": 0,
+              "cash": 3000.0
+            },
+            {
+              "day": 1,
+              "cash": 1434.0
+            },
+            {
+              "day": 2,
+              "cash": 1089.0
+            },
+            {
+              "day": 3,
+              "cash": 907.0
+            },
+            {
+              "day": 4,
+              "cash": 784.0
+            },
+            {
+              "day": 5,
+              "cash": 731.0
+            },
+            {
+              "day": 6,
+              "cash": 701.0
+            },
+            {
+              "day": 7,
+              "cash": 3413.0
+            },
+            {
+              "day": 8,
+              "cash": 5198.0
+            },
+            {
+              "day": 9,
+              "cash": 6558.0
+            },
+            {
+              "day": 10,
+              "cash": 8051.0
+            },
+            {
+              "day": 11,
+              "cash": 11178.0
+            },
+            {
+              "day": 12,
+              "cash": 12889.0
+            },
+            {
+              "day": 13,
+              "cash": 16291.0
+            },
+            {
+              "day": 14,
+              "cash": 19092.0
+            },
+            {
+              "day": 15,
+              "cash": 22674.0
+            },
+            {
+              "day": 16,
+              "cash": 24641.0
+            },
+            {
+              "day": 17,
+              "cash": 30014.0
+            },
+            {
+              "day": 18,
+              "cash": 30383.0
+            },
+            {
+              "day": 19,
+              "cash": 37930.0
+            },
+            {
+              "day": 20,
+              "cash": 39061.0
+            },
+            {
+              "day": 21,
+              "cash": 45836.0
+            },
+            {
+              "day": 22,
+              "cash": 51407.0
+            },
+            {
+              "day": 23,
+              "cash": 59238.0
+            },
+            {
+              "day": 24,
+              "cash": 65227.0
+            },
+            {
+              "day": 25,
+              "cash": 72648.0
+            },
+            {
+              "day": 26,
+              "cash": 77589.0
+            },
+            {
+              "day": 27,
+              "cash": 82365.0
+            },
+            {
+              "day": 28,
+              "cash": 86242.0
+            },
+            {
+              "day": 29,
+              "cash": 89910.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": 107288503,
+      "replay_sha256": "971840433b46be8f7aec2b3404eeafb4033b6ec0275e875596916af3f7bc730e",
+      "candidate_seat": 0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "candidate_cash": 20940.0,
+      "opponent_cash": 123336.0,
+      "source_action_mismatches": 0,
+      "players": [
+        {
+          "role": "candidate",
+          "unit_actions": {
+            "PASS": 566,
+            "PLANT": 173,
+            "WEST": 646,
+            "NORTH": 669,
+            "WATER": 750,
+            "EAST": 318,
+            "HARVEST": 173,
+            "SOUTH": 337,
+            "DROP": 90,
+            "DIG": 1
+          },
+          "market_order_counts": {
+            "HIRE": 137,
+            "BUY_SEED WHEAT": 30,
+            "SELL WHEAT": 20,
+            "BUY_SEED CARROT": 62,
+            "SELL CARROT": 65
+          },
+          "maximum_tiles_by_type": {
+            "WHEAT": 25,
+            "WEED": 1,
+            "CARROT": 25
+          },
+          "max_hands": 6,
+          "daily_cash": [
+            {
+              "day": 0,
+              "cash": 3000.0
+            },
+            {
+              "day": 1,
+              "cash": 2743.0
+            },
+            {
+              "day": 2,
+              "cash": 2739.0
+            },
+            {
+              "day": 3,
+              "cash": 2735.0
+            },
+            {
+              "day": 4,
+              "cash": 2731.0
+            },
+            {
+              "day": 5,
+              "cash": 4851.0
+            },
+            {
+              "day": 6,
+              "cash": 4772.0
+            },
+            {
+              "day": 7,
+              "cash": 4768.0
+            },
+            {
+              "day": 8,
+              "cash": 4764.0
+            },
+            {
+              "day": 9,
+              "cash": 5395.0
+            },
+            {
+              "day": 10,
+              "cash": 6744.0
+            },
+            {
+              "day": 11,
+              "cash": 6646.0
+            },
+            {
+              "day": 12,
+              "cash": 6932.0
+            },
+            {
+              "day": 13,
+              "cash": 7294.0
+            },
+            {
+              "day": 14,
+              "cash": 7744.0
+            },
+            {
+              "day": 15,
+              "cash": 9047.0
+            },
+            {
+              "day": 16,
+              "cash": 9547.0
+            },
+            {
+              "day": 17,
+              "cash": 9855.0
+            },
+            {
+              "day": 18,
+              "cash": 10072.0
+            },
+            {
+              "day": 19,
+              "cash": 11624.0
+            },
+            {
+              "day": 20,
+              "cash": 12651.0
+            },
+            {
+              "day": 21,
+              "cash": 12844.0
+            },
+            {
+              "day": 22,
+              "cash": 13551.0
+            },
+            {
+              "day": 23,
+              "cash": 14155.0
+            },
+            {
+              "day": 24,
+              "cash": 15614.0
+            },
+            {
+              "day": 25,
+              "cash": 16379.0
+            },
+            {
+              "day": 26,
+              "cash": 17116.0
+            },
+            {
+              "day": 27,
+              "cash": 17112.0
+            },
+            {
+              "day": 28,
+              "cash": 19440.0
+            },
+            {
+              "day": 29,
+              "cash": 20060.0
+            }
+          ]
+        },
+        {
+          "role": "opponent",
+          "unit_actions": {
+            "PASS": 425,
+            "BUILD_PASTURE": 27,
+            "PICKUP": 89,
+            "WEST": 1270,
+            "NORTH": 850,
+            "PLACE": 30,
+            "CARE": 273,
+            "EAST": 1112,
+            "FEED": 290,
+            "SOUTH": 655,
+            "PLANT": 164,
+            "WATER": 1125,
+            "COLLECT_FERTILIZER": 270,
+            "HARVEST": 277,
+            "DIG": 42,
+            "FERTILIZE": 56
+          },
+          "market_order_counts": {
+            "HIRE": 306,
+            "BUY_SEED MELON": 4,
+            "BUY_ANIMAL COW": 10,
+            "BUY_SEED WHEAT": 88,
+            "BUY_PRODUCT WHEAT": 53,
+            "BUY_ANIMAL SHEEP": 4,
+            "SELL FERTILIZER": 47,
+            "SELL WHEAT": 45,
+            "BUY_SEED STRAWBERRY": 10,
+            "SELL WOOL": 22,
+            "SELL MILK": 34,
+            "BUY_LAND": 3,
+            "SELL MELON": 6,
+            "SELL STRAWBERRY": 19
+          },
+          "maximum_tiles_by_type": {
+            "PASTURE": 15,
+            "COW": 10,
+            "SHEEP": 4,
+            "MELON": 11,
+            "WHEAT": 32,
+            "STRAWBERRY": 30,
+            "WEED": 16
+          },
+          "max_hands": 12,
+          "daily_cash": [
+            {
+              "day": 0,
+              "cash": 3000.0
+            },
+            {
+              "day": 1,
+              "cash": 375.0
+            },
+            {
+              "day": 2,
+              "cash": 138.0
+            },
+            {
+              "day": 3,
+              "cash": 340.0
+            },
+            {
+              "day": 4,
+              "cash": 220.0
+            },
+            {
+              "day": 5,
+              "cash": 219.0
+            },
+            {
+              "day": 6,
+              "cash": 243.0
+            },
+            {
+              "day": 7,
+              "cash": 89.0
+            },
+            {
+              "day": 8,
+              "cash": 170.0
+            },
+            {
+              "day": 9,
+              "cash": 239.0
+            },
+            {
+              "day": 10,
+              "cash": 142.0
+            },
+            {
+              "day": 11,
+              "cash": 209.0
+            },
+            {
+              "day": 12,
+              "cash": 297.0
+            },
+            {
+              "day": 13,
+              "cash": 337.0
+            },
+            {
+              "day": 14,
+              "cash": 4640.0
+            },
+            {
+              "day": 15,
+              "cash": 5316.0
+            },
+            {
+              "day": 16,
+              "cash": 7167.0
+            },
+            {
+              "day": 17,
+              "cash": 8205.0
+            },
+            {
+              "day": 18,
+              "cash": 10929.0
+            },
+            {
+              "day": 19,
+              "cash": 15202.0
+            },
+            {
+              "day": 20,
+              "cash": 23455.0
+            },
+            {
+              "day": 21,
+              "cash": 32072.0
+            },
+            {
+              "day": 22,
+              "cash": 37343.0
+            },
+            {
+              "day": 23,
+              "cash": 46614.0
+            },
+            {
+              "day": 24,
+              "cash": 57130.0
+            },
+            {
+              "day": 25,
+              "cash": 70180.0
+            },
+            {
+              "day": 26,
+              "cash": 80511.0
+            },
+            {
+              "day": 27,
+              "cash": 89418.0
+            },
+            {
+              "day": 28,
+              "cash": 97970.0
+            },
+            {
+              "day": 29,
+              "cash": 106370.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Observed public ladder losses, not counterfactual tests. Opponent policies are unavailable; their fixed recorded actions are not treated as reactive benchmark agents."
+}

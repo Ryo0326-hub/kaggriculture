@@ -3,7 +3,7 @@ from random import Random
 
 import pytest
 
-from main import MAX_WORKERS, maximum_assignment
+from baselines.step_3 import MAX_WORKERS, maximum_assignment
 
 
 def value(assignment, weights):

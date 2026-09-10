@@ -4,7 +4,15 @@ import pytest
 from kaggle_environments import make
 from kaggle_environments.envs.kaggriculture import kaggriculture as engine
 
-from main import CROPS, MARKET, batch_revenue, crop_forecast, optimize_lots, plan_turn, price_at
+from baselines.step_3 import (
+    CROPS,
+    MARKET,
+    batch_revenue,
+    crop_forecast,
+    optimize_lots,
+    plan_turn,
+    price_at,
+)
 
 PASS = {"farmer": ["PASS"], "hands": [], "market": []}
 

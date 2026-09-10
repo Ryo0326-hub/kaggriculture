@@ -1,5 +1,7 @@
 # Step 3: production, hiring, and marginal value
 
+This historical implementation is frozen in `baselines/step_3.py`. For its source-matched replay command, use a separate checkout of commit `3637b04`. The active agent is explained in [Step 4](STEP_4_OPTIMIZATION.md).
+
 Implemented September 9, 2026. This checkpoint connects CO250's integer variables, resource constraints, opportunity cost, and LP relaxations to a working agent. The artifact remains one standard-library Python file. It considers wheat and carrots on the 25 starting tiles and up to six hired hands. Land, livestock, and fertilizer remain future work.
 
 ## What the server episode established

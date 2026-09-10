@@ -39,6 +39,10 @@ Step 3 additionally checks these economically relevant details:
 
 Price and resource scenarios are covered by `tests/test_economics.py` and `tests/test_production.py`. Forecasts and workload approximations are explained separately in [the Step 3 CO notes](STEP_3_OPTIMIZATION.md); they are policy assumptions, not engine rules.
 
+Step 4 adds engine-backed livestock checks. A pasture costs an action to build, animals pass through shed and worker inventory before placement, and feed is consumed from the acting worker. Daily production uses the previous pending care bonus before storing the latest day's care. Collected fertilizer can be sold, and unlike other products it has no town-center demand. Each daily reset deposits worker inventory within shed capacity, returns the farmer to spawn, and removes hired hands. The policy explicitly deposits and sells final-day output because no further daily reset can be assumed.
+
+The active Step 4 policy has up to ten cow/sheep stations and nine hands. Tests compare output forecasts with the engine at multiple ages, inspect full-season feeding and inventory actions, check escapes and unfed animal-days, and validate final liquidation. [Step 3 server validation](benchmarks/step-3-server.json) also matches local resimulation. Market projections, reserves, and staffing are policy assumptions documented in [the Step 4 notes](STEP_4_OPTIMIZATION.md).
+
 After any environment upgrade, regenerate the lock deliberately, rerun these checks, and compare local configuration with real competition episodes before promoting a strategy.
 
 Source: [official Kaggriculture implementation](https://github.com/Kaggle/kaggle-environments/tree/master/kaggle_environments/envs/kaggriculture).

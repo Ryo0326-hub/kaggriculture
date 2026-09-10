@@ -1,6 +1,6 @@
 # Step 2: coordinated-worker candidate
 
-Completed locally on September 9, 2026. This checkpoint's artifact is now frozen in `baselines/step_2.py`; current `main.py` is Step 3. Step 2 coordinates the farmer and up to four hands on the starting quadrant, with a bounded exact assignment solver inside a heuristic wheat policy.
+Completed locally on September 9, 2026. This checkpoint's artifact is now frozen in `baselines/step_2.py`; current `main.py` is Step 4. Step 2 coordinates the farmer and up to four hands on the starting quadrant, with a bounded exact assignment solver inside a heuristic wheat policy.
 
 Subsequent server checkpoint: submission `56132050` passed validation in episode `107272004`, showing an initial rating of 600 and 13,297 coins per farm in self-play. The supplied replay and both logs were audited and exactly reproduced locally for actions and economic state. [Server evidence](benchmarks/step-2-server.json) and [submission registry](SUBMISSIONS.md).
 

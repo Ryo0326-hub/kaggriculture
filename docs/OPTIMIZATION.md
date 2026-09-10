@@ -2,7 +2,7 @@
 
 Your CO250 background is directly useful. We can model actions as decision variables, express scarce resources as constraints, use integer variables for indivisible choices, and use duality to reason about resource values. What we cannot honestly claim is that one ordinary LP exactly solves the full competition.
 
-Implementation history: [Step 1 routing](STEP_1_RESULTS.md), [Step 2 assignment](STEP_2_OPTIMIZATION.md), and [Step 3 production/hiring economics](STEP_3_OPTIMIZATION.md). Step 3 adds an enumerated integer lot model and marginal workforce comparisons; it does not calculate LP dual prices.
+Implementation history: [Step 1 routing](STEP_1_RESULTS.md), [Step 2 assignment](STEP_2_OPTIMIZATION.md), [Step 3 production/hiring economics](STEP_3_OPTIMIZATION.md), and [Step 4 livestock capital and liquidity](STEP_4_OPTIMIZATION.md). Step 3 adds an enumerated integer lot model and marginal workforce comparisons; it does not calculate LP dual prices.
 
 ## 1. State the real objective
 
@@ -104,3 +104,5 @@ The intended strategy is to solve useful restricted problems well, execute feasi
 - Reports preserve environment and artifact provenance and distinguish errors from wins.
 
 Coordinated assignment is implemented in [Step 2](STEP_2_OPTIMIZATION.md), and two-crop allocation, hiring economics, and a finite supply stress case in [Step 3](STEP_3_OPTIMIZATION.md). Land acquisition and broader uncertain-demand planning remain future work. These notes preserve Step 1's routing example; they do not claim the current agent solves that same route problem.
+
+The active Step 4 policy uses a binary capital choice, marginal whole-herd cash flows, and a liquidity constraint. It executes distinct worker stations. Earlier routing and assignment algorithms remain in the frozen crop baselines; Step 4 does not claim their optimality guarantees for its station policy.

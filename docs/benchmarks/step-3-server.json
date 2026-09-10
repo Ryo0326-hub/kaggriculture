@@ -1,0 +1,63 @@
+{
+  "episode_id": 107286447,
+  "type": "validation self-play",
+  "initial_rating": 600,
+  "screenshot_previous_step_2_rating": 366.7,
+  "seed": 0,
+  "module_version": "1.32.7",
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "cash": [
+    15355.0,
+    15355.0
+  ],
+  "recorded_states": 720,
+  "agent_sha256": "ddd775729432e51be0ecf4462866ca4c75673fb1b55a0b12c0395c40d0a5114a",
+  "replay_sha256": "2025fe0bef1f28dfb3442e350fa5f570792173d1d671b7a1960f95f3fc013e08",
+  "configuration": {
+    "actTimeout": 1,
+    "boardSize": 10,
+    "episodeSteps": 720,
+    "farmHandCostMult": 1,
+    "marketParams": {},
+    "maxMarketOrdersPerTurn": 10,
+    "runTimeout": 1200,
+    "seed": null,
+    "shedCapacity": 100,
+    "startingMoney": 3000,
+    "townCenterSellInterval": 24,
+    "townShopSellInterval": 4,
+    "townShopUnlockInterval": 3,
+    "turnsPerDay": 24,
+    "weedSpawnChance": 0.005
+  },
+  "logs": [
+    {
+      "player": 0,
+      "file_sha256": "1cb76f29b1b7750d4eae0251dabee8e7a920ed6082fad94aca5d46380136fa29",
+      "turns": 719,
+      "stderr_entries": 0,
+      "max_seconds": 0.03268,
+      "p99_seconds": 0.02134
+    },
+    {
+      "player": 1,
+      "file_sha256": "66bd806ccf8870cb850af343c0f8521dd4cee9abf7638f9a828c68b894c9303d",
+      "turns": 719,
+      "stderr_entries": 0,
+      "max_seconds": 0.032367,
+      "p99_seconds": 0.020427
+    }
+  ],
+  "local_resimulation_differences": [],
+  "local_resimulation_matches": true,
+  "interpretation": "Self-play validation confirms execution in this episode. It does not explain specific Step 2 ladder losses or establish Step 3 competitive strength.",
+  "episode_uuid": "ef933aa8-aca9-11f1-9a09-0242ac130203",
+  "submission_id": 56132659,
+  "subsequent_cli_rating_snapshot": {
+    "step_2": 366.7,
+    "step_3": 436.8
+  }
+}

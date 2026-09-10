@@ -1,19 +1,10 @@
-"""Step 3: price-aware crop lots and marginal hiring, with coordinated execution.
+"""Step 4: marginal livestock investment, feed liquidity, and bounded daily routes.
 
-Single-file, standard-library Kaggle artifact. See docs/STEP_3_OPTIMIZATION.md.
+Standard-library, single-file agent. See docs/STEP_4_OPTIMIZATION.md.
 """
 
 import math
 
-MAX_HANDS = 6
-MAX_WORKERS = MAX_HANDS + 1
-MAX_TASKS = 25 + MAX_WORKERS
-
-# Unfertilized peak yields: initial unit plus one per bonus-window watering.
-CROPS = {
-    "WHEAT": {"seed": 10, "days": 4, "yield": 4},
-    "CARROT": {"seed": 20, "days": 3, "yield": 3},
-}
 MARKET = {
     "WHEAT": {
         "base": 25,
@@ -33,7 +24,71 @@ MARKET = {
         "above_func": "sqrt",
         "above_target": 0.7,
     },
+    "TOMATO": {
+        "base": 60,
+        "I0": 10000,
+        "T": 200,
+        "below_func": "hinge",
+        "below_target": 0.4,
+        "above_func": "sqrt",
+        "above_target": 0.6,
+    },
+    "STRAWBERRY": {
+        "base": 120,
+        "I0": 10000,
+        "T": 100,
+        "below_func": "sqrt",
+        "below_target": 0.7,
+        "above_func": "linear",
+        "above_target": 1.6,
+    },
+    "MELON": {
+        "base": 250,
+        "I0": 10000,
+        "T": 300,
+        "below_func": "log",
+        "below_target": 0.2,
+        "above_func": "sq",
+        "above_target": 3.6,
+    },
+    "EGG": {
+        "base": 50,
+        "I0": 10000,
+        "T": 332,
+        "below_func": "hinge",
+        "below_target": 0.4,
+        "above_func": "log",
+        "above_target": 0.2,
+    },
+    "MILK": {
+        "base": 160,
+        "I0": 10000,
+        "T": 122,
+        "below_func": "sqrt",
+        "below_target": 0.6,
+        "above_func": "linear",
+        "above_target": 1.6,
+    },
+    "WOOL": {
+        "base": 200,
+        "I0": 10000,
+        "T": 105,
+        "below_func": "log",
+        "below_target": 0.2,
+        "above_func": "sq",
+        "above_target": 3.2,
+    },
+    "FERTILIZER": {
+        "base": 100,
+        "I0": 10000,
+        "T": 200,
+        "below_func": "linear",
+        "below_target": 0.4,
+        "above_func": "linear",
+        "above_target": 0.4,
+    },
 }
+
 SHOP_PRODUCTS = {
     "BAKERY": ["EGG", "WHEAT"],
     "PIZZA_SHOP": ["MILK", "TOMATO", "WHEAT"],
@@ -44,6 +99,35 @@ SHOP_PRODUCTS = {
     "SMOOTHIE_SHOP": ["STRAWBERRY", "MILK"],
     "FARMERS_MARKET": ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY"],
 }
+
+ANIMALS = {
+    "GOOSE": {
+        "cost": 300,
+        "structure": "COOP",
+        "first_yield_day": 4,
+        "interval": 1,
+        "max_held": 4,
+        "product": "EGG",
+    },
+    "COW": {
+        "cost": 400,
+        "structure": "PASTURE",
+        "first_yield_day": 8,
+        "interval": 2,
+        "max_held": 6,
+        "product": "MILK",
+    },
+    "SHEEP": {
+        "cost": 500,
+        "structure": "PASTURE",
+        "first_yield_day": 6,
+        "interval": 3,
+        "max_held": 6,
+        "product": "WOOL",
+    },
+}
+
+HERD_LIMIT = 10
 
 
 def shape(kind, x, scale):
@@ -85,158 +169,6 @@ def batch_revenue(crop, inventory, amount, params):
     return revenue
 
 
-def crop_forecast(obs, cfg, crop, params, duration=None):
-    """Use observed shops and visible standing crops, never hidden rival stock or RNG seed."""
-    duration = CROPS[crop]["days"] if duration is None else duration
-    tpd = cfg.get("turnsPerDay", 24)
-    demand = tpd / max(1, cfg.get("townCenterSellInterval", 24))
-    for shop in obs["town"].get("unlocked_shops", []):
-        products = SHOP_PRODUCTS.get(shop, [])
-        if crop in products:
-            demand += (
-                tpd / max(1, cfg.get("townShopSellInterval", 4)) * (2 if len(products) == 1 else 1)
-            )
-    supply = obs["private"]["shed"].get(crop, 0)
-    supply += sum(inv.get(crop, 0) for inv in obs["private"]["inventories"])
-    for farm in obs["farms"]:
-        for row in farm["tiles"]:
-            for tile in row:
-                if isinstance(tile, dict) and tile.get("crop") == crop:
-                    age_at_sale = obs["day"] + duration - tile["planted_day"]
-                    expected_yield = min(CROPS[crop]["yield"], 1 + max(0, age_at_sale - 1))
-                    supply += max(tile["yield_units"], expected_yield)
-    return {
-        "inventory_at_harvest": obs["market"]["inventory"][crop] + supply - duration * demand,
-        "visible_committed_units": supply,
-        "observed_daily_demand": demand,
-    }
-
-
-def optimize_lots(values, seed_costs, owned_seeds, slots, work_capacity, cash):
-    """Exact two-crop integer allocation for tabulated returns and a cash/work budget."""
-    best = (0.0, (0, 0), 0)
-    limit = min(slots, max(0, int(work_capacity // 4)))
-    for wheat in range(limit + 1):
-        for carrot in range(limit - wheat + 1):
-            quantities = (wheat, carrot)
-            spend = sum(max(0, q - s) * c for q, s, c in zip(quantities, owned_seeds, seed_costs))
-            if spend > cash:
-                continue
-            value = values[0][wheat] + values[1][carrot]
-            if value > best[0]:
-                best = (value, quantities, spend)
-    return best
-
-
-def economic_plan(obs, cfg, plots, fixed_hands=False, wheat_only=False, supply_buffer=True):
-    """Enumerate affordable workforce/lot plans in a small, explicitly approximate model."""
-    farm, private = obs["farms"][obs["player"]], obs["private"]
-    tpd = cfg.get("turnsPerDay", 24)
-    last_step = cfg.get("episodeSteps", 720) - 2
-    remaining = last_step - obs.get("step", obs["day"] * tpd + obs["hour"]) + 1
-    today = min(tpd - obs["hour"], remaining)
-    current = len(farm["hands"])
-    params = {c: dict(p) for c, p in MARKET.items()}
-    for c in params:
-        params[c].update(cfg.get("marketParams", {}).get(c, {}))
-        params[c].update(obs["market"].get("params", {}).get(c, {}))
-    cycles = {
-        c: max(0, min(data["days"], last_step // tpd - obs["day"])) for c, data in CROPS.items()
-    }
-    forecasts = {c: crop_forecast(obs, cfg, c, params, cycles[c]) for c in CROPS}
-    for c, f in forecasts.items():
-        # Stress scenario: one additional field's unfertilized harvest precedes ours.
-        f["supply_buffer_units"] = 25 * CROPS[c]["yield"] if supply_buffer else 0
-        f["stress_inventory"] = f["inventory_at_harvest"] + f["supply_buffer_units"]
-    slots, required_work, protected_value = 0, 0, 0.0
-    for x, y in plots:
-        tile = farm["tiles"][y][x]
-        if tile is None or (isinstance(tile, dict) and tile.get("kind") == "WEED"):
-            slots += 1
-        elif isinstance(tile, dict) and tile.get("crop") in CROPS:
-            c = tile["crop"]
-            need_water = not tile["watered_today"]
-            age = obs["day"] - tile["planted_day"]
-            ripe = age >= CROPS[c]["days"] or (obs["day"] == last_step // tpd and age >= 2)
-            # A harvest releases land for another crop during this same day.
-            slots += int(ripe)
-            required_work += 3 * need_water + 2 * int(ripe)
-            if need_water or ripe:
-                protected_value += batch_revenue(
-                    c,
-                    forecasts[c]["inventory_at_harvest"],
-                    max(tile["yield_units"], CROPS[c]["yield"]),
-                    params,
-                )
-    # Returning carried goods also consumes worker actions, especially in the endgame.
-    half = len(farm["tiles"]) // 2
-    for p, inv in zip([farm["farmer"], *farm["hands"]], private["inventories"]):
-        if sum(inv.values()):
-            required_work += abs(p[0] - (half - 1)) + abs(p[1] - (half - 1)) + 1
-            protected_value += sum(inv.get(c, 0) * obs["market"]["prices"][c] for c in CROPS)
-    values = []
-    for c, data in CROPS.items():
-        duration = cycles[c]
-        can_finish = duration >= 2 and today >= 3
-        if wheat_only and c != "WHEAT":
-            can_finish = False
-        table = [0.0]
-        for q in range(1, slots + 1):
-            spend = max(0, q - private["seeds"].get(c, 0)) * data["seed"]
-            revenue = batch_revenue(c, forecasts[c]["stress_inventory"], q * duration, params)
-            table.append((revenue - spend) / duration if can_finish else -1e12)
-        values.append(table)
-    max_extra = max(0, cfg.get("maxMarketOrdersPerTurn", 10) - len(CROPS) - 1)
-    maximum = min(MAX_HANDS, current + max_extra) if today >= 4 else current
-    if fixed_hands:
-        maximum = min(maximum, max(current, 4))
-    choices = []
-    cost = 0
-    for hands in range(current, maximum + 1):
-        if hands > current:
-            cost += hire_cost(
-                farm["hires_today"] + hands - current - 1, cfg.get("farmHandCostMult", 1)
-            )
-        if cost > farm["money"]:
-            break
-        capacity = today * (current + 1) + max(0, today - 1) * (hands - current)
-        service = min(1, capacity / required_work) if required_work else 1.0
-        value, quantities, seed_spend = optimize_lots(
-            values,
-            [CROPS[c]["seed"] for c in CROPS],
-            [private["seeds"].get(c, 0) for c in CROPS],
-            slots,
-            max(0, capacity - required_work),
-            farm["money"] - cost,
-        )
-        choices.append(
-            {
-                "hands": hands,
-                "hire_cost": cost,
-                "seed_cost": seed_spend,
-                "lots": dict(zip(CROPS, quantities)),
-                "production_value": value,
-                "capacity": capacity,
-                "service_fraction": service,
-                "model_value": service * protected_value + value - cost,
-            }
-        )
-    selected = max(choices, key=lambda x: x["model_value"])
-    if fixed_hands and (required_work or selected["production_value"] > 0):
-        selected = choices[-1]
-    selected = dict(selected)
-    selected.update(
-        {
-            "required_work_estimate": required_work,
-            "forecasts": forecasts,
-            "crop_days_and_yield": cycles,
-            "alternatives": choices,
-            "params": params,
-        }
-    )
-    return selected
-
-
 def distance(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
@@ -249,40 +181,6 @@ def move_toward(start, target):
     return ["PASS"]
 
 
-def maximum_assignment(weights, seed_tasks, seed_budget):
-    """Maximize total score with worker/task uniqueness and a shared seed quota.
-
-    None removes an infeasible edge. -1 in the result means the worker stays idle.
-    DP scans tasks; state = (assigned-worker bitmask, reserved seeds).
-    Exact for these supplied scores/constraints, not for full-season profit.
-    """
-    n, m = len(weights), len(seed_tasks)
-    if n > MAX_WORKERS or m > MAX_TASKS:
-        raise ValueError("Assignment exceeds the bounded Step 2 problem size")
-    if seed_budget < 0 or any(len(row) != m for row in weights):
-        raise ValueError("Invalid assignment matrix or seed budget")
-    budget = min(seed_budget, n)
-    states = {(0, 0): (0, (-1,) * n)}
-    for task in range(m):
-        following = dict(states)  # Skipping this task is feasible.
-        for (mask, used), (score, assignment) in states.items():
-            new_used = used + int(seed_tasks[task])
-            if new_used > budget:
-                continue
-            for worker, row in enumerate(weights):
-                value = row[task]
-                if mask & (1 << worker) or value is None or value <= 0:
-                    continue
-                key = (mask | (1 << worker), new_used)
-                total = score + value
-                if key not in following or total > following[key][0]:
-                    chosen = assignment[:worker] + (task,) + assignment[worker + 1 :]
-                    following[key] = (total, chosen)
-        states = following
-    # Stable input order and strict improvement give deterministic tie-breaking.
-    return max(states.values(), key=lambda entry: entry[0])[1]
-
-
 def hire_cost(index, multiplier):
     a, b = 1, 1
     for _ in range(index):
@@ -290,159 +188,312 @@ def hire_cost(index, multiplier):
     return multiplier * a
 
 
-def plan_turn(
-    obs,
-    configuration=None,
-    allocator=maximum_assignment,
-    fixed_hands=False,
-    wheat_only=False,
-    supply_buffer=True,
-):
-    """Return an executable action and a source-replayable decision explanation."""
-    cfg = configuration or {}
+def observed_demand(obs, cfg):
     tpd = cfg.get("turnsPerDay", 24)
-    last_step = cfg.get("episodeSteps", 720) - 2
-    day, hour = obs["day"], obs["hour"]
-    step = obs.get("step", day * tpd + hour)
-    remaining, today = last_step - step + 1, tpd - hour
-    final_day = day == last_step // tpd
-    farm, private = obs["farms"][obs["player"]], obs["private"]
-    tiles = farm["tiles"]
-    half = len(tiles) // 2
-    access = [(x, y) for x in (half - 1, half) for y in (half - 1, half)]
-    positions = [tuple(p) for p in [farm["farmer"], *farm["hands"]]]
-    inventories = private["inventories"]
-    plots = sorted(
-        [(x, y) for y in range(max(0, half - 5), half) for x in range(max(0, half - 5), half)],
-        key=lambda p: (distance(p, access[0]), p),
-    )
-    economics = economic_plan(obs, cfg, plots, fixed_hands, wheat_only, supply_buffer)
-    hires = [["HIRE"] for _ in range(economics["hands"] - len(farm["hands"]))]
-    n = min(len(positions), MAX_WORKERS)
-    wanted_crops = [c for c in CROPS if economics["lots"][c] > 0]
-    stocked = [c for c in wanted_crops if private["seeds"].get(c, 0)]
-    plant_crop = max(stocked or wanted_crops, key=lambda c: economics["lots"][c], default=None)
-    seeds = private["seeds"].get(plant_crop, 0)
-    tasks = []
-    for p in plots:
-        tile = tiles[p[1]][p[0]]
-        op, priority = None, 0
-        if isinstance(tile, dict) and tile.get("crop") in CROPS:
-            age = day - tile["planted_day"]
-            mature = age >= CROPS[tile["crop"]]["days"] or (final_day and age >= 2)
-            can_water_then_bank = remaining >= 3 + min(distance(p, a) for a in access)
-            if not tile["watered_today"] and (not final_day or can_water_then_bank):
-                op = "WATER"
-                priority = 40_000 if tile["consecutive_unwatered"] else 20_000
-            elif mature and tile["yield_units"] > 0:
-                op, priority = "HARVEST", 30_000
-        elif plant_crop:
-            if tile is None:
-                op, priority = "PLANT", 4_000
-            elif isinstance(tile, dict) and tile.get("kind") == "WEED":
-                op, priority = "DIG", 3_000
-        if op:
-            tasks.append({"position": p, "op": op, "priority": priority, "owner": None})
-    for worker, p in enumerate(positions[:n]):
-        if sum(inventories[worker].values()):
-            target = min(access, key=lambda a: (distance(p, a), a))
-            urgent = remaining <= distance(p, target) + 2
-            tasks.append(
-                {
-                    "position": target,
-                    "op": "DEPOSIT",
-                    "owner": worker,
-                    "priority": 100_000 if urgent else 8_000,
-                }
+    demand = {c: tpd / max(1, cfg.get("townCenterSellInterval", 24)) for c in MARKET}
+    demand["FERTILIZER"] = 0
+    for shop in obs["town"].get("unlocked_shops", []):
+        products = SHOP_PRODUCTS.get(shop, [])
+        for c in products:
+            demand[c] += (
+                tpd / max(1, cfg.get("townShopSellInterval", 4)) * (2 if len(products) == 1 else 1)
             )
-    weights = []
-    for worker, p in enumerate(positions[:n]):
-        carried = sum(inventories[worker].values())
-        return_distance = min(distance(p, a) for a in access)
-        must_return = carried > 0 and remaining <= return_distance + 2
-        row = []
-        for task in tasks:
-            target, op = task["position"], task["op"]
-            travel = distance(p, target)
-            feasible = task["owner"] in (None, worker)
-            if must_return and op != "DEPOSIT":
-                feasible = False
-            if travel + (2 if op == "PLANT" else 1) > min(today, remaining):
-                feasible = False
-            if op in ("HARVEST", "WATER") and final_day:
-                bank_time = (
-                    travel + (3 if op == "WATER" else 2) + min(distance(target, a) for a in access)
-                )
-                feasible = feasible and bank_time <= remaining
-            if op == "DEPOSIT" and sum(private["shed"].values()) >= cfg.get("shedCapacity", 100):
-                feasible = False
-            row.append(task["priority"] - 100 * travel if feasible else None)
-        weights.append(row)
-    planting_budget = min(seeds, economics["lots"].get(plant_crop, 0))
-    chosen = allocator(weights, [t["op"] == "PLANT" for t in tasks], planting_budget)
-    actions = [["PASS"] for _ in positions]
-    explanation = []
-    room = max(0, cfg.get("shedCapacity", 100) - sum(private["shed"].values()))
-    stock = {c: private["shed"].get(c, 0) for c in CROPS}
-    for worker, task_index in enumerate(chosen):
-        if task_index < 0:
-            explanation.append(
-                {"worker": worker, "task": None, "score": 0, "action": actions[worker]}
-            )
+    return demand
+
+
+def animal_output(tile, day, final_day):
+    """Daily saleable units under daily feeding/care/collection, without new animals."""
+    data = ANIMALS[tile["animal"]]
+    output = []
+    pending = tile.get("pending_care_bonus", 0)
+    held = tile.get("yield_units", 0)
+    for date in range(day, final_day + 1):
+        # Installation may occur tomorrow; there is no output before placement.
+        if date < tile["placed_day"]:
+            output.append((0, 0))
             continue
-        task = tasks[task_index]
-        op, target = task["op"], task["position"]
-        if positions[worker] != target:
-            actions[worker] = move_toward(positions[worker], target)
-        elif op == "PLANT":
-            actions[worker] = ["PLANT", plant_crop]
-        elif op == "DEPOSIT":
-            inventory = inventories[worker]
-            carried = sum(inventory.values())
-            if carried <= room:
-                # DROP is safe only after reserving room for this entire inventory.
-                actions[worker] = ["DROP"]
-                for c in CROPS:
-                    stock[c] += inventory.get(c, 0)
-                room -= carried
-            elif room:
-                c = max(
-                    (c for c in CROPS if inventory.get(c, 0)),
-                    key=lambda c: obs["market"]["prices"][c],
-                )
-                amount = min(room, inventory[c])
-                actions[worker] = ["PLACE", c, amount]
-                room -= amount
-                stock[c] += amount
+        if date == day:
+            output.append((held, int(tile.get("fertilizer_available", False))))
+        elif date == tile["placed_day"]:
+            output.append((0, 0))
         else:
-            actions[worker] = [op]
-        explanation.append(
+            age = date - tile["placed_day"]
+            production = (
+                age >= data["first_yield_day"]
+                and (age - data["first_yield_day"]) % data["interval"] == 0
+            )
+            units = min(data["max_held"], 1 + pending) if production else 0
+            if production:
+                pending = 0
+            output.append((units, 1))
+            # Production uses the previous pending bonus, then yesterday's care
+            # is stored. The observed tile already includes earlier care.
+            if date - 1 < final_day - 1:
+                pending += 1
+    return output
+
+
+def livestock_value(obs, cfg, params, extra=None):
+    """Projected own terminal receipts less feed and daily wages; not a game oracle.
+
+    Prices follow daily aggregate flows of visible herds. Rival future investment,
+    crop replenishment, and future shop unlocks are not observable and are omitted.
+    """
+    day = obs["day"]
+    final_day = (cfg.get("episodeSteps", 720) - 2) // cfg.get("turnsPerDay", 24)
+    horizon = final_day - day + 1
+    groups = [[], []]
+    for side, farm in enumerate(obs["farms"]):
+        groups[side] = [
+            t for row in farm["tiles"] for t in row if isinstance(t, dict) and "animal" in t
+        ]
+    own = obs["player"]
+    if extra:
+        groups[own].append({"animal": extra, "placed_day": day + 1})
+    flows = [[{} for _ in range(horizon)] for _ in range(2)]
+    for side, group in enumerate(groups):
+        for tile in group:
+            product = ANIMALS[tile["animal"]]["product"]
+            for offset, (units, fertilizer) in enumerate(animal_output(tile, day, final_day)):
+                flow = flows[side][offset]
+                flow[product] = flow.get(product, 0) + units
+                flow["FERTILIZER"] = flow.get("FERTILIZER", 0) + fertilizer
+    inventory = dict(obs["market"]["inventory"])
+    demand = observed_demand(obs, cfg)
+    receipts = feed_cost = 0.0
+    daily = []
+    for offset in range(horizon):
+        date = day + offset
+        for c in inventory:
+            inventory[c] -= demand[c]
+        counts = [sum(t["placed_day"] <= date for t in group) for group in groups]
+        if date < final_day:
+            # Buyers pay the post-buy price. Midpoint approximates simultaneous rivals.
+            for index in range(counts[own]):
+                feed_cost += price_at(
+                    "WHEAT", inventory["WHEAT"] - counts[1 - own] / 2 - index - 1, params
+                )
+            inventory["WHEAT"] -= sum(counts)
+        today = 0
+        for c in ("EGG", "MILK", "WOOL", "FERTILIZER"):
+            ours = flows[own][offset].get(c, 0)
+            rival = flows[1 - own][offset].get(c, 0)
+            today += batch_revenue(c, inventory[c] + rival / 2, ours, params)
+            for _ in range(ours + rival):
+                inventory[c] += int(price_at(c, inventory[c], params) > 1)
+        receipts += today
+        daily.append(today)
+    wage = sum(
+        hire_cost(i, cfg.get("farmHandCostMult", 1)) for i in range(max(0, len(groups[own]) - 1))
+    )
+    wages = wage * horizon
+    return {
+        "receipts": receipts,
+        "feed_cost": feed_cost,
+        "wages": wages,
+        "operating_value": receipts - feed_cost - wages,
+        "daily_receipts": daily,
+    }
+
+
+def investment_plan(obs, cfg, params, allowed, herd_limit):
+    """Compare no purchase with one indivisible animal, retaining feed/worker liquidity."""
+    farm, private = obs["farms"][obs["player"]], obs["private"]
+    live = [t for row in farm["tiles"] for t in row if isinstance(t, dict) and "animal" in t]
+    pending = sum(private["shed"].get(a, 0) for a in ANIMALS) + sum(
+        inv.get(a, 0) for inv in private["inventories"] for a in ANIMALS
+    )
+    final_day = (cfg.get("episodeSteps", 720) - 2) // cfg.get("turnsPerDay", 24)
+    # One pending installation is an explicit work-in-progress limit.
+    if pending or len(live) >= herd_limit or obs["hour"] > 6 or final_day - obs["day"] < 4:
+        return {"animal": None, "alternatives": [], "live_animals": len(live), "pending": pending}
+    baseline = livestock_value(obs, cfg, params)
+    alternatives = []
+    count = len(live) + 1
+    wages = sum(hire_cost(i, cfg.get("farmHandCostMult", 1)) for i in range(count - 1))
+    # Three days at a stress feed quote plus daily wages; held wheat remains available.
+    feed_quote = price_at("WHEAT", obs["market"]["inventory"]["WHEAT"] - 3 * count, params)
+    reserve = 3 * (count * feed_quote + wages)
+    for animal in allowed:
+        forecast = livestock_value(obs, cfg, params, animal)
+        cost = ANIMALS[animal]["cost"]
+        margin = forecast["operating_value"] - baseline["operating_value"] - cost
+        alternatives.append(
             {
-                "worker": worker,
-                "task": task,
-                "score": weights[worker][task_index],
-                "action": actions[worker],
+                "animal": animal,
+                "purchase_cost": cost,
+                "reserve": reserve,
+                "affordable": farm["money"] >= cost + reserve,
+                "marginal_value": margin,
+                "projection": forecast,
             }
         )
-    order_limit = max(1, cfg.get("maxMarketOrdersPerTurn", 10))
-    market = [["SELL", c, stock[c]] for c in CROPS if stock[c]][:order_limit]
-    market.extend(hires[: max(0, order_limit - len(market))])
-    if plant_crop and len(market) < order_limit and today >= 4:
-        wanted = min(economics["lots"][plant_crop], n + len(hires)) - seeds
-        cash = farm["money"] - economics["hire_cost"]
-        amount = min(wanted, int(cash // CROPS[plant_crop]["seed"]))
-        if amount > 0:
-            market.append(["BUY_SEED", plant_crop, amount])
+    feasible = [a for a in alternatives if a["affordable"] and a["marginal_value"] > 0]
+    best = max(feasible, key=lambda a: a["marginal_value"], default=None)
+    return {
+        "animal": best["animal"] if best else None,
+        "alternatives": alternatives,
+        "baseline": baseline,
+        "live_animals": len(live),
+        "pending": pending,
+    }
+
+
+def plan_turn(obs, configuration=None, allowed_animals=("COW", "SHEEP"), herd_limit=HERD_LIMIT):
+    """Assign one short livestock route per existing worker; reserve shared stock/cash."""
+    cfg = configuration or {}
+    farm, private = obs["farms"][obs["player"]], obs["private"]
+    tpd = cfg.get("turnsPerDay", 24)
+    last_step = cfg.get("episodeSteps", 720) - 2
+    remaining = last_step - obs.get("step", obs["day"] * tpd + obs["hour"]) + 1
+    final_day = last_step // tpd
+    terminal_day = obs["day"] == final_day
+    params = {c: dict(p) for c, p in MARKET.items()}
+    for c in params:
+        params[c].update(cfg.get("marketParams", {}).get(c, {}))
+        params[c].update(obs["market"].get("params", {}).get(c, {}))
+    half = len(farm["tiles"]) // 2
+    access = [(x, y) for x in (half - 1, half) for y in (half - 1, half)]
+    sites = sorted(
+        [(x, y) for y in range(half) for x in range(half)],
+        key=lambda p: (distance(p, access[0]), p),
+    )[:herd_limit]
+    live = [
+        p
+        for p in sites
+        if isinstance(farm["tiles"][p[1]][p[0]], dict) and "animal" in farm["tiles"][p[1]][p[0]]
+    ]
+    positions = [tuple(p) for p in [farm["farmer"], *farm["hands"]]]
+    inventories = private["inventories"]
+    stock = dict(private["shed"])
+    room = max(0, cfg.get("shedCapacity", 100) - sum(stock.values()))
+    investment = investment_plan(obs, cfg, params, allowed_animals, len(sites))
+    pending_type = next(
+        (a for a in ANIMALS if stock.get(a, 0) or any(inv.get(a, 0) for inv in inventories)), None
+    )
+    new_type = pending_type or investment["animal"]
+    build_site = next((p for p in sites if p not in live), None) if new_type else None
+    assignments = list(live) + ([build_site] if build_site else [])
+    # Existing animal carriers retain the installation task if workforce order changes.
+    carrier = next(
+        (i for i, inv in enumerate(inventories) if new_type and inv.get(new_type, 0)), None
+    )
+    if carrier is not None and carrier < len(assignments) and build_site:
+        j = len(assignments) - 1
+        assignments[carrier], assignments[j] = assignments[j], assignments[carrier]
+    actions = [["PASS"] for _ in positions]
+    explanation = []
+    for i, p in enumerate(positions):
+        inv = inventories[i]
+        target = assignments[i] if i < len(assignments) else None
+        shed = min(access, key=lambda a: (distance(p, a), a))
+        goods = [c for c in MARKET if c != "WHEAT" and inv.get(c, 0)]
+        return_now = terminal_day and remaining <= distance(p, shed) + 2
+        if return_now or target is None:
+            if sum(inv.values()):
+                actions[i] = move_toward(p, shed) if p != shed else ["DROP"]
+        else:
+            tile = farm["tiles"][target[1]][target[0]]
+            animal = tile.get("animal") if isinstance(tile, dict) else None
+            installing = target == build_site
+            need_food = bool(animal and not tile["fed_today"] and not terminal_day)
+            serviced = (
+                animal
+                and not need_food
+                and (tile["cared_today"] or obs["day"] >= final_day - 1)
+                and not tile["fertilizer_available"]
+                and not tile["yield_units"]
+            )
+            if serviced and goods:
+                actions[i] = move_toward(p, shed) if p != shed else ["DROP"]
+            elif need_food and inv.get("WHEAT", 0) == 0:
+                if p != shed:
+                    actions[i] = move_toward(p, shed)
+                elif stock.get("WHEAT", 0):
+                    actions[i] = ["PICKUP", "WHEAT", 1]
+                    stock["WHEAT"] -= 1
+            elif installing and not inv.get(new_type, 0):
+                if p != shed:
+                    actions[i] = move_toward(p, shed)
+                elif stock.get(new_type, 0):
+                    actions[i] = ["PICKUP", new_type, 1]
+                    stock[new_type] -= 1
+            elif p != target:
+                actions[i] = move_toward(p, target)
+            elif installing:
+                if tile is None:
+                    actions[i] = ["BUILD_" + ANIMALS[new_type]["structure"]]
+                elif tile.get("kind") != ANIMALS[new_type]["structure"]:
+                    actions[i] = ["DIG"]
+                else:
+                    actions[i] = ["PLACE", new_type]
+            elif need_food:
+                actions[i] = ["FEED"]
+            elif not tile["cared_today"] and obs["day"] < final_day - 1:
+                actions[i] = ["CARE"]
+            elif tile["fertilizer_available"]:
+                actions[i] = ["COLLECT_FERTILIZER"]
+            elif tile["yield_units"]:
+                actions[i] = ["HARVEST"]
+            elif goods:
+                actions[i] = move_toward(p, shed) if p != shed else ["DROP"]
+        # Deposit/pickup ledger is applied in the same worker order as the engine.
+        if actions[i][0] == "PICKUP":
+            room += actions[i][2]
+        if actions[i][0] == "DROP":
+            if sum(inv.values()) <= room:
+                for c, n in inv.items():
+                    stock[c] = stock.get(c, 0) + n
+                room -= sum(inv.values())
+            else:
+                c = max(goods or list(inv), key=lambda c: params.get(c, {}).get("base", 0))
+                amount = min(room, inv[c])
+                actions[i] = ["PLACE", c, amount] if amount else ["PASS"]
+                stock[c] = stock.get(c, 0) + amount
+                room -= amount
+        explanation.append({"worker": i, "station": target, "action": actions[i]})
+    limit = max(1, cfg.get("maxMarketOrdersPerTurn", 10))
+    market = [["SELL", c, n] for c, n in stock.items() if c in MARKET and c != "WHEAT" and n]
+    if terminal_day and stock.get("WHEAT", 0):
+        market.append(["SELL", "WHEAT", stock["WHEAT"]])
+    market = market[:limit]
+    cash = farm["money"]
+    # Current needs plus one day of stock smooth daily pickup timing.
+    unfed = sum(not farm["tiles"][y][x]["fed_today"] for x, y in live)
+    food_goal = unfed + len(assignments) if not terminal_day else 0
+    held_food = sum(inv.get("WHEAT", 0) for inv in inventories)
+    needed = max(0, food_goal - stock.get("WHEAT", 0) - held_food)
+    if needed and len(market) < limit:
+        quantity = 0
+        # Reserve a conservative 2x quote against simultaneous rival purchases.
+        quote = 2 * price_at("WHEAT", obs["market"]["inventory"]["WHEAT"] - needed - 20, params)
+        quantity = min(needed, int(cash // max(1, quote)), room)
+        if quantity:
+            market.append(["BUY_PRODUCT", "WHEAT", quantity])
+            cash -= quantity * quote
+            room -= quantity
+    chosen = investment["animal"]
+    if chosen and cash >= ANIMALS[chosen]["cost"] and room and len(market) < limit:
+        market.append(["BUY_ANIMAL", chosen, 1])
+        cash -= ANIMALS[chosen]["cost"]
+        room -= 1
+    target_hands = max(0, len(assignments) - 1)
+    if obs["hour"] <= 6:
+        for index in range(len(farm["hands"]), target_hands):
+            cost = hire_cost(
+                farm["hires_today"] + index - len(farm["hands"]), cfg.get("farmHandCostMult", 1)
+            )
+            if cost > cash or len(market) >= limit:
+                break
+            market.append(["HIRE"])
+            cash -= cost
     return {"farmer": actions[0], "hands": actions[1:], "market": market}, {
-        "step": step,
-        "plant_crop": plant_crop,
-        "seeds_available": seeds,
-        "seeds_used_now": sum(a[0] == "PLANT" for a in actions),
+        "step": obs.get("step"),
+        "investment": investment,
         "workers": explanation,
-        "planned_hires": len(hires),
-        "assignment_score": sum(x["score"] for x in explanation),
-        "economics": economics,
-        "policy": "Approximate crop/labor forecasts; assignment scores are not LP dual prices.",
+        "feed_target": food_goal,
+        "cash_reserved_after_orders": cash,
+        "policy": "Marginal projected cash with feed liquidity; forecasts are not LP dual prices.",
     }
 
 

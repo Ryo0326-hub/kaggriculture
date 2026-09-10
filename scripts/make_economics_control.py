@@ -22,7 +22,7 @@ def build(source, output, fixed_hands=False, wheat_only=False, optimistic_prices
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("main.py"))
+    parser.add_argument("--source", type=Path, default=Path("baselines/step_3.py"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--fixed-hands", action="store_true")
     parser.add_argument("--wheat-only", action="store_true")
