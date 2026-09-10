@@ -4,6 +4,8 @@ Prepared September 10, 2026. Status: implementation proposal, not a new agent or
 
 **Implementation checkpoint, September 10:** [Step 5](STEP_5_RESULTS.md) implements shared livestock maintenance routes and protects scheduled production deliveries. An installed-herd experiment isolates scheduling, followed by ordinary full-season evaluation with the investment rule unchanged. This establishes one part of the proposal below. Mixed crops, expanded land, and new opponent-supply forecasts remain future work. No AMD droplet was needed for this checkpoint; the local runner now supports independent CPU processes.
 
+**Subsequent checkpoint, September 10:** Step 5 passed server validation. [The awarse audit](STEP_5_SERVER_ANALYSIS.md) shows that our low wage bill and cash lead did not offset the rival's larger crop/livestock pipeline. [Step 6](STEP_6_RESULTS.md) implements bounded wheat/melon/strawberry commitments, input opportunity costs, supporting hires, and crop deadlines. It won 251 of 300 fresh local games, including all 60 against Step 5, but lost 49 of 60 against the melon-only crop control. Investigate planting dates, waiting, and crop sequences before adding land. The proposal below remains the longer-term direction; land expansion, larger joint routing models, and richer rival forecasts are not yet implemented. Step 6 is locally prepared and has not been uploaded.
+
 ## Objective and evidence
 
 Build a self-contained agent that improves its probability of winning against a broad field, including opponents with the strengths observed in Otter Vibe and SpaTaro. Do not optimize for a particular replay's coin total or the current opponent's name.
@@ -229,9 +231,9 @@ A useful three-hour session is 30 minutes reviewing evidence, two hours implemen
 
 Keep CO notes per implementation: variables, objective, constraints, connection to LP/IP/duality, approximation, observed decision example, and validation result. Do not label heuristic marginal values as exact dual prices.
 
-## Current release state and sources
+## Release state when this proposal was written, and sources
 
-On this turn's CLI check, the account lists only Step 2 (`56132050`) and Step 3 (`56132659`), both complete. Step 4 remains locally validated and absent from that submission list. Its frozen artifact SHA-256 is `0024dc48be607636775eba055eea8bde54d3c0679e5e851439791b5d6cb741f9`. Preserve it as the local reference. No new strategy is implemented or uploaded by this document.
+The proposal's original CLI check listed only Step 2 (`56132050`) and Step 3 (`56132659`), both complete. Step 4 was locally validated and absent from that submission list. Its frozen artifact SHA-256 is `0024dc48be607636775eba055eea8bde54d3c0679e5e851439791b5d6cb741f9`. This is historical context; the [submission registry](SUBMISSIONS.md) records the later Step 5 upload and Step 6 local release. No upload is performed by this document.
 
 The live competition listing confirms the final deadline as September 30, 2026, 23:59 UTC (19:59 Toronto). Official page content retrieved through the Kaggle CLI confirms five daily submissions, the latest two used for final evaluation, and no external ingress/egress during an episode. Do not consume upload slots for an unvalidated experimental change. Each upload moves the latest-two window.
 

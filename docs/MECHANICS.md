@@ -47,4 +47,10 @@ Step 5 shares maintenance across nearby livestock sites. Walking through locked 
 
 After any environment upgrade, regenerate the lock deliberately, rerun these checks, and compare local configuration with real competition episodes before promoting a strategy.
 
+Step 6 adds engine-backed crop schedules: four wheat units at age four without fertilizer, six melons at age ten with the planned bonus watering, and four one-unit strawberry events at ages 10/12/14/16. Fertilizer lasts three days including its application day; ongoing-crop bonuses depend on the preceding day's watering and active fertilizer. First watering is reserved as part of planting. Full mixed-game tests verify shared seeds, pickups, deposits, fertilizer consumption, legal harvest ages, feeding, and liquidation. Ripe crops can receive dispatch priority only with a budget for returning to livestock work.
+
+An exhausted ongoing crop with zero held output is tracked separately from unplanned plant loss. Its exemption requires reaching the final production age and having no held yield; a test checks that unharvested output lost to decay is still counted as a loss. Workload allowances, receipt haircuts, supply buffers, and crop acreage bounds are policy assumptions, not engine rules. See [Step 6 CO notes](STEP_6_OPTIMIZATION.md).
+
+The subsequently supplied Step 5 self-play and awarse episodes also match this interpreter exactly. Reconstructed runtime observations reproduce every Unicorns action. [Server audit](STEP_5_SERVER_ANALYSIS.md).
+
 Source: [official Kaggriculture implementation](https://github.com/Kaggle/kaggle-environments/tree/master/kaggle_environments/envs/kaggriculture).

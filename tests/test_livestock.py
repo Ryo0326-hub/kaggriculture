@@ -97,8 +97,8 @@ def test_policy_is_pure_and_ignores_evaluation_seed():
 @pytest.fixture(scope="module")
 def games(tmp_path_factory):
     control = tmp_path_factory.mktemp("controls") / "cows.py"
-    build(ROOT / "main.py", control, animal="COW")
-    candidate = str(ROOT / "main.py")
+    build(ROOT / "baselines/step_5.py", control, animal="COW")
+    candidate = str(ROOT / "baselines/step_5.py")
     return [
         run_match(candidate, str(ROOT / "baselines/step_3.py"), 17, 0),
         run_match(candidate, str(control), 43, 1),

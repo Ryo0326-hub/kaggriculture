@@ -64,6 +64,7 @@ def economic_audit(env, seat):
     operations, harvested = Counter(), Counter()
     hired, wages, seed_cost, lost_plants, seed_conflicts, duplicate_targets = 0, 0, 0, 0, 0, 0
     animal_cost, escapes, missed_feed, feed_orders = 0, 0, 0, 0
+    exhausted_crops = 0
     for before, after in zip(env.steps, env.steps[1:]):
         old, new = before[seat].observation, after[seat].observation
         action = after[seat].action
@@ -103,8 +104,15 @@ def economic_audit(env, seat):
             for x, tile in enumerate(tiles):
                 following = new.farms[seat]["tiles"][y][x]
                 if isinstance(tile, dict) and tile.get("kind") == "PLANT":
-                    lost_plants += int(
-                        isinstance(following, dict) and following.get("kind") == "WEED"
+                    became_weed = isinstance(following, dict) and following.get("kind") == "WEED"
+                    lost_plants += int(became_weed)
+                    spec = engine.CROPS[tile["crop"]]
+                    exhausted_crops += int(
+                        became_weed
+                        and spec["ongoing"]
+                        and tile["yield_units"] == 0
+                        and old.day - tile["planted_day"]
+                        >= spec["first_yield_day"] + (spec["max_yield"] - 1) * spec["interval"]
                     )
                 if isinstance(tile, dict) and "animal" in tile:
                     escapes += int(not isinstance(following, dict) or "animal" not in following)
@@ -117,6 +125,8 @@ def economic_audit(env, seat):
         "hire_order_cost": wages,
         "seed_order_cost": seed_cost,
         "plants_lost_to_weeds": lost_plants,
+        "exhausted_crop_expirations": exhausted_crops,
+        "unplanned_crop_losses": lost_plants - exhausted_crops,
         "seed_overrequests": seed_conflicts,
         "duplicate_crop_targets": duplicate_targets,
         "animal_order_cost": animal_cost,

@@ -2,7 +2,7 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 5: implemented and locally validated.** Shared worker routes reduce livestock maintenance costs while individual routes protect scheduled product deliveries. The investment rule retains marginal projected cash, feed liquidity, wages, and market price impact. Steps 2 and 3 passed Kaggle server validation; Step 5 has a prepared local release awaiting upload. [Results and limitations](docs/STEP_5_RESULTS.md) · [CO implementation notes](docs/STEP_5_OPTIMIZATION.md).
+**Step 6: mixed production implemented and locally validated.** Wheat, melons, and strawberries use a bounded area alongside livestock, with committed watering, harvest deadlines, supporting hires, and input opportunity costs. The candidate won 251 of 300 internal validation games, but lost 49 of 60 against the melon specialist. The exact standalone artifact passed local validation and has not been uploaded. Step 5 passed Kaggle server validation; the supplied awarse loss motivated this checkpoint. [Step 6 results and release status](docs/STEP_6_RESULTS.md) · [CO implementation notes](docs/STEP_6_OPTIMIZATION.md) · [Server game analysis](docs/STEP_5_SERVER_ANALYSIS.md).
 
 ## Run locally
 
@@ -13,7 +13,7 @@ uv sync --locked
 uv run pytest -q
 uv run ruff check .
 uv run ruff format --check .
-uv run python evaluate.py --seeds 17 43 --opponents baselines/step_4.py main.py --workers 2 --output artifacts/local-check
+uv run python evaluate.py --seeds 17 43 --opponents baselines/step_5.py main.py --workers 2 --output artifacts/local-check
 ```
 
 Python 3.12 and `kaggle-environments==1.32.7` are pinned. `uv.lock` fixes transitive dependencies. The official simulator brings dependencies for other games; the actual submitted `main.py` uses only the standard library and makes no network calls.
@@ -21,7 +21,7 @@ Python 3.12 and `kaggle-environments==1.32.7` are pinned. `uv.lock` fixes transi
 The match runner loads the actual Python artifact through Kaggle's agent loader, plays every seed in both player positions, and writes:
 
 - `manifest.json`: agent hashes, environment/version/source hashes, resolved configuration, seeds, runner hash, and process concurrency.
-- `matches.csv` / `matches.jsonl`: outcomes, cash, statuses, runtime, and remaining stock. JSONL also includes crop/animal output, hire/seed/animal order costs, feed quantities, idle work, escapes, missed feeding, and resource-conflict diagnostics for both agents.
+- `matches.csv` / `matches.jsonl`: outcomes, cash, statuses, runtime, and remaining stock. JSONL also includes crop/animal output, hire/seed/animal order costs, feed quantities, idle work, escapes, missed feeding, and resource-conflict diagnostics for both agents. Unplanned crop losses are reported separately from expiration of exhausted ongoing crops with no held output.
 - `summary.json`: overall and per-opponent results. Errors are reported separately and are never counted as economic wins.
 - `replay-0001.json` / `logs-0001.json`: the first replay and logs. Use `--replays all` to save every game; error games are always saved.
 
@@ -31,34 +31,36 @@ Choose a new output directory for each experiment; existing directories are not 
 
 ## What the current agent does
 
-The farmer and up to nine hands operate at most ten nearby cow/sheep sites. The unchanged Step 4 investment model compares no purchase, one cow, or one sheep. It projects the visible herds' dated output and price effects, subtracts feed and station-based daily wages, and preserves a three-day operating reserve. Only one animal may be waiting for installation.
+The livestock core operates at most ten nearby cow/sheep sites. Its investment model compares no purchase, one cow, or one sheep using projected herd receipts, feed, wages, and a liquidity reserve. Only one animal may be waiting for installation. Shared routes reduce maintenance labor and producing animals retain dedicated routes where possible.
 
-Step 5 groups maintenance into routes serving several animals, reserves shared feed and deposit space, and hires for the chosen route cover. Producing animals receive individual routes on scheduled production days. Installation and already-paid full station crews use the preserved station executor. The small route-selection model is solved exactly over a bounded menu; its service bounds and delivery protection are conservative policy assumptions. The full game is not solved optimally. Read [the Step 5 notes](docs/STEP_5_OPTIMIZATION.md) for the binary set-partitioning model, economic tradeoffs, and proof limits; [Step 4](docs/STEP_4_OPTIMIZATION.md) explains investment valuation.
+The mixed layer admits at most eight nearby crop plots. It evaluates dated crop receipts, seed costs, estimated extra wages, and work allowances. Released livestock workers service crops; supporting hires address workload and early deadlines. Newborn watering is reserved, and ripe crops may receive priority when the return to livestock service fits. Fertilizer competes with selling it, and homegrown wheat can replace purchased feed. The final action and market queues share inventory, cash, and deposit reservations.
 
-Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_4.py`, along with their notes and tests. Both supplied server validation replays match local resimulation; see [Step 2](docs/benchmarks/step-2-server.json) and [Step 3](docs/benchmarks/step-3-server.json).
+The crop dispatcher and forecasts are bounded heuristics. The livestock route solver is exact only over its small enumerated menu; neither solves the whole game's optimum. Read [Step 6](docs/STEP_6_OPTIMIZATION.md) for the CO model, approximations, and execution constraints, [Step 5](docs/STEP_5_OPTIMIZATION.md) for route set partitioning, and [Step 4](docs/STEP_4_OPTIMIZATION.md) for animal investment.
+
+Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_5.py`. Steps 2, 3, and 5 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) also match the submitted policy's actions on reconstructed runtime observations.
 
 ## Prepare the submission file
 
 ```bash
-uv run python prepare_submission.py --output artifacts/submission-step-5
+uv run python prepare_submission.py --output artifacts/submission-step-6
 ```
 
 This creates `main.py`, `validation.json`, and `validation.log` in a new directory. It checks the **copied file** in full-season self-play using the official loader, in a separate Python process with the repository removed from the import path. The report records its hash, environment, statuses, inventory, and maximum observed decision time. Existing release directories are never overwritten.
 
 **Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. Next, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
 
-## Reproduce and understand Step 5
+## Reproduce and understand Step 6
 
-The [Step 5 results](docs/STEP_5_RESULTS.md) contain the complete paired evaluation commands and frozen hashes. For a quick diagnostic after the local check above:
+The [Step 6 results](docs/STEP_6_RESULTS.md) contain the paired evaluation protocol and frozen hashes. For a quick diagnostic after the local check above:
 
 ```bash
 uv run python explain_turn.py \
   --replay artifacts/local-check/replay-0001.json --state 0 --player 0
-uv run python -m scripts.benchmark_routes --seeds 101 137 \
-  --output artifacts/shared-route-check.json
+uv run python scripts/make_mixed_control.py --no-fertilizer \
+  --output artifacts/controls/no-fertilizer.py
 ```
 
-The explanation checks source and action consistency before reporting investment alternatives and routing decisions. [The saved maintenance-day example](docs/examples/step-5-decision.json) covers five animals with the farmer and one hand. The installed-herd benchmark holds assets fixed to isolate scheduling; its modified starting cash and stock are not standard competition conditions.
+The explanation checks source and action consistency before reporting livestock and crop alternatives, staffing, input retention, and dispatched jobs. `make_mixed_control.py` can restrict the crop menu or area, or disable fertilizer applications. The older installed-herd benchmark in `scripts/benchmark_routes.py` continues to isolate the livestock core; its modified starting assets and cash are not normal competition conditions.
 
 ## Historical Step 4 reproduction
 
@@ -84,7 +86,8 @@ The starting mathematical background is CO250: linear programming, duality, and 
 3. **Production and hiring — complete:** integer lot/workforce enumeration, cash and estimated labor constraints, price-impact valuation, supply stress case, and finite-horizon crop value. Land investment remains future work.
 4. **Competition and capital economics — complete:** audit actual ladder losses, introduce livestock and fertilizer revenue with a liquidity constraint, broaden the pool, and compare against Step 3 on matched fresh games.
 5. **Shared livestock routes — complete:** exact bounded route cover, production-day delivery protection, controlled wage/output comparison, paired fresh-seed evaluation, and isolated artifact validation.
-6. **Mixed production — next:** integrate crop schedules and fertilizer/feed opportunity costs with livestock routes; test land expansion after the joint executor is reliable. See [the revised strategy](docs/REVISED_STRATEGY.md).
+6. **Mixed production — locally validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation. Server validation is pending upload.
+7. **Crop sequencing and scale — next:** compare planting now with waiting, value crop sequences through the season, and investigate the melon-control losses before adding land. Then evaluate larger production bundles and improve rival-supply forecasts. See [the revised strategy](docs/REVISED_STRATEGY.md).
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -93,7 +96,7 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | File | Role |
 | --- | --- |
 | `main.py` | Complete current artifact; `agent(obs, configuration=None)` is the final callable entry point |
-| `baselines/` | Frozen Steps 1–4; Steps 2 and 3 are server validated |
+| `baselines/` | Frozen Steps 1–5; Steps 2, 3, and 5 are server validated |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |
 | `prepare_submission.py` | Copy and validate an isolated, self-contained release |
@@ -101,6 +104,9 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_greedy_ablation.py` | Generate the controlled greedy comparison |
 | `scripts/make_economics_control.py` | Generate matched staffing, crop, and forecast controls |
 | `scripts/make_livestock_control.py` | Generate matched species and herd-size controls |
+| `scripts/make_mixed_control.py` | Generate crop-menu, area, and fertilizer controls |
+| `scripts/audit_replay.py` | Resimulate supplied episodes and reconcile executed transactions |
+| `tests/test_mixed_production.py` | Crop growth, opportunity costs, deadlines, staffing, and full-season resources |
 | `scripts/benchmark_routes.py` | Controlled installed-herd scheduling and actual wage/output accounting |
 | `tests/test_shared_routes.py` | Independent partition oracle, routing resources, and full-season service preservation |
 | `tests/test_parallel_evaluation.py` | Serial/parallel engine consistency and compact result transfer |

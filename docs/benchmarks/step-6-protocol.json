@@ -1,0 +1,59 @@
+{
+  "checkpoint": "Step 6 bounded mixed production",
+  "candidate_sha256": "d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac",
+  "reference_sha256": "70fa2f8a16316bb51fc2ce9eb01b08259fdb83c256359ffc29e847dd459d5816",
+  "seeds": [
+    5003,
+    5009,
+    5011,
+    5021,
+    5023,
+    5039,
+    5051,
+    5059,
+    5077,
+    5081,
+    5087,
+    5099,
+    5101,
+    5107,
+    5113,
+    5119,
+    5147,
+    5153,
+    5167,
+    5171,
+    5179,
+    5189,
+    5197,
+    5209,
+    5227,
+    5231,
+    5233,
+    5237,
+    5261,
+    5273
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": {
+    "baselines/step_5.py": "70fa2f8a16316bb51fc2ce9eb01b08259fdb83c256359ffc29e847dd459d5816",
+    "baselines/step_3.py": "ddd775729432e51be0ecf4462866ca4c75673fb1b55a0b12c0395c40d0a5114a",
+    "artifacts/step-6-controls/strawberries.py": "d839c3cb56654b50ea2c8be77abd67a41019f3de943d204df3cdebc8d233b0a8",
+    "artifacts/step-6-controls/melons.py": "2c380b1bf53ab853b20ac7ca7000a2753756d20481c59e526dce3b4719d789b0",
+    "artifacts/step-6-controls/wheat.py": "5e8b286f14c70f0ace2f7781d96357f309afb4f8b5f96dc024f420097f9167f4"
+  },
+  "workers_per_run": 4,
+  "games_per_policy": 300,
+  "promotion": [
+    "No candidate execution errors, unplanned animal escapes, or missed feeding.",
+    "No final candidate saleable inventory or unused seeds.",
+    "Unplanned crop losses at most 1% of actual planted lots, with loss cases inspected; exhausted ongoing crops without held yield are reported separately.",
+    "Positive paired common-pool score improvement; whole-seed 95% bootstrap interval above zero.",
+    "Investigate any opponent match-score regression greater than 5 percentage points.",
+    "Source frozen before validation. No tuning on these seeds; retire them if source changes."
+  ],
+  "scope": "Related reactive controls broaden product regimes; no actual awarse/Otter/SpaTaro source or medal claim."
+}

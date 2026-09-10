@@ -1,0 +1,177 @@
+{
+  "source_sha256": "d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac",
+  "seed": 5003,
+  "player": 0,
+  "state_index": 52,
+  "day": 2,
+  "hour": 4,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "DROP"
+    ],
+    "hands": [
+      [
+        "FEED"
+      ],
+      [
+        "FEED"
+      ],
+      [
+        "WEST"
+      ],
+      [
+        "BUILD_PASTURE"
+      ]
+    ],
+    "market": [
+      [
+        "SELL",
+        "FERTILIZER",
+        1
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ]
+    ]
+  },
+  "explanation": {
+    "step": 52,
+    "investment": {
+      "animal": null,
+      "alternatives": [],
+      "live_animals": 4,
+      "pending": 1
+    },
+    "workers": [
+      {
+        "worker": 0,
+        "station": [
+          4,
+          4
+        ],
+        "action": [
+          "DROP"
+        ]
+      },
+      {
+        "worker": 1,
+        "station": [
+          3,
+          4
+        ],
+        "action": [
+          "FEED"
+        ]
+      },
+      {
+        "worker": 2,
+        "station": [
+          4,
+          3
+        ],
+        "action": [
+          "FEED"
+        ]
+      },
+      {
+        "worker": 3,
+        "station": [
+          2,
+          4
+        ],
+        "action": [
+          "WEST"
+        ]
+      },
+      {
+        "worker": 4,
+        "station": [
+          3,
+          3
+        ],
+        "action": [
+          "BUILD_PASTURE"
+        ]
+      }
+    ],
+    "feed_target": 8,
+    "cash_reserved_after_orders": 455.0,
+    "policy": "Marginal projected cash with feed liquidity; forecasts are not LP dual prices.",
+    "routing": {
+      "mode": "stations",
+      "reason": "Installation pending or a full station crew is already available.",
+      "target_hands": 4
+    },
+    "mixed": {
+      "active_crops": 0,
+      "crop_limit": 4,
+      "released_workers": [
+        0
+      ],
+      "crop_actions": [],
+      "fertilizer_values": {},
+      "retained_wheat": 5,
+      "retained_fertilizer": 0,
+      "seed_alternatives": [
+        {
+          "crop": "WHEAT",
+          "value": 57.0,
+          "seed_cost": 10,
+          "receipts": 120,
+          "work_allowance": 30,
+          "dated_output": {
+            "7": 4
+          },
+          "lifetime_days": 5,
+          "added_wages": 5
+        },
+        {
+          "crop": "MELON",
+          "value": 1161.8,
+          "seed_cost": 80,
+          "receipts": 1528,
+          "work_allowance": 42,
+          "dated_output": {
+            "13": 6
+          },
+          "lifetime_days": 11,
+          "added_wages": 15
+        },
+        {
+          "crop": "STRAWBERRY",
+          "value": 278.2,
+          "seed_cost": 100,
+          "receipts": 552,
+          "work_allowance": 66,
+          "dated_output": {
+            "13": 1,
+            "15": 1,
+            "17": 1,
+            "19": 1
+          },
+          "lifetime_days": 17,
+          "added_wages": 25
+        }
+      ],
+      "chosen_crop": {
+        "crop": "WHEAT",
+        "value": 57.0,
+        "seed_cost": 10,
+        "receipts": 120,
+        "work_allowance": 30,
+        "dated_output": {
+          "7": 4
+        },
+        "lifetime_days": 5,
+        "added_wages": 5
+      },
+      "cash_reserve": 405,
+      "worker_target": 5,
+      "crop_work_bound": 0,
+      "incremental_hires": 0
+    }
+  }
+}

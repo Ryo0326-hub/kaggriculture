@@ -1,6 +1,6 @@
 # Step 5 results: shared livestock routes
 
-September 10, 2026. **Promoted locally; Kaggle upload and server validation are pending.** The candidate improves the paired internal-pool score while preserving output and reducing wages in the controlled installed-herd experiment. [CO model and implementation notes](STEP_5_OPTIMIZATION.md) · [Machine-readable evidence](benchmarks/step-5.json).
+September 10, 2026. **Historical local release report.** Step 5 was subsequently uploaded as `56148466` and passed server validation; see [the server audit and awarse analysis](STEP_5_SERVER_ANALYSIS.md). The candidate improves the paired internal-pool score while preserving output and reducing wages in the controlled installed-herd experiment. [CO model and implementation notes](STEP_5_OPTIMIZATION.md) · [Machine-readable evidence](benchmarks/step-5.json). The local-release status statements below describe the original checkpoint before that upload.
 
 ## Candidate and experiment boundary
 
@@ -64,7 +64,7 @@ The corrected version protects scheduled product deliveries and retains the orig
 
 ## Reproduce
 
-From the repository root, use new output paths if the originals already exist:
+These historical commands assume the Step 5 checkout, commit `a0a60fe`, and its source hash above. The current `main.py` has progressed to Step 6. Use new output paths if the originals already exist:
 
 ```bash
 uv sync --locked
