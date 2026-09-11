@@ -6,6 +6,8 @@ An optimization-based agent for Kaggle's farming simulation, developed in explic
 
 **Cycle 4 completed without promotion.** The location-aware expansion challenger scored 74.2% versus Cycle 3's 73.3% on its fresh matched pool, with an inconclusive interval and fewer wins against the strongest control. `main.py` remains the exact submitted Cycle 3 file. [Results](docs/CYCLE_4_RESULTS.md) · [CO notes](docs/CYCLE_4_OPTIMIZATION.md).
 
+**Cycle 5 completed without promotion.** The future-demand challenger forecasts investments across eight possible shop sequences. It improved against the strongest local control but tied overall development match score at 66.7%, with lower average cash and regressions against the other controls. Cycle 3 remains the submitted policy; no new upload or fresh evaluation was performed. [Results](docs/CYCLE_5_RESULTS.md) · [Scenario modeling and CO notes](docs/CYCLE_5_OPTIMIZATION.md).
+
 Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`; Cycle 3 is preserved in `baselines/cycle_3.py`. The latest-two pair at September 11, 11:28 UTC is Cycle 3 and Step 8. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
 
 ## Run locally

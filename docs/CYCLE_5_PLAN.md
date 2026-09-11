@@ -1,0 +1,18 @@
+# Cycle 5 — investment under uncertain future shop demand
+
+Recorded before implementation and development games. Hypothesis: holding today's shops fixed until termination misprices long-lived investments. Compare each expansion option with the existing portfolio over the same eight plausible future shop sequences. Preserve submitted Cycle 3 (`47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c`) until a challenger qualifies.
+
+## Single bounded challenger
+
+- Change expansion investment forecasts from Day 3 onward (internal day >= 2). Keep opening purchases, candidate admission, dated physical yields, route feasibility, discrete wage calculation, dispatch, hiring, sale policy and fertilizer/harvest rules unchanged. Recalculate from current public shops each decision.
+- Future unlock dates follow the pinned engine's interval and eight-instance cap. Shops are drawn with replacement from eight types. Use eight deterministic, equally weighted paths, stratified so every future unlock contains each shop type exactly once across paths. Generate independent fixed permutations for successive columns with a private constant sampling seed, unrelated to the game seed. A shop persists after opening; duplicate instances count separately. This is a small quadrature approximation, not exhaustive enumeration or a learned opponent model.
+- Evaluate full dated cash paths, not a price calculated at average demand. Rank the mean of paired option-minus-baseline terminal values. Require the existing 150-coin reserve in every sampled option path and preserve the existing immediate affordability test. Retain the 20% receipts haircut; do not tune risk weights. Report scenario marginal values and downside outcomes without treating them as guarantees.
+- Reuse existing production accounting. Check unchanged constant-demand parity, timing/cap/duplicate-shop mechanics, hidden-seed independence, input stock conservation, shared route costs, and runtime. No future replay information or opponent private state enters the policy. Optimize implementation if necessary without changing policy semantics; freeze after the development screen.
+
+## Experiment and release
+
+Development: seeds 17 and 43, both seats, frozen Cycle 3 / Step 8 / scaled mixed controls, 12 games per policy, two workers, local CPU only. Use matched current-run references. Record win/draw/loss, banked cash, physical output, wages, footprint, input costs, end stock, execution failures and decision time. Investigate changed decisions and at least one strong-control match. Stop and retain Cycle 3 if this single candidate does not improve development match score or introduces unresolved operational/runtime failures; do not tune multiple demand ensembles on the same evidence.
+
+If promising, freeze source and protocol before seeds 9401–9420, both seats, same three opponents and four workers: 120 games per policy. Require a strictly positive paired whole-seed 95% bootstrap score-improvement interval, no aggregate opponent-class score regression and clean operational checks. The related internal controls limit external validity. Matched seeds compare whole policies; they do not fix future shop paths because occupancy affects the engine's random draws.
+
+Only a qualified candidate receives isolated official-loader full-season release validation and local promotion. Run tests, lint and format, write economics/CO notes and commit/push the result even if rejected. No Kaggle upload in this implementation cycle. Used development and evaluation seeds become consumed evidence. Broader staffing and spatial-admission redesigns remain parked; US$0 new spending.

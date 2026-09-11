@@ -6,6 +6,8 @@ Three supplied public games match all 2,157 own source decisions and reproduce e
 
 Cycle 4 is complete **without promotion or upload**. Challenger `a9adaa81f622…` scored 74.2% versus Cycle 3's 73.3%, with an inconclusive whole-seed interval and a strongest-control regression (25/40 versus 28/40 wins). It remains an archived experiment, not a qualified release. `main.py` remains `47c281bfb411…`. [Decision and evidence](CYCLE_4_RESULTS.md).
 
+Cycle 5 is complete **without promotion or upload**. Future-demand challenger `3f2691bf2761…` tied Cycle 3 at 66.7% development match score, with lower mean cash and regressions against two controls. It did not advance to fresh evaluation or isolated release validation. The submitted Cycle 3 artifact remains unchanged, and this cycle did not refresh the server snapshot. [Results](CYCLE_5_RESULTS.md), [scenario and CO notes](CYCLE_5_OPTIMIZATION.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |

@@ -4,6 +4,8 @@ These sources are preserved for reproducibility and further diagnosis. Cycle 2's
 
 Cycle 4's isolated spatial-admission candidate is generated from frozen Cycle 3 by `python -m scripts.make_spatial_control --output NEW_DIRECTORY/main.py`. Only two candidate-menu conditions change; dispatch, forecasts and hiring retain their exact behavior. It **did not qualify for promotion**: its fresh improvement was uncertain and it regressed against the strongest control. Read the [results](../docs/CYCLE_4_RESULTS.md), [plan](../docs/CYCLE_4_PLAN.md) and [CO notes](../docs/CYCLE_4_OPTIMIZATION.md). `main.py` remains Cycle 3.
 
+Cycle 5's future-demand candidate is generated from frozen Cycle 3 by `python -m scripts.make_demand_control --output NEW_DIRECTORY/main.py`. `future_demand.py` supplies eight possible future shop sequences and pairs each expansion forecast with its no-purchase baseline. It **did not advance past development**: overall match score tied while two opponent classes regressed. The source hash is `3f2691bf276175c6ba43d1ecf657fcb49a5a7f21f4f9e53b8ed5971babee3456`. [Results](../docs/CYCLE_5_RESULTS.md), [plan](../docs/CYCLE_5_PLAN.md), [CO notes](../docs/CYCLE_5_OPTIMIZATION.md). No new upload; the helper is bundled by the generator and is not intended as a separate submitted module.
+
 - `staffing_dispatch.py`: first experimental source, with optional open livestock routes and dated crop staffing.
 - `staffing.py`: second experimental source, adding separate staffing forecast controls.
 
