@@ -1,0 +1,282 @@
+[
+  {
+    "source_kind": "local",
+    "source_sha256": "3ff31b336984d72c859af6de031555f9ba816a245e4c41a52122f459afd8af6e",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "recorded_actions_resimulated": true,
+    "state_mismatches": {},
+    "replay_number": 1,
+    "candidate_seat": 0,
+    "strawberry_fertilize_requests": [
+      {
+        "after_water": 35,
+        "before_water": 9
+      },
+      {
+        "before_water": 14
+      }
+    ],
+    "players": [
+      {
+        "seat": 0,
+        "cash": 88897.0,
+        "gross_sales": 114568,
+        "total_expenses": 28671.0,
+        "cash_reconciliation_passed": true,
+        "harvested_or_collected": {
+          "FERTILIZER": 234,
+          "WOOL": 190,
+          "MILK": 87,
+          "MELON": 84,
+          "STRAWBERRY": 175,
+          "WHEAT": 10
+        },
+        "fertilizer_applications": {
+          "STRAWBERRY": 44,
+          "WHEAT": 1
+        },
+        "decayed_units": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "unfed_animal_days": 0,
+        "escapes": [],
+        "explicit_overflow": [],
+        "end_day_overflow": [],
+        "final_shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "final_carried": [
+          {},
+          {},
+          {},
+          {}
+        ],
+        "final_seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      },
+      {
+        "seat": 1,
+        "cash": 79976.0,
+        "gross_sales": 106767,
+        "total_expenses": 29791.0,
+        "cash_reconciliation_passed": true,
+        "harvested_or_collected": {
+          "FERTILIZER": 235,
+          "WOOL": 190,
+          "MILK": 87,
+          "MELON": 84,
+          "STRAWBERRY": 116,
+          "WHEAT": 11
+        },
+        "fertilizer_applications": {
+          "STRAWBERRY": 14,
+          "WHEAT": 2
+        },
+        "decayed_units": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "unfed_animal_days": 0,
+        "escapes": [],
+        "explicit_overflow": [],
+        "end_day_overflow": [],
+        "final_shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "final_carried": [
+          {},
+          {},
+          {},
+          {}
+        ],
+        "final_seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      }
+    ]
+  },
+  {
+    "source_kind": "local",
+    "source_sha256": "444400cb4de2a759353430eada10aab8c2c5d3770c490c6ad0e40318d46ebba5",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "recorded_actions_resimulated": true,
+    "state_mismatches": {},
+    "replay_number": 8,
+    "candidate_seat": 1,
+    "strawberry_fertilize_requests": [
+      {
+        "before_water": 48
+      },
+      {
+        "after_water": 28,
+        "before_water": 14
+      }
+    ],
+    "players": [
+      {
+        "seat": 0,
+        "cash": 119927.0,
+        "gross_sales": 142025,
+        "total_expenses": 25098.0,
+        "cash_reconciliation_passed": true,
+        "harvested_or_collected": {
+          "FERTILIZER": 199,
+          "WHEAT": 391,
+          "WOOL": 102,
+          "MILK": 132,
+          "MELON": 36,
+          "STRAWBERRY": 249
+        },
+        "fertilizer_applications": {
+          "WHEAT": 51,
+          "MELON": 13,
+          "STRAWBERRY": 48
+        },
+        "decayed_units": {
+          "WHEAT": 25,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "unfed_animal_days": 2,
+        "escapes": [],
+        "explicit_overflow": [],
+        "end_day_overflow": [],
+        "final_shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 1,
+          "SHEEP": 0
+        },
+        "final_carried": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "final_seeds": {
+          "WHEAT": 7,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 1,
+          "MELON": 0
+        }
+      },
+      {
+        "seat": 1,
+        "cash": 119074.0,
+        "gross_sales": 144668,
+        "total_expenses": 28594.0,
+        "cash_reconciliation_passed": true,
+        "harvested_or_collected": {
+          "FERTILIZER": 240,
+          "WOOL": 194,
+          "MILK": 93,
+          "MELON": 90,
+          "STRAWBERRY": 166
+        },
+        "fertilizer_applications": {
+          "STRAWBERRY": 42
+        },
+        "decayed_units": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        },
+        "unfed_animal_days": 0,
+        "escapes": [],
+        "explicit_overflow": [],
+        "end_day_overflow": [],
+        "final_shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "final_carried": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "final_seeds": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0
+        }
+      }
+    ]
+  }
+]

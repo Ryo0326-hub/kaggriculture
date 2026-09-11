@@ -1,6 +1,8 @@
 # Submission registry
 
-Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score; `main.py` remains the exact Step 8 artifact. No additional upload or server-validation result is recorded for this cycle. [Evidence and decision](CYCLE_2_RESULTS.md).
+Cycle 3 fertilizer timing is the current locally qualified agent. The ready artifact is `artifacts/submission-cycle-3-fertilizer/main.py`, hash `47c281bfb411…`; `main.py` contains the same bytes. **It has not been uploaded or server validated.** The last recorded latest-two pair is Steps 8/7. A new upload would displace Step 7 if that pair remains unchanged; review the intended pair first. [Qualification and validation evidence](CYCLE_3_RESULTS.md).
+
+Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |
 | --- | --- | --- | --- |
@@ -11,6 +13,7 @@ Cycle 2 staffing experiments completed locally without a release. None of six ca
 | Step 6 | `d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac` | `56149269` | Uploaded September 10; validation episode `107547593` completed at 63,524 per farm, exactly reproduced locally with all 1,438 runtime actions matching the source |
 | Step 7 | `5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41` | `56156207` | Server confirmed; validation `107665260` and supplied ladder episodes reproduce exactly; September 11 public snapshot: 9 wins / 13 losses |
 | Step 8 | `63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72` | `56157664` | Uploaded September 11 at 03:29:35 UTC; validation `107689872` passed, all 1,438 decisions match source; [server audit](benchmarks/step-8-server.json) |
+| Cycle 3 fertilizer | `47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c` | Not uploaded | 104 wins / 120 fresh local games; exact-file isolated self-play passed; [local validation](benchmarks/cycle-3-local-validation.json) |
 
 Step 2's initial displayed rating was 600. Its server validation was self-play, with 13,297 coins per farm and no agent stderr. A local resimulation matched all actions and economic state; [audit and input hashes](benchmarks/step-2-server.json).
 

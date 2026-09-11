@@ -2,9 +2,9 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 8 is server validated; benchmark calibration is implemented.** Kaggle submission `56157664` passed validation with every decision matching the frozen source. The new test opponent exercises a substantially larger productive farm and stronger strawberry supply. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates local results from server evidence, and the [performance-first plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Current latest-two pair: Steps 8 and 7. No new spending on compute.
+**Cycle 3 fertilizer timing is the current local agent; Kaggle upload is pending.** It scored 86.7% versus Step 8's 60.8% on a matched fresh-seed pool, with unchanged investment and hiring rules. The exact file passed isolated full-season validation. Read [results](docs/CYCLE_3_RESULTS.md), [CO notes](docs/CYCLE_3_OPTIMIZATION.md), and a [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
-**Cycle 2 is complete; Step 8 is retained unchanged.** Six staffing/routing/forecast challengers failed to improve the matched development match score. The [results and CO notes](docs/CYCLE_2_RESULTS.md) explain why lower wages and larger farms did not reliably produce more wins. Experimental sources are isolated under `experiments/`; `main.py` remains the exact submitted file. No additional Kaggle upload was made.
+Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`. Its Kaggle submission `56157664` matched the frozen source on every validation decision. The last recorded latest-two pair is Steps 8 and 7. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
 
 ## Run locally
 
@@ -15,7 +15,7 @@ uv sync --locked
 uv run pytest -q
 uv run ruff check .
 uv run ruff format --check .
-uv run python evaluate.py --seeds 17 43 --opponents baselines/step_6.py main.py --workers 2 --output artifacts/local-check
+uv run python evaluate.py --seeds 17 43 --opponents baselines/step_8.py opponents/scaled_mixed.py --workers 2 --output artifacts/local-check
 ```
 
 Python 3.12 and `kaggle-environments==1.32.7` are pinned. `uv.lock` fixes transitive dependencies. The official simulator brings dependencies for other games; the actual submitted `main.py` uses only the standard library and makes no network calls.
@@ -37,6 +37,8 @@ The planner retains twenty joint openings, then compares no purchase, a cow/shee
 
 The dispatcher keeps livestock on bounded shared routes, protects first feeding and newborn watering, and gives released workers nearby crop tasks. Seed placement follows the investment geometry. Small harvest batches share return trips and fertilizer pickups can serve multiple plots. Actual execution can hire a thirteenth total worker for repair; the investment forecast admits at most twelve.
 
+Cycle 3 permits profitable strawberry fertilization after watering, because its bonus is applied overnight. When a worker already carries fertilizer at an urgently dry strawberry, it can fertilize first if both actions fit; a last-hour worker waters instead. Wheat's fertilizer timing remains unchanged because its water bonus is immediate. The investment functions and hiring calculation are unchanged, although improved output can alter later cash and purchases under those rules.
+
 This is an optimization-informed heuristic, not a global farm optimizer or a Nash-equilibrium solver. Crop tours estimate staffing and wages; actual tasks are replanned. Selective maintenance, additional crop species, and advanced sale timing remain future work. Read [Step 8](docs/STEP_8_OPTIMIZATION.md) for assumptions, limits, and CO connections.
 
 Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_8.py`. Steps 2, 3, 5, 6, 7, and 8 have server episodes that reproduce locally. Step 7's [MugaBros loss and Jaikrishna win](docs/STEP_7_SERVER_ANALYSIS.md) also match all 719 of our runtime decisions per episode.
@@ -44,12 +46,14 @@ Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `
 ## Prepare the submission file
 
 ```bash
-uv run python prepare_submission.py --output artifacts/submission-step-8
+uv run python prepare_submission.py --output artifacts/submission-cycle-3
 ```
 
 This creates `main.py`, `validation.json`, and `validation.log` in a new directory. It checks the **copied file** in full-season self-play using the official loader, in a separate Python process with the repository removed from the import path. The report records its hash, environment, statuses, inventory, and maximum observed decision time. Existing release directories are never overwritten.
 
 **Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. For future releases, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
+
+This cycle's prepared file is `artifacts/submission-cycle-3-fertilizer/main.py`, SHA-256 prefix `47c281bfb411`. It has not been uploaded. Source control contains its exact bytes in `main.py`; the generator can reproduce it from `experiments/timing.py` using `--mode fertilizer --bake-default`.
 
 ## Reproduce and understand Step 8
 
@@ -58,11 +62,11 @@ The [Step 8 results](docs/STEP_8_RESULTS.md) record the frozen protocol, hashes,
 ```bash
 uv run python explain_turn.py \
   --replay artifacts/local-check/replay-0001.json --state 0 --player 0
-uv run python scripts/make_expansion_control.py --max-land 1 \
+uv run python scripts/make_expansion_control.py --source baselines/step_8.py --max-land 1 \
   --output artifacts/controls/no-expansion.py
 ```
 
-The explanation verifies both source and recorded action before presenting alternatives. The ablation keeps all other Step 8 decisions while disabling land purchases. `opponents/expanding_mixed.py` is an independent reactive four-animal and expanding-crop control; it is not a copy of private leaderboard code. Historical Step 7 bundle controls remain available through `scripts/make_bundle_control.py --source baselines/step_7.py`.
+The explanation verifies the current source and recorded action before presenting alternatives; `local-check` above uses the current Cycle 3 agent. The explicitly frozen Step 8 ablation keeps its other decisions while disabling land purchases. `opponents/expanding_mixed.py` is an independent reactive four-animal and expanding-crop control; it is not a copy of private leaderboard code. Historical Step 7 bundle controls remain available through `scripts/make_bundle_control.py --source baselines/step_7.py`.
 
 ## Historical Step 4 reproduction
 
@@ -92,7 +96,7 @@ The starting mathematical background is CO250: linear programming, duality, and 
 7. **Joint opening and production bundles — server confirmed:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
 8. **Conditional expansion — server validated:** fund additional land and crop batches with dated cash and spatial work estimates; preserve shared routes, delivery checks, and installation feeding. Add an expanding mixed opponent and a source-matched no-land ablation.
 
-The remaining work is now organized by evidence: server/benchmark calibration (implemented), controlled scheduling and staffing experiments (completed without promotion), then marginal fertilizer/harvest timing and final release gates. See the [active plan](docs/PERFORMANCE_PLAN.md); the original numbered roadmap is historical.
+The remaining work is organized by evidence: server/benchmark calibration (implemented), staffing experiments (rejected), fertilizer/harvest timing (fertilizer-only locally qualified), then server validation and actual ladder evidence. See the [active plan](docs/PERFORMANCE_PLAN.md); the original numbered roadmap is historical.
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -118,6 +122,10 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_staffing_control.py` | Reproduce the six rejected Cycle 2 challengers |
 | `scripts/report_staffing.py` | Validate and archive the complete staffing development screen |
 | `experiments/staffing*.py` | Frozen experimental policy sources; not the submission |
+| `scripts/benchmark_timing.py` | Controlled fertilizer/harvest timing and dated executed accounts |
+| `scripts/make_timing_control.py` | Generate timing ablations and the qualified fertilizer-only artifact |
+| `scripts/report_timing.py` | Archive complete development games and verify the frozen comparison protocol |
+| `experiments/timing.py` | Reproducible timing source with experiment flags disabled by default |
 | `opponents/expanding_mixed.py` | Independent expanding farm control with shared-source dairy variant |
 | `scripts/make_expansion_control.py` | Source-matched land-limit ablation |
 | `opponents/early_crops.py` | Independent twelve-melon opening and crop rotation control |

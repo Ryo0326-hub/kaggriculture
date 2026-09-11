@@ -4,6 +4,8 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
+Current checkpoint: **Cycle 3 fertilizer timing is locally qualified and packaged; upload is pending.** The exact current file is `47c281bfb411…`. Review the intended latest-two pair before uploading, then reconcile server validation and public episodes. [Results](CYCLE_3_RESULTS.md), [CO notes](CYCLE_3_OPTIMIZATION.md).
+
 ## Cycle 1 — server evidence and benchmark calibration
 
 **Implemented.** Upload the exact Step 8 artifact, reconcile its server validation, audit three actual Step 7 losses, add a reactive high-throughput control, and compare frozen Steps 7/8 on matched fresh games. Read [the calibration report](SERVER_AND_BENCHMARK_CALIBRATION.md) and [frozen protocol](benchmarks/calibration-protocol.json) for outcomes and remaining coverage gaps.
@@ -12,7 +14,7 @@ Step 8 and Step 7 now occupy the latest-two submission window. Step 6 remains pr
 
 ## Cycle 2 — measure recoverable scheduling value
 
-**Completed without promotion.** [Cycle 2 results and CO notes](CYCLE_2_RESULTS.md): 36 controlled installed-portfolio games plus 56 standard-start development games. Staffing changes saved wages in some fixtures, but none of six candidates improved the matched Step 8 match score. Forecast variants also exposed one crop loss and seven unused seeds. Keep the submitted `main.py` byte-identical; experimental implementations are isolated under `experiments/`. No fresh validation seeds or new submission slot were used.
+**Completed without promotion.** [Cycle 2 results and CO notes](CYCLE_2_RESULTS.md): 36 controlled installed-portfolio games plus 56 standard-start development games. Staffing changes saved wages in some fixtures, but none of six candidates improved the matched Step 8 match score. Forecast variants also exposed one crop loss and seven unused seeds. The submitted `main.py` was retained at that checkpoint; Step 8 remains preserved in its baseline file. Experimental implementations are isolated under `experiments/`. No fresh validation seeds or new submission slot were used in Cycle 2.
 
 The tested hypothesis: day-aware delivery routes can increase banked output or reduce wages because ordinary nights automatically deposit carried goods and reset worker positions. The final day still needs explicit delivery and sale before termination. Inspection confirmed that Step 8's crop dispatcher already allowed ordinary-night deposit; changes therefore targeted livestock routing and the staffing/forecast assumptions.
 
@@ -24,7 +26,11 @@ The new benchmark provides difficult development cases, not permission to optimi
 
 ## Cycle 3 — production timing and marginal inputs
 
-**Recommended next hypothesis: marginal fertilizer and harvest timing.** Cycle 2's small-farm open routes saved wages but skipped a successful fertilizer application, harvested two fewer strawberries and earned less cash. Keep Step 8's investment and hiring rules fixed initially; prioritize optional fertilizer/harvest jobs by incremental expected receipts after input cost, extra service, maturity and the sale deadline. Measure executed output and sale timing, then test clean candidates on standard starts before freezing a new evaluation pool. The broad staffing/forecast redesign is parked.
+**Implemented; fertilizer-only passed local qualification.** [Cycle 3 results](CYCLE_3_RESULTS.md): 36 installed-portfolio games, 24 normal-start development games and 240 matched fresh games. The selected policy allows profitable strawberry fertilizer after watering and before urgent watering when both actions fit. Step 8's investment functions and hiring calculation remain unchanged. The early-wheat-harvest experiment lost fixture cash and added no new decisions in normal-start games, so the old harvest rule is retained.
+
+On the frozen 20-seed pool, the selected candidate scored 86.7% versus 60.8% for Step 8, with whole-seed 95% improvement interval +20.0 to +32.5 points. It won 24/40 versus Step 8's 13/40 against the stronger control. Both runs were clean on the recorded execution, crop-loss, feeding and terminal-stock diagnostics. The exact file passed isolated full-season validation and is now `main.py`; the submitted Step 8 file remains preserved separately. These are local results, not server or medal evidence. Seeds 9201–9220 are consumed evaluation data and must not be reused as an untouched holdout.
+
+Next, validate the exact artifact on Kaggle and audit real ladder games before changing the policy again. The last recorded latest-two pair is Steps 8/7, so review which proven bot the next upload should retain. The broad staffing/forecast redesign remains parked. Fertilizer valuation is still approximate on crowded farms, where extra supply can reduce prices.
 
 Other candidates remain early wheat/carrot receipts, profitable crop maturity dates, selective maintenance, and response to visible rival supply and shop demand. Test one economic claim at a time. For example, compare an early harvest with waiting after charging lost future yield, tied-up cash, extra service, inventory pressure and expected market prices.
 

@@ -1,0 +1,51 @@
+{
+  "kind": "local isolated official-loader self-play; not Kaggle server validation",
+  "sha256": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c",
+  "bytes": 96757,
+  "python": "3.12.12",
+  "kaggle_environments": "1.32.7",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "configuration": {
+    "seed": null,
+    "episodeSteps": 720,
+    "actTimeout": 1,
+    "runTimeout": 1200,
+    "boardSize": 10,
+    "startingMoney": 3000,
+    "maxMarketOrdersPerTurn": 10,
+    "turnsPerDay": 24,
+    "shedCapacity": 100,
+    "weedSpawnChance": 0.005,
+    "townShopUnlockInterval": 3,
+    "townShopSellInterval": 4,
+    "townCenterSellInterval": 24,
+    "farmHandCostMult": 1,
+    "marketParams": {}
+  },
+  "seed": 505,
+  "recorded_states": 720,
+  "statuses": [
+    "DONE",
+    "DONE"
+  ],
+  "failures": [],
+  "stderr": [],
+  "cash": [
+    59398.0,
+    59300.0
+  ],
+  "unsold_shed_units": [
+    0,
+    0
+  ],
+  "unsold_carried_units": [
+    0,
+    0
+  ],
+  "unused_seeds": [
+    0,
+    0
+  ],
+  "decision_max_seconds": 0.234809,
+  "passed": true
+}

@@ -1,0 +1,79 @@
+{
+  "frozen_at": "2026-09-11T04:34:27.235861+00:00",
+  "candidate": {
+    "id": "main.py@47c281bfb411",
+    "name": "main.py",
+    "kind": "file",
+    "sha256": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c"
+  },
+  "development_candidate": {
+    "id": "fertilizer.py@2f6a673eaa68",
+    "name": "fertilizer.py",
+    "kind": "file",
+    "sha256": "2f6a673eaa68fc98669c52a95fe84769e2f4f1c90407353ad20c575578ad3822"
+  },
+  "candidate_change": "Only expansion_turn default changes from timing=0 to timing=1 for explanation parity; agent explicitly passes timing=1 in both files.",
+  "reference": {
+    "id": "step_8.py@63dbf4381d86",
+    "name": "step_8.py",
+    "kind": "file",
+    "sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72"
+  },
+  "opponents": [
+    {
+      "id": "step_8.py@63dbf4381d86",
+      "name": "step_8.py",
+      "kind": "file",
+      "sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72"
+    },
+    {
+      "id": "scaled_mixed.py@af20c4596a72",
+      "name": "scaled_mixed.py",
+      "kind": "file",
+      "sha256": "af20c4596a72ce4dc81977220a39329146db7ef27d8d7d48cbd45a7799616590"
+    },
+    {
+      "id": "expanding_mixed.py@e909f9dcc72e",
+      "name": "expanding_mixed.py",
+      "kind": "file",
+      "sha256": "e909f9dcc72ee25d35c53083e418557827fb72524206b472c990e6fe3ec557a2"
+    }
+  ],
+  "environment": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "python": "3.12.12",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "runner_sha256": "3d7ec20f4356cf40e994044d162b291876d4fcdbbf93e12fb028f97cb13243ea",
+  "seeds": [
+    9201,
+    9202,
+    9203,
+    9204,
+    9205,
+    9206,
+    9207,
+    9208,
+    9209,
+    9210,
+    9211,
+    9212,
+    9213,
+    9214,
+    9215,
+    9216,
+    9217,
+    9218,
+    9219,
+    9220
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "evaluation_workers": 4,
+  "selection": "Fertilizer-only: direct engine correction, 4/4 against Step 8 in development, 2/4 against scaled control; early harvest lost fixture cash.",
+  "criteria": "Require positive paired whole-seed match-score improvement, inspect every opponent class and reject material operational regressions. No policy changes while evaluating."
+}

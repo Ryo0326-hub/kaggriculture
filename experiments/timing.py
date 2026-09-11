@@ -2311,7 +2311,7 @@ def expansion_investment(obs, cfg, params, commands, market, max_land=3):
     return market, report
 
 
-def expansion_turn(obs, configuration=None, max_land=3, timing=1, investments=True):
+def expansion_turn(obs, configuration=None, max_land=3, timing=0, investments=True):
     return mixed_turn(
         obs,
         configuration,
@@ -2324,4 +2324,4 @@ def expansion_turn(obs, configuration=None, max_land=3, timing=1, investments=Tr
 
 
 def agent(obs, configuration=None):
-    return expansion_turn(obs, configuration, timing=1)[0]
+    return expansion_turn(obs, configuration)[0]

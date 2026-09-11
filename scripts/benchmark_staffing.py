@@ -6,6 +6,7 @@ allowed. These are modified-start fixtures, not standard competition outcomes.
 
 import argparse
 import copy
+import importlib
 import json
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
@@ -62,7 +63,18 @@ def installed_environment(seed, quadrants):
     return env
 
 
-def run_fixture(seed, seat, quadrants, mode, keep_replay=False):
+def run_fixture(
+    seed,
+    seat,
+    quadrants,
+    mode,
+    keep_replay=False,
+    policy_name=None,
+    modes=None,
+    timing_events=False,
+):
+    policy = importlib.import_module(policy_name) if policy_name else main
+    variants = modes if modes is not None else MODES
     env = installed_environment(seed, quadrants)
     initial = copy.deepcopy(env.state)
     traces = [[], []]
@@ -73,7 +85,9 @@ def run_fixture(seed, seat, quadrants, mode, keep_replay=False):
     def choose(obs, cfg):
         side = obs["player"]
         started = perf_counter()
-        action, detail = main.expansion_turn(obs, cfg, investments=False, **MODES[candidates[side]])
+        action, detail = policy.expansion_turn(
+            obs, cfg, investments=False, **variants[candidates[side]]
+        )
         durations[side].append(perf_counter() - started)
         assert not any(o[0] in ("BUY_SEED", "BUY_ANIMAL", "BUY_LAND") for o in action["market"])
         if obs["hour"] <= 6:
@@ -86,7 +100,7 @@ def run_fixture(seed, seat, quadrants, mode, keep_replay=False):
                     "workers_present": len(obs["farms"][side]["hands"]) + 1,
                     "worker_target": mixed["worker_target"],
                     "crop_work_bound": mixed["crop_work_bound"],
-                    "crop_routes": mixed["crop_route_staffing"],
+                    "crop_routes": mixed.get("crop_route_staffing"),
                     "hire_orders": sum(o[0] == "HIRE" for o in action["market"]),
                 }
             )
@@ -174,6 +188,15 @@ def run_fixture(seed, seat, quadrants, mode, keep_replay=False):
                 "staffing_trace": traces[side],
             }
         )
+        if timing_events:
+            players[-1]["timing_events"] = [
+                e
+                for e in units
+                if e.get("crop") and e["changed"] and e["op"] in ("FERTILIZE", "HARVEST", "WATER")
+            ]
+            players[-1]["crop_sales"] = [
+                e for e in events if e["op"] == "SELL" and e["item"] in main.CROPS
+            ]
     report = {
         "seed": seed,
         "candidate_seat": seat,

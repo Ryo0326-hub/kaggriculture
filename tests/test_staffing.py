@@ -1,6 +1,7 @@
 """Dated workforce bounds and ordinary-night/final delivery constraints."""
 
 from copy import deepcopy
+from hashlib import sha256
 from itertools import permutations
 from pathlib import Path
 
@@ -100,8 +101,10 @@ def test_legacy_standard_start_still_matches_frozen_artifact():
         env.step(actions)
 
 
-def test_submission_is_preserved_byte_for_byte():
-    assert Path(submitted.__file__).read_bytes() == Path(step_8.__file__).read_bytes()
+def test_server_validated_step_8_is_preserved_byte_for_byte():
+    assert sha256(Path(step_8.__file__).read_bytes()).hexdigest() == (
+        "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72"
+    )
 
 
 @pytest.mark.parametrize("day", [0, 8, 12, 28, 29])
