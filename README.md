@@ -2,7 +2,7 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 8: conditional expansion complete and locally validated; ready for Kaggle upload.** The agent compares crop batches on owned land with batches paying for the next quadrant, keeps shared livestock routes, and reserves nearby planting sites and delivery capacity. Step 7's new server win and loss both reproduce exactly. On the fresh internal pool, Step 8 won 353/360 games and improved paired match score from 81.4% to 98.1%; this is local evidence, not a leaderboard forecast. [Step 8 results](docs/STEP_8_RESULTS.md) · [CO implementation notes](docs/STEP_8_OPTIMIZATION.md) · [Expansion decision](docs/examples/step-8-expansion.json) · [Step 7 server analysis](docs/STEP_7_SERVER_ANALYSIS.md).
+**Step 8 is server validated; benchmark calibration is implemented.** Kaggle submission `56157664` passed validation with every decision matching the frozen source. The new test opponent exercises a substantially larger productive farm and stronger strawberry supply. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates local results from server evidence, and the [performance-first plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Current latest-two pair: Steps 8 and 7. No new spending on compute.
 
 ## Run locally
 
@@ -37,7 +37,7 @@ The dispatcher keeps livestock on bounded shared routes, protects first feeding 
 
 This is an optimization-informed heuristic, not a global farm optimizer or a Nash-equilibrium solver. Crop tours estimate staffing and wages; actual tasks are replanned. Selective maintenance, additional crop species, and advanced sale timing remain future work. Read [Step 8](docs/STEP_8_OPTIMIZATION.md) for assumptions, limits, and CO connections.
 
-Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_7.py`. Steps 2, 3, 5, 6, and 7 have supplied server episodes that reproduce locally. Step 7's [MugaBros loss and Jaikrishna win](docs/STEP_7_SERVER_ANALYSIS.md) also match all 719 of our runtime decisions per episode.
+Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_8.py`. Steps 2, 3, 5, 6, 7, and 8 have server episodes that reproduce locally. Step 7's [MugaBros loss and Jaikrishna win](docs/STEP_7_SERVER_ANALYSIS.md) also match all 719 of our runtime decisions per episode.
 
 ## Prepare the submission file
 
@@ -47,7 +47,7 @@ uv run python prepare_submission.py --output artifacts/submission-step-8
 
 This creates `main.py`, `validation.json`, and `validation.log` in a new directory. It checks the **copied file** in full-season self-play using the official loader, in a separate Python process with the repository removed from the import path. The report records its hash, environment, statuses, inventory, and maximum observed decision time. Existing release directories are never overwritten.
 
-**Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. Next, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
+**Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. For future releases, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
 
 ## Reproduce and understand Step 8
 
@@ -88,10 +88,9 @@ The starting mathematical background is CO250: linear programming, duality, and 
 5. **Shared livestock routes — complete:** exact bounded route cover, production-day delivery protection, controlled wage/output comparison, paired fresh-seed evaluation, and isolated artifact validation.
 6. **Mixed production — server validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation.
 7. **Joint opening and production bundles — server confirmed:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
-8. **Conditional expansion — locally validated:** fund additional land and crop batches with dated cash and spatial work estimates; preserve shared routes, delivery checks, and installation feeding. Add an expanding mixed opponent and a source-matched no-land ablation.
-9. **Adaptive production and selling — planned:** improve harvest alternatives, waiting, response to visible town/rival supply, and agreement between forecast and actual staffing costs.
-10. **Maintenance and endgame — planned:** compare full service, survival-only maintenance, and retirement by future recoverable cash.
-11. **Final evaluation and release — planned:** freeze candidates, use untouched comparisons and actual ladder evidence, and verify intended final artifacts. Each earlier checkpoint still requires its own tests and release gates.
+8. **Conditional expansion — server validated:** fund additional land and crop batches with dated cash and spatial work estimates; preserve shared routes, delivery checks, and installation feeding. Add an expanding mixed opponent and a source-matched no-land ablation.
+
+The remaining work is now organized by evidence: server/benchmark calibration (implemented), controlled scheduling and staffing experiments (recommended next), then the highest-value production/timing changes and final release gates. See the [active plan](docs/PERFORMANCE_PLAN.md); the original numbered roadmap is historical.
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -100,7 +99,7 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | File | Role |
 | --- | --- |
 | `main.py` | Complete current artifact; `agent(obs, configuration=None)` is the final callable entry point |
-| `baselines/` | Frozen Steps 1–7; Steps 2, 3, 5, 6, and 7 have server evidence |
+| `baselines/` | Frozen Steps 1–8; Steps 2, 3, 5, 6, 7, and 8 have server evidence |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |
 | `scripts/replay_timing.py` | Crop-age, planting-date, and sale-timing evidence from reconciled replay audits |
@@ -111,6 +110,8 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_livestock_control.py` | Generate matched species and herd-size controls |
 | `scripts/make_mixed_control.py` | Generate historical Step 6 crop controls |
 | `scripts/make_bundle_control.py` | Generate Step 7 opening, fertilizer, and crop-area ablations |
+| `opponents/scaled_mixed.py` | Reactive larger-farm stress control; same lineage as expanding_mixed |
+| `scripts/benchmark_profiles.py` | Reconciled production, resale and overnight-work profiles |
 | `opponents/expanding_mixed.py` | Independent expanding farm control with shared-source dairy variant |
 | `scripts/make_expansion_control.py` | Source-matched land-limit ablation |
 | `opponents/early_crops.py` | Independent twelve-melon opening and crop rotation control |

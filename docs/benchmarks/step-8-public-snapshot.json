@@ -1,0 +1,82 @@
+{
+  "queried_at_utc": "2026-09-11T03:43:17.929171+00:00",
+  "submission_id": 56157664,
+  "provenance": "Official KaggleApi.competition_list_episodes; existing KaggleCLI2.2.4 auth",
+  "public_outcomes": {
+    "loss": 1
+  },
+  "public_episodes": [
+    {
+      "episode_id": 107691005,
+      "created_at": "2026-09-11T03:36:55.217Z",
+      "ended_at": "2026-09-11T03:40:52.229Z",
+      "state": "COMPLETED",
+      "outcome": "loss",
+      "our_cash": 80484,
+      "opponent_cash": 102430,
+      "opponent": "Noobykiller16"
+    }
+  ],
+  "selected_for_single_replay_audit": {
+    "episode_id": 107691005,
+    "created_at": "2026-09-11T03:36:55.217Z",
+    "ended_at": "2026-09-11T03:40:52.229Z",
+    "state": "COMPLETED",
+    "outcome": "loss",
+    "our_cash": 80484,
+    "opponent_cash": 102430,
+    "opponent": "Noobykiller16"
+  },
+  "raw_episodes": [
+    {
+      "id": 107691005,
+      "createTime": "2026-09-11T03:36:55.217Z",
+      "endTime": "2026-09-11T03:40:52.229Z",
+      "state": "COMPLETED",
+      "type": "EPISODE_TYPE_PUBLIC",
+      "agents": [
+        {
+          "submissionId": 55521302,
+          "index": 0,
+          "reward": 102430,
+          "state": "EPISODE_AGENT_STATE_UNSPECIFIED",
+          "teamName": "Noobykiller16",
+          "teamId": 16697844
+        },
+        {
+          "submissionId": 56157664,
+          "index": 1,
+          "reward": 80484,
+          "state": "EPISODE_AGENT_STATE_UNSPECIFIED",
+          "teamName": "Unicorns",
+          "teamId": 16862967
+        }
+      ]
+    },
+    {
+      "id": 107689872,
+      "createTime": "2026-09-11T03:29:35.348Z",
+      "endTime": "2026-09-11T03:34:05.799Z",
+      "state": "COMPLETED",
+      "type": "EPISODE_TYPE_VALIDATION",
+      "agents": [
+        {
+          "submissionId": 56157664,
+          "index": 0,
+          "reward": 94876,
+          "state": "EPISODE_AGENT_STATE_UNSPECIFIED",
+          "teamName": "Unicorns",
+          "teamId": 16862967
+        },
+        {
+          "submissionId": 56157664,
+          "index": 1,
+          "reward": 95069,
+          "state": "EPISODE_AGENT_STATE_UNSPECIFIED",
+          "teamName": "Unicorns",
+          "teamId": 16862967
+        }
+      ]
+    }
+  ]
+}

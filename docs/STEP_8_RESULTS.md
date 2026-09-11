@@ -1,5 +1,7 @@
 # Step 8 results: conditional expansion
 
+**Server update, September 11:** uploaded as `56157664`; validation episode `107689872` passed and all 1,438 actions match this source. Maximum server decision time was 0.206756 seconds. Read the [server and benchmark calibration report](SERVER_AND_BENCHMARK_CALIBRATION.md). The original local release record below is preserved.
+
 ## Release status
 
 **Promoted locally and ready for Kaggle upload.** The copied artifact

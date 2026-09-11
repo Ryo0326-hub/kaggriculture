@@ -1,0 +1,115 @@
+{
+  "purpose": "Benchmark calibration of frozen Step8 and Step7; no candidate policy tuning or automatic promotion.",
+  "frozen_at_utc": "2026-09-11T03:40:25.967062+00:00",
+  "candidate": "baselines/step_8.py",
+  "candidate_sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72",
+  "reference": "baselines/step_7.py",
+  "reference_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+  "opponents": {
+    "opponents/scaled_mixed.py": "af20c4596a72ce4dc81977220a39329146db7ef27d8d7d48cbd45a7799616590",
+    "opponents/expanding_mixed.py": "e909f9dcc72ee25d35c53083e418557827fb72524206b472c990e6fe3ec557a2",
+    "artifacts/step-7-pool/delayed-crops.py": "5a259179a705f4eadd63d5b44db0aad85b991ee72ceaa26703ed30956c54f985"
+  },
+  "policy_families": {
+    "expanding_mixed": [
+      "opponents/expanding_mixed.py",
+      "opponents/scaled_mixed.py"
+    ],
+    "early_crops": [
+      "artifacts/step-7-pool/delayed-crops.py"
+    ]
+  },
+  "environment": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "python": "3.12.12",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "runner_sha256": "3d7ec20f4356cf40e994044d162b291876d4fcdbbf93e12fb028f97cb13243ea",
+  "profiler_sha256": "d4f402d25939cb4c3625022715543f7a4a02a8f584b0a11b022b3d8f944c4778",
+  "lock_sha256": "e1422fc921d6a9af234419843b49d115c8b8fd22b485c6dcd9a5f6147d6154ae",
+  "seeds": [
+    9101,
+    9102,
+    9103,
+    9104,
+    9105,
+    9106,
+    9107,
+    9108,
+    9109,
+    9110,
+    9111,
+    9112,
+    9113,
+    9114,
+    9115,
+    9116,
+    9117,
+    9118,
+    9119,
+    9120
+  ],
+  "development_seeds": [
+    17,
+    43,
+    83,
+    137
+  ],
+  "retired_prior_validation_seeds": [
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    9006,
+    9007,
+    9008,
+    9009,
+    9010,
+    9011,
+    9012,
+    9013,
+    9014,
+    9015,
+    9016,
+    9017,
+    9018,
+    9019,
+    9020,
+    9021,
+    9022,
+    9023,
+    9024,
+    9025,
+    9026,
+    9027,
+    9028,
+    9029,
+    9030
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "workers_per_run": 4,
+  "games_per_policy": 120,
+  "readout": [
+    "Match score by opponent and whole-seed paired difference with bootstrap interval.",
+    "Production scale and harvested quantities for both sides; compare new versus old control.",
+    "Execution failures, resource conflicts, crop losses, missed feed, terminal inventory and runtime.",
+    "Audit selected diagnostic replays using exact state reconciliation and distinguish production from resale."
+  ],
+  "coverage_targets": {
+    "new_control_peak_productive_tiles": ">=60",
+    "new_control_strawberries_harvested": ">=200"
+  },
+  "limitations": [
+    "This is development of benchmark coverage, not unbiased medal estimation.",
+    "New and old expanding controls share an implementation lineage, not two independent strategies.",
+    "Selected server losses guide mechanisms only; no replay playback used as a reactive opponent.",
+    "Carrots, tomatoes, geese, adaptive competitor intent and all leader behaviors remain uncovered.",
+    "Any post-readout policy tuning retires these seeds into development data."
+  ]
+}

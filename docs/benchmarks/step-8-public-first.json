@@ -1,0 +1,473 @@
+{
+  "created_at_utc": "2026-09-11T03:44:12.457289+00:00",
+  "episode_id": 107691005,
+  "submission_id": 56157664,
+  "state_mismatches": {},
+  "players": [
+    {
+      "name": "Noobykiller16",
+      "seat": 0,
+      "cash": 102430.0,
+      "gross_sales": 143916,
+      "total_expenses": 44486.0,
+      "cash_by_operation": {
+        "HIRE LABOR": 5791.0,
+        "BUY_ANIMAL COW": 2800,
+        "BUY_ANIMAL SHEEP": 6000,
+        "BUY_SEED WHEAT": 640,
+        "BUY_SEED MELON": 960,
+        "BUY_PRODUCT WHEAT": 17075,
+        "SELL FERTILIZER": 14562,
+        "SELL WHEAT": 7018,
+        "BUY_SEED STRAWBERRY": 4200,
+        "BUY_SEED CARROT": 20,
+        "SELL WOOL": 48345,
+        "BUY_LAND LAND": 7000.0,
+        "SELL MILK": 38442,
+        "SELL MELON": 15039,
+        "SELL STRAWBERRY": 20510
+      },
+      "sales_by_product": {
+        "WHEAT": {
+          "units": 151,
+          "revenue": 7018,
+          "mean_price": 46.47682119205298,
+          "min_price": 31,
+          "max_price": 53,
+          "floor_units": 0
+        },
+        "STRAWBERRY": {
+          "units": 148,
+          "revenue": 20510,
+          "mean_price": 138.5810810810811,
+          "min_price": 32,
+          "max_price": 195,
+          "floor_units": 0
+        },
+        "MELON": {
+          "units": 72,
+          "revenue": 15039,
+          "mean_price": 208.875,
+          "min_price": 133,
+          "max_price": 272,
+          "floor_units": 0
+        },
+        "MILK": {
+          "units": 155,
+          "revenue": 38442,
+          "mean_price": 248.01290322580644,
+          "min_price": 198,
+          "max_price": 287,
+          "floor_units": 0
+        },
+        "WOOL": {
+          "units": 258,
+          "revenue": 48345,
+          "mean_price": 187.38372093023256,
+          "min_price": 55,
+          "max_price": 238,
+          "floor_units": 0
+        },
+        "FERTILIZER": {
+          "units": 334,
+          "revenue": 14562,
+          "mean_price": 43.59880239520958,
+          "min_price": 1,
+          "max_price": 99,
+          "floor_units": 32
+        }
+      },
+      "planted_lots": {
+        "MELON": 12,
+        "WHEAT": 49,
+        "STRAWBERRY": 42
+      },
+      "harvested_or_collected": {
+        "FERTILIZER": 355,
+        "WHEAT": 114,
+        "WOOL": 258,
+        "MILK": 155,
+        "MELON": 72,
+        "STRAWBERRY": 148
+      },
+      "fertilizer_applications": {
+        "MELON": 10,
+        "WHEAT": 11
+      },
+      "peak_assets": {
+        "PASTURE": 5,
+        "MELON": 12,
+        "COW": 6,
+        "SHEEP": 12,
+        "WHEAT": 12,
+        "WEED": 61,
+        "STRAWBERRY": 42
+      },
+      "max_productive_tiles": 70,
+      "peak_hands": 12,
+      "minimum_cash": 0.0,
+      "ineffective_non_pass_ops": {
+        "PLANT": 2,
+        "WATER": 2,
+        "PICKUP": 58,
+        "BUILD_PASTURE": 1,
+        "HARVEST": 215
+      },
+      "unfed_animal_days": 26,
+      "escapes": [
+        {
+          "day": 2,
+          "seat": 0,
+          "animal": "COW"
+        },
+        {
+          "day": 28,
+          "seat": 0,
+          "animal": "SHEEP"
+        },
+        {
+          "day": 28,
+          "seat": 0,
+          "animal": "SHEEP"
+        },
+        {
+          "day": 28,
+          "seat": 0,
+          "animal": "SHEEP"
+        },
+        {
+          "day": 28,
+          "seat": 0,
+          "animal": "SHEEP"
+        }
+      ],
+      "decayed_units": {
+        "WHEAT": 21,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 2,
+        "MELON": 0
+      },
+      "end_day_overflow": [],
+      "explicit_overflow": [],
+      "final_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 0
+      },
+      "final_seeds": {
+        "CARROT": 1,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 15
+      },
+      "productive_worker_days": 302,
+      "multi_animal_worker_days": 163,
+      "mixed_crop_animal_worker_days": 251,
+      "economic_audit": {
+        "unit_actions": {
+          "PASS": 360,
+          "BUILD_PASTURE": 20,
+          "WEST": 1038,
+          "NORTH": 997,
+          "PICKUP": 298,
+          "PLACE": 19,
+          "PLANT": 105,
+          "SOUTH": 818,
+          "EAST": 963,
+          "WATER": 556,
+          "FEED": 355,
+          "CARE": 368,
+          "DROP": 173,
+          "COLLECT_FERTILIZER": 355,
+          "HARVEST": 442,
+          "DIG": 1,
+          "FERTILIZE": 21
+        },
+        "harvested_units": {
+          "WHEAT": 114,
+          "WOOL": 258,
+          "MILK": 155,
+          "MELON": 1362,
+          "STRAWBERRY": 148
+        },
+        "hire_orders": 304,
+        "hire_order_cost": 9129,
+        "seed_order_cost": 21970,
+        "plants_lost_to_weeds": 45,
+        "exhausted_crop_expirations": 32,
+        "unplanned_crop_losses": 13,
+        "seed_overrequests": 0,
+        "duplicate_crop_targets": 4,
+        "animal_order_cost": 8800,
+        "feed_order_units": 787,
+        "animals_escaped": 5,
+        "animal_days_unfed": 26,
+        "land_purchases": 3,
+        "land_spending": 7000,
+        "peak_productive_tiles": 70
+      },
+      "land_purchases": [
+        {
+          "step": 153,
+          "op": "BUY_LAND",
+          "item": "LAND",
+          "quantity": 1,
+          "cash": 1000.0,
+          "day": 7
+        },
+        {
+          "step": 265,
+          "op": "BUY_LAND",
+          "item": "LAND",
+          "quantity": 1,
+          "cash": 2000.0,
+          "day": 12
+        },
+        {
+          "step": 289,
+          "op": "BUY_LAND",
+          "item": "LAND",
+          "quantity": 1,
+          "cash": 4000.0,
+          "day": 13
+        }
+      ]
+    },
+    {
+      "name": "Unicorns",
+      "seat": 1,
+      "cash": 80484.0,
+      "gross_sales": 104472,
+      "total_expenses": 26988.0,
+      "cash_by_operation": {
+        "BUY_SEED MELON": 1280,
+        "BUY_ANIMAL COW": 1200,
+        "BUY_ANIMAL SHEEP": 3500,
+        "BUY_PRODUCT WHEAT": 10398,
+        "HIRE LABOR": 6248.0,
+        "SELL FERTILIZER": 12493,
+        "BUY_SEED STRAWBERRY": 1200,
+        "SELL WOOL": 36770,
+        "SELL MILK": 22514,
+        "SELL MELON": 15944,
+        "BUY_PRODUCT FERTILIZER": 1942,
+        "SELL STRAWBERRY": 11297,
+        "BUY_LAND LAND": 1000.0,
+        "BUY_SEED WHEAT": 220,
+        "SELL WHEAT": 5454
+      },
+      "sales_by_product": {
+        "WHEAT": {
+          "units": 110,
+          "revenue": 5454,
+          "mean_price": 49.58181818181818,
+          "min_price": 45,
+          "max_price": 53,
+          "floor_units": 0
+        },
+        "STRAWBERRY": {
+          "units": 70,
+          "revenue": 11297,
+          "mean_price": 161.38571428571427,
+          "min_price": 45,
+          "max_price": 195,
+          "floor_units": 0
+        },
+        "MELON": {
+          "units": 96,
+          "revenue": 15944,
+          "mean_price": 166.08333333333334,
+          "min_price": 46,
+          "max_price": 250,
+          "floor_units": 0
+        },
+        "MILK": {
+          "units": 93,
+          "revenue": 22514,
+          "mean_price": 242.08602150537635,
+          "min_price": 186,
+          "max_price": 286,
+          "floor_units": 0
+        },
+        "WOOL": {
+          "units": 194,
+          "revenue": 36770,
+          "mean_price": 189.53608247422682,
+          "min_price": 77,
+          "max_price": 238,
+          "floor_units": 0
+        },
+        "FERTILIZER": {
+          "units": 298,
+          "revenue": 12493,
+          "mean_price": 41.922818791946305,
+          "min_price": 1,
+          "max_price": 100,
+          "floor_units": 30
+        }
+      },
+      "planted_lots": {
+        "MELON": 16,
+        "STRAWBERRY": 12,
+        "WHEAT": 22
+      },
+      "harvested_or_collected": {
+        "FERTILIZER": 239,
+        "WOOL": 194,
+        "MILK": 93,
+        "MELON": 96,
+        "STRAWBERRY": 70,
+        "WHEAT": 100
+      },
+      "fertilizer_applications": {
+        "STRAWBERRY": 12,
+        "WHEAT": 6
+      },
+      "peak_assets": {
+        "PASTURE": 1,
+        "COW": 3,
+        "MELON": 8,
+        "SHEEP": 7,
+        "STRAWBERRY": 12,
+        "WEED": 1,
+        "WHEAT": 9
+      },
+      "max_productive_tiles": 37,
+      "peak_hands": 12,
+      "minimum_cash": 205.0,
+      "ineffective_non_pass_ops": {},
+      "unfed_animal_days": 0,
+      "escapes": [],
+      "decayed_units": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "end_day_overflow": [],
+      "explicit_overflow": [],
+      "final_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 0
+      },
+      "final_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "productive_worker_days": 301,
+      "multi_animal_worker_days": 62,
+      "mixed_crop_animal_worker_days": 65,
+      "economic_audit": {
+        "unit_actions": {
+          "PASS": 2886,
+          "PICKUP": 196,
+          "WEST": 930,
+          "BUILD_PASTURE": 10,
+          "NORTH": 763,
+          "PLACE": 10,
+          "FEED": 239,
+          "SOUTH": 402,
+          "CARE": 229,
+          "PLANT": 50,
+          "WATER": 324,
+          "EAST": 729,
+          "COLLECT_FERTILIZER": 239,
+          "DROP": 201,
+          "HARVEST": 159,
+          "DIG": 16,
+          "FERTILIZE": 18
+        },
+        "harvested_units": {
+          "WOOL": 194,
+          "MILK": 93,
+          "MELON": 96,
+          "STRAWBERRY": 70,
+          "WHEAT": 100
+        },
+        "hire_orders": 294,
+        "hire_order_cost": 6248,
+        "seed_order_cost": 2700,
+        "plants_lost_to_weeds": 0,
+        "exhausted_crop_expirations": 0,
+        "unplanned_crop_losses": 0,
+        "seed_overrequests": 0,
+        "duplicate_crop_targets": 0,
+        "animal_order_cost": 4700,
+        "feed_order_units": 249,
+        "animals_escaped": 0,
+        "animal_days_unfed": 0,
+        "land_purchases": 1,
+        "land_spending": 1000,
+        "peak_productive_tiles": 37
+      },
+      "land_purchases": [
+        {
+          "step": 313,
+          "op": "BUY_LAND",
+          "item": "LAND",
+          "quantity": 1,
+          "cash": 1000.0,
+          "day": 14
+        }
+      ]
+    }
+  ],
+  "source_identity_and_runtime": {
+    "created_at_utc": "2026-09-11T03:44:00.001776+00:00",
+    "episode_id": 107691005,
+    "submission_id": 56157664,
+    "seat": 1,
+    "source_sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72",
+    "replay_sha256": "45f0d781e5789220a199b4201e6b1edd481deb76c47a7735fcb6d541b9e1cc62",
+    "log_sha256": "335746852b0dde2d3b3b72b99057278bfe2e16e4aa8e20d9a4288982ca62fe81",
+    "decisions": 719,
+    "matched_decisions": 719,
+    "mismatches": [],
+    "server_log_rows": 719,
+    "server_max_duration_seconds": 0.19983,
+    "server_p99_duration_seconds": 0.149003,
+    "server_stderr_rows": 0,
+    "server_stdout_rows": 0,
+    "final_statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "final_cash": [
+      102430.0,
+      80484.0
+    ],
+    "opponent_agent_logs": "Official endpoint returned403; not available to this account; no retries or bypass"
+  },
+  "provenance_notes": [
+    "Official Kaggle snapshot at2026-09-11T03:43:17.929171+00:00 showed exactly one public game: this completed loss. No further snapshot was requested.",
+    "Both economic state and cash reconcile exactly under the installed engine.",
+    "Executed transaction and work-hook totals are authoritative. evaluate.economic_audit.harvested_units and hire_order_cost are order-derived estimates and overcount ineffective/unaffordable opponent requests; do not use them as executed production or actual wages.",
+    "Opponent logs were unavailable with403; our seat1 logs were successfully downloaded.",
+    "This is a single matched ladder result, not a general win-rate estimate or a causal test of one policy component."
+  ]
+}
