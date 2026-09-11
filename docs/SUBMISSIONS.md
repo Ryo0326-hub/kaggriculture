@@ -10,6 +10,8 @@ Cycle 5 is complete **without promotion or upload**. Future-demand challenger `3
 
 Cycles 6 and 7 completed **without promotion, release preparation or upload**. The waiting/supply-stress challenger (`6365a19af351…`) scored 38.9% versus 72.2% and exceeded the one-second target. The separate wheat correction (`232a0293ed5a…`) tied 72.2% without improving outcomes. The original Cycle 3 source remains unchanged; no new server status was queried. Fresh seeds 9401–9420 remain unused. [Cycle 6](CYCLE_6_RESULTS.md), [Cycle 7](CYCLE_7_RESULTS.md).
 
+Cycle 8 completed an **offline purchase-continuation diagnostic, with no live-policy change or upload**. Six continuations on two consumed states preserve reactive play and later investment, reproduce both unchanged controls exactly and reconcile all cash accounts. Its next hypothesis is remaining-day feed/labor costs missing from an investment cash forecast. This is not a qualified release or six independent benchmark games. No server snapshot was refreshed, and seeds 9401–9420 remain unused. [Results](CYCLE_8_RESULTS.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |

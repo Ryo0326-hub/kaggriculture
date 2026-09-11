@@ -1,0 +1,65 @@
+{
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "source_sha256": {
+    "artifacts/cycle-6-reference-development/replay-0001.json": "7ef20d6dc965d13f8ab4cd7603578ae18775bea02a06b12ff0f184dedf455988",
+    "artifacts/cycle-6-reference-development/replay-0013.json": "15fa5b9d8724ddbe4c0284597fca347c365d00786a9401d9214654831e7f4e76",
+    "baselines/cycle_3.py": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c",
+    "main.py": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c",
+    "opponents/scaled_mixed.py": "af20c4596a72ce4dc81977220a39329146db7ef27d8d7d48cbd45a7799616590"
+  },
+  "cases": [
+    {
+      "name": "early_wait",
+      "replay": "artifacts/cycle-6-reference-development/replay-0001.json",
+      "observation": 48,
+      "seat": 0,
+      "agents": [
+        "baselines/cycle_3.py",
+        "baselines/cycle_3.py"
+      ],
+      "variants": [
+        {
+          "name": "control"
+        },
+        {
+          "name": "skip_once",
+          "orders": []
+        },
+        {
+          "name": "wait_for_shop",
+          "orders": [],
+          "release": 72
+        }
+      ]
+    },
+    {
+      "name": "late_crop",
+      "replay": "artifacts/cycle-6-reference-development/replay-0013.json",
+      "observation": 409,
+      "seat": 0,
+      "agents": [
+        "baselines/cycle_3.py",
+        "opponents/scaled_mixed.py"
+      ],
+      "variants": [
+        {
+          "name": "control"
+        },
+        {
+          "name": "wheat",
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ]
+        },
+        {
+          "name": "skip_once",
+          "orders": []
+        }
+      ]
+    }
+  ]
+}

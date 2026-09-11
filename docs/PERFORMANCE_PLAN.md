@@ -66,7 +66,17 @@ Cycle 7 then tested only rival wheat conservation in the original expansion fore
 
 Both gates failed; the submitted artifact remains untouched and **9401–9420 remain unused**. Across the two screens there are 54 complete games (two challengers and one shared reference), plus eight completed games from excluded partial engineering runs. These are not 62 independent selection observations.
 
-Next priority: an offline **purchase-continuation calibration** on a small set of already inspected states, including Cycle 7's observation 409. Compare the competing purchases with both sides continuing their reactive policies and with both buy-now and wait alternatives allowed to reinvest later. Measure win/loss and cash margin, not only own cash, and compare realized differences with the forecast's tiny decision margins. Do not give hidden replay state or future RNG information to the live bot. Use this diagnostic to choose one bounded improvement before allocating fresh seeds; do not keep enlarging the failed one-purchase scenario model.
+This led to Cycle 8's offline purchase-continuation calibration below. Do not give hidden replay state or future RNG information to the live bot, or keep enlarging the failed one-purchase scenario model.
+
+## Cycle 8 — purchase continuation and cash calibration
+
+**Completed as an offline diagnostic.** Six continuations from two already inspected seed-17 states allow both sides to react and reinvest. Both unchanged controls reproduce every remaining action and economic state. All twelve player accounts reconcile. [Results](CYCLE_8_RESULTS.md), [CO notes](CYCLE_8_OPTIMIZATION.md), [frozen plan](CYCLE_8_PLAN.md).
+
+Early waiting until the next shop changes a draw to a +5,367 win, but only +687 comes from higher own cash; the rival loses 4,680. A one-turn omission has no terminal effect. Late wheat produces 833 fewer own coins but improves an already winning margin by 520. Both materially changed branches also change later shops through occupancy-dependent RNG. These two selected states cannot establish a general waiting/wheat advantage or qualify a release. Cycle 3 remains protected; no fresh seeds or upload.
+
+The early waiting branch exposes a more concrete error: at observation 144 a sheep purchase forecasts minimum cash 155, while the balance falls to 64 at observation 153. Two extra feed purchases and a repair hire cost 89 after admission; a two-coin initial quote difference explains the remaining gap. The forecast fails to charge all remaining-day obligations before receipts. The farm stays operational, so this is a measured calibration error rather than proof that larger reserves improve wins.
+
+**Next priority: calibrate remaining-day working capital before investment admission.** Compare the forecast and actual feed/repair-labor costs before the next receipts on consumed states. Isolate a correction to those current-day charges while retaining actual dispatch/hiring rules, the candidate menu/ranking and future-demand model. Avoid double-charging already planned inputs or wages and test abundant-cash states for unchanged choices. A bounded challenger must improve the development comparison before using reserved seeds 9401–9420. Do not adopt unconditional waiting or resurrect Cycle 6 based on this single favorable branch.
 
 Other candidates remain early wheat/carrot receipts, profitable crop maturity dates, selective maintenance, and response to visible rival supply and shop demand. Test one economic claim at a time. For example, compare an early harvest with waiting after charging lost future yield, tied-up cash, extra service, inventory pressure and expected market prices.
 
