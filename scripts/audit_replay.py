@@ -281,6 +281,8 @@ def analyze(path, output):
             for order in action.get("market", [])[
                 : replay["configuration"]["maxMarketOrdersPerTurn"]
             ]:
+                if not order:
+                    continue  # The interpreter accepts and ignores empty market orders.
                 key = " ".join(map(str, order[:2]))
                 requests[key] += 1
                 if order[0] == "BUY_PRODUCT" and order[1] not in ("WHEAT", "FERTILIZER"):

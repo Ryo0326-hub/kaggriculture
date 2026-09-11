@@ -12,6 +12,8 @@ Cycle 7 isolates the rival wheat conservation correction with `python -m scripts
 
 Cycle 8 adds `continuation_cases.json`, the pinned inputs and intervention windows for `python -m scripts.benchmark_continuation --cases experiments/continuation_cases.json --output NEW_DIRECTORY`. It reconstructs a prefix and then lets both frozen agents play reactively, including future investment. It verifies an unchanged control before each case's alternatives. `scripts.report_continuation` adds original/corrected forecast comparisons and cash-trough diagnostics. This tool requires the exact archived source replays specified by their hashes; it does not generate a submission file. [Results and reproduction](../docs/CYCLE_8_RESULTS.md), [CO notes](../docs/CYCLE_8_OPTIMIZATION.md).
 
+Cycle 9's `current_day_cash.py` is bundled by `python -m scripts.make_cash_control --output NEW_DIRECTORY/main.py`. Only expansion affordability changes; original profit projections and actual dispatch/hiring stay fixed. The evaluated source is `f789bc00a15fd25056e337ad8cd18a1b279899514685c57a861d5f05a0d5417f`. Better cash calibration did not improve match outcomes, so the candidate is **not promoted**. `scripts.calibrate_cash` reproduces the recorded-state diagnostics; `scripts.report_cash` joins the matched development results and exact regression audits. [Results](../docs/CYCLE_9_RESULTS.md), [CO notes](../docs/CYCLE_9_OPTIMIZATION.md).
+
 - `staffing_dispatch.py`: first experimental source, with optional open livestock routes and dated crop staffing.
 - `staffing.py`: second experimental source, adding separate staffing forecast controls.
 

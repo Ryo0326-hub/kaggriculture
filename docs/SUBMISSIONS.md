@@ -12,6 +12,8 @@ Cycles 6 and 7 completed **without promotion, release preparation or upload**. T
 
 Cycle 8 completed an **offline purchase-continuation diagnostic, with no live-policy change or upload**. Six continuations on two consumed states preserve reactive play and later investment, reproduce both unchanged controls exactly and reconcile all cash accounts. Its next hypothesis is remaining-day feed/labor costs missing from an investment cash forecast. This is not a qualified release or six independent benchmark games. No server snapshot was refreshed, and seeds 9401–9420 remain unused. [Results](CYCLE_8_RESULTS.md).
 
+Cycle 9 completed **without promotion or upload**. Cash-admission challenger `f789bc00a15f…` improves cash calibration but scores 61.1% versus 72.2%, failing development. Cycle 3 remains byte-identical. New supplied public episode 107928511 is a 73,860–122,954 loss to Ace Team; all 719 own decisions match Cycle 3, with no stderr and maximum server decision time 0.302481 seconds. Its replay does not identify a submission ID. No latest-two/rating query or fresh evaluation was performed. [Experiment](CYCLE_9_RESULTS.md), [server analysis](CYCLE_9_SERVER_ANALYSIS.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |
