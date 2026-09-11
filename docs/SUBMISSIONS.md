@@ -8,6 +8,8 @@ Cycle 4 is complete **without promotion or upload**. Challenger `a9adaa81f622…
 
 Cycle 5 is complete **without promotion or upload**. Future-demand challenger `3f2691bf2761…` tied Cycle 3 at 66.7% development match score, with lower mean cash and regressions against two controls. It did not advance to fresh evaluation or isolated release validation. The submitted Cycle 3 artifact remains unchanged, and this cycle did not refresh the server snapshot. [Results](CYCLE_5_RESULTS.md), [scenario and CO notes](CYCLE_5_OPTIMIZATION.md).
 
+Cycles 6 and 7 completed **without promotion, release preparation or upload**. The waiting/supply-stress challenger (`6365a19af351…`) scored 38.9% versus 72.2% and exceeded the one-second target. The separate wheat correction (`232a0293ed5a…`) tied 72.2% without improving outcomes. The original Cycle 3 source remains unchanged; no new server status was queried. Fresh seeds 9401–9420 remain unused. [Cycle 6](CYCLE_6_RESULTS.md), [Cycle 7](CYCLE_7_RESULTS.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |

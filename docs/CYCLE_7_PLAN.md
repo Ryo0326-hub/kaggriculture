@@ -1,0 +1,11 @@
+# Cycle 7 — isolate rival wheat conservation
+
+Recorded before implementing or evaluating this isolated correction. Cycle 6's waiting/scenario policy has already failed its development gate (six direct losses and an observed decision above one second). Preserve it as rejected research; keep submitted Cycle 3 as the incumbent. No Cycle 6 fresh seeds will be consumed.
+
+Cycle 6 exposed a concrete accounting inconsistency: the forecast reduces rival feed purchases by produced wheat, then sells all of that same wheat. Test **only** correcting that double use in Cycle 3's existing expansion forecast. On feeding days, sell `max(wheat_output - visible_herd, 0)` while purchasing `max(visible_herd - wheat_output, 0)`. On the final day, retain sale of all output because the model requires no feed. Keep opening forecasts, own physical production, future demand assumptions, candidate menu/ranking, cash reserve, hiring, dispatch, sales and fertilizer rules unchanged. No scenario tree, waiting rule, or hypothetical rival additions enter this challenger.
+
+This is a new, narrowly stated correctness hypothesis, not selection among weights for the failed waiting policy. Correct accounting still requires a performance gate before replacing the validated bot.
+
+Development: consumed seeds 17/43/9310, both seats, frozen Cycle 3 / Step 8 / scaled mixed, 18 games, two CPU processes. Reuse the just-completed Cycle 3 reference on that identical grid and environment; do not count it twice as independent evidence. Require improved aggregate match score and no unresolved operational/runtime issue before fresh evaluation. Check source isolation, feed/sale conservation, final-day behavior and unchanged behavior when the rival produces no wheat.
+
+If promising, freeze before unused seeds 9401–9420, both seats, same three opponents, four processes: 120 games per policy. Require a positive paired whole-seed 95% score-improvement interval, no aggregate opponent-class regression, clean execution/operational checks and adequate runtime. Then validate the exact standalone artifact in isolated full-season play and prepare an upload command after checking the latest-two submission window. Otherwise retain Cycle 3 and record rejection. No further candidate tuning in this cycle. Local CPU only, US$0 new spending; no automatic Kaggle upload.
