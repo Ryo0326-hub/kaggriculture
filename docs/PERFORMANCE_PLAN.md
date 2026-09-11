@@ -4,7 +4,17 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
-Current checkpoint: **Cycle 11 is complete as a tested experiment, without promotion; retain submitted Cycle 3.** The carrot challenger ties the incumbent at 75.0% development match score, with 745.5 more own coins on average. The full-agent audit exposes fertilizer plans that the urgent watering path does not execute. Next priority is funded, timed carrot fertilizer delivery/application, with ordinary-yield valuation when that sequence is infeasible. [Results](CYCLE_11_RESULTS.md), [CO notes](CYCLE_11_OPTIMIZATION.md), [unit-action reference](ACTIONS.md). Reserved seeds 9401–9420 remain unused. The latest server snapshot remains September 11, 11:28 UTC (Cycle 3 / Step 8); Cycles 5–11 did not refresh it. [Snapshot](benchmarks/cycle-4-submissions-snapshot.json).
+Current checkpoint: **Cycle 12 is packaged for a user-run Kaggle test; Cycle 3 remains the protected submission.** The user stopped local simulations during the reference evaluation and explicitly requested strategy/implementation work with competitive evaluation on Kaggle. The final local comparison is incomplete and is not claimed as a passed gate. [Results and upload command](CYCLE_12_RESULTS.md), [CO notes and implemented non-crop features](CYCLE_12_OPTIMIZATION.md). Seeds 9401–9420 are now consumed evidence. No server rating/latest-two snapshot was refreshed in Cycle 12.
+
+## Active workflow — user direction supersedes earlier simulation gates
+
+- Prioritize mechanics-based competitive ideas, source-matched analysis of supplied server logs, and concrete policy changes. Explain costs, labor/input constraints, marginal value and opponent effects in implementation notes.
+- **Do not launch local full-season matches, tournament grids, parameter sweeps or counterfactual gameplay simulations without a new explicit user request.** The user will upload candidates to Kaggle and provide validation/gameplay logs. Historical protocols below remain evidence records, not instructions to rerun them.
+- Use lightweight syntax, lint, integrity and bounded correctness checks as needed. Default CI performs static checks; full simulation tests are manual opt-in. Do not use the simulator-based submission preparer automatically.
+- Preserve the strongest server-validated source. Package one reproducible candidate, record its hash, push the code/notes, and provide the exact upload command. Describe it as a server-test candidate until validation and games support a stronger claim.
+- Use actual Kaggle outcomes to select the next priority. Investigate goose/egg demand, shared livestock/crop work, profitable land/crew capacity, and market/feed timing when the evidence supports them; do not force every available action or promise a guaranteed winning trick.
+- The original Cycle 12 preregistration is retained unchanged. Its final reference run stopped at 148/160 games; no complete paired fresh result or qualification is claimed.
+
 
 ## Cycle 1 — server evidence and benchmark calibration
 
@@ -94,16 +104,11 @@ A larger farm is useful only when its extra sales repay seeds, land, feed and in
 
 Add competent carrot/tomato/goose and larger livestock scenarios to the benchmark when their behavior is relevant to a challenger. The new mixed control is related to the old mixed control; they do not count as independent algorithm families.
 
-## Selection and release gates — applied every cycle
+## Earlier local selection gates — historical
 
-1. State one hypothesis and its success/failure measurements before coding. Keep the incumbent artifact hash fixed.
-2. Run a bounded development screen and explain the cash and resource differences. Do not spend days tuning a weak result.
-3. Freeze the challenger and relevant controls. Evaluate both policies on the same new seeds, seats and reactive pool. Use whole-seed uncertainty intervals and inspect opponent-specific regressions.
-4. Resolve execution failures and material accidental operational losses. Verify the exact self-contained artifact in isolated full-season play and check server runtime after upload.
-5. Upload a meaningful challenger only after reviewing which incumbent the new upload displaces. Record submission ID, source hash, validation episode, and a timestamped public-game snapshot.
-6. Promote on consistent local and server evidence. A validation win, a starting 600 rating, or one favorable ladder match is insufficient. Preserve rejected experiments and the reason for rejection.
+Cycles 1–12 initially used preregistered local screens and fresh matched evaluations. The user replaced that workflow during Cycle 12 with the active server-first process above. Do not interpret old plans or reproduction commands as authorization for more simulations. Keep rejected experiments, preserve source hashes and distinguish completed evidence from the interrupted final comparison.
 
-Do not buy compute without a new budget decision. Do not switch to end-to-end reinforcement learning or an LLM acting every turn without evidence that it addresses a measured bottleneck better than the current approach.
+No paid compute or automatic Kaggle upload is authorized. The user performs the upload and sends the resulting logs.
 
 ## Time budget and final window
 

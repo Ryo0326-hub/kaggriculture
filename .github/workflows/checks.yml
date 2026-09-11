@@ -1,5 +1,13 @@
 name: Checks
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      simulation_tests:
+        description: Run the full test suite, including local simulation games
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -12,7 +20,13 @@ jobs:
         with:
           version: "0.9.26"
           enable-cache: true
-      - run: uv sync --locked
-      - run: uv run ruff check .
-      - run: uv run ruff format --check .
-      - run: uv run pytest -q
+      - run: uv sync --locked --only-group dev
+      - run: uv run --no-sync ruff check .
+      - run: uv run --no-sync ruff format --check .
+      - name: Check Python syntax without running games
+        run: uv run --no-sync python -m compileall -q main.py baselines experiments scripts tests
+      - name: Full simulation tests (explicit manual opt-in)
+        if: github.event_name == 'workflow_dispatch' && inputs.simulation_tests
+        run: |
+          uv sync --locked
+          uv run --no-sync pytest -q

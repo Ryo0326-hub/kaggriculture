@@ -2,6 +2,8 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
+The strategy already includes cows/sheep, feeding and care, milk/wool production, fertilizer collection and use, conditional land expansion, and trading with shared market prices and town demand. Egg-producing geese are modeled but not currently purchased. Recent crop experiments improve one part of this combined farm strategy. [Implemented features and remaining work](docs/CYCLE_12_OPTIMIZATION.md#what-is-already-in-the-submitted-agent).
+
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
 **Cycle 4 completed without promotion.** The location-aware expansion challenger scored 74.2% versus Cycle 3's 73.3% on its fresh matched pool, with an inconclusive interval and fewer wins against the strongest control. `main.py` remains the exact submitted Cycle 3 file. [Results](docs/CYCLE_4_RESULTS.md) · [CO notes](docs/CYCLE_4_OPTIMIZATION.md).
@@ -18,7 +20,11 @@ An optimization-based agent for Kaggle's farming simulation, developed in explic
 
 **Cycle 11 completed without promotion.** Carrot production after visible shop demand ties Cycle 3 at 75.0% development match score, with 745.5 more average coins. Exact audits expose a fertilizer forecast that urgent carrot work does not execute, making input delivery/application the next priority. Cycle 3 stays unchanged. [Results](docs/CYCLE_11_RESULTS.md) · [CO notes](docs/CYCLE_11_OPTIMIZATION.md) · [All unit actions explained](docs/ACTIONS.md).
 
-Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`; Cycle 3 is preserved in `baselines/cycle_3.py`. The latest-two pair at September 11, 11:28 UTC was Cycle 3 and Step 8; Cycles 5–11 did not refresh that snapshot. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
+**Cycle 12 is packaged for a user-run Kaggle test.** Fertilizer now follows explicit worker/input assignments, and future carrot forecasts no longer assume unassigned fertilizer. Development improved to 83.3% versus 75.0%; the user stopped the final local reference run and chose Kaggle-based evaluation, so no final paired qualification is claimed. Cycle 3 stays protected. [Results and upload command](docs/CYCLE_12_RESULTS.md) · [CO notes](docs/CYCLE_12_OPTIMIZATION.md).
+
+**Current workflow:** strategy and implementation informed by server logs; no local match simulations without an explicit request. Default CI runs static checks, with simulation tests available only by manual opt-in.
+
+Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`; Cycle 3 is preserved in `baselines/cycle_3.py`. The latest-two pair at September 11, 11:28 UTC was Cycle 3 and Step 8; Cycles 5–12 did not refresh that snapshot. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
 
 ## Run locally
 

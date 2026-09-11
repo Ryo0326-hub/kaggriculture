@@ -18,6 +18,8 @@ Cycle 10 completed **without promotion, release preparation or upload**. Wheat-o
 
 Cycle 11 completed **without promotion, release preparation or upload**. Carrot challenger `16bb5ba43889…` ties Cycle 3 at 75.0% on its four-control development grid. Higher average cash does not clear the match-score gate, and the audit finds fertilizer forecast/execution inconsistency. All incumbent copies remain unchanged; reserved seeds are unused and no server snapshot was refreshed. [Results](CYCLE_11_RESULTS.md).
 
+Cycle 12 is **packaged for a user-run Kaggle test, with upload/server validation pending**. Candidate `555c312fc2c0…` is at `artifacts/submission-cycle-12-carrot-inputs/main.py`. The user requested stopping local simulations; the fresh reference stopped at 148/160 games, so there is no final paired qualification. Packaging only checked syntax and exact bytes, without another simulation. Cycle 3 remains unchanged in `main.py` and its preserved artifacts. No latest-two snapshot was refreshed; the prior recorded pair is historical. [Results and exact upload command](CYCLE_12_RESULTS.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |
