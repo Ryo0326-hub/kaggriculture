@@ -12,7 +12,9 @@ Step 8 and Step 7 now occupy the latest-two submission window. Step 6 remains pr
 
 ## Cycle 2 — measure recoverable scheduling value
 
-**Recommended next hypothesis:** day-aware delivery routes can increase banked output or reduce wages because ordinary nights automatically deposit carried goods and reset worker positions. The final day still needs explicit delivery and sale before termination.
+**Completed without promotion.** [Cycle 2 results and CO notes](CYCLE_2_RESULTS.md): 36 controlled installed-portfolio games plus 56 standard-start development games. Staffing changes saved wages in some fixtures, but none of six candidates improved the matched Step 8 match score. Forecast variants also exposed one crop loss and seven unused seeds. Keep the submitted `main.py` byte-identical; experimental implementations are isolated under `experiments/`. No fresh validation seeds or new submission slot were used.
+
+The tested hypothesis: day-aware delivery routes can increase banked output or reduce wages because ordinary nights automatically deposit carried goods and reset worker positions. The final day still needs explicit delivery and sale before termination. Inspection confirmed that Step 8's crop dispatcher already allowed ordinary-night deposit; changes therefore targeted livestock routing and the staffing/forecast assumptions.
 
 First run a controlled installed-portfolio experiment. Compare the unchanged dispatcher with one delivery-rule challenger on identical farms, inventory, markets and staffing alternatives. Include one-, two-, and three-quadrant portfolios. Keep investment and sale policy fixed so the experiment identifies dispatch effects. Measure completed maintenance and production, wages, deposit overflow, missed deliveries, and terminal cash. PASS counts alone are not the target.
 
@@ -22,7 +24,9 @@ The new benchmark provides difficult development cases, not permission to optimi
 
 ## Cycle 3 — production timing and marginal inputs
 
-Proceed only after diagnosing Cycle 2. Prioritize the largest remaining cash loss: early wheat/carrot receipts, profitable crop maturity dates, fertilizer application versus sale, selective maintenance, or response to visible rival supply and shop demand. Test one economic claim at a time. For example, compare an early harvest with waiting after charging lost future yield, tied-up cash, extra service, inventory pressure and expected market prices.
+**Recommended next hypothesis: marginal fertilizer and harvest timing.** Cycle 2's small-farm open routes saved wages but skipped a successful fertilizer application, harvested two fewer strawberries and earned less cash. Keep Step 8's investment and hiring rules fixed initially; prioritize optional fertilizer/harvest jobs by incremental expected receipts after input cost, extra service, maturity and the sale deadline. Measure executed output and sale timing, then test clean candidates on standard starts before freezing a new evaluation pool. The broad staffing/forecast redesign is parked.
+
+Other candidates remain early wheat/carrot receipts, profitable crop maturity dates, selective maintenance, and response to visible rival supply and shop demand. Test one economic claim at a time. For example, compare an early harvest with waiting after charging lost future yield, tied-up cash, extra service, inventory pressure and expected market prices.
 
 A larger farm is useful only when its extra sales repay seeds, land, feed and incremental Fibonacci wages before termination. Neither copying an opponent's purchase list nor buying every quadrant is the objective. Gross wheat sales can include bought-and-resold inventory; use physical production and executed net cash flows separately.
 

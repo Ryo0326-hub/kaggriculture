@@ -1,5 +1,7 @@
 # Submission registry
 
+Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score; `main.py` remains the exact Step 8 artifact. No additional upload or server-validation result is recorded for this cycle. [Evidence and decision](CYCLE_2_RESULTS.md).
+
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |
 | --- | --- | --- | --- |
 | Step 2 | `fc50a8154b898f95e6baae8a0f2918fadb77a8cf933753b53ae8df921a9303a3` | `56132050` | Uploaded September 9, 2026; validation episode `107272004` completed |

@@ -4,6 +4,8 @@ An optimization-based agent for Kaggle's farming simulation, developed in explic
 
 **Step 8 is server validated; benchmark calibration is implemented.** Kaggle submission `56157664` passed validation with every decision matching the frozen source. The new test opponent exercises a substantially larger productive farm and stronger strawberry supply. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates local results from server evidence, and the [performance-first plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Current latest-two pair: Steps 8 and 7. No new spending on compute.
 
+**Cycle 2 is complete; Step 8 is retained unchanged.** Six staffing/routing/forecast challengers failed to improve the matched development match score. The [results and CO notes](docs/CYCLE_2_RESULTS.md) explain why lower wages and larger farms did not reliably produce more wins. Experimental sources are isolated under `experiments/`; `main.py` remains the exact submitted file. No additional Kaggle upload was made.
+
 ## Run locally
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
@@ -90,7 +92,7 @@ The starting mathematical background is CO250: linear programming, duality, and 
 7. **Joint opening and production bundles — server confirmed:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
 8. **Conditional expansion — server validated:** fund additional land and crop batches with dated cash and spatial work estimates; preserve shared routes, delivery checks, and installation feeding. Add an expanding mixed opponent and a source-matched no-land ablation.
 
-The remaining work is now organized by evidence: server/benchmark calibration (implemented), controlled scheduling and staffing experiments (recommended next), then the highest-value production/timing changes and final release gates. See the [active plan](docs/PERFORMANCE_PLAN.md); the original numbered roadmap is historical.
+The remaining work is now organized by evidence: server/benchmark calibration (implemented), controlled scheduling and staffing experiments (completed without promotion), then marginal fertilizer/harvest timing and final release gates. See the [active plan](docs/PERFORMANCE_PLAN.md); the original numbered roadmap is historical.
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -112,6 +114,10 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_bundle_control.py` | Generate Step 7 opening, fertilizer, and crop-area ablations |
 | `opponents/scaled_mixed.py` | Reactive larger-farm stress control; same lineage as expanding_mixed |
 | `scripts/benchmark_profiles.py` | Reconciled production, resale and overnight-work profiles |
+| `scripts/benchmark_staffing.py` | Controlled installed portfolios and executed cash/output accounts |
+| `scripts/make_staffing_control.py` | Reproduce the six rejected Cycle 2 challengers |
+| `scripts/report_staffing.py` | Validate and archive the complete staffing development screen |
+| `experiments/staffing*.py` | Frozen experimental policy sources; not the submission |
 | `opponents/expanding_mixed.py` | Independent expanding farm control with shared-source dairy variant |
 | `scripts/make_expansion_control.py` | Source-matched land-limit ablation |
 | `opponents/early_crops.py` | Independent twelve-melon opening and crop rotation control |
