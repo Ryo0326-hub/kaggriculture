@@ -1,0 +1,79 @@
+{
+  "checkpoint": "Step 8 conditional expansion and spatial production economics",
+  "frozen_at": "2026-09-11T02:31:02.553942+00:00",
+  "candidate_sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72",
+  "reference_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+  "runner_sha256": "3d7ec20f4356cf40e994044d162b291876d4fcdbbf93e12fb028f97cb13243ea",
+  "lock_sha256": "e1422fc921d6a9af234419843b49d115c8b8fd22b485c6dcd9a5f6147d6154ae",
+  "environment": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "python": "3.12.12",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "seeds": [
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    9006,
+    9007,
+    9008,
+    9009,
+    9010,
+    9011,
+    9012,
+    9013,
+    9014,
+    9015,
+    9016,
+    9017,
+    9018,
+    9019,
+    9020,
+    9021,
+    9022,
+    9023,
+    9024,
+    9025,
+    9026,
+    9027,
+    9028,
+    9029,
+    9030
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": {
+    "baselines/step_7.py": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+    "opponents/expanding_mixed.py": "e909f9dcc72ee25d35c53083e418557827fb72524206b472c990e6fe3ec557a2",
+    "artifacts/step-8-controls/expanding-dairy.py": "f3e65aeccdff89efd65f9736621ce09c5469f85188283f8cf588845fbc2a6dd8",
+    "artifacts/step-6-controls/melons.py": "2c380b1bf53ab853b20ac7ca7000a2753756d20481c59e526dce3b4719d789b0",
+    "artifacts/step-6-controls/strawberries.py": "d839c3cb56654b50ea2c8be77abd67a41019f3de943d204df3cdebc8d233b0a8",
+    "artifacts/step-7-pool/delayed-crops.py": "5a259179a705f4eadd63d5b44db0aad85b991ee72ceaa26703ed30956c54f985"
+  },
+  "workers_per_run": 4,
+  "games_per_policy": 360,
+  "promotion": [
+    "Zero candidate execution errors, unplanned crop losses, escapes, missed feeding, duplicate targets, or seed overrequests.",
+    "Zero final shed/carried inventory and unused seeds.",
+    "Positive paired match-score difference with whole-seed bootstrap 95% interval above zero.",
+    "Investigate any opponent-class score regression over five percentage points; do not promote unexplained regression.",
+    "Exact standalone file passes isolated self-play and action timeout.",
+    "Source frozen before these seeds. Retire all seeds if a strategy change is needed."
+  ],
+  "scope": "Two independently coded expanding mixed/dairy variants, frozen Step 7, historical melon/strawberry specialists, and independent delayed crop supply. No recreation of private leaderboard code.",
+  "development_seeds": [
+    17,
+    43,
+    83,
+    137
+  ],
+  "configuration": {
+    "episodeSteps": 720
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Release status
 
-**Promoted locally.** All promotion gates passed. The release is `artifacts/submission-step-7-v2/main.py`; Kaggle upload and server validation are still pending.
+**Server execution confirmed after local promotion.** The release is `artifacts/submission-step-7-v2/main.py`. Subsequently supplied ladder episodes 107666399 and 107668390 reproduce exactly and match all 719 of our decisions per game. See the [server analysis](STEP_7_SERVER_ANALYSIS.md). The original local results below retain their historical scope.
 
 The candidate buys a joint crop/animal opening, values dated base/fertilized crop schedules, and admits crops independently of installed herd size. It also preloads the first feed before animal installation. The [implementation notes](STEP_7_OPTIMIZATION.md) connect these choices to integer activity selection, cash feasibility, opportunity cost, and endogenous market prices.
 
@@ -64,7 +64,7 @@ This is seed 17 with Step 7 in seat 0: final bank **92,923 versus 86,290**. The 
 - Both players finished `DONE`; no stderr, execution failures, unused seeds, or final shed/carried inventory.
 - Maximum decision time in isolated validation: **0.080774 seconds**, below the configured one-second action limit. Local timing is not a server guarantee.
 - A separate synthetic observation check substituted each leader's peak **75-asset public farm** into three of our own recorded states. Across five calls per combination, the maximum was **0.090041 seconds**. This checks rival-state processing cost; it is not a competitive game or a claim that we beat that player.
-- No Kaggle upload was performed. Server validation and ladder performance remain pending.
+- At the original local release, no Kaggle upload had been performed. The subsequently supplied server evidence is linked above.
 
 The [opening explanation](examples/step-7-opening.json) and [production explanation](examples/step-7-production.json) verify source hash and equality with the recorded action before presenting the forecast. The latter shows a fertilized strawberry adding a projected **1,377.8 coins** after the 100-coin seed and 155 additional wage coins; fertilizer diverted from sale is accounted for inside receipts.
 

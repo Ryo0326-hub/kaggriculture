@@ -213,7 +213,8 @@ def analyze(path, output):
                     mismatches[field] += 1
     assert not mismatches, mismatches
     result = {
-        "episode_id": replay["info"]["EpisodeId"],
+        "episode_id": replay["info"].get("EpisodeId", path.stem),
+        "source_kind": "server" if "EpisodeId" in replay["info"] else "local",
         "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "engine_sha256": hashlib.sha256(Path(engine.__file__).read_bytes()).hexdigest(),
         "module_version": replay["module_version"],
@@ -233,7 +234,8 @@ def analyze(path, output):
                     "prices": o["market"]["prices"],
                 }
             )
-    for seat, meta in enumerate(replay["info"]["Agents"]):
+    agents = replay["info"].get("Agents", [{"Name": "Player 0"}, {"Name": "Player 1"}])
+    for seat, meta in enumerate(agents):
         events = [t for t in context["transactions"] if t["seat"] == seat]
         units = [u for u in context["unit_events"] if u["seat"] == seat]
         quantities = Counter()

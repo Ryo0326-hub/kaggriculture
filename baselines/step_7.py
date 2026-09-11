@@ -1,6 +1,6 @@
-"""Step 8: conditional land investment and shared daily farm tours.
+"""Step 7: joint opening and dated production bundles on the initial quadrant.
 
-Standard-library, single-file agent. See docs/STEP_8_OPTIMIZATION.md.
+Standard-library, single-file agent. See docs/STEP_7_OPTIMIZATION.md.
 """
 
 import math
@@ -571,13 +571,7 @@ def route_cover(sites, service_steps, access, capacity, dedicated=()):
     )
 
 
-def plan_turn(
-    obs,
-    configuration=None,
-    allowed_animals=("COW", "SHEEP"),
-    herd_limit=HERD_LIMIT,
-    force_shared=False,
-):
+def plan_turn(obs, configuration=None, allowed_animals=("COW", "SHEEP"), herd_limit=HERD_LIMIT):
     """Cover the existing herd with shared-worker routes; reserve shared stock/cash."""
     cfg = configuration or {}
     farm, private = obs["farms"][obs["player"]], obs["private"]
@@ -612,7 +606,7 @@ def plan_turn(
     new_type = pending_type or investment["animal"]
     # Keep the tested setup routine and use already-paid station crews. A shared
     # tour must not postpone an installation into a later production day.
-    if new_type or (not force_shared and len(positions) >= len(live)):
+    if new_type or len(positions) >= len(live):
         action, detail = station_turn(obs, cfg, allowed_animals, herd_limit)
         detail["routing"] = {
             "mode": "stations",
@@ -872,12 +866,6 @@ def crop_job(tile, day, final_day):
     harvestable = age >= spec["first"] and units > 0
     # Harvest one-time crops after their planned bonuses; salvage near termination.
     harvest = harvestable and (spec["interval"] or age >= spec["harvest"] or day == final_day)
-    if (
-        harvestable
-        and spec["interval"]
-        and age >= spec["harvest"] + (spec["events"] - 1) * spec["interval"]
-    ):
-        return ("HARVEST", 280, 1)
     bonus_water = (crop == "WHEAT" and 2 <= age <= 4) or (
         crop == "MELON" and 6 <= age <= 10 and units < 6
     )
@@ -999,16 +987,10 @@ def mixed_turn(
     allowed_crops=("WHEAT", "MELON", "STRAWBERRY"),
     production=False,
     opening=True,
-    expansion=0,
 ):
     """Use released livestock workers for bounded crops; share all resource ledgers."""
     cfg = configuration or {}
-    action, detail = plan_turn(
-        obs,
-        cfg,
-        allowed_animals=() if production else ("COW", "SHEEP"),
-        force_shared=bool(expansion),
-    )
+    action, detail = plan_turn(obs, cfg, allowed_animals=() if production else ("COW", "SHEEP"))
     if crop_limit == 0:
         return action, detail
     farm, private = obs["farms"][obs["player"]], obs["private"]
@@ -1029,7 +1011,7 @@ def mixed_turn(
         key=lambda p: (distance(p, access[0]), p),
     )
     # Bound travel as well as crop count; distant empty corners are not free capacity.
-    fields = farm_sites(obs)[1] if expansion else all_sites[HERD_LIMIT : HERD_LIMIT + crop_limit]
+    fields = all_sites[HERD_LIMIT : HERD_LIMIT + crop_limit]
     plants = [
         (p, farm["tiles"][p[1]][p[0]])
         for p in fields
@@ -1088,27 +1070,6 @@ def mixed_turn(
         inv = private["inventories"][i]
         if done and not any(inv.get(a, 0) for a in ANIMALS):
             available.append(i)
-    # A completed placement may change the route cover immediately. Finish its
-    # first feed/care with the worker already on that tile before releasing them.
-    local_installations = set()
-    for i, p in enumerate(positions):
-        tile = farm["tiles"][p[1]][p[0]]
-        if not expansion or not isinstance(tile, dict) or tile.get("placed_day") != day:
-            continue
-        inv = private["inventories"][i]
-        op = (
-            "FEED"
-            if not tile["fed_today"] and inv.get("WHEAT", 0)
-            else ("CARE" if tile["fed_today"] and not tile["cared_today"] else None)
-        )
-        if op and p not in local_installations:
-            local_installations.add(p)
-            for j, q in enumerate(positions):
-                if j != i and q == p and commands[j][0] in ("FEED", "CARE"):
-                    commands[j] = ["PASS"]
-            commands[i] = [op]
-            if i in available:
-                available.remove(i)
     # Planting and its first watering are one committed two-action bundle.
     newborn_workers = []
     for i, p in enumerate(positions):
@@ -1125,15 +1086,10 @@ def mixed_turn(
     # A ripe one-time crop has a hard decay deadline. A worker may handle it
     # before livestock only when a complete return-and-service allowance fits.
     urgent_assignments = {}
-    urgent_pairs = []
     for site, tile in plants:
         spec = CROPS[tile["crop"]]
         job = crop_job(tile, day, final)
-        deadline_age = spec["harvest"] + (spec["events"] - 1) * spec["interval"]
-        dry = bool(
-            expansion and tile.get("consecutive_unwatered", 0) >= 1 and job and job[0] == "WATER"
-        )
-        if (day - tile["planted_day"] < deadline_age and not dry) or not job:
+        if spec["interval"] or day - tile["planted_day"] < spec["harvest"] or not job:
             continue
         candidates = []
         for work in detail["workers"]:
@@ -1167,32 +1123,13 @@ def mixed_turn(
             )
             if zone:
                 travel_back += min(distance(zone[-1], a) for a in access)
-            if expansion and service:
-                continue  # complete livestock commitments before borrowing more time
             allowance = travel_back + service + 3  # deposit, possible feed pickup, final deposit
-            if expansion:
-                # Completed animal routes impose no return trip on crop work.
-                # Retain only the real terminal delivery obligation.
-                allowance = (
-                    min(distance(site, a) for a in access) + 1
-                    if job[0] == "HARVEST" and day == final
-                    else 0
-                )
             steps = 2 if job[0] == "WATER" else 1
             if distance(positions[i], site) + steps + allowance <= remaining:
                 candidates.append((distance(positions[i], site), i))
-        if expansion:
-            urgent_pairs.extend((travel, site, i, job[0]) for travel, i in candidates)
-        elif candidates:
+        if candidates:
             _, i = min(candidates)
             urgent_assignments[i] = (site, job[0])
-            if i not in available:
-                available.append(i)
-    urgent_sites = set()
-    for _, site, i, op in sorted(urgent_pairs):
-        if i not in urgent_assignments and site not in urgent_sites:
-            urgent_assignments[i] = (site, op)
-            urgent_sites.add(site)
             if i not in available:
                 available.append(i)
     reserved = set()
@@ -1250,9 +1187,7 @@ def mixed_turn(
             # Failed crop reservation leaves the original livestock command intact.
             continue
         goods = sum(n for c, n in inv.items() if c != "FERTILIZER")
-        if (goods and (not expansion or sum(inv.values()) >= 16 or harvest_room < 12)) or (
-            day == final and sum(inv.values()) and remaining <= distance(p, shed) + 2
-        ):
+        if goods or (day == final and sum(inv.values()) and remaining <= distance(p, shed) + 2):
             commands[i] = move_toward(p, shed) if p != shed else ["DROP"]
             continue
         choices = []
@@ -1291,17 +1226,7 @@ def mixed_turn(
         # A purchased seed reserves one planting; first-day watering must fit too.
         seed = next((c for c in CROPS if seeds.get(c, 0)), None)
         if seed and len(plants) < limit and day + CROPS[seed]["first"] <= final:
-            planting_fields = fields
-            if expansion:
-                # Match investment geometry: seeds occupy the nearest free plots.
-                planting_fields = [
-                    q
-                    for q in fields
-                    if farm["tiles"][q[1]][q[0]] is None
-                    or isinstance(farm["tiles"][q[1]][q[0]], dict)
-                    and farm["tiles"][q[1]][q[0]].get("kind") == "WEED"
-                ][:pending]
-            for site in planting_fields:
+            for site in fields:
                 tile = farm["tiles"][site[1]][site[0]]
                 if site in reserved or (
                     tile is not None and not (isinstance(tile, dict) and tile.get("kind") == "WEED")
@@ -1317,13 +1242,9 @@ def mixed_turn(
             _, _, target, op = max(choices)
             reserved.add(target)
             if op == "LOAD_FERTILIZER":
-                commands[i] = (
-                    move_toward(p, shed)
-                    if p != shed
-                    else ["PICKUP", "FERTILIZER", min(3 if expansion else 1, stock["FERTILIZER"])]
-                )
+                commands[i] = move_toward(p, shed) if p != shed else ["PICKUP", "FERTILIZER", 1]
                 if p == shed:
-                    stock["FERTILIZER"] -= commands[i][2]
+                    stock["FERTILIZER"] -= 1
             elif p != target:
                 commands[i] = move_toward(p, target)
             elif op == "PLANT":
@@ -1422,7 +1343,7 @@ def mixed_turn(
     crop_jobs = sum(bool(crop_job(tile, day, final)) for _, tile in plants)
     livestock_workers = detail.get("routing", {}).get("target_hands", max(0, live - 1)) + 1
     worker_target = max(worker_target, livestock_workers + math.ceil(crop_jobs / 4))
-    worker_target = min(HERD_LIMIT + (3 if expansion else 2), worker_target)
+    worker_target = min(HERD_LIMIT + 2, worker_target)
     extra_hires = 0
     if (plants or (production and pending)) and hour <= 6:
         while (
@@ -1480,10 +1401,7 @@ def mixed_turn(
         "crop_work_bound": crop_work,
         "incremental_hires": extra_hires,
     }
-    if expansion and day >= 2:
-        market, report = expansion_investment(obs, cfg, params, commands, market, expansion)
-        detail["expansion"] = report
-    elif production:
+    if production:
         market, report = production_orders(
             obs,
             cfg,
@@ -1493,7 +1411,7 @@ def mixed_turn(
             room,
             stock,
             len(plants),
-            min(limit, 12) if expansion else limit,
+            limit,
             bool(available),
             use_fertilizer,
             opening,
@@ -1557,9 +1475,7 @@ def crop_column(crop, planted, final, fertilized=False, tile=None, today=0):
     }
 
 
-def production_projection(
-    obs, cfg, params, additions=(), cash=None, fertilized=True, stress=0, routed=False, land_cost=0
-):
+def production_projection(obs, cfg, params, additions=(), cash=None, fertilized=True, stress=0):
     """Cash/inventory conservation for a visible portfolio plus dated integer columns.
 
     Future prices and schedules are estimates. Crops have no guaranteed future
@@ -1587,7 +1503,7 @@ def production_projection(
                     )
                     if column:
                         crops[side].append(column)
-    costs = {day: land_cost} if land_cost else {}
+    costs = {}
     for item in additions:
         date = item.get("buy_day", day)
         if "animal" in item:
@@ -1657,35 +1573,6 @@ def production_projection(
                 ),
             ),
         )
-        if routed:
-            nodes = []
-            for y, row in enumerate(obs["farms"][own]["tiles"]):
-                for x, tile in enumerate(row):
-                    if not isinstance(tile, dict):
-                        continue
-                    if "animal" in tile:
-                        nodes.append(((x, y), farm_service(tile, date, final)))
-                    elif tile.get("crop") in CROPS:
-                        spec = CROPS[tile["crop"]]
-                        end = tile["planted_day"] + spec["harvest"]
-                        end += (spec["events"] - 1) * spec["interval"]
-                        if date <= end:
-                            nodes.append(((x, y), farm_service(tile, date, final)))
-            for item in additions:
-                if "animal" in item and date >= item["placed_day"]:
-                    nodes.append((tuple(item["site"]), 6 if date == item["placed_day"] else 4))
-                elif "crop" in item:
-                    spec = CROPS[item["crop"]]
-                    end = item["planted_day"] + spec["harvest"]
-                    end += (spec["events"] - 1) * spec["interval"]
-                    if item["planted_day"] <= date <= end:
-                        nodes.append((tuple(item["site"]), farm_service(item, date, final)))
-            tours, durations, feasible = farm_tours(
-                tuple(sorted(nodes)), tuple(shed_access(obs)), tpd - 3
-            )
-            if not feasible or len(tours) > 12:
-                return {"value": -1e9, "min_cash": -1e9, "daily": [], "route_feasible": False}
-            workers = max(1, len(tours))
         wage = sum(hire_cost(i, cfg.get("farmHandCostMult", 1)) for i in range(workers - 1))
         if date == day:
             paid = sum(
@@ -2012,215 +1899,5 @@ def bundle_turn(obs, configuration=None, crop_limit=12, use_fertilizer=True, ope
     )
 
 
-def shed_access(obs):
-    half = len(obs["farms"][obs["player"]]["tiles"]) // 2
-    return tuple((x, y) for x in (half - 1, half) for y in (half - 1, half))
-
-
-@lru_cache(maxsize=2048)
-def farm_tours(nodes, access, capacity):
-    """Deterministic cheapest insertion, with a complete worst-start daily bound.
-
-    Three extra actions reserve feed pickup, fertilizer/animal pickup, and deposit.
-    Service allowances depend on crop age and scheduled animal production.
-    Tours have no worker collisions: multiple units can occupy the same cell.
-    """
-    services = dict(nodes)
-
-    def duration(route):
-        return (
-            max(distance(a, route[0]) for a in access)
-            + sum(distance(a, b) for a, b in zip(route, route[1:]))
-            + min(distance(route[-1], a) for a in access)
-            + sum(services[p] for p in route)
-            + 3
-        )
-
-    routes = []
-    for site in sorted(services, key=lambda p: (-min(distance(p, a) for a in access), p)):
-        choices = []
-        for i, route in enumerate(routes):
-            before = duration(route)
-            for at in range(len(route) + 1):
-                proposed = (*route[:at], site, *route[at:])
-                length = duration(proposed)
-                if length <= capacity:
-                    choices.append((length - before, length, i, proposed))
-        if choices:
-            _, _, i, proposed = min(choices)
-            routes[i] = proposed
-        else:
-            routes.append((site,))
-    routes = tuple(sorted(routes))
-    durations = tuple(duration(route) for route in routes)
-    return routes, durations, all(n <= capacity for n in durations)
-
-
-def farm_sites(obs, extra_land=False):
-    """Keep the ten tested animal sites; all other owned cells can grow crops."""
-    farm = obs["farms"][obs["player"]]
-    size, access = len(farm["tiles"]), shed_access(obs)
-    half = size // 2
-    animal = sorted(
-        [(x, y) for y in range(half) for x in range(half)],
-        key=lambda p: (distance(p, access[0]), p),
-    )[:HERD_LIMIT]
-    owned = len(farm["unlocked_quadrants"])
-    next_quadrant = ("NW", "NE", "SW", "SE")[owned] if owned < 4 else None
-    fields = []
-    for y, row in enumerate(farm["tiles"]):
-        for x, tile in enumerate(row):
-            quadrant = ("N" if y < half else "S") + ("W" if x < half else "E")
-            if (x, y) not in animal and (
-                tile != "LOCKED" or extra_land and quadrant == next_quadrant
-            ):
-                fields.append((x, y))
-    fields.sort(key=lambda p: (min(distance(p, a) for a in access), p))
-    return animal, fields
-
-
-def farm_service(tile, day, final):
-    """Conservative operations for one date; geometry and inputs are charged separately."""
-    if "install" in tile:
-        return 6
-    if "plant" in tile:
-        return 3
-    if "animal" in tile:
-        spec = ANIMALS[tile["animal"]]
-        age = day - tile["placed_day"] - spec["first_yield_day"]
-        return 3 + int(age >= 0 and age % spec["interval"] == 0)
-    age = day - tile["planted_day"]
-    if age <= 0:
-        return 3
-    if tile["crop"] == "STRAWBERRY":
-        return 2 if age in (9, 11, 13, 15) or age >= 16 else 1
-    return (
-        2
-        if tile["crop"] == "WHEAT" and age in (2, 4) or tile["crop"] == "MELON" and age >= 10
-        else 1
-    )
-
-
-def expansion_investment(obs, cfg, params, commands, market, max_land=3):
-    """Compare finite batches on owned land with batches funding the next quadrant."""
-    report = {"alternatives": [], "chosen": None}
-    day, hour = obs["day"], obs["hour"]
-    private, farm = obs["private"], obs["farms"][obs["player"]]
-    if (
-        hour > 6
-        or sum(private["seeds"].values())
-        or any(
-            private["shed"].get(a, 0) or any(i.get(a, 0) for i in private["inventories"])
-            for a in ANIMALS
-        )
-    ):
-        return market, report
-    final = (cfg.get("episodeSteps", 720) - 2) // cfg.get("turnsPerDay", 24)
-    planned = planning_snapshot(obs, cfg, commands, market, params)
-    needed = sum(
-        fertilizer_value(t, obs, cfg, params) > 0
-        for row in farm["tiles"]
-        for t in row
-        if isinstance(t, dict) and t.get("crop") in CROPS
-    )
-    held = planned["private"]["shed"].get("FERTILIZER", 0) + sum(
-        i.get("FERTILIZER", 0) for i in planned["private"]["inventories"]
-    )
-    if needed > held and len(market) < cfg.get("maxMarketOrdersPerTurn", 10):
-        missing = min(
-            needed - held,
-            max(0, cfg.get("shedCapacity", 100) - sum(planned["private"]["shed"].values())),
-        )
-        if missing and planned["farms"][obs["player"]]["money"] >= 150 + missing * 2 * price_at(
-            "FERTILIZER", obs["market"]["inventory"]["FERTILIZER"] - missing - 20, params
-        ):
-            market.append(["BUY_PRODUCT", "FERTILIZER", missing])
-            planned = planning_snapshot(obs, cfg, commands, market, params)
-    baseline = production_projection(planned, cfg, params, routed=True)
-    report["baseline"] = baseline
-    animal_sites, fields = farm_sites(obs)
-
-    def empty(sites):
-        return [
-            p
-            for p in sites
-            if farm["tiles"][p[1]][p[0]] is None
-            or farm["tiles"][p[1]][p[0]] == "LOCKED"
-            or isinstance(farm["tiles"][p[1]][p[0]], dict)
-            and farm["tiles"][p[1]][p[0]].get("kind") == "WEED"
-        ]
-
-    options = []
-    free_animals = empty(animal_sites)
-    if free_animals and sum(planned["private"]["shed"].values()) < cfg.get("shedCapacity", 100):
-        for animal in ("COW", "SHEEP"):
-            options.append(
-                (
-                    0,
-                    [["BUY_ANIMAL", animal, 1]],
-                    [dict(animal=animal, placed_day=day + 1, site=free_animals[0])],
-                )
-            )
-    owned = len(farm["unlocked_quadrants"])
-    for extra in (False, True):
-        if extra and (owned >= max_land or len(empty(fields)) > 6):
-            continue
-        possible = empty(farm_sites(obs, extra)[1])
-        land = (1000, 2000, 4000)[owned - 1] if extra else 0
-        for count in (1, 4, 8, 12):
-            if count > len(possible) or extra and count <= len(empty(fields)):
-                continue
-            for crop in CROPS:
-                if day + 1 + CROPS[crop]["harvest"] > final:
-                    continue
-                additions = [
-                    dict(crop=crop, planted_day=day + 1, site=p, fertilized=True)
-                    for p in possible[:count]
-                ]
-                orders = ([["BUY_LAND"]] if extra else []) + [["BUY_SEED", crop, count]]
-                options.append((land, orders, additions))
-    for land, orders, additions in options:
-        if len(market) + len(orders) > cfg.get("maxMarketOrdersPerTurn", 10):
-            continue
-        projection = production_projection(
-            planned, cfg, params, additions, routed=True, land_cost=land
-        )
-        cost = land + sum(
-            ANIMALS[c["animal"]]["cost"] if "animal" in c else CROPS[c["crop"]]["seed"]
-            for c in additions
-        )
-        option = {
-            "orders": orders,
-            "land_cost": land,
-            "columns": additions,
-            "marginal_value": projection["value"] - baseline["value"],
-            "min_cash": projection["min_cash"],
-            "cost_now": cost,
-            "route_feasible": projection.get("route_feasible", True),
-            "affordable": planned["farms"][obs["player"]]["money"] >= cost + 150
-            and projection["min_cash"] >= 150,
-            "projection": projection,
-        }
-        report["alternatives"].append(option)
-    feasible = [
-        o
-        for o in report["alternatives"]
-        if o["affordable"] and o["route_feasible"] and o["marginal_value"] > 0
-    ]
-    if feasible:
-        best = max(feasible, key=lambda o: o["marginal_value"] / len(o["columns"]))
-        family = best["orders"][-1][:2]
-        report["chosen"] = max(
-            (o for o in feasible if o["orders"][-1][:2] == family),
-            key=lambda o: o["marginal_value"],
-        )
-        market.extend(report["chosen"]["orders"])
-    return market, report
-
-
-def expansion_turn(obs, configuration=None, max_land=3):
-    return mixed_turn(obs, configuration, crop_limit=65, production=True, expansion=max_land)
-
-
 def agent(obs, configuration=None):
-    return expansion_turn(obs, configuration)[0]
+    return bundle_turn(obs, configuration)[0]

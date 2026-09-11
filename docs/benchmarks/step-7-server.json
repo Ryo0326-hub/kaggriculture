@@ -1,0 +1,440 @@
+[
+  {
+    "episode_id": 107666399,
+    "source_sha256": "5b08b6e7520edad66f014a1eb5278bc2754e709fe59acd9904a4888ad7b786d1",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "module_version": "1.32.7",
+    "recorded_actions_resimulated": true,
+    "state_mismatches": {},
+    "agent_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+    "matched_agent_decisions": 719,
+    "players": [
+      {
+        "name": "Unicorns",
+        "cash": 76240.0,
+        "gross_sales": 92597,
+        "total_expenses": 19357.0,
+        "cash_by_operation": {
+          "BUY_SEED MELON": 880,
+          "BUY_ANIMAL COW": 1200,
+          "BUY_ANIMAL SHEEP": 3500,
+          "BUY_PRODUCT WHEAT": 10566,
+          "HIRE LABOR": 1915.0,
+          "SELL FERTILIZER": 13754,
+          "BUY_SEED WHEAT": 90,
+          "SELL WOOL": 37458,
+          "SELL MILK": 18299,
+          "SELL WHEAT": 3124,
+          "SELL MELON": 15961,
+          "BUY_SEED STRAWBERRY": 300,
+          "BUY_PRODUCT FERTILIZER": 906,
+          "SELL STRAWBERRY": 4001
+        },
+        "sales_by_product": {
+          "WHEAT": {
+            "units": 60,
+            "revenue": 3124,
+            "mean_price": 52.06666666666667,
+            "min_price": 39,
+            "max_price": 55,
+            "floor_units": 0
+          },
+          "STRAWBERRY": {
+            "units": 15,
+            "revenue": 4001,
+            "mean_price": 266.73333333333335,
+            "min_price": 257,
+            "max_price": 274,
+            "floor_units": 0
+          },
+          "MELON": {
+            "units": 66,
+            "revenue": 15961,
+            "mean_price": 241.83333333333334,
+            "min_price": 197,
+            "max_price": 272,
+            "floor_units": 0
+          },
+          "MILK": {
+            "units": 102,
+            "revenue": 18299,
+            "mean_price": 179.40196078431373,
+            "min_price": 137,
+            "max_price": 218,
+            "floor_units": 0
+          },
+          "WOOL": {
+            "units": 170,
+            "revenue": 37458,
+            "mean_price": 220.34117647058824,
+            "min_price": 196,
+            "max_price": 232,
+            "floor_units": 0
+          },
+          "FERTILIZER": {
+            "units": 239,
+            "revenue": 13754,
+            "mean_price": 57.54811715481171,
+            "min_price": 22,
+            "max_price": 100,
+            "floor_units": 0
+          }
+        },
+        "max_productive_tiles": 18,
+        "escapes": [],
+        "unfed_animal_days": 0,
+        "end_day_overflow": [],
+        "final_seeds": {
+          "CARROT": 0,
+          "MELON": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        }
+      },
+      {
+        "name": "MugaBros",
+        "cash": 109362.0,
+        "gross_sales": 138021,
+        "total_expenses": 31659.0,
+        "cash_by_operation": {
+          "HIRE LABOR": 2976.0,
+          "BUY_PRODUCT WHEAT": 12483,
+          "BUY_ANIMAL COW": 2000,
+          "BUY_ANIMAL SHEEP": 3000,
+          "BUY_SEED MELON": 3200,
+          "SELL FERTILIZER": 11173,
+          "SELL WOOL": 25916,
+          "SELL MILK": 32820,
+          "BUY_LAND LAND": 3000.0,
+          "BUY_SEED STRAWBERRY": 5000,
+          "SELL MELON": 15854,
+          "SELL STRAWBERRY": 50212,
+          "SELL WHEAT": 2046
+        },
+        "sales_by_product": {
+          "WHEAT": {
+            "units": 37,
+            "revenue": 2046,
+            "mean_price": 55.2972972972973,
+            "min_price": 55,
+            "max_price": 56,
+            "floor_units": 0
+          },
+          "STRAWBERRY": {
+            "units": 193,
+            "revenue": 50212,
+            "mean_price": 260.1658031088083,
+            "min_price": 252,
+            "max_price": 275,
+            "floor_units": 0
+          },
+          "MELON": {
+            "units": 144,
+            "revenue": 15854,
+            "mean_price": 110.09722222222223,
+            "min_price": 1,
+            "max_price": 233,
+            "floor_units": 22
+          },
+          "MILK": {
+            "units": 180,
+            "revenue": 32820,
+            "mean_price": 182.33333333333334,
+            "min_price": 141,
+            "max_price": 220,
+            "floor_units": 0
+          },
+          "WOOL": {
+            "units": 119,
+            "revenue": 25916,
+            "mean_price": 217.78151260504202,
+            "min_price": 194,
+            "max_price": 231,
+            "floor_units": 0
+          },
+          "FERTILIZER": {
+            "units": 180,
+            "revenue": 11173,
+            "mean_price": 62.07222222222222,
+            "min_price": 20,
+            "max_price": 99,
+            "floor_units": 0
+          }
+        },
+        "max_productive_tiles": 63,
+        "escapes": [
+          {
+            "day": 18,
+            "seat": 1,
+            "animal": "SHEEP"
+          }
+        ],
+        "unfed_animal_days": 7,
+        "end_day_overflow": [
+          {
+            "step": 455,
+            "seat": 1,
+            "items": {
+              "WOOL": 3,
+              "FERTILIZER": 1
+            }
+          },
+          {
+            "step": 527,
+            "seat": 1,
+            "items": {
+              "WHEAT": 1,
+              "STRAWBERRY": 3,
+              "FERTILIZER": 1
+            }
+          },
+          {
+            "step": 599,
+            "seat": 1,
+            "items": {
+              "WHEAT": 3,
+              "MELON": 6,
+              "FERTILIZER": 1
+            }
+          }
+        ],
+        "final_seeds": {
+          "CARROT": 0,
+          "MELON": 15,
+          "STRAWBERRY": 10,
+          "TOMATO": 0,
+          "WHEAT": 0
+        }
+      }
+    ]
+  },
+  {
+    "episode_id": 107668390,
+    "source_sha256": "e786b264a8e238c6d13700c522d2f29542569c4922a05b8f964cc5a28726b10f",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "module_version": "1.32.7",
+    "recorded_actions_resimulated": true,
+    "state_mismatches": {},
+    "agent_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+    "matched_agent_decisions": 719,
+    "players": [
+      {
+        "name": "Unicorns",
+        "cash": 84393.0,
+        "gross_sales": 102729,
+        "total_expenses": 21336.0,
+        "cash_by_operation": {
+          "BUY_SEED MELON": 800,
+          "BUY_ANIMAL COW": 3200,
+          "BUY_ANIMAL SHEEP": 1000,
+          "BUY_PRODUCT WHEAT": 11422,
+          "HIRE LABOR": 2983.0,
+          "SELL FERTILIZER": 14470,
+          "BUY_SEED STRAWBERRY": 600,
+          "BUY_SEED WHEAT": 90,
+          "SELL WOOL": 4952,
+          "SELL MILK": 57542,
+          "SELL WHEAT": 3165,
+          "SELL MELON": 13648,
+          "BUY_PRODUCT FERTILIZER": 1241,
+          "SELL STRAWBERRY": 8952
+        },
+        "sales_by_product": {
+          "WHEAT": {
+            "units": 58,
+            "revenue": 3165,
+            "mean_price": 54.56896551724138,
+            "min_price": 40,
+            "max_price": 58,
+            "floor_units": 0
+          },
+          "STRAWBERRY": {
+            "units": 32,
+            "revenue": 8952,
+            "mean_price": 279.75,
+            "min_price": 211,
+            "max_price": 303,
+            "floor_units": 0
+          },
+          "MELON": {
+            "units": 60,
+            "revenue": 13648,
+            "mean_price": 227.46666666666667,
+            "min_price": 188,
+            "max_price": 250,
+            "floor_units": 0
+          },
+          "MILK": {
+            "units": 219,
+            "revenue": 57542,
+            "mean_price": 262.7488584474886,
+            "min_price": 215,
+            "max_price": 296,
+            "floor_units": 0
+          },
+          "WOOL": {
+            "units": 68,
+            "revenue": 4952,
+            "mean_price": 72.82352941176471,
+            "min_price": 1,
+            "max_price": 206,
+            "floor_units": 35
+          },
+          "FERTILIZER": {
+            "units": 256,
+            "revenue": 14470,
+            "mean_price": 56.5234375,
+            "min_price": 15,
+            "max_price": 100,
+            "floor_units": 0
+          }
+        },
+        "max_productive_tiles": 20,
+        "escapes": [],
+        "unfed_animal_days": 0,
+        "end_day_overflow": [],
+        "final_seeds": {
+          "CARROT": 0,
+          "MELON": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 0
+        }
+      },
+      {
+        "name": "Jaikrishna@007",
+        "cash": 41423.0,
+        "gross_sales": 86237,
+        "total_expenses": 47814.0,
+        "cash_by_operation": {
+          "BUY_PRODUCT WHEAT": 23836,
+          "HIRE LABOR": 5118.0,
+          "BUY_ANIMAL COW": 2800,
+          "BUY_ANIMAL SHEEP": 4000,
+          "BUY_SEED MELON": 3520,
+          "SELL FERTILIZER": 11383,
+          "SELL WOOL": 6016,
+          "BUY_LAND LAND": 7000.0,
+          "SELL MILK": 32677,
+          "SELL MELON": 18494,
+          "BUY_SEED WHEAT": 1540,
+          "SELL WHEAT": 17667
+        },
+        "sales_by_product": {
+          "WHEAT": {
+            "units": 307,
+            "revenue": 17667,
+            "mean_price": 57.5472312703583,
+            "min_price": 57,
+            "max_price": 58,
+            "floor_units": 0
+          },
+          "MELON": {
+            "units": 141,
+            "revenue": 18494,
+            "mean_price": 131.1631205673759,
+            "min_price": 1,
+            "max_price": 272,
+            "floor_units": 14
+          },
+          "MILK": {
+            "units": 125,
+            "revenue": 32677,
+            "mean_price": 261.416,
+            "min_price": 211,
+            "max_price": 296,
+            "floor_units": 0
+          },
+          "WOOL": {
+            "units": 102,
+            "revenue": 6016,
+            "mean_price": 58.98039215686274,
+            "min_price": 1,
+            "max_price": 218,
+            "floor_units": 46
+          },
+          "FERTILIZER": {
+            "units": 206,
+            "revenue": 11383,
+            "mean_price": 55.25728155339806,
+            "min_price": 13,
+            "max_price": 100,
+            "floor_units": 0
+          }
+        },
+        "max_productive_tiles": 59,
+        "escapes": [],
+        "unfed_animal_days": 5,
+        "end_day_overflow": [
+          {
+            "step": 527,
+            "seat": 1,
+            "items": {
+              "COW": 1,
+              "SHEEP": 1
+            }
+          },
+          {
+            "step": 551,
+            "seat": 1,
+            "items": {
+              "MELON": 5,
+              "FERTILIZER": 1
+            }
+          },
+          {
+            "step": 575,
+            "seat": 1,
+            "items": {
+              "WHEAT": 19,
+              "MELON": 23,
+              "FERTILIZER": 2
+            }
+          },
+          {
+            "step": 599,
+            "seat": 1,
+            "items": {
+              "WHEAT": 6,
+              "MELON": 4,
+              "MILK": 3,
+              "FERTILIZER": 4
+            }
+          },
+          {
+            "step": 623,
+            "seat": 1,
+            "items": {
+              "WHEAT": 11,
+              "MELON": 13,
+              "FERTILIZER": 2
+            }
+          },
+          {
+            "step": 647,
+            "seat": 1,
+            "items": {
+              "WHEAT": 19,
+              "FERTILIZER": 1
+            }
+          },
+          {
+            "step": 671,
+            "seat": 1,
+            "items": {
+              "WHEAT": 27
+            }
+          }
+        ],
+        "final_seeds": {
+          "CARROT": 0,
+          "MELON": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 51
+        }
+      }
+    ]
+  }
+]

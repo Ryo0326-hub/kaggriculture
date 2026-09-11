@@ -65,12 +65,26 @@ def economic_audit(env, seat):
     hired, wages, seed_cost, lost_plants, seed_conflicts, duplicate_targets = 0, 0, 0, 0, 0, 0
     animal_cost, escapes, missed_feed, feed_orders = 0, 0, 0, 0
     exhausted_crops = 0
+    land_spending, land_purchases, peak_productive = 0, 0, 0
     for before, after in zip(env.steps, env.steps[1:]):
         old, new = before[seat].observation, after[seat].observation
         action = after[seat].action
         if not isinstance(action, dict):
             continue
         farm = old.farms[seat]
+        owned_before = len(farm["unlocked_quadrants"])
+        owned_after = len(new.farms[seat]["unlocked_quadrants"])
+        for index in range(owned_before - 1, owned_after - 1):
+            land_spending += engine.LAND_PRICES[index]
+            land_purchases += 1
+        peak_productive = max(
+            peak_productive,
+            sum(
+                isinstance(tile, dict) and ("animal" in tile or tile.get("kind") == "PLANT")
+                for row in new.farms[seat]["tiles"]
+                for tile in row
+            ),
+        )
         commands = [action.get("farmer", ["PASS"]), *action.get("hands", [])]
         plant_requests, targets = Counter(), []
         for p, op in zip([farm["farmer"], *farm["hands"]], commands):
@@ -133,6 +147,9 @@ def economic_audit(env, seat):
         "feed_order_units": feed_orders,
         "animals_escaped": escapes,
         "animal_days_unfed": missed_feed,
+        "land_purchases": land_purchases,
+        "land_spending": land_spending,
+        "peak_productive_tiles": peak_productive,
     }
 
 

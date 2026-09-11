@@ -2,7 +2,7 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 7: joint opening and dated production bundles implemented.** Crops and animals compete for capital on Day 1; crop forecasts include fertilizer, work, and dated cash needs. Installation now includes its first feed. The locally promoted candidate won 360/360 fresh internal games versus Step 6's 77.50% matched-pool score, with no operational incidents. It passed 105 tests and isolated artifact validation; Kaggle server validation is pending. This pool does not establish medal strength. [Step 7 results](docs/STEP_7_RESULTS.md) · [CO implementation notes](docs/STEP_7_OPTIMIZATION.md) · [Opening decision](docs/examples/step-7-opening.json) · [Server and leader analysis](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md).
+**Step 8: conditional expansion complete and locally validated; ready for Kaggle upload.** The agent compares crop batches on owned land with batches paying for the next quadrant, keeps shared livestock routes, and reserves nearby planting sites and delivery capacity. Step 7's new server win and loss both reproduce exactly. On the fresh internal pool, Step 8 won 353/360 games and improved paired match score from 81.4% to 98.1%; this is local evidence, not a leaderboard forecast. [Step 8 results](docs/STEP_8_RESULTS.md) · [CO implementation notes](docs/STEP_8_OPTIMIZATION.md) · [Expansion decision](docs/examples/step-8-expansion.json) · [Step 7 server analysis](docs/STEP_7_SERVER_ANALYSIS.md).
 
 ## Run locally
 
@@ -31,36 +31,36 @@ Choose a new output directory for each experiment; existing directories are not 
 
 ## What the current agent does
 
-The planner compares twenty joint openings, then no purchase, a cow/sheep, and base/fertilized crop schedules. It reprices the whole visible portfolio, charges dated inputs and Fibonacci wages, and checks current affordability plus a projected minimum cash balance. Two-stage crop rotations are proposals; only the first purchase is executed and future choices are reconsidered.
+The planner retains twenty joint openings, then compares no purchase, a cow/sheep, and batches of 1/4/8/12 wheat, melons, or strawberries. A batch can also pay for the next land quadrant. The forecast reprices both visible portfolios, charges dated inputs and Fibonacci wages, preserves a cash buffer, and rejects infeasible route estimates. It compares up to 75 owned tiles and retains ten nearby animal sites.
 
-Up to ten nearby animal sites and twelve crop plots share the initial quadrant. Shared livestock routes, crop deadline checks, and supporting hires execute the plan. Newborn watering is reserved. Installing workers preload feed and require time for placement, feeding, and care. Unit actions and market orders share inventory, deposit capacity, and cash accounting.
+The dispatcher keeps livestock on bounded shared routes, protects first feeding and newborn watering, and gives released workers nearby crop tasks. Seed placement follows the investment geometry. Small harvest batches share return trips and fertilizer pickups can serve multiple plots. Actual execution can hire a thirteenth total worker for repair; the investment forecast admits at most twelve.
 
-This is a bounded heuristic informed by integer programming and opportunity cost. It is not a global farm optimizer, an LP dual solution, or a Nash-equilibrium solver. Expansion, selective maintenance, and explicit multi-day waiting remain future work. Read [Step 7](docs/STEP_7_OPTIMIZATION.md) for the implemented decisions and limits, [Step 5](docs/STEP_5_OPTIMIZATION.md) for route set partitioning, and [Step 4](docs/STEP_4_OPTIMIZATION.md) for the original animal economics.
+This is an optimization-informed heuristic, not a global farm optimizer or a Nash-equilibrium solver. Crop tours estimate staffing and wages; actual tasks are replanned. Selective maintenance, additional crop species, and advanced sale timing remain future work. Read [Step 8](docs/STEP_8_OPTIMIZATION.md) for assumptions, limits, and CO connections.
 
-Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_6.py`. Steps 2, 3, 5, and 6 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) and [Step 6's validation](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) also match the submitted policies' actions on reconstructed runtime observations.
+Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_7.py`. Steps 2, 3, 5, 6, and 7 have supplied server episodes that reproduce locally. Step 7's [MugaBros loss and Jaikrishna win](docs/STEP_7_SERVER_ANALYSIS.md) also match all 719 of our runtime decisions per episode.
 
 ## Prepare the submission file
 
 ```bash
-uv run python prepare_submission.py --output artifacts/submission-step-7-v2
+uv run python prepare_submission.py --output artifacts/submission-step-8
 ```
 
 This creates `main.py`, `validation.json`, and `validation.log` in a new directory. It checks the **copied file** in full-season self-play using the official loader, in a separate Python process with the repository removed from the import path. The report records its hash, environment, statuses, inventory, and maximum observed decision time. Existing release directories are never overwritten.
 
 **Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. Next, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
 
-## Reproduce and understand Step 7
+## Reproduce and understand Step 8
 
-The [Step 7 results](docs/STEP_7_RESULTS.md) contain the paired evaluation protocol and frozen hashes. For a quick diagnostic after the local check above:
+The [Step 8 results](docs/STEP_8_RESULTS.md) record the frozen protocol, hashes, and local/server status. After the local check above:
 
 ```bash
 uv run python explain_turn.py \
   --replay artifacts/local-check/replay-0001.json --state 0 --player 0
-uv run python scripts/make_bundle_control.py --no-fertilizer \
-  --output artifacts/controls/no-fertilizer.py
+uv run python scripts/make_expansion_control.py --max-land 1 \
+  --output artifacts/controls/no-expansion.py
 ```
 
-The explanation checks source and action consistency before reporting opening portfolios, crop schedules, marginal value, dated cash, staffing, input retention, and dispatched jobs. `make_bundle_control.py` disables the joint opening or fertilizer, or restricts crop area. The historical `make_mixed_control.py` defaults to frozen Step 6; `make_early_control.py` generates independent early/delayed crop suppliers. The older installed-herd benchmark in `scripts/benchmark_routes.py` continues to isolate the livestock core; its modified starting assets and cash are not normal competition conditions.
+The explanation verifies both source and recorded action before presenting alternatives. The ablation keeps all other Step 8 decisions while disabling land purchases. `opponents/expanding_mixed.py` is an independent reactive four-animal and expanding-crop control; it is not a copy of private leaderboard code. Historical Step 7 bundle controls remain available through `scripts/make_bundle_control.py --source baselines/step_7.py`.
 
 ## Historical Step 4 reproduction
 
@@ -83,12 +83,15 @@ The starting mathematical background is CO250: linear programming, duality, and 
 
 1. **Foundation — complete:** game model, small exact routing example, feasible baseline, reproducible comparisons.
 2. **Worker assignment — complete:** binary assignment model, exact bounded solver, resource checks, matched greedy comparison, and isolated artifact validation.
-3. **Production and hiring — complete:** integer lot/workforce enumeration, cash and estimated labor constraints, price-impact valuation, supply stress case, and finite-horizon crop value. Land investment remains future work.
+3. **Production and hiring — complete:** integer lot/workforce enumeration, cash and estimated labor constraints, price-impact valuation, supply stress case, and finite-horizon crop value. Land was outside that checkpoint.
 4. **Competition and capital economics — complete:** audit actual ladder losses, introduce livestock and fertilizer revenue with a liquidity constraint, broaden the pool, and compare against Step 3 on matched fresh games.
 5. **Shared livestock routes — complete:** exact bounded route cover, production-day delivery protection, controlled wage/output comparison, paired fresh-seed evaluation, and isolated artifact validation.
 6. **Mixed production — server validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation.
-7. **Joint opening and production bundles — implemented, server pending:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
-8. **Conditional expansion — next:** fund additional land only when work and delivery can fit; add an expanding mixed opponent. Early wheat harvest choices, explicit waiting, and selective maintenance remain staged follow-ups. See [the plan](docs/STEP_7_PLAN.md) and [implemented scope](docs/STEP_7_OPTIMIZATION.md).
+7. **Joint opening and production bundles — server confirmed:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
+8. **Conditional expansion — locally validated:** fund additional land and crop batches with dated cash and spatial work estimates; preserve shared routes, delivery checks, and installation feeding. Add an expanding mixed opponent and a source-matched no-land ablation.
+9. **Adaptive production and selling — planned:** improve harvest alternatives, waiting, response to visible town/rival supply, and agreement between forecast and actual staffing costs.
+10. **Maintenance and endgame — planned:** compare full service, survival-only maintenance, and retirement by future recoverable cash.
+11. **Final evaluation and release — planned:** freeze candidates, use untouched comparisons and actual ladder evidence, and verify intended final artifacts. Each earlier checkpoint still requires its own tests and release gates.
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -97,7 +100,7 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | File | Role |
 | --- | --- |
 | `main.py` | Complete current artifact; `agent(obs, configuration=None)` is the final callable entry point |
-| `baselines/` | Frozen Steps 1–6; Steps 2, 3, 5, and 6 have server validation evidence |
+| `baselines/` | Frozen Steps 1–7; Steps 2, 3, 5, 6, and 7 have server evidence |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |
 | `scripts/replay_timing.py` | Crop-age, planting-date, and sale-timing evidence from reconciled replay audits |
@@ -108,8 +111,11 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_livestock_control.py` | Generate matched species and herd-size controls |
 | `scripts/make_mixed_control.py` | Generate historical Step 6 crop controls |
 | `scripts/make_bundle_control.py` | Generate Step 7 opening, fertilizer, and crop-area ablations |
+| `opponents/expanding_mixed.py` | Independent expanding farm control with shared-source dairy variant |
+| `scripts/make_expansion_control.py` | Source-matched land-limit ablation |
 | `opponents/early_crops.py` | Independent twelve-melon opening and crop rotation control |
 | `scripts/make_early_control.py` | Freeze early/delayed sale controls |
+| `tests/test_expansion.py` | Land geometry, cash timing, routes, installation feed, and independent expanding supply |
 | `tests/test_bundles.py` | Dated inputs, working capital, opening execution, and installation regression |
 | `scripts/audit_replay.py` | Resimulate supplied episodes and reconcile executed transactions |
 | `tests/test_mixed_production.py` | Crop growth, opportunity costs, deadlines, staffing, and full-season resources |
