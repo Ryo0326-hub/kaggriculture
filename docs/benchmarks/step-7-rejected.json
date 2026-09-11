@@ -1,0 +1,113 @@
+{
+  "status": "Rejected; validation stopped at the operational gate before completing the common pool.",
+  "candidate": {
+    "id": "main.py@3aa61b318963",
+    "name": "main.py",
+    "kind": "file",
+    "sha256": "3aa61b31896370064209b7546361821129e442a322594c9a2e1a864874ba4536"
+  },
+  "completed_games": 96,
+  "summary_of_completed_games": {
+    "games": 96,
+    "wins": 96,
+    "draws": 0,
+    "losses": 0,
+    "errors": 0,
+    "match_score": 1.0,
+    "mean_cash": 73760.79166666667,
+    "mean_margin": 8296.958333333334,
+    "decision_max_seconds": 0.140911
+  },
+  "unplanned_feed_refreshes": 9,
+  "affected_games": [
+    {
+      "seed": 7004,
+      "seat": 0,
+      "opponent": "step_6.py@d545236b1045",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7004,
+      "seat": 1,
+      "opponent": "step_6.py@d545236b1045",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7002,
+      "seat": 0,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7002,
+      "seat": 1,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7004,
+      "seat": 0,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7012,
+      "seat": 0,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7012,
+      "seat": 1,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7014,
+      "seat": 0,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    },
+    {
+      "seed": 7014,
+      "seat": 1,
+      "opponent": "melons.py@2c380b1bf53a",
+      "missed_feed": 1
+    }
+  ],
+  "cause": "Late installation required a separate shed trip for the first feed.",
+  "correction": "Preload feed for the installing worker; require placement, feeding and care to fit before refresh.",
+  "retired_seeds": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010,
+    7011,
+    7012,
+    7013,
+    7014,
+    7015,
+    7016,
+    7017,
+    7018,
+    7019,
+    7020,
+    7021,
+    7022,
+    7023,
+    7024,
+    7025,
+    7026,
+    7027,
+    7028,
+    7029,
+    7030
+  ],
+  "no_comparative_claim": "Reference run was not started; partial wins are not a promotion result."
+}

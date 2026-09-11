@@ -87,25 +87,25 @@ uv run python scripts/make_mixed_control.py --crops WHEAT --output artifacts/ste
 STEP6_SEEDS=(5003 5009 5011 5021 5023 5039 5051 5059 5077 5081 5087 5099 5101 5107 5113 5119 5147 5153 5167 5171 5179 5189 5197 5209 5227 5231 5233 5237 5261 5273)
 STEP6_OPPONENTS=(baselines/step_5.py baselines/step_3.py artifacts/step-6-controls/strawberries.py artifacts/step-6-controls/melons.py artifacts/step-6-controls/wheat.py)
 
-uv run python evaluate.py --candidate main.py --seeds "${STEP6_SEEDS[@]}" \
+uv run python evaluate.py --agent baselines/step_6.py --seeds "${STEP6_SEEDS[@]}" \
   --opponents "${STEP6_OPPONENTS[@]}" --workers 4 --replays first \
   --output artifacts/step-6-validation
-uv run python evaluate.py --candidate baselines/step_5.py --seeds "${STEP6_SEEDS[@]}" \
+uv run python evaluate.py --agent baselines/step_5.py --seeds "${STEP6_SEEDS[@]}" \
   --opponents "${STEP6_OPPONENTS[@]}" --workers 4 --replays first \
   --output artifacts/step-6-reference
 uv run python compare_results.py --candidate artifacts/step-6-validation \
   --reference artifacts/step-6-reference --output artifacts/step-6-paired.json
 
 uv run python scripts/make_mixed_control.py --no-fertilizer --output artifacts/step-6-controls/no-fertilizer.py
-uv run python evaluate.py --candidate main.py --seeds 6007 6011 6029 \
+uv run python evaluate.py --agent baselines/step_6.py --seeds 6007 6011 6029 \
   --opponents artifacts/step-6-controls/no-fertilizer.py --workers 2 --replays first \
   --output artifacts/step-6-fertilizer-validation
-uv run python explain_turn.py --replay artifacts/step-6-validation/replay-0001.json \
-  --state 52 --player 0
 uv run pytest -q
 uv run ruff check .
 uv run ruff format --check .
-uv run python prepare_submission.py --output artifacts/submission-step-6
+uv run python prepare_submission.py --source baselines/step_6.py --output artifacts/submission-step-6
 ```
+
+For a historical decision explanation, check out the Step 6 commit so `explain_turn.py` and `main.py` match that replay; the current explainer intentionally rejects old source hashes.
 
 Array syntax above works in Bash and Zsh. Artifacts and raw replays remain local; committed benchmark evidence contains manifests, hashes, per-game metrics, the paired comparison, development summaries, and the isolated release result.

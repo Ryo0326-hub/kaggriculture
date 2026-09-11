@@ -28,7 +28,7 @@ def build(source, output, crop_limit=8, fertilizer=True, crops=("WHEAT", "MELON"
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("main.py"))
+    parser.add_argument("--source", type=Path, default=Path("baselines/step_6.py"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--crop-limit", type=int, default=8)
     parser.add_argument("--no-fertilizer", action="store_true")

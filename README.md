@@ -2,7 +2,7 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 6: mixed production implemented and server validated.** Wheat, melons, and strawberries use a bounded area alongside livestock, with committed watering, harvest deadlines, supporting hires, and input opportunity costs. The candidate won 251 of 300 internal validation games, but lost 49 of 60 against the melon specialist. Submission `56149269` passed server self-play at 63,524 per farm. The latest leading-player audit motivates a joint opening and dated production-bundle planner next. [Step 6 results](docs/STEP_6_RESULTS.md) · [CO implementation notes](docs/STEP_6_OPTIMIZATION.md) · [New server and leader analysis](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) · [Next implementation plan](docs/STEP_7_PLAN.md).
+**Step 7: joint opening and dated production bundles implemented.** Crops and animals compete for capital on Day 1; crop forecasts include fertilizer, work, and dated cash needs. Installation now includes its first feed. The locally promoted candidate won 360/360 fresh internal games versus Step 6's 77.50% matched-pool score, with no operational incidents. It passed 105 tests and isolated artifact validation; Kaggle server validation is pending. This pool does not establish medal strength. [Step 7 results](docs/STEP_7_RESULTS.md) · [CO implementation notes](docs/STEP_7_OPTIMIZATION.md) · [Opening decision](docs/examples/step-7-opening.json) · [Server and leader analysis](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md).
 
 ## Run locally
 
@@ -13,7 +13,7 @@ uv sync --locked
 uv run pytest -q
 uv run ruff check .
 uv run ruff format --check .
-uv run python evaluate.py --seeds 17 43 --opponents baselines/step_5.py main.py --workers 2 --output artifacts/local-check
+uv run python evaluate.py --seeds 17 43 --opponents baselines/step_6.py main.py --workers 2 --output artifacts/local-check
 ```
 
 Python 3.12 and `kaggle-environments==1.32.7` are pinned. `uv.lock` fixes transitive dependencies. The official simulator brings dependencies for other games; the actual submitted `main.py` uses only the standard library and makes no network calls.
@@ -31,36 +31,36 @@ Choose a new output directory for each experiment; existing directories are not 
 
 ## What the current agent does
 
-The livestock core operates at most ten nearby cow/sheep sites. Its investment model compares no purchase, one cow, or one sheep using projected herd receipts, feed, wages, and a liquidity reserve. Only one animal may be waiting for installation. Shared routes reduce maintenance labor and producing animals retain dedicated routes where possible.
+The planner compares twenty joint openings, then no purchase, a cow/sheep, and base/fertilized crop schedules. It reprices the whole visible portfolio, charges dated inputs and Fibonacci wages, and checks current affordability plus a projected minimum cash balance. Two-stage crop rotations are proposals; only the first purchase is executed and future choices are reconsidered.
 
-The mixed layer admits at most eight nearby crop plots. It evaluates dated crop receipts, seed costs, estimated extra wages, and work allowances. Released livestock workers service crops; supporting hires address workload and early deadlines. Newborn watering is reserved, and ripe crops may receive priority when the return to livestock service fits. Fertilizer competes with selling it, and homegrown wheat can replace purchased feed. The final action and market queues share inventory, cash, and deposit reservations.
+Up to ten nearby animal sites and twelve crop plots share the initial quadrant. Shared livestock routes, crop deadline checks, and supporting hires execute the plan. Newborn watering is reserved. Installing workers preload feed and require time for placement, feeding, and care. Unit actions and market orders share inventory, deposit capacity, and cash accounting.
 
-The crop dispatcher and forecasts are bounded heuristics. The livestock route solver is exact only over its small enumerated menu; neither solves the whole game's optimum. Read [Step 6](docs/STEP_6_OPTIMIZATION.md) for the CO model, approximations, and execution constraints, [Step 5](docs/STEP_5_OPTIMIZATION.md) for route set partitioning, and [Step 4](docs/STEP_4_OPTIMIZATION.md) for animal investment.
+This is a bounded heuristic informed by integer programming and opportunity cost. It is not a global farm optimizer, an LP dual solution, or a Nash-equilibrium solver. Expansion, selective maintenance, and explicit multi-day waiting remain future work. Read [Step 7](docs/STEP_7_OPTIMIZATION.md) for the implemented decisions and limits, [Step 5](docs/STEP_5_OPTIMIZATION.md) for route set partitioning, and [Step 4](docs/STEP_4_OPTIMIZATION.md) for the original animal economics.
 
-Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_5.py`. Steps 2, 3, 5, and 6 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) and [Step 6's validation](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) also match the submitted policies' actions on reconstructed runtime observations.
+Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_6.py`. Steps 2, 3, 5, and 6 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) and [Step 6's validation](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) also match the submitted policies' actions on reconstructed runtime observations.
 
 ## Prepare the submission file
 
 ```bash
-uv run python prepare_submission.py --output artifacts/submission-step-6
+uv run python prepare_submission.py --output artifacts/submission-step-7-v2
 ```
 
 This creates `main.py`, `validation.json`, and `validation.log` in a new directory. It checks the **copied file** in full-season self-play using the official loader, in a separate Python process with the repository removed from the import path. The report records its hash, environment, statuses, inventory, and maximum observed decision time. Existing release directories are never overwritten.
 
 **Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. Next, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
 
-## Reproduce and understand Step 6
+## Reproduce and understand Step 7
 
-The [Step 6 results](docs/STEP_6_RESULTS.md) contain the paired evaluation protocol and frozen hashes. For a quick diagnostic after the local check above:
+The [Step 7 results](docs/STEP_7_RESULTS.md) contain the paired evaluation protocol and frozen hashes. For a quick diagnostic after the local check above:
 
 ```bash
 uv run python explain_turn.py \
   --replay artifacts/local-check/replay-0001.json --state 0 --player 0
-uv run python scripts/make_mixed_control.py --no-fertilizer \
+uv run python scripts/make_bundle_control.py --no-fertilizer \
   --output artifacts/controls/no-fertilizer.py
 ```
 
-The explanation checks source and action consistency before reporting livestock and crop alternatives, staffing, input retention, and dispatched jobs. `make_mixed_control.py` can restrict the crop menu or area, or disable fertilizer applications. The older installed-herd benchmark in `scripts/benchmark_routes.py` continues to isolate the livestock core; its modified starting assets and cash are not normal competition conditions.
+The explanation checks source and action consistency before reporting opening portfolios, crop schedules, marginal value, dated cash, staffing, input retention, and dispatched jobs. `make_bundle_control.py` disables the joint opening or fertilizer, or restricts crop area. The historical `make_mixed_control.py` defaults to frozen Step 6; `make_early_control.py` generates independent early/delayed crop suppliers. The older installed-herd benchmark in `scripts/benchmark_routes.py` continues to isolate the livestock core; its modified starting assets and cash are not normal competition conditions.
 
 ## Historical Step 4 reproduction
 
@@ -87,7 +87,8 @@ The starting mathematical background is CO250: linear programming, duality, and 
 4. **Competition and capital economics — complete:** audit actual ladder losses, introduce livestock and fertilizer revenue with a liquidity constraint, broaden the pool, and compare against Step 3 on matched fresh games.
 5. **Shared livestock routes — complete:** exact bounded route cover, production-day delivery protection, controlled wage/output comparison, paired fresh-seed evaluation, and isolated artifact validation.
 6. **Mixed production — server validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation.
-7. **Joint opening and production bundles — next:** let early crops and animals compete for capital, include future fertilizer and labor in crop alternatives, and compare planting now with waiting and crop sequences. Broaden reactive opponents, then test conditional land expansion, delivery, and selective maintenance. See [the staged plan](docs/STEP_7_PLAN.md).
+7. **Joint opening and production bundles — implemented, server pending:** twenty opening portfolios, dated base/fertilized crop templates, conditional crop sequences, shared cash/inventory accounting, and complete installation service. Independent early/delayed crop controls broaden supply timing.
+8. **Conditional expansion — next:** fund additional land only when work and delivery can fit; add an expanding mixed opponent. Early wheat harvest choices, explicit waiting, and selective maintenance remain staged follow-ups. See [the plan](docs/STEP_7_PLAN.md) and [implemented scope](docs/STEP_7_OPTIMIZATION.md).
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -96,7 +97,7 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | File | Role |
 | --- | --- |
 | `main.py` | Complete current artifact; `agent(obs, configuration=None)` is the final callable entry point |
-| `baselines/` | Frozen Steps 1–5; Steps 2, 3, and 5 are server validated |
+| `baselines/` | Frozen Steps 1–6; Steps 2, 3, 5, and 6 have server validation evidence |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |
 | `scripts/replay_timing.py` | Crop-age, planting-date, and sale-timing evidence from reconciled replay audits |
@@ -105,7 +106,11 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `scripts/make_greedy_ablation.py` | Generate the controlled greedy comparison |
 | `scripts/make_economics_control.py` | Generate matched staffing, crop, and forecast controls |
 | `scripts/make_livestock_control.py` | Generate matched species and herd-size controls |
-| `scripts/make_mixed_control.py` | Generate crop-menu, area, and fertilizer controls |
+| `scripts/make_mixed_control.py` | Generate historical Step 6 crop controls |
+| `scripts/make_bundle_control.py` | Generate Step 7 opening, fertilizer, and crop-area ablations |
+| `opponents/early_crops.py` | Independent twelve-melon opening and crop rotation control |
+| `scripts/make_early_control.py` | Freeze early/delayed sale controls |
+| `tests/test_bundles.py` | Dated inputs, working capital, opening execution, and installation regression |
 | `scripts/audit_replay.py` | Resimulate supplied episodes and reconcile executed transactions |
 | `tests/test_mixed_production.py` | Crop growth, opportunity costs, deadlines, staffing, and full-season resources |
 | `scripts/benchmark_routes.py` | Controlled installed-herd scheduling and actual wage/output accounting |

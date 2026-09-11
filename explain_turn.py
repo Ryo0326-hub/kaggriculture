@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 from evaluate import ROOT, sha256
-from main import mixed_turn as plan_turn
+from main import bundle_turn as plan_turn
 
 
 def explain_replay(path, state_index, player):

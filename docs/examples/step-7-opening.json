@@ -1,0 +1,5389 @@
+{
+  "source_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+  "seed": 17,
+  "player": 0,
+  "state_index": 0,
+  "day": 0,
+  "hour": 0,
+  "recorded_action_matches": true,
+  "action": {
+    "farmer": [
+      "PASS"
+    ],
+    "hands": [],
+    "market": [
+      [
+        "BUY_SEED",
+        "MELON",
+        8
+      ],
+      [
+        "BUY_ANIMAL",
+        "COW",
+        2
+      ],
+      [
+        "BUY_ANIMAL",
+        "SHEEP",
+        2
+      ]
+    ]
+  },
+  "explanation": {
+    "step": 0,
+    "investment": {
+      "animal": null,
+      "alternatives": [],
+      "baseline": {
+        "receipts": 0.0,
+        "feed_cost": 0.0,
+        "wages": 0,
+        "operating_value": 0.0,
+        "daily_receipts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "live_animals": 0,
+      "pending": 0
+    },
+    "workers": [
+      {
+        "worker": 0,
+        "station": null,
+        "action": [
+          "PASS"
+        ]
+      }
+    ],
+    "feed_target": 0,
+    "cash_reserved_after_orders": 3000.0,
+    "policy": "Marginal projected cash with feed liquidity; forecasts are not LP dual prices.",
+    "routing": {
+      "mode": "stations",
+      "reason": "Installation pending or a full station crew is already available.",
+      "target_hands": 0
+    },
+    "mixed": {
+      "active_crops": 0,
+      "crop_limit": 12,
+      "released_workers": [
+        0
+      ],
+      "crop_actions": [],
+      "fertilizer_values": {},
+      "retained_wheat": 0,
+      "retained_fertilizer": 0,
+      "seed_alternatives": [],
+      "chosen_crop": null,
+      "cash_reserve": 0,
+      "worker_target": 1,
+      "crop_work_bound": 0,
+      "incremental_hires": 0
+    },
+    "production": {
+      "opening": {
+        "cows": 2,
+        "sheep": 2,
+        "melons": 8,
+        "value": 27769.6,
+        "min_cash": 262.0,
+        "affordable": true,
+        "investment_cost": 2440,
+        "cash_schedule": [
+          {
+            "day": 0,
+            "spending_before_receipts": 2452,
+            "credited_receipts": 0.0,
+            "closing_cash": 548.0,
+            "workers": 6,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 1,
+            "spending_before_receipts": 141,
+            "credited_receipts": 0.0,
+            "closing_cash": 407.0,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 2,
+            "spending_before_receipts": 145,
+            "credited_receipts": 319.20000000000005,
+            "closing_cash": 581.2,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 3,
+            "spending_before_receipts": 149,
+            "credited_receipts": 316.8,
+            "closing_cash": 749.0,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 4,
+            "spending_before_receipts": 150,
+            "credited_receipts": 313.6,
+            "closing_cash": 912.6,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 5,
+            "spending_before_receipts": 153,
+            "credited_receipts": 311.20000000000005,
+            "closing_cash": 1070.8000000000002,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 6,
+            "spending_before_receipts": 154,
+            "credited_receipts": 308.8,
+            "closing_cash": 1225.6000000000001,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 7,
+            "spending_before_receipts": 157,
+            "credited_receipts": 2313.6,
+            "closing_cash": 3382.2,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 8,
+            "spending_before_receipts": 157,
+            "credited_receipts": 304.0,
+            "closing_cash": 3529.2,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 9,
+            "spending_before_receipts": 161,
+            "credited_receipts": 1990.4,
+            "closing_cash": 5358.6,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 10,
+            "spending_before_receipts": 161,
+            "credited_receipts": 10584.800000000001,
+            "closing_cash": 15782.400000000001,
+            "workers": 8,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 11,
+            "spending_before_receipts": 130,
+            "credited_receipts": 1040.0,
+            "closing_cash": 16692.4,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 12,
+            "spending_before_receipts": 133,
+            "credited_receipts": 293.6,
+            "closing_cash": 16853.0,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 13,
+            "spending_before_receipts": 136,
+            "credited_receipts": 2237.6,
+            "closing_cash": 18954.6,
+            "workers": 4,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 14,
+            "spending_before_receipts": 133,
+            "credited_receipts": 288.0,
+            "closing_cash": 19109.6,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 15,
+            "spending_before_receipts": 138,
+            "credited_receipts": 948.0,
+            "closing_cash": 19919.6,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 16,
+            "spending_before_receipts": 138,
+            "credited_receipts": 1483.2,
+            "closing_cash": 21264.8,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 17,
+            "spending_before_receipts": 138,
+            "credited_receipts": 903.2,
+            "closing_cash": 22030.0,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 18,
+            "spending_before_receipts": 138,
+            "credited_receipts": 278.40000000000003,
+            "closing_cash": 22170.4,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 19,
+            "spending_before_receipts": 144,
+            "credited_receipts": 1992.0,
+            "closing_cash": 24018.4,
+            "workers": 4,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 20,
+            "spending_before_receipts": 141,
+            "credited_receipts": 272.8,
+            "closing_cash": 24150.2,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 21,
+            "spending_before_receipts": 142,
+            "credited_receipts": 812.8000000000001,
+            "closing_cash": 24821.0,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 22,
+            "spending_before_receipts": 143,
+            "credited_receipts": 1323.2,
+            "closing_cash": 26001.2,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 23,
+            "spending_before_receipts": 146,
+            "credited_receipts": 766.4000000000001,
+            "closing_cash": 26621.600000000002,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 24,
+            "spending_before_receipts": 145,
+            "credited_receipts": 262.40000000000003,
+            "closing_cash": 26739.000000000004,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 25,
+            "spending_before_receipts": 148,
+            "credited_receipts": 1676.0,
+            "closing_cash": 28267.000000000004,
+            "workers": 4,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 26,
+            "spending_before_receipts": 145,
+            "credited_receipts": 257.6,
+            "closing_cash": 28379.600000000002,
+            "workers": 2,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 27,
+            "spending_before_receipts": 150,
+            "credited_receipts": 676.0,
+            "closing_cash": 28905.600000000002,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 28,
+            "spending_before_receipts": 150,
+            "credited_receipts": 1089.6000000000001,
+            "closing_cash": 29845.2,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          },
+          {
+            "day": 29,
+            "spending_before_receipts": 2,
+            "credited_receipts": 628.8000000000001,
+            "closing_cash": 30472.0,
+            "workers": 3,
+            "fertilizer_inputs": 0
+          }
+        ]
+      },
+      "alternatives": [
+        {
+          "cows": 0,
+          "sheep": 0,
+          "melons": 0,
+          "value": 0.0,
+          "min_cash": 3000.0,
+          "affordable": true,
+          "investment_cost": 0,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 3000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 0,
+          "melons": 4,
+          "value": 4463.6,
+          "min_cash": 2658.0,
+          "affordable": true,
+          "investment_cost": 320,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 322,
+              "credited_receipts": 0.0,
+              "closing_cash": 2678.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2676.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2674.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2672.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2670.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2668.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2666.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2664.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2662.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 2,
+              "credited_receipts": 0.0,
+              "closing_cash": 2660.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 2,
+              "credited_receipts": 4675.2,
+              "closing_cash": 7333.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 7333.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 0,
+          "melons": 8,
+          "value": 8541.6,
+          "min_cash": 2228.0,
+          "affordable": true,
+          "investment_cost": 640,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 652,
+              "credited_receipts": 0.0,
+              "closing_cash": 2348.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2336.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2324.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2312.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2300.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2288.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2276.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2264.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2252.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 12,
+              "credited_receipts": 0.0,
+              "closing_cash": 2240.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 12,
+              "credited_receipts": 9016.0,
+              "closing_cash": 11244.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 11244.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 0,
+          "melons": 12,
+          "value": 11820.8,
+          "min_cash": 1446.0,
+          "affordable": true,
+          "investment_cost": 960,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1014,
+              "credited_receipts": 0.0,
+              "closing_cash": 1986.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1932.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1878.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1824.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1770.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1716.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1662.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1608.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1554.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1500.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 54,
+              "credited_receipts": 12797.6,
+              "closing_cash": 14243.6,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 0.0,
+              "closing_cash": 14243.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 2,
+          "melons": 0,
+          "value": 11177.400000000001,
+          "min_cash": 1891.0,
+          "affordable": true,
+          "investment_cost": 1000,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1000,
+              "credited_receipts": 0.0,
+              "closing_cash": 2000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 1946.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 55,
+              "credited_receipts": 160.0,
+              "closing_cash": 2051.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 56,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 2154.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 57,
+              "credited_receipts": 158.4,
+              "closing_cash": 2255.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 58,
+              "credited_receipts": 158.4,
+              "closing_cash": 2356.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 58,
+              "credited_receipts": 156.8,
+              "closing_cash": 2454.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 61,
+              "credited_receipts": 2164.0,
+              "closing_cash": 4557.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 60,
+              "credited_receipts": 156.0,
+              "closing_cash": 4653.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 60,
+              "credited_receipts": 155.20000000000002,
+              "closing_cash": 4749.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 62,
+              "credited_receipts": 1425.6000000000001,
+              "closing_cash": 6112.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 6204.200000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 6295.800000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1396.8000000000002,
+              "closing_cash": 7629.600000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 7718.600000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 64,
+              "credited_receipts": 152.0,
+              "closing_cash": 7806.600000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 1350.4,
+              "closing_cash": 9092.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 64,
+              "credited_receipts": 150.4,
+              "closing_cash": 9178.400000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 9264.000000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1284.8000000000002,
+              "closing_cash": 10481.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 10564.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 66,
+              "credited_receipts": 147.20000000000002,
+              "closing_cash": 10645.800000000003,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1202.4,
+              "closing_cash": 11781.200000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 66,
+              "credited_receipts": 146.4,
+              "closing_cash": 11861.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 11940.200000000003,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1100.8,
+              "closing_cash": 12972.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 13048.000000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 13124.000000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 980.0,
+              "closing_cash": 14035.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 142.4,
+              "closing_cash": 14177.400000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 2,
+          "melons": 4,
+          "value": 15623.000000000002,
+          "min_cash": 1561.0,
+          "affordable": true,
+          "investment_cost": 1320,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1322,
+              "credited_receipts": 0.0,
+              "closing_cash": 1678.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 58,
+              "credited_receipts": 0.0,
+              "closing_cash": 1620.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 59,
+              "credited_receipts": 160.0,
+              "closing_cash": 1721.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 60,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 1820.2,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 61,
+              "credited_receipts": 158.4,
+              "closing_cash": 1917.6000000000001,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 62,
+              "credited_receipts": 158.4,
+              "closing_cash": 2014.0000000000002,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 62,
+              "credited_receipts": 156.8,
+              "closing_cash": 2108.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 64,
+              "credited_receipts": 2164.0,
+              "closing_cash": 4208.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 64,
+              "credited_receipts": 156.0,
+              "closing_cash": 4300.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 64,
+              "credited_receipts": 155.20000000000002,
+              "closing_cash": 4392.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 65,
+              "credited_receipts": 6100.8,
+              "closing_cash": 10427.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 10519.4,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 10611.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1396.8000000000002,
+              "closing_cash": 11944.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 12033.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 64,
+              "credited_receipts": 152.0,
+              "closing_cash": 12121.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 1350.4,
+              "closing_cash": 13407.199999999999,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 64,
+              "credited_receipts": 150.4,
+              "closing_cash": 13493.599999999999,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 13579.199999999999,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1284.8000000000002,
+              "closing_cash": 14797.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 14879.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 66,
+              "credited_receipts": 147.20000000000002,
+              "closing_cash": 14961.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1202.4,
+              "closing_cash": 16096.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 66,
+              "credited_receipts": 146.4,
+              "closing_cash": 16176.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 16255.4,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1100.8,
+              "closing_cash": 17287.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 17363.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 17439.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 980.0,
+              "closing_cash": 18350.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 142.4,
+              "closing_cash": 18492.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 2,
+          "melons": 8,
+          "value": 19641.000000000007,
+          "min_cash": 1199.0,
+          "affordable": true,
+          "investment_cost": 1640,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1652,
+              "credited_receipts": 0.0,
+              "closing_cash": 1348.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 74,
+              "credited_receipts": 0.0,
+              "closing_cash": 1274.0,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 75,
+              "credited_receipts": 160.0,
+              "closing_cash": 1359.0,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 76,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 1442.2,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 77,
+              "credited_receipts": 158.4,
+              "closing_cash": 1523.6000000000001,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 78,
+              "credited_receipts": 158.4,
+              "closing_cash": 1604.0000000000002,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 78,
+              "credited_receipts": 156.8,
+              "closing_cash": 1682.8000000000002,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 80,
+              "credited_receipts": 2164.0,
+              "closing_cash": 3766.8,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 80,
+              "credited_receipts": 156.0,
+              "closing_cash": 3842.8,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 80,
+              "credited_receipts": 155.20000000000002,
+              "closing_cash": 3918.0,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 81,
+              "credited_receipts": 10441.6,
+              "closing_cash": 14278.6,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 14370.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 14461.800000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1396.8000000000002,
+              "closing_cash": 15795.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 15884.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 64,
+              "credited_receipts": 152.0,
+              "closing_cash": 15972.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 1350.4,
+              "closing_cash": 17258.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 64,
+              "credited_receipts": 150.4,
+              "closing_cash": 17344.400000000005,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 17430.000000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1284.8000000000002,
+              "closing_cash": 18647.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 18730.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 66,
+              "credited_receipts": 147.20000000000002,
+              "closing_cash": 18811.800000000003,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1202.4,
+              "closing_cash": 19947.200000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 66,
+              "credited_receipts": 146.4,
+              "closing_cash": 20027.600000000006,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 20106.200000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1100.8,
+              "closing_cash": 21138.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 21214.000000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 21290.000000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 980.0,
+              "closing_cash": 22201.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 142.4,
+              "closing_cash": 22343.400000000005,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 2,
+          "melons": 12,
+          "value": 22660.199999999997,
+          "min_cash": 701.0,
+          "affordable": true,
+          "investment_cost": 1960,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2014,
+              "credited_receipts": 0.0,
+              "closing_cash": 986.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 142,
+              "credited_receipts": 0.0,
+              "closing_cash": 844.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 143,
+              "credited_receipts": 160.0,
+              "closing_cash": 861.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 144,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 876.2,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 145,
+              "credited_receipts": 158.4,
+              "closing_cash": 889.6,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 146,
+              "credited_receipts": 158.4,
+              "closing_cash": 902.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 146,
+              "credited_receipts": 156.8,
+              "closing_cash": 912.8,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 148,
+              "credited_receipts": 2164.0,
+              "closing_cash": 2928.8,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 148,
+              "credited_receipts": 156.0,
+              "closing_cash": 2936.8,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 148,
+              "credited_receipts": 155.20000000000002,
+              "closing_cash": 2944.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 149,
+              "credited_receipts": 14223.2,
+              "closing_cash": 17018.2,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 17109.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 17201.399999999998,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1396.8000000000002,
+              "closing_cash": 18535.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 18624.199999999997,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 64,
+              "credited_receipts": 152.0,
+              "closing_cash": 18712.199999999997,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 1350.4,
+              "closing_cash": 19997.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 64,
+              "credited_receipts": 150.4,
+              "closing_cash": 20084.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 20169.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1284.8000000000002,
+              "closing_cash": 21387.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 21470.199999999997,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 66,
+              "credited_receipts": 147.20000000000002,
+              "closing_cash": 21551.399999999998,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1202.4,
+              "closing_cash": 22686.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 66,
+              "credited_receipts": 146.4,
+              "closing_cash": 22767.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 22845.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1100.8,
+              "closing_cash": 23877.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 23953.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 24029.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 980.0,
+              "closing_cash": 24940.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 0,
+              "credited_receipts": 142.4,
+              "closing_cash": 25083.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 1,
+          "sheep": 1,
+          "melons": 0,
+          "value": 12035.000000000004,
+          "min_cash": 1991.0,
+          "affordable": true,
+          "investment_cost": 900,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 900,
+              "credited_receipts": 0.0,
+              "closing_cash": 2100.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 54,
+              "credited_receipts": 0.0,
+              "closing_cash": 2046.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 55,
+              "credited_receipts": 160.0,
+              "closing_cash": 2151.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 56,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 2254.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 57,
+              "credited_receipts": 158.4,
+              "closing_cash": 2355.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 58,
+              "credited_receipts": 158.4,
+              "closing_cash": 2456.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 58,
+              "credited_receipts": 156.8,
+              "closing_cash": 2554.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 61,
+              "credited_receipts": 1192.8,
+              "closing_cash": 3686.6000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 60,
+              "credited_receipts": 156.0,
+              "closing_cash": 3782.6000000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 61,
+              "credited_receipts": 1036.0,
+              "closing_cash": 4757.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 62,
+              "credited_receipts": 835.2,
+              "closing_cash": 5530.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 63,
+              "credited_receipts": 583.2,
+              "closing_cash": 6051.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 6142.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1250.4,
+              "closing_cash": 7330.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 7419.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 65,
+              "credited_receipts": 571.2,
+              "closing_cash": 7925.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 812.0,
+              "closing_cash": 8672.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 65,
+              "credited_receipts": 563.2,
+              "closing_cash": 9170.400000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 9256.000000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1201.6000000000001,
+              "closing_cash": 10390.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 10473.400000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 67,
+              "credited_receipts": 536.8000000000001,
+              "closing_cash": 10943.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 792.0,
+              "closing_cash": 11668.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 67,
+              "credited_receipts": 525.6,
+              "closing_cash": 12126.800000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 12205.400000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1159.2,
+              "closing_cash": 13295.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 13371.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 69,
+              "credited_receipts": 513.6,
+              "closing_cash": 13816.200000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 781.6,
+              "closing_cash": 14528.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 507.20000000000005,
+              "closing_cash": 15035.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 1,
+          "sheep": 1,
+          "melons": 4,
+          "value": 16481.6,
+          "min_cash": 1661.0,
+          "affordable": true,
+          "investment_cost": 1220,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1222,
+              "credited_receipts": 0.0,
+              "closing_cash": 1778.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 58,
+              "credited_receipts": 0.0,
+              "closing_cash": 1720.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 59,
+              "credited_receipts": 160.0,
+              "closing_cash": 1821.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 60,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 1920.2,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 61,
+              "credited_receipts": 158.4,
+              "closing_cash": 2017.6000000000001,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 62,
+              "credited_receipts": 158.4,
+              "closing_cash": 2114.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 62,
+              "credited_receipts": 156.8,
+              "closing_cash": 2208.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 64,
+              "credited_receipts": 1192.8,
+              "closing_cash": 3337.6000000000004,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 64,
+              "credited_receipts": 156.0,
+              "closing_cash": 3429.6000000000004,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 64,
+              "credited_receipts": 1036.0,
+              "closing_cash": 4401.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 65,
+              "credited_receipts": 5510.400000000001,
+              "closing_cash": 9847.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 63,
+              "credited_receipts": 583.2,
+              "closing_cash": 10367.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 10458.800000000001,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1250.4,
+              "closing_cash": 11646.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 11735.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 65,
+              "credited_receipts": 571.2,
+              "closing_cash": 12241.400000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 812.0,
+              "closing_cash": 12988.400000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 65,
+              "credited_receipts": 563.2,
+              "closing_cash": 13486.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 13572.200000000003,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1201.6000000000001,
+              "closing_cash": 14706.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 14789.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 67,
+              "credited_receipts": 536.8000000000001,
+              "closing_cash": 15259.400000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 792.0,
+              "closing_cash": 15984.400000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 67,
+              "credited_receipts": 525.6,
+              "closing_cash": 16443.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 16521.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1159.2,
+              "closing_cash": 17611.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 17687.8,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 69,
+              "credited_receipts": 513.6,
+              "closing_cash": 18132.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 781.6,
+              "closing_cash": 18844.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 507.20000000000005,
+              "closing_cash": 19351.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 1,
+          "sheep": 1,
+          "melons": 8,
+          "value": 20499.599999999995,
+          "min_cash": 1299.0,
+          "affordable": true,
+          "investment_cost": 1540,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1552,
+              "credited_receipts": 0.0,
+              "closing_cash": 1448.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 74,
+              "credited_receipts": 0.0,
+              "closing_cash": 1374.0,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 75,
+              "credited_receipts": 160.0,
+              "closing_cash": 1459.0,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 76,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 1542.2,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 77,
+              "credited_receipts": 158.4,
+              "closing_cash": 1623.6000000000001,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 78,
+              "credited_receipts": 158.4,
+              "closing_cash": 1704.0000000000002,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 78,
+              "credited_receipts": 156.8,
+              "closing_cash": 1782.8000000000002,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 80,
+              "credited_receipts": 1192.8,
+              "closing_cash": 2895.6000000000004,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 80,
+              "credited_receipts": 156.0,
+              "closing_cash": 2971.6000000000004,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 80,
+              "credited_receipts": 1036.0,
+              "closing_cash": 3927.6000000000004,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 81,
+              "credited_receipts": 9851.2,
+              "closing_cash": 13697.800000000001,
+              "workers": 7,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 63,
+              "credited_receipts": 583.2,
+              "closing_cash": 14218.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 14309.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1250.4,
+              "closing_cash": 15497.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 15586.000000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 65,
+              "credited_receipts": 571.2,
+              "closing_cash": 16092.200000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 812.0,
+              "closing_cash": 16839.200000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 65,
+              "credited_receipts": 563.2,
+              "closing_cash": 17337.400000000005,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 17423.000000000004,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1201.6000000000001,
+              "closing_cash": 18557.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 18640.4,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 67,
+              "credited_receipts": 536.8000000000001,
+              "closing_cash": 19110.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 792.0,
+              "closing_cash": 19835.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 67,
+              "credited_receipts": 525.6,
+              "closing_cash": 20293.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 20372.399999999998,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1159.2,
+              "closing_cash": 21462.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 21538.6,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 69,
+              "credited_receipts": 513.6,
+              "closing_cash": 21983.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 781.6,
+              "closing_cash": 22695.799999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 507.20000000000005,
+              "closing_cash": 23201.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 1,
+          "sheep": 1,
+          "melons": 12,
+          "value": 23518.799999999996,
+          "min_cash": 801.0,
+          "affordable": true,
+          "investment_cost": 1860,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1914,
+              "credited_receipts": 0.0,
+              "closing_cash": 1086.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 142,
+              "credited_receipts": 0.0,
+              "closing_cash": 944.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 143,
+              "credited_receipts": 160.0,
+              "closing_cash": 961.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 144,
+              "credited_receipts": 159.20000000000002,
+              "closing_cash": 976.2,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 145,
+              "credited_receipts": 158.4,
+              "closing_cash": 989.6,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 146,
+              "credited_receipts": 158.4,
+              "closing_cash": 1002.0,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 146,
+              "credited_receipts": 156.8,
+              "closing_cash": 1012.8,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1192.8,
+              "closing_cash": 2057.6,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 148,
+              "credited_receipts": 156.0,
+              "closing_cash": 2065.6,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1036.0,
+              "closing_cash": 2953.6,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 149,
+              "credited_receipts": 13632.800000000001,
+              "closing_cash": 16437.4,
+              "workers": 10,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 63,
+              "credited_receipts": 583.2,
+              "closing_cash": 16957.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 62,
+              "credited_receipts": 153.60000000000002,
+              "closing_cash": 17049.2,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 63,
+              "credited_receipts": 1250.4,
+              "closing_cash": 18236.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 63,
+              "credited_receipts": 152.0,
+              "closing_cash": 18325.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 65,
+              "credited_receipts": 571.2,
+              "closing_cash": 18831.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 65,
+              "credited_receipts": 812.0,
+              "closing_cash": 19578.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 65,
+              "credited_receipts": 563.2,
+              "closing_cash": 20077.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 64,
+              "credited_receipts": 149.6,
+              "closing_cash": 20162.600000000002,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 67,
+              "credited_receipts": 1201.6000000000001,
+              "closing_cash": 21297.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 66,
+              "credited_receipts": 148.8,
+              "closing_cash": 21380.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 67,
+              "credited_receipts": 536.8000000000001,
+              "closing_cash": 21849.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 67,
+              "credited_receipts": 792.0,
+              "closing_cash": 22574.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 67,
+              "credited_receipts": 525.6,
+              "closing_cash": 23033.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 67,
+              "credited_receipts": 145.6,
+              "closing_cash": 23111.999999999996,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 69,
+              "credited_receipts": 1159.2,
+              "closing_cash": 24202.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 68,
+              "credited_receipts": 144.0,
+              "closing_cash": 24278.199999999997,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 69,
+              "credited_receipts": 513.6,
+              "closing_cash": 24722.799999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 69,
+              "credited_receipts": 781.6,
+              "closing_cash": 25435.399999999994,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 507.20000000000005,
+              "closing_cash": 25941.599999999995,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 4,
+          "melons": 0,
+          "value": 11219.800000000001,
+          "min_cash": 778.0,
+          "affordable": true,
+          "investment_cost": 2000,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2000,
+              "credited_receipts": 0.0,
+              "closing_cash": 1000.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 109,
+              "credited_receipts": 0.0,
+              "closing_cash": 891.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 113,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 1097.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 117,
+              "credited_receipts": 316.8,
+              "closing_cash": 1297.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 118,
+              "credited_receipts": 313.6,
+              "closing_cash": 1492.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 121,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 1682.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 122,
+              "credited_receipts": 308.8,
+              "closing_cash": 1869.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 128,
+              "credited_receipts": 4176.8,
+              "closing_cash": 5918.4,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 125,
+              "credited_receipts": 304.0,
+              "closing_cash": 6097.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 129,
+              "credited_receipts": 300.8,
+              "closing_cash": 6269.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 132,
+              "credited_receipts": 2530.4,
+              "closing_cash": 8667.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 129,
+              "credited_receipts": 296.0,
+              "closing_cash": 8834.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 8995.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2002.4,
+              "closing_cash": 10861.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 11016.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 137,
+              "credited_receipts": 285.6,
+              "closing_cash": 11165.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 140,
+              "credited_receipts": 1221.6000000000001,
+              "closing_cash": 12246.800000000001,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 137,
+              "credited_receipts": 280.8,
+              "closing_cash": 12390.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 12531.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 417.6,
+              "closing_cash": 12804.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 12936.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 141,
+              "credited_receipts": 270.40000000000003,
+              "closing_cash": 13065.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 145,
+              "credited_receipts": 305.6,
+              "closing_cash": 13226.4,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 145,
+              "credited_receipts": 265.6,
+              "closing_cash": 13347.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 13464.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 297.6,
+              "closing_cash": 13614.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 13726.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 149,
+              "credited_receipts": 255.20000000000002,
+              "closing_cash": 13832.800000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 152,
+              "credited_receipts": 290.40000000000003,
+              "closing_cash": 13971.2,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 249.60000000000002,
+              "closing_cash": 14219.800000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 4,
+          "melons": 4,
+          "value": 15649.399999999996,
+          "min_cash": 444.0,
+          "affordable": true,
+          "investment_cost": 2320,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2322,
+              "credited_receipts": 0.0,
+              "closing_cash": 678.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 115,
+              "credited_receipts": 0.0,
+              "closing_cash": 563.0,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 119,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 763.2,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 123,
+              "credited_receipts": 316.8,
+              "closing_cash": 957.0,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 124,
+              "credited_receipts": 313.6,
+              "closing_cash": 1146.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 127,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 1330.8,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 128,
+              "credited_receipts": 308.8,
+              "closing_cash": 1511.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 131,
+              "credited_receipts": 4176.8,
+              "closing_cash": 5557.4,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 131,
+              "credited_receipts": 304.0,
+              "closing_cash": 5730.4,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 135,
+              "credited_receipts": 300.8,
+              "closing_cash": 5896.2,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 135,
+              "credited_receipts": 7205.6,
+              "closing_cash": 12966.8,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 129,
+              "credited_receipts": 296.0,
+              "closing_cash": 13133.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 13294.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2002.4,
+              "closing_cash": 15160.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 15315.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 137,
+              "credited_receipts": 285.6,
+              "closing_cash": 15464.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 140,
+              "credited_receipts": 1221.6000000000001,
+              "closing_cash": 16546.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 137,
+              "credited_receipts": 280.8,
+              "closing_cash": 16689.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 16830.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 417.6,
+              "closing_cash": 17103.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 17235.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 141,
+              "credited_receipts": 270.40000000000003,
+              "closing_cash": 17365.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 145,
+              "credited_receipts": 305.6,
+              "closing_cash": 17525.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 145,
+              "credited_receipts": 265.6,
+              "closing_cash": 17646.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 17763.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 297.6,
+              "closing_cash": 17913.199999999997,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 18025.799999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 149,
+              "credited_receipts": 255.20000000000002,
+              "closing_cash": 18131.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 152,
+              "credited_receipts": 290.40000000000003,
+              "closing_cash": 18270.399999999998,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 249.60000000000002,
+              "closing_cash": 18518.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 4,
+          "melons": 8,
+          "value": 19567.399999999994,
+          "min_cash": 62.0,
+          "affordable": false,
+          "investment_cost": 2640,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2652,
+              "credited_receipts": 0.0,
+              "closing_cash": 348.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 141,
+              "credited_receipts": 0.0,
+              "closing_cash": 207.0,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 145,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 381.20000000000005,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 149,
+              "credited_receipts": 316.8,
+              "closing_cash": 549.0,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 150,
+              "credited_receipts": 313.6,
+              "closing_cash": 712.6,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 153,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 870.8000000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 154,
+              "credited_receipts": 308.8,
+              "closing_cash": 1025.6000000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 157,
+              "credited_receipts": 4176.8,
+              "closing_cash": 5045.400000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 157,
+              "credited_receipts": 304.0,
+              "closing_cash": 5192.400000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 161,
+              "credited_receipts": 300.8,
+              "closing_cash": 5332.200000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 161,
+              "credited_receipts": 11546.400000000001,
+              "closing_cash": 16717.600000000002,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 129,
+              "credited_receipts": 296.0,
+              "closing_cash": 16884.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 17045.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2002.4,
+              "closing_cash": 18911.600000000002,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 19066.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 137,
+              "credited_receipts": 285.6,
+              "closing_cash": 19215.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 140,
+              "credited_receipts": 1221.6000000000001,
+              "closing_cash": 20296.8,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 137,
+              "credited_receipts": 280.8,
+              "closing_cash": 20440.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 20581.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 417.6,
+              "closing_cash": 20854.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 20986.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 141,
+              "credited_receipts": 270.40000000000003,
+              "closing_cash": 21115.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 145,
+              "credited_receipts": 305.6,
+              "closing_cash": 21276.399999999998,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 145,
+              "credited_receipts": 265.6,
+              "closing_cash": 21396.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 21514.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 297.6,
+              "closing_cash": 21663.999999999996,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 21776.599999999995,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 149,
+              "credited_receipts": 255.20000000000002,
+              "closing_cash": 21882.799999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 152,
+              "credited_receipts": 290.40000000000003,
+              "closing_cash": 22021.199999999997,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 249.60000000000002,
+              "closing_cash": 22269.799999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 0,
+          "sheep": 4,
+          "melons": 12,
+          "value": 22166.599999999995,
+          "min_cash": -520.0,
+          "affordable": false,
+          "investment_cost": 2960,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 3014,
+              "credited_receipts": 0.0,
+              "closing_cash": -14.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 251,
+              "credited_receipts": 0.0,
+              "closing_cash": -265.0,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 255,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": -200.79999999999995,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 259,
+              "credited_receipts": 316.8,
+              "closing_cash": -142.99999999999994,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 260,
+              "credited_receipts": 313.6,
+              "closing_cash": -89.39999999999992,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 263,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": -41.199999999999875,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 264,
+              "credited_receipts": 308.8,
+              "closing_cash": 3.6000000000001364,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 267,
+              "credited_receipts": 4176.8,
+              "closing_cash": 3913.4000000000005,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 267,
+              "credited_receipts": 304.0,
+              "closing_cash": 3950.4000000000005,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 271,
+              "credited_receipts": 300.8,
+              "closing_cash": 3980.2000000000007,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 271,
+              "credited_receipts": 15328.0,
+              "closing_cash": 19037.2,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 129,
+              "credited_receipts": 296.0,
+              "closing_cash": 19204.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 19364.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2002.4,
+              "closing_cash": 21231.2,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 21386.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 137,
+              "credited_receipts": 285.6,
+              "closing_cash": 21534.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 140,
+              "credited_receipts": 1221.6000000000001,
+              "closing_cash": 22616.399999999998,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 137,
+              "credited_receipts": 280.8,
+              "closing_cash": 22760.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 22900.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 417.6,
+              "closing_cash": 23174.199999999997,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 23305.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 141,
+              "credited_receipts": 270.40000000000003,
+              "closing_cash": 23435.399999999998,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 145,
+              "credited_receipts": 305.6,
+              "closing_cash": 23595.999999999996,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 145,
+              "credited_receipts": 265.6,
+              "closing_cash": 23716.599999999995,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 23833.999999999996,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 297.6,
+              "closing_cash": 23983.599999999995,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 24096.199999999993,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 149,
+              "credited_receipts": 255.20000000000002,
+              "closing_cash": 24202.399999999994,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 152,
+              "credited_receipts": 290.40000000000003,
+              "closing_cash": 24340.799999999996,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 1,
+              "credited_receipts": 249.60000000000002,
+              "closing_cash": 24589.399999999994,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 2,
+          "sheep": 2,
+          "melons": 0,
+          "value": 19425.000000000004,
+          "min_cash": 978.0,
+          "affordable": true,
+          "investment_cost": 1800,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 1800,
+              "credited_receipts": 0.0,
+              "closing_cash": 1200.0,
+              "workers": 1,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 109,
+              "credited_receipts": 0.0,
+              "closing_cash": 1091.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 113,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 1297.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 117,
+              "credited_receipts": 316.8,
+              "closing_cash": 1497.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 118,
+              "credited_receipts": 313.6,
+              "closing_cash": 1692.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 121,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 1882.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 122,
+              "credited_receipts": 308.8,
+              "closing_cash": 2069.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 126,
+              "credited_receipts": 2313.6,
+              "closing_cash": 4257.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 125,
+              "credited_receipts": 304.0,
+              "closing_cash": 4436.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1990.4,
+              "closing_cash": 6296.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1568.8000000000002,
+              "closing_cash": 7735.400000000001,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1040.0,
+              "closing_cash": 8645.400000000001,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 8806.000000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2237.6,
+              "closing_cash": 10907.600000000002,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 11062.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 138,
+              "credited_receipts": 948.0,
+              "closing_cash": 11872.600000000002,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 138,
+              "credited_receipts": 1483.2,
+              "closing_cash": 13217.800000000003,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 138,
+              "credited_receipts": 903.2,
+              "closing_cash": 13983.000000000004,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 14123.400000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 1992.0,
+              "closing_cash": 15971.400000000003,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 16103.200000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 142,
+              "credited_receipts": 812.8000000000001,
+              "closing_cash": 16774.000000000004,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 143,
+              "credited_receipts": 1323.2,
+              "closing_cash": 17954.200000000004,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 146,
+              "credited_receipts": 766.4000000000001,
+              "closing_cash": 18574.600000000006,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 18692.000000000007,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1676.0,
+              "closing_cash": 20220.000000000007,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 20332.600000000006,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 150,
+              "credited_receipts": 676.0,
+              "closing_cash": 20858.600000000006,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 150,
+              "credited_receipts": 1089.6000000000001,
+              "closing_cash": 21798.200000000004,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 2,
+              "credited_receipts": 628.8000000000001,
+              "closing_cash": 22425.000000000004,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 2,
+          "sheep": 2,
+          "melons": 4,
+          "value": 23851.600000000002,
+          "min_cash": 644.0,
+          "affordable": true,
+          "investment_cost": 2120,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2122,
+              "credited_receipts": 0.0,
+              "closing_cash": 878.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 115,
+              "credited_receipts": 0.0,
+              "closing_cash": 763.0,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 119,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 963.2,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 123,
+              "credited_receipts": 316.8,
+              "closing_cash": 1157.0,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 124,
+              "credited_receipts": 313.6,
+              "closing_cash": 1346.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 127,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 1530.8,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 128,
+              "credited_receipts": 308.8,
+              "closing_cash": 1711.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 131,
+              "credited_receipts": 2313.6,
+              "closing_cash": 3894.2,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 131,
+              "credited_receipts": 304.0,
+              "closing_cash": 4067.2,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 135,
+              "credited_receipts": 1990.4,
+              "closing_cash": 5922.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 135,
+              "credited_receipts": 6244.0,
+              "closing_cash": 12031.6,
+              "workers": 5,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1040.0,
+              "closing_cash": 12941.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 13102.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2237.6,
+              "closing_cash": 15203.800000000001,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 15358.800000000001,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 138,
+              "credited_receipts": 948.0,
+              "closing_cash": 16168.800000000001,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 138,
+              "credited_receipts": 1483.2,
+              "closing_cash": 17514.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 138,
+              "credited_receipts": 903.2,
+              "closing_cash": 18279.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 18419.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 1992.0,
+              "closing_cash": 20267.600000000002,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 20399.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 142,
+              "credited_receipts": 812.8000000000001,
+              "closing_cash": 21070.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 143,
+              "credited_receipts": 1323.2,
+              "closing_cash": 22250.4,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 146,
+              "credited_receipts": 766.4000000000001,
+              "closing_cash": 22870.800000000003,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 22988.200000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1676.0,
+              "closing_cash": 24516.200000000004,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 24628.800000000003,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 150,
+              "credited_receipts": 676.0,
+              "closing_cash": 25154.800000000003,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 150,
+              "credited_receipts": 1089.6000000000001,
+              "closing_cash": 26094.4,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 2,
+              "credited_receipts": 628.8000000000001,
+              "closing_cash": 26721.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 2,
+          "sheep": 2,
+          "melons": 8,
+          "value": 27769.6,
+          "min_cash": 262.0,
+          "affordable": true,
+          "investment_cost": 2440,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2452,
+              "credited_receipts": 0.0,
+              "closing_cash": 548.0,
+              "workers": 6,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 141,
+              "credited_receipts": 0.0,
+              "closing_cash": 407.0,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 145,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": 581.2,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 149,
+              "credited_receipts": 316.8,
+              "closing_cash": 749.0,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 150,
+              "credited_receipts": 313.6,
+              "closing_cash": 912.6,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 153,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 1070.8000000000002,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 154,
+              "credited_receipts": 308.8,
+              "closing_cash": 1225.6000000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 157,
+              "credited_receipts": 2313.6,
+              "closing_cash": 3382.2,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 157,
+              "credited_receipts": 304.0,
+              "closing_cash": 3529.2,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 161,
+              "credited_receipts": 1990.4,
+              "closing_cash": 5358.6,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 161,
+              "credited_receipts": 10584.800000000001,
+              "closing_cash": 15782.400000000001,
+              "workers": 8,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1040.0,
+              "closing_cash": 16692.4,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 16853.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2237.6,
+              "closing_cash": 18954.6,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 19109.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 138,
+              "credited_receipts": 948.0,
+              "closing_cash": 19919.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 138,
+              "credited_receipts": 1483.2,
+              "closing_cash": 21264.8,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 138,
+              "credited_receipts": 903.2,
+              "closing_cash": 22030.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 22170.4,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 1992.0,
+              "closing_cash": 24018.4,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 24150.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 142,
+              "credited_receipts": 812.8000000000001,
+              "closing_cash": 24821.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 143,
+              "credited_receipts": 1323.2,
+              "closing_cash": 26001.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 146,
+              "credited_receipts": 766.4000000000001,
+              "closing_cash": 26621.600000000002,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 26739.000000000004,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1676.0,
+              "closing_cash": 28267.000000000004,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 28379.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 150,
+              "credited_receipts": 676.0,
+              "closing_cash": 28905.600000000002,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 150,
+              "credited_receipts": 1089.6000000000001,
+              "closing_cash": 29845.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 2,
+              "credited_receipts": 628.8000000000001,
+              "closing_cash": 30472.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            }
+          ]
+        },
+        {
+          "cows": 2,
+          "sheep": 2,
+          "melons": 12,
+          "value": 30368.800000000003,
+          "min_cash": -320.0,
+          "affordable": false,
+          "investment_cost": 2760,
+          "cash_schedule": [
+            {
+              "day": 0,
+              "spending_before_receipts": 2814,
+              "credited_receipts": 0.0,
+              "closing_cash": 186.0,
+              "workers": 9,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 1,
+              "spending_before_receipts": 251,
+              "credited_receipts": 0.0,
+              "closing_cash": -65.0,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 2,
+              "spending_before_receipts": 255,
+              "credited_receipts": 319.20000000000005,
+              "closing_cash": -0.7999999999999545,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 3,
+              "spending_before_receipts": 259,
+              "credited_receipts": 316.8,
+              "closing_cash": 57.00000000000006,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 4,
+              "spending_before_receipts": 260,
+              "credited_receipts": 313.6,
+              "closing_cash": 110.60000000000008,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 5,
+              "spending_before_receipts": 263,
+              "credited_receipts": 311.20000000000005,
+              "closing_cash": 158.80000000000013,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 6,
+              "spending_before_receipts": 264,
+              "credited_receipts": 308.8,
+              "closing_cash": 203.60000000000014,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 7,
+              "spending_before_receipts": 267,
+              "credited_receipts": 2313.6,
+              "closing_cash": 2250.2,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 8,
+              "spending_before_receipts": 267,
+              "credited_receipts": 304.0,
+              "closing_cash": 2287.2,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 9,
+              "spending_before_receipts": 271,
+              "credited_receipts": 1990.4,
+              "closing_cash": 4006.6,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 10,
+              "spending_before_receipts": 271,
+              "credited_receipts": 14366.400000000001,
+              "closing_cash": 18102.0,
+              "workers": 11,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 11,
+              "spending_before_receipts": 130,
+              "credited_receipts": 1040.0,
+              "closing_cash": 19012.0,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 12,
+              "spending_before_receipts": 133,
+              "credited_receipts": 293.6,
+              "closing_cash": 19172.6,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 13,
+              "spending_before_receipts": 136,
+              "credited_receipts": 2237.6,
+              "closing_cash": 21274.199999999997,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 14,
+              "spending_before_receipts": 133,
+              "credited_receipts": 288.0,
+              "closing_cash": 21429.199999999997,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 15,
+              "spending_before_receipts": 138,
+              "credited_receipts": 948.0,
+              "closing_cash": 22239.199999999997,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 16,
+              "spending_before_receipts": 138,
+              "credited_receipts": 1483.2,
+              "closing_cash": 23584.399999999998,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 17,
+              "spending_before_receipts": 138,
+              "credited_receipts": 903.2,
+              "closing_cash": 24349.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 18,
+              "spending_before_receipts": 138,
+              "credited_receipts": 278.40000000000003,
+              "closing_cash": 24490.0,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 19,
+              "spending_before_receipts": 144,
+              "credited_receipts": 1992.0,
+              "closing_cash": 26338.0,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 20,
+              "spending_before_receipts": 141,
+              "credited_receipts": 272.8,
+              "closing_cash": 26469.8,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 21,
+              "spending_before_receipts": 142,
+              "credited_receipts": 812.8000000000001,
+              "closing_cash": 27140.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 22,
+              "spending_before_receipts": 143,
+              "credited_receipts": 1323.2,
+              "closing_cash": 28320.8,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 23,
+              "spending_before_receipts": 146,
+              "credited_receipts": 766.4000000000001,
+              "closing_cash": 28941.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 24,
+              "spending_before_receipts": 145,
+              "credited_receipts": 262.40000000000003,
+              "closing_cash": 29058.600000000002,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 25,
+              "spending_before_receipts": 148,
+              "credited_receipts": 1676.0,
+              "closing_cash": 30586.600000000002,
+              "workers": 4,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 26,
+              "spending_before_receipts": 145,
+              "credited_receipts": 257.6,
+              "closing_cash": 30699.2,
+              "workers": 2,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 27,
+              "spending_before_receipts": 150,
+              "credited_receipts": 676.0,
+              "closing_cash": 31225.2,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 28,
+              "spending_before_receipts": 150,
+              "credited_receipts": 1089.6000000000001,
+              "closing_cash": 32164.8,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            },
+            {
+              "day": 29,
+              "spending_before_receipts": 2,
+              "credited_receipts": 628.8000000000001,
+              "closing_cash": 32791.6,
+              "workers": 3,
+              "fertilizer_inputs": 0
+            }
+          ]
+        }
+      ],
+      "chosen": null
+    }
+  }
+}

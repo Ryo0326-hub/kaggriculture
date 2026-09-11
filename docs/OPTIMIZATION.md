@@ -54,7 +54,7 @@ The proof does **not** extend to the whole farming policy. The route ignores dif
 
 ## 4. Step 2: worker assignment — now implemented
 
-The current agent implements a bounded exact assignment solver with a shared seed quota. [The Step 2 notes](STEP_2_OPTIMIZATION.md) explain the implemented model, dynamic program, execution rules, and replay explanations. The following model introduces that checkpoint.
+The Step 2 agent implemented a bounded exact assignment solver with a shared seed quota. [The Step 2 notes](STEP_2_OPTIMIZATION.md) explain that model, dynamic program, execution rules, and replay explanations. The following model introduces that historical checkpoint.
 
 Let `x_wj = 1` mean worker `w` is assigned task `j`. With estimated net benefit `v_wj`, the basic assignment model is:
 
@@ -109,4 +109,6 @@ The frozen Step 4 policy uses a binary capital choice, marginal whole-herd cash 
 
 The frozen [Step 5 policy](STEP_5_OPTIMIZATION.md) retains that investment rule and selects shared livestock routes through a bounded binary set-partitioning model. Subset dynamic programming minimizes required workers and then modeled travel/service time. Scheduled production has dedicated routes to protect delivery timing. Exactness applies to that route menu and its constraints, not to total farm profit.
 
-The active [Step 6 policy](STEP_6_OPTIMIZATION.md) adds a bounded integer crop commitment, dated marginal wage estimates, fertilizer/feed opportunity costs, and a shared-resource dispatcher. Its crop assignment is greedy with deadline and resource checks; it does not inherit the livestock solver's exactness guarantee. The [awarse audit](STEP_5_SERVER_ANALYSIS.md) explains why minimizing wages and holding an intermediate cash lead did not maximize terminal cash.
+The [Step 6 policy](STEP_6_OPTIMIZATION.md) added a bounded integer crop commitment, dated marginal wage estimates, fertilizer/feed opportunity costs, and a shared-resource dispatcher. Its crop assignment is greedy with deadline and resource checks; it does not inherit the livestock solver's exactness guarantee. The [awarse audit](STEP_5_SERVER_ANALYSIS.md) explains why minimizing wages and holding an intermediate cash lead did not maximize terminal cash.
+
+The current [Step 7 policy](STEP_7_OPTIMIZATION.md) compares joint opening portfolios and complete dated crop templates, including optional fertilizer and short crop sequences. It accounts for cash and inventory once, estimates nonlinear marginal wages, and preloads the first feed before installing an animal. The small menu is related to activity-based integer programming; its forecasts and greedy dispatch are not a proof of global optimality or computed LP dual prices. [Results and release status](STEP_7_RESULTS.md) distinguish local validation from server validation.

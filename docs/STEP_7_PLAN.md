@@ -1,6 +1,6 @@
 # Revised plan: joint opening and dated production bundles
 
-Prepared September 10, 2026, following [Step 6 server validation and the SpaTaro–ymg_aq audit](STEP_6_SERVER_AND_LEADER_ANALYSIS.md). **Proposal only.** The released Step 6 agent remains unchanged. This plan supersedes the earlier recommendation to focus narrowly on waiting versus buying a seed before broader allocation work.
+Prepared September 10, 2026, following [Step 6 server validation and the SpaTaro–ymg_aq audit](STEP_6_SERVER_AND_LEADER_ANALYSIS.md). The first bounded implementation is now described in [Step 7 implementation notes](STEP_7_OPTIMIZATION.md); see [results](STEP_7_RESULTS.md) for validation and release status. This original proposal is retained to distinguish implemented work from its broader follow-ups. In particular, early wheat harvest alternatives, explicit multi-day waiting, expansion, and selective maintenance remain unimplemented.
 
 ## Decision
 

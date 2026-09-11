@@ -1,0 +1,63 @@
+{
+  "checkpoint": "Step 7 joint opening and dated production bundles",
+  "frozen_at": "2026-09-11T01:30:59.572669+00:00",
+  "candidate_sha256": "5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41",
+  "reference_sha256": "d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac",
+  "seeds": [
+    8001,
+    8002,
+    8003,
+    8004,
+    8005,
+    8006,
+    8007,
+    8008,
+    8009,
+    8010,
+    8011,
+    8012,
+    8013,
+    8014,
+    8015,
+    8016,
+    8017,
+    8018,
+    8019,
+    8020,
+    8021,
+    8022,
+    8023,
+    8024,
+    8025,
+    8026,
+    8027,
+    8028,
+    8029,
+    8030
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponents": {
+    "baselines/step_6.py": "d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac",
+    "artifacts/step-6-controls/melons.py": "2c380b1bf53ab853b20ac7ca7000a2753756d20481c59e526dce3b4719d789b0",
+    "artifacts/step-6-controls/strawberries.py": "d839c3cb56654b50ea2c8be77abd67a41019f3de943d204df3cdebc8d233b0a8",
+    "artifacts/step-7-controls/cows.py": "433e667606ea5a3d3a9b8f67cfdb124b6d84c07b06fb1273ad922ded8e264aa6",
+    "artifacts/step-7-pool/early-crops.py": "c5ed0d4c7ad8c7b54212853d450bc344f633a3c75f9290382c22ea60b677c4c8",
+    "artifacts/step-7-pool/delayed-crops.py": "5a259179a705f4eadd63d5b44db0aad85b991ee72ceaa26703ed30956c54f985"
+  },
+  "workers_per_run": 4,
+  "games_per_policy": 360,
+  "promotion": [
+    "Zero candidate execution errors, unplanned crop losses, animal escapes, missed feeding, duplicate crop targets, or seed overrequests.",
+    "Zero final shed/carried inventory and unused seeds.",
+    "Positive common-pool paired score difference, with whole-seed bootstrap 95% interval above zero.",
+    "Investigate any per-opponent score regression greater than 5 percentage points; do not promote an unexplained regression.",
+    "Exact standalone artifact passes isolated official-loader full-season self-play and runtime limit.",
+    "Source and controls frozen before these seeds. If source changes, retire these seeds and run a fresh protocol."
+  ],
+  "scope": "Six local reactive families; early and delayed crop controls are independent of candidate logic but lack livestock and expansion. Mixed specialists and cow control share historical source. No recreation of private leaderboard source or medal-strength claim.",
+  "known_follow_up": "Conditional land expansion, integrated distant routes, selective maintenance, early wheat harvest variants, and explicit multi-day wait alternatives.",
+  "supersedes": "step-7-rejected-protocol.json; source corrected for installation-day feeding; all prior seeds retired"
+}
