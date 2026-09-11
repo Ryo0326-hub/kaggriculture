@@ -14,6 +14,8 @@ Cycle 8 completed an **offline purchase-continuation diagnostic, with no live-po
 
 Cycle 9 completed **without promotion or upload**. Cash-admission challenger `f789bc00a15f…` improves cash calibration but scores 61.1% versus 72.2%, failing development. Cycle 3 remains byte-identical. New supplied public episode 107928511 is a 73,860–122,954 loss to Ace Team; all 719 own decisions match Cycle 3, with no stderr and maximum server decision time 0.302481 seconds. Its replay does not identify a submission ID. No latest-two/rating query or fresh evaluation was performed. [Experiment](CYCLE_9_RESULTS.md), [server analysis](CYCLE_9_SERVER_ANALYSIS.md).
 
+Cycle 10 completed **without promotion, release preparation or upload**. Wheat-opening challenger `823841703561…` scored 50.0% versus Cycle 3’s 79.2% on the new four-control development grid. Its runtime and operational checks pass, but competitive gates fail. `main.py` and the submitted artifact remain unchanged, seeds 9401–9420 remain unused, and no server snapshot was refreshed. [Results](CYCLE_10_RESULTS.md), [CO notes](CYCLE_10_OPTIMIZATION.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |

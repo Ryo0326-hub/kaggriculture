@@ -4,7 +4,7 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
-Current checkpoint: **Cycles 6 and 7 are complete without promotion; retain the submitted Cycle 3 agent.** Waiting with rival supply stress scored 38.9% versus 72.2% and lacked runtime headroom. The isolated wheat-conservation fix tied at 72.2%, with no game-outcome improvement. Neither advanced to fresh evaluation or upload. [Cycle 6 results](CYCLE_6_RESULTS.md), [Cycle 7 results](CYCLE_7_RESULTS.md). The latest checked server snapshot remains September 11, 11:28 UTC, when submission 56158876 was COMPLETE and the latest-two pair was Cycle 3 / Step 8. This work did not refresh that snapshot. [Server analysis](CYCLE_3_SERVER_ANALYSIS.md), [snapshot](benchmarks/cycle-4-submissions-snapshot.json).
+Current checkpoint: **Cycle 10 is complete without promotion; retain the submitted Cycle 3 agent.** The wheat-inclusive opening ran cleanly but scored 50.0% versus 79.2% on its 24-game-per-policy development grid. Reserved seeds 9401–9420 remain unused. Next priority is a bounded carrot production option after the unchanged opening, priced against observed shop demand. [Cycle 10 results](CYCLE_10_RESULTS.md), [CO notes](CYCLE_10_OPTIMIZATION.md). The latest checked server snapshot remains September 11, 11:28 UTC, when submission 56158876 was COMPLETE and the latest-two pair was Cycle 3 / Step 8. Cycles 5–10 did not refresh that snapshot. [Snapshot](benchmarks/cycle-4-submissions-snapshot.json).
 
 ## Cycle 1 — server evidence and benchmark calibration
 
@@ -112,3 +112,12 @@ A practical three-hour review/experiment block: 20 minutes for new server eviden
 Internal target: stop speculative redesigns by September 27 and validate the intended final two artifacts on September 28–29, leaving September 30 for verified defects or platform delays. Official entry/team-merger deadline: September 23, 23:59 UTC; final submission deadline: September 30, 23:59 UTC (19:59 Toronto). These dates were checked during this review against the [official timeline](https://www.kaggle.com/competitions/kaggriculture/overview/timeline).
 
 The [evaluation rules](https://www.kaggle.com/competitions/kaggriculture/overview/evaluation) allow five submissions per day and use the latest two for final evaluation. Matchmaking and opponent selection are not randomized experiments under our control. Track actual game outcomes and validation status separately from the changing rating.
+
+
+## Cycle 10 — wheat-inclusive opening
+
+**Completed without promotion.** Fifty finite opening portfolios include thirty wheat-to-melon sequences, with dated costs and only first-stage purchases executed. Actual hiring, dispatch and subsequent investment remain unchanged. The selected four-melon/eight-wheat opening generated earlier crop cash, but the later policy often bought livestock instead of executing the forecast second stage.
+
+On the new complete four-control development grid, the candidate scores 50.0% versus 79.2% for Cycle 3, with three opponent strata regressing. More wheat and 240 less upfront spending did not offset 398.5 greater average wages and 6,952.0 fewer own terminal coins. Both detailed reactive comparisons change their first shop at observation 72; eight cash accounts reconcile. Runtime and own operational checks pass. [Results](CYCLE_10_RESULTS.md), [plan](CYCLE_10_PLAN.md), [CO notes](CYCLE_10_OPTIMIZATION.md).
+
+**Next priority: demand-responsive carrot production after the existing opening.** The current crop menu omits carrots even when PET_CAFE demand is visible. Add one verified carrot column, including watering/fertilizer labor and harvest deadline, to the existing marginal-investment comparison. Keep the opening, actual hiring and dispatch fixed initially. Test carrot supply pressure, record a bounded protocol before outcomes, and freeze before any fresh evaluation. Treat tomatoes separately because their continuing harvest schedule differs. Do not carry forward the rejected wheat opening or infer general superiority from one town. Cycle 3 and unused seeds 9401–9420 remain protected.
