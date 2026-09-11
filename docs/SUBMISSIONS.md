@@ -16,6 +16,8 @@ Cycle 9 completed **without promotion or upload**. Cash-admission challenger `f7
 
 Cycle 10 completed **without promotion, release preparation or upload**. Wheat-opening challenger `823841703561…` scored 50.0% versus Cycle 3’s 79.2% on the new four-control development grid. Its runtime and operational checks pass, but competitive gates fail. `main.py` and the submitted artifact remain unchanged, seeds 9401–9420 remain unused, and no server snapshot was refreshed. [Results](CYCLE_10_RESULTS.md), [CO notes](CYCLE_10_OPTIMIZATION.md).
 
+Cycle 11 completed **without promotion, release preparation or upload**. Carrot challenger `16bb5ba43889…` ties Cycle 3 at 75.0% on its four-control development grid. Higher average cash does not clear the match-score gate, and the audit finds fertilizer forecast/execution inconsistency. All incumbent copies remain unchanged; reserved seeds are unused and no server snapshot was refreshed. [Results](CYCLE_11_RESULTS.md).
+
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
 | Checkpoint | Artifact SHA-256 | Kaggle submission | Status |
