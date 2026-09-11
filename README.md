@@ -2,7 +2,9 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Current candidate: Cycle 13, ready for a user-run Kaggle validation.** Built on Cycle 12, it adds staged livestock space, shared herd routes, workload-priced investments, goose purchasing, tomatoes and selected faster wheat turnover. The protected root `main.py` is still Cycle 3. [Candidate upload command and checks](docs/CYCLE_13_RESULTS.md) · [Majkel1337/Gekkotron study](docs/CYCLE_13_SERVER_STUDY.md) · [CO/economic implementation notes](docs/CYCLE_13_OPTIMIZATION.md).
+**Current candidate: Cycle 13, reported submitted by the user; server validation and gameplay evidence pending.** Built on Cycle 12, it adds staged livestock space, shared herd routes, workload-priced investments, goose purchasing, tomatoes and selected faster wheat turnover. The submission ID and uploaded-byte identity have not yet been independently confirmed. The protected root `main.py` is still Cycle 3. [Candidate artifact and checks](docs/CYCLE_13_RESULTS.md) · [Majkel1337/Gekkotron study](docs/CYCLE_13_SERVER_STUDY.md) · [CO/economic implementation notes](docs/CYCLE_13_OPTIMIZATION.md).
+
+The [V36 public notebook review](docs/V36_NOTEBOOK_REVIEW.md) compares its schedules and market mechanisms with our strategy and the supplied Gekkotron games. It identifies marginal-impact sale ordering as a possible next bounded change, conditional on Cycle 13 server results. This review changed documentation only; it ran no games and left all agent bytes unchanged.
 
 The strategy includes livestock, feeding and care, fertilizer collection/use, conditional land expansion, and trading with shared prices and town demand. Cycle 13 extends the existing worker/input coordination; it does not use an LLM, GPU or external API at runtime. Its competitive performance is not yet measured.
 

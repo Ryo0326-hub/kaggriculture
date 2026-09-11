@@ -1,0 +1,417 @@
+{
+  "method": "Static JSON and AST literal data analysis only. No notebook, policy or engine executed. Routes are raw schedules before reactive overlays and the V36 opening override.",
+  "notebook_sha256": "5cefaf9299049e0ee61c83f22869d0916647fe9f495d68b1b20e22c0093b6224",
+  "agent_sha256": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd",
+  "routes": [
+    {
+      "id": 0,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 8,
+        "BUY_ANIMAL:SHEEP": 6,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_ANIMAL:GOOSE": 3,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 11
+    },
+    {
+      "id": 1,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 10,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 2,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 8,
+        "BUY_ANIMAL:SHEEP": 6,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_ANIMAL:GOOSE": 3,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 11
+    },
+    {
+      "id": 3,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 4,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 10,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 5,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 10,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 6,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 7,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 8,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 163,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 9,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 165,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 28
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 10,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 161,
+        "BUY_SEED:STRAWBERRY": 34,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 11,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 6,
+        "BUY_ANIMAL:SHEEP": 11,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 167,
+        "BUY_SEED:STRAWBERRY": 33,
+        "BUY_SEED:CARROT": 31
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    },
+    {
+      "id": 12,
+      "decisions": 719,
+      "requested_purchases": {
+        "BUY_ANIMAL:COW": 4,
+        "BUY_ANIMAL:SHEEP": 14,
+        "BUY_SEED:MELON": 13,
+        "BUY_SEED:WHEAT": 169,
+        "BUY_SEED:STRAWBERRY": 44,
+        "BUY_SEED:CARROT": 24
+      },
+      "land_order_steps": [
+        150,
+        265
+      ],
+      "max_scheduled_hires_per_day": 12
+    }
+  ],
+  "recorded_comparisons": [
+    {
+      "episode": "107970619",
+      "sha256": "498369891adcfad43e16116e89a9324c1e19e38c620f000e1169d20e43415d6d",
+      "seat": 0,
+      "comparison": "Gekkotron recorded actions versus raw selected public route, before all overlays",
+      "selected_route_at_144": 0,
+      "decisions": 719,
+      "identical_units": 710,
+      "identical_non_sale_sequences": 719,
+      "identical_full_actions": 547,
+      "first_unit_mismatches": [
+        40,
+        41,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717
+      ],
+      "first_non_sale_mismatches": [],
+      "initial_orders_by_seat": [
+        [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ]
+        ],
+        [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            30
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            30
+          ]
+        ]
+      ],
+      "cash_after_first_action": [
+        2604.0,
+        2656.0
+      ],
+      "shed_after_first_action": [
+        {
+          "CARROT": 0,
+          "COW": 0,
+          "EGG": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 13,
+          "WOOL": 0
+        },
+        {
+          "CARROT": 0,
+          "COW": 0,
+          "EGG": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 13,
+          "WOOL": 0
+        }
+      ]
+    },
+    {
+      "episode": "107974608",
+      "sha256": "b316fc82a7c0ae767acd2f044f713bcabb347533634bef286eb2bc9b7bca5663",
+      "seat": 0,
+      "comparison": "Gekkotron recorded actions versus raw selected public route, before all overlays",
+      "selected_route_at_144": 8,
+      "decisions": 719,
+      "identical_units": 712,
+      "identical_non_sale_sequences": 718,
+      "identical_full_actions": 602,
+      "first_unit_mismatches": [
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718
+      ],
+      "first_non_sale_mismatches": [
+        362
+      ],
+      "initial_orders_by_seat": [
+        [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ]
+        ],
+        [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ]
+        ]
+      ],
+      "cash_after_first_action": [
+        2630.0,
+        2630.0
+      ],
+      "shed_after_first_action": [
+        {
+          "CARROT": 0,
+          "COW": 0,
+          "EGG": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 13,
+          "WOOL": 0
+        },
+        {
+          "CARROT": 0,
+          "COW": 0,
+          "EGG": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "MELON": 0,
+          "MILK": 0,
+          "SHEEP": 0,
+          "STRAWBERRY": 0,
+          "TOMATO": 0,
+          "WHEAT": 13,
+          "WOOL": 0
+        }
+      ]
+    }
+  ]
+}
