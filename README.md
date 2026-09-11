@@ -2,7 +2,9 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-The strategy already includes cows/sheep, feeding and care, milk/wool production, fertilizer collection and use, conditional land expansion, and trading with shared market prices and town demand. Egg-producing geese are modeled but not currently purchased. Recent crop experiments improve one part of this combined farm strategy. [Implemented features and remaining work](docs/CYCLE_12_OPTIMIZATION.md#what-is-already-in-the-submitted-agent).
+**Current candidate: Cycle 13, ready for a user-run Kaggle validation.** Built on Cycle 12, it adds staged livestock space, shared herd routes, workload-priced investments, goose purchasing, tomatoes and selected faster wheat turnover. The protected root `main.py` is still Cycle 3. [Candidate upload command and checks](docs/CYCLE_13_RESULTS.md) · [Majkel1337/Gekkotron study](docs/CYCLE_13_SERVER_STUDY.md) · [CO/economic implementation notes](docs/CYCLE_13_OPTIMIZATION.md).
+
+The strategy includes livestock, feeding and care, fertilizer collection/use, conditional land expansion, and trading with shared prices and town demand. Cycle 13 extends the existing worker/input coordination; it does not use an LLM, GPU or external API at runtime. Its competitive performance is not yet measured.
 
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
@@ -63,7 +65,9 @@ This is an optimization-informed heuristic, not a global farm optimizer or a Nas
 
 Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_8.py`. Steps 2, 3, 5, 6, 7, and 8 have server episodes that reproduce locally. Step 7's [MugaBros loss and Jaikrishna win](docs/STEP_7_SERVER_ANALYSIS.md) also match all 719 of our runtime decisions per episode.
 
-## Prepare the submission file
+## Historical full-season preparation — explicit opt-in only
+
+The active server-first workflow uses the Cycle 13 builder and upload command above, which do not run matches. The following older command runs local self-play; do not use it without a new request for local simulation.
 
 ```bash
 uv run python prepare_submission.py --output artifacts/submission-cycle-3

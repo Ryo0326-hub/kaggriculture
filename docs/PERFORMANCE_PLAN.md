@@ -4,7 +4,9 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
-Current checkpoint: **Cycle 12 is packaged for a user-run Kaggle test; Cycle 3 remains the protected submission.** The user stopped local simulations during the reference evaluation and explicitly requested strategy/implementation work with competitive evaluation on Kaggle. The final local comparison is incomplete and is not claimed as a passed gate. [Results and upload command](CYCLE_12_RESULTS.md), [CO notes and implemented non-crop features](CYCLE_12_OPTIMIZATION.md). Seeds 9401–9420 are now consumed evidence. No server rating/latest-two snapshot was refreshed in Cycle 12.
+Current checkpoint: **Cycle 13 is packaged for a user-run Kaggle test; Cycle 3 remains protected.** The user requested an integrated adaptation informed by five Majkel1337 games and two Gekkotron games. The challenger extends our Cycle 12 code; it does not replace the project with a replay imitation. [Results and upload command](CYCLE_13_RESULTS.md), [seven-game evidence](CYCLE_13_SERVER_STUDY.md), [CO/economic notes](CYCLE_13_OPTIMIZATION.md). Sixteen bounded tests and 56 recorded-observation interface probes pass. No local match simulations, automatic upload, cloud spending or new rating claim. The next priority is this candidate's server validation and gameplay evidence.
+
+Cycle 12's interrupted reference comparison remains incomplete and is not claimed as a passed gate. Seeds 9401–9420 remain consumed evidence. The new top-player replays are not evidence that Cycle 12 itself was server validated.
 
 ## Active workflow — user direction supersedes earlier simulation gates
 
