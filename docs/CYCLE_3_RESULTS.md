@@ -1,5 +1,7 @@
 # Cycle 3 — strawberry fertilizer timing
 
+Subsequent server update: submission **56158876** is COMPLETE, and three supplied public games match all 2,157 own decisions with clean execution (one win, two losses). [Server analysis](CYCLE_3_SERVER_ANALYSIS.md). Upload-pending language below records the original implementation checkpoint.
+
 **Decision: advance fertilizer timing as the current local agent.** The fresh matched evaluation improved match score from 60.8% to 86.7%, including an improvement against the stronger mixed control. Investment and hiring rules remain unchanged; the old harvest rule is retained. `main.py` and the isolated release file have the exact frozen hash `47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c`. Step 8 remains preserved in `baselines/step_8.py`. Kaggle upload and server validation are pending.
 
 Read the [implementation and CO notes](CYCLE_3_OPTIMIZATION.md) for crop-specific precedence, input opportunity cost and why the separate harvest experiment is not selected. [Complete development and fresh-game evidence](benchmarks/cycle-3-timing.json).

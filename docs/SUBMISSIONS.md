@@ -1,6 +1,10 @@
 # Submission registry
 
-Cycle 3 fertilizer timing is the current locally qualified agent. The ready artifact is `artifacts/submission-cycle-3-fertilizer/main.py`, hash `47c281bfb411…`; `main.py` contains the same bytes. **It has not been uploaded or server validated.** The last recorded latest-two pair is Steps 8/7. A new upload would displace Step 7 if that pair remains unchanged; review the intended pair first. [Qualification and validation evidence](CYCLE_3_RESULTS.md).
+Cycle 3 fertilizer timing was uploaded as **56158876**, September 11 at 05:02:52 UTC. Its artifact is `artifacts/submission-cycle-3-fertilizer/main.py`, hash `47c281bfb411…`, preserved in `baselines/cycle_3.py`. The September 11, 11:28 UTC official CLI snapshot marks it COMPLETE at **734.6**, with Step 8 at 672.4; the latest-two pair is **Cycle 3 / Step 8**. Ratings are time-specific, not profit or a guarantee of strength. [Snapshot](benchmarks/cycle-4-submissions-snapshot.json).
+
+Three supplied public games match all 2,157 own source decisions and reproduce every economic state: one win and two losses, clean own execution, maximum server decision time 0.254936 seconds. The separate validation replay was not supplied in this cycle. [Server analysis](CYCLE_3_SERVER_ANALYSIS.md). No upload is performed as part of Cycle 4's spatial-admission experiment; a future upload would displace Step 8 if the pair remains unchanged.
+
+Cycle 4 is complete **without promotion or upload**. Challenger `a9adaa81f622…` scored 74.2% versus Cycle 3's 73.3%, with an inconclusive whole-seed interval and a strongest-control regression (25/40 versus 28/40 wins). It remains an archived experiment, not a qualified release. `main.py` remains `47c281bfb411…`. [Decision and evidence](CYCLE_4_RESULTS.md).
 
 Cycle 2 staffing experiments completed locally without a release. None of six candidates improved the matched development match score, so `main.py` was retained as Step 8 at that checkpoint. No additional upload or server-validation result was recorded for Cycle 2. [Evidence and decision](CYCLE_2_RESULTS.md).
 
@@ -13,7 +17,7 @@ Cycle 2 staffing experiments completed locally without a release. None of six ca
 | Step 6 | `d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac` | `56149269` | Uploaded September 10; validation episode `107547593` completed at 63,524 per farm, exactly reproduced locally with all 1,438 runtime actions matching the source |
 | Step 7 | `5ec112bd59eae75b2da53b4a35754a1d9c4261a6eb35677fef0b1d231e5b7a41` | `56156207` | Server confirmed; validation `107665260` and supplied ladder episodes reproduce exactly; September 11 public snapshot: 9 wins / 13 losses |
 | Step 8 | `63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72` | `56157664` | Uploaded September 11 at 03:29:35 UTC; validation `107689872` passed, all 1,438 decisions match source; [server audit](benchmarks/step-8-server.json) |
-| Cycle 3 fertilizer | `47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c` | Not uploaded | 104 wins / 120 fresh local games; exact-file isolated self-play passed; [local validation](benchmarks/cycle-3-local-validation.json) |
+| Cycle 3 fertilizer | `47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c` | `56158876` | Uploaded September 11 at 05:02:52 UTC; COMPLETE; three public games source-matched and reconciled, 1 win / 2 losses; [server evidence](benchmarks/cycle-3-public-three.json) |
 
 Step 2's initial displayed rating was 600. Its server validation was self-play, with 13,297 coins per farm and no agent stderr. A local resimulation matched all actions and economic state; [audit and input hashes](benchmarks/step-2-server.json).
 

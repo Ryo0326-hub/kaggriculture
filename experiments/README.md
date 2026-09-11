@@ -1,6 +1,8 @@
 # Reproducible policy experiments
 
-These sources are preserved for reproducibility and further diagnosis. Cycle 2's staffing policies did not qualify for upload; see [its results](../docs/CYCLE_2_RESULTS.md). Cycle 3's fertilizer-only variant qualified locally and is now `../main.py`; server upload is pending. See [Cycle 3 results](../docs/CYCLE_3_RESULTS.md).
+These sources are preserved for reproducibility and further diagnosis. Cycle 2's staffing policies did not qualify for upload; see [its results](../docs/CYCLE_2_RESULTS.md). Cycle 3's fertilizer-only variant qualified locally and runs as Kaggle submission 56158876; its exact source is preserved in `../baselines/cycle_3.py`. See [Cycle 3 results](../docs/CYCLE_3_RESULTS.md) and [server evidence](../docs/CYCLE_3_SERVER_ANALYSIS.md).
+
+Cycle 4's isolated spatial-admission candidate is generated from frozen Cycle 3 by `python -m scripts.make_spatial_control --output NEW_DIRECTORY/main.py`. Only two candidate-menu conditions change; dispatch, forecasts and hiring retain their exact behavior. It **did not qualify for promotion**: its fresh improvement was uncertain and it regressed against the strongest control. Read the [results](../docs/CYCLE_4_RESULTS.md), [plan](../docs/CYCLE_4_PLAN.md) and [CO notes](../docs/CYCLE_4_OPTIMIZATION.md). `main.py` remains Cycle 3.
 
 - `staffing_dispatch.py`: first experimental source, with optional open livestock routes and dated crop staffing.
 - `staffing.py`: second experimental source, adding separate staffing forecast controls.

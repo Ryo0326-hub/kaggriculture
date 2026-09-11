@@ -1,0 +1,42 @@
+{
+  "evaluator_sha256": "3d7ec20f4356cf40e994044d162b291876d4fcdbbf93e12fb028f97cb13243ea",
+  "interpretation": "Own transition diagnostics supplement exact transaction and unit-work audits; these fields do not estimate production from harvest requests.",
+  "games": [
+    {
+      "episode_id": 107790825,
+      "seat": 0,
+      "diagnostics": {
+        "unplanned_crop_losses": 0,
+        "plants_lost_to_weeds": 0,
+        "exhausted_crop_expirations": 0,
+        "seed_overrequests": 0,
+        "duplicate_crop_targets": 0
+      },
+      "replay_sha256": "4a48f34444d1eeafaf3967631e0904bf0a8d12e3c4280078d92de7ef1e4e81b1"
+    },
+    {
+      "episode_id": 107763520,
+      "seat": 0,
+      "diagnostics": {
+        "unplanned_crop_losses": 0,
+        "plants_lost_to_weeds": 0,
+        "exhausted_crop_expirations": 0,
+        "seed_overrequests": 0,
+        "duplicate_crop_targets": 0
+      },
+      "replay_sha256": "560a7cb2c372248c4c875e47e9e4871ee68fb8c13a1a8a74d3031328007b786b"
+    },
+    {
+      "episode_id": 107763714,
+      "seat": 1,
+      "diagnostics": {
+        "unplanned_crop_losses": 0,
+        "plants_lost_to_weeds": 0,
+        "exhausted_crop_expirations": 0,
+        "seed_overrequests": 0,
+        "duplicate_crop_targets": 0
+      },
+      "replay_sha256": "a6c673fb313e1c356c4644062efcadbb8332f9b76e1d90053713dc4f8166e303"
+    }
+  ]
+}

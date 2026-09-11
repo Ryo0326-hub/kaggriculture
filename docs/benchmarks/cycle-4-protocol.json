@@ -1,0 +1,91 @@
+{
+  "environment": {
+    "package": "kaggle-environments",
+    "version": "1.32.7",
+    "python": "3.12.12",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "specification_sha256": "a82c89c1a2315b93f39775d8e025471a01b738647c9772658368ee6b1b6f4867"
+  },
+  "runner_sha256": "3d7ec20f4356cf40e994044d162b291876d4fcdbbf93e12fb028f97cb13243ea",
+  "lock_sha256": "e1422fc921d6a9af234419843b49d115c8b8fd22b485c6dcd9a5f6147d6154ae",
+  "configuration": {
+    "seed": null,
+    "episodeSteps": 720,
+    "actTimeout": 1,
+    "runTimeout": 1200,
+    "boardSize": 10,
+    "startingMoney": 3000,
+    "maxMarketOrdersPerTurn": 10,
+    "turnsPerDay": 24,
+    "shedCapacity": 100,
+    "weedSpawnChance": 0.005,
+    "townShopUnlockInterval": 3,
+    "townShopSellInterval": 4,
+    "townCenterSellInterval": 24,
+    "farmHandCostMult": 1,
+    "marketParams": {}
+  },
+  "opponents": [
+    {
+      "id": "cycle_3.py@47c281bfb411",
+      "name": "cycle_3.py",
+      "kind": "file",
+      "sha256": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c"
+    },
+    {
+      "id": "step_8.py@63dbf4381d86",
+      "name": "step_8.py",
+      "kind": "file",
+      "sha256": "63dbf4381d8607cbd681f5296749f4f8af4cc37d0181f97d6b8931f6078d3f72"
+    },
+    {
+      "id": "scaled_mixed.py@af20c4596a72",
+      "name": "scaled_mixed.py",
+      "kind": "file",
+      "sha256": "af20c4596a72ce4dc81977220a39329146db7ef27d8d7d48cbd45a7799616590"
+    }
+  ],
+  "episode_steps": 720,
+  "seats": [
+    0,
+    1
+  ],
+  "frozen_at": "2026-09-11T11:25:51.128974+00:00",
+  "candidate": {
+    "id": "main.py@a9adaa81f622",
+    "name": "main.py",
+    "kind": "file",
+    "sha256": "a9adaa81f622c8ea23d1a6c6b83bec95da66462bc33aa08a35637f55e6df7d5a"
+  },
+  "reference": {
+    "id": "cycle_3.py@47c281bfb411",
+    "name": "cycle_3.py",
+    "kind": "file",
+    "sha256": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c"
+  },
+  "seeds": [
+    9301,
+    9302,
+    9303,
+    9304,
+    9305,
+    9306,
+    9307,
+    9308,
+    9309,
+    9310,
+    9311,
+    9312,
+    9313,
+    9314,
+    9315,
+    9316,
+    9317,
+    9318,
+    9319,
+    9320
+  ],
+  "evaluation_workers": 4,
+  "selection": "Single spatial-admission challenger: development score 10/12 versus 8/12 (draws half); strongest control unchanged at 2/4; four audited games reconcile and own execution is clean. Candidate buys one extra quadrant in all development games, so this is timing/menu evidence, not demonstrated three-quadrant scale.",
+  "criteria": "Require positive paired whole-seed 95% bootstrap score interval, no aggregate opponent-class score regression, and no unresolved operational regression. Freeze all policy bytes during evaluation."
+}

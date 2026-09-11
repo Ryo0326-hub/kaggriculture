@@ -2,9 +2,11 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Cycle 3 fertilizer timing is the current local agent; Kaggle upload is pending.** It scored 86.7% versus Step 8's 60.8% on a matched fresh-seed pool, with unchanged investment and hiring rules. The exact file passed isolated full-season validation. Read [results](docs/CYCLE_3_RESULTS.md), [CO notes](docs/CYCLE_3_OPTIMIZATION.md), and a [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
+**Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
-Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`. Its Kaggle submission `56157664` matched the frozen source on every validation decision. The last recorded latest-two pair is Steps 8 and 7. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
+**Cycle 4 completed without promotion.** The location-aware expansion challenger scored 74.2% versus Cycle 3's 73.3% on its fresh matched pool, with an inconclusive interval and fewer wins against the strongest control. `main.py` remains the exact submitted Cycle 3 file. [Results](docs/CYCLE_4_RESULTS.md) · [CO notes](docs/CYCLE_4_OPTIMIZATION.md).
+
+Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`; Cycle 3 is preserved in `baselines/cycle_3.py`. The latest-two pair at September 11, 11:28 UTC is Cycle 3 and Step 8. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
 
 ## Run locally
 
@@ -53,7 +55,7 @@ This creates `main.py`, `validation.json`, and `validation.log` in a new directo
 
 **Only the generated `main.py` is the submission artifact.** It needs no supporting repository files. The command does not upload to Kaggle. For future releases, upload that exact file when ready, inspect Kaggle's validation status and logs, and record its submission ID and hash. Local validation cannot certify the server environment or competitive rating. Remember that a new upload changes the latest-two submission window.
 
-This cycle's prepared file is `artifacts/submission-cycle-3-fertilizer/main.py`, SHA-256 prefix `47c281bfb411`. It has not been uploaded. Source control contains its exact bytes in `main.py`; the generator can reproduce it from `experiments/timing.py` using `--mode fertilizer --bake-default`.
+Cycle 3's uploaded file is `artifacts/submission-cycle-3-fertilizer/main.py`, SHA-256 prefix `47c281bfb411`. Source control preserves its exact bytes in `baselines/cycle_3.py`; the generator can reproduce it from `experiments/timing.py` using `--mode fertilizer --bake-default`.
 
 ## Reproduce and understand Step 8
 

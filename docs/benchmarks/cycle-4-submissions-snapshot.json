@@ -1,0 +1,70 @@
+{
+  "captured_at": "2026-09-11T11:28:04.801553+00:00",
+  "request_started_at": "2026-09-11T11:28:04.096200+00:00",
+  "source": "kaggle competitions submissions -c kaggriculture --csv",
+  "submissions": [
+    {
+      "ref": "56158876",
+      "fileName": "main.py",
+      "date": "2026-09-11 05:02:52.950000",
+      "description": "Cycle 3 - strawberry fertilizer timing - fdd2e7a - 47c281bfb411",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "734.6",
+      "privateScore": ""
+    },
+    {
+      "ref": "56157664",
+      "fileName": "main.py",
+      "date": "2026-09-11 03:29:35.003000",
+      "description": "Step 8 - conditional expansion - 9e7139a - 63dbf4381d86",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "672.4",
+      "privateScore": ""
+    },
+    {
+      "ref": "56156207",
+      "fileName": "main.py",
+      "date": "2026-09-11 01:50:33.887000",
+      "description": "Step 7 - joint opening and production bundles - 5ec112bd59ea",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "590.9",
+      "privateScore": ""
+    },
+    {
+      "ref": "56149269",
+      "fileName": "main.py",
+      "date": "2026-09-10 17:46:03.327000",
+      "description": "Step 6 - mixed production - 351832a - d545236b1045",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "606.8",
+      "privateScore": ""
+    },
+    {
+      "ref": "56148466",
+      "fileName": "main.py",
+      "date": "2026-09-10 16:51:31.857000",
+      "description": "Step 5 - shared worker routes - a0a60fe - 70fa2f8a1631",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "506.5",
+      "privateScore": ""
+    },
+    {
+      "ref": "56132659",
+      "fileName": "main.py",
+      "date": "2026-09-09 23:52:23.160000",
+      "description": "Step 3 - production and hiring economics - 3637b04 - ddd775729432",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "349.4",
+      "privateScore": ""
+    },
+    {
+      "ref": "56132050",
+      "fileName": "main.py",
+      "date": "2026-09-09 22:52:44.727000",
+      "description": "Step 2 - coordinated workers - a25ce23 - fc50a8154b89",
+      "status": "SubmissionStatus.COMPLETE",
+      "publicScore": "373.8",
+      "privateScore": ""
+    }
+  ]
+}
