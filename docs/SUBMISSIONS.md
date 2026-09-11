@@ -6,7 +6,7 @@
 | Step 3 | `ddd775729432e51be0ecf4462866ca4c75673fb1b55a0b12c0395c40d0a5114a` | `56132659` | Validation episode `107286447` completed; supplied replay exactly reproduced locally |
 | Step 4 | `0024dc48be607636775eba055eea8bde54d3c0679e5e851439791b5d6cb741f9` | Not uploaded | Exact copied artifact passed isolated local self-play |
 | Step 5 | `70fa2f8a16316bb51fc2ce9eb01b08259fdb83c256359ffc29e847dd459d5816` | `56148466` | Uploaded September 10; validation episode `107533896` and awarse match `107536016` reproduce exactly; our runtime actions match the frozen source |
-| Step 6 | `d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac` | Not uploaded | Locally prepared: 251/300 validation wins, 90 tests passed, isolated copied artifact passed full self-play; server validation pending upload |
+| Step 6 | `d545236b1045fa522676931380ba68517eb2d359252783ea997156bb0f6f13ac` | `56149269` | Uploaded September 10; validation episode `107547593` completed at 63,524 per farm, exactly reproduced locally with all 1,438 runtime actions matching the source |
 
 Step 2's initial displayed rating was 600. Its server validation was self-play, with 13,297 coins per farm and no agent stderr. A local resimulation matched all actions and economic state; [audit and input hashes](benchmarks/step-2-server.json).
 
@@ -16,4 +16,6 @@ The historical submissions are frozen in `baselines/step_2.py`, `baselines/step_
 
 Step 5's supplied validation self-play earned 69,761 per farm. The user reported a later rating of 504.2; a subsequent September 10 CLI snapshot showed 573.3. [The Step 5 server audit](STEP_5_SERVER_ANALYSIS.md) separates those changing ratings from match cash and documents the 42,798–62,980 loss to awarse.
 
-The latest two submissions in that snapshot are Steps 5 and 3. If there is no intervening upload, submitting Step 6 would displace Step 3, retaining Step 5 alongside the new candidate. Record the exact file hash, submission ID, validation episode, and later ladder results after upload. Step 6 currently has no server result.
+In the earlier snapshot, the latest two submissions were Steps 5 and 3. Step 6 has subsequently been uploaded, so the latest two are now **Steps 6 and 5**. At approximately September 11, 01:01 UTC (September 10 in Toronto), the CLI reports Step 6 complete at 590.8 and Step 5 at 506.5. These ratings are time-specific. A further upload would displace Step 5 unless another upload intervenes.
+
+[The Step 6 server audit](STEP_6_SERVER_AND_LEADER_ANALYSIS.md) records the new validation, exact source match, log hashes, and comparison with the supplied SpaTaro–ymg_aq game. No Step 6 ladder match against another team was supplied in that audit. The strategy revision leaves the uploaded policy unchanged.

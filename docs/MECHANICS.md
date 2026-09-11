@@ -53,4 +53,6 @@ An exhausted ongoing crop with zero held output is tracked separately from unpla
 
 The subsequently supplied Step 5 self-play and awarse episodes also match this interpreter exactly. Reconstructed runtime observations reproduce every Unicorns action. [Server audit](STEP_5_SERVER_ANALYSIS.md).
 
+Step 6's supplied validation also reproduces exactly, with all 1,438 runtime actions matching its source. A reproducibility detail matters for experiments: `_end_of_day` shares a daily RNG between weed spawning and the later shop draw. Weed draws occur only on empty tiles, so policy-dependent occupancy can change future shops even at the same seed. The Step 5 and Step 6 seed-zero validations draw different first shops. Matched seeds support paired whole-policy evaluation but do not hold the realized town fixed. Use controlled states to isolate mechanisms and the unmodified engine for release evaluation. [Evidence and analysis](STEP_6_SERVER_AND_LEADER_ANALYSIS.md).
+
 Source: [official Kaggriculture implementation](https://github.com/Kaggle/kaggle-environments/tree/master/kaggle_environments/envs/kaggriculture).

@@ -1,6 +1,6 @@
 # Step 6 results: bounded mixed production
 
-Implemented and locally validated September 10, 2026. **Promoted as the next local release candidate; not uploaded to Kaggle.** The candidate won 251 of 300 fresh validation games. Against the same five-opponent pool, frozen Step 5 won 60, drew 60, and lost 180. The new policy still lost 49 of 60 games against the melon specialist, so crop sequencing remains a substantial weakness.
+Implemented and locally validated September 10, 2026. **Subsequently uploaded as submission 56149269 and server validated in episode 107547593.** [The server audit](STEP_6_SERVER_AND_LEADER_ANALYSIS.md) records that later evidence and the resulting strategy revision. The local candidate won 251 of 300 fresh validation games. Against the same five-opponent pool, frozen Step 5 won 60, drew 60, and lost 180. The new policy still lost 49 of 60 games against the melon specialist, so crop sequencing remains a substantial weakness.
 
 [CO and economics implementation notes](STEP_6_OPTIMIZATION.md) · [awarse replay analysis](STEP_5_SERVER_ANALYSIS.md) · [Machine-readable evidence](benchmarks/step-6.json) · [Frozen protocol](benchmarks/step-6-protocol.json).
 
@@ -58,7 +58,7 @@ The isolated release checks the copied file through Kaggle's official agent load
 | Final stock / unused seeds | Zero for both seats |
 | Maximum observed decision time | 0.062506 seconds |
 
-The self-play cash is a packaging observation. It is not directly comparable to Step 5 playing a different policy, because both agents affect market prices. Local timing also cannot certify Kaggle's server runtime. Step 6 has **no server validation result yet**.
+The self-play cash is a packaging observation. It is not directly comparable to Step 5 playing a different policy, because both agents affect market prices and can encounter different shop draws. Local timing also cannot certify Kaggle's server runtime. The subsequent server validation passed at **63,524 per farm**, with no stderr and every action matching this source; see the linked server audit. The benchmark JSON preserves the original pre-upload local release status as historical evidence.
 
 ## What the remaining losses teach us
 

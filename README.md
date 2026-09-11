@@ -2,7 +2,7 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Step 6: mixed production implemented and locally validated.** Wheat, melons, and strawberries use a bounded area alongside livestock, with committed watering, harvest deadlines, supporting hires, and input opportunity costs. The candidate won 251 of 300 internal validation games, but lost 49 of 60 against the melon specialist. The exact standalone artifact passed local validation and has not been uploaded. Step 5 passed Kaggle server validation; the supplied awarse loss motivated this checkpoint. [Step 6 results and release status](docs/STEP_6_RESULTS.md) · [CO implementation notes](docs/STEP_6_OPTIMIZATION.md) · [Server game analysis](docs/STEP_5_SERVER_ANALYSIS.md).
+**Step 6: mixed production implemented and server validated.** Wheat, melons, and strawberries use a bounded area alongside livestock, with committed watering, harvest deadlines, supporting hires, and input opportunity costs. The candidate won 251 of 300 internal validation games, but lost 49 of 60 against the melon specialist. Submission `56149269` passed server self-play at 63,524 per farm. The latest leading-player audit motivates a joint opening and dated production-bundle planner next. [Step 6 results](docs/STEP_6_RESULTS.md) · [CO implementation notes](docs/STEP_6_OPTIMIZATION.md) · [New server and leader analysis](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) · [Next implementation plan](docs/STEP_7_PLAN.md).
 
 ## Run locally
 
@@ -37,7 +37,7 @@ The mixed layer admits at most eight nearby crop plots. It evaluates dated crop 
 
 The crop dispatcher and forecasts are bounded heuristics. The livestock route solver is exact only over its small enumerated menu; neither solves the whole game's optimum. Read [Step 6](docs/STEP_6_OPTIMIZATION.md) for the CO model, approximations, and execution constraints, [Step 5](docs/STEP_5_OPTIMIZATION.md) for route set partitioning, and [Step 4](docs/STEP_4_OPTIMIZATION.md) for animal investment.
 
-Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_5.py`. Steps 2, 3, and 5 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) also match the submitted policy's actions on reconstructed runtime observations.
+Historical agents are preserved byte-for-byte in `baselines/step_1.py` through `baselines/step_5.py`. Steps 2, 3, 5, and 6 have supplied server episodes that reproduce locally. [Step 5's validation and awarse match](docs/STEP_5_SERVER_ANALYSIS.md) and [Step 6's validation](docs/STEP_6_SERVER_AND_LEADER_ANALYSIS.md) also match the submitted policies' actions on reconstructed runtime observations.
 
 ## Prepare the submission file
 
@@ -86,8 +86,8 @@ The starting mathematical background is CO250: linear programming, duality, and 
 3. **Production and hiring — complete:** integer lot/workforce enumeration, cash and estimated labor constraints, price-impact valuation, supply stress case, and finite-horizon crop value. Land investment remains future work.
 4. **Competition and capital economics — complete:** audit actual ladder losses, introduce livestock and fertilizer revenue with a liquidity constraint, broaden the pool, and compare against Step 3 on matched fresh games.
 5. **Shared livestock routes — complete:** exact bounded route cover, production-day delivery protection, controlled wage/output comparison, paired fresh-seed evaluation, and isolated artifact validation.
-6. **Mixed production — locally validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation. Server validation is pending upload.
-7. **Crop sequencing and scale — next:** compare planting now with waiting, value crop sequences through the season, and investigate the melon-control losses before adding land. Then evaluate larger production bundles and improve rival-supply forecasts. See [the revised strategy](docs/REVISED_STRATEGY.md).
+6. **Mixed production — server validated:** bounded wheat/melon/strawberry allocation, dated wages, fertilizer/feed opportunity costs, crop deadlines, shared resources, and fresh-seed evaluation.
+7. **Joint opening and production bundles — next:** let early crops and animals compete for capital, include future fertilizer and labor in crop alternatives, and compare planting now with waiting and crop sequences. Broaden reactive opponents, then test conditional land expansion, delivery, and selective maintenance. See [the staged plan](docs/STEP_7_PLAN.md).
 
 See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine findings](docs/MECHANICS.md), [Step 1 evidence](docs/STEP_1_RESULTS.md), and [the competition plan](COMPETITION_PLAN.md).
 
@@ -99,6 +99,7 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 | `baselines/` | Frozen Steps 1–5; Steps 2, 3, and 5 are server validated |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |
+| `scripts/replay_timing.py` | Crop-age, planting-date, and sale-timing evidence from reconciled replay audits |
 | `prepare_submission.py` | Copy and validate an isolated, self-contained release |
 | `explain_turn.py` | Reconstruct and explain a decision from a matching replay |
 | `scripts/make_greedy_ablation.py` | Generate the controlled greedy comparison |
