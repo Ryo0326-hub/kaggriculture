@@ -1,0 +1,675 @@
+{
+  "source_sha256": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd",
+  "method": "Python -I isolation and official last-callable selection rule; 18 bounded calls on existing observations. No engine import, state advance, match or terminal planner call.",
+  "replay_sha256": "b316fc82a7c0ae767acd2f044f713bcabb347533634bef286eb2bc9b7bca5663",
+  "decisions": 18,
+  "startup_seconds": [
+    0.03329762502107769,
+    0.030668958992464468
+  ],
+  "max_decision_seconds": 0.00018854197696782649,
+  "cases": [
+    {
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.0001069169957190752,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          30
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          30
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 1,
+      "seconds": 0.00010454098810441792,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 144,
+      "seconds": 8.904197602532804e-05,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 150,
+      "seconds": 0.00012354200589470565,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          10
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 265,
+      "seconds": 0.00010279199341312051,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 288,
+      "seconds": 0.0001084580144379288,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 648,
+      "seconds": 0.0001016249880194664,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.00016679198597557843,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          36
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.00018854197696782649,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          12
+        ],
+        [
+          "SELL",
+          "CARROT",
+          3
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          5
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 0,
+      "seconds": 9.966699872165918e-05,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          30
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          30
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 1,
+      "seconds": 9.904097532853484e-05,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          13
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 144,
+      "seconds": 8.370800060220063e-05,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 150,
+      "seconds": 0.00010858301538974047,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          10
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 265,
+      "seconds": 0.00011683302000164986,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 288,
+      "seconds": 0.00012145898654125631,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 648,
+      "seconds": 8.537498069927096e-05,
+      "market": [
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.00012558299931697547,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          36
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    },
+    {
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0001829169923439622,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          12
+        ],
+        [
+          "SELL",
+          "CARROT",
+          3
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          5
+        ]
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "seat": 0,
+      "exception_counters": {
+        "terminal_rescue_errors": 0,
+        "v28_entry_errors": 0,
+        "production_errors": 0,
+        "v31_entry_errors": 0,
+        "_UPGRADE_STATS.errors": 0,
+        "_ROOM_STATS.errors": 0,
+        "_V219_REPORT.errors": 0,
+        "_V231_REPORT.errors": 0,
+        "_R36_SALE_REPORT.sale_errors": 0,
+        "_R36_SALE_REPORT.errors": 0,
+        "_R44_REPORT.probe_errors": 0,
+        "_R37_REPORT.sale_errors": 0,
+        "_R37_REPORT.errors": 0,
+        "_R37_REPORT.nocturne_errors": 0,
+        "_R37_REPORT.probe_errors": 0,
+        "_R37_STATS.nocturne_errors": 0,
+        "_RELEASE_REPORT.sale_errors": 0,
+        "_RELEASE_REPORT.errors": 0,
+        "_RELEASE_REPORT.nocturne_errors": 0,
+        "_RELEASE_REPORT.probe_errors": 0,
+        "_RELEASE_REPORT.release_errors": 0,
+        "_R46_REPORT.sale_errors": 0,
+        "_R46_REPORT.errors": 0,
+        "_R46_REPORT.nocturne_errors": 0,
+        "_R46_REPORT.probe_errors": 0,
+        "_R46_REPORT.release_errors": 0
+      },
+      "terminal_planning_calls": 0
+    },
+    {
+      "seat": 1,
+      "exception_counters": {
+        "terminal_rescue_errors": 0,
+        "v28_entry_errors": 0,
+        "production_errors": 0,
+        "v31_entry_errors": 0,
+        "_UPGRADE_STATS.errors": 0,
+        "_ROOM_STATS.errors": 0,
+        "_V219_REPORT.errors": 0,
+        "_V231_REPORT.errors": 0,
+        "_R36_SALE_REPORT.sale_errors": 0,
+        "_R36_SALE_REPORT.errors": 0,
+        "_R44_REPORT.probe_errors": 0,
+        "_R37_REPORT.sale_errors": 0,
+        "_R37_REPORT.errors": 0,
+        "_R37_REPORT.nocturne_errors": 0,
+        "_R37_REPORT.probe_errors": 0,
+        "_R37_STATS.nocturne_errors": 0,
+        "_RELEASE_REPORT.sale_errors": 0,
+        "_RELEASE_REPORT.errors": 0,
+        "_RELEASE_REPORT.nocturne_errors": 0,
+        "_RELEASE_REPORT.probe_errors": 0,
+        "_RELEASE_REPORT.release_errors": 0,
+        "_R46_REPORT.sale_errors": 0,
+        "_R46_REPORT.errors": 0,
+        "_R46_REPORT.nocturne_errors": 0,
+        "_R46_REPORT.probe_errors": 0,
+        "_R46_REPORT.release_errors": 0
+      },
+      "terminal_planning_calls": 0
+    }
+  ],
+  "server_validation": "pending",
+  "competitive_performance": "unmeasured"
+}

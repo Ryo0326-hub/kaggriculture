@@ -2,11 +2,11 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Current candidate: Cycle 13, reported submitted by the user; server validation and gameplay evidence pending.** Built on Cycle 12, it adds staged livestock space, shared herd routes, workload-priced investments, goose purchasing, tomatoes and selected faster wheat turnover. The submission ID and uploaded-byte identity have not yet been independently confirmed. The protected root `main.py` is still Cycle 3. [Candidate artifact and checks](docs/CYCLE_13_RESULTS.md) · [Majkel1337/Gekkotron study](docs/CYCLE_13_SERVER_STUDY.md) · [CO/economic implementation notes](docs/CYCLE_13_OPTIMIZATION.md).
+**Current candidate: Cycle 14 — the complete public V36 agent, unchanged and attributed, ready for user upload.** Source SHA-256 starts `7eb5ab6c4858`. Upload `artifacts/submission-cycle-14-v36/main.py`; the protected root `main.py` is still Cycle 3. [Exact upload command and checks](docs/CYCLE_14_RESULTS.md) · [Upstream source and provenance](third_party/kaggriculture_v36/README.md) · [Strategy and CO review](docs/V36_NOTEBOOK_REVIEW.md).
 
-The [V36 public notebook review](docs/V36_NOTEBOOK_REVIEW.md) compares its schedules and market mechanisms with our strategy and the supplied Gekkotron games. It identifies marginal-impact sale ordering as a possible next bounded change, conditional on Cycle 13 server results. This review changed documentation only; it ran no games and left all agent bytes unchanged.
+**Cycle 13 lost 66,319–106,333 in server episode 107984963.** All 719 own decisions match the packaged source. No land bundle reached valuation: vacancy restrictions blocked 38 eligible turns, and insufficient order slots blocked the remaining turn. [Failure diagnosis](docs/CYCLE_13_POSTMORTEM.md). Ryo requested adopting the whole public V36 strategy after this result; the prior narrow sale-ordering plan is superseded.
 
-The strategy includes livestock, feeding and care, fertilizer collection/use, conditional land expansion, and trading with shared prices and town demand. Cycle 13 extends the existing worker/input coordination; it does not use an LLM, GPU or external API at runtime. Its competitive performance is not yet measured.
+Cycle 14 retains the public schedules, shop router, livestock/crop investments, land purchases, guarded sales and terminal planner. Its code and notices are preserved byte-for-byte; we do not claim them as newly authored. Packaging and eighteen bounded recorded-observation checks pass. Its own server validation and rating remain pending. No local matches, GPU, LLM or external runtime API are required for packaging.
 
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
@@ -30,7 +30,9 @@ The strategy includes livestock, feeding and care, fertilizer collection/use, co
 
 Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8.py`; Cycle 3 is preserved in `baselines/cycle_3.py`. The latest-two pair at September 11, 11:28 UTC was Cycle 3 and Step 8; Cycles 5–12 did not refresh that snapshot. The [calibration report](docs/SERVER_AND_BENCHMARK_CALIBRATION.md) separates server evidence from local tests; the [active plan](docs/PERFORMANCE_PLAN.md) replaces the old fixed feature sequence. Cycle 2's [staffing experiments](docs/CYCLE_2_RESULTS.md) were rejected; Cycle 3 retains the old harvest rule after its early-harvest experiment failed to add value.
 
-## Run locally
+## Historical local simulation commands — explicit opt-in only
+
+Use the Cycle 14 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
@@ -55,7 +57,7 @@ Choose a new output directory for each experiment; existing directories are not 
 
 `--workers N` runs independent games in CPU processes, retaining deterministic result order and saving full replays only when requested or needed for errors. It defaults to one process. Match concurrency between paired runs; observed latency under local load is not a server runtime guarantee.
 
-## What the current agent does
+## What the protected custom Cycle 3 agent does
 
 The planner retains twenty joint openings, then compares no purchase, a cow/sheep, and batches of 1/4/8/12 wheat, melons, or strawberries. A batch can also pay for the next land quadrant. The forecast reprices both visible portfolios, charges dated inputs and Fibonacci wages, preserves a cash buffer, and rejects infeasible route estimates. It compares up to 75 owned tiles and retains ten nearby animal sites.
 

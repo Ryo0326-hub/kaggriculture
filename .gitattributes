@@ -1,0 +1,2 @@
+# Preserve the exact licensed upstream source, including its original whitespace.
+third_party/kaggriculture_v36/main.py -whitespace

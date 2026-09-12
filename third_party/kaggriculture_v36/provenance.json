@@ -1,0 +1,13 @@
+{
+  "upstream": "ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales",
+  "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales",
+  "notebook_sha256": "5cefaf9299049e0ee61c83f22869d0916647fe9f495d68b1b20e22c0093b6224",
+  "source_cell": 4,
+  "extraction": "Remove only the first %%writefile main.py line; preserve every remaining UTF-8 source byte. Do not execute notebook cells.",
+  "source_sha256": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd",
+  "license": "Apache-2.0; complete in-source license and upstream notices preserved",
+  "local_strategy_modifications": [],
+  "locally_trained": false,
+  "server_validation": "pending",
+  "rating": "2705.7 reported by user; not verified for exact downloaded bytes"
+}

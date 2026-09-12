@@ -24,7 +24,7 @@ jobs:
       - run: uv run --no-sync ruff check .
       - run: uv run --no-sync ruff format --check .
       - name: Check Python syntax without running games
-        run: uv run --no-sync python -m compileall -q main.py baselines experiments scripts tests
+        run: uv run --no-sync python -m compileall -q main.py baselines experiments scripts tests third_party
       - name: Full simulation tests (explicit manual opt-in)
         if: github.event_name == 'workflow_dispatch' && inputs.simulation_tests
         run: |

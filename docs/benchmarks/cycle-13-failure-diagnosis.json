@@ -1,0 +1,2756 @@
+{
+  "method": "Own-policy decision tracing on recorded observations; no engine import, game advance or counterfactual episode. Diagnostic wrapper returns original decisions unchanged.",
+  "source_sha256": "542547dbe7cd63856b2a6f037e2014790c1410316c3b3872f67ea85c2b628947",
+  "replay_sha256": "a6bb766aa8563f76983944f93cd8a8905a1c366457ef88a9c865736a188dbd27",
+  "episode": 107984963,
+  "decisions": 719,
+  "action_mismatch_steps": [],
+  "max_seconds": 0.019152833003317937,
+  "total_seconds": 0.3418531740899198,
+  "investment_calls": 718,
+  "early_exit_reasons": {
+    "pending_seeds": 381,
+    "pending_animals": 38,
+    "after_hour_6": 509,
+    "final_day": 23
+  },
+  "calls_past_early_gates": 39,
+  "eligible_calls_blocked_by_vacancy": 38,
+  "land_alternatives": 0,
+  "land_positive": 0,
+  "land_capacity_fits": 0,
+  "chosen_order_counts": {
+    "[['BUY_SEED', 'MELON', 1]]": 5,
+    "[['BUY_ANIMAL', 'GOOSE', 1]]": 1,
+    "[['BUY_SEED', 'WHEAT', 1]]": 7,
+    "[['BUY_SEED', 'STRAWBERRY', 1]]": 2,
+    "[['BUY_SEED', 'WHEAT', 4]]": 5,
+    "[['BUY_SEED', 'TOMATO', 1]]": 4,
+    "[['BUY_SEED', 'CARROT', 4]]": 1
+  },
+  "best_land_examples": [],
+  "selected_active_examples": [
+    {
+      "step": 144,
+      "cash": 1406.0,
+      "vacant_fields": 8,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 355.5,
+        "scenario_receipts": [
+          775,
+          610
+        ],
+        "added_wages": 2,
+        "work": 57,
+        "capacity_estimate_fits": true,
+        "score": 6.2368421052631575,
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ],
+        "cost": 100,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 158.75,
+          "scenario_receipts": [
+            316,
+            281
+          ],
+          "added_wages": 2,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 3.7797619047619047,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 99.0,
+          "scenario_receipts": [
+            164,
+            148
+          ],
+          "added_wages": 2,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 5.2105263157894735,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": 116.75,
+          "scenario_receipts": [
+            767,
+            265
+          ],
+          "added_wages": 2,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": 4.324074074074074,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": 355.5,
+          "scenario_receipts": [
+            775,
+            610
+          ],
+          "added_wages": 2,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": 6.2368421052631575,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 56.75,
+          "scenario_receipts": [
+            111,
+            105
+          ],
+          "added_wages": 2,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 3.783333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 621.0,
+          "scenario_receipts": [
+            1256,
+            1112
+          ],
+          "added_wages": 13,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 3.6964285714285716,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 404.5,
+          "scenario_receipts": [
+            628,
+            606
+          ],
+          "added_wages": 10,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 5.322368421052632,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": 32.75,
+          "scenario_receipts": [
+            2561,
+            481
+          ],
+          "added_wages": 8,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": 0.30324074074074076,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": 1322.5,
+          "scenario_receipts": [
+            3056,
+            2314
+          ],
+          "added_wages": 13,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": 5.800438596491228,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 217.75,
+          "scenario_receipts": [
+            436,
+            409
+          ],
+          "added_wages": 9,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 3.629166666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 168,
+      "cash": 2864.0,
+      "vacant_fields": 7,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 355.0,
+        "scenario_receipts": [
+          778,
+          612
+        ],
+        "added_wages": 4,
+        "work": 57,
+        "capacity_estimate_fits": true,
+        "score": 6.228070175438597,
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ],
+        "cost": 100,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 161.25,
+          "scenario_receipts": [
+            323,
+            287
+          ],
+          "added_wages": 4,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 3.8392857142857144,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 100.0,
+          "scenario_receipts": [
+            160,
+            152
+          ],
+          "added_wages": 4,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 5.2631578947368425,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": 127.5,
+          "scenario_receipts": [
+            781,
+            282
+          ],
+          "added_wages": 4,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": 4.722222222222222,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": 355.0,
+          "scenario_receipts": [
+            778,
+            612
+          ],
+          "added_wages": 4,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": 6.228070175438597,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 55.5,
+          "scenario_receipts": [
+            111,
+            106
+          ],
+          "added_wages": 4,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 3.7,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 639.75,
+          "scenario_receipts": [
+            1281,
+            1137
+          ],
+          "added_wages": 13,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 3.8080357142857144,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 413.0,
+          "scenario_receipts": [
+            649,
+            616
+          ],
+          "added_wages": 9,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 5.434210526315789,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": 72.5,
+          "scenario_receipts": [
+            2619,
+            534
+          ],
+          "added_wages": 8,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": 0.6712962962962963,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": 1336.5,
+          "scenario_receipts": [
+            3066,
+            2338
+          ],
+          "added_wages": 17,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": 5.8618421052631575,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 221.75,
+          "scenario_receipts": [
+            437,
+            413
+          ],
+          "added_wages": 8,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 3.6958333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 192,
+      "cash": 4152.0,
+      "vacant_fields": 6,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 453.75,
+        "scenario_receipts": [
+          794,
+          713
+        ],
+        "added_wages": 1,
+        "work": 27,
+        "capacity_estimate_fits": true,
+        "score": 16.805555555555557,
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ],
+        "cost": 80,
+        "reserve": 154
+      },
+      "alternatives": [
+        {
+          "value": 168.75,
+          "scenario_receipts": [
+            330,
+            293
+          ],
+          "added_wages": 1,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 4.017857142857143,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 154
+        },
+        {
+          "value": 106.25,
+          "scenario_receipts": [
+            159,
+            168
+          ],
+          "added_wages": 3,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 5.592105263157895,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 154
+        },
+        {
+          "value": 453.75,
+          "scenario_receipts": [
+            794,
+            713
+          ],
+          "added_wages": 1,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": 16.805555555555557,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        },
+        {
+          "value": 58.75,
+          "scenario_receipts": [
+            706,
+            213
+          ],
+          "added_wages": 1,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": 1.030701754385965,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 154
+        },
+        {
+          "value": 59.0,
+          "scenario_receipts": [
+            111,
+            108
+          ],
+          "added_wages": 2,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 3.933333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 154
+        },
+        {
+          "value": 655.5,
+          "scenario_receipts": [
+            1304,
+            1162
+          ],
+          "added_wages": 16,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 3.9017857142857144,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 154
+        },
+        {
+          "value": 434.75,
+          "scenario_receipts": [
+            655,
+            641
+          ],
+          "added_wages": 6,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 5.720394736842105,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 154
+        },
+        {
+          "value": 1414.0,
+          "scenario_receipts": [
+            2676,
+            2328
+          ],
+          "added_wages": 12,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": 13.092592592592593,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 154
+        },
+        {
+          "value": 90.0,
+          "scenario_receipts": [
+            2767,
+            680
+          ],
+          "added_wages": 20,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": 0.39473684210526316,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 154
+        },
+        {
+          "value": 236.0,
+          "scenario_receipts": [
+            444,
+            428
+          ],
+          "added_wages": 5,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 3.933333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        }
+      ]
+    },
+    {
+      "step": 216,
+      "cash": 7014.0,
+      "vacant_fields": 5,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 400.25,
+        "scenario_receipts": [
+          727,
+          643
+        ],
+        "added_wages": 2,
+        "work": 27,
+        "capacity_estimate_fits": true,
+        "score": 14.824074074074074,
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ],
+        "cost": 80,
+        "reserve": 154
+      },
+      "alternatives": [
+        {
+          "value": 185.5,
+          "scenario_receipts": [
+            466,
+            318
+          ],
+          "added_wages": 3,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 4.416666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 154
+        },
+        {
+          "value": 111.0,
+          "scenario_receipts": [
+            171,
+            164
+          ],
+          "added_wages": 2,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 5.842105263157895,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 154
+        },
+        {
+          "value": 400.25,
+          "scenario_receipts": [
+            727,
+            643
+          ],
+          "added_wages": 2,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": 14.824074074074074,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        },
+        {
+          "value": 50.75,
+          "scenario_receipts": [
+            710,
+            205
+          ],
+          "added_wages": 3,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": 0.8903508771929824,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 154
+        },
+        {
+          "value": 61.25,
+          "scenario_receipts": [
+            114,
+            111
+          ],
+          "added_wages": 2,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.083333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 154
+        },
+        {
+          "value": 726.75,
+          "scenario_receipts": [
+            1779,
+            1253
+          ],
+          "added_wages": 13,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 4.325892857142857,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 154
+        },
+        {
+          "value": 448.25,
+          "scenario_receipts": [
+            699,
+            659
+          ],
+          "added_wages": 6,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 5.8980263157894735,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 154
+        },
+        {
+          "value": 1187.5,
+          "scenario_receipts": [
+            2387,
+            2026
+          ],
+          "added_wages": 12,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": 10.99537037037037,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 154
+        },
+        {
+          "value": 59.25,
+          "scenario_receipts": [
+            2787,
+            635
+          ],
+          "added_wages": 17,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": 0.2598684210526316,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 154
+        },
+        {
+          "value": 245.0,
+          "scenario_receipts": [
+            456,
+            440
+          ],
+          "added_wages": 5,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.083333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        }
+      ]
+    },
+    {
+      "step": 240,
+      "cash": 8285.0,
+      "vacant_fields": 6,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 346.5,
+        "scenario_receipts": [
+          657,
+          570
+        ],
+        "added_wages": 1,
+        "work": 27,
+        "capacity_estimate_fits": true,
+        "score": 12.833333333333334,
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ],
+        "cost": 80,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 190.5,
+          "scenario_receipts": [
+            531,
+            326
+          ],
+          "added_wages": 4,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 4.535714285714286,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 115.5,
+          "scenario_receipts": [
+            180,
+            170
+          ],
+          "added_wages": 2,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 6.078947368421052,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": 346.5,
+          "scenario_receipts": [
+            657,
+            570
+          ],
+          "added_wages": 1,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": 12.833333333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": -23.0,
+          "scenario_receipts": [
+            698,
+            108
+          ],
+          "added_wages": 4,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": -0.40350877192982454,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 62.25,
+          "scenario_receipts": [
+            114,
+            111
+          ],
+          "added_wages": 1,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.15,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 756.5,
+          "scenario_receipts": [
+            2025,
+            1290
+          ],
+          "added_wages": 11,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 4.502976190476191,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 466.75,
+          "scenario_receipts": [
+            701,
+            681
+          ],
+          "added_wages": 4,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 6.141447368421052,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": 954.0,
+          "scenario_receipts": [
+            2087,
+            1712
+          ],
+          "added_wages": 10,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": 8.833333333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": -146.25,
+          "scenario_receipts": [
+            2734,
+            357
+          ],
+          "added_wages": 14,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": -0.6414473684210527,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 243.25,
+          "scenario_receipts": [
+            451,
+            435
+          ],
+          "added_wages": 3,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.054166666666666,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 264,
+      "cash": 21693.0,
+      "vacant_fields": 13,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 463.5,
+        "scenario_receipts": [
+          708,
+          678
+        ],
+        "added_wages": 5,
+        "work": 76,
+        "capacity_estimate_fits": true,
+        "score": 6.098684210526316,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ],
+        "cost": 40,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 195.25,
+          "scenario_receipts": [
+            610,
+            335
+          ],
+          "added_wages": 6,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 4.648809523809524,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 114.5,
+          "scenario_receipts": [
+            176,
+            170
+          ],
+          "added_wages": 3,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 6.026315789473684,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": -78.25,
+          "scenario_receipts": [
+            195,
+            9
+          ],
+          "added_wages": 5,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": -2.8981481481481484,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": -58.0,
+          "scenario_receipts": [
+            692,
+            64
+          ],
+          "added_wages": 6,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": -1.0175438596491229,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 61.25,
+          "scenario_receipts": [
+            115,
+            111
+          ],
+          "added_wages": 2,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.083333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 783.5,
+          "scenario_receipts": [
+            2328,
+            1326
+          ],
+          "added_wages": 11,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 4.663690476190476,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 463.5,
+          "scenario_receipts": [
+            708,
+            678
+          ],
+          "added_wages": 5,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 6.098684210526316,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": -309.75,
+          "scenario_receipts": [
+            297,
+            27
+          ],
+          "added_wages": 10,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": -2.8680555555555554,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": -250.5,
+          "scenario_receipts": [
+            2701,
+            218
+          ],
+          "added_wages": 14,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": -1.0986842105263157,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 247.5,
+          "scenario_receipts": [
+            457,
+            442
+          ],
+          "added_wages": 4,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.125,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 288,
+      "cash": 21694.0,
+      "vacant_fields": 9,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 481.5,
+        "scenario_receipts": [
+          734,
+          710
+        ],
+        "added_wages": 11,
+        "work": 76,
+        "capacity_estimate_fits": true,
+        "score": 6.3355263157894735,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ],
+        "cost": 40,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 205.75,
+          "scenario_receipts": [
+            704,
+            349
+          ],
+          "added_wages": 6,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 4.898809523809524,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 120.25,
+          "scenario_receipts": [
+            186,
+            179
+          ],
+          "added_wages": 4,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 6.328947368421052,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": -78.25,
+          "scenario_receipts": [
+            24,
+            9
+          ],
+          "added_wages": 5,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": -2.8981481481481484,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": 20.0,
+          "scenario_receipts": [
+            834,
+            168
+          ],
+          "added_wages": 6,
+          "work": 57,
+          "capacity_estimate_fits": true,
+          "score": 0.3508771929824561,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 62.5,
+          "scenario_receipts": [
+            117,
+            114
+          ],
+          "added_wages": 3,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.166666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 812.0,
+          "scenario_receipts": [
+            2682,
+            1372
+          ],
+          "added_wages": 17,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 4.833333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 481.5,
+          "scenario_receipts": [
+            734,
+            710
+          ],
+          "added_wages": 11,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 6.3355263157894735,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": -315.75,
+          "scenario_receipts": [
+            42,
+            27
+          ],
+          "added_wages": 16,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": -2.923611111111111,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": -33.5,
+          "scenario_receipts": [
+            3295,
+            514
+          ],
+          "added_wages": 19,
+          "work": 228,
+          "capacity_estimate_fits": true,
+          "score": -0.14692982456140352,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 246.0,
+          "scenario_receipts": [
+            464,
+            448
+          ],
+          "added_wages": 10,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.1,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 336,
+      "cash": 26777.0,
+      "vacant_fields": 6,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 503.0,
+        "scenario_receipts": [
+          769,
+          732
+        ],
+        "added_wages": 6,
+        "work": 76,
+        "capacity_estimate_fits": true,
+        "score": 6.618421052631579,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ],
+        "cost": 40,
+        "reserve": 154
+      },
+      "alternatives": [
+        {
+          "value": 259.25,
+          "scenario_receipts": [
+            932,
+            419
+          ],
+          "added_wages": 5,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 6.1726190476190474,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 154
+        },
+        {
+          "value": 121.75,
+          "scenario_receipts": [
+            192,
+            181
+          ],
+          "added_wages": 4,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 6.407894736842105,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 154
+        },
+        {
+          "value": -72.75,
+          "scenario_receipts": [
+            51,
+            15
+          ],
+          "added_wages": 4,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": -2.6944444444444446,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        },
+        {
+          "value": -72.0,
+          "scenario_receipts": [
+            608,
+            44
+          ],
+          "added_wages": 5,
+          "work": 50,
+          "capacity_estimate_fits": true,
+          "score": -1.44,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 154
+        },
+        {
+          "value": 62.5,
+          "scenario_receipts": [
+            120,
+            114
+          ],
+          "added_wages": 3,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.166666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 154
+        },
+        {
+          "value": 998.0,
+          "scenario_receipts": [
+            3559,
+            1612
+          ],
+          "added_wages": 11,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 5.940476190476191,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 154
+        },
+        {
+          "value": 503.0,
+          "scenario_receipts": [
+            769,
+            732
+          ],
+          "added_wages": 6,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 6.618421052631579,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 154
+        },
+        {
+          "value": -303.25,
+          "scenario_receipts": [
+            69,
+            33
+          ],
+          "added_wages": 8,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": -2.8078703703703702,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 154
+        },
+        {
+          "value": -297.0,
+          "scenario_receipts": [
+            2408,
+            152
+          ],
+          "added_wages": 11,
+          "work": 200,
+          "capacity_estimate_fits": true,
+          "score": -1.485,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 154
+        },
+        {
+          "value": 257.0,
+          "scenario_receipts": [
+            472,
+            456
+          ],
+          "added_wages": 5,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.283333333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        }
+      ]
+    },
+    {
+      "step": 384,
+      "cash": 29529.0,
+      "vacant_fields": 5,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 346.0,
+        "scenario_receipts": [
+          1183,
+          528
+        ],
+        "added_wages": 0,
+        "work": 42,
+        "capacity_estimate_fits": true,
+        "score": 8.238095238095237,
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ]
+        ],
+        "cost": 50,
+        "reserve": 154
+      },
+      "alternatives": [
+        {
+          "value": 346.0,
+          "scenario_receipts": [
+            1183,
+            528
+          ],
+          "added_wages": 0,
+          "work": 42,
+          "capacity_estimate_fits": true,
+          "score": 8.238095238095237,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 154
+        },
+        {
+          "value": 130.75,
+          "scenario_receipts": [
+            195,
+            189
+          ],
+          "added_wages": 1,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 6.881578947368421,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 154
+        },
+        {
+          "value": -62.0,
+          "scenario_receipts": [
+            87,
+            24
+          ],
+          "added_wages": 0,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": -2.2962962962962963,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        },
+        {
+          "value": 95.0,
+          "scenario_receipts": [
+            468,
+            260
+          ],
+          "added_wages": 0,
+          "work": 43,
+          "capacity_estimate_fits": true,
+          "score": 2.2093023255813953,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 154
+        },
+        {
+          "value": 70.0,
+          "scenario_receipts": [
+            123,
+            120
+          ],
+          "added_wages": 0,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.666666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 154
+        },
+        {
+          "value": 1301.75,
+          "scenario_receipts": [
+            4534,
+            2017
+          ],
+          "added_wages": 11,
+          "work": 168,
+          "capacity_estimate_fits": true,
+          "score": 7.748511904761905,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 154
+        },
+        {
+          "value": 519.25,
+          "scenario_receipts": [
+            785,
+            751
+          ],
+          "added_wages": 4,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 6.832236842105263,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 154
+        },
+        {
+          "value": -295.5,
+          "scenario_receipts": [
+            108,
+            42
+          ],
+          "added_wages": 7,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": -2.736111111111111,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 154
+        },
+        {
+          "value": 295.5,
+          "scenario_receipts": [
+            1865,
+            942
+          ],
+          "added_wages": 11,
+          "work": 172,
+          "capacity_estimate_fits": true,
+          "score": 1.7180232558139534,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 154
+        },
+        {
+          "value": 270.25,
+          "scenario_receipts": [
+            488,
+            471
+          ],
+          "added_wages": 3,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.504166666666666,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        }
+      ]
+    },
+    {
+      "step": 432,
+      "cash": 33054.0,
+      "vacant_fields": 8,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 306.25,
+        "scenario_receipts": [
+          1017,
+          479
+        ],
+        "added_wages": 3,
+        "work": 38,
+        "capacity_estimate_fits": true,
+        "score": 8.05921052631579,
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ]
+        ],
+        "cost": 50,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 306.25,
+          "scenario_receipts": [
+            1017,
+            479
+          ],
+          "added_wages": 3,
+          "work": 38,
+          "capacity_estimate_fits": true,
+          "score": 8.05921052631579,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 136.25,
+          "scenario_receipts": [
+            204,
+            195
+          ],
+          "added_wages": 0,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 7.171052631578948,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": -55.0,
+          "scenario_receipts": [
+            123,
+            36
+          ],
+          "added_wages": 2,
+          "work": 27,
+          "capacity_estimate_fits": true,
+          "score": -2.037037037037037,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              1
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        },
+        {
+          "value": 26.0,
+          "scenario_receipts": [
+            240,
+            172
+          ],
+          "added_wages": 3,
+          "work": 36,
+          "capacity_estimate_fits": true,
+          "score": 0.7222222222222222,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "cost": 100,
+          "reserve": 152
+        },
+        {
+          "value": 70.0,
+          "scenario_receipts": [
+            126,
+            120
+          ],
+          "added_wages": 0,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.666666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 1180.25,
+          "scenario_receipts": [
+            3950,
+            1851
+          ],
+          "added_wages": 8,
+          "work": 152,
+          "capacity_estimate_fits": true,
+          "score": 7.764802631578948,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 541.5,
+          "scenario_receipts": [
+            807,
+            778
+          ],
+          "added_wages": 2,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 7.125,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": -286.5,
+          "scenario_receipts": [
+            159,
+            54
+          ],
+          "added_wages": 7,
+          "work": 108,
+          "capacity_estimate_fits": true,
+          "score": -2.6527777777777777,
+          "orders": [
+            [
+              "BUY_SEED",
+              "MELON",
+              4
+            ]
+          ],
+          "cost": 320,
+          "reserve": 152
+        },
+        {
+          "value": 104.25,
+          "scenario_receipts": [
+            957,
+            683
+          ],
+          "added_wages": 8,
+          "work": 144,
+          "capacity_estimate_fits": true,
+          "score": 0.7239583333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              4
+            ]
+          ],
+          "cost": 400,
+          "reserve": 152
+        },
+        {
+          "value": 277.25,
+          "scenario_receipts": [
+            495,
+            479
+          ],
+          "added_wages": 2,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.620833333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 480,
+      "cash": 38792.0,
+      "vacant_fields": 12,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 141.5,
+        "scenario_receipts": [
+          204,
+          202
+        ],
+        "added_wages": 0,
+        "work": 19,
+        "capacity_estimate_fits": true,
+        "score": 7.447368421052632,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "cost": 10,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 93.75,
+          "scenario_receipts": [
+            375,
+            193
+          ],
+          "added_wages": 1,
+          "work": 30,
+          "capacity_estimate_fits": true,
+          "score": 3.125,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              1
+            ]
+          ],
+          "cost": 50,
+          "reserve": 152
+        },
+        {
+          "value": 141.5,
+          "scenario_receipts": [
+            204,
+            202
+          ],
+          "added_wages": 0,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 7.447368421052632,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": 72.25,
+          "scenario_receipts": [
+            129,
+            123
+          ],
+          "added_wages": 0,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.816666666666666,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 364.75,
+          "scenario_receipts": [
+            1486,
+            765
+          ],
+          "added_wages": 9,
+          "work": 120,
+          "capacity_estimate_fits": true,
+          "score": 3.0395833333333333,
+          "orders": [
+            [
+              "BUY_SEED",
+              "TOMATO",
+              4
+            ]
+          ],
+          "cost": 200,
+          "reserve": 152
+        },
+        {
+          "value": 560.5,
+          "scenario_receipts": [
+            821,
+            806
+          ],
+          "added_wages": 4,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 7.375,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": 285.0,
+          "scenario_receipts": [
+            508,
+            492
+          ],
+          "added_wages": 4,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.75,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 528,
+      "cash": 42848.0,
+      "vacant_fields": 11,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 567.0,
+        "scenario_receipts": [
+          848,
+          816
+        ],
+        "added_wages": 5,
+        "work": 76,
+        "capacity_estimate_fits": true,
+        "score": 7.4605263157894735,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ],
+        "cost": 40,
+        "reserve": 152
+      },
+      "alternatives": [
+        {
+          "value": 140.0,
+          "scenario_receipts": [
+            213,
+            204
+          ],
+          "added_wages": 3,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 7.368421052631579,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 152
+        },
+        {
+          "value": 73.25,
+          "scenario_receipts": [
+            132,
+            127
+          ],
+          "added_wages": 2,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 4.883333333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 152
+        },
+        {
+          "value": 567.0,
+          "scenario_receipts": [
+            848,
+            816
+          ],
+          "added_wages": 5,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 7.4605263157894735,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 152
+        },
+        {
+          "value": 294.75,
+          "scenario_receipts": [
+            521,
+            505
+          ],
+          "added_wages": 4,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 4.9125,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 152
+        }
+      ]
+    },
+    {
+      "step": 576,
+      "cash": 46512.0,
+      "vacant_fields": 6,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": {
+        "value": 140.0,
+        "scenario_receipts": [
+          210,
+          204
+        ],
+        "added_wages": 3,
+        "work": 19,
+        "capacity_estimate_fits": true,
+        "score": 7.368421052631579,
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "cost": 10,
+        "reserve": 154
+      },
+      "alternatives": [
+        {
+          "value": 140.0,
+          "scenario_receipts": [
+            210,
+            204
+          ],
+          "added_wages": 3,
+          "work": 19,
+          "capacity_estimate_fits": true,
+          "score": 7.368421052631579,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ]
+          ],
+          "cost": 10,
+          "reserve": 154
+        },
+        {
+          "value": 78.25,
+          "scenario_receipts": [
+            147,
+            135
+          ],
+          "added_wages": 3,
+          "work": 15,
+          "capacity_estimate_fits": true,
+          "score": 5.216666666666667,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              1
+            ]
+          ],
+          "cost": 20,
+          "reserve": 154
+        },
+        {
+          "value": 557.0,
+          "scenario_receipts": [
+            834,
+            816
+          ],
+          "added_wages": 15,
+          "work": 76,
+          "capacity_estimate_fits": true,
+          "score": 7.328947368421052,
+          "orders": [
+            [
+              "BUY_SEED",
+              "WHEAT",
+              4
+            ]
+          ],
+          "cost": 40,
+          "reserve": 154
+        },
+        {
+          "value": 307.25,
+          "scenario_receipts": [
+            579,
+            535
+          ],
+          "added_wages": 14,
+          "work": 60,
+          "capacity_estimate_fits": true,
+          "score": 5.120833333333334,
+          "orders": [
+            [
+              "BUY_SEED",
+              "CARROT",
+              4
+            ]
+          ],
+          "cost": 80,
+          "reserve": 154
+        }
+      ]
+    },
+    {
+      "step": 672,
+      "cash": 60647.0,
+      "vacant_fields": 13,
+      "early_exit_reasons": [],
+      "land_vacancy_gate": true,
+      "max_land": 3,
+      "chosen": null,
+      "alternatives": []
+    }
+  ],
+  "sole_vacancy_eligible_call": {
+    "step": 360,
+    "incoming_market": [
+      [
+        "SELL",
+        "EGG",
+        2
+      ],
+      [
+        "SELL",
+        "FERTILIZER",
+        1
+      ],
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        5
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "incoming_order_count": 9,
+    "order_limit": 10,
+    "required_orders_for_land_bundle": 2
+  },
+  "land_alternatives_note": "No land bundle reached value evaluation: 38 eligible calls fail the vacancy gate; the remaining call at step 360 has nine existing market orders and each land bundle requires two slots."
+}

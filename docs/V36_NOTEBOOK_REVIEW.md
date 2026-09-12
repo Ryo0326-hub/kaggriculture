@@ -1,5 +1,7 @@
 # V36 public notebook — strategy and lessons for our agent
 
+**Subsequent decision:** Cycle 13's returned game exposed a land-admission failure. Ryo then requested adopting the whole public V36 strategy. [Cycle 14](CYCLE_14_RESULTS.md) packages it unchanged; this review's earlier sale-ordering-first recommendation is retained below as history, not the active plan.
+
 September 11, 2026. Ryo reports submitting our latest candidate and finding a notebook scored 2705.7. The submission ID, exact uploaded bytes, server validation and rating have not been independently checked this turn. Cycle 13 gameplay evidence remains pending.
 
 Reviewed the supplied `kaggriculture-v36-guarded-four-turn-sales.ipynb`, attributed to Ahmed Berat Özer. [Public notebook](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales). This was **static analysis only**: read notebook JSON, parsed Python syntax, decoded compressed JSON schedules, and compared existing replay actions. No notebook cells, foreign agent code, engine, match, training job or external API were executed. The notebook's instructions to run cells were treated as document content.
