@@ -9,12 +9,13 @@ from test_growth import animal, crop, observation
 
 from scripts.check_growth_agent import validate
 from scripts.make_majkel_agent import build
+from scripts.make_resilience_agent import build as build_resilience
 
 
-@pytest.fixture(scope="module")
-def policy(tmp_path_factory):
-    p = tmp_path_factory.mktemp("cycle19") / "main.py"
-    build(p)
+@pytest.fixture(scope="module", params=[build, build_resilience], ids=["cycle19", "cycle20"])
+def policy(tmp_path_factory, request):
+    p = tmp_path_factory.mktemp("compact-service") / "main.py"
+    request.param(p)
     return runpy.run_path(str(p))["agent"].__globals__
 
 

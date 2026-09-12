@@ -1,0 +1,40 @@
+{
+  "cycle": 20,
+  "artifact": "artifacts/submission-cycle-20-final/main.py",
+  "source_sha256": "79a8fb9661cd6fbb0c2cb9abc5a591b7daee1496b292ba8eca889f4fe6b16280",
+  "bytes": 41553,
+  "parent_cycle19_sha256": "eb151fe1e088e598edfdcd6b10c5c108bdb91783bfbbac9758211b5df29bd17d",
+  "source": "scripts.make_resilience_agent",
+  "bounded_tests": 117,
+  "checks": {
+    "observations_checked": 7190,
+    "max_callback_seconds": 0.024392958002863452,
+    "method": "Independent off-policy recorded-observation calls; not simulated games or competitive results.",
+    "inputs": [
+      {
+        "file": "108295517.json",
+        "sha256": "9063085fb34f2ff2f47ce1d98bd14e9481ad36aeaa896834dee253bf8e2c5587"
+      },
+      {
+        "file": "108300532.json",
+        "sha256": "08ee4b44f59771fd388c0417d2560a1796e8be56b40864eeea6cc6a44bf2de8e"
+      },
+      {
+        "file": "108305451.json",
+        "sha256": "653d091a21e54fdffeea6e9f167801ede6159457ff91724b2dc3c2cd1c5a3ac7"
+      },
+      {
+        "file": "108239790.json",
+        "sha256": "3c709feaf8450b939ccb75deaa9c1d8cbbea1ec9eecdb4c52fa38cd932d19e4d"
+      },
+      {
+        "file": "108195100.json",
+        "sha256": "0b2e5a6d8280abf3ef844ecaa1acdf57ac2587d2846cfe8bfd6ff033aa5edbc4"
+      }
+    ]
+  },
+  "local_games": 0,
+  "training_runs": 0,
+  "kaggle_uploaded_by_assistant": false,
+  "competitive_status": "Unmeasured challenger; user reports Cycle 19 submitted, but no own Cycle 19 game supplied."
+}

@@ -1,5 +1,9 @@
 # Performance-first plan
 
+**Current candidate: Cycle 20 — committed-supply price risk and survival deadlines.** The new [Majkel loss review](MAJKEL_108295517_STUDY.md) reconciles a 3,119-coin defeat despite cheaper fixed investment. Egg/carrot output, milk/berry saturation, missed crop survival and last-action deliveries explain why its earlier winning portfolio is not universally strong. [Cycle 20](CYCLE_20_OPTIMIZATION.md) makes two bounded corrections to the preserved, user-submitted Cycle 19. It passes 117 bounded tests and 7,190 independent observation checks; no local game or measured performance result is claimed. [Exact upload artifact and command](CYCLE_20_RESULTS.md).
+
+Cycle 19 own server results have not been supplied. Keep its source and artifact intact and compare subsequent actual logs; do not infer that the Cycle 20 changes already beat it.
+
 Agreed September 10, 2026 (Toronto): prioritize competitive performance; use local CPU compute with **US$0 new spending**; retain a validated incumbent and test bounded challengers. Ryo leads with roughly three hours per day. Ryo and Codex choose hypotheses together; Codex implements and tests; Ryo reviews evidence and reasoning. CO notes remain part of every implementation, but course coverage does not determine feature priority.
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
