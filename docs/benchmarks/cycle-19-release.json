@@ -1,0 +1,12 @@
+{
+  "cycle": 19,
+  "artifact": "artifacts/submission-cycle-19-final/main.py",
+  "sha256": "eb151fe1e088e598edfdcd6b10c5c108bdb91783bfbbac9758211b5df29bd17d",
+  "bytes": 37687,
+  "bounded_tests_passed": 73,
+  "recorded_observation_checks": 5752,
+  "max_callback_seconds": 0.019392083020647988,
+  "simulation_games_run": 0,
+  "server_validation": "pending user upload",
+  "protected_cycle18_sha256": "65e0e1f6f12e797c02fff195e168e37c6969a5167ec5f9a2e9d006854b95e314"
+}

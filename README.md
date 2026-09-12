@@ -2,11 +2,13 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
+**New submission candidate: Cycle 19 — compact service and prompt capital deployment.** A new reactive dispatcher uses committed tasks, geographic worker sectors, a Majkel-style opening, small crop queues, demand-based species/crop choices, feed-first working capital and guarded storage/liquidation. Final artifact: `artifacts/submission-cycle-19-final/main.py`, SHA-256 `eb151fe1e088…`. It passes 73 bounded tests and 5,752 independent recorded-observation checks; **Kaggle validation and competitive results remain pending**. [Upload command](docs/CYCLE_19_RESULTS.md) · [Implementation and CO notes](docs/CYCLE_19_OPTIMIZATION.md) · [Majkel versus SpaTaro review](docs/MAJKEL_108300532_STUDY.md). No local games or training were run.
+
 **Current server checkpoint: Cycle 18 — two reviewed losses expose an execution regression.** It enhances Cycle 15 through the shared-route work from Cycle 17, adds route-specific feed/fertilizer credit and next-day fertilizer staging, protects ongoing-crop watering, and reserves carried-stock capacity. The second audit also repairs worker-specific service deadlines, optional step metadata and partial animal deposits. Reviewed artifact: `artifacts/submission-cycle-18-final/main.py`, SHA-256 `65e0e1f6f12e…`. [Upload command and checks](docs/CYCLE_18_RESULTS.md) · [Strategy and CO notes](docs/CYCLE_18_OPTIMIZATION.md).
 
 **Cycle 15 is server validated, but five reviewed losses expose production limits.** Sergey, Julian, Chloe, Ahmed and Soumic show why feasible expansion, input deadlines, market saturation and terminal delivery matter. All own decisions in those reviews match Cycle 15. The latest Soumic game ends 85,532–94,176 despite our 4,209 lead entering the final day. Selected losses and early rating changes do not establish overall ladder strength.
 
-The final Cycle 18 passes 40 bounded tests and 140 isolated recorded-observation checks; the largest sampled callback is 0.414 seconds. [Second audit findings](docs/CYCLE_18_AUDIT.md). Both supplied server games now finish normally and all 1,438 own decisions match this artifact, but both are losses. The [server review](docs/CYCLE_18_SERVER_REVIEW.md) identifies route oscillation, a seed backlog that blocks investment, and full-care forecasts that execution does not deliver. The user reports a 545.3 ladder rating. The next priority is a focused execution repair. No local matches, training, cloud spending or automatic upload. The complete public V36 remains available unchanged as the separate [Cycle 16 baseline](docs/CYCLE_16_RESULTS.md).
+The final Cycle 18 passes 40 bounded tests and 140 isolated recorded-observation checks; the largest sampled callback is 0.414 seconds. [Second audit findings](docs/CYCLE_18_AUDIT.md). Both supplied server games now finish normally and all 1,438 own decisions match this artifact, but both are losses. The [server review](docs/CYCLE_18_SERVER_REVIEW.md) identifies route oscillation, a seed backlog that blocks investment, and full-care forecasts that execution does not deliver. The user reports a 545.3 ladder rating. Cycle 19 now packages an execution-focused replacement for server evaluation. No local matches, training, cloud spending or automatic upload. The complete public V36 remains available unchanged as the separate [Cycle 16 baseline](docs/CYCLE_16_RESULTS.md).
 
 Root `main.py` remains protected Cycle 3. Custom Cycle 15 and all earlier artifacts remain unchanged. The [150K budget](docs/CYCLE_15_SERVER_ANALYSIS.md) is an illustrative favorable-economy target, not a demonstrated result or guaranteed score.
 
@@ -34,7 +36,7 @@ Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8
 
 ## Historical local simulation commands — explicit opt-in only
 
-Use the Cycle 18 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
+Use the Cycle 19 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 

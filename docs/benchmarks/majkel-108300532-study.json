@@ -1,0 +1,1215 @@
+{
+  "episode": 108300532,
+  "method": "Passive recorded states and actions; no engine import or state advancement. Orders are requests unless confirmed by stock/asset deltas.",
+  "players": [
+    {
+      "episode": 108300532,
+      "source_sha256": "08ee4b44f59771fd388c0417d2560a1796e8be56b40864eeea6cc6a44bf2de8e",
+      "player": "SpaTaro",
+      "seat": 0,
+      "opponent": "Majkel1337",
+      "cash": [
+        81479.0,
+        90293.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": -8814.0,
+      "peak_productive": 75,
+      "peak_by_type_not_simultaneous": {
+        "MELON": 11,
+        "COW": 9,
+        "WHEAT": 40,
+        "SHEEP": 4,
+        "CARROT": 27,
+        "STRAWBERRY": 22
+      },
+      "confirmed_planted": {
+        "MELON": 11,
+        "WHEAT": 178,
+        "CARROT": 113,
+        "STRAWBERRY": 22
+      },
+      "confirmed_daytime_harvest_lower_bound": {
+        "CARROT": 320,
+        "WHEAT": 607,
+        "WOOL": 73,
+        "MILK": 202,
+        "MELON": 66,
+        "STRAWBERRY": 158
+      },
+      "confirmed_harvest_ages": {
+        "CARROT:age2:yield2": 13,
+        "CARROT:age3:yield2": 1,
+        "CARROT:age3:yield3": 96,
+        "CARROT:age3:yield4": 1,
+        "MELON:age10:yield6": 11,
+        "STRAWBERRY:age10:yield1": 2,
+        "STRAWBERRY:age10:yield2": 19,
+        "STRAWBERRY:age12:yield2": 22,
+        "STRAWBERRY:age14:yield1": 3,
+        "STRAWBERRY:age14:yield2": 19,
+        "STRAWBERRY:age16:yield1": 1,
+        "STRAWBERRY:age16:yield2": 16,
+        "WHEAT:age2:yield2": 23,
+        "WHEAT:age3:yield2": 1,
+        "WHEAT:age3:yield3": 65,
+        "WHEAT:age3:yield5": 11,
+        "WHEAT:age4:yield3": 3,
+        "WHEAT:age4:yield4": 63,
+        "WHEAT:age4:yield6": 8
+      },
+      "land": [
+        {
+          "decision_step": 150,
+          "quadrants": 2
+        },
+        {
+          "decision_step": 197,
+          "quadrants": 3
+        }
+      ],
+      "accepted_daytime_hires": 272,
+      "accepted_hires_by_day": {
+        "0": 5,
+        "1": 5,
+        "2": 6,
+        "3": 7,
+        "4": 6,
+        "5": 7,
+        "6": 9,
+        "7": 9,
+        "8": 10,
+        "9": 9,
+        "10": 11,
+        "11": 10,
+        "12": 10,
+        "13": 10,
+        "14": 10,
+        "15": 10,
+        "16": 10,
+        "17": 10,
+        "18": 10,
+        "19": 10,
+        "20": 10,
+        "21": 10,
+        "22": 11,
+        "23": 10,
+        "24": 10,
+        "25": 10,
+        "26": 10,
+        "27": 9,
+        "28": 9,
+        "29": 9
+      },
+      "confirmed_wages": 3410,
+      "unresolved_overnight_hire_requests": 0,
+      "requested_orders_not_fills": {
+        "HIRE": 275,
+        "BUY_SEED:MELON": 16,
+        "BUY_SEED:WHEAT": 182,
+        "BUY_PRODUCT:WHEAT": 396,
+        "BUY_ANIMAL:COW": 11,
+        "BUY_ANIMAL:SHEEP": 6,
+        "BUY_SEED:CARROT": 115,
+        "BUY_PRODUCT:CARROT": 142,
+        "BUY_PRODUCT:STRAWBERRY": 429,
+        "BUY_PRODUCT:TOMATO": 469,
+        "BUY_PRODUCT:MILK": 245,
+        "BUY_PRODUCT:WOOL": 71,
+        "SELL:WHEAT": 839,
+        "BUY_PRODUCT:MELON": 334,
+        "SELL:FERTILIZER": 211,
+        "BUY_PRODUCT:EGG": 85,
+        "SELL:CARROT": 351,
+        "BUY_ANIMAL:GOOSE": 3,
+        "BUY_LAND": 4,
+        "SELL:WOOL": 69,
+        "BUY_SEED:STRAWBERRY": 27,
+        "SELL:MILK": 240,
+        "SELL:MELON": 92,
+        "SELL:STRAWBERRY": 242,
+        "BUY_PRODUCT:FERTILIZER": 2
+      },
+      "requested_operations": {
+        "PASS": 1000,
+        "PICKUP": 127,
+        "NORTH": 840,
+        "BUILD_PASTURE": 14,
+        "WEST": 843,
+        "PLANT": 324,
+        "PLACE": 14,
+        "WATER": 1354,
+        "CARE": 246,
+        "FEED": 246,
+        "EAST": 492,
+        "SOUTH": 498,
+        "COLLECT_FERTILIZER": 284,
+        "HARVEST": 462,
+        "DIG": 11,
+        "DROP": 71,
+        "FERTILIZE": 78
+      },
+      "seed_oversubscription_turn_products": 0,
+      "duplicate_same_operation_coordinates": 88,
+      "observed_animal_disappearances": 2,
+      "crop_to_weed_including_exhausted": 19,
+      "daily_cash": [
+        {
+          "day": 0,
+          "cash": [
+            3000.0,
+            3000.0
+          ]
+        },
+        {
+          "day": 1,
+          "cash": [
+            17.0,
+            9.0
+          ]
+        },
+        {
+          "day": 2,
+          "cash": [
+            5.0,
+            34.0
+          ]
+        },
+        {
+          "day": 3,
+          "cash": [
+            140.0,
+            19.0
+          ]
+        },
+        {
+          "day": 4,
+          "cash": [
+            18.0,
+            110.0
+          ]
+        },
+        {
+          "day": 5,
+          "cash": [
+            8.0,
+            392.0
+          ]
+        },
+        {
+          "day": 6,
+          "cash": [
+            77.0,
+            897.0
+          ]
+        },
+        {
+          "day": 7,
+          "cash": [
+            36.0,
+            424.0
+          ]
+        },
+        {
+          "day": 8,
+          "cash": [
+            19.0,
+            832.0
+          ]
+        },
+        {
+          "day": 9,
+          "cash": [
+            13.0,
+            2199.0
+          ]
+        },
+        {
+          "day": 10,
+          "cash": [
+            389.0,
+            1020.0
+          ]
+        },
+        {
+          "day": 11,
+          "cash": [
+            9692.0,
+            7879.0
+          ]
+        },
+        {
+          "day": 12,
+          "cash": [
+            16058.0,
+            10437.0
+          ]
+        },
+        {
+          "day": 13,
+          "cash": [
+            20638.0,
+            13472.0
+          ]
+        },
+        {
+          "day": 14,
+          "cash": [
+            23099.0,
+            21347.0
+          ]
+        },
+        {
+          "day": 15,
+          "cash": [
+            26242.0,
+            24868.0
+          ]
+        },
+        {
+          "day": 16,
+          "cash": [
+            27413.0,
+            27047.0
+          ]
+        },
+        {
+          "day": 17,
+          "cash": [
+            30763.0,
+            34156.0
+          ]
+        },
+        {
+          "day": 18,
+          "cash": [
+            34306.0,
+            38803.0
+          ]
+        },
+        {
+          "day": 19,
+          "cash": [
+            38718.0,
+            41485.0
+          ]
+        },
+        {
+          "day": 20,
+          "cash": [
+            41344.0,
+            43876.0
+          ]
+        },
+        {
+          "day": 21,
+          "cash": [
+            45345.0,
+            47126.0
+          ]
+        },
+        {
+          "day": 22,
+          "cash": [
+            48145.0,
+            49364.0
+          ]
+        },
+        {
+          "day": 23,
+          "cash": [
+            53620.0,
+            53103.0
+          ]
+        },
+        {
+          "day": 24,
+          "cash": [
+            57809.0,
+            55747.0
+          ]
+        },
+        {
+          "day": 25,
+          "cash": [
+            61074.0,
+            59173.0
+          ]
+        },
+        {
+          "day": 26,
+          "cash": [
+            63863.0,
+            63577.0
+          ]
+        },
+        {
+          "day": 27,
+          "cash": [
+            66630.0,
+            70103.0
+          ]
+        },
+        {
+          "day": 28,
+          "cash": [
+            71431.0,
+            73708.0
+          ]
+        },
+        {
+          "day": 29,
+          "cash": [
+            76551.0,
+            77733.0
+          ]
+        }
+      ],
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 1,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 1,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 7
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 4
+      },
+      "town": {
+        "unlocked_shops": [
+          "BAKERY",
+          "PET_CAFE",
+          "PIZZA_SHOP",
+          "BRUNCH_SPOT",
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "BRUNCH_SPOT",
+          "PET_CAFE"
+        ]
+      },
+      "within_game_comparison": {
+        "decisions": 719,
+        "identical_unit_decisions": 10,
+        "identical_non_sale_order_sequences": 324,
+        "product_stock_unit_turns_by_seat": [
+          5393,
+          23004
+        ],
+        "stock_metric_excludes_wheat_fertilizer_and_animals": true
+      },
+      "accounting": {
+        "seeds": 7160,
+        "animals": 5600,
+        "land": 3000,
+        "wages": 3410,
+        "net_product_receipts_residual": 97649.0
+      },
+      "confirmed_fixed_purchases": {
+        "SEED:WHEAT": 182,
+        "SEED:MELON": 11,
+        "ANIMAL:COW": 9,
+        "ANIMAL:SHEEP": 4,
+        "ANIMAL:GOOSE": 0,
+        "SEED:CARROT": 113,
+        "SEED:STRAWBERRY": 22
+      },
+      "harvest_including_identified_night_boundaries": {
+        "CARROT": 323,
+        "WHEAT": 614,
+        "WOOL": 73,
+        "MILK": 202,
+        "MELON": 66,
+        "STRAWBERRY": 162
+      },
+      "production": {
+        "animal_events": 92,
+        "animal_unfed_events": 8,
+        "animal_zero_care_bonus_events": 8,
+        "banked_bonus_lost_on_unfed_events": 16,
+        "berry_events": 84,
+        "berry_bonus_events": 78,
+        "berry_unwatered_events": 1
+      },
+      "installations": [
+        {
+          "step": 3,
+          "site": [
+            4,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 5,
+          "site": [
+            3,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 6,
+          "site": [
+            2,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 7,
+          "site": [
+            3,
+            3
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 79,
+          "site": [
+            1,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 3,
+          "first_day": 11
+        },
+        {
+          "step": 107,
+          "site": [
+            4,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 4,
+          "first_day": 12
+        },
+        {
+          "step": 134,
+          "site": [
+            1,
+            3
+          ],
+          "animal": "SHEEP",
+          "placed_day": 5,
+          "first_day": 11
+        },
+        {
+          "step": 154,
+          "site": [
+            5,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 6,
+          "first_day": 12
+        },
+        {
+          "step": 222,
+          "site": [
+            6,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 227,
+          "site": [
+            6,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 364,
+          "site": [
+            4,
+            5
+          ],
+          "animal": "COW",
+          "placed_day": 15,
+          "first_day": 23
+        },
+        {
+          "step": 462,
+          "site": [
+            4,
+            6
+          ],
+          "animal": "COW",
+          "placed_day": 19,
+          "first_day": 27
+        },
+        {
+          "step": 463,
+          "site": [
+            5,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 19,
+          "first_day": 27
+        }
+      ],
+      "adjacent_reversal_pairs": 0,
+      "unresolved": [],
+      "movement_share": 0.38716685979142523
+    },
+    {
+      "episode": 108300532,
+      "source_sha256": "08ee4b44f59771fd388c0417d2560a1796e8be56b40864eeea6cc6a44bf2de8e",
+      "player": "Majkel1337",
+      "seat": 1,
+      "opponent": "SpaTaro",
+      "cash": [
+        81479.0,
+        90293.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": 8814.0,
+      "peak_productive": 74,
+      "peak_by_type_not_simultaneous": {
+        "COW": 7,
+        "SHEEP": 3,
+        "MELON": 12,
+        "WHEAT": 42,
+        "STRAWBERRY": 23,
+        "GOOSE": 4,
+        "TOMATO": 13,
+        "CARROT": 20
+      },
+      "confirmed_planted": {
+        "MELON": 12,
+        "WHEAT": 224,
+        "STRAWBERRY": 25,
+        "TOMATO": 14,
+        "CARROT": 30
+      },
+      "confirmed_daytime_harvest_lower_bound": {
+        "WHEAT": 729,
+        "WOOL": 55,
+        "MILK": 178,
+        "MELON": 72,
+        "EGG": 163,
+        "STRAWBERRY": 156,
+        "TOMATO": 94,
+        "CARROT": 66
+      },
+      "confirmed_harvest_ages": {
+        "CARROT:age2:yield2": 21,
+        "CARROT:age2:yield3": 1,
+        "CARROT:age3:yield3": 7,
+        "MELON:age10:yield6": 12,
+        "STRAWBERRY:age10:yield1": 3,
+        "STRAWBERRY:age10:yield2": 19,
+        "STRAWBERRY:age11:yield2": 1,
+        "STRAWBERRY:age12:yield2": 21,
+        "STRAWBERRY:age12:yield3": 1,
+        "STRAWBERRY:age13:yield2": 1,
+        "STRAWBERRY:age14:yield1": 4,
+        "STRAWBERRY:age14:yield2": 16,
+        "STRAWBERRY:age16:yield1": 4,
+        "STRAWBERRY:age16:yield2": 13,
+        "TOMATO:age10:yield1": 1,
+        "TOMATO:age10:yield2": 8,
+        "TOMATO:age10:yield3": 1,
+        "TOMATO:age10:yield4": 1,
+        "TOMATO:age11:yield1": 2,
+        "TOMATO:age11:yield2": 8,
+        "TOMATO:age11:yield3": 3,
+        "TOMATO:age8:yield1": 2,
+        "TOMATO:age8:yield2": 9,
+        "TOMATO:age9:yield1": 2,
+        "TOMATO:age9:yield2": 9,
+        "TOMATO:age9:yield3": 1,
+        "WHEAT:age2:yield2": 62,
+        "WHEAT:age3:yield2": 1,
+        "WHEAT:age3:yield3": 64,
+        "WHEAT:age3:yield5": 54,
+        "WHEAT:age4:yield3": 5,
+        "WHEAT:age4:yield4": 27,
+        "WHEAT:age4:yield6": 3
+      },
+      "land": [
+        {
+          "decision_step": 149,
+          "quadrants": 2
+        },
+        {
+          "decision_step": 221,
+          "quadrants": 3
+        }
+      ],
+      "accepted_daytime_hires": 286,
+      "accepted_hires_by_day": {
+        "0": 4,
+        "1": 4,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "5": 6,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "11": 11,
+        "12": 11,
+        "13": 11,
+        "14": 11,
+        "15": 11,
+        "16": 11,
+        "17": 11,
+        "18": 11,
+        "19": 11,
+        "20": 11,
+        "21": 11,
+        "22": 11,
+        "23": 11,
+        "24": 11,
+        "25": 11,
+        "26": 11,
+        "27": 11,
+        "28": 10,
+        "29": 10
+      },
+      "confirmed_wages": 4929,
+      "unresolved_overnight_hire_requests": 0,
+      "requested_orders_not_fills": {
+        "BUY_ANIMAL:COW": 7,
+        "BUY_PRODUCT:WHEAT": 201,
+        "SELL:WHEAT": 608,
+        "HIRE": 290,
+        "BUY_ANIMAL:SHEEP": 3,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 224,
+        "SELL:FERTILIZER": 191,
+        "BUY_SEED:STRAWBERRY": 28,
+        "SELL:WOOL": 55,
+        "BUY_LAND": 4,
+        "BUY_SEED:TOMATO": 14,
+        "BUY_ANIMAL:GOOSE": 4,
+        "SELL:MILK": 178,
+        "SELL:MELON": 72,
+        "SELL:EGG": 163,
+        "SELL:STRAWBERRY": 159,
+        "BUY_SEED:CARROT": 30,
+        "SELL:TOMATO": 94,
+        "SELL:CARROT": 66
+      },
+      "requested_operations": {
+        "PASS": 51,
+        "PICKUP": 209,
+        "BUILD_PASTURE": 10,
+        "PLACE": 114,
+        "NORTH": 1092,
+        "WEST": 957,
+        "FEED": 299,
+        "CARE": 299,
+        "SOUTH": 679,
+        "PLANT": 315,
+        "WATER": 1464,
+        "COLLECT_FERTILIZER": 329,
+        "EAST": 639,
+        "HARVEST": 516,
+        "DROP": 92,
+        "BUILD_COOP": 4,
+        "FERTILIZE": 127,
+        "DIG": 25
+      },
+      "seed_oversubscription_turn_products": 0,
+      "duplicate_same_operation_coordinates": 427,
+      "observed_animal_disappearances": 3,
+      "crop_to_weed_including_exhausted": 19,
+      "daily_cash": [
+        {
+          "day": 0,
+          "cash": [
+            3000.0,
+            3000.0
+          ]
+        },
+        {
+          "day": 1,
+          "cash": [
+            17.0,
+            9.0
+          ]
+        },
+        {
+          "day": 2,
+          "cash": [
+            5.0,
+            34.0
+          ]
+        },
+        {
+          "day": 3,
+          "cash": [
+            140.0,
+            19.0
+          ]
+        },
+        {
+          "day": 4,
+          "cash": [
+            18.0,
+            110.0
+          ]
+        },
+        {
+          "day": 5,
+          "cash": [
+            8.0,
+            392.0
+          ]
+        },
+        {
+          "day": 6,
+          "cash": [
+            77.0,
+            897.0
+          ]
+        },
+        {
+          "day": 7,
+          "cash": [
+            36.0,
+            424.0
+          ]
+        },
+        {
+          "day": 8,
+          "cash": [
+            19.0,
+            832.0
+          ]
+        },
+        {
+          "day": 9,
+          "cash": [
+            13.0,
+            2199.0
+          ]
+        },
+        {
+          "day": 10,
+          "cash": [
+            389.0,
+            1020.0
+          ]
+        },
+        {
+          "day": 11,
+          "cash": [
+            9692.0,
+            7879.0
+          ]
+        },
+        {
+          "day": 12,
+          "cash": [
+            16058.0,
+            10437.0
+          ]
+        },
+        {
+          "day": 13,
+          "cash": [
+            20638.0,
+            13472.0
+          ]
+        },
+        {
+          "day": 14,
+          "cash": [
+            23099.0,
+            21347.0
+          ]
+        },
+        {
+          "day": 15,
+          "cash": [
+            26242.0,
+            24868.0
+          ]
+        },
+        {
+          "day": 16,
+          "cash": [
+            27413.0,
+            27047.0
+          ]
+        },
+        {
+          "day": 17,
+          "cash": [
+            30763.0,
+            34156.0
+          ]
+        },
+        {
+          "day": 18,
+          "cash": [
+            34306.0,
+            38803.0
+          ]
+        },
+        {
+          "day": 19,
+          "cash": [
+            38718.0,
+            41485.0
+          ]
+        },
+        {
+          "day": 20,
+          "cash": [
+            41344.0,
+            43876.0
+          ]
+        },
+        {
+          "day": 21,
+          "cash": [
+            45345.0,
+            47126.0
+          ]
+        },
+        {
+          "day": 22,
+          "cash": [
+            48145.0,
+            49364.0
+          ]
+        },
+        {
+          "day": 23,
+          "cash": [
+            53620.0,
+            53103.0
+          ]
+        },
+        {
+          "day": 24,
+          "cash": [
+            57809.0,
+            55747.0
+          ]
+        },
+        {
+          "day": 25,
+          "cash": [
+            61074.0,
+            59173.0
+          ]
+        },
+        {
+          "day": 26,
+          "cash": [
+            63863.0,
+            63577.0
+          ]
+        },
+        {
+          "day": 27,
+          "cash": [
+            66630.0,
+            70103.0
+          ]
+        },
+        {
+          "day": 28,
+          "cash": [
+            71431.0,
+            73708.0
+          ]
+        },
+        {
+          "day": 29,
+          "cash": [
+            76551.0,
+            77733.0
+          ]
+        }
+      ],
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 0
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "town": {
+        "unlocked_shops": [
+          "BAKERY",
+          "PET_CAFE",
+          "PIZZA_SHOP",
+          "BRUNCH_SPOT",
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "BRUNCH_SPOT",
+          "PET_CAFE"
+        ]
+      },
+      "within_game_comparison": {
+        "decisions": 719,
+        "identical_unit_decisions": 10,
+        "identical_non_sale_order_sequences": 324,
+        "product_stock_unit_turns_by_seat": [
+          5393,
+          23004
+        ],
+        "stock_metric_excludes_wheat_fertilizer_and_animals": true
+      },
+      "accounting": {
+        "animals": 5500,
+        "seeds": 7000,
+        "land": 3000,
+        "wages": 4929,
+        "net_product_receipts_residual": 107722.0
+      },
+      "confirmed_fixed_purchases": {
+        "ANIMAL:COW": 7,
+        "ANIMAL:SHEEP": 3,
+        "ANIMAL:GOOSE": 4,
+        "SEED:MELON": 12,
+        "SEED:WHEAT": 224,
+        "SEED:STRAWBERRY": 25,
+        "SEED:TOMATO": 14,
+        "SEED:CARROT": 30
+      },
+      "harvest_including_identified_night_boundaries": {
+        "WHEAT": 729,
+        "WOOL": 55,
+        "MILK": 178,
+        "MELON": 72,
+        "EGG": 163,
+        "STRAWBERRY": 161,
+        "TOMATO": 94,
+        "CARROT": 66
+      },
+      "production": {
+        "animal_events": 155,
+        "animal_unfed_events": 5,
+        "animal_zero_care_bonus_events": 5,
+        "banked_bonus_lost_on_unfed_events": 6,
+        "berry_events": 88,
+        "berry_bonus_events": 73,
+        "berry_unwatered_events": 1
+      },
+      "installations": [
+        {
+          "step": 3,
+          "site": [
+            4,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 5,
+          "site": [
+            3,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 6,
+          "site": [
+            4,
+            3
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 7,
+          "site": [
+            2,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 8,
+          "site": [
+            4,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 154,
+          "site": [
+            5,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 157,
+          "site": [
+            6,
+            4
+          ],
+          "animal": "GOOSE",
+          "placed_day": 6,
+          "first_day": 10
+        },
+        {
+          "step": 159,
+          "site": [
+            6,
+            3
+          ],
+          "animal": "GOOSE",
+          "placed_day": 6,
+          "first_day": 10
+        },
+        {
+          "step": 161,
+          "site": [
+            5,
+            3
+          ],
+          "animal": "GOOSE",
+          "placed_day": 6,
+          "first_day": 10
+        },
+        {
+          "step": 163,
+          "site": [
+            7,
+            4
+          ],
+          "animal": "GOOSE",
+          "placed_day": 6,
+          "first_day": 10
+        },
+        {
+          "step": 165,
+          "site": [
+            5,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 226,
+          "site": [
+            3,
+            5
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 229,
+          "site": [
+            4,
+            5
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 437,
+          "site": [
+            4,
+            6
+          ],
+          "animal": "COW",
+          "placed_day": 18,
+          "first_day": 26
+        }
+      ],
+      "adjacent_reversal_pairs": 39,
+      "unresolved": [],
+      "movement_share": 0.4662789087384019
+    }
+  ]
+}
