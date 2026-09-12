@@ -1,0 +1,2331 @@
+{
+  "method": "Independent recorded observations, resource preconditions and cold route caches; no engine import, game advance or performance simulation.",
+  "source_sha256": "96297a3e899d77bbb5f0ec0299da34418bbdf9c62d999738df39da7a4237c6ea",
+  "inputs": [
+    {
+      "file": "107999948.json",
+      "sha256": "e2f5b4270fb93902cbf2df763a9c723a546ec42c759dfdc6e1f567668feb5661"
+    },
+    {
+      "file": "108000970.json",
+      "sha256": "0e41bb59bd33b06c302bcbcb1af2b4e734f849c63f658c1f3ff51275854b1683"
+    },
+    {
+      "file": "108005959.json",
+      "sha256": "877f870b92b6c9c260712874a4f1c945732b1a72a74dc5174c534972c1100fe4"
+    }
+  ],
+  "startup_seconds": 0.022861334000481293,
+  "decisions": 78,
+  "max_seconds": 0.3122136669990141,
+  "checks": [
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.022432500001741573,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 4,
+      "seconds": 0.0009203329973388463,
+      "daily_workers": 4,
+      "assignments": 4,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.036085750005440786,
+      "daily_workers": 3,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          8
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_SEED",
+          "MELON",
+          4
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            4
+          ]
+        ],
+        "value": 3073.0,
+        "cost": 320,
+        "scenario_receipts": [
+          3216,
+          3980
+        ],
+        "min_cash": 415.0,
+        "added_wages": 12,
+        "immediate_setup_reserve": 2,
+        "peak_workers": 4
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.019827582989819348,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ]
+        ],
+        "value": 1051.25,
+        "cost": 80,
+        "scenario_receipts": [
+          1150,
+          1159
+        ],
+        "min_cash": 364.0,
+        "added_wages": 13,
+        "immediate_setup_reserve": 8,
+        "peak_workers": 5
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.0006605829985346645,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          9
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.005214999982854351,
+      "daily_workers": 11,
+      "assignments": 12,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          9
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.2768803749931976,
+      "daily_workers": 13,
+      "assignments": 12,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          13
+        ],
+        [
+          "SELL",
+          "WOOL",
+          1
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 388,
+      "seconds": 0.2103769999812357,
+      "daily_workers": 13,
+      "assignments": 12,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          17
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          7
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          3
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          4
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            4
+          ]
+        ],
+        "value": 3790.25,
+        "cost": 3600,
+        "scenario_receipts": [
+          8829,
+          9922
+        ],
+        "min_cash": 13364.0,
+        "added_wages": 766,
+        "immediate_setup_reserve": 946,
+        "peak_workers": 12
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 483,
+      "seconds": 0.008390375005546957,
+      "daily_workers": 12,
+      "assignments": 13,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          18
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 600,
+      "seconds": 0.007563624996691942,
+      "daily_workers": 12,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          21
+        ],
+        [
+          "SELL",
+          "WOOL",
+          15
+        ],
+        [
+          "SELL",
+          "MILK",
+          9
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          10
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          3
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0020686250063590705,
+      "daily_workers": 5,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          6
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          18
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          11
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.0013835839927196503,
+      "daily_workers": 3,
+      "assignments": 4,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          24
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          8
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0012630000128410757,
+      "daily_workers": 3,
+      "assignments": 0,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          13
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          8
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.022053749999031425,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 4,
+      "seconds": 0.0011443330149631947,
+      "daily_workers": 6,
+      "assignments": 6,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.0015320419915951788,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.025262541021220386,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          1
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            1
+          ]
+        ],
+        "value": 1525.75,
+        "cost": 300,
+        "scenario_receipts": [
+          1852,
+          2047
+        ],
+        "min_cash": 254.0,
+        "added_wages": 9,
+        "immediate_setup_reserve": 66,
+        "peak_workers": 5
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.001338207977823913,
+      "daily_workers": 5,
+      "assignments": 4,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.0027864160074386746,
+      "daily_workers": 7,
+      "assignments": 7,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.1591090419969987,
+      "daily_workers": 5,
+      "assignments": 10,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 3938.0,
+        "cost": 800,
+        "scenario_receipts": [
+          4664,
+          5768
+        ],
+        "min_cash": 26813.0,
+        "added_wages": 202,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 388,
+      "seconds": 0.14665599999716505,
+      "daily_workers": 6,
+      "assignments": 8,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 3845.75,
+        "cost": 800,
+        "scenario_receipts": [
+          4664,
+          5419
+        ],
+        "min_cash": 33771.0,
+        "added_wages": 39,
+        "immediate_setup_reserve": 168,
+        "peak_workers": 7
+      }
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 483,
+      "seconds": 0.002517042012186721,
+      "daily_workers": 6,
+      "assignments": 5,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          3
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 600,
+      "seconds": 0.0024588750093244016,
+      "daily_workers": 7,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          4
+        ],
+        [
+          "SELL",
+          "EGG",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          3
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0005119590205140412,
+      "daily_workers": 2,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.0002164160250686109,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "107999948.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.00020795801538042724,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.020890707994112745,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 4,
+      "seconds": 0.0018012920045293868,
+      "daily_workers": 7,
+      "assignments": 5,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          4
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.007400417001917958,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          4
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.0067780000099446625,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          4
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.002253916987683624,
+      "daily_workers": 5,
+      "assignments": 6,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.00924262500484474,
+      "daily_workers": 12,
+      "assignments": 7,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          6
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.022951790975639597,
+      "daily_workers": 20,
+      "assignments": 11,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          18
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 388,
+      "seconds": 0.013290582981426269,
+      "daily_workers": 19,
+      "assignments": 12,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          23
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 483,
+      "seconds": 0.017179833026602864,
+      "daily_workers": 18,
+      "assignments": 13,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          20
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          13
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 600,
+      "seconds": 0.014634958002716303,
+      "daily_workers": 22,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          20
+        ],
+        [
+          "SELL",
+          "WOOL",
+          4
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0038454169989563525,
+      "daily_workers": 9,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          20
+        ],
+        [
+          "SELL",
+          "WOOL",
+          8
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          18
+        ],
+        [
+          "SELL",
+          "MILK",
+          3
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.0025627499853726476,
+      "daily_workers": 8,
+      "assignments": 4,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          1
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          2
+        ],
+        [
+          "SELL",
+          "CARROT",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.002176915993914008,
+      "daily_workers": 8,
+      "assignments": 0,
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          3
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.025118042016401887,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 4,
+      "seconds": 0.0020362079958431423,
+      "daily_workers": 6,
+      "assignments": 6,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.031547958991723135,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.03126800002064556,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          1
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ],
+        "value": 703.5,
+        "cost": 100,
+        "scenario_receipts": [
+          774,
+          916
+        ],
+        "min_cash": 361.0,
+        "added_wages": 6,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 5
+      }
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.000971833011135459,
+      "daily_workers": 4,
+      "assignments": 2,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.0030057499825488776,
+      "daily_workers": 7,
+      "assignments": 8,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.21038354097981937,
+      "daily_workers": 6,
+      "assignments": 8,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 4515.25,
+        "cost": 800,
+        "scenario_receipts": [
+          5189,
+          6598
+        ],
+        "min_cash": 23029.0,
+        "added_wages": 66,
+        "immediate_setup_reserve": 160,
+        "peak_workers": 7
+      }
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 388,
+      "seconds": 0.19159183301962912,
+      "daily_workers": 6,
+      "assignments": 6,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          3
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 4481.25,
+        "cost": 800,
+        "scenario_receipts": [
+          5360,
+          5897
+        ],
+        "min_cash": 27058.0,
+        "added_wages": 45,
+        "immediate_setup_reserve": 168,
+        "peak_workers": 7
+      }
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 483,
+      "seconds": 0.002643250016262755,
+      "daily_workers": 7,
+      "assignments": 10,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 600,
+      "seconds": 0.02999037501285784,
+      "daily_workers": 7,
+      "assignments": 1,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          8
+        ],
+        [
+          "BUY_SEED",
+          "CARROT",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "CARROT",
+            8
+          ]
+        ],
+        "value": 914.0,
+        "cost": 160,
+        "scenario_receipts": [
+          1183,
+          1183
+        ],
+        "min_cash": 66570.0,
+        "added_wages": 41,
+        "immediate_setup_reserve": 68,
+        "peak_workers": 8
+      }
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.000520500005222857,
+      "daily_workers": 2,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.00019254200742579997,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108000970.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.00018554198322817683,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.02117937500588596,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 4,
+      "seconds": 0.001122125016991049,
+      "daily_workers": 6,
+      "assignments": 6,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.0015710000006947666,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.02492558301310055,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_ANIMAL",
+          "GOOSE",
+          1
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            1
+          ]
+        ],
+        "value": 1642.25,
+        "cost": 300,
+        "scenario_receipts": [
+          1968,
+          2165
+        ],
+        "min_cash": 167.0,
+        "added_wages": 13,
+        "immediate_setup_reserve": 62,
+        "peak_workers": 4
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.0009045420156326145,
+      "daily_workers": 4,
+      "assignments": 2,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.25160950000281446,
+      "daily_workers": 6,
+      "assignments": 11,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 9507.0,
+        "cost": 800,
+        "scenario_receipts": [
+          10128,
+          11528
+        ],
+        "min_cash": 4451.0,
+        "added_wages": 35,
+        "immediate_setup_reserve": 136,
+        "peak_workers": 6
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.3122136669990141,
+      "daily_workers": 6,
+      "assignments": 6,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          5
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 3557.5,
+        "cost": 800,
+        "scenario_receipts": [
+          4261,
+          5355
+        ],
+        "min_cash": 21788.0,
+        "added_wages": 177,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 388,
+      "seconds": 0.21893345800344832,
+      "daily_workers": 7,
+      "assignments": 10,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          9
+        ],
+        [
+          "BUY_SEED",
+          "STRAWBERRY",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 2571.0,
+        "cost": 800,
+        "scenario_receipts": [
+          3431,
+          3827
+        ],
+        "min_cash": 25599.0,
+        "added_wages": 159,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 483,
+      "seconds": 0.0034072090056724846,
+      "daily_workers": 7,
+      "assignments": 12,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          9
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 600,
+      "seconds": 0.027643000008538365,
+      "daily_workers": 5,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "STRAWBERRY",
+          2
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          10
+        ],
+        [
+          "BUY_SEED",
+          "CARROT",
+          8
+        ]
+      ],
+      "chosen": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "CARROT",
+            8
+          ]
+        ],
+        "value": 1206.0,
+        "cost": 160,
+        "scenario_receipts": [
+          1429,
+          1429
+        ],
+        "min_cash": 64075.0,
+        "added_wages": 37,
+        "immediate_setup_reserve": 26,
+        "peak_workers": 8
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0003836250107269734,
+      "daily_workers": 1,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "WHEAT",
+          5
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.00025241600815206766,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.00023625002359040082,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.022843999991891906,
+      "daily_workers": 1,
+      "assignments": 0,
+      "market": [
+        [
+          "BUY_SEED",
+          "MELON",
+          8
+        ],
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ],
+        [
+          "BUY_ANIMAL",
+          "SHEEP",
+          2
+        ],
+        [
+          "BUY_SEED",
+          "WHEAT",
+          4
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 4,
+      "seconds": 0.002214042004197836,
+      "daily_workers": 8,
+      "assignments": 5,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.007274917006725445,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          3
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          5
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.009492957993643358,
+      "daily_workers": 4,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          4
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          6
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.002341499988688156,
+      "daily_workers": 5,
+      "assignments": 2,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.019250250014010817,
+      "daily_workers": 25,
+      "assignments": 10,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          2
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.021971625013975427,
+      "daily_workers": 22,
+      "assignments": 11,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          12
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 388,
+      "seconds": 0.036265958013245836,
+      "daily_workers": 20,
+      "assignments": 11,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          16
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 483,
+      "seconds": 0.021837208012584597,
+      "daily_workers": 21,
+      "assignments": 14,
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          12
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 600,
+      "seconds": 0.016032292012823746,
+      "daily_workers": 19,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "TOMATO",
+          68
+        ],
+        [
+          "SELL",
+          "WOOL",
+          8
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          16
+        ],
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          49
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.028402958007063717,
+      "daily_workers": 26,
+      "assignments": 1,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "WOOL",
+          12
+        ],
+        [
+          "SELL",
+          "EGG",
+          8
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          22
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.01646745900507085,
+      "daily_workers": 20,
+      "assignments": 4,
+      "market": [],
+      "chosen": null
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.01057945899083279,
+      "daily_workers": 18,
+      "assignments": 0,
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          12
+        ],
+        [
+          "SELL",
+          "EGG",
+          4
+        ],
+        [
+          "SELL",
+          "WHEAT",
+          2
+        ]
+      ],
+      "chosen": null
+    }
+  ],
+  "server_validation": "pending",
+  "competitive_performance": "unmeasured"
+}

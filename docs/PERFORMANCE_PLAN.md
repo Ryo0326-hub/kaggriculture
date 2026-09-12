@@ -4,15 +4,15 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
-Current checkpoint: **Cycle 15 is server validated but underproduces; the next recommendation is unchanged public V36, packaged as Cycle 16.** [Server diagnosis and 150K budget](CYCLE_15_SERVER_ANALYSIS.md) · [Cycle 16 artifact and command](CYCLE_16_RESULTS.md). This is the public source previously packaged as Cycle 14, not a new custom model or a proven score improvement.
+Current checkpoint: **Cycle 17 implements the requested custom growth repairs; its Kaggle validation and competitive results are pending.** [Artifact and checks](CYCLE_17_RESULTS.md) · [Sergey analysis and CO notes](CYCLE_17_OPTIMIZATION.md). Cycle 15 stays frozen; unchanged public V36 / Cycle 16 remains an optional separate comparison.
 
-The two new games end 81,939–123,182 and 86,193–98,981. All 1,438 recorded decisions match Cycle 15; execution is clean and final inventory is empty. Our five-animal herd and 29-tile peak expose a production-scale problem. The labor model overconstrains installation and crop service, while the downside forecast halves known recurring shop demand. Correcting earlier consistency defects did not establish good economics.
+The newly supplied Sergey Panasenko game ends 76,678–122,718. All 719 own decisions match Cycle 15. It reaches 30 productive tiles versus 75, and harvests 72 versus 318 daytime milk units. Sergey expands twice on UI Day 8, funds large crop cohorts, then builds a larger herd and late production. Its imperfect final deliveries should not be copied.
 
-**Work backward from 150,000 final banked coins in a favorable economy:** an illustrative 181,500 in gross receipts minus 34,500 in costs plus starting 3,000. Explicit product/price assumptions and sensitivity are in the server analysis. Around 330 milk and 300 strawberry sales require earlier herd expansion and larger crop cohorts. Favorable reference volumes do not guarantee those prices against another opponent. Continue optimizing wins when a game's market cannot support 150K.
+Cycle 17 uses common physical service routes in staffing, dispatch and investment, exploits ordinary overnight inventory transfers, maintains explicit terminal delivery, preserves known shop demand in its downside branch, prices additional workers and setup, and allows animals beyond the old reserved pads. Its bounded checks are engineering evidence, not measured competitive improvement.
 
-The source-matched public schedule family provides a concrete next server baseline for higher utilization. Keep its source unchanged for the first comparison, with full attribution. After its games arrive, inspect completed installations, productive area, output, wages, prices and final delivery before adapting it. A custom rebuild would need constructive shared service/installation schedules, wider herd geometry and valid demand scenarios; cosmetic trading changes alone cannot fill the present gap.
+**Work backward from 150,000 final banked coins in a favorable economy:** the earlier illustrative 181,500 gross receipts minus 34,500 costs plus starting 3,000 remains a planning budget. Product prices depend on both players and town demand. Do not force a fixed portfolio or require 150K in every winning game.
 
-Cycle 3, custom Cycle 15 and earlier artifacts remain unchanged. Cycle 16 is byte-identical to public Cycle 14 and the vendored source. Its own server validation and performance are pending. No local games or new policy inference was needed to repackage it. The user performs the upload.
+The next checkpoint is the user's server upload and returned logs: installation speed, productive footprint, physical output, wages, market proceeds, losses/overflow and final delivery. Review wins as well as losses before choosing another change. No automatic upload, local game or training is authorized by this plan.
 
 ## Active workflow — user direction supersedes earlier simulation gates
 
