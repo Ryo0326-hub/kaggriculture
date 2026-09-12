@@ -2,11 +2,13 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Current candidate: Cycle 15 — repaired custom Cycle 13 agent, ready for user-run server validation.** Source SHA-256 starts `ce4444126f5e`. Upload `artifacts/submission-cycle-15-repairs/main.py`; root `main.py` is still protected Cycle 3. [Exact upload command and verification](docs/CYCLE_15_RESULTS.md) · [CO/economics notes](docs/CYCLE_15_OPTIMIZATION.md).
+**Recommended next server candidate: Cycle 16 — the complete public V36 strategy unchanged.** Upload `artifacts/submission-cycle-16-public-baseline/main.py`, SHA-256 `7eb5ab6c4858…`. This is the same attributed source previously packaged as Cycle 14, with a new explicit release path; no new policy logic or score claim. [Upload command and provenance](docs/CYCLE_16_RESULTS.md).
 
-Cycle 15 fixes every finding from the [broader Cycle 13 audit](docs/CYCLE_13_LOGIC_AUDIT.md): blocked land admission, terminal cargo/deadline priorities, fatal tomato watering, inconsistent labor costing, omitted existing fertilizer and profit/work-based investment selection. Forty-five bounded tests and 54 isolated recorded-observation calls pass; all fifteen audited tomato fertilizer transitions reconcile. No local games were run. Competitive improvement and Kaggle validation remain unmeasured.
+**Cycle 15 is server validated but loses both newly supplied matches: 81,939–123,182 and 86,193–98,981.** All 1,438 own decisions match its source, with clean runtime and empty final inventory. It peaks at 29 productive tiles and five animals in each game, while its labor and demand forecasts restrict further growth. [Failure analysis and the plan for 150,000 final coins](docs/CYCLE_15_SERVER_ANALYSIS.md) · [Evidence and illustrative budget](docs/benchmarks/cycle-15-growth-gap.json).
 
-**Cycle 13 lost 66,319–106,333 in episode 107984963.** All 719 own decisions matched its packaged source. Its historical artifact is preserved; [failure diagnosis](docs/CYCLE_13_POSTMORTEM.md). The separate **Cycle 14 public V36 candidate remains unchanged and attributed**, with its own [upload instructions](docs/CYCLE_14_RESULTS.md), [source/provenance](third_party/kaggriculture_v36/README.md) and [strategy review](docs/V36_NOTEBOOK_REVIEW.md). Cycle 15 repairs our custom policy; it does not modify or certify V36.
+The next priority is to establish the public schedule baseline's actual server behavior. No local matches, training or cloud spending. The public V36 strategy is attributed upstream work; its own validation and performance on our account remain pending. [Source/license](third_party/kaggriculture_v36/README.md) · [Strategy review](docs/V36_NOTEBOOK_REVIEW.md).
+
+Root `main.py` remains protected Cycle 3. Custom Cycle 15 and every earlier frozen artifact are unchanged. Its [original repair checks](docs/CYCLE_15_RESULTS.md) establish correctness of the audited fixes, not competitive strength; the new server evidence supersedes any assumption that those fixes solved production scale.
 
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
@@ -32,7 +34,7 @@ Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8
 
 ## Historical local simulation commands — explicit opt-in only
 
-Use the Cycle 15 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
+Use the Cycle 16 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 

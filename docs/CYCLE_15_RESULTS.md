@@ -1,4 +1,6 @@
-# Cycle 15 — repaired custom agent, ready for server validation
+# Cycle 15 — repaired custom agent, original release record
+
+**Server update:** both newly supplied games finish cleanly but lose at 81,939 and 86,193 final coins. See the [growth diagnosis and revised plan](CYCLE_15_SERVER_ANALYSIS.md). The original packaging/verification record below is retained as history.
 
 This implements Ryo's request to fix all six findings in the
 [Cycle 13 logic audit](CYCLE_13_LOGIC_AUDIT.md), including the earlier land
