@@ -14,7 +14,9 @@ Cycle 17 uses common physical service routes in staffing, dispatch and investmen
 
 The next checkpoint is the user's server upload and returned logs: installation speed, productive footprint, physical output, wages, market proceeds, losses/overflow and final delivery. Review wins as well as losses before choosing another change. No automatic upload, local game or training is authorized by this plan.
 
-Additional evidence: [Cycle 15 versus JulianHahn28, episode 108009995](SERVER_REVIEW_108009995.md), ends 69,799–75,016. All 719 own decisions match Cycle 15. Our early melon execution and final delivery worked; Julian's larger sheep herd served early yarn-store demand and overcame our cash lead. This is review evidence only: the Cycle 17 candidate is unchanged, and upcoming wins should be compared before another policy change.
+Additional evidence: [Cycle 15 versus JulianHahn28, episode 108009995](SERVER_REVIEW_108009995.md), ends 69,799–75,016. All 719 own decisions match Cycle 15. Our early melon execution and final delivery worked; Julian's larger sheep herd served early yarn-store demand and overcame our cash lead. This is review evidence only: the Cycle 17 candidate is unchanged.
+
+[Cycle 15 versus Chloe, episode 108013045](SERVER_REVIEW_108013045.md), ends 90,928–92,597 with all 719 own decisions matched. Chloe grows berries and milk into strong observed demand; our yield per strawberry plant is much better, but the productive footprint is smaller. Eleven own strawberry production events lack the fertilizer bonus and warrant input/deadline review. Chloe's 34-melon overflow, unused seeds and escaped cow should not be copied; its 43 zero-yield crop retirements are normal exhaustion. The user is continuing to supply losses, so review those as they arrive. Winning games would broaden the evidence and are not a prerequisite for identifying a concrete repair. No candidate changes or uploads result from this review.
 
 ## Active workflow — user direction supersedes earlier simulation gates
 
