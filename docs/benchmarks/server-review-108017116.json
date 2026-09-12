@@ -1,0 +1,7682 @@
+{
+  "maximum_own_cash_lead": {
+    "lead": 37500.0,
+    "state": 496,
+    "day": 21,
+    "turn": 17
+  },
+  "events": {
+    "acquisitions": [
+      {
+        "seat": 0,
+        "step": 0,
+        "day": 1,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 3000.0,
+        "cash_after": 520.0
+      },
+      {
+        "seat": 0,
+        "step": 0,
+        "day": 1,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 8,
+        "accepted": 8,
+        "cash_before": 3000.0,
+        "cash_after": 520.0
+      },
+      {
+        "seat": 0,
+        "step": 0,
+        "day": 1,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 3000.0,
+        "cash_after": 520.0,
+        "night": false
+      },
+      {
+        "seat": 0,
+        "step": 0,
+        "day": 1,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 3000.0,
+        "cash_after": 520.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 0,
+        "day": 1,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 6,
+        "accepted": 6,
+        "cash_before": 3000.0,
+        "cash_after": 2056.0
+      },
+      {
+        "seat": 1,
+        "step": 0,
+        "day": 1,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 11,
+        "accepted": 11,
+        "cash_before": 3000.0,
+        "cash_after": 2056.0
+      },
+      {
+        "seat": 1,
+        "step": 1,
+        "day": 1,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2056.0,
+        "cash_after": 1556.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 2,
+        "day": 1,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1556.0,
+        "cash_after": 1056.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 3,
+        "day": 1,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1056.0,
+        "cash_after": 966.0
+      },
+      {
+        "seat": 1,
+        "step": 3,
+        "day": 1,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1056.0,
+        "cash_after": 966.0
+      },
+      {
+        "seat": 1,
+        "step": 32,
+        "day": 2,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 796.0,
+        "cash_after": 706.0
+      },
+      {
+        "seat": 1,
+        "step": 32,
+        "day": 2,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 796.0,
+        "cash_after": 706.0
+      },
+      {
+        "seat": 0,
+        "step": 33,
+        "day": 2,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 397.0,
+        "cash_after": 268.0
+      },
+      {
+        "seat": 0,
+        "step": 40,
+        "day": 2,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 268.0,
+        "cash_after": 258.0
+      },
+      {
+        "seat": 0,
+        "step": 44,
+        "day": 2,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 258.0,
+        "cash_after": 248.0
+      },
+      {
+        "seat": 0,
+        "step": 64,
+        "day": 3,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 273.0,
+        "cash_after": 263.0
+      },
+      {
+        "seat": 0,
+        "step": 68,
+        "day": 3,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 263.0,
+        "cash_after": 253.0
+      },
+      {
+        "seat": 0,
+        "step": 101,
+        "day": 5,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 458.0,
+        "cash_after": 482.0
+      },
+      {
+        "seat": 1,
+        "step": 102,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 694.0,
+        "cash_after": 684.0
+      },
+      {
+        "seat": 1,
+        "step": 104,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 684.0,
+        "cash_after": 674.0
+      },
+      {
+        "seat": 1,
+        "step": 106,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 674.0,
+        "cash_after": 664.0
+      },
+      {
+        "seat": 1,
+        "step": 109,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 664.0,
+        "cash_after": 654.0
+      },
+      {
+        "seat": 0,
+        "step": 110,
+        "day": 5,
+        "type": "animal",
+        "item": "COW",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 926.0,
+        "cash_after": 648.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 113,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 654.0,
+        "cash_after": 644.0
+      },
+      {
+        "seat": 1,
+        "step": 116,
+        "day": 5,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 644.0,
+        "cash_after": 634.0
+      },
+      {
+        "seat": 0,
+        "step": 120,
+        "day": 6,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 781.0,
+        "cash_after": 493.0
+      },
+      {
+        "seat": 1,
+        "step": 121,
+        "day": 6,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 1,
+        "cash_before": 1263.0,
+        "cash_after": 334.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 121,
+        "day": 6,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1263.0,
+        "cash_after": 334.0,
+        "night": false
+      },
+      {
+        "seat": 0,
+        "step": 127,
+        "day": 6,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 472.0,
+        "cash_after": 372.0
+      },
+      {
+        "seat": 0,
+        "step": 133,
+        "day": 6,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 489.0,
+        "cash_after": 389.0
+      },
+      {
+        "seat": 0,
+        "step": 136,
+        "day": 6,
+        "type": "seed",
+        "item": "TOMATO",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 389.0,
+        "cash_after": 630.0
+      },
+      {
+        "seat": 0,
+        "step": 155,
+        "day": 7,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 618.0,
+        "cash_after": 670.0
+      },
+      {
+        "seat": 0,
+        "step": 164,
+        "day": 7,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2334.0,
+        "cash_after": 2234.0
+      },
+      {
+        "seat": 1,
+        "step": 169,
+        "day": 8,
+        "type": "animal",
+        "item": "COW",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1530.0,
+        "cash_after": 942.0,
+        "night": false
+      },
+      {
+        "seat": 0,
+        "step": 179,
+        "day": 8,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 8,
+        "accepted": 8,
+        "cash_before": 2309.0,
+        "cash_after": 509.0
+      },
+      {
+        "seat": 1,
+        "step": 202,
+        "day": 9,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 800.0,
+        "cash_after": 700.0
+      },
+      {
+        "seat": 1,
+        "step": 209,
+        "day": 9,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 700.0,
+        "cash_after": 500.0
+      },
+      {
+        "seat": 1,
+        "step": 210,
+        "day": 9,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 500.0,
+        "cash_after": 400.0
+      },
+      {
+        "seat": 0,
+        "step": 211,
+        "day": 9,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 4747.0,
+        "cash_after": 4667.0
+      },
+      {
+        "seat": 1,
+        "step": 214,
+        "day": 9,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 400.0,
+        "cash_after": 300.0
+      },
+      {
+        "seat": 1,
+        "step": 217,
+        "day": 10,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 1,
+        "cash_before": 1557.0,
+        "cash_after": 25.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 217,
+        "day": 10,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 1557.0,
+        "cash_after": 25.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 241,
+        "day": 11,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 1110.0,
+        "cash_after": 2.0
+      },
+      {
+        "seat": 1,
+        "step": 241,
+        "day": 11,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 8,
+        "accepted": 8,
+        "cash_before": 1110.0,
+        "cash_after": 2.0
+      },
+      {
+        "seat": 0,
+        "step": 246,
+        "day": 11,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 5203.0,
+        "cash_after": 4893.0
+      },
+      {
+        "seat": 0,
+        "step": 253,
+        "day": 11,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 4893.0,
+        "cash_after": 6407.0
+      },
+      {
+        "seat": 1,
+        "step": 254,
+        "day": 11,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 7,
+        "accepted": 7,
+        "cash_before": 1631.0,
+        "cash_after": 396.0
+      },
+      {
+        "seat": 1,
+        "step": 254,
+        "day": 11,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 1631.0,
+        "cash_after": 396.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 254,
+        "day": 11,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 2,
+        "accepted": 1,
+        "cash_before": 1631.0,
+        "cash_after": 396.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 258,
+        "day": 11,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 3326.0,
+        "cash_after": 226.0
+      },
+      {
+        "seat": 1,
+        "step": 258,
+        "day": 11,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 3326.0,
+        "cash_after": 226.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 258,
+        "day": 11,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 3,
+        "accepted": 2,
+        "cash_before": 3326.0,
+        "cash_after": 226.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 265,
+        "day": 12,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 1741.0,
+        "cash_after": 223.0
+      },
+      {
+        "seat": 1,
+        "step": 265,
+        "day": 12,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 14,
+        "accepted": 14,
+        "cash_before": 1741.0,
+        "cash_after": 223.0
+      },
+      {
+        "seat": 1,
+        "step": 265,
+        "day": 12,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1741.0,
+        "cash_after": 223.0
+      },
+      {
+        "seat": 1,
+        "step": 265,
+        "day": 12,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 1741.0,
+        "cash_after": 223.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 265,
+        "day": 12,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 1741.0,
+        "cash_after": 223.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 289,
+        "day": 13,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 7,
+        "accepted": 7,
+        "cash_before": 8770.0,
+        "cash_after": 1292.0
+      },
+      {
+        "seat": 1,
+        "step": 289,
+        "day": 13,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 7,
+        "accepted": 7,
+        "cash_before": 8770.0,
+        "cash_after": 1292.0
+      },
+      {
+        "seat": 1,
+        "step": 289,
+        "day": 13,
+        "type": "animal",
+        "item": "COW",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 8770.0,
+        "cash_after": 1292.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 289,
+        "day": 13,
+        "type": "animal",
+        "item": "SHEEP",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 8770.0,
+        "cash_after": 1292.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 290,
+        "day": 13,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 9,
+        "accepted": 7,
+        "cash_before": 1292.0,
+        "cash_after": 64.0
+      },
+      {
+        "seat": 1,
+        "step": 290,
+        "day": 13,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 1292.0,
+        "cash_after": 64.0
+      },
+      {
+        "seat": 1,
+        "step": 290,
+        "day": 13,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 0,
+        "cash_before": 1292.0,
+        "cash_after": 64.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 313,
+        "day": 14,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 10,
+        "accepted": 10,
+        "cash_before": 1612.0,
+        "cash_after": 187.0
+      },
+      {
+        "seat": 1,
+        "step": 313,
+        "day": 14,
+        "type": "seed",
+        "item": "STRAWBERRY",
+        "requested": 7,
+        "accepted": 7,
+        "cash_before": 1612.0,
+        "cash_after": 187.0
+      },
+      {
+        "seat": 1,
+        "step": 313,
+        "day": 14,
+        "type": "seed",
+        "item": "MELON",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 1612.0,
+        "cash_after": 187.0
+      },
+      {
+        "seat": 1,
+        "step": 337,
+        "day": 15,
+        "type": "animal",
+        "item": "COW",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 2593.0,
+        "cash_after": 951.0,
+        "night": false
+      },
+      {
+        "seat": 1,
+        "step": 354,
+        "day": 15,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 5,
+        "accepted": 5,
+        "cash_before": 1725.0,
+        "cash_after": 853.0
+      },
+      {
+        "seat": 1,
+        "step": 361,
+        "day": 16,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2628.0,
+        "cash_after": 2050.0
+      },
+      {
+        "seat": 1,
+        "step": 381,
+        "day": 16,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 1551.0,
+        "cash_after": 1521.0
+      },
+      {
+        "seat": 1,
+        "step": 397,
+        "day": 17,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2518.0,
+        "cash_after": 2508.0
+      },
+      {
+        "seat": 1,
+        "step": 398,
+        "day": 17,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2508.0,
+        "cash_after": 2498.0
+      },
+      {
+        "seat": 1,
+        "step": 403,
+        "day": 17,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 2498.0,
+        "cash_after": 2488.0
+      },
+      {
+        "seat": 0,
+        "step": 414,
+        "day": 18,
+        "type": "seed",
+        "item": "TOMATO",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 32902.0,
+        "cash_after": 32925.0
+      },
+      {
+        "seat": 1,
+        "step": 424,
+        "day": 18,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 6969.0,
+        "cash_after": 6959.0
+      },
+      {
+        "seat": 1,
+        "step": 438,
+        "day": 19,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 9409.0,
+        "cash_after": 9399.0
+      },
+      {
+        "seat": 1,
+        "step": 439,
+        "day": 19,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 9399.0,
+        "cash_after": 9389.0
+      },
+      {
+        "seat": 1,
+        "step": 443,
+        "day": 19,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 9389.0,
+        "cash_after": 9379.0
+      },
+      {
+        "seat": 1,
+        "step": 448,
+        "day": 19,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 10085.0,
+        "cash_after": 10075.0
+      },
+      {
+        "seat": 1,
+        "step": 453,
+        "day": 19,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 10075.0,
+        "cash_after": 10055.0
+      },
+      {
+        "seat": 0,
+        "step": 462,
+        "day": 20,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 41783.0,
+        "cash_after": 41773.0
+      },
+      {
+        "seat": 1,
+        "step": 466,
+        "day": 20,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 10435.0,
+        "cash_after": 10290.0
+      },
+      {
+        "seat": 1,
+        "step": 473,
+        "day": 20,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 10290.0,
+        "cash_after": 10280.0
+      },
+      {
+        "seat": 1,
+        "step": 476,
+        "day": 20,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 10280.0,
+        "cash_after": 10270.0
+      },
+      {
+        "seat": 1,
+        "step": 478,
+        "day": 20,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 10270.0,
+        "cash_after": 10260.0
+      },
+      {
+        "seat": 0,
+        "step": 481,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 47838.0,
+        "cash_after": 47718.0
+      },
+      {
+        "seat": 1,
+        "step": 493,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 12545.0,
+        "cash_after": 12535.0
+      },
+      {
+        "seat": 1,
+        "step": 494,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 12535.0,
+        "cash_after": 12525.0
+      },
+      {
+        "seat": 1,
+        "step": 496,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 12525.0,
+        "cash_after": 13207.0
+      },
+      {
+        "seat": 0,
+        "step": 500,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 50025.0,
+        "cash_after": 50015.0
+      },
+      {
+        "seat": 1,
+        "step": 500,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 14693.0,
+        "cash_after": 15778.0
+      },
+      {
+        "seat": 1,
+        "step": 502,
+        "day": 21,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 15778.0,
+        "cash_after": 15748.0
+      },
+      {
+        "seat": 1,
+        "step": 515,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22699.0,
+        "cash_after": 22689.0
+      },
+      {
+        "seat": 1,
+        "step": 518,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22689.0,
+        "cash_after": 22679.0
+      },
+      {
+        "seat": 1,
+        "step": 519,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22679.0,
+        "cash_after": 22669.0
+      },
+      {
+        "seat": 0,
+        "step": 521,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 54829.0,
+        "cash_after": 54789.0
+      },
+      {
+        "seat": 1,
+        "step": 521,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22669.0,
+        "cash_after": 22659.0
+      },
+      {
+        "seat": 1,
+        "step": 522,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 22659.0,
+        "cash_after": 22639.0
+      },
+      {
+        "seat": 1,
+        "step": 523,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 22639.0,
+        "cash_after": 22619.0
+      },
+      {
+        "seat": 1,
+        "step": 524,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22619.0,
+        "cash_after": 22609.0
+      },
+      {
+        "seat": 1,
+        "step": 526,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22609.0,
+        "cash_after": 22599.0
+      },
+      {
+        "seat": 1,
+        "step": 527,
+        "day": 22,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 22599.0,
+        "cash_after": 24642.0
+      },
+      {
+        "seat": 1,
+        "step": 536,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 30395.0,
+        "cash_after": 30385.0
+      },
+      {
+        "seat": 1,
+        "step": 538,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 30385.0,
+        "cash_after": 30365.0
+      },
+      {
+        "seat": 1,
+        "step": 543,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 30365.0,
+        "cash_after": 30345.0
+      },
+      {
+        "seat": 1,
+        "step": 548,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 32018.0,
+        "cash_after": 31988.0
+      },
+      {
+        "seat": 1,
+        "step": 549,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 31988.0,
+        "cash_after": 31968.0
+      },
+      {
+        "seat": 1,
+        "step": 551,
+        "day": 23,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 34831.0,
+        "cash_after": 35945.0
+      },
+      {
+        "seat": 0,
+        "step": 553,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 63104.0,
+        "cash_after": 63026.0
+      },
+      {
+        "seat": 1,
+        "step": 553,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 40139.0,
+        "cash_after": 40600.0
+      },
+      {
+        "seat": 1,
+        "step": 558,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 39848.0,
+        "cash_after": 39838.0
+      },
+      {
+        "seat": 1,
+        "step": 561,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 39838.0,
+        "cash_after": 39828.0
+      },
+      {
+        "seat": 1,
+        "step": 562,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 39828.0,
+        "cash_after": 39818.0
+      },
+      {
+        "seat": 1,
+        "step": 568,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 39818.0,
+        "cash_after": 39808.0
+      },
+      {
+        "seat": 1,
+        "step": 570,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 41182.0,
+        "cash_after": 41172.0
+      },
+      {
+        "seat": 0,
+        "step": 571,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 65988.0,
+        "cash_after": 66345.0
+      },
+      {
+        "seat": 1,
+        "step": 571,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 41172.0,
+        "cash_after": 42843.0
+      },
+      {
+        "seat": 1,
+        "step": 571,
+        "day": 24,
+        "type": "seed",
+        "item": "CARROT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 41172.0,
+        "cash_after": 42843.0
+      },
+      {
+        "seat": 1,
+        "step": 574,
+        "day": 24,
+        "type": "seed",
+        "item": "CARROT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 42843.0,
+        "cash_after": 44853.0
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 44853.0,
+        "cash_after": 45693.0
+      },
+      {
+        "seat": 1,
+        "step": 577,
+        "day": 25,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 49748.0,
+        "cash_after": 51328.0
+      },
+      {
+        "seat": 1,
+        "step": 593,
+        "day": 25,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 50971.0,
+        "cash_after": 50951.0
+      },
+      {
+        "seat": 1,
+        "step": 595,
+        "day": 25,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 50951.0,
+        "cash_after": 50931.0
+      },
+      {
+        "seat": 1,
+        "step": 597,
+        "day": 25,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 50931.0,
+        "cash_after": 50927.0
+      },
+      {
+        "seat": 0,
+        "step": 601,
+        "day": 26,
+        "type": "seed",
+        "item": "CARROT",
+        "requested": 4,
+        "accepted": 4,
+        "cash_before": 71574.0,
+        "cash_after": 71494.0
+      },
+      {
+        "seat": 1,
+        "step": 601,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 57228.0,
+        "cash_after": 58530.0
+      },
+      {
+        "seat": 1,
+        "step": 611,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 57810.0,
+        "cash_after": 57800.0
+      },
+      {
+        "seat": 1,
+        "step": 614,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 57800.0,
+        "cash_after": 57790.0
+      },
+      {
+        "seat": 1,
+        "step": 615,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 57790.0,
+        "cash_after": 57780.0
+      },
+      {
+        "seat": 1,
+        "step": 616,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 57780.0,
+        "cash_after": 57760.0
+      },
+      {
+        "seat": 1,
+        "step": 618,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 57760.0,
+        "cash_after": 58230.0
+      },
+      {
+        "seat": 1,
+        "step": 619,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 58230.0,
+        "cash_after": 58220.0
+      },
+      {
+        "seat": 1,
+        "step": 620,
+        "day": 26,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 58220.0,
+        "cash_after": 58791.0
+      },
+      {
+        "seat": 1,
+        "step": 625,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 64954.0,
+        "cash_after": 65283.0
+      },
+      {
+        "seat": 1,
+        "step": 632,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 64611.0,
+        "cash_after": 64601.0
+      },
+      {
+        "seat": 1,
+        "step": 635,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 64601.0,
+        "cash_after": 64591.0
+      },
+      {
+        "seat": 1,
+        "step": 637,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 64591.0,
+        "cash_after": 64581.0
+      },
+      {
+        "seat": 1,
+        "step": 639,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 64581.0,
+        "cash_after": 64571.0
+      },
+      {
+        "seat": 1,
+        "step": 640,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 1,
+        "accepted": 1,
+        "cash_before": 64571.0,
+        "cash_after": 65615.0
+      },
+      {
+        "seat": 1,
+        "step": 642,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 2,
+        "accepted": 2,
+        "cash_before": 65615.0,
+        "cash_after": 67313.0
+      },
+      {
+        "seat": 1,
+        "step": 644,
+        "day": 27,
+        "type": "seed",
+        "item": "WHEAT",
+        "requested": 3,
+        "accepted": 3,
+        "cash_before": 67313.0,
+        "cash_after": 68049.0
+      }
+    ],
+    "night_harvests": [
+      {
+        "seat": 1,
+        "step": 287,
+        "coordinate": [
+          0,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "MELON",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 312,
+          "planted_day": 0,
+          "watered_today": true,
+          "yield_units": 6
+        },
+        "after": null,
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      },
+      {
+        "seat": 0,
+        "step": 335,
+        "coordinate": [
+          3,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "TOMATO",
+          "fertilized_until_day": 14,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 5,
+          "watered_today": true,
+          "yield_units": 2
+        },
+        "after": {
+          "consecutive_unwatered": 0,
+          "crop": "TOMATO",
+          "fertilized_until_day": 14,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 5,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      },
+      {
+        "seat": 0,
+        "step": 383,
+        "coordinate": [
+          2,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 16,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 5,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 16,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 5,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          9,
+          4
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 8,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 8,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 551,
+        "coordinate": [
+          3,
+          6
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": true,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 14,
+          "yield_units": 1
+        },
+        "after": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 0,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 14,
+          "yield_units": 0
+        },
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "coordinate": [
+          3,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "tile_ops": [
+          [
+            "HARVEST"
+          ]
+        ]
+      }
+    ],
+    "crop_to_weed": [
+      {
+        "seat": 1,
+        "step": 263,
+        "day": 11,
+        "coordinate": [
+          1,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 8,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 263,
+        "day": 11,
+        "coordinate": [
+          4,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 8,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 287,
+        "day": 12,
+        "coordinate": [
+          0,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 9,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 335,
+        "day": 14,
+        "coordinate": [
+          1,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 359,
+        "day": 15,
+        "coordinate": [
+          8,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 383,
+        "day": 16,
+        "coordinate": [
+          4,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 407,
+        "day": 17,
+        "coordinate": [
+          8,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 0,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 431,
+        "day": 18,
+        "coordinate": [
+          5,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 18,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 9,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 431,
+        "day": 18,
+        "coordinate": [
+          8,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 13,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 431,
+        "day": 18,
+        "coordinate": [
+          7,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 13,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 455,
+        "day": 19,
+        "coordinate": [
+          4,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 455,
+        "day": 19,
+        "coordinate": [
+          8,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 455,
+        "day": 19,
+        "coordinate": [
+          7,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 479,
+        "day": 20,
+        "coordinate": [
+          9,
+          4
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 479,
+        "day": 20,
+        "coordinate": [
+          4,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 20,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 479,
+        "day": 20,
+        "coordinate": [
+          0,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 20,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "day": 21,
+        "coordinate": [
+          0,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 21,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "day": 21,
+        "coordinate": [
+          0,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 21,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "day": 21,
+        "coordinate": [
+          0,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 21,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "day": 21,
+        "coordinate": [
+          3,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 508,
+        "day": 22,
+        "coordinate": [
+          0,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 508,
+        "day": 22,
+        "coordinate": [
+          1,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 508,
+        "day": 22,
+        "coordinate": [
+          4,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 508,
+        "day": 22,
+        "coordinate": [
+          5,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 510,
+        "day": 22,
+        "coordinate": [
+          2,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 504,
+          "planted_day": 16,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 527,
+        "day": 22,
+        "coordinate": [
+          2,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 22,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 13,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 527,
+        "day": 22,
+        "coordinate": [
+          6,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 20,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 10,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 527,
+        "day": 22,
+        "coordinate": [
+          6,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 21,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 10,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 527,
+        "day": 22,
+        "coordinate": [
+          0,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 13,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 8,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 532,
+        "day": 23,
+        "coordinate": [
+          8,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 528,
+          "planted_day": 17,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 556,
+        "day": 24,
+        "coordinate": [
+          7,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 552,
+          "planted_day": 18,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          2,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 576,
+          "planted_day": 19,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          7,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "MELON",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 600,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 4
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 11,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          0,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          1,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          4,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "day": 24,
+        "coordinate": [
+          7,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          0,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 24,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 13,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          0,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 22,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          0,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 22,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          0,
+          8
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 13,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 11,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          5,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 22,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 604,
+        "day": 26,
+        "coordinate": [
+          4,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 600,
+          "planted_day": 20,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 606,
+        "day": 26,
+        "coordinate": [
+          1,
+          7
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 600,
+          "planted_day": 20,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "day": 26,
+        "coordinate": [
+          0,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "day": 26,
+        "coordinate": [
+          0,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 624,
+          "planted_day": 21,
+          "watered_today": false,
+          "yield_units": 2
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 4,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "day": 26,
+        "coordinate": [
+          7,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 720,
+          "planted_day": 25,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 0,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          4,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          1,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 25,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 15,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          7,
+          8
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          6,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          7,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          6,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 26,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          7,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          8,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          9,
+          0
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          5,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 26,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          7,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          9,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          9,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 19,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 648,
+        "day": 28,
+        "coordinate": [
+          0,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 26,
+          "kind": "PLANT",
+          "max_lifespan_step": 648,
+          "planted_day": 10,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 671,
+        "day": 28,
+        "coordinate": [
+          4,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 720,
+          "planted_day": 25,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 671,
+        "day": 28,
+        "coordinate": [
+          8,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 29,
+          "kind": "PLANT",
+          "max_lifespan_step": -1,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 15,
+        "classification": "premature_zero_yield"
+      },
+      {
+        "seat": 1,
+        "step": 671,
+        "day": 28,
+        "coordinate": [
+          8,
+          8
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 720,
+          "planted_day": 25,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          2,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          3,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 26,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          5,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          3,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          7,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 21,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          9,
+          3
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          1,
+          4
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          1,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 672,
+        "day": 29,
+        "coordinate": [
+          2,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 674,
+        "day": 29,
+        "coordinate": [
+          3,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 27,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 11,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 676,
+        "day": 29,
+        "coordinate": [
+          7,
+          2
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 672,
+          "planted_day": 23,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 695,
+        "day": 29,
+        "coordinate": [
+          9,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "CARROT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 720,
+          "planted_day": 26,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 2,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          3,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          0,
+          4
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          7,
+          4
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 29,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          6,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          9,
+          5
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 29,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          1,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 696,
+        "day": 30,
+        "coordinate": [
+          2,
+          6
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "STRAWBERRY",
+          "fertilized_until_day": 28,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 12,
+          "watered_today": false,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 17,
+        "classification": "normal_exhausted"
+      },
+      {
+        "seat": 1,
+        "step": 700,
+        "day": 30,
+        "coordinate": [
+          8,
+          9
+        ],
+        "before": {
+          "consecutive_unwatered": 1,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      },
+      {
+        "seat": 1,
+        "step": 702,
+        "day": 30,
+        "coordinate": [
+          8,
+          1
+        ],
+        "before": {
+          "consecutive_unwatered": 0,
+          "crop": "WHEAT",
+          "fertilized_until_day": -1,
+          "kind": "PLANT",
+          "max_lifespan_step": 696,
+          "planted_day": 24,
+          "watered_today": false,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "WEED"
+        },
+        "age": 5,
+        "classification": "positive_yield_lost"
+      }
+    ],
+    "newborn_deaths": [
+      {
+        "seat": 1,
+        "step": 23,
+        "crop": "WHEAT",
+        "coordinate": [
+          0,
+          4
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 23,
+        "crop": "MELON",
+        "coordinate": [
+          1,
+          2
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 311,
+        "crop": "STRAWBERRY",
+        "coordinate": [
+          1,
+          0
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 335,
+        "crop": "STRAWBERRY",
+        "coordinate": [
+          2,
+          0
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "crop": "WHEAT",
+        "coordinate": [
+          5,
+          8
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 551,
+        "crop": "WHEAT",
+        "coordinate": [
+          3,
+          9
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "crop": "WHEAT",
+        "coordinate": [
+          6,
+          2
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 575,
+        "crop": "WHEAT",
+        "coordinate": [
+          4,
+          0
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "crop": "WHEAT",
+        "coordinate": [
+          3,
+          9
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "crop": "WHEAT",
+        "coordinate": [
+          5,
+          8
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "crop": "WHEAT",
+        "coordinate": [
+          6,
+          7
+        ]
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "crop": "WHEAT",
+        "coordinate": [
+          6,
+          2
+        ]
+      }
+    ],
+    "escapes": [
+      {
+        "seat": 1,
+        "step": 95,
+        "day": 4,
+        "coordinate": [
+          4,
+          4
+        ],
+        "before": {
+          "animal": "SHEEP",
+          "cared_today": true,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": false,
+          "kind": "PASTURE",
+          "pending_care_bonus": 2,
+          "placed_day": 0,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 287,
+        "day": 12,
+        "coordinate": [
+          1,
+          2
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": true,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": false,
+          "kind": "PASTURE",
+          "pending_care_bonus": 1,
+          "placed_day": 7,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 455,
+        "day": 19,
+        "coordinate": [
+          4,
+          1
+        ],
+        "before": {
+          "animal": "SHEEP",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 12,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 479,
+        "day": 20,
+        "coordinate": [
+          4,
+          7
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 3,
+          "placed_day": 14,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 503,
+        "day": 21,
+        "coordinate": [
+          4,
+          6
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 12,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 599,
+        "day": 25,
+        "coordinate": [
+          3,
+          6
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 14,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 623,
+        "day": 26,
+        "coordinate": [
+          6,
+          1
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": false,
+          "kind": "PASTURE",
+          "pending_care_bonus": 1,
+          "placed_day": 12,
+          "yield_units": 0
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      },
+      {
+        "seat": 1,
+        "step": 647,
+        "day": 27,
+        "coordinate": [
+          1,
+          2
+        ],
+        "before": {
+          "animal": "COW",
+          "cared_today": false,
+          "consecutive_unfed": 1,
+          "fed_today": false,
+          "fertilizer_available": true,
+          "kind": "PASTURE",
+          "pending_care_bonus": 0,
+          "placed_day": 12,
+          "yield_units": 1
+        },
+        "after": {
+          "kind": "PASTURE"
+        }
+      }
+    ],
+    "uninstalled_losses": [],
+    "snapshots": [
+      {
+        "state": 0,
+        "day": 1,
+        "turn": 1,
+        "cash": [
+          3000.0,
+          3000.0
+        ],
+        "assets": [
+          {},
+          {}
+        ],
+        "town": {
+          "unlocked_shops": []
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 100,
+          "MELON": 250,
+          "MILK": 160,
+          "STRAWBERRY": 120,
+          "TOMATO": 60,
+          "WHEAT": 25,
+          "WOOL": 200
+        }
+      },
+      {
+        "state": 24,
+        "day": 2,
+        "turn": 1,
+        "cash": [
+          238.0,
+          800.0
+        ],
+        "assets": [
+          {
+            "MELON": 8,
+            "WHEAT": 4,
+            "SHEEP": 1,
+            "COW": 2
+          },
+          {
+            "WHEAT": 6,
+            "MELON": 10,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": []
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 100,
+          "MELON": 256,
+          "MILK": 169,
+          "STRAWBERRY": 128,
+          "TOMATO": 60,
+          "WHEAT": 29,
+          "WOOL": 206
+        }
+      },
+      {
+        "state": 48,
+        "day": 3,
+        "turn": 1,
+        "cash": [
+          248.0,
+          706.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 5,
+            "MELON": 8,
+            "STRAWBERRY": 1,
+            "SHEEP": 2,
+            "COW": 2
+          },
+          {
+            "WHEAT": 7,
+            "MELON": 12,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": []
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 99,
+          "MELON": 260,
+          "MILK": 172,
+          "STRAWBERRY": 132,
+          "TOMATO": 60,
+          "WHEAT": 29,
+          "WOOL": 209
+        }
+      },
+      {
+        "state": 72,
+        "day": 4,
+        "turn": 1,
+        "cash": [
+          253.0,
+          702.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 7,
+            "MELON": 8,
+            "STRAWBERRY": 1,
+            "SHEEP": 2,
+            "COW": 2
+          },
+          {
+            "WHEAT": 7,
+            "MELON": 12,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 99,
+          "MELON": 262,
+          "MILK": 175,
+          "STRAWBERRY": 135,
+          "TOMATO": 60,
+          "WHEAT": 30,
+          "WOOL": 212
+        }
+      },
+      {
+        "state": 96,
+        "day": 5,
+        "turn": 1,
+        "cash": [
+          636.0,
+          698.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 8,
+            "MELON": 8,
+            "STRAWBERRY": 1,
+            "SHEEP": 2,
+            "COW": 2
+          },
+          {
+            "WHEAT": 7,
+            "MELON": 12,
+            "SHEEP": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 98,
+          "MELON": 264,
+          "MILK": 187,
+          "STRAWBERRY": 137,
+          "TOMATO": 61,
+          "WHEAT": 31,
+          "WOOL": 214
+        }
+      },
+      {
+        "state": 120,
+        "day": 6,
+        "turn": 1,
+        "cash": [
+          781.0,
+          634.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 4,
+            "MELON": 8,
+            "STRAWBERRY": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 7,
+            "MELON": 12,
+            "SHEEP": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 97,
+          "MELON": 266,
+          "MILK": 196,
+          "STRAWBERRY": 139,
+          "TOMATO": 62,
+          "WHEAT": 31,
+          "WOOL": 215
+        }
+      },
+      {
+        "state": 144,
+        "day": 7,
+        "turn": 1,
+        "cash": [
+          630.0,
+          334.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 3,
+            "TOMATO": 1,
+            "MELON": 8,
+            "STRAWBERRY": 5,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 6,
+            "MELON": 12,
+            "SHEEP": 2,
+            "COW": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 35,
+          "EGG": 50,
+          "FERTILIZER": 96,
+          "MELON": 267,
+          "MILK": 203,
+          "STRAWBERRY": 141,
+          "TOMATO": 63,
+          "WHEAT": 29,
+          "WOOL": 217
+        }
+      },
+      {
+        "state": 168,
+        "day": 8,
+        "turn": 1,
+        "cash": [
+          2234.0,
+          330.0
+        ],
+        "assets": [
+          {
+            "WHEAT": 1,
+            "TOMATO": 1,
+            "MELON": 8,
+            "STRAWBERRY": 6,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 6,
+            "MELON": 12,
+            "SHEEP": 2,
+            "COW": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 36,
+          "EGG": 50,
+          "FERTILIZER": 95,
+          "MELON": 268,
+          "MILK": 213,
+          "STRAWBERRY": 150,
+          "TOMATO": 64,
+          "WHEAT": 30,
+          "WOOL": 206
+        }
+      },
+      {
+        "state": 192,
+        "day": 9,
+        "turn": 1,
+        "cash": [
+          794.0,
+          814.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "MELON": 8,
+            "STRAWBERRY": 14,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 6,
+            "MELON": 12,
+            "COW": 2,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 36,
+          "EGG": 50,
+          "FERTILIZER": 94,
+          "MELON": 269,
+          "MILK": 221,
+          "STRAWBERRY": 158,
+          "TOMATO": 65,
+          "WHEAT": 32,
+          "WOOL": 199
+        }
+      },
+      {
+        "state": 216,
+        "day": 10,
+        "turn": 1,
+        "cash": [
+          4667.0,
+          300.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "MELON": 8,
+            "STRAWBERRY": 15,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 2,
+            "MELON": 12,
+            "COW": 2,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 36,
+          "EGG": 51,
+          "FERTILIZER": 93,
+          "MELON": 270,
+          "MILK": 222,
+          "STRAWBERRY": 164,
+          "TOMATO": 65,
+          "WHEAT": 34,
+          "WOOL": 195
+        }
+      },
+      {
+        "state": 240,
+        "day": 11,
+        "turn": 1,
+        "cash": [
+          5514.0,
+          9.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "MELON": 9,
+            "STRAWBERRY": 15,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 4,
+            "MELON": 12,
+            "COW": 3,
+            "SHEEP": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 36,
+          "EGG": 51,
+          "FERTILIZER": 91,
+          "MELON": 271,
+          "MILK": 230,
+          "STRAWBERRY": 173,
+          "TOMATO": 67,
+          "WHEAT": 34,
+          "WOOL": 192
+        }
+      },
+      {
+        "state": 264,
+        "day": 12,
+        "turn": 1,
+        "cash": [
+          19038.0,
+          226.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 14,
+            "MELON": 8,
+            "COW": 3,
+            "SHEEP": 2,
+            "WHEAT": 3
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 37,
+          "EGG": 51,
+          "FERTILIZER": 89,
+          "MELON": 220,
+          "MILK": 233,
+          "STRAWBERRY": 181,
+          "TOMATO": 69,
+          "WHEAT": 36,
+          "WOOL": 179
+        }
+      },
+      {
+        "state": 288,
+        "day": 13,
+        "turn": 1,
+        "cash": [
+          19582.0,
+          223.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 32,
+            "SHEEP": 5,
+            "WHEAT": 5,
+            "MELON": 2,
+            "COW": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 37,
+          "EGG": 51,
+          "FERTILIZER": 87,
+          "MELON": 214,
+          "MILK": 240,
+          "STRAWBERRY": 187,
+          "TOMATO": 70,
+          "WHEAT": 37,
+          "WOOL": 181
+        }
+      },
+      {
+        "state": 312,
+        "day": 14,
+        "turn": 1,
+        "cash": [
+          23323.0,
+          64.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 43,
+            "SHEEP": 6,
+            "COW": 6,
+            "WHEAT": 7,
+            "MELON": 10
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 38,
+          "EGG": 51,
+          "FERTILIZER": 86,
+          "MELON": 148,
+          "MILK": 240,
+          "STRAWBERRY": 194,
+          "TOMATO": 72,
+          "WHEAT": 38,
+          "WOOL": 189
+        }
+      },
+      {
+        "state": 336,
+        "day": 15,
+        "turn": 1,
+        "cash": [
+          23696.0,
+          187.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 50,
+            "SHEEP": 6,
+            "COW": 6,
+            "WHEAT": 7,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 38,
+          "EGG": 51,
+          "FERTILIZER": 84,
+          "MELON": 138,
+          "MILK": 246,
+          "STRAWBERRY": 199,
+          "TOMATO": 73,
+          "WHEAT": 40,
+          "WOOL": 199
+        }
+      },
+      {
+        "state": 360,
+        "day": 16,
+        "turn": 1,
+        "cash": [
+          25523.0,
+          853.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 49,
+            "WHEAT": 7,
+            "SHEEP": 6,
+            "COW": 8,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 39,
+          "EGG": 51,
+          "FERTILIZER": 81,
+          "MELON": 140,
+          "MILK": 248,
+          "STRAWBERRY": 204,
+          "TOMATO": 74,
+          "WHEAT": 42,
+          "WOOL": 200
+        }
+      },
+      {
+        "state": 384,
+        "day": 17,
+        "turn": 1,
+        "cash": [
+          28111.0,
+          1521.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 48,
+            "WHEAT": 6,
+            "SHEEP": 6,
+            "COW": 8,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 40,
+          "EGG": 51,
+          "FERTILIZER": 78,
+          "MELON": 142,
+          "MILK": 251,
+          "STRAWBERRY": 207,
+          "TOMATO": 76,
+          "WHEAT": 42,
+          "WOOL": 228
+        }
+      },
+      {
+        "state": 408,
+        "day": 18,
+        "turn": 1,
+        "cash": [
+          29996.0,
+          2488.0
+        ],
+        "assets": [
+          {
+            "STRAWBERRY": 19,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 48,
+            "WHEAT": 18,
+            "SHEEP": 6,
+            "COW": 8,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE"
+          ]
+        },
+        "prices": {
+          "CARROT": 40,
+          "EGG": 51,
+          "FERTILIZER": 76,
+          "MELON": 144,
+          "MILK": 255,
+          "STRAWBERRY": 210,
+          "TOMATO": 77,
+          "WHEAT": 43,
+          "WOOL": 233
+        }
+      },
+      {
+        "state": 432,
+        "day": 19,
+        "turn": 1,
+        "cash": [
+          37901.0,
+          8175.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 18,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 45,
+            "WHEAT": 22,
+            "SHEEP": 6,
+            "COW": 8,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 41,
+          "EGG": 51,
+          "FERTILIZER": 72,
+          "MELON": 146,
+          "MILK": 254,
+          "STRAWBERRY": 206,
+          "TOMATO": 79,
+          "WHEAT": 44,
+          "WOOL": 234
+        }
+      },
+      {
+        "state": 456,
+        "day": 20,
+        "turn": 1,
+        "cash": [
+          40736.0,
+          10055.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 18,
+            "MELON": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 43,
+            "WHEAT": 22,
+            "COW": 8,
+            "SHEEP": 5,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 41,
+          "EGG": 51,
+          "FERTILIZER": 71,
+          "MELON": 148,
+          "MILK": 258,
+          "STRAWBERRY": 213,
+          "TOMATO": 80,
+          "WHEAT": 45,
+          "WOOL": 236
+        }
+      },
+      {
+        "state": 480,
+        "day": 21,
+        "turn": 1,
+        "cash": [
+          45739.0,
+          10260.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 18,
+            "MELON": 1,
+            "WHEAT": 1,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 40,
+            "WHEAT": 26,
+            "COW": 7,
+            "SHEEP": 5,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        "prices": {
+          "CARROT": 42,
+          "EGG": 51,
+          "FERTILIZER": 71,
+          "MELON": 150,
+          "MILK": 264,
+          "STRAWBERRY": 214,
+          "TOMATO": 82,
+          "WHEAT": 45,
+          "WOOL": 238
+        }
+      },
+      {
+        "state": 504,
+        "day": 22,
+        "turn": 1,
+        "cash": [
+          50015.0,
+          15748.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 17,
+            "WHEAT": 2,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 21,
+            "STRAWBERRY": 37,
+            "COW": 6,
+            "SHEEP": 5,
+            "MELON": 12
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 42,
+          "EGG": 51,
+          "FERTILIZER": 71,
+          "MELON": 127,
+          "MILK": 266,
+          "STRAWBERRY": 215,
+          "TOMATO": 83,
+          "WHEAT": 46,
+          "WOOL": 240
+        }
+      },
+      {
+        "state": 528,
+        "day": 23,
+        "turn": 1,
+        "cash": [
+          56276.0,
+          24642.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 14,
+            "WHEAT": 5,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 25,
+            "STRAWBERRY": 33,
+            "COW": 6,
+            "SHEEP": 5,
+            "MELON": 11
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 43,
+          "EGG": 51,
+          "FERTILIZER": 69,
+          "MELON": 115,
+          "MILK": 265,
+          "STRAWBERRY": 212,
+          "TOMATO": 86,
+          "WHEAT": 46,
+          "WOOL": 241
+        }
+      },
+      {
+        "state": 552,
+        "day": 24,
+        "turn": 1,
+        "cash": [
+          59166.0,
+          35945.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "STRAWBERRY": 13,
+            "WHEAT": 7,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 31,
+            "STRAWBERRY": 33,
+            "COW": 6,
+            "SHEEP": 5,
+            "MELON": 6
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET"
+          ]
+        },
+        "prices": {
+          "CARROT": 44,
+          "EGG": 51,
+          "FERTILIZER": 69,
+          "MELON": 40,
+          "MILK": 269,
+          "STRAWBERRY": 205,
+          "TOMATO": 93,
+          "WHEAT": 47,
+          "WOOL": 242
+        }
+      },
+      {
+        "state": 576,
+        "day": 25,
+        "turn": 1,
+        "cash": [
+          66345.0,
+          45693.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "WHEAT": 7,
+            "STRAWBERRY": 5,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 26,
+            "STRAWBERRY": 33,
+            "COW": 6,
+            "SHEEP": 5,
+            "MELON": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 45,
+          "EGG": 51,
+          "FERTILIZER": 68,
+          "MELON": 25,
+          "MILK": 270,
+          "STRAWBERRY": 196,
+          "TOMATO": 103,
+          "WHEAT": 47,
+          "WOOL": 243
+        }
+      },
+      {
+        "state": 600,
+        "day": 26,
+        "turn": 1,
+        "cash": [
+          70199.0,
+          50927.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "WHEAT": 10,
+            "STRAWBERRY": 4,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 32,
+            "STRAWBERRY": 31,
+            "COW": 5,
+            "SHEEP": 5
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 47,
+          "EGG": 52,
+          "FERTILIZER": 67,
+          "MELON": 1,
+          "MILK": 273,
+          "STRAWBERRY": 197,
+          "TOMATO": 116,
+          "WHEAT": 48,
+          "WOOL": 244
+        }
+      },
+      {
+        "state": 624,
+        "day": 27,
+        "turn": 1,
+        "cash": [
+          72147.0,
+          61218.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "WHEAT": 7,
+            "STRAWBERRY": 4,
+            "CARROT": 3,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 29,
+            "STRAWBERRY": 31,
+            "COW": 4,
+            "SHEEP": 5
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 49,
+          "EGG": 52,
+          "FERTILIZER": 66,
+          "MELON": 1,
+          "MILK": 275,
+          "STRAWBERRY": 192,
+          "TOMATO": 133,
+          "WHEAT": 48,
+          "WOOL": 245
+        }
+      },
+      {
+        "state": 648,
+        "day": 28,
+        "turn": 1,
+        "cash": [
+          78037.0,
+          68049.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "WHEAT": 5,
+            "CARROT": 4,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 28,
+            "STRAWBERRY": 30,
+            "SHEEP": 5,
+            "COW": 3,
+            "CARROT": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 51,
+          "EGG": 52,
+          "FERTILIZER": 64,
+          "MELON": 4,
+          "MILK": 277,
+          "STRAWBERRY": 190,
+          "TOMATO": 151,
+          "WHEAT": 48,
+          "WOOL": 245
+        }
+      },
+      {
+        "state": 672,
+        "day": 29,
+        "turn": 1,
+        "cash": [
+          79608.0,
+          76017.0
+        ],
+        "assets": [
+          {
+            "TOMATO": 1,
+            "WHEAT": 4,
+            "CARROT": 4,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "WHEAT": 22,
+            "STRAWBERRY": 20,
+            "SHEEP": 5,
+            "COW": 3,
+            "CARROT": 2
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 53,
+          "EGG": 52,
+          "FERTILIZER": 63,
+          "MELON": 7,
+          "MILK": 281,
+          "STRAWBERRY": 192,
+          "TOMATO": 171,
+          "WHEAT": 48,
+          "WOOL": 246
+        }
+      },
+      {
+        "state": 696,
+        "day": 30,
+        "turn": 1,
+        "cash": [
+          84843.0,
+          80634.0
+        ],
+        "assets": [
+          {
+            "CARROT": 1,
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 10,
+            "WHEAT": 17,
+            "SHEEP": 5,
+            "COW": 3,
+            "CARROT": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 54,
+          "EGG": 52,
+          "FERTILIZER": 61,
+          "MELON": 10,
+          "MILK": 284,
+          "STRAWBERRY": 197,
+          "TOMATO": 195,
+          "WHEAT": 49,
+          "WOOL": 247
+        }
+      },
+      {
+        "state": 719,
+        "day": 30,
+        "turn": 24,
+        "cash": [
+          85532.0,
+          94176.0
+        ],
+        "assets": [
+          {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          {
+            "STRAWBERRY": 3,
+            "WHEAT": 9,
+            "SHEEP": 5,
+            "COW": 3,
+            "CARROT": 1
+          }
+        ],
+        "town": {
+          "unlocked_shops": [
+            "PIZZA_SHOP",
+            "ICE_CREAM_SHOP",
+            "FARMERS_MARKET",
+            "YARN_STORE",
+            "YARN_STORE",
+            "SMOOTHIE_SHOP",
+            "FARMERS_MARKET",
+            "PET_CAFE"
+          ]
+        },
+        "prices": {
+          "CARROT": 56,
+          "EGG": 52,
+          "FERTILIZER": 55,
+          "MELON": 13,
+          "MILK": 287,
+          "STRAWBERRY": 200,
+          "TOMATO": 224,
+          "WHEAT": 48,
+          "WOOL": 247
+        }
+      }
+    ],
+    "crossings": [
+      {
+        "state": 1,
+        "day": 1,
+        "turn": 2,
+        "lead": -1536.0
+      },
+      {
+        "state": 111,
+        "day": 5,
+        "turn": 16,
+        "lead": -6.0
+      },
+      {
+        "state": 121,
+        "day": 6,
+        "turn": 2,
+        "lead": -770.0
+      },
+      {
+        "state": 180,
+        "day": 8,
+        "turn": 13,
+        "lead": -305.0
+      },
+      {
+        "state": 673,
+        "day": 29,
+        "turn": 2,
+        "lead": -1499.0
+      },
+      {
+        "state": 697,
+        "day": 30,
+        "turn": 2,
+        "lead": -1515.0
+      }
+    ],
+    "strawberry_refreshes": [
+      {
+        "seat": 0,
+        "step": 263,
+        "coordinate": [
+          2,
+          1
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 0
+      },
+      {
+        "seat": 0,
+        "step": 311,
+        "coordinate": [
+          2,
+          1
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 0
+      },
+      {
+        "seat": 0,
+        "step": 335,
+        "coordinate": [
+          4,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 359,
+        "coordinate": [
+          2,
+          1
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 359,
+        "coordinate": [
+          2,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 359,
+        "coordinate": [
+          2,
+          3
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 359,
+        "coordinate": [
+          1,
+          4
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 383,
+        "coordinate": [
+          0,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 5
+      },
+      {
+        "seat": 0,
+        "step": 383,
+        "coordinate": [
+          4,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "FERTILIZE"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 5
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          5,
+          0
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          1,
+          1
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          2,
+          1
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          6,
+          1
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "FERTILIZE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          2,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          6,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          7,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          2,
+          3
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          7,
+          3
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          8,
+          3
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "FERTILIZE"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          1,
+          4
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 407,
+        "coordinate": [
+          8,
+          4
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 431,
+        "coordinate": [
+          0,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 431,
+        "coordinate": [
+          4,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 431,
+        "coordinate": [
+          9,
+          4
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          5,
+          0
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          1,
+          1
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          6,
+          1
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          2,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          6,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          7,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          2,
+          3
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          7,
+          3
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          8,
+          3
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          1,
+          4
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 455,
+        "coordinate": [
+          8,
+          4
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 1
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          4,
+          1
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          0,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          3,
+          2
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          4,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "SOUTH"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          1,
+          3
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [
+          [
+            "WATER"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          0,
+          4
+        ],
+        "age_after": 10,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 479,
+        "coordinate": [
+          9,
+          4
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          5,
+          0
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          1,
+          1
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          6,
+          1
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          2,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          6,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          7,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          2,
+          3
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          7,
+          3
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "WEST"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          8,
+          3
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          1,
+          4
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 503,
+        "coordinate": [
+          8,
+          4
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "WEST"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          4,
+          1
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          0,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "FERTILIZE"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          3,
+          2
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          1,
+          3
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          0,
+          4
+        ],
+        "age_after": 12,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 527,
+        "coordinate": [
+          9,
+          4
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 3
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          5,
+          0
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          1,
+          1
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "EAST"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          6,
+          1
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "FERTILIZE"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          6,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          7,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          7,
+          3
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          8,
+          3
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 551,
+        "coordinate": [
+          8,
+          4
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 4
+      },
+      {
+        "seat": 0,
+        "step": 575,
+        "coordinate": [
+          4,
+          1
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 575,
+        "coordinate": [
+          3,
+          2
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 575,
+        "coordinate": [
+          1,
+          3
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 575,
+        "coordinate": [
+          0,
+          4
+        ],
+        "age_after": 14,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 575,
+        "coordinate": [
+          9,
+          4
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": false,
+        "before_yield": 0,
+        "after_yield": 1,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 623,
+        "coordinate": [
+          4,
+          1
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 623,
+        "coordinate": [
+          3,
+          2
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 623,
+        "coordinate": [
+          1,
+          3
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "PASS"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      },
+      {
+        "seat": 0,
+        "step": 623,
+        "coordinate": [
+          0,
+          4
+        ],
+        "age_after": 16,
+        "watered": true,
+        "active_fertilizer": true,
+        "before_yield": 0,
+        "after_yield": 2,
+        "ops": [
+          [
+            "EAST"
+          ]
+        ],
+        "fertilizer_in_shed": 0,
+        "fertilizer_in_carries": 2
+      }
+    ]
+  },
+  "duplicates": [
+    {},
+    {}
+  ],
+  "costs": [
+    {
+      "player": "Unicorns",
+      "accepted_seeds": {
+        "WHEAT": 20,
+        "CARROT": 4,
+        "TOMATO": 2,
+        "STRAWBERRY": 19,
+        "MELON": 10
+      },
+      "accepted_animals": {
+        "COW": 3,
+        "SHEEP": 2,
+        "GOOSE": 0
+      },
+      "seed_cost": 3080,
+      "animal_cost": 2200,
+      "land_cost": 1000,
+      "wages": 2947,
+      "final_cash": 85532.0,
+      "net_product_receipts": 91759.0
+    },
+    {
+      "player": "soumic 1088",
+      "accepted_seeds": {
+        "WHEAT": 123,
+        "CARROT": 3,
+        "TOMATO": 0,
+        "STRAWBERRY": 56,
+        "MELON": 25
+      },
+      "accepted_animals": {
+        "COW": 9,
+        "SHEEP": 7,
+        "GOOSE": 0
+      },
+      "seed_cost": 8890,
+      "animal_cost": 7100,
+      "land_cost": 7000,
+      "wages": 6932,
+      "final_cash": 94176.0,
+      "net_product_receipts": 121098.0
+    }
+  ],
+  "players": [
+    {
+      "episode": 108017116,
+      "source_sha256": "39426493c0cb986055f8f79ed3ef8ee27b5e5ec62b6d982172d8a44d429d1df1",
+      "player": "Unicorns",
+      "seat": 0,
+      "opponent": "soumic 1088",
+      "cash": [
+        85532.0,
+        94176.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": -8644.0,
+      "peak_productive": 30,
+      "peak_by_type_not_simultaneous": {
+        "COW": 3,
+        "WHEAT": 10,
+        "MELON": 9,
+        "SHEEP": 2,
+        "STRAWBERRY": 19,
+        "TOMATO": 1,
+        "CARROT": 4
+      },
+      "confirmed_planted": {
+        "WHEAT": 20,
+        "MELON": 10,
+        "STRAWBERRY": 19,
+        "TOMATO": 2,
+        "CARROT": 4
+      },
+      "confirmed_daytime_harvest_lower_bound": {
+        "WHEAT": 84,
+        "WOOL": 68,
+        "MILK": 102,
+        "MELON": 60,
+        "STRAWBERRY": 135,
+        "TOMATO": 11,
+        "CARROT": 12
+      },
+      "confirmed_harvest_ages": {
+        "CARROT:age3:yield3": 4,
+        "MELON:age10:yield6": 10,
+        "STRAWBERRY:age10:yield1": 5,
+        "STRAWBERRY:age10:yield2": 12,
+        "STRAWBERRY:age12:yield1": 1,
+        "STRAWBERRY:age12:yield2": 18,
+        "STRAWBERRY:age14:yield1": 5,
+        "STRAWBERRY:age14:yield2": 14,
+        "STRAWBERRY:age16:yield1": 2,
+        "STRAWBERRY:age16:yield2": 17,
+        "TOMATO:age10:yield2": 2,
+        "TOMATO:age11:yield1": 1,
+        "TOMATO:age11:yield2": 1,
+        "TOMATO:age8:yield1": 1,
+        "TOMATO:age9:yield1": 1,
+        "TOMATO:age9:yield2": 1,
+        "WHEAT:age4:yield4": 18,
+        "WHEAT:age4:yield6": 2
+      },
+      "land": [
+        {
+          "decision_step": 179,
+          "quadrants": 2
+        }
+      ],
+      "accepted_daytime_hires": 261,
+      "accepted_hires_by_day": {
+        "0": 9,
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 11,
+        "9": 11,
+        "10": 11,
+        "11": 9,
+        "12": 9,
+        "13": 9,
+        "14": 9,
+        "15": 9,
+        "16": 9,
+        "17": 9,
+        "18": 10,
+        "19": 10,
+        "20": 10,
+        "21": 10,
+        "22": 10,
+        "23": 10,
+        "24": 9,
+        "25": 9,
+        "26": 7,
+        "27": 6,
+        "28": 5,
+        "29": 2
+      },
+      "confirmed_wages": 2947,
+      "unresolved_overnight_hire_requests": 0,
+      "requested_orders_not_fills": {
+        "BUY_SEED:MELON": 10,
+        "BUY_ANIMAL:COW": 3,
+        "BUY_ANIMAL:SHEEP": 2,
+        "BUY_SEED:WHEAT": 20,
+        "BUY_PRODUCT:WHEAT": 144,
+        "HIRE": 261,
+        "SELL:FERTILIZER": 101,
+        "BUY_SEED:STRAWBERRY": 19,
+        "SELL:WHEAT": 88,
+        "BUY_SEED:TOMATO": 2,
+        "SELL:WOOL": 68,
+        "BUY_LAND": 1,
+        "SELL:MILK": 102,
+        "SELL:MELON": 60,
+        "SELL:STRAWBERRY": 138,
+        "SELL:TOMATO": 13,
+        "BUY_SEED:CARROT": 4,
+        "SELL:CARROT": 12
+      },
+      "requested_operations": {
+        "PASS": 2638,
+        "PICKUP": 77,
+        "WEST": 973,
+        "NORTH": 737,
+        "BUILD_PASTURE": 5,
+        "PLACE": 5,
+        "FEED": 140,
+        "SOUTH": 305,
+        "PLANT": 55,
+        "CARE": 135,
+        "WATER": 359,
+        "EAST": 763,
+        "COLLECT_FERTILIZER": 140,
+        "DROP": 105,
+        "HARVEST": 165,
+        "FERTILIZE": 39,
+        "DIG": 21
+      },
+      "seed_oversubscription_turn_products": 0,
+      "observed_animal_disappearances": 0,
+      "crop_to_weed_including_exhausted": 0,
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 0
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "town": {
+        "unlocked_shops": [
+          "PIZZA_SHOP",
+          "ICE_CREAM_SHOP",
+          "FARMERS_MARKET",
+          "YARN_STORE",
+          "YARN_STORE",
+          "SMOOTHIE_SHOP",
+          "FARMERS_MARKET",
+          "PET_CAFE"
+        ]
+      },
+      "peak_herd": 5,
+      "pass_fraction": 0.39597718402882015
+    },
+    {
+      "episode": 108017116,
+      "source_sha256": "39426493c0cb986055f8f79ed3ef8ee27b5e5ec62b6d982172d8a44d429d1df1",
+      "player": "soumic 1088",
+      "seat": 1,
+      "opponent": "Unicorns",
+      "cash": [
+        85532.0,
+        94176.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": 8644.0,
+      "peak_productive": 96,
+      "peak_by_type_not_simultaneous": {
+        "MELON": 12,
+        "SHEEP": 6,
+        "WHEAT": 35,
+        "COW": 8,
+        "STRAWBERRY": 51,
+        "CARROT": 2
+      },
+      "confirmed_planted": {
+        "MELON": 24,
+        "WHEAT": 110,
+        "STRAWBERRY": 54,
+        "CARROT": 2
+      },
+      "confirmed_daytime_harvest_lower_bound": {
+        "WHEAT": 271,
+        "WOOL": 119,
+        "MELON": 132,
+        "MILK": 93,
+        "STRAWBERRY": 195
+      },
+      "confirmed_harvest_ages": {
+        "MELON:age10:yield6": 12,
+        "MELON:age11:yield6": 9,
+        "MELON:age12:yield6": 1,
+        "STRAWBERRY:age10:yield1": 6,
+        "STRAWBERRY:age10:yield2": 24,
+        "STRAWBERRY:age11:yield2": 2,
+        "STRAWBERRY:age12:yield1": 15,
+        "STRAWBERRY:age12:yield2": 15,
+        "STRAWBERRY:age13:yield2": 1,
+        "STRAWBERRY:age14:yield1": 12,
+        "STRAWBERRY:age14:yield2": 16,
+        "STRAWBERRY:age15:yield1": 2,
+        "STRAWBERRY:age16:yield1": 8,
+        "STRAWBERRY:age16:yield2": 18,
+        "WHEAT:age3:yield3": 5,
+        "WHEAT:age4:yield4": 64
+      },
+      "land": [
+        {
+          "decision_step": 217,
+          "quadrants": 2
+        },
+        {
+          "decision_step": 258,
+          "quadrants": 3
+        },
+        {
+          "decision_step": 289,
+          "quadrants": 4
+        }
+      ],
+      "accepted_daytime_hires": 264,
+      "accepted_hires_by_day": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 3,
+        "7": 3,
+        "8": 3,
+        "9": 6,
+        "10": 6,
+        "11": 9,
+        "12": 12,
+        "13": 12,
+        "14": 12,
+        "15": 12,
+        "16": 12,
+        "17": 12,
+        "18": 12,
+        "19": 12,
+        "20": 12,
+        "21": 12,
+        "22": 12,
+        "23": 12,
+        "24": 12,
+        "25": 12,
+        "26": 12,
+        "27": 12,
+        "28": 12,
+        "29": 12
+      },
+      "confirmed_wages": 6932,
+      "unresolved_overnight_hire_requests": 0,
+      "requested_orders_not_fills": {
+        "HIRE": 264,
+        "BUY_SEED:MELON": 25,
+        "BUY_SEED:WHEAT": 123,
+        "BUY_ANIMAL:SHEEP": 13,
+        "BUY_PRODUCT:WHEAT": 605,
+        "SELL:WHEAT": 666,
+        "BUY_ANIMAL:COW": 19,
+        "SELL:WOOL": 119,
+        "SELL:FERTILIZER": 129,
+        "BUY_SEED:STRAWBERRY": 58,
+        "BUY_LAND": 3,
+        "SELL:MELON": 138,
+        "SELL:MILK": 94,
+        "SELL:STRAWBERRY": 197,
+        "BUY_SEED:CARROT": 3
+      },
+      "requested_operations": {
+        "BUILD_PASTURE": 18,
+        "WEST": 878,
+        "NORTH": 1022,
+        "PICKUP": 295,
+        "PLANT": 202,
+        "PLACE": 16,
+        "WATER": 904,
+        "CARE": 210,
+        "FEED": 216,
+        "SOUTH": 835,
+        "EAST": 855,
+        "DIG": 93,
+        "COLLECT_FERTILIZER": 212,
+        "PASS": 523,
+        "HARVEST": 270,
+        "DROP": 55,
+        "FERTILIZE": 87
+      },
+      "seed_oversubscription_turn_products": 0,
+      "observed_animal_disappearances": 8,
+      "crop_to_weed_including_exhausted": 85,
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 7,
+        "WOOL": 0
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 1,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 4
+      },
+      "town": {
+        "unlocked_shops": [
+          "PIZZA_SHOP",
+          "ICE_CREAM_SHOP",
+          "FARMERS_MARKET",
+          "YARN_STORE",
+          "YARN_STORE",
+          "SMOOTHIE_SHOP",
+          "FARMERS_MARKET",
+          "PET_CAFE"
+        ]
+      },
+      "peak_herd": 14,
+      "pass_fraction": 0.07816469884920042
+    }
+  ],
+  "episode": 108017116,
+  "own_seat": 0,
+  "source_sha256": "39426493c0cb986055f8f79ed3ef8ee27b5e5ec62b6d982172d8a44d429d1df1",
+  "identity": {
+    "source": "artifacts/submission-cycle-15-repairs/main.py",
+    "source_sha256": "ce4444126f5ef7e0ee01a22f395ae87ee442ec2f329c4feb6aedf0687af45f1a",
+    "decisions": 719,
+    "mismatches": [],
+    "log_count": 719,
+    "nonempty_stderr": 0,
+    "nonempty_stdout": 0,
+    "max_duration": 0.251969,
+    "log_sha256": "589631453adcaa47063a5753c089c3bc62977c7ed9c5926e400059a3a6288574"
+  },
+  "method": "Passive recorded-state accounting plus independent source calls on recorded observations for behavioral identity. No game engine imported, state advanced, simulation or counterfactual continuation run.",
+  "night_harvest_adjustments": [
+    {
+      "TOMATO": 2,
+      "STRAWBERRY": 3
+    },
+    {
+      "MELON": 6,
+      "MILK": 1,
+      "STRAWBERRY": 2
+    }
+  ],
+  "harvest_including_resolved_nights": [
+    {
+      "WHEAT": 84,
+      "WOOL": 68,
+      "MILK": 102,
+      "MELON": 60,
+      "STRAWBERRY": 138,
+      "TOMATO": 13,
+      "CARROT": 12
+    },
+    {
+      "WHEAT": 271,
+      "WOOL": 119,
+      "MELON": 138,
+      "MILK": 94,
+      "STRAWBERRY": 197
+    }
+  ],
+  "late_cash": {
+    "from_day_21": {
+      "start_cash": [
+        45739.0,
+        10260.0
+      ],
+      "gains_to_terminal": [
+        39793.0,
+        83916.0
+      ]
+    },
+    "from_day_30": {
+      "start_cash": [
+        84843.0,
+        80634.0
+      ],
+      "gains_to_terminal": [
+        689.0,
+        13542.0
+      ]
+    }
+  },
+  "terminal_assets": [
+    {
+      "seat": 0,
+      "crop_tiles": [],
+      "animal_held_output": {},
+      "shed_and_carries": {}
+    },
+    {
+      "seat": 1,
+      "crop_tiles": [
+        {
+          "coordinate": [
+            3,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 16,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            5,
+            0
+          ],
+          "crop": "WHEAT",
+          "age": 3,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            2,
+            7
+          ],
+          "crop": "WHEAT",
+          "age": 3,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            5,
+            7
+          ],
+          "crop": "STRAWBERRY",
+          "age": 16,
+          "yield_units": 0
+        },
+        {
+          "coordinate": [
+            8,
+            7
+          ],
+          "crop": "STRAWBERRY",
+          "age": 16,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            0,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 3,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            1,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 4,
+          "yield_units": 3
+        },
+        {
+          "coordinate": [
+            3,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 4,
+          "yield_units": 3
+        },
+        {
+          "coordinate": [
+            5,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 3,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            6,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 4,
+          "yield_units": 3
+        },
+        {
+          "coordinate": [
+            9,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 4,
+          "yield_units": 3
+        },
+        {
+          "coordinate": [
+            0,
+            9
+          ],
+          "crop": "WHEAT",
+          "age": 3,
+          "yield_units": 2
+        },
+        {
+          "coordinate": [
+            5,
+            9
+          ],
+          "crop": "CARROT",
+          "age": 3,
+          "yield_units": 2
+        }
+      ],
+      "animal_held_output": {},
+      "shed_and_carries": {
+        "WHEAT": 7
+      }
+    }
+  ],
+  "melon_sale_requests": [
+    {
+      "seat": 0,
+      "step": 253,
+      "ui_day": 11,
+      "units_requested": 6,
+      "pre_order_quote": 272,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 1,
+      "step": 253,
+      "ui_day": 11,
+      "units_requested": 6,
+      "pre_order_quote": 272,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 0,
+      "step": 254,
+      "ui_day": 11,
+      "units_requested": 12,
+      "pre_order_quote": 250,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 0,
+      "step": 255,
+      "ui_day": 11,
+      "units_requested": 6,
+      "pre_order_quote": 248,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 0,
+      "step": 256,
+      "ui_day": 11,
+      "units_requested": 6,
+      "pre_order_quote": 246,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 0,
+      "step": 257,
+      "ui_day": 11,
+      "units_requested": 12,
+      "pre_order_quote": 244,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 1,
+      "step": 257,
+      "ui_day": 11,
+      "units_requested": 12,
+      "pre_order_quote": 244,
+      "shed_before_unit_actions": 12
+    },
+    {
+      "seat": 0,
+      "step": 261,
+      "ui_day": 11,
+      "units_requested": 6,
+      "pre_order_quote": 226,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 1,
+      "step": 264,
+      "ui_day": 12,
+      "units_requested": 6,
+      "pre_order_quote": 220,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 1,
+      "step": 288,
+      "ui_day": 13,
+      "units_requested": 42,
+      "pre_order_quote": 214,
+      "shed_before_unit_actions": 42
+    },
+    {
+      "seat": 1,
+      "step": 312,
+      "ui_day": 14,
+      "units_requested": 6,
+      "pre_order_quote": 148,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 0,
+      "step": 480,
+      "ui_day": 21,
+      "units_requested": 6,
+      "pre_order_quote": 150,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 0,
+      "step": 495,
+      "ui_day": 21,
+      "units_requested": 6,
+      "pre_order_quote": 140,
+      "shed_before_unit_actions": 0
+    },
+    {
+      "seat": 1,
+      "step": 527,
+      "ui_day": 22,
+      "units_requested": 6,
+      "pre_order_quote": 129,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 1,
+      "step": 547,
+      "ui_day": 23,
+      "units_requested": 12,
+      "pre_order_quote": 118,
+      "shed_before_unit_actions": 12
+    },
+    {
+      "seat": 1,
+      "step": 550,
+      "ui_day": 23,
+      "units_requested": 12,
+      "pre_order_quote": 89,
+      "shed_before_unit_actions": 12
+    },
+    {
+      "seat": 1,
+      "step": 551,
+      "ui_day": 23,
+      "units_requested": 6,
+      "pre_order_quote": 57,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 1,
+      "step": 575,
+      "ui_day": 24,
+      "units_requested": 6,
+      "pre_order_quote": 43,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 1,
+      "step": 577,
+      "ui_day": 25,
+      "units_requested": 12,
+      "pre_order_quote": 28,
+      "shed_before_unit_actions": 12
+    },
+    {
+      "seat": 1,
+      "step": 597,
+      "ui_day": 25,
+      "units_requested": 6,
+      "pre_order_quote": 1,
+      "shed_before_unit_actions": 6
+    },
+    {
+      "seat": 1,
+      "step": 601,
+      "ui_day": 26,
+      "units_requested": 6,
+      "pre_order_quote": 4,
+      "shed_before_unit_actions": 6
+    }
+  ],
+  "confirmed_floor_melon_sale": {
+    "step": 597,
+    "ui_day": 25,
+    "melon_units_sold": 6,
+    "melon_receipts": 6,
+    "wheat_seed_cost": 10,
+    "cash_delta": -4
+  },
+  "zero_net_wheat_pair": {
+    "decision_steps": [
+      716,
+      717
+    ],
+    "cash_changes": [
+      384,
+      -384
+    ],
+    "shed_wheat_before": 12,
+    "shed_wheat_after": 12,
+    "interpretation": "The two recorded sell/buy rounds have zero combined cash gain, with starting wheat stock restored. This does not attribute all wheat trading elsewhere in the game."
+  },
+  "own_strawberry_bonus_audit": {
+    "established_plants": 19,
+    "production_events": 76,
+    "double_yield_events": 62,
+    "single_yield_events": 14,
+    "output": 138,
+    "physical_output_with_every_bonus": 152,
+    "all_events_watered": true,
+    "missing_bonus_events_with_zero_shed_but_positive_carried_fertilizer": 14,
+    "missing_bonus_reference_berry_quote_sum": 2946,
+    "one_fertilizer_per_event_reference_quote_sum": 1015,
+    "qualification": "Reference quotes at recorded refresh deadlines, not a counterfactual profit estimate. Extra routing, effective coverage duration, capacity and market impact are unresolved. Fertilizer carried elsewhere is not necessarily reachable in time."
+  },
+  "crop_retirement_classification": {
+    "premature_zero_yield": 22,
+    "positive_yield_lost": 38,
+    "normal_exhausted": 25
+  },
+  "newborn_death_counts": {
+    "WHEAT": 9,
+    "MELON": 1,
+    "STRAWBERRY": 2
+  },
+  "limitations": [
+    "Behavioral match to Cycle 15 does not independently reveal uploaded file bytes or identify opponent code.",
+    "Product receipts are the cash-accounting residual after subtracting wheat/fertilizer purchases, not gross revenue by product.",
+    "Market orders are requests unless separately reconciled; requested animal purchases materially exceed accepted purchases in this game.",
+    "Harvested output is not automatically delivered or sold output. The six night harvest adjustments were inspected against tile actions and refresh rules.",
+    "Peak asset types can occur at different times; occupied crop tiles include immature plants.",
+    "Both private inventories support retrospective accounting; a live policy may only use its own private inventory and public rival farm.",
+    "One selected loss cannot establish rating performance or prove the profit of an alternative policy. Cycle 17 remains unevaluated by this replay."
+  ]
+}
