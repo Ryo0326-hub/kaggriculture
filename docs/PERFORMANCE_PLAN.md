@@ -14,6 +14,8 @@ Cycle 17 uses common physical service routes in staffing, dispatch and investmen
 
 The next checkpoint is the user's server upload and returned logs: installation speed, productive footprint, physical output, wages, market proceeds, losses/overflow and final delivery. Review wins as well as losses before choosing another change. No automatic upload, local game or training is authorized by this plan.
 
+Additional evidence: [Cycle 15 versus JulianHahn28, episode 108009995](SERVER_REVIEW_108009995.md), ends 69,799–75,016. All 719 own decisions match Cycle 15. Our early melon execution and final delivery worked; Julian's larger sheep herd served early yarn-store demand and overcame our cash lead. This is review evidence only: the Cycle 17 candidate is unchanged, and upcoming wins should be compared before another policy change.
+
 ## Active workflow — user direction supersedes earlier simulation gates
 
 - Prioritize mechanics-based competitive ideas, source-matched analysis of supplied server logs, and concrete policy changes. Explain costs, labor/input constraints, marginal value and opponent effects in implementation notes.
