@@ -1,0 +1,71 @@
+{
+  "method": "Summary of completed bounded checks against a temporary isolated build; final artifact is byte-identical. No engine imports, game advances or matches.",
+  "artifact": "artifacts/submission-cycle-15-repairs/main.py",
+  "source_sha256": "ce4444126f5ef7e0ee01a22f395ae87ee442ec2f329c4feb6aedf0687af45f1a",
+  "checks": {
+    "pytest_files": [
+      "tests/test_repairs.py",
+      "tests/test_throughput.py",
+      "tests/test_public_v36.py"
+    ],
+    "tests_passed": 45,
+    "repaired_policy_tests": 26,
+    "isolated_decisions": 54,
+    "entrypoint": "agent",
+    "startup_seconds": 0.030825708992779255,
+    "max_decision_seconds": 0.09106495801825076,
+    "act_timeout_seconds": 1,
+    "fertilizer_comparisons_passed": 15,
+    "ruff": "passed",
+    "format": "passed",
+    "compileall": "passed"
+  },
+  "isolated_check_reproduction": "python -I scripts/check_repaired_agent.py --source artifacts/submission-cycle-15-repairs/main.py --output <new-json-path> <paths-to-three-input-replays>",
+  "inputs": [
+    {
+      "name": "107984963.json",
+      "sha256": "a6bb766aa8563f76983944f93cd8a8905a1c366457ef88a9c865736a188dbd27"
+    },
+    {
+      "name": "107972592.json",
+      "sha256": "262915050fdc4fabda07069c6a7611c2c9a7a79a05ab4f1acee4e332fcd2820a"
+    },
+    {
+      "name": "107970619.json",
+      "sha256": "498369891adcfad43e16116e89a9324c1e19e38c620f000e1169d20e43415d6d"
+    }
+  ],
+  "unchanged_sources": {
+    "main.py": "47c281bfb4118a9755f1759930b162de007efdfef3b23144457eccbaac42da0c",
+    "artifacts/submission-cycle-12-carrot-inputs/main.py": "555c312fc2c09c61c5f0081c4b4148446f5794eddaa1a71427a07b11d4057d34",
+    "artifacts/submission-cycle-13-throughput/main.py": "542547dbe7cd63856b2a6f037e2014790c1410316c3b3872f67ea85c2b628947",
+    "artifacts/submission-cycle-14-v36/main.py": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd",
+    "third_party/kaggriculture_v36/main.py": "7eb5ab6c48581c82906ab6fa6b2cc5c9607513249ef59b2c45fcd6176e8653dd"
+  },
+  "regression_results": {
+    "terminal_cargo_case": "EAST toward shed, previously WATER",
+    "terminal_wheat_chain_remaining_4_5_6": [
+      "PASS",
+      "HARVEST",
+      "WATER"
+    ],
+    "fatal_tomato_case": "WATER, previously HARVEST",
+    "recorded_step_384_crew": 9,
+    "added_wheat_crew": 10,
+    "marginal_day_wage": 34,
+    "recorded_step_336_purchase": [
+      [
+        "BUY_LAND"
+      ],
+      [
+        "BUY_SEED",
+        "TOMATO",
+        8
+      ]
+    ],
+    "crowded_bundle_case": "deferred intact; eligible after hour 6 when slots clear"
+  },
+  "server_validation": "pending",
+  "competitive_performance": "unmeasured",
+  "automatic_upload": false
+}

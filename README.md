@@ -2,13 +2,11 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Current candidate: Cycle 14 — the complete public V36 agent, unchanged and attributed, ready for user upload.** Source SHA-256 starts `7eb5ab6c4858`. Upload `artifacts/submission-cycle-14-v36/main.py`; the protected root `main.py` is still Cycle 3. [Exact upload command and checks](docs/CYCLE_14_RESULTS.md) · [Upstream source and provenance](third_party/kaggriculture_v36/README.md) · [Strategy and CO review](docs/V36_NOTEBOOK_REVIEW.md).
+**Current candidate: Cycle 15 — repaired custom Cycle 13 agent, ready for user-run server validation.** Source SHA-256 starts `ce4444126f5e`. Upload `artifacts/submission-cycle-15-repairs/main.py`; root `main.py` is still protected Cycle 3. [Exact upload command and verification](docs/CYCLE_15_RESULTS.md) · [CO/economics notes](docs/CYCLE_15_OPTIMIZATION.md).
 
-**Cycle 13 lost 66,319–106,333 in server episode 107984963.** All 719 own decisions match the packaged source. No land bundle reached valuation: vacancy restrictions blocked 38 eligible turns, and insufficient order slots blocked the remaining turn. [Failure diagnosis](docs/CYCLE_13_POSTMORTEM.md). Ryo requested adopting the whole public V36 strategy after this result; the prior narrow sale-ordering plan is superseded.
+Cycle 15 fixes every finding from the [broader Cycle 13 audit](docs/CYCLE_13_LOGIC_AUDIT.md): blocked land admission, terminal cargo/deadline priorities, fatal tomato watering, inconsistent labor costing, omitted existing fertilizer and profit/work-based investment selection. Forty-five bounded tests and 54 isolated recorded-observation calls pass; all fifteen audited tomato fertilizer transitions reconcile. No local games were run. Competitive improvement and Kaggle validation remain unmeasured.
 
-The [broader Cycle 13 audit](docs/CYCLE_13_LOGIC_AUDIT.md) records additional deadline and forecast defects with reproducible bounded cases. Those findings concern the preserved custom agent; they do not certify or modify public V36.
-
-Cycle 14 retains the public schedules, shop router, livestock/crop investments, land purchases, guarded sales and terminal planner. Its code and notices are preserved byte-for-byte; we do not claim them as newly authored. Packaging and eighteen bounded recorded-observation checks pass. Its own server validation and rating remain pending. No local matches, GPU, LLM or external runtime API are required for packaging.
+**Cycle 13 lost 66,319–106,333 in episode 107984963.** All 719 own decisions matched its packaged source. Its historical artifact is preserved; [failure diagnosis](docs/CYCLE_13_POSTMORTEM.md). The separate **Cycle 14 public V36 candidate remains unchanged and attributed**, with its own [upload instructions](docs/CYCLE_14_RESULTS.md), [source/provenance](third_party/kaggriculture_v36/README.md) and [strategy review](docs/V36_NOTEBOOK_REVIEW.md). Cycle 15 repairs our custom policy; it does not modify or certify V36.
 
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.
 
@@ -34,7 +32,7 @@ Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8
 
 ## Historical local simulation commands — explicit opt-in only
 
-Use the Cycle 14 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
+Use the Cycle 15 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
