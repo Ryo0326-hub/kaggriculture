@@ -1,0 +1,9218 @@
+{
+  "method": "Independent recorded observations; preconditions and inventory arithmetic only. No game engine import, action application, simulation, training or counterfactual continuation.",
+  "source_sha256": "65e0e1f6f12e797c02fff195e168e37c6969a5167ec5f9a2e9d006854b95e314",
+  "imports": [
+    "copy",
+    "functools",
+    "itertools",
+    "math"
+  ],
+  "startup_seconds": 0.03863437499967404,
+  "decisions": 140,
+  "max_seconds": 0.41304050001781434,
+  "inputs": [
+    {
+      "file": "108005959.json",
+      "sha256": "877f870b92b6c9c260712874a4f1c945732b1a72a74dc5174c534972c1100fe4"
+    },
+    {
+      "file": "108009995.json",
+      "sha256": "e37f6b7bf1353f840af585be2b27eb4a16efea91cac7f793347c60df653c8927"
+    },
+    {
+      "file": "108013045.json",
+      "sha256": "02003edf261a777acd76efbdf9196f935b9651bda0c04b02d2c3f27a1670f5e8"
+    },
+    {
+      "file": "108014069.json",
+      "sha256": "25025f412b0f6d91af9faf83c2d06a5e210aa0953bab06691589d213adc76df3"
+    },
+    {
+      "file": "108017116.json",
+      "sha256": "39426493c0cb986055f8f79ed3ef8ee27b5e5ec62b6d982172d8a44d429d1df1"
+    }
+  ],
+  "checks": [
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.04661754201515578,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.0012155419972259551,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.0006821659917477518,
+      "workers": 4,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.1070147080172319,
+      "workers": 6,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 9507.0,
+        "cost": 800,
+        "scenario_receipts": [
+          10128,
+          11528
+        ],
+        "min_cash": 4451.0,
+        "added_wages": 35,
+        "immediate_setup_reserve": 136,
+        "peak_workers": 6
+      },
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 290,
+      "seconds": 0.002482708019670099,
+      "workers": 5,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.11950841700308956,
+      "workers": 6,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 6,
+        "today": 5,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 3557.5,
+        "cost": 800,
+        "scenario_receipts": [
+          4261,
+          5355
+        ],
+        "min_cash": 21624.0,
+        "added_wages": 177,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            6
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 362,
+      "seconds": 0.0026757089945022017,
+      "workers": 5,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 10,
+        "today": 1,
+        "tomorrow": 10,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 5,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 428,
+      "seconds": 0.0031789999920874834,
+      "workers": 7,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 9,
+        "today": 1,
+        "tomorrow": 8,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 456,
+      "seconds": 0.002511500002583489,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 18,
+        "today": 8,
+        "tomorrow": 11,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 480,
+      "seconds": 0.002172167005483061,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 11,
+        "today": 12,
+        "tomorrow": 2,
+        "credited_on_routes": 3,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          3
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            6
+          ],
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 503,
+      "seconds": 0.002320500003406778,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 5,
+        "tomorrow": 3,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0005412500177044421,
+      "workers": 1,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.00035187500179745257,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0002904169959947467,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.03851449998910539,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.008457125019049272,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 5,
+        "today": 3,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.0015709160070400685,
+      "workers": 5,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 2,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.014558875001966953,
+      "workers": 25,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 4
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 290,
+      "seconds": 0.015925707994028926,
+      "workers": 14,
+      "assignment_count": 17,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 8,
+        "today": 9,
+        "tomorrow": 3,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.017384166014380753,
+      "workers": 22,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 19,
+        "today": 28,
+        "tomorrow": 9,
+        "credited_on_routes": 9
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            19
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 362,
+      "seconds": 0.017134334018919617,
+      "workers": 22,
+      "assignment_count": 12,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 28,
+        "today": 33,
+        "tomorrow": 9,
+        "credited_on_routes": 5
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            24
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 428,
+      "seconds": 0.41304050001781434,
+      "workers": 20,
+      "assignment_count": 12,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 28
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 2,
+        "tomorrow": 10,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "HARVEST"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 456,
+      "seconds": 0.009291082998970523,
+      "workers": 21,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 19,
+        "today": 0,
+        "tomorrow": 19,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 47,
+        "today": 37,
+        "tomorrow": 10,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            24
+          ],
+          [
+            "SELL",
+            "WOOL",
+            14
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            18
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            47
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 480,
+      "seconds": 0.010155541996937245,
+      "workers": 21,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 1,
+        "tomorrow": 4,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 48,
+        "today": 38,
+        "tomorrow": 10,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            24
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            22
+          ],
+          [
+            "SELL",
+            "EGG",
+            8
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            48
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 503,
+      "seconds": 0.007254500000271946,
+      "workers": 21,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 37
+      },
+      "feed": {
+        "depot_target": 12,
+        "today": 2,
+        "tomorrow": 10,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "HARVEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "HARVEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.00788954200106673,
+      "workers": 26,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            12
+          ],
+          [
+            "SELL",
+            "WOOL",
+            12
+          ],
+          [
+            "SELL",
+            "EGG",
+            8
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            22
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.004162666009506211,
+      "workers": 20,
+      "assignment_count": 4,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108005959.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0037826249899808317,
+      "workers": 18,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            12
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.05654799999319948,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.010668415983673185,
+      "workers": 3,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 8,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.00219687502249144,
+      "workers": 6,
+      "assignment_count": 6,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 8,
+        "today": 6,
+        "tomorrow": 3,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.005769500014139339,
+      "workers": 8,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 8
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 290,
+      "seconds": 0.010456374991917983,
+      "workers": 14,
+      "assignment_count": 8,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 16,
+        "tomorrow": 4,
+        "credited_on_routes": 10
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.013811459008138627,
+      "workers": 18,
+      "assignment_count": 12,
+      "fertilizer": {
+        "depot_target": 10,
+        "today": 10,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 15,
+        "tomorrow": 4,
+        "credited_on_routes": 8
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            7
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 362,
+      "seconds": 0.09890850001829676,
+      "workers": 16,
+      "assignment_count": 8,
+      "fertilizer": {
+        "depot_target": 10,
+        "today": 4,
+        "tomorrow": 6,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 9,
+        "today": 16,
+        "tomorrow": 4,
+        "credited_on_routes": 7
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            7
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 428,
+      "seconds": 0.01101704200846143,
+      "workers": 15,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 6,
+        "credited_on_routes": 1,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 2,
+        "tomorrow": 4,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            8
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 456,
+      "seconds": 0.006315583013929427,
+      "workers": 13,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 8,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 19,
+        "today": 16,
+        "tomorrow": 4,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            29
+          ],
+          [
+            "SELL",
+            "MILK",
+            10
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            7
+          ],
+          [
+            "SELL",
+            "CARROT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 480,
+      "seconds": 0.0054641660244669765,
+      "workers": 12,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 3,
+        "today": 2,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 20,
+        "today": 16,
+        "tomorrow": 4,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            24
+          ],
+          [
+            "SELL",
+            "MELON",
+            18
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            20
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 503,
+      "seconds": 0.00924733400461264,
+      "workers": 13,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 3,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 4,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            9
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0030642500205431134,
+      "workers": 13,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            10
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.002629166003316641,
+      "workers": 13,
+      "assignment_count": 3,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 8
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.002779083006316796,
+      "workers": 13,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.05726820899872109,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.0016233329952228814,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.0013144999975338578,
+      "workers": 5,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.0034370840003248304,
+      "workers": 6,
+      "assignment_count": 12,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 290,
+      "seconds": 0.0046287080040201545,
+      "workers": 5,
+      "assignment_count": 6,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 3
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            3
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.12036712499684654,
+      "workers": 6,
+      "assignment_count": 7,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 4,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 1742.5,
+        "cost": 800,
+        "scenario_receipts": [
+          2019,
+          4717
+        ],
+        "min_cash": 25352.0,
+        "added_wages": 151,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 362,
+      "seconds": 0.0027154590061400086,
+      "workers": 5,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 2
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 428,
+      "seconds": 0.0017648329958319664,
+      "workers": 6,
+      "assignment_count": 6,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PLANT",
+            "WHEAT"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 456,
+      "seconds": 0.002103917009662837,
+      "workers": 6,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 13,
+        "today": 8,
+        "tomorrow": 5,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 480,
+      "seconds": 0.06620474997907877,
+      "workers": 6,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 13,
+        "today": 8,
+        "tomorrow": 5,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ]
+        ],
+        "value": 1382.75,
+        "cost": 80,
+        "scenario_receipts": [
+          1579,
+          1606
+        ],
+        "min_cash": 43019.0,
+        "added_wages": 81,
+        "immediate_setup_reserve": 42,
+        "peak_workers": 9
+      },
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            13
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 503,
+      "seconds": 0.0028922920173499733,
+      "workers": 6,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 0,
+        "tomorrow": 7,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0007559579971712083,
+      "workers": 3,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.0003804170119110495,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108009995.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.00036741700023412704,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.04220299998996779,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.046999125013826415,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ],
+        "value": 709.75,
+        "cost": 100,
+        "scenario_receipts": [
+          780,
+          919
+        ],
+        "min_cash": 230.0,
+        "added_wages": 2,
+        "immediate_setup_reserve": 3,
+        "peak_workers": 4
+      },
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.0024417499953415245,
+      "workers": 5,
+      "assignment_count": 7,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.004418416996486485,
+      "workers": 7,
+      "assignment_count": 12,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 290,
+      "seconds": 0.0035980420070700347,
+      "workers": 6,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.17213425002410077,
+      "workers": 5,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 7,
+        "today": 4,
+        "tomorrow": 3,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ],
+        "value": 5230.0,
+        "cost": 1000,
+        "scenario_receipts": [
+          6412,
+          6532
+        ],
+        "min_cash": 21445.0,
+        "added_wages": 48,
+        "immediate_setup_reserve": 164,
+        "peak_workers": 8
+      },
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            7
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 362,
+      "seconds": 0.004043583001475781,
+      "workers": 6,
+      "assignment_count": 7,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 3,
+        "tomorrow": 4,
+        "credited_on_routes": 2,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 428,
+      "seconds": 0.0041049590217880905,
+      "workers": 7,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 4,
+        "today": 5,
+        "tomorrow": 6,
+        "credited_on_routes": 3,
+        "carried": 7
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 456,
+      "seconds": 0.00310100000933744,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 7,
+        "today": 4,
+        "tomorrow": 4,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            4
+          ],
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 480,
+      "seconds": 0.00264379198779352,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 9,
+        "today": 4,
+        "tomorrow": 5,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            8
+          ],
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 503,
+      "seconds": 0.0029189999913796782,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 3,
+        "today": 1,
+        "tomorrow": 5,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "FERTILIZE"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0009622499928809702,
+      "workers": 2,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.00043158300104551017,
+      "workers": 2,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0007552079914603382,
+      "workers": 2,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.06717762499465607,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.003652167011750862,
+      "workers": 3,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.0017975840019062161,
+      "workers": 3,
+      "assignment_count": 4,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.0034254999773111194,
+      "workers": 5,
+      "assignment_count": 8,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 290,
+      "seconds": 0.014460792008321732,
+      "workers": 18,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 7
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.017342790990369394,
+      "workers": 16,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 11,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 2
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 362,
+      "seconds": 0.014877999987220392,
+      "workers": 16,
+      "assignment_count": 11,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 2,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 10
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 428,
+      "seconds": 0.01218754198634997,
+      "workers": 15,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 10
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 2,
+        "tomorrow": 3,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "DIG"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 456,
+      "seconds": 0.009246000001439825,
+      "workers": 16,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 23,
+        "today": 1,
+        "tomorrow": 22,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 12,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            7
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 480,
+      "seconds": 0.012665042013395578,
+      "workers": 19,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 41,
+        "today": 22,
+        "tomorrow": 19,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 13,
+        "today": 10,
+        "tomorrow": 3,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            58
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 503,
+      "seconds": 0.015190500009339303,
+      "workers": 19,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 37,
+        "today": 22,
+        "tomorrow": 19,
+        "credited_on_routes": 0,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 1,
+        "tomorrow": 3,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "DROP"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0024032499932218343,
+      "workers": 11,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            16
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            26
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.0015915000112727284,
+      "workers": 11,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "DROP"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            24
+          ],
+          [
+            "SELL",
+            "MILK",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108013045.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0020171659998595715,
+      "workers": 11,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.06057666699052788,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.014328166987979785,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.001222749997396022,
+      "workers": 4,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.00447279098443687,
+      "workers": 6,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 290,
+      "seconds": 0.0023843750241212547,
+      "workers": 5,
+      "assignment_count": 4,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 2
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.1585009580012411,
+      "workers": 6,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 4,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 5,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 3372.5,
+        "cost": 800,
+        "scenario_receipts": [
+          3940,
+          5374
+        ],
+        "min_cash": 20286.0,
+        "added_wages": 126,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 8
+      },
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 362,
+      "seconds": 0.002505417010979727,
+      "workers": 6,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "PICKUP",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 428,
+      "seconds": 0.09762737501296215,
+      "workers": 6,
+      "assignment_count": 8,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 4,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            8
+          ]
+        ],
+        "value": 2198.25,
+        "cost": 400,
+        "scenario_receipts": [
+          2661,
+          2914
+        ],
+        "min_cash": 28495.0,
+        "added_wages": 126,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      "action": {
+        "farmer": [
+          "FERTILIZE"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            2
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 456,
+      "seconds": 0.002034417004324496,
+      "workers": 6,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 8,
+        "today": 1,
+        "tomorrow": 7,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 8,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 480,
+      "seconds": 0.0024832089839037508,
+      "workers": 6,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 7,
+        "today": 7,
+        "tomorrow": 1,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 8,
+        "today": 6,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 503,
+      "seconds": 0.0016598750080447644,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0006925000052433461,
+      "workers": 2,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.0006775000074412674,
+      "workers": 2,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0004132080066483468,
+      "workers": 2,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.05052212500595488,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.010145625012228265,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.004927832982502878,
+      "workers": 11,
+      "assignment_count": 6,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.006545540993101895,
+      "workers": 12,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 3,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 290,
+      "seconds": 0.014462833001744002,
+      "workers": 23,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 16,
+        "today": 20,
+        "tomorrow": 5,
+        "credited_on_routes": 4
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "SHEEP",
+            2
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "SHEEP",
+            2
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.01533004199154675,
+      "workers": 24,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 3,
+        "today": 0,
+        "tomorrow": 3,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 5,
+        "today": 24,
+        "tomorrow": 7,
+        "credited_on_routes": 19
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 362,
+      "seconds": 0.05013745799078606,
+      "workers": 21,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 3,
+        "tomorrow": 5,
+        "credited_on_routes": 3,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 14,
+        "today": 30,
+        "tomorrow": 8,
+        "credited_on_routes": 16
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "SHEEP",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PICKUP",
+            "COW",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            14
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 428,
+      "seconds": 0.005445499991765246,
+      "workers": 22,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 10,
+        "credited_on_routes": 0,
+        "carried": 20
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 7,
+        "tomorrow": 8,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            16
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 456,
+      "seconds": 0.008944542001700029,
+      "workers": 23,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 18,
+        "today": 13,
+        "tomorrow": 9,
+        "credited_on_routes": 4,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 38,
+        "today": 30,
+        "tomorrow": 8,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            15
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            6
+          ],
+          [
+            "SELL",
+            "MILK",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 480,
+      "seconds": 0.008164250000845641,
+      "workers": 24,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 13,
+        "today": 11,
+        "tomorrow": 3,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 37,
+        "today": 29,
+        "tomorrow": 8,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            14
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            14
+          ],
+          [
+            "SELL",
+            "EGG",
+            11
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 503,
+      "seconds": 0.0067374579957686365,
+      "workers": 24,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 3,
+        "today": 3,
+        "tomorrow": 6,
+        "credited_on_routes": 0,
+        "carried": 15
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 6,
+        "tomorrow": 8,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "HARVEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            14
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            7
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.002070792019367218,
+      "workers": 8,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            64
+          ],
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "EGG",
+            10
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            15
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.0016238749958574772,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 5
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "NORTH"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            46
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108014069.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0010897500033024698,
+      "workers": 7,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 5
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            49
+          ],
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            13
+          ],
+          [
+            "SELL",
+            "EGG",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.043596250005066395,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 72,
+      "seconds": 0.0018744170083664358,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 179,
+      "seconds": 0.0009134580031968653,
+      "workers": 4,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 244,
+      "seconds": 0.18716741699608974,
+      "workers": 6,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 8912.75,
+        "cost": 800,
+        "scenario_receipts": [
+          9478,
+          11073
+        ],
+        "min_cash": 4259.0,
+        "added_wages": 20,
+        "immediate_setup_reserve": 144,
+        "peak_workers": 6
+      },
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 290,
+      "seconds": 0.0036555829865392298,
+      "workers": 5,
+      "assignment_count": 5,
+      "fertilizer": {
+        "depot_target": 2,
+        "today": 1,
+        "tomorrow": 1,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 340,
+      "seconds": 0.2016343750001397,
+      "workers": 5,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 6,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 5068.5,
+        "cost": 800,
+        "scenario_receipts": [
+          5726,
+          7156
+        ],
+        "min_cash": 22692.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 164,
+        "peak_workers": 7
+      },
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 362,
+      "seconds": 0.0038201249844860286,
+      "workers": 6,
+      "assignment_count": 6,
+      "fertilizer": {
+        "depot_target": 10,
+        "today": 2,
+        "tomorrow": 8,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 3,
+        "today": 4,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 428,
+      "seconds": 0.003972292004618794,
+      "workers": 7,
+      "assignment_count": 9,
+      "fertilizer": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 4,
+        "credited_on_routes": 0,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 456,
+      "seconds": 0.0020499999809544533,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 13,
+        "today": 6,
+        "tomorrow": 8,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 480,
+      "seconds": 0.002169208019040525,
+      "workers": 7,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 10,
+        "today": 8,
+        "tomorrow": 3,
+        "credited_on_routes": 1,
+        "carried": 1
+      },
+      "feed": {
+        "depot_target": 7,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          1
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            7
+          ],
+          [
+            "SELL",
+            "MELON",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_PRODUCT",
+            "FERTILIZER",
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 503,
+      "seconds": 0.0024649999977555126,
+      "workers": 7,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 5,
+        "today": 5,
+        "tomorrow": 4,
+        "credited_on_routes": 0,
+        "carried": 4
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 0,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0005271669942885637,
+      "workers": 2,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 714,
+      "seconds": 0.000440500007243827,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.00045908300671726465,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.04404866698314436,
+      "workers": 1,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 72,
+      "seconds": 0.013497084000846371,
+      "workers": 4,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 2,
+        "tomorrow": 2,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 179,
+      "seconds": 0.001395791012328118,
+      "workers": 4,
+      "assignment_count": 4,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 3
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 2,
+        "credited_on_routes": 1
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            11
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 244,
+      "seconds": 0.002829459001077339,
+      "workers": 8,
+      "assignment_count": 7,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 5,
+        "tomorrow": 2,
+        "credited_on_routes": 3
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 290,
+      "seconds": 0.01032266698894091,
+      "workers": 17,
+      "assignment_count": 10,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 2
+      },
+      "feed": {
+        "depot_target": 11,
+        "today": 12,
+        "tomorrow": 3,
+        "credited_on_routes": 2
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "COW",
+            2
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "PICKUP",
+            "COW",
+            1
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 340,
+      "seconds": 0.018191584007581696,
+      "workers": 22,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 9,
+        "today": 14,
+        "tomorrow": 4,
+        "credited_on_routes": 5
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            2
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 362,
+      "seconds": 0.01677716599078849,
+      "workers": 22,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 4,
+        "today": 13,
+        "tomorrow": 4,
+        "credited_on_routes": 9
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            12
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            9
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 428,
+      "seconds": 0.17002112499903888,
+      "workers": 20,
+      "assignment_count": 13,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 17
+      },
+      "feed": {
+        "depot_target": 2,
+        "today": 5,
+        "tomorrow": 4,
+        "credited_on_routes": 3
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 456,
+      "seconds": 0.011165166011778638,
+      "workers": 22,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 7,
+        "today": 2,
+        "tomorrow": 5,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 17,
+        "today": 13,
+        "tomorrow": 4,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            41
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 480,
+      "seconds": 0.011047250009141862,
+      "workers": 24,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 14,
+        "today": 1,
+        "tomorrow": 13,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 13,
+        "today": 12,
+        "tomorrow": 3,
+        "credited_on_routes": 2
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            22
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 503,
+      "seconds": 0.008766874991124496,
+      "workers": 25,
+      "assignment_count": 2,
+      "fertilizer": {
+        "depot_target": 9,
+        "today": 1,
+        "tomorrow": 18,
+        "credited_on_routes": 0,
+        "carried": 10
+      },
+      "feed": {
+        "depot_target": 1,
+        "today": 1,
+        "tomorrow": 3,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "DROP"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "SOUTH"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.00299295800505206,
+      "workers": 11,
+      "assignment_count": 1,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            16
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            43
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            19
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 714,
+      "seconds": 0.0012074160040356219,
+      "workers": 9,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "replay": "108017116.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0011635409900918603,
+      "workers": 9,
+      "assignment_count": 0,
+      "fertilizer": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0,
+        "carried": 0
+      },
+      "feed": {
+        "depot_target": 0,
+        "today": 0,
+        "tomorrow": 0,
+        "credited_on_routes": 0
+      },
+      "investment": null,
+      "action": {
+        "farmer": [
+          "DROP"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ]
+        ]
+      }
+    }
+  ],
+  "server_validation": "pending",
+  "competitive_performance": "unmeasured"
+}

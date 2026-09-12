@@ -113,6 +113,27 @@ requires explicit harvest, travel, deposit and market sale before termination;
 there is no assumed final-night transfer. Partial deposits protect the shed
 capacity instead of discarding the remainder of a worker's inventory.
 
+The second pre-submission audit found that global bundle length was insufficient:
+the *assigned worker's* travel and pickups can make a bundle late even when an
+essential action still fits. Complete feasible bundles retain priority. When a
+single existing asset's bundle cannot fit, the dispatcher tries essential feed,
+water or harvest with the same physical input and travel accounting. It never
+splits a new planting or animal installation from its first maintenance action.
+On the final day, harvest alone is an alternative only when that worker can also
+deliver it before termination. See the [audit counterexamples](CYCLE_18_AUDIT.md).
+
+For CO250, this repairs the feasible set rather than changing a profit coefficient:
+an indivisible full-service job had incorrectly excluded feasible survival work.
+The model still treats asset installation as a complementary bundle, since a
+plant without its first water can die before producing anything. No optimal
+schedule or exact dual prices are claimed.
+
+Deposit accounting now follows the engine's overloaded `PLACE` semantics:
+an animal on an empty matching pen is an installation, regardless of the
+quantity argument. Overflow handling skips that ambiguous deposit and ignores
+zero-quantity inventory keys when choosing a product. Observations without the
+optional `step` field use `day × turnsPerDay + hour` for their action budget.
+
 Purchases now reserve space beside goods already carried, including goods
 harvested by the current command. The investment ledger applies the same rule
 to new animals. This strengthens the overflow protection motivated by Chloe

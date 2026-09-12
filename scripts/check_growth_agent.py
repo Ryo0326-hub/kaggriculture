@@ -28,12 +28,28 @@ def validate(obs, cfg, action, scope):
         tile = farm["tiles"][p[1]][p[0]]
         name = op[0]
         if name in ("PASS", "NORTH", "SOUTH", "EAST", "WEST"):
+            dx, dy = {
+                "PASS": (0, 0),
+                "NORTH": (0, -1),
+                "SOUTH": (0, 1),
+                "EAST": (1, 0),
+                "WEST": (-1, 0),
+            }[name]
+            assert 0 <= p[0] + dx < len(farm["tiles"][0])
+            assert 0 <= p[1] + dy < len(farm["tiles"])
             continue
         if name == "PICKUP":
             assert p in access and op[2] > 0 and stock.get(op[1], 0) >= op[2], (i, op)
             stock[op[1]] -= op[2]
             continue
-        if name == "DROP" or name == "PLACE" and op[1] in scope["MARKET"]:
+        installs_animal = (
+            name == "PLACE"
+            and op[1] in scope["ANIMALS"]
+            and isinstance(tile, dict)
+            and tile.get("kind") == scope["ANIMALS"][op[1]]["structure"]
+            and "animal" not in tile
+        )
+        if name == "DROP" or name == "PLACE" and not installs_animal:
             assert p in access
             deposits = inv if name == "DROP" else {op[1]: op[2]}
             assert all(0 < n <= inv.get(c, 0) for c, n in deposits.items() if n)

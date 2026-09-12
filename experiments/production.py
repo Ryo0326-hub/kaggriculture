@@ -90,7 +90,10 @@ def production_jobs(obs, cfg, params, assets, fertilizer_plan):
     for job in jobs.values():
         job["maintenance_priority"] = job["priority"]
     day, tpd = obs["day"], cfg.get("turnsPerDay", 24)
-    remaining = min(tpd - obs["hour"], cfg.get("episodeSteps", 720) - 1 - obs["step"])
+    remaining = min(
+        tpd - obs["hour"],
+        cfg.get("episodeSteps", 720) - 1 - obs.get("step", day * tpd + obs["hour"]),
+    )
     for site, request in fertilizer_plan.items():
         if request["deadline"] != day:
             continue
@@ -208,6 +211,51 @@ def production_route_ops(route, jobs, inv, stock):
     return {p: [op for op in jobs[p]["ops"] if op[0] != "FERTILIZE" or p in funded] for p in route}
 
 
+def production_service_variants(route, route_ops, jobs, terminal):
+    """Keep feasible bundles; salvage essential service when travel makes them late."""
+    yield route_ops
+    if len(route) != 1:
+        return
+    site = route[0]
+    ops = route_ops[site]
+    if any(op[0] in ("PLANT", "PLACE", "BUILD_COOP", "BUILD_PASTURE") for op in ops):
+        return  # Never split installation from its first water/feed.
+    if terminal:
+        if ["HARVEST"] in ops and ops != [["HARVEST"]]:
+            yield {site: [["HARVEST"]]}
+        return  # Every variant still needs this worker's harvest + delivery time.
+    asset = jobs[site]["asset"]
+    one_time = asset.get("crop") and not CROPS[asset["crop"]]["interval"]
+    # Harvest removes a mature one-time crop; ongoing crops still need water.
+    priorities = ("FEED", "HARVEST", "WATER") if one_time else ("FEED", "WATER", "HARVEST")
+    for name in (*priorities, "FERTILIZE", "COLLECT_FERTILIZER", "CARE"):
+        if [name] in ops and ops != [[name]]:
+            if name == "FERTILIZE" and ["WATER"] in ops:
+                continue  # A bonus alone cannot replace this day's water.
+            yield {site: [[name]]}
+
+
+def production_route_fit(p, inv, stock, route, route_ops, access, remaining, terminal):
+    """Check one worker's travel, pickups, service and final delivery budget."""
+    needs = growth_requirements([op for q in route for op in route_ops[q]])
+    missing = {c: n - inv.get(c, 0) for c, n in needs.items() if n > inv.get(c, 0)}
+    if any(n > stock.get(c, 0) for c, n in missing.items()):
+        return None
+    held_animals = [a for a in ANIMALS if inv.get(a, 0)]
+    if held_animals and not any(needs.get(a, 0) for a in held_animals):
+        return None
+    start = min(access, key=lambda a: (distance(p, a) + distance(a, route[0]), a)) if missing else p
+    travel = distance(p, start) + distance(start, route[0])
+    length = (
+        travel
+        + len(missing)
+        + sum(distance(a, b) for a, b in zip(route, route[1:]))
+        + sum(len(route_ops[q]) for q in route)
+        + (min(distance(route[-1], a) for a in access) + 1 if terminal else 0)
+    )
+    return (start, needs, travel, length) if length <= remaining else None
+
+
 def production_dispatch(obs, cfg, params, jobs):
     """Assign physical routes to present workers; reserve inputs in worker order."""
     farm, private = obs["farms"][obs["player"]], obs["private"]
@@ -293,31 +341,17 @@ def production_dispatch(obs, cfg, params, jobs):
             route = tuple(q for q in route if route_ops[q])
             if not route:
                 continue
-            needs = growth_requirements([op for q in route for op in route_ops[q]])
-            missing = {c: n - inv.get(c, 0) for c, n in needs.items() if n > inv.get(c, 0)}
-            # Optional fertilizer can be dropped from a bundle; animals/feed
-            # must really be available to the worker (or in the shed).
-            if any(n > unallocated_stock.get(c, 0) for c, n in missing.items()):
+            fit = None
+            for variant in production_service_variants(route, route_ops, jobs, day == final):
+                fit = production_route_fit(
+                    p, inv, unallocated_stock, route, variant, access, remaining, day == final
+                )
+                if fit is not None:
+                    route_ops = variant
+                    break
+            if fit is None:
                 continue
-            missing = {c: n for c, n in missing.items() if unallocated_stock.get(c, 0)}
-            held_animals = [a for a in ANIMALS if inv.get(a, 0)]
-            if held_animals and not any(needs.get(a, 0) for a in held_animals):
-                continue
-            start = (
-                min(access, key=lambda a: (distance(p, a) + distance(a, route[0]), a))
-                if missing
-                else p
-            )
-            travel = distance(p, start) + distance(start, route[0])
-            length = (
-                travel
-                + len(missing)
-                + sum(distance(a, b) for a, b in zip(route, route[1:]))
-                + sum(len(route_ops[q]) for q in route)
-                + (min(distance(route[-1], a) for a in access) + 1 if day == final else 0)
-            )
-            if length > remaining:
-                continue
+            start, needs, travel, length = fit
             urgency = max(
                 jobs[q]["priority"]
                 if ["FERTILIZE"] in route_ops[q]
@@ -399,7 +433,24 @@ def production_dispatch(obs, cfg, params, jobs):
                     stock[item] = stock.get(item, 0) + amount
                 room -= sum(inv.values())
             else:
-                item = max(inv, key=lambda c: params.get(c, {}).get("base", 0))
+                tile = farm["tiles"][p[1]][p[0]]
+                depositable = [
+                    c
+                    for c, n in inv.items()
+                    if n > 0
+                    and not (
+                        c in ANIMALS
+                        and isinstance(tile, dict)
+                        and tile.get("kind") == ANIMALS[c]["structure"]
+                        and "animal" not in tile
+                    )
+                ]
+                # PLACE on a matching empty pen installs ONE animal, regardless
+                # of its quantity argument. Never mistake that for a deposit.
+                if not depositable:
+                    actions[i] = ["PASS"]
+                    continue
+                item = max(depositable, key=lambda c: params.get(c, {}).get("base", 0))
                 amount = min(room, inv[item])
                 actions[i] = ["PLACE", item, amount] if amount else ["PASS"]
                 stock[item] = stock.get(item, 0) + amount

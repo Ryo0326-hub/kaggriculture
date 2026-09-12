@@ -1,17 +1,17 @@
 # Cycle 18 — submission candidate
 
-**Ready for the user's Kaggle upload.** This is the custom Cycle 15 descendant
+**Re-audited and ready for the user's Kaggle upload.** This is the custom Cycle 15 descendant
 with shared growth routes, deadline-aware feed/fertilizer, ongoing-crop watering
 repairs, carried-stock capacity reservations and faster equivalent route costs.
 
-Artifact: `artifacts/submission-cycle-18-ready/main.py`.
+Artifact: `artifacts/submission-cycle-18-final/main.py`.
 
-SHA-256: `6d3cbf383297aab89a278606026f38b35a1e6f00167314e8916cd23a0a78054e`.
+SHA-256: `65e0e1f6f12e797c02fff195e168e37c6969a5167ec5f9a2e9d006854b95e314`.
 
 ```bash
 /Users/ryokitano/.local/bin/kaggle competitions submit kaggriculture \
-  -f /Users/ryokitano/Documents/Projects/kaggriculture/artifacts/submission-cycle-18-ready/main.py \
-  -m "Cycle 18 - funded growth and deadline inputs - 6d3cbf383297"
+  -f /Users/ryokitano/Documents/Projects/kaggriculture/artifacts/submission-cycle-18-final/main.py \
+  -m "Cycle 18 - audited deadlines and deposits - 65e0e1f6f12e"
 ```
 
 The positional competition syntax is verified against the installed CLI's
@@ -20,26 +20,35 @@ competitive results are pending. Root `main.py` is still protected Cycle 3;
 use the artifact path above. Earlier Cycle 18 development artifacts are not the
 release and are not referenced by the upload command.
 
+**The earlier `submission-cycle-18-ready` command is superseded.** The user's
+additional audit request exposed worker-specific deadline and deposit edge cases,
+plus a missing-step metadata assumption. All reproduced failures are corrected
+in the file above. [Audit findings and before/after evidence](CYCLE_18_AUDIT.md).
+
 ## Checks
 
-- **27 bounded regression tests:** route-specific resource credit, profitable
+- **40 bounded regression tests:** route-specific resource credit, profitable
   fertilizer staging, scarce-input assignment, pickup ordering, crop/animal
   survival, terminal harvest/delivery, partial deposits, capacity reservations,
   paid-land admission, deterministic packaging and observation immutability.
+  Added coverage includes reachable partial service, terminal worker availability,
+  optional step metadata, empty inventory keys and animal/deposit disambiguation.
   The route-equivalence test includes 36 direct comparisons with the frozen
   insertion constructor. These are task/ledger fixtures, not gameplay episodes.
 - **140 independent recorded-observation checks:** both seats at fourteen fixed
   states from each of the five reviewed games, including the larger rival
   farms. Action preconditions, shared stocks, seed counts, unique tile
-  assignments, deposits, sales, command counts and JSON serialization pass.
+  assignments, movement bounds, deposits, sales, command counts and JSON serialization pass.
   Each check starts with a cold route cache and leaves its observation unchanged.
-- Largest sampled callback **0.298192 seconds**; standalone import/startup
-  **0.049849 seconds**. Local sampled timing is not a server worst-case guarantee.
+- Largest sampled callback **0.413041 seconds**; standalone import/startup
+  **0.038634 seconds**. Local sampled timing is not a server worst-case guarantee.
 - Standard-library imports only; the final callable is `agent`.
 - Source compilation, Ruff and frozen-parent hash checks pass.
+- The 40 bounded checks now run in default CI; full gameplay tests still require
+  explicit manual opt-in.
 
-[Check evidence](benchmarks/cycle-18-checks.json) ·
-[Soumic investment decision](benchmarks/cycle-18-decision-evidence.json) ·
+[Check evidence](benchmarks/cycle-18-final-checks.json) ·
+[Soumic investment decision](benchmarks/cycle-18-final-decision-evidence.json) ·
 [Strategy and CO notes](CYCLE_18_OPTIMIZATION.md).
 
 No local match, simulated season, applied replay action, counterfactual episode,
@@ -50,7 +59,7 @@ the interface and expose forecasts; they do not measure win rate or revenue.
 
 ```bash
 uv run --no-sync python -m scripts.make_production_agent \
-  --output artifacts/submission-cycle-18-ready/main.py
+  --output artifacts/submission-cycle-18-final/main.py
 ```
 
 The builder refuses to overwrite an existing file. It rebuilds and checks Cycle

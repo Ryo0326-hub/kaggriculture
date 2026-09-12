@@ -97,6 +97,55 @@ def test_last_action_feeds_animal_at_risk(policy):
     assert policy["agent"](obs)["farmer"] == ["FEED"]
 
 
+@pytest.mark.parametrize("name", ["TOMATO", "STRAWBERRY"])
+def test_reachable_water_survives_bundle_deadline(policy, name):
+    obs = economy(policy, hour=22)
+    obs["farms"][0]["farmer"] = [3, 4]
+    obs["farms"][0]["tiles"][4][2] = crop(name, 1)
+    # One move + WATER fits, but one move + WATER + HARVEST does not.
+    assert policy["agent"](obs)["farmer"] == ["WEST"]
+
+
+def test_reachable_feed_survives_bundle_deadline(policy):
+    obs = economy(policy, hour=21)
+    obs["farms"][0]["tiles"][4][2] = animal()
+    obs["private"]["inventories"] = [{"WHEAT": 1}]
+    # Two moves + FEED fits; adding CARE and collection would miss night.
+    commands, _, _, detail = dispatch(policy, obs)
+    assert commands == [["WEST"]]
+    assert detail["feed_sites"] == {0: ((2, 4),)}
+
+
+def test_essential_feed_counts_depot_pickup(policy):
+    obs = economy(policy, hour=21)
+    obs["farms"][0]["tiles"][4][3] = animal()
+    obs["private"]["shed"] = {"WHEAT": 1}
+    assert dispatch(policy, obs)[0] == [["PICKUP", "WHEAT", 1]]
+    # A separate fixed observation: pickup + move + feed no longer fits.
+    obs.update(hour=22, step=10 * 24 + 22)
+    assert dispatch(policy, obs)[3]["feed_sites"].get(0, ()) == ()
+
+
+def test_essential_water_is_not_blocked_by_funded_optional_bonus(policy):
+    obs = economy(policy, hour=22)
+    obs["farms"][0]["farmer"] = [3, 4]
+    obs["farms"][0]["tiles"][4][2] = berry(watered=False)
+    obs["private"]["inventories"] = [{"FERTILIZER": 1}]
+    commands, _, _, detail = dispatch(policy, obs)
+    assert commands == [["WEST"]]
+    assert detail["fertilizer_sites"] == {0: ()}
+
+
+def test_missing_step_uses_day_hour_without_mutating_input(policy):
+    obs = economy(policy)
+    obs["farms"][0]["tiles"][4][3] = berry()
+    expected = policy["agent"](obs)
+    del obs["step"]
+    before = deepcopy(obs)
+    assert policy["agent"](obs) == expected
+    assert obs == before
+
+
 def test_carrier_gets_bonus_job_before_empty_lower_index_worker(policy):
     obs = economy(policy)
     obs["farms"][0].update(hands=[[4, 4]], hires_today=1)
@@ -232,6 +281,36 @@ def test_terminal_partial_deposit_then_sale_without_overflow(policy):
     assert action["hands"] == [["PLACE", "MILK", 1]]
     assert ["SELL", "MILK", 5] in action["market"]
     assert not any(o[0].startswith("BUY") for o in action["market"])
+    validate(obs, {}, action, policy)
+
+
+def test_terminal_harvest_uses_available_worker_not_only_nearest(policy):
+    obs = economy(policy, day=29, hour=20)
+    obs["farms"][0].update(hands=[[3, 4]], hires_today=1)
+    obs["farms"][0]["tiles"][4][4] = crop("WHEAT", 25)
+    obs["private"]["inventories"] = [{"COW": 1}, {}]
+    # The closest worker carries an animal and returns it to the shed.
+    # The hand has time for move + HARVEST + DROP, but not extra WATER.
+    action = policy["agent"](obs)
+    assert action["farmer"] == ["DROP"]
+    assert action["hands"] == [["EAST"]]
+    validate(obs, {}, action, policy)
+
+
+@pytest.mark.parametrize("tile", [None, "LOCKED", {"kind": "PASTURE"}])
+@pytest.mark.parametrize("with_empty_product_key", [False, True])
+def test_partial_animal_deposit_never_miscounts_an_installation(
+    policy, tile, with_empty_product_key
+):
+    obs = economy(policy, day=29, hour=22)
+    obs["farms"][0]["tiles"][4][4] = tile
+    inv = {"MILK": 0, "COW": 2} if with_empty_product_key else {"COW": 2}
+    obs["private"].update(shed={"WHEAT": 99}, inventories=[inv])
+    action = policy["agent"](obs)
+    if isinstance(tile, dict):
+        assert action["farmer"] == ["PASS"]
+    else:
+        assert action["farmer"] == ["PLACE", "COW", 1]
     validate(obs, {}, action, policy)
 
 
