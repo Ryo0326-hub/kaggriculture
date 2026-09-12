@@ -2,11 +2,11 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Current candidate: Cycle 17 — custom shared service routes and funded growth.** It extends Cycle 15 with executable mixed farm routes, known-demand floors, wider livestock placement and priced expansion. Upload `artifacts/submission-cycle-17-shared-growth/main.py`, SHA-256 `96297a3e899d…`. [Upload command and checks](docs/CYCLE_17_RESULTS.md) · [Sergey game analysis and CO notes](docs/CYCLE_17_OPTIMIZATION.md).
+**Current candidate: Cycle 18 — funded growth and deadline-aware inputs.** It enhances Cycle 15 through the shared-route work from Cycle 17, adds route-specific feed/fertilizer credit and next-day fertilizer staging, protects ongoing-crop watering, and reserves carried-stock capacity. Upload `artifacts/submission-cycle-18-ready/main.py`, SHA-256 `6d3cbf383297…`. [Upload command and checks](docs/CYCLE_18_RESULTS.md) · [Strategy and CO notes](docs/CYCLE_18_OPTIMIZATION.md).
 
-**Cycle 15 is server validated, but the supplied losses expose production limits.** The latest loss to Sergey Panasenko ends 76,678–122,718, with 30 versus 75 productive tiles and 72 versus 318 confirmed daytime milk units. All 719 own decisions match Cycle 15 and its runtime is clean. This identifies a growth problem; selected losses and early rating changes do not establish overall ladder strength.
+**Cycle 15 is server validated, but five reviewed losses expose production limits.** Sergey, Julian, Chloe, Ahmed and Soumic show why feasible expansion, input deadlines, market saturation and terminal delivery matter. All own decisions in those reviews match Cycle 15. The latest Soumic game ends 85,532–94,176 despite our 4,209 lead entering the final day. Selected losses and early rating changes do not establish overall ladder strength.
 
-Cycle 17 passes 67 bounded tests and 78 isolated recorded-decision checks. Its own Kaggle validation and performance are pending. No local matches, training, cloud spending or automatic upload. The complete public V36 remains available unchanged as the separate [Cycle 16 baseline](docs/CYCLE_16_RESULTS.md).
+Cycle 18 passes 27 bounded tests and 140 isolated recorded-observation checks; the largest sampled callback is 0.30 seconds. Its own Kaggle validation and performance are pending. No local matches, training, cloud spending or automatic upload. The complete public V36 remains available unchanged as the separate [Cycle 16 baseline](docs/CYCLE_16_RESULTS.md).
 
 Root `main.py` remains protected Cycle 3. Custom Cycle 15 and all earlier artifacts remain unchanged. The [150K budget](docs/CYCLE_15_SERVER_ANALYSIS.md) is an illustrative favorable-economy target, not a demonstrated result or guaranteed score.
 
@@ -34,7 +34,7 @@ Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8
 
 ## Historical local simulation commands — explicit opt-in only
 
-Use the Cycle 17 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
+Use the Cycle 18 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
@@ -134,7 +134,10 @@ See [the CO250-to-implementation explanation](docs/OPTIMIZATION.md), [engine fin
 
 | File | Role |
 | --- | --- |
-| `main.py` | Complete current artifact; `agent(obs, configuration=None)` is the final callable entry point |
+| `main.py` | Protected historical Cycle 3; use the Cycle 18 artifact path above for the new submission |
+| `experiments/production.py` | Cycle 18 deadline inputs, shared dispatch and equivalent faster route costs |
+| `scripts/make_production_agent.py` | Reproducible standalone Cycle 18 builder with frozen-parent hash checks |
+| `scripts/check_production_agent.py` | Independent recorded-observation checks without running games |
 | `baselines/` | Frozen Steps 1–8; Steps 2, 3, 5, 6, 7, and 8 have server evidence |
 | `evaluate.py` | Official-simulator matches, provenance, and result files |
 | `compare_results.py` | Matched common-pool scores and whole-seed bootstrap intervals |

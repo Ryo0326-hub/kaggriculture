@@ -4,7 +4,7 @@ Agreed September 10, 2026 (Toronto): prioritize competitive performance; use loc
 
 This replaces the fixed ordering of the original Steps 9–11. Steps 1–8 are completed engineering checkpoints, not evidence that the agent is finished or medal competitive.
 
-Current checkpoint: **Cycle 17 implements the requested custom growth repairs; its Kaggle validation and competitive results are pending.** [Artifact and checks](CYCLE_17_RESULTS.md) · [Sergey analysis and CO notes](CYCLE_17_OPTIMIZATION.md). Cycle 15 stays frozen; unchanged public V36 / Cycle 16 remains an optional separate comparison.
+Current checkpoint: **Cycle 18 is the prepared submission candidate enhancing Cycle 15 with shared growth, deadline-aware inputs and production survival repairs.** [Artifact and checks](CYCLE_18_RESULTS.md) · [Strategy and CO notes](CYCLE_18_OPTIMIZATION.md). It supersedes the unsubmitted Cycle 17 candidate; its own Kaggle validation and competitive results are pending. Cycle 15 and Cycle 17 stay frozen; unchanged public V36 / Cycle 16 remains an optional separate comparison.
 
 The newly supplied Sergey Panasenko game ends 76,678–122,718. All 719 own decisions match Cycle 15. It reaches 30 productive tiles versus 75, and harvests 72 versus 318 daytime milk units. Sergey expands twice on UI Day 8, funds large crop cohorts, then builds a larger herd and late production. Its imperfect final deliveries should not be copied.
 
@@ -13,6 +13,8 @@ Cycle 17 uses common physical service routes in staffing, dispatch and investmen
 **Work backward from 150,000 final banked coins in a favorable economy:** the earlier illustrative 181,500 gross receipts minus 34,500 costs plus starting 3,000 remains a planning budget. Product prices depend on both players and town demand. Do not force a fixed portfolio or require 150K in every winning game.
 
 The next checkpoint is the user's server upload and returned logs: installation speed, productive footprint, physical output, wages, market proceeds, losses/overflow and final delivery. Review wins as well as losses before choosing another change. No automatic upload, local game or training is authorized by this plan.
+
+Cycle 18 incorporates all five reviews below. It uses carried feed/fertilizer only for the routes that can access it, stages profitable fertilizer for the next production day, reserves carried-stock space before purchases and keeps watering ongoing crops that still have output ahead. The same route choices now use faster incremental cost arithmetic. It passes 27 bounded tests and 140 fixed-observation checks, with no measured competitive result. On the recorded Soumic Day 15 observation it rejects additional melon cohorts and admits two cows; these are forecasts, not realized counterfactual profits. Upload Cycle 18, then use its own returned games to check whether greater funded growth becomes delivered net income.
 
 Additional evidence: [Cycle 15 versus JulianHahn28, episode 108009995](SERVER_REVIEW_108009995.md), ends 69,799–75,016. All 719 own decisions match Cycle 15. Our early melon execution and final delivery worked; Julian's larger sheep herd served early yarn-store demand and overcame our cash lead. This is review evidence only: the Cycle 17 candidate is unchanged.
 

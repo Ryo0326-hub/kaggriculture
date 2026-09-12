@@ -1,0 +1,648 @@
+{
+  "episode": 108017116,
+  "seat": 0,
+  "step": 340,
+  "investment": {
+    "chosen": {
+      "orders": [
+        [
+          "BUY_ANIMAL",
+          "COW",
+          2
+        ]
+      ],
+      "value": 5068.5,
+      "cost": 800,
+      "scenario_receipts": [
+        5726,
+        7156
+      ],
+      "min_cash": 22692.0,
+      "added_wages": 51,
+      "immediate_setup_reserve": 164,
+      "peak_workers": 7
+    },
+    "alternatives": [
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            1
+          ]
+        ],
+        "value": 564.75,
+        "cost": 300,
+        "scenario_receipts": [
+          972,
+          1075
+        ],
+        "min_cash": 23274.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 82,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "GOOSE",
+            2
+          ]
+        ],
+        "value": 1032.25,
+        "cost": 600,
+        "scenario_receipts": [
+          1772,
+          2073
+        ],
+        "min_cash": 22892.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 164,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            1
+          ]
+        ],
+        "value": 2607.0,
+        "cost": 400,
+        "scenario_receipts": [
+          2972,
+          3644
+        ],
+        "min_cash": 23174.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 82,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ]
+        ],
+        "value": 5068.5,
+        "cost": 800,
+        "scenario_receipts": [
+          5726,
+          7156
+        ],
+        "min_cash": 22692.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 164,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            1
+          ]
+        ],
+        "value": 1020.75,
+        "cost": 500,
+        "scenario_receipts": [
+          1232,
+          2919
+        ],
+        "min_cash": 23074.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 82,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            2
+          ]
+        ],
+        "value": 1255.75,
+        "cost": 1000,
+        "scenario_receipts": [
+          1408,
+          5659
+        ],
+        "min_cash": 22492.0,
+        "added_wages": 51,
+        "immediate_setup_reserve": 164,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ]
+        ],
+        "value": 339.0,
+        "cost": 50,
+        "scenario_receipts": [
+          390,
+          490
+        ],
+        "min_cash": 23606.0,
+        "added_wages": 26,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            4
+          ]
+        ],
+        "value": 1327.0,
+        "cost": 200,
+        "scenario_receipts": [
+          1504,
+          1876
+        ],
+        "min_cash": 23456.0,
+        "added_wages": 70,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "TOMATO",
+            8
+          ]
+        ],
+        "value": 2468.0,
+        "cost": 400,
+        "scenario_receipts": [
+          2896,
+          3536
+        ],
+        "min_cash": 23256.0,
+        "added_wages": 188,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ],
+        "value": 150.5,
+        "cost": 10,
+        "scenario_receipts": [
+          184,
+          186
+        ],
+        "min_cash": 23646.0,
+        "added_wages": 24,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            4
+          ]
+        ],
+        "value": 679.25,
+        "cost": 40,
+        "scenario_receipts": [
+          735,
+          768
+        ],
+        "min_cash": 23616.0,
+        "added_wages": 24,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ]
+        ],
+        "value": 1246.5,
+        "cost": 80,
+        "scenario_receipts": [
+          1467,
+          1493
+        ],
+        "min_cash": 23576.0,
+        "added_wages": 147,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            1
+          ]
+        ],
+        "value": -93.0,
+        "cost": 80,
+        "scenario_receipts": [
+          13,
+          13
+        ],
+        "min_cash": 23576.0,
+        "added_wages": 26,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            4
+          ]
+        ],
+        "value": -346.0,
+        "cost": 320,
+        "scenario_receipts": [
+          31,
+          31
+        ],
+        "min_cash": 23336.0,
+        "added_wages": 57,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ]
+        ],
+        "value": -739.0,
+        "cost": 640,
+        "scenario_receipts": [
+          55,
+          55
+        ],
+        "min_cash": 23016.0,
+        "added_wages": 154,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            1
+          ]
+        ],
+        "value": 89.75,
+        "cost": 100,
+        "scenario_receipts": [
+          93,
+          588
+        ],
+        "min_cash": 23556.0,
+        "added_wages": 27,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            4
+          ]
+        ],
+        "value": 381.5,
+        "cost": 400,
+        "scenario_receipts": [
+          350,
+          2328
+        ],
+        "min_cash": 23256.0,
+        "added_wages": 63,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": 646.0,
+        "cost": 800,
+        "scenario_receipts": [
+          640,
+          4584
+        ],
+        "min_cash": 22856.0,
+        "added_wages": 180,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "CARROT",
+            1
+          ]
+        ],
+        "value": 84.75,
+        "cost": 20,
+        "scenario_receipts": [
+          120,
+          123
+        ],
+        "min_cash": 23636.0,
+        "added_wages": 16,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "CARROT",
+            4
+          ]
+        ],
+        "value": 384.75,
+        "cost": 80,
+        "scenario_receipts": [
+          478,
+          489
+        ],
+        "min_cash": 23576.0,
+        "added_wages": 16,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 7
+      },
+      {
+        "orders": [
+          [
+            "BUY_SEED",
+            "CARROT",
+            8
+          ]
+        ],
+        "value": 672.5,
+        "cost": 160,
+        "scenario_receipts": [
+          945,
+          967
+        ],
+        "min_cash": 23496.0,
+        "added_wages": 118,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            8
+          ]
+        ],
+        "value": 379.0,
+        "cost": 2400,
+        "scenario_receipts": [
+          2896,
+          3536
+        ],
+        "min_cash": 21256.0,
+        "added_wages": 277,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            12
+          ]
+        ],
+        "value": 1327.0,
+        "cost": 2600,
+        "scenario_receipts": [
+          4213,
+          5025
+        ],
+        "min_cash": 21056.0,
+        "added_wages": 489,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 10
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            8
+          ]
+        ],
+        "value": -808.5,
+        "cost": 2080,
+        "scenario_receipts": [
+          1467,
+          1493
+        ],
+        "min_cash": 21576.0,
+        "added_wages": 202,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            12
+          ]
+        ],
+        "value": -198.75,
+        "cost": 2120,
+        "scenario_receipts": [
+          2184,
+          2213
+        ],
+        "min_cash": 21536.0,
+        "added_wages": 270,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 10
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            8
+          ]
+        ],
+        "value": -2836.0,
+        "cost": 2640,
+        "scenario_receipts": [
+          55,
+          55
+        ],
+        "min_cash": 21016.0,
+        "added_wages": 251,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            12
+          ]
+        ],
+        "value": -3258.0,
+        "cost": 2960,
+        "scenario_receipts": [
+          79,
+          79
+        ],
+        "min_cash": 20696.0,
+        "added_wages": 377,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 10
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            8
+          ]
+        ],
+        "value": -1437.0,
+        "cost": 2800,
+        "scenario_receipts": [
+          640,
+          4584
+        ],
+        "min_cash": 20856.0,
+        "added_wages": 263,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            12
+          ]
+        ],
+        "value": -1267.25,
+        "cost": 3200,
+        "scenario_receipts": [
+          888,
+          6763
+        ],
+        "min_cash": 20456.0,
+        "added_wages": 424,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 10
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            8
+          ]
+        ],
+        "value": -1369.5,
+        "cost": 2160,
+        "scenario_receipts": [
+          945,
+          967
+        ],
+        "min_cash": 21496.0,
+        "added_wages": 160,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 9
+      },
+      {
+        "orders": [
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "CARROT",
+            12
+          ]
+        ],
+        "value": -1024.75,
+        "cost": 2240,
+        "scenario_receipts": [
+          1401,
+          1434
+        ],
+        "min_cash": 21416.0,
+        "added_wages": 194,
+        "immediate_setup_reserve": 0,
+        "peak_workers": 10
+      }
+    ],
+    "rejected": {}
+  }
+}
