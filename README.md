@@ -6,6 +6,8 @@ An optimization-based agent for Kaggle's farming simulation, developed in explic
 
 **Cycle 13 lost 66,319–106,333 in server episode 107984963.** All 719 own decisions match the packaged source. No land bundle reached valuation: vacancy restrictions blocked 38 eligible turns, and insufficient order slots blocked the remaining turn. [Failure diagnosis](docs/CYCLE_13_POSTMORTEM.md). Ryo requested adopting the whole public V36 strategy after this result; the prior narrow sale-ordering plan is superseded.
 
+The [broader Cycle 13 audit](docs/CYCLE_13_LOGIC_AUDIT.md) records additional deadline and forecast defects with reproducible bounded cases. Those findings concern the preserved custom agent; they do not certify or modify public V36.
+
 Cycle 14 retains the public schedules, shop router, livestock/crop investments, land purchases, guarded sales and terminal planner. Its code and notices are preserved byte-for-byte; we do not claim them as newly authored. Packaging and eighteen bounded recorded-observation checks pass. Its own server validation and rating remain pending. No local matches, GPU, LLM or external runtime API are required for packaging.
 
 **Cycle 3 fertilizer timing is running on Kaggle as submission 56158876.** Three supplied public games match all 2,157 own decisions: one win and two losses, with clean execution. Read the [server analysis](docs/CYCLE_3_SERVER_ANALYSIS.md). Its earlier fresh local score was 86.7% versus Step 8's 60.8%; local and ladder outcomes are separate evidence. [CO notes](docs/CYCLE_3_OPTIMIZATION.md), [source-matched decision](docs/examples/cycle-3-post-water-fertilizer.json). No new spending on compute.

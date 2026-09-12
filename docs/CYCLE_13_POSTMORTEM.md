@@ -1,5 +1,10 @@
 # Cycle 13 — growth blocked before investment valuation
 
+**Follow-up:** this initial land diagnosis was not exhaustive. The [broader
+logic audit](CYCLE_13_LOGIC_AUDIT.md) documents two additional dispatch defects,
+two forecast inconsistencies and a profit-selection weakness, distinguishing
+recorded evidence from constructed cases. No legacy agent fixes are claimed.
+
 September 11, 2026. Episode **107984963**, Unicorns versus onepunch999. Source
 `542547dbe7cd63856b2a6f037e2014790c1410316c3b3872f67ea85c2b628947` reproduces **all
 719 recorded own decisions** when given the recorded observations. No game

@@ -10,6 +10,8 @@ Current checkpoint: **Cycle 14 packages the complete public V36 agent unchanged,
 
 Cycle 12's interrupted reference comparison remains incomplete and is not claimed as a passed gate. Seeds 9401–9420 remain consumed evidence. The new top-player replays are not evidence that Cycle 12 itself was server validated.
 
+The requested [broader Cycle 13 audit](CYCLE_13_LOGIC_AUDIT.md) also finds terminal-cargo and tomato-watering dispatch defects, inconsistent labor pricing, ignored existing tomato fertilizer and a ratio-based growth weakness. Evidence separates recorded-state checks from constructed cases. Cycle 13 is preserved, not repaired; Cycle 14 is unchanged. Resolve these contracts before reusing any affected custom logic in the public baseline.
+
 ## Active workflow — user direction supersedes earlier simulation gates
 
 - Prioritize mechanics-based competitive ideas, source-matched analysis of supplied server logs, and concrete policy changes. Explain costs, labor/input constraints, marginal value and opponent effects in implementation notes.
