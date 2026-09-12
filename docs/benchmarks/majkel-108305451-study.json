@@ -1,0 +1,7444 @@
+{
+  "episode": 108305451,
+  "source_sha256": "653d091a21e54fdffeea6e9f167801ede6159457ff91724b2dc3c2cd1c5a3ac7",
+  "method": "Passive recorded-state/action aggregation. No engine or policy imports, state advances or counterfactual games. UI days and turns are one based. Price quotes are pre-action, not average sale prices.",
+  "module_version": "1.32.7",
+  "players": [
+    {
+      "player": "Majkel1337",
+      "seat": 0,
+      "opponent": "M & M & P & Q",
+      "cash": [
+        178462.0,
+        169087.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": 9375.0,
+      "peak_productive": 74,
+      "peak_by_type_not_simultaneous": {
+        "COW": 14,
+        "SHEEP": 3,
+        "MELON": 12,
+        "WHEAT": 42,
+        "STRAWBERRY": 41
+      },
+      "confirmed_planted": {
+        "MELON": 12,
+        "WHEAT": 153,
+        "STRAWBERRY": 41
+      },
+      "land": [
+        {
+          "decision_step": 149,
+          "quadrants": 2
+        },
+        {
+          "decision_step": 227,
+          "quadrants": 3
+        }
+      ],
+      "accepted_hires_by_day": {
+        "0": 4,
+        "1": 4,
+        "2": 6,
+        "3": 6,
+        "4": 6,
+        "5": 6,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 11,
+        "10": 11,
+        "11": 11,
+        "12": 11,
+        "13": 11,
+        "14": 11,
+        "15": 11,
+        "16": 11,
+        "17": 11,
+        "18": 11,
+        "19": 11,
+        "20": 11,
+        "21": 11,
+        "22": 11,
+        "23": 11,
+        "24": 11,
+        "25": 11,
+        "26": 11,
+        "27": 11,
+        "28": 10,
+        "29": 10
+      },
+      "confirmed_wages": 5018,
+      "requested_orders_not_fills": {
+        "BUY_ANIMAL:COW": 14,
+        "BUY_PRODUCT:WHEAT": 405,
+        "SELL:WHEAT": 469,
+        "HIRE": 291,
+        "BUY_ANIMAL:SHEEP": 3,
+        "BUY_SEED:MELON": 12,
+        "BUY_SEED:WHEAT": 153,
+        "SELL:FERTILIZER": 206,
+        "BUY_SEED:STRAWBERRY": 50,
+        "SELL:WOOL": 101,
+        "BUY_LAND": 4,
+        "SELL:MILK": 363,
+        "SELL:MELON": 72,
+        "SELL:STRAWBERRY": 304
+      },
+      "requested_operations": {
+        "PASS": 39,
+        "PICKUP": 239,
+        "BUILD_PASTURE": 17,
+        "PLACE": 130,
+        "NORTH": 1135,
+        "WEST": 946,
+        "FEED": 382,
+        "CARE": 387,
+        "SOUTH": 662,
+        "PLANT": 215,
+        "WATER": 1261,
+        "COLLECT_FERTILIZER": 402,
+        "EAST": 693,
+        "DIG": 41,
+        "HARVEST": 451,
+        "DROP": 71,
+        "FERTILIZE": 172
+      },
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 4,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 12,
+        "WOOL": 0
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          "FERTILIZER": 1
+        },
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "town": {
+        "unlocked_shops": [
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "SMOOTHIE_SHOP",
+          "YARN_STORE",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "BAKERY"
+        ]
+      },
+      "costs": {
+        "animals": 7100,
+        "seeds": 6590,
+        "land": 3000,
+        "wages": 5018,
+        "net_product_receipts_residual": 197170.0
+      },
+      "accepted_fixed_purchases": {
+        "ANIMAL:COW": 14,
+        "ANIMAL:SHEEP": 3,
+        "ANIMAL:GOOSE": 0,
+        "SEED:MELON": 12,
+        "SEED:WHEAT": 153,
+        "SEED:STRAWBERRY": 41
+      },
+      "night_maintenance": {
+        "animal_nights": 400,
+        "unfed": 24,
+        "cared_and_fed": 375
+      },
+      "production": {
+        "animal_events": 133,
+        "animal_unfed_events": 0,
+        "animal_zero_care_bonus_events": 0,
+        "banked_bonus_lost_on_unfed_events": 0,
+        "berry_events": 164,
+        "berry_bonus_events": 146,
+        "berry_unwatered_events": 5
+      },
+      "harvest": {
+        "WHEAT": 519,
+        "WOOL": 101,
+        "MILK": 369,
+        "MELON": 72,
+        "STRAWBERRY": 306
+      },
+      "reversal_pairs": 31,
+      "installations": [
+        {
+          "step": 3,
+          "site": [
+            4,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 5,
+          "site": [
+            3,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 6,
+          "site": [
+            4,
+            3
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 7,
+          "site": [
+            2,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 8,
+          "site": [
+            4,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 154,
+          "site": [
+            5,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 157,
+          "site": [
+            5,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 159,
+          "site": [
+            6,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 161,
+          "site": [
+            6,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 163,
+          "site": [
+            7,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 166,
+          "site": [
+            5,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 205,
+          "site": [
+            6,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 8,
+          "first_day": 16
+        },
+        {
+          "step": 232,
+          "site": [
+            3,
+            5
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 233,
+          "site": [
+            4,
+            5
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 236,
+          "site": [
+            4,
+            6
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 256,
+          "site": [
+            4,
+            7
+          ],
+          "animal": "COW",
+          "placed_day": 10,
+          "first_day": 18
+        },
+        {
+          "step": 296,
+          "site": [
+            4,
+            8
+          ],
+          "animal": "COW",
+          "placed_day": 12,
+          "first_day": 20
+        }
+      ],
+      "too_late_for_first_production": [],
+      "crop_weed_events": [
+        {
+          "step": 287,
+          "site": [
+            0,
+            7
+          ],
+          "crop": "WHEAT",
+          "age": 0,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            0,
+            5
+          ],
+          "crop": "WHEAT",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 479,
+          "site": [
+            1,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 510,
+          "site": [
+            2,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 5,
+          "units": 1,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 551,
+          "site": [
+            0,
+            1
+          ],
+          "crop": "WHEAT",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            5,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            7,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            5,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            7,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            8,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            9,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            7,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 552,
+          "site": [
+            8,
+            4
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 576,
+          "site": [
+            9,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 576,
+          "site": [
+            9,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 647,
+          "site": [
+            1,
+            8
+          ],
+          "crop": "WHEAT",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 648,
+          "site": [
+            4,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 648,
+          "site": [
+            2,
+            6
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 650,
+          "site": [
+            3,
+            7
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 1,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 672,
+          "site": [
+            3,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 672,
+          "site": [
+            3,
+            8
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 695,
+          "site": [
+            9,
+            4
+          ],
+          "crop": "WHEAT",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 696,
+          "site": [
+            2,
+            2
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 0,
+          "watered": false
+        },
+        {
+          "step": 698,
+          "site": [
+            1,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        }
+      ],
+      "movement_share": 0.47438906530443187,
+      "duplicate_extra_commands": {
+        "PLANT": 9,
+        "WATER": 83,
+        "FEED": 6,
+        "CARE": 9,
+        "COLLECT_FERTILIZER": 11,
+        "HARVEST": 8,
+        "FERTILIZE": 3
+      },
+      "sale_decisions": 249,
+      "sale_decision_hour": {
+        "2": 12,
+        "3": 11,
+        "4": 5,
+        "5": 2,
+        "6": 15,
+        "18": 11,
+        "7": 14,
+        "9": 7,
+        "1": 24,
+        "12": 10,
+        "11": 5,
+        "20": 10,
+        "8": 2,
+        "10": 14,
+        "13": 5,
+        "19": 4,
+        "17": 12,
+        "22": 19,
+        "14": 14,
+        "15": 12,
+        "16": 14,
+        "24": 9,
+        "23": 15,
+        "21": 3
+      },
+      "sale_decision_mod4": {
+        "1": 85,
+        "2": 61,
+        "3": 50,
+        "0": 53
+      },
+      "fertilize_commands_by_crop": {
+        "STRAWBERRY": 110,
+        "WHEAT": 62
+      },
+      "partial_deposit_commands": {
+        "FERTILIZER": 57,
+        "MILK": 46,
+        "WOOL": 6
+      },
+      "berry_seed_waits_fifo": {
+        "count": 41,
+        "median_turns": 3,
+        "max_turns": 25,
+        "note": "Fungible seeds matched FIFO, not individual seed identity. Rival has an immediate newborn loss outside this matched list.",
+        "matches": [
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 60,
+            "planted_step": 63
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 61,
+            "planted_step": 65
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 83,
+            "planted_step": 85
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 85,
+            "planted_step": 87
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 86,
+            "planted_step": 89
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 89,
+            "planted_step": 105
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 106,
+            "planted_step": 110
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 110,
+            "planted_step": 115
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 128,
+            "planted_step": 153
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 153,
+            "planted_step": 156
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 154,
+            "planted_step": 156
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 156,
+            "planted_step": 159
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 157,
+            "planted_step": 160
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 158,
+            "planted_step": 162
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 159,
+            "planted_step": 162
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 160,
+            "planted_step": 163
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 161,
+            "planted_step": 165
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 162,
+            "planted_step": 165
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 163,
+            "planted_step": 165
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 164,
+            "planted_step": 165
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 174,
+            "planted_step": 179
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 179,
+            "planted_step": 180
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 180,
+            "planted_step": 181
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 181,
+            "planted_step": 182
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 182,
+            "planted_step": 188
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 198,
+            "planted_step": 211
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 229,
+            "planted_step": 251
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 251,
+            "planted_step": 255
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 254,
+            "planted_step": 257
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 256,
+            "planted_step": 259
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 257,
+            "planted_step": 259
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 258,
+            "planted_step": 261
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 259,
+            "planted_step": 261
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 271,
+            "planted_step": 277
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 277,
+            "planted_step": 278
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 278,
+            "planted_step": 279
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 279,
+            "planted_step": 283
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 289,
+            "planted_step": 299
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 295,
+            "planted_step": 306
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 299,
+            "planted_step": 321
+          },
+          {
+            "crop": "STRAWBERRY",
+            "bought_step": 322,
+            "planted_step": 332
+          }
+        ]
+      },
+      "daily": [
+        {
+          "day": 1,
+          "cash": 3000.0,
+          "assets": {},
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 100,
+            "MELON": 250,
+            "MILK": 160,
+            "STRAWBERRY": 120,
+            "TOMATO": 60,
+            "WHEAT": 25,
+            "WOOL": 200
+          },
+          "shops": []
+        },
+        {
+          "day": 2,
+          "cash": 7.0,
+          "assets": {
+            "WHEAT": 10,
+            "MELON": 6,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 100,
+            "MELON": 256,
+            "MILK": 169,
+            "STRAWBERRY": 128,
+            "TOMATO": 60,
+            "WHEAT": 27,
+            "WOOL": 206
+          },
+          "shops": []
+        },
+        {
+          "day": 3,
+          "cash": 33.0,
+          "assets": {
+            "WHEAT": 10,
+            "MELON": 10,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 98,
+            "MELON": 260,
+            "MILK": 172,
+            "STRAWBERRY": 132,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 209
+          },
+          "shops": []
+        },
+        {
+          "day": 4,
+          "cash": 22.0,
+          "assets": {
+            "STRAWBERRY": 2,
+            "MELON": 12,
+            "WHEAT": 6,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 7,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 96,
+            "MELON": 262,
+            "MILK": 175,
+            "STRAWBERRY": 135,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 212
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 5,
+          "cash": 107.0,
+          "assets": {
+            "STRAWBERRY": 5,
+            "MELON": 12,
+            "WHEAT": 3,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 1,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 10,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 94,
+            "MELON": 264,
+            "MILK": 187,
+            "STRAWBERRY": 147,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 214
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 6,
+          "cash": 380.0,
+          "assets": {
+            "STRAWBERRY": 8,
+            "MELON": 12,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 16,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 50,
+            "FERTILIZER": 91,
+            "MELON": 266,
+            "MILK": 196,
+            "STRAWBERRY": 155,
+            "TOMATO": 61,
+            "WHEAT": 29,
+            "WOOL": 215
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 7,
+          "cash": 711.0,
+          "assets": {
+            "STRAWBERRY": 8,
+            "MELON": 12,
+            "COW": 2,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 1,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 11,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 88,
+            "MELON": 267,
+            "MILK": 203,
+            "STRAWBERRY": 161,
+            "TOMATO": 61,
+            "WHEAT": 28,
+            "WOOL": 217
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 8,
+          "cash": 87.0,
+          "assets": {
+            "STRAWBERRY": 20,
+            "MELON": 12,
+            "COW": 8,
+            "WHEAT": 1,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 1,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 86,
+            "MELON": 268,
+            "MILK": 213,
+            "STRAWBERRY": 171,
+            "TOMATO": 61,
+            "WHEAT": 30,
+            "WOOL": 185
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 9,
+          "cash": 200.0,
+          "assets": {
+            "STRAWBERRY": 25,
+            "MELON": 12,
+            "COW": 8,
+            "WHEAT": 1,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 1,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 81,
+            "MELON": 269,
+            "MILK": 221,
+            "STRAWBERRY": 179,
+            "TOMATO": 61,
+            "WHEAT": 32,
+            "WOOL": 177
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 10,
+          "cash": 2308.0,
+          "assets": {
+            "STRAWBERRY": 26,
+            "MELON": 12,
+            "COW": 9,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 1,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 15,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 75,
+            "MELON": 270,
+            "MILK": 209,
+            "STRAWBERRY": 187,
+            "TOMATO": 61,
+            "WHEAT": 35,
+            "WOOL": 179
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 11,
+          "cash": 200.0,
+          "assets": {
+            "STRAWBERRY": 26,
+            "MELON": 12,
+            "COW": 12,
+            "SHEEP": 3,
+            "WHEAT": 2
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 1,
+            "TOMATO": 0,
+            "WHEAT": 6
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 14,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 72,
+            "MELON": 271,
+            "MILK": 222,
+            "STRAWBERRY": 196,
+            "TOMATO": 61,
+            "WHEAT": 37,
+            "WOOL": 151
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 12,
+          "cash": 5754.0,
+          "assets": {
+            "STRAWBERRY": 33,
+            "MELON": 6,
+            "COW": 13,
+            "SHEEP": 3,
+            "WHEAT": 4
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 8
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 9,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 6,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 38,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 66,
+            "MELON": 246,
+            "MILK": 228,
+            "STRAWBERRY": 204,
+            "TOMATO": 61,
+            "WHEAT": 39,
+            "WOOL": 141
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 13,
+          "cash": 6394.0,
+          "assets": {
+            "STRAWBERRY": 37,
+            "MELON": 2,
+            "COW": 13,
+            "WHEAT": 12,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 10
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 13,
+            "GOOSE": 0,
+            "MELON": 28,
+            "MILK": 5,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 22,
+            "WOOL": 4
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 63,
+            "MELON": 246,
+            "MILK": 237,
+            "STRAWBERRY": 212,
+            "TOMATO": 61,
+            "WHEAT": 40,
+            "WOOL": 102
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 14,
+          "cash": 6589.0,
+          "assets": {
+            "STRAWBERRY": 39,
+            "COW": 14,
+            "WHEAT": 17,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 1,
+            "TOMATO": 0,
+            "WHEAT": 12
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 8,
+            "GOOSE": 0,
+            "MELON": 40,
+            "MILK": 8,
+            "SHEEP": 0,
+            "STRAWBERRY": 4,
+            "TOMATO": 0,
+            "WHEAT": 24,
+            "WOOL": 16
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 57,
+            "MELON": 246,
+            "MILK": 246,
+            "STRAWBERRY": 221,
+            "TOMATO": 62,
+            "WHEAT": 41,
+            "WOOL": 93
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 15,
+          "cash": 7420.0,
+          "assets": {
+            "STRAWBERRY": 41,
+            "COW": 14,
+            "WHEAT": 16,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 13
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 40,
+            "MILK": 4,
+            "SHEEP": 0,
+            "STRAWBERRY": 8,
+            "TOMATO": 0,
+            "WHEAT": 25,
+            "WOOL": 16
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 53,
+            "MELON": 247,
+            "MILK": 242,
+            "STRAWBERRY": 230,
+            "TOMATO": 62,
+            "WHEAT": 41,
+            "WOOL": 98
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 16,
+          "cash": 22326.0,
+          "assets": {
+            "STRAWBERRY": 41,
+            "COW": 14,
+            "WHEAT": 16,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 12
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 20,
+            "SHEEP": 0,
+            "STRAWBERRY": 16,
+            "TOMATO": 0,
+            "WHEAT": 26,
+            "WOOL": 16
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 49,
+            "MELON": 218,
+            "MILK": 243,
+            "STRAWBERRY": 237,
+            "TOMATO": 62,
+            "WHEAT": 42,
+            "WOOL": 88
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 17,
+          "cash": 24776.0,
+          "assets": {
+            "STRAWBERRY": 41,
+            "COW": 14,
+            "WHEAT": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 12
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 18,
+            "TOMATO": 0,
+            "WHEAT": 21,
+            "WOOL": 24
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 50,
+            "FERTILIZER": 47,
+            "MELON": 219,
+            "MILK": 238,
+            "STRAWBERRY": 242,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 144
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 18,
+          "cash": 41914.0,
+          "assets": {
+            "STRAWBERRY": 41,
+            "COW": 14,
+            "WHEAT": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 11
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 6,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 16,
+            "TOMATO": 0,
+            "WHEAT": 22,
+            "WOOL": 27
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 45,
+            "MELON": 220,
+            "MILK": 223,
+            "STRAWBERRY": 239,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 181
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 19,
+          "cash": 48467.0,
+          "assets": {
+            "STRAWBERRY": 41,
+            "COW": 14,
+            "WHEAT": 13,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 11
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 4,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 12,
+            "SHEEP": 0,
+            "STRAWBERRY": 13,
+            "TOMATO": 0,
+            "WHEAT": 27,
+            "WOOL": 27
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 41,
+            "MELON": 221,
+            "MILK": 220,
+            "STRAWBERRY": 236,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 199
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 20,
+          "cash": 62709.0,
+          "assets": {
+            "WHEAT": 15,
+            "STRAWBERRY": 39,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 11
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 6,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 12,
+            "SHEEP": 0,
+            "STRAWBERRY": 17,
+            "TOMATO": 0,
+            "WHEAT": 16,
+            "WOOL": 37
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 38,
+            "MELON": 222,
+            "MILK": 214,
+            "STRAWBERRY": 226,
+            "TOMATO": 63,
+            "WHEAT": 44,
+            "WOOL": 217
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 21,
+          "cash": 70411.0,
+          "assets": {
+            "WHEAT": 17,
+            "STRAWBERRY": 36,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 14
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 16,
+            "SHEEP": 0,
+            "STRAWBERRY": 10,
+            "TOMATO": 0,
+            "WHEAT": 20,
+            "WOOL": 32
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 34,
+            "MELON": 223,
+            "MILK": 204,
+            "STRAWBERRY": 219,
+            "TOMATO": 64,
+            "WHEAT": 45,
+            "WOOL": 223
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 22,
+          "cash": 84281.0,
+          "assets": {
+            "WHEAT": 21,
+            "STRAWBERRY": 33,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 14
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 21,
+            "SHEEP": 0,
+            "STRAWBERRY": 31,
+            "TOMATO": 0,
+            "WHEAT": 24,
+            "WOOL": 15
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 45,
+            "FERTILIZER": 34,
+            "MELON": 176,
+            "MILK": 204,
+            "STRAWBERRY": 218,
+            "TOMATO": 65,
+            "WHEAT": 46,
+            "WOOL": 221
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 23,
+          "cash": 95882.0,
+          "assets": {
+            "STRAWBERRY": 33,
+            "WHEAT": 18,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 13
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 4,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 21,
+            "SHEEP": 0,
+            "STRAWBERRY": 10,
+            "TOMATO": 0,
+            "WHEAT": 28,
+            "WOOL": 19
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 45,
+            "FERTILIZER": 30,
+            "MELON": 178,
+            "MILK": 200,
+            "STRAWBERRY": 199,
+            "TOMATO": 66,
+            "WHEAT": 46,
+            "WOOL": 224
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 24,
+          "cash": 107476.0,
+          "assets": {
+            "STRAWBERRY": 29,
+            "WHEAT": 21,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 8
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 39,
+            "SHEEP": 0,
+            "STRAWBERRY": 34,
+            "TOMATO": 0,
+            "WHEAT": 15,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 46,
+            "FERTILIZER": 29,
+            "MELON": 169,
+            "MILK": 208,
+            "STRAWBERRY": 196,
+            "TOMATO": 68,
+            "WHEAT": 46,
+            "WOOL": 220
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 25,
+          "cash": 115812.0,
+          "assets": {
+            "WHEAT": 31,
+            "STRAWBERRY": 18,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 24,
+            "SHEEP": 0,
+            "STRAWBERRY": 35,
+            "TOMATO": 0,
+            "WHEAT": 12,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 46,
+            "FERTILIZER": 28,
+            "MELON": 146,
+            "MILK": 220,
+            "STRAWBERRY": 195,
+            "TOMATO": 69,
+            "WHEAT": 46,
+            "WOOL": 227
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 26,
+          "cash": 128135.0,
+          "assets": {
+            "WHEAT": 36,
+            "STRAWBERRY": 15,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 4
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 3,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 30,
+            "TOMATO": 0,
+            "WHEAT": 29,
+            "WOOL": 4
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 47,
+            "FERTILIZER": 27,
+            "MELON": 122,
+            "MILK": 208,
+            "STRAWBERRY": 190,
+            "TOMATO": 70,
+            "WHEAT": 47,
+            "WOOL": 228
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 27,
+          "cash": 138116.0,
+          "assets": {
+            "WHEAT": 36,
+            "STRAWBERRY": 15,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 4
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 2,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 31,
+            "TOMATO": 0,
+            "WHEAT": 45,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 27,
+            "MELON": 125,
+            "MILK": 198,
+            "STRAWBERRY": 189,
+            "TOMATO": 71,
+            "WHEAT": 47,
+            "WOOL": 214
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 28,
+          "cash": 147317.0,
+          "assets": {
+            "WHEAT": 40,
+            "STRAWBERRY": 11,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 26,
+            "TOMATO": 0,
+            "WHEAT": 42,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 25,
+            "MELON": 127,
+            "MILK": 196,
+            "STRAWBERRY": 183,
+            "TOMATO": 72,
+            "WHEAT": 46,
+            "WOOL": 199
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 29,
+          "cash": 155924.0,
+          "assets": {
+            "WHEAT": 38,
+            "STRAWBERRY": 6,
+            "COW": 14,
+            "SHEEP": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 1,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 33,
+            "TOMATO": 0,
+            "WHEAT": 51,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 23,
+            "MELON": 129,
+            "MILK": 154,
+            "STRAWBERRY": 178,
+            "TOMATO": 73,
+            "WHEAT": 46,
+            "WOOL": 200
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 30,
+          "cash": 167596.0,
+          "assets": {
+            "WHEAT": 21,
+            "STRAWBERRY": 4,
+            "COW": 14
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 6,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 10,
+            "TOMATO": 0,
+            "WHEAT": 39,
+            "WOOL": 4
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 22,
+            "MELON": 131,
+            "MILK": 169,
+            "STRAWBERRY": 178,
+            "TOMATO": 73,
+            "WHEAT": 44,
+            "WOOL": 183
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        }
+      ],
+      "seed_purchases": [
+        {
+          "step": 6,
+          "day": 1,
+          "turn": 7,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 8,
+          "day": 1,
+          "turn": 9,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 11,
+          "day": 1,
+          "turn": 12,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 13,
+          "day": 1,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 2,
+          "cost": 20
+        },
+        {
+          "step": 14,
+          "day": 1,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 15,
+          "day": 1,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 16,
+          "day": 1,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 17,
+          "day": 1,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 18,
+          "day": 1,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 19,
+          "day": 1,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 20,
+          "day": 1,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 21,
+          "day": 1,
+          "turn": 22,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 31,
+          "day": 2,
+          "turn": 8,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 34,
+          "day": 2,
+          "turn": 11,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 56,
+          "day": 3,
+          "turn": 9,
+          "item": "MELON_SEED",
+          "qty": 1,
+          "cost": 80
+        },
+        {
+          "step": 58,
+          "day": 3,
+          "turn": 11,
+          "item": "MELON_SEED",
+          "qty": 1,
+          "cost": 80
+        },
+        {
+          "step": 60,
+          "day": 3,
+          "turn": 13,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 61,
+          "day": 3,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 83,
+          "day": 4,
+          "turn": 12,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 85,
+          "day": 4,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 86,
+          "day": 4,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 89,
+          "day": 4,
+          "turn": 18,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 106,
+          "day": 5,
+          "turn": 11,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 110,
+          "day": 5,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 128,
+          "day": 6,
+          "turn": 9,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 153,
+          "day": 7,
+          "turn": 10,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 154,
+          "day": 7,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 154,
+          "day": 7,
+          "turn": 11,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 156,
+          "day": 7,
+          "turn": 13,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 157,
+          "day": 7,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 158,
+          "day": 7,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 159,
+          "day": 7,
+          "turn": 16,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 160,
+          "day": 7,
+          "turn": 17,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 161,
+          "day": 7,
+          "turn": 18,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 162,
+          "day": 7,
+          "turn": 19,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 163,
+          "day": 7,
+          "turn": 20,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 164,
+          "day": 7,
+          "turn": 21,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 174,
+          "day": 8,
+          "turn": 7,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 179,
+          "day": 8,
+          "turn": 12,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 180,
+          "day": 8,
+          "turn": 13,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 181,
+          "day": 8,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 182,
+          "day": 8,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 198,
+          "day": 9,
+          "turn": 7,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 228,
+          "day": 10,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 229,
+          "day": 10,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 230,
+          "day": 10,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 231,
+          "day": 10,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 232,
+          "day": 10,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 233,
+          "day": 10,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 234,
+          "day": 10,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 235,
+          "day": 10,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 237,
+          "day": 10,
+          "turn": 22,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 251,
+          "day": 11,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 251,
+          "day": 11,
+          "turn": 12,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 254,
+          "day": 11,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 256,
+          "day": 11,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 256,
+          "day": 11,
+          "turn": 17,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 257,
+          "day": 11,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 257,
+          "day": 11,
+          "turn": 18,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 258,
+          "day": 11,
+          "turn": 19,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 259,
+          "day": 11,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 259,
+          "day": 11,
+          "turn": 20,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 271,
+          "day": 12,
+          "turn": 8,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 274,
+          "day": 12,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 275,
+          "day": 12,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 276,
+          "day": 12,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 277,
+          "day": 12,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 277,
+          "day": 12,
+          "turn": 14,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 278,
+          "day": 12,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 278,
+          "day": 12,
+          "turn": 15,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 279,
+          "day": 12,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 279,
+          "day": 12,
+          "turn": 16,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 280,
+          "day": 12,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 281,
+          "day": 12,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 282,
+          "day": 12,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 283,
+          "day": 12,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 284,
+          "day": 12,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 289,
+          "day": 13,
+          "turn": 2,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 295,
+          "day": 13,
+          "turn": 8,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 299,
+          "day": 13,
+          "turn": 12,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 300,
+          "day": 13,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 301,
+          "day": 13,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 302,
+          "day": 13,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 303,
+          "day": 13,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 304,
+          "day": 13,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 305,
+          "day": 13,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 306,
+          "day": 13,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 307,
+          "day": 13,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 322,
+          "day": 14,
+          "turn": 11,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 323,
+          "day": 14,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 324,
+          "day": 14,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 325,
+          "day": 14,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 326,
+          "day": 14,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 327,
+          "day": 14,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 332,
+          "day": 14,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 342,
+          "day": 15,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 348,
+          "day": 15,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 349,
+          "day": 15,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 353,
+          "day": 15,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 354,
+          "day": 15,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 372,
+          "day": 16,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 373,
+          "day": 16,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 377,
+          "day": 16,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 378,
+          "day": 16,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 390,
+          "day": 17,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 398,
+          "day": 17,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 399,
+          "day": 17,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 404,
+          "day": 17,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 414,
+          "day": 18,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 420,
+          "day": 18,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 423,
+          "day": 18,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 424,
+          "day": 18,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 425,
+          "day": 18,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 444,
+          "day": 19,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 447,
+          "day": 19,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 449,
+          "day": 19,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 450,
+          "day": 19,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 452,
+          "day": 19,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 462,
+          "day": 20,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 467,
+          "day": 20,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 468,
+          "day": 20,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 469,
+          "day": 20,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 471,
+          "day": 20,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 472,
+          "day": 20,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 473,
+          "day": 20,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 474,
+          "day": 20,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 475,
+          "day": 20,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 476,
+          "day": 20,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 486,
+          "day": 21,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 492,
+          "day": 21,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 493,
+          "day": 21,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 495,
+          "day": 21,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 496,
+          "day": 21,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 497,
+          "day": 21,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 498,
+          "day": 21,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 499,
+          "day": 21,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 514,
+          "day": 22,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 519,
+          "day": 22,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 520,
+          "day": 22,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 521,
+          "day": 22,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 523,
+          "day": 22,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 524,
+          "day": 22,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 542,
+          "day": 23,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 543,
+          "day": 23,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 547,
+          "day": 23,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 548,
+          "day": 23,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 558,
+          "day": 24,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 563,
+          "day": 24,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 564,
+          "day": 24,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 565,
+          "day": 24,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 566,
+          "day": 24,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 567,
+          "day": 24,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 568,
+          "day": 24,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 569,
+          "day": 24,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 570,
+          "day": 24,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 571,
+          "day": 24,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 572,
+          "day": 24,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 581,
+          "day": 25,
+          "turn": 6,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 585,
+          "day": 25,
+          "turn": 10,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 586,
+          "day": 25,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 587,
+          "day": 25,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 588,
+          "day": 25,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 589,
+          "day": 25,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 590,
+          "day": 25,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 591,
+          "day": 25,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 592,
+          "day": 25,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 593,
+          "day": 25,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 594,
+          "day": 25,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 595,
+          "day": 25,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 608,
+          "day": 26,
+          "turn": 9,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 609,
+          "day": 26,
+          "turn": 10,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 610,
+          "day": 26,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 613,
+          "day": 26,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 614,
+          "day": 26,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 615,
+          "day": 26,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 616,
+          "day": 26,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 617,
+          "day": 26,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 618,
+          "day": 26,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 619,
+          "day": 26,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 620,
+          "day": 26,
+          "turn": 21,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 630,
+          "day": 27,
+          "turn": 7,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 631,
+          "day": 27,
+          "turn": 8,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 635,
+          "day": 27,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 636,
+          "day": 27,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 637,
+          "day": 27,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 638,
+          "day": 27,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 639,
+          "day": 27,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 640,
+          "day": 27,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 641,
+          "day": 27,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 642,
+          "day": 27,
+          "turn": 19,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 643,
+          "day": 27,
+          "turn": 20,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 657,
+          "day": 28,
+          "turn": 10,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 658,
+          "day": 28,
+          "turn": 11,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 659,
+          "day": 28,
+          "turn": 12,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 660,
+          "day": 28,
+          "turn": 13,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 661,
+          "day": 28,
+          "turn": 14,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 662,
+          "day": 28,
+          "turn": 15,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 663,
+          "day": 28,
+          "turn": 16,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 664,
+          "day": 28,
+          "turn": 17,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 665,
+          "day": 28,
+          "turn": 18,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        }
+      ],
+      "sales_examples": [
+        {
+          "step": 150,
+          "day": 7,
+          "turn": 7,
+          "orders": [
+            [
+              "SELL",
+              "WOOL",
+              6
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "WOOL",
+              6
+            ],
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              4
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 6
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 1,
+            "EGG": 0,
+            "FERTILIZER": 3,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 4,
+            "WOOL": 6
+          },
+          "prices_before": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 88,
+            "MELON": 268,
+            "MILK": 207,
+            "STRAWBERRY": 165,
+            "TOMATO": 61,
+            "WHEAT": 29,
+            "WOOL": 206
+          },
+          "cash_before": 999.0,
+          "cash_after": 1687.0
+        },
+        {
+          "step": 227,
+          "day": 10,
+          "turn": 12,
+          "orders": [
+            [
+              "SELL",
+              "WOOL",
+              4
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              1
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "WOOL",
+              4
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              1
+            ],
+            [
+              "BUY_LAND"
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              4
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 1,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 6,
+            "WOOL": 4
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 1,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 8,
+            "WOOL": 0
+          },
+          "prices_before": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 74,
+            "MELON": 271,
+            "MILK": 216,
+            "STRAWBERRY": 192,
+            "TOMATO": 61,
+            "WHEAT": 36,
+            "WOOL": 181
+          },
+          "cash_before": 1427.0,
+          "cash_after": 68.0
+        },
+        {
+          "step": 250,
+          "day": 11,
+          "turn": 11,
+          "orders": [
+            [
+              "SELL",
+              "MELON",
+              6
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "MELON",
+              6
+            ],
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              36
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 7,
+            "WOOL": 0
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 1,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 37,
+            "WOOL": 0
+          },
+          "prices_before": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 69,
+            "MELON": 272,
+            "MILK": 228,
+            "STRAWBERRY": 201,
+            "TOMATO": 61,
+            "WHEAT": 38,
+            "WOOL": 141
+          },
+          "cash_before": 26.0,
+          "cash_after": 11.0
+        },
+        {
+          "step": 251,
+          "day": 11,
+          "turn": 12,
+          "orders": [
+            [
+              "SELL",
+              "MELON",
+              6
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "MELON",
+              6
+            ],
+            [
+              "BUY_SEED",
+              "WHEAT",
+              1
+            ],
+            [
+              "BUY_SEED",
+              "STRAWBERRY",
+              1
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 1,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 37,
+            "WOOL": 0
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 37,
+            "WOOL": 0
+          },
+          "prices_before": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 69,
+            "MELON": 266,
+            "MILK": 228,
+            "STRAWBERRY": 201,
+            "TOMATO": 61,
+            "WHEAT": 39,
+            "WOOL": 141
+          },
+          "cash_before": 11.0,
+          "cash_after": 1459.0
+        },
+        {
+          "step": 358,
+          "day": 15,
+          "turn": 23,
+          "orders": [
+            [
+              "SELL",
+              "MELON",
+              40
+            ],
+            [
+              "SELL",
+              "MILK",
+              5
+            ],
+            [
+              "SELL",
+              "WHEAT",
+              3
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "MELON",
+              40
+            ],
+            [
+              "SELL",
+              "MILK",
+              5
+            ],
+            [
+              "SELL",
+              "WHEAT",
+              3
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 40,
+            "MILK": 25,
+            "SHEEP": 0,
+            "STRAWBERRY": 6,
+            "TOMATO": 0,
+            "WHEAT": 3,
+            "WOOL": 16
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 20,
+            "SHEEP": 0,
+            "STRAWBERRY": 6,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 16
+          },
+          "prices_before": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 49,
+            "MELON": 247,
+            "MILK": 245,
+            "STRAWBERRY": 237,
+            "TOMATO": 62,
+            "WHEAT": 42,
+            "WOOL": 88
+          },
+          "cash_before": 11563.0,
+          "cash_after": 22326.0
+        },
+        {
+          "step": 441,
+          "day": 19,
+          "turn": 10,
+          "orders": [
+            [
+              "SELL",
+              "STRAWBERRY",
+              8
+            ],
+            [
+              "SELL",
+              "MILK",
+              6
+            ],
+            [
+              "SELL",
+              "WOOL",
+              2
+            ]
+          ],
+          "all_orders": [
+            [
+              "SELL",
+              "STRAWBERRY",
+              8
+            ],
+            [
+              "SELL",
+              "MILK",
+              6
+            ],
+            [
+              "SELL",
+              "WOOL",
+              2
+            ]
+          ],
+          "old_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 6,
+            "SHEEP": 0,
+            "STRAWBERRY": 8,
+            "TOMATO": 0,
+            "WHEAT": 21,
+            "WOOL": 31
+          },
+          "new_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 21,
+            "WOOL": 29
+          },
+          "prices_before": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 38,
+            "MELON": 222,
+            "MILK": 216,
+            "STRAWBERRY": 231,
+            "TOMATO": 63,
+            "WHEAT": 44,
+            "WOOL": 209
+          },
+          "cash_before": 51602.0,
+          "cash_after": 55143.0
+        }
+      ],
+      "verified_product_losses_without_sales_or_harvest": [
+        {
+          "decision": 335,
+          "day": 14,
+          "turn": 24,
+          "item": "STRAWBERRY",
+          "quantity": 2
+        },
+        {
+          "decision": 346,
+          "day": 15,
+          "turn": 11,
+          "item": "MILK",
+          "quantity": 5
+        },
+        {
+          "decision": 348,
+          "day": 15,
+          "turn": 13,
+          "item": "MILK",
+          "quantity": 1
+        }
+      ],
+      "day15_animal_distance_to_nearest_shed_access": {
+        "count": 17,
+        "mean_manhattan_moves": 1.411764705882353,
+        "max_moves": 3
+      }
+    },
+    {
+      "player": "M & M & P & Q",
+      "seat": 1,
+      "opponent": "Majkel1337",
+      "cash": [
+        178462.0,
+        169087.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "margin": -9375.0,
+      "peak_productive": 100,
+      "peak_by_type_not_simultaneous": {
+        "WHEAT": 38,
+        "SHEEP": 7,
+        "COW": 12,
+        "CARROT": 6,
+        "GOOSE": 2,
+        "STRAWBERRY": 53,
+        "MELON": 18,
+        "TOMATO": 9
+      },
+      "confirmed_planted": {
+        "WHEAT": 159,
+        "CARROT": 11,
+        "STRAWBERRY": 57,
+        "MELON": 29,
+        "TOMATO": 11
+      },
+      "land": [
+        {
+          "decision_step": 168,
+          "quadrants": 2
+        },
+        {
+          "decision_step": 216,
+          "quadrants": 3
+        },
+        {
+          "decision_step": 312,
+          "quadrants": 4
+        }
+      ],
+      "accepted_hires_by_day": {
+        "0": 3,
+        "1": 2,
+        "2": 3,
+        "3": 5,
+        "4": 4,
+        "5": 5,
+        "6": 4,
+        "7": 8,
+        "8": 6,
+        "9": 12,
+        "10": 8,
+        "11": 10,
+        "12": 8,
+        "13": 11,
+        "14": 10,
+        "15": 11,
+        "16": 12,
+        "17": 11,
+        "18": 9,
+        "19": 12,
+        "20": 12,
+        "21": 12,
+        "22": 12,
+        "23": 13,
+        "24": 12,
+        "25": 12,
+        "26": 11,
+        "27": 11,
+        "28": 10,
+        "29": 14
+      },
+      "confirmed_wages": 6510,
+      "requested_orders_not_fills": {
+        "BUY_SEED:WHEAT": 159,
+        "BUY_SEED:CARROT": 11,
+        "BUY_ANIMAL:COW": 12,
+        "BUY_ANIMAL:SHEEP": 8,
+        "HIRE": 273,
+        "BUY_PRODUCT:WHEAT": 90,
+        "SELL:FERTILIZER": 228,
+        "BUY_ANIMAL:GOOSE": 2,
+        "SELL:WHEAT": 435,
+        "BUY_SEED:STRAWBERRY": 57,
+        "SELL:CARROT": 28,
+        "BUY_SEED:MELON": 29,
+        "SELL:WOOL": 135,
+        "SELL:EGG": 35,
+        "BUY_LAND": 3,
+        "SELL:MILK": 356,
+        "BUY_SEED:TOMATO": 11,
+        "SELL:STRAWBERRY": 270,
+        "SELL:MELON": 96,
+        "BUY_PRODUCT:FERTILIZER": 19,
+        "SELL:TOMATO": 60
+      },
+      "requested_operations": {
+        "PASS": 387,
+        "PICKUP": 200,
+        "WEST": 778,
+        "NORTH": 830,
+        "BUILD_PASTURE": 19,
+        "PLANT": 267,
+        "PLACE": 22,
+        "WATER": 1163,
+        "SOUTH": 570,
+        "EAST": 608,
+        "FEED": 394,
+        "CARE": 372,
+        "COLLECT_FERTILIZER": 430,
+        "DROP": 70,
+        "HARVEST": 456,
+        "BUILD_COOP": 2,
+        "FERTILIZE": 221,
+        "DIG": 57
+      },
+      "terminal_shed": {
+        "CARROT": 0,
+        "COW": 0,
+        "EGG": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "MELON": 0,
+        "MILK": 0,
+        "SHEEP": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0,
+        "WOOL": 0
+      },
+      "terminal_carries": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "terminal_seeds": {
+        "CARROT": 0,
+        "MELON": 0,
+        "STRAWBERRY": 0,
+        "TOMATO": 0,
+        "WHEAT": 0
+      },
+      "town": {
+        "unlocked_shops": [
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "SMOOTHIE_SHOP",
+          "YARN_STORE",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "BAKERY"
+        ]
+      },
+      "costs": {
+        "seeds": 10380,
+        "animals": 9400,
+        "land": 7000,
+        "wages": 6510,
+        "net_product_receipts_residual": 199377.0
+      },
+      "accepted_fixed_purchases": {
+        "SEED:WHEAT": 159,
+        "SEED:CARROT": 11,
+        "ANIMAL:COW": 12,
+        "ANIMAL:SHEEP": 8,
+        "ANIMAL:GOOSE": 2,
+        "SEED:STRAWBERRY": 57,
+        "SEED:MELON": 29,
+        "SEED:TOMATO": 11
+      },
+      "night_maintenance": {
+        "animal_nights": 470,
+        "unfed": 76,
+        "cared_and_fed": 372
+      },
+      "production": {
+        "animal_events": 168,
+        "animal_unfed_events": 8,
+        "animal_zero_care_bonus_events": 9,
+        "banked_bonus_lost_on_unfed_events": 6,
+        "berry_events": 136,
+        "berry_bonus_events": 134,
+        "berry_unwatered_events": 0
+      },
+      "harvest": {
+        "WHEAT": 739,
+        "CARROT": 28,
+        "WOOL": 135,
+        "EGG": 35,
+        "MILK": 356,
+        "STRAWBERRY": 270,
+        "MELON": 96,
+        "TOMATO": 60
+      },
+      "reversal_pairs": 0,
+      "installations": [
+        {
+          "step": 4,
+          "site": [
+            4,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 9,
+          "site": [
+            2,
+            4
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 16,
+          "site": [
+            1,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 17,
+          "site": [
+            4,
+            1
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 20,
+          "site": [
+            1,
+            0
+          ],
+          "animal": "COW",
+          "placed_day": 0,
+          "first_day": 8
+        },
+        {
+          "step": 23,
+          "site": [
+            2,
+            1
+          ],
+          "animal": "SHEEP",
+          "placed_day": 0,
+          "first_day": 6
+        },
+        {
+          "step": 56,
+          "site": [
+            4,
+            2
+          ],
+          "animal": "GOOSE",
+          "placed_day": 2,
+          "first_day": 6
+        },
+        {
+          "step": 84,
+          "site": [
+            1,
+            1
+          ],
+          "animal": "COW",
+          "placed_day": 3,
+          "first_day": 11
+        },
+        {
+          "step": 107,
+          "site": [
+            0,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 4,
+          "first_day": 12
+        },
+        {
+          "step": 109,
+          "site": [
+            1,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 4,
+          "first_day": 12
+        },
+        {
+          "step": 126,
+          "site": [
+            3,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 5,
+          "first_day": 11
+        },
+        {
+          "step": 130,
+          "site": [
+            4,
+            0
+          ],
+          "animal": "SHEEP",
+          "placed_day": 5,
+          "first_day": 11
+        },
+        {
+          "step": 151,
+          "site": [
+            3,
+            3
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 156,
+          "site": [
+            2,
+            0
+          ],
+          "animal": "COW",
+          "placed_day": 6,
+          "first_day": 14
+        },
+        {
+          "step": 176,
+          "site": [
+            5,
+            1
+          ],
+          "animal": "COW",
+          "placed_day": 7,
+          "first_day": 15
+        },
+        {
+          "step": 212,
+          "site": [
+            0,
+            0
+          ],
+          "animal": "GOOSE",
+          "placed_day": 8,
+          "first_day": 12
+        },
+        {
+          "step": 225,
+          "site": [
+            5,
+            2
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 235,
+          "site": [
+            1,
+            7
+          ],
+          "animal": "COW",
+          "placed_day": 9,
+          "first_day": 17
+        },
+        {
+          "step": 364,
+          "site": [
+            4,
+            4
+          ],
+          "animal": "SHEEP",
+          "placed_day": 15,
+          "first_day": 21
+        },
+        {
+          "step": 373,
+          "site": [
+            8,
+            1
+          ],
+          "animal": "SHEEP",
+          "placed_day": 15,
+          "first_day": 21
+        },
+        {
+          "step": 381,
+          "site": [
+            9,
+            0
+          ],
+          "animal": "SHEEP",
+          "placed_day": 15,
+          "first_day": 21
+        },
+        {
+          "step": 417,
+          "site": [
+            5,
+            7
+          ],
+          "animal": "SHEEP",
+          "placed_day": 17,
+          "first_day": 23
+        }
+      ],
+      "too_late_for_first_production": [],
+      "crop_weed_events": [
+        {
+          "step": 335,
+          "site": [
+            5,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            6,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            7,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            1,
+            6
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            2,
+            6
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            4,
+            6
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            3,
+            7
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            4,
+            7
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 335,
+          "site": [
+            4,
+            8
+          ],
+          "crop": "STRAWBERRY",
+          "age": 4,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 359,
+          "site": [
+            7,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 5,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 359,
+          "site": [
+            9,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 5,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            8,
+            7
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            6,
+            8
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            9,
+            8
+          ],
+          "crop": "STRAWBERRY",
+          "age": 2,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            5,
+            9
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            6,
+            9
+          ],
+          "crop": "STRAWBERRY",
+          "age": 2,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            7,
+            9
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 383,
+          "site": [
+            9,
+            9
+          ],
+          "crop": "STRAWBERRY",
+          "age": 2,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 407,
+          "site": [
+            6,
+            1
+          ],
+          "crop": "TOMATO",
+          "age": 2,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 407,
+          "site": [
+            8,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 7,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 407,
+          "site": [
+            2,
+            6
+          ],
+          "crop": "TOMATO",
+          "age": 2,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 431,
+          "site": [
+            7,
+            1
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 431,
+          "site": [
+            9,
+            3
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 431,
+          "site": [
+            4,
+            7
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 431,
+          "site": [
+            7,
+            8
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 455,
+          "site": [
+            9,
+            5
+          ],
+          "crop": "STRAWBERRY",
+          "age": 5,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 455,
+          "site": [
+            9,
+            6
+          ],
+          "crop": "STRAWBERRY",
+          "age": 5,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 455,
+          "site": [
+            9,
+            8
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 455,
+          "site": [
+            0,
+            9
+          ],
+          "crop": "STRAWBERRY",
+          "age": 6,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 479,
+          "site": [
+            6,
+            1
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 479,
+          "site": [
+            9,
+            2
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 479,
+          "site": [
+            8,
+            3
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 479,
+          "site": [
+            7,
+            6
+          ],
+          "crop": "MELON",
+          "age": 2,
+          "units": 1,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 480,
+          "site": [
+            3,
+            2
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 504,
+          "site": [
+            3,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 504,
+          "site": [
+            3,
+            1
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 527,
+          "site": [
+            7,
+            0
+          ],
+          "crop": "STRAWBERRY",
+          "age": 11,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 527,
+          "site": [
+            8,
+            4
+          ],
+          "crop": "STRAWBERRY",
+          "age": 11,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 528,
+          "site": [
+            2,
+            3
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 599,
+          "site": [
+            3,
+            5
+          ],
+          "crop": "STRAWBERRY",
+          "age": 15,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 599,
+          "site": [
+            4,
+            5
+          ],
+          "crop": "STRAWBERRY",
+          "age": 15,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 599,
+          "site": [
+            3,
+            7
+          ],
+          "crop": "TOMATO",
+          "age": 10,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 623,
+          "site": [
+            1,
+            8
+          ],
+          "crop": "STRAWBERRY",
+          "age": 13,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 623,
+          "site": [
+            2,
+            8
+          ],
+          "crop": "STRAWBERRY",
+          "age": 13,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 624,
+          "site": [
+            1,
+            6
+          ],
+          "crop": "TOMATO",
+          "age": 12,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 624,
+          "site": [
+            4,
+            6
+          ],
+          "crop": "TOMATO",
+          "age": 12,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 696,
+          "site": [
+            4,
+            3
+          ],
+          "crop": "TOMATO",
+          "age": 12,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 696,
+          "site": [
+            1,
+            5
+          ],
+          "crop": "STRAWBERRY",
+          "age": 17,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        },
+        {
+          "step": 696,
+          "site": [
+            7,
+            5
+          ],
+          "crop": "TOMATO",
+          "age": 12,
+          "units": 0,
+          "unwatered": 1,
+          "watered": false
+        }
+      ],
+      "movement_share": 0.4069529652351738,
+      "duplicate_extra_commands": {},
+      "sale_decisions": 74,
+      "sale_decision_hour": {
+        "7": 1,
+        "24": 15,
+        "22": 4,
+        "1": 19,
+        "9": 2,
+        "18": 1,
+        "20": 3,
+        "16": 1,
+        "2": 9,
+        "21": 2,
+        "23": 11,
+        "8": 2,
+        "11": 1,
+        "19": 1,
+        "14": 2
+      },
+      "sale_decision_mod4": {
+        "2": 14,
+        "3": 21,
+        "1": 16,
+        "0": 23
+      },
+      "fertilize_commands_by_crop": {
+        "WHEAT": 118,
+        "STRAWBERRY": 76,
+        "MELON": 13,
+        "TOMATO": 13,
+        "CARROT": 1
+      },
+      "partial_deposit_commands": {},
+      "berry_seed_waits_fifo": {
+        "count": 57,
+        "median_turns": 11,
+        "max_turns": 22,
+        "note": "Fungible seeds matched FIFO, not individual seed identity. Rival has an immediate newborn loss outside this matched list."
+      },
+      "daily": [
+        {
+          "day": 1,
+          "cash": 3000.0,
+          "assets": {},
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 100,
+            "MELON": 250,
+            "MILK": 160,
+            "STRAWBERRY": 120,
+            "TOMATO": 60,
+            "WHEAT": 25,
+            "WOOL": 200
+          },
+          "shops": []
+        },
+        {
+          "day": 2,
+          "cash": 206.0,
+          "assets": {
+            "WHEAT": 15,
+            "COW": 4,
+            "SHEEP": 2,
+            "CARROT": 2
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 100,
+            "MELON": 256,
+            "MILK": 169,
+            "STRAWBERRY": 128,
+            "TOMATO": 60,
+            "WHEAT": 27,
+            "WOOL": 206
+          },
+          "shops": []
+        },
+        {
+          "day": 3,
+          "cash": 629.0,
+          "assets": {
+            "WHEAT": 15,
+            "COW": 4,
+            "SHEEP": 2,
+            "CARROT": 2
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 98,
+            "MELON": 260,
+            "MILK": 172,
+            "STRAWBERRY": 132,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 209
+          },
+          "shops": []
+        },
+        {
+          "day": 4,
+          "cash": 691.0,
+          "assets": {
+            "WHEAT": 12,
+            "COW": 4,
+            "CARROT": 6,
+            "SHEEP": 2,
+            "GOOSE": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 2,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 2,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 96,
+            "MELON": 262,
+            "MILK": 175,
+            "STRAWBERRY": 135,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 212
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 5,
+          "cash": 1249.0,
+          "assets": {
+            "WHEAT": 11,
+            "COW": 5,
+            "CARROT": 4,
+            "SHEEP": 2,
+            "STRAWBERRY": 2,
+            "GOOSE": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 2,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 94,
+            "MELON": 264,
+            "MILK": 187,
+            "STRAWBERRY": 147,
+            "TOMATO": 60,
+            "WHEAT": 29,
+            "WOOL": 214
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 6,
+          "cash": 942.0,
+          "assets": {
+            "WHEAT": 9,
+            "COW": 7,
+            "STRAWBERRY": 4,
+            "SHEEP": 2,
+            "MELON": 1,
+            "GOOSE": 1,
+            "CARROT": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 6,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 3,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 13,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 50,
+            "FERTILIZER": 91,
+            "MELON": 266,
+            "MILK": 196,
+            "STRAWBERRY": 155,
+            "TOMATO": 61,
+            "WHEAT": 29,
+            "WOOL": 215
+          },
+          "shops": [
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 7,
+          "cash": 1438.0,
+          "assets": {
+            "WHEAT": 5,
+            "COW": 7,
+            "STRAWBERRY": 7,
+            "SHEEP": 4,
+            "MELON": 1,
+            "GOOSE": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 88,
+            "MELON": 267,
+            "MILK": 203,
+            "STRAWBERRY": 161,
+            "TOMATO": 61,
+            "WHEAT": 28,
+            "WOOL": 217
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 8,
+          "cash": 1976.0,
+          "assets": {
+            "WHEAT": 2,
+            "COW": 9,
+            "STRAWBERRY": 8,
+            "SHEEP": 4,
+            "MELON": 1,
+            "GOOSE": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 1,
+            "WOOL": 5
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 86,
+            "MELON": 268,
+            "MILK": 213,
+            "STRAWBERRY": 171,
+            "TOMATO": 61,
+            "WHEAT": 30,
+            "WOOL": 185
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 9,
+          "cash": 1335.0,
+          "assets": {
+            "WHEAT": 15,
+            "COW": 10,
+            "STRAWBERRY": 17,
+            "SHEEP": 4,
+            "MELON": 3,
+            "GOOSE": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 5,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 81,
+            "MELON": 269,
+            "MILK": 221,
+            "STRAWBERRY": 179,
+            "TOMATO": 61,
+            "WHEAT": 32,
+            "WOOL": 177
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 10,
+          "cash": 5941.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 10,
+            "STRAWBERRY": 17,
+            "SHEEP": 4,
+            "WHEAT": 14,
+            "MELON": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 4,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 5,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 75,
+            "MELON": 270,
+            "MILK": 209,
+            "STRAWBERRY": 187,
+            "TOMATO": 61,
+            "WHEAT": 35,
+            "WOOL": 179
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 11,
+          "cash": 1623.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 31,
+            "SHEEP": 4,
+            "WHEAT": 14,
+            "MELON": 11,
+            "CARROT": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 8,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 11,
+            "WOOL": 4
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 72,
+            "MELON": 271,
+            "MILK": 222,
+            "STRAWBERRY": 196,
+            "TOMATO": 61,
+            "WHEAT": 37,
+            "WOOL": 151
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 12,
+          "cash": 5121.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 33,
+            "SHEEP": 4,
+            "WHEAT": 12,
+            "MELON": 11,
+            "CARROT": 1
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 8,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 66,
+            "MELON": 246,
+            "MILK": 228,
+            "STRAWBERRY": 204,
+            "TOMATO": 61,
+            "WHEAT": 39,
+            "WOOL": 141
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP"
+          ]
+        },
+        {
+          "day": 13,
+          "cash": 6736.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 33,
+            "SHEEP": 4,
+            "WHEAT": 13,
+            "MELON": 11
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 2,
+            "FERTILIZER": 13,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 9,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 16,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 32,
+            "EGG": 50,
+            "FERTILIZER": 63,
+            "MELON": 246,
+            "MILK": 237,
+            "STRAWBERRY": 212,
+            "TOMATO": 61,
+            "WHEAT": 40,
+            "WOOL": 102
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 14,
+          "cash": 8630.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 37,
+            "SHEEP": 4,
+            "WHEAT": 9,
+            "MELON": 11
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 5,
+            "FERTILIZER": 11,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 30,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 32,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 57,
+            "MELON": 246,
+            "MILK": 246,
+            "STRAWBERRY": 221,
+            "TOMATO": 62,
+            "WHEAT": 41,
+            "WOOL": 93
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 15,
+          "cash": 10859.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 44,
+            "SHEEP": 4,
+            "WHEAT": 14,
+            "MELON": 15
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 5,
+            "FERTILIZER": 15,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 3,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 3
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 53,
+            "MELON": 247,
+            "MILK": 242,
+            "STRAWBERRY": 230,
+            "TOMATO": 62,
+            "WHEAT": 41,
+            "WOOL": 98
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP"
+          ]
+        },
+        {
+          "day": 16,
+          "cash": 11445.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 42,
+            "SHEEP": 3,
+            "WHEAT": 14,
+            "TOMATO": 5,
+            "MELON": 14
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 13,
+            "FERTILIZER": 13,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 30,
+            "SHEEP": 0,
+            "STRAWBERRY": 4,
+            "TOMATO": 0,
+            "WHEAT": 1,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 50,
+            "FERTILIZER": 49,
+            "MELON": 218,
+            "MILK": 243,
+            "STRAWBERRY": 237,
+            "TOMATO": 62,
+            "WHEAT": 42,
+            "WOOL": 88
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 17,
+          "cash": 17000.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 39,
+            "SHEEP": 6,
+            "WHEAT": 12,
+            "TOMATO": 5,
+            "MELON": 14,
+            "CARROT": 2
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 15,
+            "FERTILIZER": 13,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 9,
+            "SHEEP": 0,
+            "STRAWBERRY": 6,
+            "TOMATO": 0,
+            "WHEAT": 33,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 50,
+            "FERTILIZER": 47,
+            "MELON": 219,
+            "MILK": 238,
+            "STRAWBERRY": 242,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 144
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 18,
+          "cash": 20638.0,
+          "assets": {
+            "GOOSE": 2,
+            "COW": 12,
+            "STRAWBERRY": 42,
+            "SHEEP": 6,
+            "WHEAT": 13,
+            "MELON": 15,
+            "CARROT": 2,
+            "TOMATO": 3
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 21,
+            "FERTILIZER": 14,
+            "GOOSE": 0,
+            "MELON": 6,
+            "MILK": 24,
+            "SHEEP": 0,
+            "STRAWBERRY": 14,
+            "TOMATO": 0,
+            "WHEAT": 10,
+            "WOOL": 6
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 45,
+            "MELON": 220,
+            "MILK": 223,
+            "STRAWBERRY": 239,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 181
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE"
+          ]
+        },
+        {
+          "day": 19,
+          "cash": 29275.0,
+          "assets": {
+            "COW": 12,
+            "STRAWBERRY": 42,
+            "SHEEP": 7,
+            "WHEAT": 13,
+            "MELON": 13,
+            "CARROT": 2,
+            "TOMATO": 5
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 2,
+            "FERTILIZER": 14,
+            "GOOSE": 0,
+            "MELON": 18,
+            "MILK": 9,
+            "SHEEP": 0,
+            "STRAWBERRY": 24,
+            "TOMATO": 0,
+            "WHEAT": 22,
+            "WOOL": 6
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 41,
+            "MELON": 221,
+            "MILK": 220,
+            "STRAWBERRY": 236,
+            "TOMATO": 62,
+            "WHEAT": 43,
+            "WOOL": 199
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 20,
+          "cash": 37413.0,
+          "assets": {
+            "WHEAT": 19,
+            "COW": 12,
+            "STRAWBERRY": 39,
+            "SHEEP": 7,
+            "MELON": 12,
+            "TOMATO": 5
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 6,
+            "COW": 0,
+            "EGG": 2,
+            "FERTILIZER": 15,
+            "GOOSE": 0,
+            "MELON": 18,
+            "MILK": 27,
+            "SHEEP": 0,
+            "STRAWBERRY": 4,
+            "TOMATO": 0,
+            "WHEAT": 14,
+            "WOOL": 6
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 38,
+            "MELON": 222,
+            "MILK": 214,
+            "STRAWBERRY": 226,
+            "TOMATO": 63,
+            "WHEAT": 44,
+            "WOOL": 217
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 21,
+          "cash": 49640.0,
+          "assets": {
+            "WHEAT": 19,
+            "COW": 12,
+            "STRAWBERRY": 38,
+            "SHEEP": 7,
+            "TOMATO": 9,
+            "MELON": 6
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 3,
+            "COW": 0,
+            "EGG": 2,
+            "FERTILIZER": 10,
+            "GOOSE": 0,
+            "MELON": 60,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 6,
+            "TOMATO": 0,
+            "WHEAT": 10,
+            "WOOL": 9
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 45,
+            "FERTILIZER": 34,
+            "MELON": 223,
+            "MILK": 204,
+            "STRAWBERRY": 219,
+            "TOMATO": 64,
+            "WHEAT": 45,
+            "WOOL": 223
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 22,
+          "cash": 57576.0,
+          "assets": {
+            "WHEAT": 21,
+            "COW": 12,
+            "STRAWBERRY": 37,
+            "SHEEP": 7,
+            "TOMATO": 9,
+            "MELON": 6
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 16,
+            "GOOSE": 0,
+            "MELON": 25,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 10,
+            "TOMATO": 0,
+            "WHEAT": 18,
+            "WOOL": 15
+          },
+          "prices": {
+            "CARROT": 33,
+            "EGG": 45,
+            "FERTILIZER": 34,
+            "MELON": 176,
+            "MILK": 204,
+            "STRAWBERRY": 218,
+            "TOMATO": 65,
+            "WHEAT": 46,
+            "WOOL": 221
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 23,
+          "cash": 72346.0,
+          "assets": {
+            "WHEAT": 24,
+            "COW": 12,
+            "SHEEP": 7,
+            "STRAWBERRY": 31,
+            "TOMATO": 9,
+            "MELON": 5
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 8,
+            "GOOSE": 0,
+            "MELON": 31,
+            "MILK": 12,
+            "SHEEP": 0,
+            "STRAWBERRY": 12,
+            "TOMATO": 0,
+            "WHEAT": 22,
+            "WOOL": 15
+          },
+          "prices": {
+            "CARROT": 34,
+            "EGG": 45,
+            "FERTILIZER": 30,
+            "MELON": 178,
+            "MILK": 200,
+            "STRAWBERRY": 199,
+            "TOMATO": 66,
+            "WHEAT": 46,
+            "WOOL": 224
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 24,
+          "cash": 78800.0,
+          "assets": {
+            "WHEAT": 26,
+            "COW": 12,
+            "SHEEP": 7,
+            "CARROT": 1,
+            "STRAWBERRY": 29,
+            "TOMATO": 9,
+            "MELON": 5
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 11,
+            "GOOSE": 0,
+            "MELON": 25,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 2,
+            "TOMATO": 0,
+            "WHEAT": 35,
+            "WOOL": 26
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 46,
+            "FERTILIZER": 29,
+            "MELON": 169,
+            "MILK": 208,
+            "STRAWBERRY": 196,
+            "TOMATO": 68,
+            "WHEAT": 46,
+            "WOOL": 220
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP"
+          ]
+        },
+        {
+          "day": 25,
+          "cash": 82476.0,
+          "assets": {
+            "WHEAT": 30,
+            "COW": 12,
+            "SHEEP": 7,
+            "CARROT": 1,
+            "TOMATO": 9,
+            "MELON": 5,
+            "STRAWBERRY": 20
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 12,
+            "MILK": 15,
+            "SHEEP": 0,
+            "STRAWBERRY": 17,
+            "TOMATO": 8,
+            "WHEAT": 12,
+            "WOOL": 36
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 46,
+            "FERTILIZER": 28,
+            "MELON": 146,
+            "MILK": 220,
+            "STRAWBERRY": 195,
+            "TOMATO": 69,
+            "WHEAT": 46,
+            "WOOL": 227
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 26,
+          "cash": 91681.0,
+          "assets": {
+            "WHEAT": 32,
+            "COW": 12,
+            "SHEEP": 7,
+            "TOMATO": 8,
+            "MELON": 5,
+            "STRAWBERRY": 18
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 2,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 10,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 9,
+            "SHEEP": 0,
+            "STRAWBERRY": 6,
+            "TOMATO": 4,
+            "WHEAT": 38,
+            "WOOL": 31
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 47,
+            "FERTILIZER": 27,
+            "MELON": 122,
+            "MILK": 208,
+            "STRAWBERRY": 190,
+            "TOMATO": 70,
+            "WHEAT": 47,
+            "WOOL": 228
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 27,
+          "cash": 105550.0,
+          "assets": {
+            "WHEAT": 38,
+            "COW": 12,
+            "SHEEP": 7,
+            "TOMATO": 8,
+            "MELON": 5,
+            "STRAWBERRY": 16
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 9,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 18,
+            "SHEEP": 0,
+            "STRAWBERRY": 12,
+            "TOMATO": 8,
+            "WHEAT": 39,
+            "WOOL": 14
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 50,
+            "FERTILIZER": 27,
+            "MELON": 125,
+            "MILK": 198,
+            "STRAWBERRY": 189,
+            "TOMATO": 71,
+            "WHEAT": 47,
+            "WOOL": 214
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 28,
+          "cash": 118341.0,
+          "assets": {
+            "COW": 12,
+            "WHEAT": 35,
+            "SHEEP": 7,
+            "TOMATO": 6,
+            "MELON": 5,
+            "STRAWBERRY": 16
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 7,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 12,
+            "SHEEP": 0,
+            "STRAWBERRY": 28,
+            "TOMATO": 8,
+            "WHEAT": 35,
+            "WOOL": 10
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 25,
+            "MELON": 127,
+            "MILK": 196,
+            "STRAWBERRY": 183,
+            "TOMATO": 72,
+            "WHEAT": 46,
+            "WOOL": 199
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 29,
+          "cash": 130541.0,
+          "assets": {
+            "WHEAT": 35,
+            "COW": 11,
+            "SHEEP": 7,
+            "CARROT": 1,
+            "TOMATO": 6,
+            "MELON": 5,
+            "STRAWBERRY": 16
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 9,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 12,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 14,
+            "WHEAT": 29,
+            "WOOL": 30
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 23,
+            "MELON": 129,
+            "MILK": 154,
+            "STRAWBERRY": 178,
+            "TOMATO": 73,
+            "WHEAT": 46,
+            "WOOL": 200
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        },
+        {
+          "day": 30,
+          "cash": 139854.0,
+          "assets": {
+            "WHEAT": 29,
+            "COW": 10,
+            "SHEEP": 4,
+            "CARROT": 1,
+            "TOMATO": 6,
+            "MELON": 5,
+            "STRAWBERRY": 16
+          },
+          "seed_backlog": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 4,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 16,
+            "SHEEP": 0,
+            "STRAWBERRY": 32,
+            "TOMATO": 17,
+            "WHEAT": 30,
+            "WOOL": 0
+          },
+          "prices": {
+            "CARROT": 35,
+            "EGG": 51,
+            "FERTILIZER": 22,
+            "MELON": 131,
+            "MILK": 169,
+            "STRAWBERRY": 178,
+            "TOMATO": 73,
+            "WHEAT": 44,
+            "WOOL": 183
+          },
+          "shops": [
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "ICE_CREAM_SHOP",
+            "SMOOTHIE_SHOP",
+            "YARN_STORE",
+            "PIZZA_SHOP",
+            "PIZZA_SHOP",
+            "BAKERY"
+          ]
+        }
+      ],
+      "seed_purchases": [
+        {
+          "step": 0,
+          "day": 1,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 15,
+          "cost": 150
+        },
+        {
+          "step": 0,
+          "day": 1,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 2,
+          "cost": 40
+        },
+        {
+          "step": 48,
+          "day": 3,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 4,
+          "cost": 80
+        },
+        {
+          "step": 72,
+          "day": 4,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 5,
+          "cost": 50
+        },
+        {
+          "step": 72,
+          "day": 4,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 2,
+          "cost": 200
+        },
+        {
+          "step": 96,
+          "day": 5,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 4,
+          "cost": 40
+        },
+        {
+          "step": 96,
+          "day": 5,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 2,
+          "cost": 200
+        },
+        {
+          "step": 96,
+          "day": 5,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 1,
+          "cost": 80
+        },
+        {
+          "step": 120,
+          "day": 6,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 120,
+          "day": 6,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 3,
+          "cost": 300
+        },
+        {
+          "step": 144,
+          "day": 7,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 1,
+          "cost": 100
+        },
+        {
+          "step": 168,
+          "day": 8,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 14,
+          "cost": 140
+        },
+        {
+          "step": 168,
+          "day": 8,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 9,
+          "cost": 900
+        },
+        {
+          "step": 168,
+          "day": 8,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 2,
+          "cost": 160
+        },
+        {
+          "step": 216,
+          "day": 10,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 7,
+          "cost": 70
+        },
+        {
+          "step": 216,
+          "day": 10,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 1,
+          "cost": 20
+        },
+        {
+          "step": 216,
+          "day": 10,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 14,
+          "cost": 1400
+        },
+        {
+          "step": 216,
+          "day": 10,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 8,
+          "cost": 640
+        },
+        {
+          "step": 240,
+          "day": 11,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 2,
+          "cost": 200
+        },
+        {
+          "step": 264,
+          "day": 12,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 6,
+          "cost": 60
+        },
+        {
+          "step": 288,
+          "day": 13,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 3,
+          "cost": 30
+        },
+        {
+          "step": 288,
+          "day": 13,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 4,
+          "cost": 400
+        },
+        {
+          "step": 312,
+          "day": 14,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 5,
+          "cost": 50
+        },
+        {
+          "step": 312,
+          "day": 14,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 16,
+          "cost": 1600
+        },
+        {
+          "step": 312,
+          "day": 14,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 4,
+          "cost": 320
+        },
+        {
+          "step": 336,
+          "day": 15,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 1,
+          "cost": 10
+        },
+        {
+          "step": 336,
+          "day": 15,
+          "turn": 1,
+          "item": "TOMATO_SEED",
+          "qty": 5,
+          "cost": 250
+        },
+        {
+          "step": 360,
+          "day": 16,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 5,
+          "cost": 50
+        },
+        {
+          "step": 360,
+          "day": 16,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 2,
+          "cost": 40
+        },
+        {
+          "step": 360,
+          "day": 16,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 4,
+          "cost": 320
+        },
+        {
+          "step": 384,
+          "day": 17,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 3,
+          "cost": 30
+        },
+        {
+          "step": 384,
+          "day": 17,
+          "turn": 1,
+          "item": "STRAWBERRY_SEED",
+          "qty": 4,
+          "cost": 400
+        },
+        {
+          "step": 384,
+          "day": 17,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 1,
+          "cost": 80
+        },
+        {
+          "step": 408,
+          "day": 18,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 5,
+          "cost": 50
+        },
+        {
+          "step": 408,
+          "day": 18,
+          "turn": 1,
+          "item": "TOMATO_SEED",
+          "qty": 2,
+          "cost": 100
+        },
+        {
+          "step": 408,
+          "day": 18,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 4,
+          "cost": 320
+        },
+        {
+          "step": 432,
+          "day": 19,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 9,
+          "cost": 90
+        },
+        {
+          "step": 456,
+          "day": 20,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 2,
+          "cost": 20
+        },
+        {
+          "step": 456,
+          "day": 20,
+          "turn": 1,
+          "item": "TOMATO_SEED",
+          "qty": 4,
+          "cost": 200
+        },
+        {
+          "step": 456,
+          "day": 20,
+          "turn": 1,
+          "item": "MELON_SEED",
+          "qty": 5,
+          "cost": 400
+        },
+        {
+          "step": 480,
+          "day": 21,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 5,
+          "cost": 50
+        },
+        {
+          "step": 504,
+          "day": 22,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 9,
+          "cost": 90
+        },
+        {
+          "step": 528,
+          "day": 23,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 11,
+          "cost": 110
+        },
+        {
+          "step": 528,
+          "day": 23,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 1,
+          "cost": 20
+        },
+        {
+          "step": 552,
+          "day": 24,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 7,
+          "cost": 70
+        },
+        {
+          "step": 576,
+          "day": 25,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 12,
+          "cost": 120
+        },
+        {
+          "step": 600,
+          "day": 26,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 14,
+          "cost": 140
+        },
+        {
+          "step": 624,
+          "day": 27,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 9,
+          "cost": 90
+        },
+        {
+          "step": 648,
+          "day": 28,
+          "turn": 1,
+          "item": "WHEAT_SEED",
+          "qty": 7,
+          "cost": 70
+        },
+        {
+          "step": 648,
+          "day": 28,
+          "turn": 1,
+          "item": "CARROT_SEED",
+          "qty": 1,
+          "cost": 20
+        }
+      ],
+      "day15_animal_distance_to_nearest_shed_access": {
+        "count": 18,
+        "mean_manhattan_moves": 3.888888888888889,
+        "max_moves": 8
+      }
+    }
+  ]
+}
