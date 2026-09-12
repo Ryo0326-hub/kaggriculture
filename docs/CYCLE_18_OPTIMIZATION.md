@@ -157,7 +157,7 @@ modeled work constraints or using a hardware-dependent time cutoff.
 
 The complete standalone candidate and its exact command are in
 [Cycle 18 results](CYCLE_18_RESULTS.md). It passes bounded engineering checks;
-Kaggle validation and competitive performance are still pending. No claim of
+two supplied server games now finish normally but lose. The [server review](CYCLE_18_SERVER_REVIEW.md) identifies route oscillation, a blocking planting queue and unrealized care output. No claim of
 150K coins, a rating increase, or optimal play follows from these checks.
 
 The next returned server games should answer whether purchases become operating

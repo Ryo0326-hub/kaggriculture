@@ -1,6 +1,11 @@
 # Cycle 18 — submission candidate
 
-**Re-audited and ready for the user's Kaggle upload.** This is the custom Cycle 15 descendant
+**Submitted; two server games reviewed on September 12.** Both finish normally,
+but lose 83,936–98,836 and 61,005–99,962. All 1,438 own actions match this
+artifact. [Server weaknesses and revised priorities](CYCLE_18_SERVER_REVIEW.md).
+The commands and checks below document the released file, not a new submission.
+
+This is the custom Cycle 15 descendant
 with shared growth routes, deadline-aware feed/fertilizer, ongoing-crop watering
 repairs, carried-stock capacity reservations and faster equivalent route costs.
 
@@ -15,8 +20,9 @@ SHA-256: `65e0e1f6f12e797c02fff195e168e37c6969a5167ec5f9a2e9d006854b95e314`.
 ```
 
 The positional competition syntax is verified against the installed CLI's
-`competitions submit --help`. No upload was performed. Server validation and
-competitive results are pending. Root `main.py` is still protected Cycle 3;
+`competitions submit --help`. Packaging did not perform an automatic upload.
+The user subsequently supplied the two completed server games linked above;
+no competitive improvement over Cycle 15 has been established. Root `main.py` is still protected Cycle 3;
 use the artifact path above. Earlier Cycle 18 development artifacts are not the
 release and are not referenced by the upload command.
 
