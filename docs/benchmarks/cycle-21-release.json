@@ -1,0 +1,35 @@
+{
+  "cycle": 21,
+  "artifact": "artifacts/submission-cycle-21-final/main.py",
+  "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+  "bytes": 50589,
+  "parent_cycle": 20,
+  "parent_sha256": "79a8fb9661cd6fbb0c2cb9abc5a591b7daee1496b292ba8eca889f4fe6b16280",
+  "prepared_date": "2026-09-12",
+  "bounded_tests_passed": 176,
+  "observations_checked": 5752,
+  "max_callback_seconds": 0.028854750009486452,
+  "isolated_startup_seconds": 0.010454166011186317,
+  "isolated_standard_library_load": true,
+  "engine_imported": false,
+  "syntax_lint_format_diff_checks": "pass",
+  "simulation_games_run": 0,
+  "paid_compute_used": false,
+  "uploaded": false,
+  "server_validation": "pending",
+  "competitive_performance": "unmeasured",
+  "build_module": "scripts.make_calendar_agent",
+  "changes": [
+    "Safe crop-watering calendar and production-night fertilizer retention",
+    "Travel-aware deadline assignment and bounded cross-sector assistance",
+    "Expiring-harvest priority and protection against optional detours/deposits",
+    "Crop labor valuation consistent with the watering calendar"
+  ],
+  "preserved": [
+    "Cycle 19/20 sources and artifacts",
+    "Opening asset targets, hiring schedule and expansion rules",
+    "Cycle 20 committed-supply forecast",
+    "Livestock care and feed accounting",
+    "Existing market sales and terminal delivery rules"
+  ]
+}

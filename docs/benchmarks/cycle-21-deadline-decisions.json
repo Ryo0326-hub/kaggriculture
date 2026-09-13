@@ -1,0 +1,161 @@
+{
+  "method": "Independent decisions on two original recorded observations; returned actions never applied. Target coverage is not a survival outcome or profit estimate.",
+  "decisions": [
+    {
+      "cycle": 19,
+      "source_sha256": "eb151fe1e088e598edfdcd6b10c5c108bdb91783bfbbac9758211b5df29bd17d",
+      "step": 330,
+      "ui_day": 14,
+      "ui_turn": 19,
+      "endangered_targets": []
+    },
+    {
+      "cycle": 19,
+      "source_sha256": "eb151fe1e088e598edfdcd6b10c5c108bdb91783bfbbac9758211b5df29bd17d",
+      "step": 401,
+      "ui_day": 17,
+      "ui_turn": 18,
+      "endangered_targets": []
+    },
+    {
+      "cycle": 20,
+      "source_sha256": "79a8fb9661cd6fbb0c2cb9abc5a591b7daee1496b292ba8eca889f4fe6b16280",
+      "step": 330,
+      "ui_day": 14,
+      "ui_turn": 19,
+      "endangered_targets": [
+        {
+          "worker": 0,
+          "position": [
+            1,
+            4
+          ],
+          "target": [
+            2,
+            0
+          ],
+          "first_action": [
+            "EAST"
+          ],
+          "manhattan_distance": 5
+        },
+        {
+          "worker": 1,
+          "position": [
+            2,
+            2
+          ],
+          "target": [
+            3,
+            0
+          ],
+          "first_action": [
+            "EAST"
+          ],
+          "manhattan_distance": 3
+        }
+      ]
+    },
+    {
+      "cycle": 20,
+      "source_sha256": "79a8fb9661cd6fbb0c2cb9abc5a591b7daee1496b292ba8eca889f4fe6b16280",
+      "step": 401,
+      "ui_day": 17,
+      "ui_turn": 18,
+      "endangered_targets": []
+    },
+    {
+      "cycle": 21,
+      "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+      "step": 330,
+      "ui_day": 14,
+      "ui_turn": 19,
+      "endangered_targets": [
+        {
+          "worker": 2,
+          "position": [
+            2,
+            2
+          ],
+          "target": [
+            2,
+            0
+          ],
+          "first_action": [
+            "NORTH"
+          ],
+          "manhattan_distance": 2
+        },
+        {
+          "worker": 3,
+          "position": [
+            4,
+            2
+          ],
+          "target": [
+            3,
+            0
+          ],
+          "first_action": [
+            "WEST"
+          ],
+          "manhattan_distance": 3
+        }
+      ]
+    },
+    {
+      "cycle": 21,
+      "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+      "step": 401,
+      "ui_day": 17,
+      "ui_turn": 18,
+      "endangered_targets": [
+        {
+          "worker": 1,
+          "position": [
+            1,
+            2
+          ],
+          "target": [
+            1,
+            0
+          ],
+          "first_action": [
+            "NORTH"
+          ],
+          "manhattan_distance": 2
+        },
+        {
+          "worker": 2,
+          "position": [
+            2,
+            2
+          ],
+          "target": [
+            0,
+            0
+          ],
+          "first_action": [
+            "WEST"
+          ],
+          "manhattan_distance": 4
+        },
+        {
+          "worker": 3,
+          "position": [
+            4,
+            2
+          ],
+          "target": [
+            2,
+            1
+          ],
+          "first_action": [
+            "WEST"
+          ],
+          "manhattan_distance": 3
+        }
+      ]
+    }
+  ]
+}

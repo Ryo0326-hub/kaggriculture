@@ -1,0 +1,4546 @@
+{
+  "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+  "observations_checked": 5752,
+  "max_callback_seconds": 0.028854750009486452,
+  "method": "Independent off-policy recorded-observation calls; not simulated games or competitive results.",
+  "inputs": [
+    {
+      "file": "108335136.json",
+      "sha256": "bdc74ae9b6557ae189822e0ad2668e9f5714ddb0eff8bc11855ff972b7074ce0"
+    },
+    {
+      "file": "108290604.json",
+      "sha256": "8987508d4598470f1b164541d4db2377e92be88067738eebb9e43d5fce835eb4"
+    },
+    {
+      "file": "108305451.json",
+      "sha256": "653d091a21e54fdffeea6e9f167801ede6159457ff91724b2dc3c2cd1c5a3ac7"
+    },
+    {
+      "file": "108295517.json",
+      "sha256": "9063085fb34f2ff2f47ce1d98bd14e9481ad36aeaa896834dee253bf8e2c5587"
+    }
+  ],
+  "examples": [
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.0010632920020725578,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.0009886670159175992,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 254,
+        "feed_keep": 5,
+        "projected_shed": 11,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 221,
+      "seconds": 0.0025906660011969507,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": []
+      },
+      "market": {
+        "changes": [],
+        "reserve": 679,
+        "feed_keep": 3,
+        "projected_shed": 13,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 264,
+      "seconds": 0.0017617089906707406,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            18
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            12
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 857,
+        "feed_keep": 19,
+        "projected_shed": 23,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 311,
+      "seconds": 0.0022370000078808516,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "market": {
+        "changes": [],
+        "reserve": 986,
+        "feed_keep": 0,
+        "projected_shed": 60,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 336,
+      "seconds": 0.002428416977636516,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            24
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            15
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            21
+          ],
+          [
+            "SELL",
+            "EGG",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1003,
+        "feed_keep": 21,
+        "projected_shed": 28,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 596,
+      "seconds": 0.0022492910211440176,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "FERTILIZE"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "HARVEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1122,
+        "feed_keep": 0,
+        "projected_shed": 86,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0019048330141231418,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            14
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            32
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            9
+          ],
+          [
+            "SELL",
+            "EGG",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 1,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0011789169802796096,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": []
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 0,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.000889291986823082,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.0011016670032404363,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 286,
+        "feed_keep": 10,
+        "projected_shed": 12,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 221,
+      "seconds": 0.0037669999874196947,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "FEED"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            4
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 716,
+        "feed_keep": 5,
+        "projected_shed": 28,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 264,
+      "seconds": 0.0016590419982094318,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            10
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 740,
+        "feed_keep": 16,
+        "projected_shed": 18,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 311,
+      "seconds": 0.001527042011730373,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 771,
+        "feed_keep": 0,
+        "projected_shed": 56,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 336,
+      "seconds": 0.002008540992392227,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "FERTILIZER",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            14
+          ],
+          [
+            "SELL",
+            "MILK",
+            9
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 874,
+        "feed_keep": 18,
+        "projected_shed": 31,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 596,
+      "seconds": 0.005859208002220839,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 972,
+        "feed_keep": 0,
+        "projected_shed": 56,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0013210829929448664,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            10
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            68
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "SELL",
+            "CARROT",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 1,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108335136.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0020148750045336783,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "MILK",
+            3
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 94,
+        "feed_keep": 0,
+        "projected_shed": 2,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.0007522910018451512,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.0010751670051831752,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            1
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 209,
+        "feed_keep": 5,
+        "projected_shed": 9,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 221,
+      "seconds": 0.00303987500956282,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 680,
+        "feed_keep": 3,
+        "projected_shed": 20,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 264,
+      "seconds": 0.0018262499943375587,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "MELON",
+            6
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            47
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 880,
+        "feed_keep": 20,
+        "projected_shed": 30,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 311,
+      "seconds": 0.0021380000107456,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "MELON",
+            32
+          ],
+          [
+            "SELL",
+            "MILK",
+            9
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            16
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 912,
+        "feed_keep": 0,
+        "projected_shed": 47,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 336,
+      "seconds": 0.00207537499954924,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            12
+          ],
+          [
+            "SELL",
+            "MELON",
+            10
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            31
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 912,
+        "feed_keep": 20,
+        "projected_shed": 28,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 596,
+      "seconds": 0.0030169590027071536,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            31
+          ],
+          [
+            "SELL",
+            "WOOL",
+            34
+          ],
+          [
+            "SELL",
+            "MILK",
+            11
+          ],
+          [
+            "SELL",
+            "CARROT",
+            15
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            3
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 818,
+        "feed_keep": 3,
+        "projected_shed": 47,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.001263290992937982,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            20
+          ],
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "WOOL",
+            22
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            6
+          ],
+          [
+            "SELL",
+            "CARROT",
+            8
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 1,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0010690419876482338,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "PLACE",
+            "WHEAT",
+            4
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            22
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 5,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.0006744590064045042,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.0012066670169588178,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            13
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_SEED",
+            "STRAWBERRY",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "STRAWBERRY",
+            2
+          ]
+        ],
+        "reserve": 301,
+        "feed_keep": 13,
+        "projected_shed": 14,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 221,
+      "seconds": 0.0022270420158747584,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_LAND"
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "LAND",
+            1
+          ],
+          [
+            "WHEAT",
+            1
+          ]
+        ],
+        "reserve": 782,
+        "feed_keep": 10,
+        "projected_shed": 26,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 264,
+      "seconds": 0.0019916669989470392,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            9
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            11
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            22
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 956,
+        "feed_keep": 22,
+        "projected_shed": 26,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 311,
+      "seconds": 0.001630667014978826,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "HARVEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "PLACE",
+            "MILK",
+            6
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 814,
+        "feed_keep": 2,
+        "projected_shed": 30,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 336,
+      "seconds": 0.002088666020426899,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            12
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            13
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 992,
+        "feed_keep": 22,
+        "projected_shed": 24,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 596,
+      "seconds": 0.002221292001195252,
+      "action": {
+        "farmer": [
+          "HARVEST"
+        ],
+        "hands": [
+          [
+            "SOUTH"
+          ],
+          [
+            "FERTILIZE"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 495,
+        "feed_keep": 5,
+        "projected_shed": 62,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0012570840190164745,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            32
+          ],
+          [
+            "SELL",
+            "CARROT",
+            16
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            20
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 0,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108290604.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.001000499993097037,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PLACE",
+            "CARROT",
+            11
+          ],
+          [
+            "PLACE",
+            "STRAWBERRY",
+            10
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "CARROT",
+            8
+          ],
+          [
+            "PLACE",
+            "CARROT",
+            10
+          ],
+          [
+            "PLACE",
+            "CARROT",
+            7
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            10
+          ],
+          [
+            "SELL",
+            "CARROT",
+            36
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 128,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 9
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.001625207980396226,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.0010891669953707606,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 244,
+        "feed_keep": 5,
+        "projected_shed": 9,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 221,
+      "seconds": 0.004440041986526921,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            5
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 716,
+        "feed_keep": 4,
+        "projected_shed": 20,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 264,
+      "seconds": 0.003384042007382959,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ],
+          [
+            "SELL",
+            "MELON",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            18
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 912,
+        "feed_keep": 20,
+        "projected_shed": 26,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 311,
+      "seconds": 0.002780583017738536,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "MELON",
+            34
+          ],
+          [
+            "SELL",
+            "MILK",
+            8
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            16
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 969,
+        "feed_keep": 1,
+        "projected_shed": 35,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 336,
+      "seconds": 0.0018580000032670796,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            16
+          ],
+          [
+            "SELL",
+            "MELON",
+            40
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            8
+          ],
+          [
+            "SELL",
+            "MILK",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            4
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 986,
+        "feed_keep": 21,
+        "projected_shed": 28,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 596,
+      "seconds": 0.002727875020354986,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "STRAWBERRY",
+            29
+          ],
+          [
+            "SELL",
+            "MILK",
+            10
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1071,
+        "feed_keep": 0,
+        "projected_shed": 61,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0016401670000050217,
+      "action": {
+        "farmer": [
+          "COLLECT_FERTILIZER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            15
+          ],
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            10
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            6
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            39
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 1,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0015509999939240515,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "WHEAT",
+            10
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "FERTILIZER",
+            1
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            10
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 3,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.0007824999920558184,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.0012750409950967878,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 454,
+        "feed_keep": 16,
+        "projected_shed": 16,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 221,
+      "seconds": 0.00374399998690933,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "WATER"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PLACE",
+            "WOOL",
+            4
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            12
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 938,
+        "feed_keep": 12,
+        "projected_shed": 26,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 264,
+      "seconds": 0.0017966669984161854,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            14
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 992,
+        "feed_keep": 22,
+        "projected_shed": 29,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 311,
+      "seconds": 0.001477125013479963,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "MILK",
+            3
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            12
+          ],
+          [
+            "SELL",
+            "EGG",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 832,
+        "feed_keep": 2,
+        "projected_shed": 76,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 336,
+      "seconds": 0.0023064580163918436,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            3
+          ],
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            7
+          ],
+          [
+            "SELL",
+            "EGG",
+            5
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            22
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1028,
+        "feed_keep": 22,
+        "projected_shed": 30,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 596,
+      "seconds": 0.005082290997961536,
+      "action": {
+        "farmer": [
+          "SOUTH"
+        ],
+        "hands": [
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            31
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1309,
+        "feed_keep": 0,
+        "projected_shed": 65,
+        "crew_target": 12
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0018735410121735185,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            16
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            32
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            17
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            30
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 0,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108305451.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0015172499988693744,
+      "action": {
+        "farmer": [
+          "PLACE",
+          "MILK",
+          9
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "MELON",
+            6
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "MELON",
+            6
+          ],
+          [
+            "PLACE",
+            "STRAWBERRY",
+            4
+          ],
+          [
+            "PLACE",
+            "MILK",
+            3
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "WOOL",
+            6
+          ],
+          [
+            "PLACE",
+            "MILK",
+            3
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            15
+          ],
+          [
+            "SELL",
+            "WOOL",
+            6
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            4
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1026,
+        "feed_keep": 0,
+        "projected_shed": 60,
+        "crew_target": 14
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 0,
+      "seconds": 0.0009014589886646718,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 144,
+      "seconds": 0.002191582985688001,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            16
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 454,
+        "feed_keep": 16,
+        "projected_shed": 17,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 221,
+      "seconds": 0.0034776669926941395,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [
+          [
+            "CARE"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "EAST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            8
+          ],
+          [
+            "SELL",
+            "CARROT",
+            4
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            10
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 902,
+        "feed_keep": 10,
+        "projected_shed": 25,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 264,
+      "seconds": 0.00240041600773111,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "CARROT",
+            13
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "EGG",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            21
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1160,
+        "feed_keep": 28,
+        "projected_shed": 38,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 311,
+      "seconds": 0.003031374973943457,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "HARVEST"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "EGG",
+            6
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1232,
+        "feed_keep": 1,
+        "projected_shed": 57,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 336,
+      "seconds": 0.0023554579820483923,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            8
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            9
+          ],
+          [
+            "SELL",
+            "EGG",
+            15
+          ],
+          [
+            "SELL",
+            "CARROT",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            6
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 1192,
+        "feed_keep": 27,
+        "projected_shed": 32,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 596,
+      "seconds": 0.0027586659998632967,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [
+          [
+            "NORTH"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "SOUTH"
+          ],
+          [
+            "HARVEST"
+          ]
+        ],
+        "market": []
+      },
+      "market": {
+        "changes": [],
+        "reserve": 986,
+        "feed_keep": 0,
+        "projected_shed": 97,
+        "crew_target": 12
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 696,
+      "seconds": 0.0014390419819392264,
+      "action": {
+        "farmer": [
+          "WATER"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            24
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            6
+          ],
+          [
+            "SELL",
+            "EGG",
+            26
+          ],
+          [
+            "SELL",
+            "CARROT",
+            8
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 0,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 0,
+      "step": 718,
+      "seconds": 0.0013357500138226897,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "WHEAT",
+            17
+          ],
+          [
+            "PLACE",
+            "EGG",
+            4
+          ],
+          [
+            "PLACE",
+            "WOOL",
+            4
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "WHEAT",
+            16
+          ],
+          [
+            "PLACE",
+            "WHEAT",
+            11
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "TOMATO",
+            8
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            4
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            8
+          ],
+          [
+            "SELL",
+            "EGG",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            44
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 416,
+        "feed_keep": 0,
+        "projected_shed": 29,
+        "crew_target": 12
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 0,
+      "seconds": 0.000673583010211587,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "BUY_ANIMAL",
+            "COW",
+            2
+          ],
+          [
+            "BUY_ANIMAL",
+            "SHEEP",
+            3
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "BUY_SEED",
+            "WHEAT",
+            10
+          ],
+          [
+            "BUY_SEED",
+            "MELON",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "COW",
+            2
+          ],
+          [
+            "SHEEP",
+            3
+          ]
+        ],
+        "reserve": 47,
+        "feed_keep": 0,
+        "projected_shed": 10,
+        "crew_target": 4
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 144,
+      "seconds": 0.0010178330121561885,
+      "action": {
+        "farmer": [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        "hands": [],
+        "market": [
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 244,
+        "feed_keep": 5,
+        "projected_shed": 9,
+        "crew_target": 8
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 221,
+      "seconds": 0.0028813329990953207,
+      "action": {
+        "farmer": [
+          "FEED"
+        ],
+        "hands": [
+          [
+            "FEED"
+          ],
+          [
+            "COLLECT_FERTILIZER"
+          ],
+          [
+            "CARE"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "WATER"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "WATER"
+          ]
+        ],
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            2
+          ],
+          [
+            "BUY_SEED",
+            "TOMATO",
+            1
+          ]
+        ]
+      },
+      "market": {
+        "changes": [
+          [
+            "TOMATO",
+            1
+          ]
+        ],
+        "reserve": 762,
+        "feed_keep": 5,
+        "projected_shed": 20,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 264,
+      "seconds": 0.002294166974024847,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            6
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 938,
+        "feed_keep": 22,
+        "projected_shed": 30,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 311,
+      "seconds": 0.0029984170105308294,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            3
+          ],
+          [
+            "SELL",
+            "WOOL",
+            15
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            15
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 992,
+        "feed_keep": 0,
+        "projected_shed": 68,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 336,
+      "seconds": 0.0026185419992543757,
+      "action": {
+        "farmer": [
+          "EAST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "MELON",
+            12
+          ],
+          [
+            "SELL",
+            "MILK",
+            4
+          ],
+          [
+            "SELL",
+            "WOOL",
+            17
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            9
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            2
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 992,
+        "feed_keep": 22,
+        "projected_shed": 34,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 596,
+      "seconds": 0.002476499998010695,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "DIG"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "PICKUP",
+            "WHEAT",
+            1
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "EAST"
+          ],
+          [
+            "NORTH"
+          ],
+          [
+            "WEST"
+          ],
+          [
+            "WEST"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            17
+          ],
+          [
+            "SELL",
+            "WOOL",
+            13
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            18
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            2
+          ],
+          [
+            "SELL",
+            "CARROT",
+            4
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            9
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 956,
+        "feed_keep": 0,
+        "projected_shed": 55,
+        "crew_target": 11
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 696,
+      "seconds": 0.0014582499861717224,
+      "action": {
+        "farmer": [
+          "WEST"
+        ],
+        "hands": [],
+        "market": [
+          [
+            "SELL",
+            "WOOL",
+            32
+          ],
+          [
+            "SELL",
+            "MILK",
+            14
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            12
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            13
+          ],
+          [
+            "SELL",
+            "CARROT",
+            19
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            5
+          ],
+          [
+            "SELL",
+            "STRAWBERRY",
+            5
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ],
+          [
+            "HIRE"
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 0,
+        "crew_target": 10
+      }
+    },
+    {
+      "replay": "108295517.json",
+      "seat": 1,
+      "step": 718,
+      "seconds": 0.0013787919888272882,
+      "action": {
+        "farmer": [
+          "PASS"
+        ],
+        "hands": [
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PLACE",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ],
+          [
+            "PASS"
+          ]
+        ],
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            22
+          ],
+          [
+            "SELL",
+            "FERTILIZER",
+            3
+          ],
+          [
+            "SELL",
+            "TOMATO",
+            2
+          ]
+        ]
+      },
+      "market": {
+        "changes": [],
+        "reserve": 183,
+        "feed_keep": 0,
+        "projected_shed": 1,
+        "crew_target": 10
+      }
+    }
+  ]
+}
