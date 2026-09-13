@@ -207,14 +207,7 @@ def test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots(polic
         pytest.param(
             3,
             345,
-            marks=[
-                pytest.mark.optimization_gap,
-                pytest.mark.xfail(
-                    strict=True,
-                    raises=OptimizationTargetGap,
-                    reason="OPT-006: a mixed terminal DROP banks 345 instead of 320 coins",
-                ),
-            ],
+            marks=pytest.mark.optimization_gap,
         ),
         (4, 370),
     ],
@@ -349,11 +342,6 @@ def test_joint_resource_relaxation_can_be_more_valuable_than_each_alone():
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=OptimizationTargetGap,
-    reason="OPT-005: one terminal order banks 160 instead of 500 coins",
-)
 def test_terminal_order_cap_selects_total_receipts_not_unit_price(policy):
     obs = observation(day=29, hour=22)
     obs["private"]["shed"] = {"MILK": 1, "WHEAT": 20}
@@ -367,11 +355,6 @@ def test_terminal_order_cap_selects_total_receipts_not_unit_price(policy):
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=OptimizationTargetGap,
-    reason="OPT-006: mixed cargo deposit banks 160 instead of 335 coins",
-)
 def test_single_worker_terminal_deposit_selects_total_receipts_not_unit_price(policy):
     obs = observation(day=29, hour=22)
     obs["private"]["shed"] = {"FERTILIZER": 92}
@@ -387,11 +370,6 @@ def test_single_worker_terminal_deposit_selects_total_receipts_not_unit_price(po
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=OptimizationTargetGap,
-    reason="OPT-007: newly planted rival output is forecast like next-day production",
-)
 @pytest.mark.parametrize("name,first", [("TOMATO", 8), ("STRAWBERRY", 10)])
 def test_immature_rival_repeaters_do_not_depress_one_day_output_price(policy, name, first):
     newly_planted = observation(day=12)

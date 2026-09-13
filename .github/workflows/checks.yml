@@ -28,7 +28,7 @@ jobs:
       - name: Bounded Cycle 18 to 21 checks (no game engine)
         run: uv run --no-sync pytest -q tests/test_cycle18.py tests/test_majkel.py tests/test_resilience.py tests/test_calendar.py
       - name: Fresh Cycle 1 unit and recorded-history checks (no game engine)
-        run: uv run --no-sync pytest -q tests/test_fresh_cycle1.py
+        run: uv run --no-sync pytest -q tests/test_fresh_cycle1.py tests/test_fresh_cycle1_fixes.py
       - name: Economic optimization and opponent scenarios (bounded, no game engine)
         run: uv run --no-sync pytest -q -rx tests/test_optimization.py
       - name: Research-led uncertainty and terminal cash scenarios (bounded, no game engine)

@@ -2,7 +2,7 @@
 
 No engine, season rollouts, parameter tuning or paid compute. Every parameter
 row is a named economic condition, not an arbitrary repetition to raise count.
-Known optimization gaps retain strict expected-failure assertions.
+Previously failing optimization targets are mandatory regression assertions.
 """
 
 import copy
@@ -465,9 +465,6 @@ def test_terminal_assignment_has_an_explicit_cash_delivery_deadline(
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True, raises=AssertionError, reason="OPT-001: slack priority loses 180 visit-value units"
-)
 def test_scheduler_prioritizes_best_deliverable_value_under_competing_deadlines(policy):
     obs = observation(hour=21)
     p = policy["Planner"](obs, CONFIG)
@@ -484,11 +481,6 @@ def test_scheduler_prioritizes_best_deliverable_value_under_competing_deadlines(
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=AssertionError,
-    reason="OPT-002: greedy matching loses 150 visit-value units",
-)
 def test_matching_preserves_worker_with_exclusive_access_to_second_job(policy):
     obs = observation(hour=21, workers=((4, 3), (3, 4)))
     p = policy["Planner"](obs, CONFIG)
@@ -507,11 +499,6 @@ def test_matching_preserves_worker_with_exclusive_access_to_second_job(policy):
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=AssertionError,
-    reason="OPT-003: terminal capacity ordering leaves 270 feasible coins",
-)
 def test_final_capacity_is_reserved_for_highest_total_receipts(policy):
     obs = observation(day=29, hour=22, workers=((4, 4), (5, 4)))
     obs["private"]["shed"] = {"FERTILIZER": 98}
@@ -525,11 +512,6 @@ def test_final_capacity_is_reserved_for_highest_total_receipts(policy):
 
 
 @pytest.mark.optimization_gap
-@pytest.mark.xfail(
-    strict=True,
-    raises=AssertionError,
-    reason="OPT-004: forecast ignores observable rival service deterioration",
-)
 def test_neglected_rival_capacity_is_not_valued_as_fully_serviced_capacity(policy):
     healthy = observation(profile="dairy-specialist")
     neglected = copy.deepcopy(healthy)

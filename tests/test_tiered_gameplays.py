@@ -143,19 +143,18 @@ def test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed(p
     obs, cfg = case["observation"], configuration(case)
     action = invoke(policy, obs, cfg)
     products = set(obs["market"]["prices"])
-    stock = Counter({p: n for p, n in obs["private"]["shed"].items() if p in products})
+    stock = Counter(obs["private"]["shed"])
     for i, command in enumerate([action["farmer"], *action["hands"]]):
         if command[0] == "DROP":
-            stock.update(
-                {p: n for p, n in obs["private"]["inventories"][i].items() if p in products}
-            )
+            for item, quantity in obs["private"]["inventories"][i].items():
+                stock[item] += min(quantity, max(0, cfg["shedCapacity"] - sum(stock.values())))
         elif command[0] == "PLACE" and command[1] in products:
             stock[command[1]] += command[2]
     assert all(order[0] == "SELL" for order in action["market"])
     sales = Counter()
     for _, item, quantity in action["market"]:
         sales[item] += quantity
-    assert sales == stock
+    assert sales == Counter({p: n for p, n in stock.items() if p in products})
     # This proves liquidation quantities, not an optimal deposit or a realized fill price.
 
 

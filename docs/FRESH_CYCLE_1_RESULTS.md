@@ -1,5 +1,7 @@
 # Fresh Cycle 1 — submission package
 
+**Historical pre-fix report.** The original artifact and benchmark below remain preserved. The [Fresh Cycle 1 fixes release](FRESH_CYCLE_1_FIXES.md) supersedes its policy, results and upload command: all nine formerly expected failures now pass as mandatory regressions; the full bounded selection passes 871 tests.
+
 Prepared September 12, 2026, Toronto. **Implemented and packaged for user-run
 Kaggle submission. Not uploaded, server-validated or competitively evaluated.**
 

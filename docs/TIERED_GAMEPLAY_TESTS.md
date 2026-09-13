@@ -1,5 +1,7 @@
 # User-tiered gameplay corpus and tests
 
+**Historical pre-fix report.** The original artifact and benchmark below remain preserved. The [Fresh Cycle 1 fixes release](FRESH_CYCLE_1_FIXES.md) supersedes its policy, results and upload command: all nine formerly expected failures now pass as mandatory regressions; the full bounded selection passes 871 tests.
+
 Nine recordings supplied September 12, 2026. Tier labels follow the user's
 ordering exactly: first three top, next three mid (approximately 2600 tier),
 last three bottom (1000s). They label these recordings, not independently

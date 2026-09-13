@@ -1,5 +1,7 @@
 # Research-led scenario tests
 
+**Historical pre-fix report.** The original artifact and benchmark below remain preserved. The [Fresh Cycle 1 fixes release](FRESH_CYCLE_1_FIXES.md) supersedes its policy, results and upload command: all nine formerly expected failures now pass as mandatory regressions; the full bounded selection passes 871 tests.
+
 Research and scenario selection completed before test implementation, September
 12, 2026 Toronto (02:02 UTC September 13). This extends, rather than replaces,
 the 245 cases in [OPTIMIZATION_TESTS.md](OPTIMIZATION_TESTS.md).

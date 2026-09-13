@@ -11,7 +11,7 @@ dev = ["pytest>=8,<10", "ruff>=0.12,<1"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
-markers = ["optimization_gap: documented unmet economic target; execute with --runxfail to expose"]
+markers = ["optimization_gap: regression contracts for previously identified economic defects"]
 
 [tool.ruff]
 target-version = "py312"

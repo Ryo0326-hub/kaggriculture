@@ -1,7 +1,7 @@
 """Fresh Cycle 1: observation-driven farming with reserved, persistent visits.
 
 Written independently of all previous agents. Constants describe the pinned
-game rules; economics and scheduling are bounded heuristics, not optimizers.
+game rules; exact assignment/deposit subproblems use heuristic economic values.
 No engine, local modules, network, randomness, or filesystem access at runtime.
 """
 
@@ -103,6 +103,51 @@ def fib(index):
     return a
 
 
+def maximum_weight_matching(weights):
+    """Rectangular assignment with one private idle column per worker.
+
+    Hungarian potentials: O(workers**2 * (jobs + workers)); None forbids an
+    edge. This solves the supplied additive weights, not an entire farm plan.
+    """
+    n = len(weights)
+    if not n:
+        return []
+    jobs = len(weights[0])
+    m = jobs + n
+    u, v, owner, previous = [0.0] * (n + 1), [0.0] * (m + 1), [0] * (m + 1), [0] * (m + 1)
+    for worker in range(1, n + 1):
+        owner[0] = worker
+        column = 0
+        distance_to, seen = [math.inf] * (m + 1), [False] * (m + 1)
+        while True:
+            seen[column] = True
+            row, delta, next_column = owner[column], math.inf, 0
+            for j in range(1, m + 1):
+                if seen[j]:
+                    continue
+                weight = weights[row - 1][j - 1] if j <= jobs else 0
+                cost = math.inf if weight is None else -weight
+                reduced = cost - u[row] - v[j]
+                if reduced < distance_to[j]:
+                    distance_to[j], previous[j] = reduced, column
+                if distance_to[j] < delta:
+                    delta, next_column = distance_to[j], j
+            for j in range(m + 1):
+                if seen[j]:
+                    u[owner[j]] += delta
+                    v[j] -= delta
+                else:
+                    distance_to[j] -= delta
+            column = next_column
+            if owner[column] == 0:
+                break
+        while column:
+            parent = previous[column]
+            owner[column] = owner[parent]
+            column = parent
+    return [(owner[j] - 1, j - 1) for j in range(1, jobs + 1) if owner[j]]
+
+
 class Planner:
     def __init__(self, obs, config):
         self.obs = obs
@@ -169,6 +214,8 @@ class Planner:
             rate = self.tpd / max(1, self.cfg.get("townShopSellInterval", 4))
             for item in items:
                 self.demand[item] += rate * (2 if len(items) == 1 else 1)
+        self._supply_cache = {}
+        self._receipt_cache = {}
         self.supply = self.visible_supply()
 
     def nearest_shed(self, pos, target=None):
@@ -199,41 +246,89 @@ class Planner:
             and (age - first) % interval == 0
         )
 
-    def visible_supply(self):
-        """Approximate daily capacity; rival sale timing/private stores are unknown."""
+    def visible_supply(self, horizon=5):
+        """Horizon-specific output estimate, not a hidden-stock or fill prediction."""
+        horizon = min(horizon, max(0, self.final_day - self.day))
+        if horizon in self._supply_cache:
+            return self._supply_cache[horizon]
         supply = dict.fromkeys(CURVES, 0.0)
+        if horizon <= 0:
+            return supply
+
+        def events(first, interval, last):
+            next_day = max(self.day + 1, first)
+            next_day += (first - next_day) % interval
+            return max(0, int((min(self.day + horizon, last) - next_day) // interval) + 1)
+
         for seat, farm in enumerate(self.obs["farms"]):
             reliability = 1.0 if seat == self.seat else 0.7
+            cells = [t for row in farm["tiles"] for t in row if isinstance(t, dict)]
+            animals = sum(bool(t.get("animal")) for t in cells)
+            crops = sum(t.get("kind") == "PLANT" for t in cells)
+            crew = 1 + len(farm["hands"])
+            # A conservative observable service-capacity discount, not a fitted
+            # probability. Cash alone does not reveal future staffing decisions.
+            service = min(1, crew * max(1, self.tpd - 4) / max(1, 3 * animals + crops))
+            if seat != self.seat:
+                reliability *= service
             for row in farm["tiles"]:
                 for tile in row:
                     if not isinstance(tile, dict):
                         continue
-                    if "animal" in tile:
-                        _, _, interval, product, _ = ANIMALS[tile["animal"]]
+                    if tile.get("animal"):
+                        _, first, interval, product, _ = ANIMALS[tile["animal"]]
                         if self.useful_animal(tile):
-                            supply[product] += reliability * (interval + 1) / interval
-                            supply["FERTILIZER"] += reliability * 0.8
-                            supply["WHEAT"] -= reliability
+                            animal_reliability = reliability
+                            if seat != self.seat and not tile.get("fed_today", False):
+                                animal_reliability /= 1 + tile.get("consecutive_unfed", 0)
+                            care = min(
+                                1,
+                                (
+                                    tile.get("pending_care_bonus", 0)
+                                    + int(tile.get("cared_today", False))
+                                )
+                                / (interval + 1),
+                            )
+                            # Future service can recover: neglect discounts rather
+                            # than certifies zero future output. Today's CARE is
+                            # not credited to today's scheduled production.
+                            per_event = 1 + interval * (0.25 + 0.75 * care)
+                            count = events(tile["placed_day"] + first, interval, self.final_day)
+                            output = tile.get("yield_units", 0) + count * per_event
+                            supply[product] += animal_reliability * output / horizon
+                            supply["FERTILIZER"] += animal_reliability * 0.8
+                            supply["WHEAT"] -= animal_reliability
                     elif tile.get("kind") == "PLANT":
                         crop = tile["crop"]
                         _, first, preferred, interval, cap = CROPS[crop]
                         age = self.day - tile["planted_day"]
                         if interval:
-                            if age <= first + (cap - 1) * interval:
-                                supply[crop] += reliability * 2 / interval
+                            first_day = tile["planted_day"] + first
+                            count = events(first_day, interval, first_day + (cap - 1) * interval)
+                            output = tile.get("yield_units", 0) + 2 * count
+                            supply[crop] += reliability * output / horizon
                         else:
                             quantity = {"WHEAT": 4, "CARROT": 3, "MELON": 6}[crop]
-                            supply[crop] += reliability * quantity / max(2, preferred - age + 1)
+                            if age + horizon >= first:
+                                supply[crop] += (
+                                    reliability
+                                    * max(quantity, tile.get("yield_units", 0))
+                                    / horizon
+                                )
         # Purchased but undeployed seeds still represent committed exposure.
         for crop, quantity in self.seeds.items():
             if crop in CROPS:
-                supply[crop] += quantity * (2 if CROPS[crop][3] else 4) / CROPS[crop][1]
+                if horizon >= CROPS[crop][1] + 1:
+                    supply[crop] += quantity * (2 if CROPS[crop][3] else 4) / horizon
+        self._supply_cache[horizon] = supply
         return supply
 
     def value_price(self, item, horizon=5, extra=0):
         horizon = min(horizon, max(0, self.final_day - self.day))
         inventory = self.market.get(item, 10000)
-        forecast = inventory + (self.supply[item] - self.demand[item]) * horizon + extra
+        forecast = (
+            inventory + (self.visible_supply(horizon)[item] - self.demand[item]) * horizon + extra
+        )
         future = quoted_price(item, forecast, self.params)
         # Explicit uncertainty blend; neither capacity nor a price is a promised fill.
         return 0.4 * self.prices[item] + 0.6 * future
@@ -541,41 +636,46 @@ class Planner:
             if route:
                 self.reserve(worker, job, route)
 
-        # Specific edges (worker, job) are selected, with one worker and one owner.
+        # Joint assignment among free workers; retained visits remain protected.
+        # Shared shed inputs are rechecked when reserving each matched edge.
         while len(self.assignments) < len(self.positions):
-            best = None
-            for worker in range(len(self.positions)):
-                if worker in self.assignments:
-                    continue
+            workers = [w for w in range(len(self.positions)) if w not in self.assignments]
+            jobs = [j for p, j in self.jobs.items() if p not in self.claimed]
+            if not jobs:
+                break
+            scale = max(1, sum(j["value"] for j in jobs))
+            weights, routes = [], {}
+            for i, worker in enumerate(workers):
+                row = []
                 carried_animal = next((a for a in ANIMALS if self.carry[worker].get(a, 0)), None)
-                for pos, job in self.jobs.items():
-                    if pos in self.claimed:
-                        continue
+                for j, job in enumerate(jobs):
                     if carried_animal and ["PLACE", carried_animal] not in job["ops"]:
+                        row.append(None)
                         continue
                     route = self.route(worker, job, self.available())
                     if route is None:
+                        row.append(None)
                         continue
-                    slack = route["slack"]
-                    urgent = job["essential"] and slack <= 3
-                    on_site = pos == self.positions[worker] and job["kind"] == "animal"
-                    score = job["value"] / (route["cost"] + 2)
-                    key = (
-                        urgent,
-                        on_site,
-                        job["kind"] == "install",
-                        job["essential"],
-                        -slack if urgent else score,
-                        -route["cost"],
-                        -worker,
-                        pos,
-                    )
-                    if best is None or key > best[0]:
-                        best = (key, worker, job, route)
-            if best is None:
+                    urgent = job["essential"] and route["slack"] <= 3
+                    on_site = job["pos"] == self.positions[worker] and job["kind"] == "animal"
+                    value = job["value"] if urgent else job["value"] / (route["cost"] + 2)
+                    priority = 4 * urgent + 2 * on_site + (job["kind"] == "install")
+                    priority += 0.25 * job["essential"]
+                    row.append(scale * priority + value - 1e-6 * route["cost"])
+                    routes[i, j] = route
+                weights.append(row)
+            pairs = maximum_weight_matching(weights)
+            reserved = 0
+            for i, j in sorted(pairs, key=lambda pair: (-weights[pair[0]][pair[1]], pair)):
+                worker, job = workers[i], jobs[j]
+                route = routes[i, j]
+                available = self.available()
+                if any(available.get(p, 0) < n for p, n in route["needed"].items()):
+                    continue
+                self.reserve(worker, job, route)
+                reserved += 1
+            if not reserved:
                 break
-            _, worker, job, route = best
-            self.reserve(worker, job, route)
 
         # Rescue only an actually unclaimed threatened job, and give it to the
         # worker we interrupt. Never interrupt an on-site animal service bundle.
@@ -635,7 +735,83 @@ class Planner:
         inv[item] -= n
         return ["PLACE", item, n]
 
+    def sale_receipts(self, item, quantity):
+        """Per-unit proceeds assuming no unseen rival order, with own price impact."""
+        n = max(0, min(int(quantity), self.capacity))
+        prefix = self._receipt_cache.setdefault(item, [0])
+        while len(prefix) <= n:
+            k = len(prefix) - 1
+            price = quoted_price(item, self.market.get(item, 10000) + k, self.params)
+            prefix.append(prefix[-1] + price)
+        return prefix[n]
+
+    def final_deposits(self):
+        """Capacity DP across all workers, restricted to the final action.
+
+        Exact for constant product values with sufficient SELL slots. For
+        moving prices, average incremental receipts are a valuation heuristic.
+        No future farm states are generated; only current deposit reservations.
+        """
+        cargo_units = sum(
+            sum(inv.values()) for pos, inv in zip(self.positions, self.carry) if pos in self.access
+        )
+        room = max(0, min(cargo_units, self.capacity - sum(self.shed.values())))
+        values = {}
+        for item in CURVES:
+            cargo = min(
+                room,
+                sum(
+                    inv.get(item, 0)
+                    for pos, inv in zip(self.positions, self.carry)
+                    if pos in self.access
+                ),
+            )
+            stock = self.shed.get(item, 0)
+            values[item] = (
+                self.sale_receipts(item, stock + cargo) - self.sale_receipts(item, stock)
+            ) / max(1, cargo)
+        # used capacity -> (value, negative discarded quantity, command tuple)
+        states = {0: (0, 0, ())}
+        for pos, inv in zip(self.positions, self.carry):
+            following = {}
+            for used, (value, kept, commands) in states.items():
+                free = room - used
+                options = [(0, 0, 0, ("PASS",))]
+                if pos in self.access and free:
+                    taken, gain = 0, 0
+                    for item, quantity in inv.items():
+                        n = min(max(0, quantity), free - taken)
+                        taken += n
+                        gain += n * values.get(item, 0)
+                    options.append((taken, gain, -max(0, sum(inv.values()) - taken), ("DROP",)))
+                    for item, quantity in inv.items():
+                        if item in CURVES:
+                            for n in range(1, min(quantity, free) + 1):
+                                options.append((n, n * values[item], 0, ("PLACE", item, n)))
+                for take, gain, loss, command in options:
+                    candidate = (value + gain, kept + loss, commands + (command,))
+                    old = following.get(used + take)
+                    if old is None or candidate[:2] > old[:2]:
+                        following[used + take] = candidate
+            states = following
+        _, best = max(states.items(), key=lambda pair: (pair[1][:2], -pair[0]))
+        actions = [list(command) for command in best[2]]
+        for inv, command in zip(self.carry, actions):
+            if command[0] == "DROP":
+                for item, quantity in inv.items():
+                    n = min(max(0, quantity), max(0, self.capacity - sum(self.shed.values())))
+                    self.shed[item] = self.shed.get(item, 0) + n
+                inv.clear()
+            elif command[0] == "PLACE":
+                item, n = command[1:]
+                self.shed[item] = self.shed.get(item, 0) + n
+                inv[item] -= n
+        _MEMORY["targets"] = {}
+        return actions
+
     def unit_actions(self):
+        if self.step == self.last:
+            return self.final_deposits()
         actions, targets = [], {}
         for worker, pos in enumerate(self.positions):
             inv = self.carry[worker]
@@ -717,7 +893,14 @@ class Planner:
         feed_stock = 0 if self.terminal else self.future_animals + self.feed_count
         carry_wheat = sum(inv.get("WHEAT", 0) for inv in self.carry)
         keep_wheat = max(0, feed_stock - carry_wheat)
-        for item in sorted(CURVES, key=lambda p: (-self.prices[p], p)):
+        sale_order = sorted(
+            CURVES,
+            key=lambda p: (
+                -self.sale_receipts(p, self.shed.get(p, 0)) if self.terminal else -self.prices[p],
+                p,
+            ),
+        )
+        for item in sale_order:
             n = max(0, self.shed.get(item, 0) - (keep_wheat if item == "WHEAT" else 0))
             # Keep a small, executable fertilizer buffer only for near-term crop demand.
             if item == "FERTILIZER" and not self.terminal:

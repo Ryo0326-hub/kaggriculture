@@ -1,5 +1,7 @@
 # Fresh Cycle 1 — economics and CO notes
 
+**Historical pre-fix report.** The original artifact and benchmark below remain preserved. The [Fresh Cycle 1 fixes release](FRESH_CYCLE_1_FIXES.md) supersedes its policy, results and upload command: all nine formerly expected failures now pass as mandatory regressions; the full bounded selection passes 871 tests.
+
 **Subsequent test evidence:** [245 optimization cases](OPTIMIZATION_TESTS.md)
 identify four unmet targets in the preserved policy: value-aware deadline
 selection, joint worker assignment, terminal shed capacity and rival service

@@ -1,5 +1,7 @@
 # Economic optimization tests
 
+**Historical pre-fix report.** The original artifact and benchmark below remain preserved. The [Fresh Cycle 1 fixes release](FRESH_CYCLE_1_FIXES.md) supersedes its policy, results and upload command: all nine formerly expected failures now pass as mandatory regressions; the full bounded selection passes 871 tests.
+
 Follow-up: [137 research-led scenarios](RESEARCH_SCENARIO_TESTS.md) extend this
 original suite without changing its cases, results or recorded benchmark.
 

@@ -1,0 +1,328 @@
+{
+  "release": "Fresh Cycle 1 fixes",
+  "time_seconds": 21.113,
+  "timestamp": "2026-09-12T22:44:33.646555-04:00",
+  "sha256": {
+    "experiments/fresh_cycle1.py": "289b7ae692201050ef792ddc9847ec7ed07438a87c85ade4f691e1efafc782a6",
+    "artifacts/submission-fresh-cycle-1-fixes-final/main.py": "289b7ae692201050ef792ddc9847ec7ed07438a87c85ade4f691e1efafc782a6",
+    "artifacts/submission-fresh-cycle-1-final/main.py": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "scripts/check_fresh_cycle1.py": "d294f985783a3c11aa5364de2847699d44f2ab8d0ae9ada73ae03d998a7d7f0b",
+    "scripts/make_fresh_cycle1.py": "178a0dfca1cd524e8d708017330f5cc14513a00e487edb8905f20d139eab3a9c",
+    "scripts/optimization_oracles.py": "09a48c65039498084618cd00e6754c7c3ee951108cd751aacf52f0c66667bc1a",
+    "scripts/research_oracles.py": "dea89c13a495f92f975b45a0720568ac35b346283f667b961e69f72c1a95eeab",
+    "tests/test_fresh_cycle1_fixes.py": "3328dd4cac983fccd32b77422c675680516c0677e68bc03b6120a3cdcbfaf462",
+    "tests/test_fresh_cycle1.py": "cf6bc76e4d5638ddeffae2dcf37be136851164ff2b785f7edd9c4a10701b833e",
+    "tests/test_optimization.py": "da4bc9a5b7cfaa875bcc5070623f917449fa8c1d499be7e621ceb6a95d185954",
+    "tests/test_research_scenarios.py": "b639dc97d580fa48698c880944e38af8abfc578d219b3d44d3d5071980e21287",
+    "tests/test_tiered_gameplays.py": "90c29be6f9b67f5aae0cf09699fc944ab83552cb607ddb879df231fdffb330d2",
+    "docs/examples/fresh-cycle1-histories.json": "afe1f6c1ab92f8f73792efce7cc893d0cbf956dae1266a7fc3d8f1d000845bc5",
+    "docs/examples/tiered-gameplay-observations.json": "3a468c401aba5e11c2663788211cb26a592bdd9ec069ad06b44ad8b2b00a603d",
+    "docs/gameplays/2026-09-12/manifest.json": "7945d8837aef0909bb6e612693ce2b9d17af87ad0cd0da4166f81270202df8cc",
+    "artifacts/fresh-cycle1-fixes/test-results.xml": "5871d3c8b261c4d66d8959885da28ee884c002ae4b2fdaf2eb73491d307e765f"
+  },
+  "cases_by_module": {
+    "tests.test_fresh_cycle1_fixes": 51,
+    "tests.test_fresh_cycle1": 34,
+    "tests.test_optimization": 245,
+    "tests.test_research_scenarios": 137,
+    "tests.test_tiered_gameplays": 228,
+    "tests.test_cycle18": 40,
+    "tests.test_majkel": 97,
+    "tests.test_resilience": 12,
+    "tests.test_calendar": 27
+  },
+  "new_regression_cases": [
+    "test_matching_agrees_with_exhaustive_small_assignment[no-workers]",
+    "test_matching_agrees_with_exhaustive_small_assignment[no-jobs]",
+    "test_matching_agrees_with_exhaustive_small_assignment[forbidden]",
+    "test_matching_agrees_with_exhaustive_small_assignment[negative]",
+    "test_matching_agrees_with_exhaustive_small_assignment[valuable-deadline]",
+    "test_matching_agrees_with_exhaustive_small_assignment[exclusive-access]",
+    "test_matching_agrees_with_exhaustive_small_assignment[three-worker-reassignment]",
+    "test_matching_agrees_with_exhaustive_small_assignment[more-workers-than-jobs]",
+    "test_matching_agrees_with_exhaustive_small_assignment[ties]",
+    "test_joint_assignment_rechecks_shared_feed_supply[0]",
+    "test_joint_assignment_rechecks_shared_feed_supply[1]",
+    "test_joint_assignment_rechecks_shared_feed_supply[2]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[0-goods0]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[0-goods1]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[0-goods2]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[1-goods0]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[1-goods1]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[1-goods2]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[2-goods0]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[2-goods1]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[2-goods2]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[4-goods0]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[4-goods1]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[4-goods2]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[6-goods0]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[6-goods1]",
+    "test_global_terminal_capacity_matches_exact_flat_price_oracle[6-goods2]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[1-goods0]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[1-goods1]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[1-goods2]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[3-goods0]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[3-goods1]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[3-goods2]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[8-goods0]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[8-goods1]",
+    "test_mixed_cargo_uses_legal_one_action_cash_optimum[8-goods2]",
+    "test_overflow_validator_is_terminal_only_and_never_sells_discarded_units[24-720]",
+    "test_overflow_validator_is_terminal_only_and_never_sells_discarded_units[24-710]",
+    "test_overflow_validator_is_terminal_only_and_never_sells_discarded_units[12-360]",
+    "test_terminal_order_value_includes_own_sale_slippage",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[1-TOMATO-8]",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[1-STRAWBERRY-10]",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[2-TOMATO-8]",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[2-STRAWBERRY-10]",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[5-TOMATO-8]",
+    "test_forecast_counts_only_crop_events_inside_requested_horizon[5-STRAWBERRY-10]",
+    "test_service_signals_separately_discount_rival_output[crew]",
+    "test_service_signals_separately_discount_rival_output[feeding]",
+    "test_service_signals_separately_discount_rival_output[care]",
+    "test_large_crew_terminal_capacity_and_callback_budget[100]",
+    "test_large_crew_terminal_capacity_and_callback_budget[200]"
+  ],
+  "baseline_commit": "c69689799aced933d8f70c1900db8c7913e00d17",
+  "artifact": "artifacts/submission-fresh-cycle-1-fixes-final/main.py",
+  "artifact_bytes": 47258,
+  "isolated_python_load": true,
+  "source_equals_artifact": true,
+  "runtime_imports": [
+    "math"
+  ],
+  "last_callable": "agent",
+  "test_outcomes": {
+    "passed": 871,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "expected_failures": 0
+  },
+  "original_regression_selection": {
+    "cases": 9,
+    "passed": 9,
+    "expected_failure_markers_removed": true,
+    "assertions_preserved": true
+  },
+  "resolved_ids": [
+    "OPT-001",
+    "OPT-002",
+    "OPT-003",
+    "OPT-004",
+    "OPT-005",
+    "OPT-006",
+    "OPT-007"
+  ],
+  "frozen_target_witnesses": [
+    {
+      "id": "OPT-001",
+      "metric": "assigned stipulated visit value",
+      "before": 20,
+      "after": 200
+    },
+    {
+      "id": "OPT-002",
+      "metric": "assigned stipulated visit value",
+      "before": 200,
+      "after": 350
+    },
+    {
+      "id": "OPT-003",
+      "metric": "flat-price terminal receipts excluding common shed stock",
+      "before": 50,
+      "after": 320
+    },
+    {
+      "id": "OPT-004",
+      "metric": "rival service forecast",
+      "before": "identical healthy and neglected milk value",
+      "after": "neglected output discounted; milk value higher than healthy"
+    },
+    {
+      "id": "OPT-005",
+      "metric": "flat-price terminal receipts with one order slot",
+      "before": 160,
+      "after": 500
+    },
+    {
+      "id": "OPT-006",
+      "metric": "flat-price terminal mixed-cargo receipts, room 8",
+      "before": 160,
+      "after": 335
+    },
+    {
+      "id": "OPT-006",
+      "metric": "flat-price terminal mixed-cargo receipts, room 3",
+      "before": 320,
+      "after": 345
+    },
+    {
+      "id": "OPT-007",
+      "metric": "one-day tomato forecast",
+      "before": "immature and productive valued equally",
+      "after": "immature output excluded; higher value than productive"
+    },
+    {
+      "id": "OPT-007",
+      "metric": "one-day strawberry forecast",
+      "before": "immature and productive valued equally",
+      "after": "immature output excluded; higher value than productive"
+    }
+  ],
+  "packaged_original_histories": {
+    "source_sha256": "289b7ae692201050ef792ddc9847ec7ed07438a87c85ade4f691e1efafc782a6",
+    "fixture_sha256": "afe1f6c1ab92f8f73792efce7cc893d0cbf956dae1266a7fc3d8f1d000845bc5",
+    "method": "Original observations only; actions never generate states.",
+    "sources": [
+      {
+        "episode": "d484dfc2-af07-11f1-a560-0242ac130203",
+        "file": "108351109 (1).json",
+        "module_version": "1.32.7",
+        "sha256": "b1ec1296958a31d091bd7473a5ace4c95947857628c0240b4a82e96a0e5e52a6"
+      },
+      {
+        "episode": "ed08b758-af0c-11f1-b527-0242ac130203",
+        "file": "episode-108360391-replay.json",
+        "module_version": "1.32.7",
+        "sha256": "1cbde12993040e234b203cef0b6cd3cc7bb59960e9f8ecc26f58f63a5ec4c869"
+      },
+      {
+        "episode": "46401b82-af0c-11f1-b759-0242ac130204",
+        "file": "episode-108359367-replay.json",
+        "module_version": "1.32.7",
+        "sha256": "fff4464563ee198e22984cbf312ac88a6b38ac34e25feb752293422de2a0abc5"
+      }
+    ],
+    "histories": [
+      {
+        "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/0:16/opening",
+        "count": 16,
+        "warm_action_sha256": "75052d68b98f40bbdd3bc439f06cefb7c80f33bb39a82aa8a63282f923202b14"
+      },
+      {
+        "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/240:264/feed-delivery",
+        "count": 24,
+        "warm_action_sha256": "f9e388335a74f92fd241ffcfd94cad917182561b7617054e668182365eb5a2f6"
+      },
+      {
+        "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/288:306/installation",
+        "count": 18,
+        "warm_action_sha256": "331334a4c39e555eabf20c478bde43c335e4a32915288c735af860d517da248e"
+      },
+      {
+        "label": "d484dfc2-af07-11f1-a560-0242ac130203/1/696:719/terminal-seat-1",
+        "count": 23,
+        "warm_action_sha256": "37564ee73abc4585dc2e0eeee6fc637687549b008cbc6b31c935bbbe28c4f629"
+      },
+      {
+        "label": "ed08b758-af0c-11f1-b527-0242ac130203/1/480:504/routing-history",
+        "count": 24,
+        "warm_action_sha256": "c094fc310f5e319255fcad025dea09f72f9be4ab473851c07ebd076b3bc76ce2"
+      },
+      {
+        "label": "ed08b758-af0c-11f1-b527-0242ac130203/1/696:719/terminal-seat-1",
+        "count": 23,
+        "warm_action_sha256": "87a1ece06246dde9ed9040f38f7d3e112662a9db8f7914c6791cc43af2498f13"
+      },
+      {
+        "label": "46401b82-af0c-11f1-b759-0242ac130204/0/432:456/production-calendar",
+        "count": 24,
+        "warm_action_sha256": "13896ddeabac4a9d61a503a0869594236db1afc74984fdde9d21c536055a1639"
+      },
+      {
+        "label": "46401b82-af0c-11f1-b759-0242ac130204/0/696:719/terminal-seat-0",
+        "count": 23,
+        "warm_action_sha256": "49a6e1bd0b9fd7d7de3023b721d1506db88394bdbf68847877175fb47a520ea3"
+      }
+    ],
+    "calls": 525,
+    "max_seconds": 0.008950459014158696,
+    "route_witness": [
+      {
+        "step": 492,
+        "worker": 3,
+        "action": [
+          "EAST"
+        ],
+        "target": [
+          [
+            9,
+            3
+          ],
+          "service"
+        ]
+      },
+      {
+        "step": 493,
+        "worker": 3,
+        "action": [
+          "EAST"
+        ],
+        "target": [
+          [
+            9,
+            3
+          ],
+          "service"
+        ]
+      },
+      {
+        "step": 494,
+        "worker": 3,
+        "action": [
+          "EAST"
+        ],
+        "target": [
+          [
+            9,
+            3
+          ],
+          "service"
+        ]
+      }
+    ]
+  },
+  "tiered_recording_checks": {
+    "archives": 9,
+    "selected_snapshots": 136,
+    "four_state_histories": 36,
+    "callbacks": 622,
+    "original_observation_callbacks": 604,
+    "derived_seat_swap_callbacks": 18,
+    "per_callback_timeout_seconds": 1
+  },
+  "other_assertion_changes": {
+    "legacy_partial_deposit": "Requires hand PLACE WOOL 2 instead of farmer PLACE MILK 2; stronger cash witness 400 versus 318; no overflow.",
+    "validator": "Allows engine-legal insertion-order DROP overflow on final actionable step only; credits accepted prefix only.",
+    "tiered_terminal_sales": "Checks sales against capacity-accepted DROP prefix, not discarded cargo."
+  },
+  "preservation": {
+    "original_artifact_sha256": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "prior_manifest": "docs/benchmarks/fresh-cycle1-preserved.json",
+    "all_manifest_paths_hash_verified": true,
+    "original_checkout_clean": true,
+    "old_benchmarks_and_gameplay_files_unchanged": true
+  },
+  "limitations": [
+    "Matching is exact for its supplied weighted graph, not the full-season profit objective.",
+    "Protected feasible routes remain fixed; shared input collisions are rechecked iteratively, not solved jointly.",
+    "Terminal deposit DP is exact for flat per-product values and sufficient sale slots; moving-price average values are heuristic.",
+    "Deposit choices and a restrictive market-order budget are not jointly optimized.",
+    "Price forecasts and service discounts are uncalibrated assumptions; rival hidden inventories, orders and future shops remain unknown.",
+    "Original observations are off-policy diagnostics, not counterfactual trajectories or measured season returns.",
+    "Runtime bounds are sampled locally and do not establish Kaggle server performance."
+  ],
+  "local_games_run": 0,
+  "engine_steps_run": 0,
+  "paid_compute_used": false,
+  "kaggle_upload_performed": false,
+  "no_season_profit_improvement_claim": true,
+  "cli_help_verified": "/Users/ryokitano/.local/bin/kaggle competitions submit --help",
+  "static_checks": {
+    "ruff_check": true,
+    "ruff_format_check": true,
+    "compileall": true
+  }
+}

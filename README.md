@@ -4,9 +4,9 @@ An optimization-based agent for Kaggle's farming simulation, developed in explic
 
 **New recorded-gameplay coverage:** [Nine top/mid/bottom recordings and 228 tests](docs/TIERED_GAMEPLAY_TESTS.md). Lossless archives are committed; full JSON copies are saved locally. Tests cover both seats using 136 selected snapshots and 36 four-observation histories, without running games or copying opponents' actions. Tier labels come from the user, not verified current rankings.
 
-**Research-led test extension:** [137 additional cases, sources and scenario analysis](docs/RESEARCH_SCENARIO_TESTS.md), written after external research: 132 pass and five expose three additional policy gaps. Together with the [original 245 optimization cases](docs/OPTIMIZATION_TESTS.md), this is 382 cases: 373 pass and nine strict expected failures document seven unresolved gaps. Current policy and submission bytes are unchanged.
+**Fixed economic regressions:** All nine formerly expected failures now pass without expected-failure markers. The [245 optimization cases](docs/OPTIMIZATION_TESTS.md) and [137 research-led scenarios](docs/RESEARCH_SCENARIO_TESTS.md), plus 51 new independent regression checks, cover joint assignment, value-aware deadlines, terminal capacity and order allocation, and observable rival output. **871 bounded tests pass, zero expected failures.** These are local correctness checks, not measured season-profit gains.
 
-**Current work: Fresh Cycle 1**, independently implemented at the user's request without a reference policy. [Release, checks and upload command](docs/FRESH_CYCLE_1_RESULTS.md) · [Economics and CO notes](docs/FRESH_CYCLE_1_OPTIMIZATION.md). Source: `experiments/fresh_cycle1.py`; builder: `scripts/make_fresh_cycle1.py`. Packaged for user-run Kaggle submission, with bounded tests and recorded histories only. Upload and server validation are pending. Historical root `main.py` and all prior releases remain preserved.
+**Current release: Fresh Cycle 1 fixes**, independently implemented at the user's request without a reference policy. [Release, economics/CO notes, checks and upload command](docs/FRESH_CYCLE_1_FIXES.md). Source: `experiments/fresh_cycle1.py`; builder: `scripts/make_fresh_cycle1.py`; new artifact: `artifacts/submission-fresh-cycle-1-fixes-final/main.py` (`289b7ae69220`). Upload and server validation are pending. Historical root `main.py`, the original fresh-Cycle-1 submission and all prior releases remain preserved.
 
 **Historical handoff:** [Cycle 22 handoff](docs/HANDOFF_CYCLE_22.md). Its instruction to derive from Cycle 19 is superseded by the user's fresh-Cycle-1 request. The prior release reports below are historical evidence.
 
@@ -48,7 +48,7 @@ Step 8 remains server validated and preserved byte-for-byte in `baselines/step_8
 
 ## Historical local simulation commands — explicit opt-in only
 
-Use the Cycle 19 build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
+Use the Fresh Cycle 1 fixes build/upload instructions above for the current workflow. The following commands include tests and matches that run the simulator; do not launch them without a new explicit request.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 

@@ -58,8 +58,14 @@ def check_action(obs, config, action):
                 assert type(n) is int and 0 < n <= shed[item]
                 shed[item] -= n
             elif op == "DROP":
-                assert not args and sum(inv.values()) <= capacity - sum(shed.values())
-                shed.update(inv)
+                assert not args
+                final_action = obs["day"] * config.get("turnsPerDay", 24) + obs["hour"]
+                if sum(inv.values()) > capacity - sum(shed.values()):
+                    assert final_action == config.get("episodeSteps", 720) - 2
+                # Engine order: accepted prefix only; discarded overflow must
+                # never become a SELL quantity. Earlier DROP still cannot waste stock.
+                for item, quantity in inv.items():
+                    shed[item] += min(quantity, max(0, capacity - sum(shed.values())))
             else:
                 item, n = args
                 assert type(n) is int and 0 < n <= inv[item]

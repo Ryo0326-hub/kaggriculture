@@ -259,9 +259,11 @@ def test_partial_deposit_reserves_space_without_discarding(policy):
     obs["private"]["shed"] = {"WHEAT": 98}
     obs["private"]["inventories"] = [{"MILK": 6}, {"WOOL": 4}]
     action = invoke(policy, obs)
-    assert action["farmer"] == ["PLACE", "MILK", 2]
-    assert action["hands"] == [["PASS"]]
-    assert ["SELL", "MILK", 2] in action["market"]
+    # Two wool yield 400 coins versus two milk's 318 at native prices.
+    # Preserve no overflow without pinning the old worker-order bug.
+    assert action["farmer"] == ["PASS"]
+    assert action["hands"] == [["PLACE", "WOOL", 2]]
+    assert ["SELL", "WOOL", 2] in action["market"]
 
 
 def test_unrelated_covered_urgency_does_not_interrupt_commitment(policy):
