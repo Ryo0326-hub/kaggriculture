@@ -1,5 +1,9 @@
 # Cycle 21 — production calendars and deadline-aware service
 
+**Server update:** validation passes, but recorded matches show route preemption,
+input-service and production regressions. The intended benefits below did not
+translate into reliably stronger play. [Failure analysis and recovery direction](CYCLE_21_SERVER_REVIEW.md).
+
 Cycle 21 is a complete standalone descendant of the preserved Cycle 20 agent.
 It implements the crop scheduling priority identified in the
 [Baen review](SERVER_REVIEW_108335136.md) and

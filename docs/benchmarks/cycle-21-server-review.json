@@ -1,0 +1,1978 @@
+{
+  "review_date": "2026-09-12 America/Toronto (2026-09-13 UTC)",
+  "method": "Passive recorded-state accounting and exact original-observation callbacks; no simulator or alternative season",
+  "validation_fingerprint": {
+    "episode": 108351109,
+    "method": "Independent callbacks on original observations; actions never applied",
+    "replay_sha256": "b1ec1296958a31d091bd7473a5ace4c95947857628c0240b4a82e96a0e5e52a6",
+    "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+    "seats": [
+      {
+        "seat": 0,
+        "matches": 217,
+        "mismatches": 502,
+        "first_mismatches": [
+          4,
+          8,
+          13,
+          17,
+          18,
+          28,
+          29,
+          30
+        ],
+        "stderr_entries": 0,
+        "stdout_entries": 0,
+        "max_log_duration": 0.094193,
+        "warm_matches": 719,
+        "warm_mismatches": 0,
+        "first_warm_mismatches": []
+      },
+      {
+        "seat": 1,
+        "matches": 231,
+        "mismatches": 488,
+        "first_mismatches": [
+          4,
+          8,
+          13,
+          17,
+          18,
+          28,
+          29,
+          30
+        ],
+        "stderr_entries": 0,
+        "stdout_entries": 0,
+        "max_log_duration": 0.072974,
+        "warm_matches": 719,
+        "warm_mismatches": 0,
+        "first_warm_mismatches": []
+      }
+    ],
+    "warm_method": "Original observations in recorded order, retaining policy memory; no returned action applied"
+  },
+  "ladder_fingerprints": {
+    "method": "Original observations retaining memory; no returned action applied",
+    "source_sha256": "f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156",
+    "games": [
+      {
+        "episode": "108360391",
+        "seat": 1,
+        "matches": 719,
+        "mismatches": 0,
+        "first_mismatches": [],
+        "sha256": "1cbde12993040e234b203cef0b6cd3cc7bb59960e9f8ecc26f58f63a5ec4c869"
+      },
+      {
+        "episode": "108359367",
+        "seat": 0,
+        "matches": 719,
+        "mismatches": 0,
+        "first_mismatches": [],
+        "sha256": "fff4464563ee198e22984cbf312ac88a6b38ac34e25feb752293422de2a0abc5"
+      }
+    ]
+  },
+  "games": [
+    {
+      "episode": 108351109,
+      "type": "validation",
+      "replay_sha256": "b1ec1296958a31d091bd7473a5ace4c95947857628c0240b4a82e96a0e5e52a6",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "town": {
+        "unlocked_shops": [
+          "FARMERS_MARKET",
+          "PET_CAFE",
+          "ICE_CREAM_SHOP",
+          "PIZZA_SHOP",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "YARN_STORE",
+          "ICE_CREAM_SHOP"
+        ]
+      },
+      "players": [
+        {
+          "name": "Unicorns",
+          "seat": 0,
+          "cash": 85126.0,
+          "peak_productive": 55,
+          "land": [
+            {
+              "decision_step": 156,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 217,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 4080,
+          "all_unit_actions": 7190,
+          "requested_operations": {
+            "PASS": 1129,
+            "PICKUP": 266,
+            "WEST": 1191,
+            "BUILD_PASTURE": 10,
+            "NORTH": 1140,
+            "PLACE": 81,
+            "FEED": 219,
+            "PLANT": 115,
+            "CARE": 153,
+            "WATER": 621,
+            "EAST": 957,
+            "SOUTH": 792,
+            "COLLECT_FERTILIZER": 155,
+            "HARVEST": 280,
+            "DIG": 23,
+            "FERTILIZE": 57,
+            "BUILD_COOP": 1
+          },
+          "immediate_reversal_pairs": 94,
+          "production": {
+            "animal_events": 81,
+            "animal_unfed_events": 2,
+            "animal_zero_care_bonus_events": 6,
+            "banked_bonus_lost_on_unfed_events": 4,
+            "berry_events": 111,
+            "berry_bonus_events": 78,
+            "berry_unwatered_events": 1
+          },
+          "harvest": {
+            "WHEAT": 84,
+            "WOOL": 75,
+            "MILK": 138,
+            "MELON": 72,
+            "CARROT": 89,
+            "STRAWBERRY": 173,
+            "TOMATO": 58,
+            "EGG": 15
+          },
+          "costs": {
+            "seeds": 5570,
+            "animals": 5000,
+            "land": 3000,
+            "wages": 5018,
+            "net_product_receipts_residual": 100714.0
+          },
+          "accepted_fixed_purchases": {
+            "SEED:WHEAT": 28,
+            "SEED:MELON": 12,
+            "ANIMAL:COW": 8,
+            "ANIMAL:SHEEP": 3,
+            "ANIMAL:GOOSE": 1,
+            "SEED:STRAWBERRY": 32,
+            "SEED:CARROT": 34,
+            "SEED:TOMATO": 9
+          },
+          "installations": [
+            {
+              "step": 4,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 6,
+              "site": [
+                4,
+                2
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 15,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 221,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 231,
+              "site": [
+                5,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 232,
+              "site": [
+                6,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 357,
+              "site": [
+                5,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 14,
+              "first_day": 22
+            },
+            {
+              "step": 441,
+              "site": [
+                7,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 18,
+              "first_day": 26
+            },
+            {
+              "step": 444,
+              "site": [
+                6,
+                3
+              ],
+              "animal": "GOOSE",
+              "placed_day": 18,
+              "first_day": 22
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 1,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {},
+          "terminal_seeds": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "unresolved": []
+        },
+        {
+          "name": "Unicorns",
+          "seat": 1,
+          "cash": 85508.0,
+          "peak_productive": 55,
+          "land": [
+            {
+              "decision_step": 156,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 217,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 4114,
+          "all_unit_actions": 7198,
+          "requested_operations": {
+            "PASS": 1158,
+            "PICKUP": 251,
+            "WEST": 1187,
+            "BUILD_PASTURE": 10,
+            "NORTH": 1130,
+            "PLACE": 72,
+            "FEED": 204,
+            "PLANT": 114,
+            "CARE": 148,
+            "WATER": 623,
+            "EAST": 984,
+            "SOUTH": 813,
+            "COLLECT_FERTILIZER": 150,
+            "HARVEST": 272,
+            "DIG": 22,
+            "FERTILIZE": 60
+          },
+          "immediate_reversal_pairs": 97,
+          "production": {
+            "animal_events": 72,
+            "animal_unfed_events": 4,
+            "animal_zero_care_bonus_events": 10,
+            "banked_bonus_lost_on_unfed_events": 9,
+            "berry_events": 118,
+            "berry_bonus_events": 88,
+            "berry_unwatered_events": 3
+          },
+          "harvest": {
+            "WHEAT": 80,
+            "WOOL": 72,
+            "MILK": 136,
+            "MELON": 72,
+            "CARROT": 85,
+            "STRAWBERRY": 189,
+            "TOMATO": 47
+          },
+          "costs": {
+            "seeds": 5690,
+            "animals": 4600,
+            "land": 3000,
+            "wages": 5018,
+            "net_product_receipts_residual": 100816.0
+          },
+          "accepted_fixed_purchases": {
+            "SEED:WHEAT": 27,
+            "SEED:MELON": 12,
+            "ANIMAL:COW": 7,
+            "ANIMAL:SHEEP": 3,
+            "ANIMAL:GOOSE": 1,
+            "SEED:STRAWBERRY": 34,
+            "SEED:CARROT": 33,
+            "SEED:TOMATO": 8
+          },
+          "installations": [
+            {
+              "step": 4,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 6,
+              "site": [
+                4,
+                2
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 15,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 221,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 231,
+              "site": [
+                5,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 232,
+              "site": [
+                6,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 357,
+              "site": [
+                6,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 14,
+              "first_day": 22
+            },
+            {
+              "step": 519,
+              "site": [
+                5,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 21,
+              "first_day": 29
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 1,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {},
+          "terminal_seeds": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "episode": 108360391,
+      "type": "public",
+      "replay_sha256": "1cbde12993040e234b203cef0b6cd3cc7bb59960e9f8ecc26f58f63a5ec4c869",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "town": {
+        "unlocked_shops": [
+          "ICE_CREAM_SHOP",
+          "ICE_CREAM_SHOP",
+          "PET_CAFE",
+          "PET_CAFE",
+          "BAKERY",
+          "BAKERY",
+          "PET_CAFE",
+          "BAKERY"
+        ]
+      },
+      "players": [
+        {
+          "name": "mogura2.0",
+          "seat": 0,
+          "cash": 104432.0,
+          "peak_productive": 75,
+          "land": [
+            {
+              "decision_step": 150,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 265,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 2802,
+          "all_unit_actions": 6663,
+          "requested_operations": {
+            "PASS": 408,
+            "NORTH": 902,
+            "SOUTH": 492,
+            "PICKUP": 202,
+            "BUILD_PASTURE": 14,
+            "PLACE": 97,
+            "WEST": 842,
+            "CARE": 417,
+            "PLANT": 239,
+            "WATER": 1110,
+            "FEED": 367,
+            "COLLECT_FERTILIZER": 372,
+            "EAST": 566,
+            "HARVEST": 476,
+            "DROP": 51,
+            "BUILD_COOP": 5,
+            "FERTILIZE": 68,
+            "DIG": 35
+          },
+          "immediate_reversal_pairs": 12,
+          "production": {
+            "animal_events": 162,
+            "animal_unfed_events": 6,
+            "animal_zero_care_bonus_events": 8,
+            "banked_bonus_lost_on_unfed_events": 8,
+            "berry_events": 130,
+            "berry_bonus_events": 119,
+            "berry_unwatered_events": 0
+          },
+          "harvest": {
+            "WHEAT": 521,
+            "WOOL": 118,
+            "MILK": 284,
+            "MELON": 72,
+            "EGG": 78,
+            "STRAWBERRY": 249,
+            "CARROT": 89
+          },
+          "costs": {
+            "animals": 6900,
+            "seeds": 6490,
+            "land": 3000,
+            "wages": 3719,
+            "net_product_receipts_residual": 121541.0
+          },
+          "accepted_fixed_purchases": {
+            "ANIMAL:COW": 10,
+            "ANIMAL:SHEEP": 4,
+            "ANIMAL:GOOSE": 3,
+            "SEED:MELON": 12,
+            "SEED:WHEAT": 161,
+            "SEED:STRAWBERRY": 33,
+            "SEED:CARROT": 31
+          },
+          "installations": [
+            {
+              "step": 4,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 5,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 8,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 10,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 69,
+              "site": [
+                4,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 2,
+              "first_day": 10
+            },
+            {
+              "step": 95,
+              "site": [
+                2,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 3,
+              "first_day": 11
+            },
+            {
+              "step": 155,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 6,
+              "first_day": 14
+            },
+            {
+              "step": 156,
+              "site": [
+                5,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 6,
+              "first_day": 14
+            },
+            {
+              "step": 177,
+              "site": [
+                6,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 182,
+              "site": [
+                5,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 201,
+              "site": [
+                7,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 8,
+              "first_day": 14
+            },
+            {
+              "step": 213,
+              "site": [
+                6,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 8,
+              "first_day": 14
+            },
+            {
+              "step": 229,
+              "site": [
+                6,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            },
+            {
+              "step": 258,
+              "site": [
+                1,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 10,
+              "first_day": 18
+            },
+            {
+              "step": 259,
+              "site": [
+                3,
+                2
+              ],
+              "animal": "GOOSE",
+              "placed_day": 10,
+              "first_day": 14
+            },
+            {
+              "step": 260,
+              "site": [
+                4,
+                1
+              ],
+              "animal": "GOOSE",
+              "placed_day": 10,
+              "first_day": 14
+            },
+            {
+              "step": 275,
+              "site": [
+                2,
+                3
+              ],
+              "animal": "GOOSE",
+              "placed_day": 11,
+              "first_day": 15
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {
+            "MILK": 1
+          },
+          "terminal_seeds": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "unresolved": [
+            {
+              "step": 383,
+              "kind": "newborn_weed",
+              "crop": "WHEAT",
+              "site": [
+                9,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Unicorns",
+          "seat": 1,
+          "cash": 57930.0,
+          "peak_productive": 50,
+          "land": [
+            {
+              "decision_step": 156,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 241,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 4098,
+          "all_unit_actions": 7180,
+          "requested_operations": {
+            "PASS": 1067,
+            "PICKUP": 300,
+            "WEST": 1211,
+            "BUILD_PASTURE": 11,
+            "NORTH": 1130,
+            "PLACE": 75,
+            "FEED": 251,
+            "PLANT": 115,
+            "CARE": 169,
+            "WATER": 561,
+            "EAST": 1122,
+            "SOUTH": 635,
+            "COLLECT_FERTILIZER": 173,
+            "HARVEST": 277,
+            "DIG": 30,
+            "FERTILIZE": 53
+          },
+          "immediate_reversal_pairs": 89,
+          "production": {
+            "animal_events": 92,
+            "animal_unfed_events": 4,
+            "animal_zero_care_bonus_events": 22,
+            "banked_bonus_lost_on_unfed_events": 7,
+            "berry_events": 104,
+            "berry_bonus_events": 52,
+            "berry_unwatered_events": 0
+          },
+          "harvest": {
+            "WHEAT": 51,
+            "WOOL": 70,
+            "MILK": 179,
+            "MELON": 72,
+            "STRAWBERRY": 156,
+            "CARROT": 190
+          },
+          "costs": {
+            "seeds": 4920,
+            "animals": 4700,
+            "land": 3000,
+            "wages": 5010,
+            "net_product_receipts_residual": 72560.0
+          },
+          "accepted_fixed_purchases": {
+            "SEED:WHEAT": 18,
+            "SEED:MELON": 12,
+            "ANIMAL:COW": 8,
+            "ANIMAL:SHEEP": 3,
+            "ANIMAL:GOOSE": 0,
+            "SEED:STRAWBERRY": 26,
+            "SEED:CARROT": 59
+          },
+          "installations": [
+            {
+              "step": 4,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 6,
+              "site": [
+                4,
+                2
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 15,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 164,
+              "site": [
+                5,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 6,
+              "first_day": 14
+            },
+            {
+              "step": 165,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 6,
+              "first_day": 14
+            },
+            {
+              "step": 173,
+              "site": [
+                6,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 177,
+              "site": [
+                5,
+                2
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 207,
+              "site": [
+                6,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 8,
+              "first_day": 16
+            },
+            {
+              "step": 223,
+              "site": [
+                7,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 9,
+              "first_day": 17
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {},
+          "terminal_seeds": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "unresolved": []
+        }
+      ]
+    },
+    {
+      "episode": 108359367,
+      "type": "public",
+      "replay_sha256": "fff4464563ee198e22984cbf312ac88a6b38ac34e25feb752293422de2a0abc5",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "town": {
+        "unlocked_shops": [
+          "FARMERS_MARKET",
+          "PIZZA_SHOP",
+          "YARN_STORE",
+          "SMOOTHIE_SHOP",
+          "FARMERS_MARKET",
+          "BRUNCH_SPOT",
+          "BAKERY",
+          "PET_CAFE"
+        ]
+      },
+      "players": [
+        {
+          "name": "Unicorns",
+          "seat": 0,
+          "cash": 88858.0,
+          "peak_productive": 55,
+          "land": [
+            {
+              "decision_step": 157,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 217,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 4273,
+          "all_unit_actions": 7177,
+          "requested_operations": {
+            "PASS": 940,
+            "PICKUP": 256,
+            "WEST": 1311,
+            "BUILD_PASTURE": 10,
+            "NORTH": 1110,
+            "PLACE": 79,
+            "FEED": 209,
+            "PLANT": 119,
+            "CARE": 145,
+            "WATER": 655,
+            "EAST": 1036,
+            "SOUTH": 816,
+            "COLLECT_FERTILIZER": 140,
+            "HARVEST": 276,
+            "DIG": 35,
+            "FERTILIZE": 40
+          },
+          "immediate_reversal_pairs": 86,
+          "production": {
+            "animal_events": 72,
+            "animal_unfed_events": 2,
+            "animal_zero_care_bonus_events": 12,
+            "banked_bonus_lost_on_unfed_events": 3,
+            "berry_events": 104,
+            "berry_bonus_events": 45,
+            "berry_unwatered_events": 13
+          },
+          "harvest": {
+            "WHEAT": 158,
+            "WOOL": 91,
+            "MILK": 122,
+            "MELON": 72,
+            "STRAWBERRY": 149,
+            "TOMATO": 73,
+            "CARROT": 30
+          },
+          "costs": {
+            "seeds": 5410,
+            "animals": 4500,
+            "land": 3000,
+            "wages": 5010,
+            "net_product_receipts_residual": 103778.0
+          },
+          "accepted_fixed_purchases": {
+            "SEED:WHEAT": 52,
+            "SEED:MELON": 12,
+            "ANIMAL:COW": 5,
+            "ANIMAL:SHEEP": 5,
+            "ANIMAL:GOOSE": 0,
+            "SEED:STRAWBERRY": 28,
+            "SEED:TOMATO": 19,
+            "SEED:CARROT": 9
+          },
+          "installations": [
+            {
+              "step": 4,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 6,
+              "site": [
+                4,
+                2
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 7,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 15,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 165,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 6,
+              "first_day": 14
+            },
+            {
+              "step": 176,
+              "site": [
+                5,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 177,
+              "site": [
+                6,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 543,
+              "site": [
+                6,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 22,
+              "first_day": 28
+            },
+            {
+              "step": 545,
+              "site": [
+                5,
+                2
+              ],
+              "animal": "SHEEP",
+              "placed_day": 22,
+              "first_day": 28
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {},
+          "terminal_seeds": {
+            "CARROT": 0,
+            "MELON": 0,
+            "STRAWBERRY": 1,
+            "TOMATO": 0,
+            "WHEAT": 0
+          },
+          "unresolved": []
+        },
+        {
+          "name": "Nawaf Almutairi",
+          "seat": 1,
+          "cash": 123317.0,
+          "peak_productive": 72,
+          "land": [
+            {
+              "decision_step": 167,
+              "quadrants": 2
+            },
+            {
+              "decision_step": 217,
+              "quadrants": 3
+            }
+          ],
+          "movement_actions": 3817,
+          "all_unit_actions": 7300,
+          "requested_operations": {
+            "PASS": 687,
+            "BUILD_PASTURE": 18,
+            "WEST": 1115,
+            "NORTH": 1049,
+            "PICKUP": 114,
+            "PLACE": 19,
+            "PLANT": 249,
+            "WATER": 919,
+            "FEED": 298,
+            "CARE": 278,
+            "SOUTH": 678,
+            "COLLECT_FERTILIZER": 343,
+            "EAST": 975,
+            "HARVEST": 339,
+            "DROP": 93,
+            "FERTILIZE": 85,
+            "DIG": 41
+          },
+          "immediate_reversal_pairs": 25,
+          "production": {
+            "animal_events": 110,
+            "animal_unfed_events": 14,
+            "animal_zero_care_bonus_events": 15,
+            "banked_bonus_lost_on_unfed_events": 24,
+            "berry_events": 50,
+            "berry_bonus_events": 50,
+            "berry_unwatered_events": 0
+          },
+          "harvest": {
+            "CARROT": 118,
+            "WHEAT": 559,
+            "WOOL": 179,
+            "MILK": 168,
+            "MELON": 84,
+            "STRAWBERRY": 100
+          },
+          "costs": {
+            "seeds": 5710,
+            "animals": 8600,
+            "land": 3000,
+            "wages": 8043,
+            "net_product_receipts_residual": 145670.0
+          },
+          "accepted_fixed_purchases": {
+            "SEED:CARROT": 60,
+            "SEED:MELON": 14,
+            "ANIMAL:COW": 9,
+            "ANIMAL:SHEEP": 10,
+            "ANIMAL:GOOSE": 0,
+            "SEED:WHEAT": 159,
+            "SEED:STRAWBERRY": 16,
+            "SEED:TOMATO": 4
+          },
+          "installations": [
+            {
+              "step": 3,
+              "site": [
+                4,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 0,
+              "first_day": 8
+            },
+            {
+              "step": 10,
+              "site": [
+                4,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 23,
+              "site": [
+                4,
+                1
+              ],
+              "animal": "SHEEP",
+              "placed_day": 0,
+              "first_day": 6
+            },
+            {
+              "step": 32,
+              "site": [
+                2,
+                1
+              ],
+              "animal": "COW",
+              "placed_day": 1,
+              "first_day": 9
+            },
+            {
+              "step": 138,
+              "site": [
+                1,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 5,
+              "first_day": 11
+            },
+            {
+              "step": 189,
+              "site": [
+                1,
+                4
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 190,
+              "site": [
+                4,
+                0
+              ],
+              "animal": "COW",
+              "placed_day": 7,
+              "first_day": 15
+            },
+            {
+              "step": 213,
+              "site": [
+                1,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 8,
+              "first_day": 16
+            },
+            {
+              "step": 214,
+              "site": [
+                3,
+                0
+              ],
+              "animal": "COW",
+              "placed_day": 8,
+              "first_day": 16
+            },
+            {
+              "step": 248,
+              "site": [
+                3,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 10,
+              "first_day": 16
+            },
+            {
+              "step": 258,
+              "site": [
+                3,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 10,
+              "first_day": 16
+            },
+            {
+              "step": 259,
+              "site": [
+                2,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 10,
+              "first_day": 16
+            },
+            {
+              "step": 270,
+              "site": [
+                5,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 11,
+              "first_day": 17
+            },
+            {
+              "step": 307,
+              "site": [
+                8,
+                4
+              ],
+              "animal": "SHEEP",
+              "placed_day": 12,
+              "first_day": 18
+            },
+            {
+              "step": 318,
+              "site": [
+                4,
+                5
+              ],
+              "animal": "SHEEP",
+              "placed_day": 13,
+              "first_day": 19
+            },
+            {
+              "step": 335,
+              "site": [
+                7,
+                3
+              ],
+              "animal": "COW",
+              "placed_day": 13,
+              "first_day": 21
+            },
+            {
+              "step": 358,
+              "site": [
+                3,
+                5
+              ],
+              "animal": "COW",
+              "placed_day": 14,
+              "first_day": 22
+            },
+            {
+              "step": 429,
+              "site": [
+                8,
+                3
+              ],
+              "animal": "SHEEP",
+              "placed_day": 17,
+              "first_day": 23
+            },
+            {
+              "step": 479,
+              "site": [
+                2,
+                7
+              ],
+              "animal": "COW",
+              "placed_day": 19,
+              "first_day": 27
+            }
+          ],
+          "terminal_shed": {
+            "CARROT": 0,
+            "COW": 0,
+            "EGG": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "MELON": 0,
+            "MILK": 0,
+            "SHEEP": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 0,
+            "WOOL": 0
+          },
+          "terminal_carries": {},
+          "terminal_field_output": {
+            "WHEAT": 7,
+            "MILK": 2,
+            "CARROT": 11
+          },
+          "terminal_seeds": {
+            "CARROT": 1,
+            "MELON": 0,
+            "STRAWBERRY": 0,
+            "TOMATO": 0,
+            "WHEAT": 3
+          },
+          "unresolved": []
+        }
+      ]
+    }
+  ],
+  "preemption_witness": [
+    {
+      "step": 493,
+      "prior_target": [
+        9,
+        3
+      ],
+      "prior_fit": [
+        4,
+        7
+      ],
+      "new_target": [
+        3,
+        1
+      ],
+      "trigger_candidates": [
+        {
+          "site": [
+            4,
+            2
+          ],
+          "priority": 3,
+          "worker3_cost_slack": [
+            11,
+            0
+          ],
+          "assigned_worker": [
+            4
+          ]
+        },
+        {
+          "site": [
+            5,
+            2
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            10,
+            1
+          ],
+          "assigned_worker": [
+            11
+          ]
+        },
+        {
+          "site": [
+            3,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            11,
+            0
+          ],
+          "assigned_worker": [
+            5
+          ]
+        },
+        {
+          "site": [
+            4,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            10,
+            1
+          ],
+          "assigned_worker": [
+            10
+          ]
+        },
+        {
+          "site": [
+            5,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            2
+          ],
+          "assigned_worker": [
+            6
+          ]
+        },
+        {
+          "site": [
+            4,
+            4
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            2
+          ],
+          "assigned_worker": [
+            8
+          ]
+        },
+        {
+          "site": [
+            6,
+            4
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            2
+          ],
+          "assigned_worker": [
+            9
+          ]
+        },
+        {
+          "site": [
+            7,
+            4
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            10,
+            1
+          ],
+          "assigned_worker": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "step": 494,
+      "prior_target": [
+        3,
+        1
+      ],
+      "prior_fit": [
+        5,
+        5
+      ],
+      "new_target": [
+        9,
+        3
+      ],
+      "trigger_candidates": [
+        {
+          "site": [
+            4,
+            2
+          ],
+          "priority": 3,
+          "worker3_cost_slack": [
+            10,
+            0
+          ],
+          "assigned_worker": [
+            4
+          ]
+        },
+        {
+          "site": [
+            5,
+            2
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            1
+          ],
+          "assigned_worker": [
+            11
+          ]
+        },
+        {
+          "site": [
+            3,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            10,
+            0
+          ],
+          "assigned_worker": [
+            5
+          ]
+        },
+        {
+          "site": [
+            4,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            1
+          ],
+          "assigned_worker": [
+            10
+          ]
+        },
+        {
+          "site": [
+            5,
+            3
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            8,
+            2
+          ],
+          "assigned_worker": [
+            6
+          ]
+        },
+        {
+          "site": [
+            6,
+            4
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            8,
+            2
+          ],
+          "assigned_worker": [
+            9
+          ]
+        },
+        {
+          "site": [
+            7,
+            4
+          ],
+          "priority": 2,
+          "worker3_cost_slack": [
+            9,
+            1
+          ],
+          "assigned_worker": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "economic_snapshot_comparison": [
+    {
+      "step": 170,
+      "day_ui": 8,
+      "turn_ui": 3,
+      "values": {
+        "19": {
+          "changes": [
+            [
+              "STRAWBERRY",
+              2
+            ]
+          ],
+          "cow": 29.533043478260876,
+          "crops": {
+            "WHEAT": 10.816666666666665,
+            "STRAWBERRY": 38.9883870967742,
+            "CARROT": 9.675000000000002
+          }
+        },
+        "21": {
+          "changes": [
+            [
+              "STRAWBERRY",
+              2
+            ]
+          ],
+          "cow": 16.13967391304348,
+          "crops": {
+            "WHEAT": 12.660869565217393,
+            "STRAWBERRY": 42.915764705882346,
+            "CARROT": 10.608695652173912
+          }
+        }
+      }
+    },
+    {
+      "step": 220,
+      "day_ui": 10,
+      "turn_ui": 5,
+      "values": {
+        "19": {
+          "changes": [],
+          "cow": 7.786547619047617,
+          "crops": {
+            "WHEAT": 12.491666666666665,
+            "STRAWBERRY": 19.643870967741936,
+            "CARROT": 10.975000000000001
+          }
+        },
+        "21": {
+          "changes": [],
+          "cow": -0.025595238095237824,
+          "crops": {
+            "WHEAT": 14.408695652173915,
+            "STRAWBERRY": 0.7529411764705882,
+            "CARROT": 12.147826086956524
+          }
+        }
+      }
+    },
+    {
+      "step": 266,
+      "day_ui": 12,
+      "turn_ui": 3,
+      "values": {
+        "19": {
+          "changes": [],
+          "cow": 2.3157894736842106,
+          "crops": {
+            "WHEAT": 13.666666666666666,
+            "STRAWBERRY": 23.477849462365587,
+            "CARROT": 11.975000000000001
+          }
+        },
+        "21": {
+          "changes": [],
+          "cow": -13.670394736842104,
+          "crops": {
+            "WHEAT": 15.63478260869565,
+            "STRAWBERRY": 15.209411764705878,
+            "CARROT": 13.191304347826089
+          }
+        }
+      }
+    },
+    {
+      "step": 314,
+      "day_ui": 14,
+      "turn_ui": 3,
+      "values": {
+        "19": {
+          "changes": [],
+          "cow": 6.247058823529411,
+          "crops": {
+            "WHEAT": 13.691666666666665,
+            "STRAWBERRY": 8.076809815950917,
+            "CARROT": 14.775
+          }
+        },
+        "21": {
+          "changes": [],
+          "cow": -14.25,
+          "crops": {
+            "WHEAT": 16.0,
+            "STRAWBERRY": -8.0,
+            "CARROT": 16.11304347826087
+          }
+        }
+      }
+    },
+    {
+      "step": 362,
+      "day_ui": 16,
+      "turn_ui": 3,
+      "values": {
+        "19": {
+          "changes": [
+            [
+              "CARROT",
+              2
+            ]
+          ],
+          "cow": 2.8781666666666696,
+          "crops": {
+            "WHEAT": 14.341666666666669,
+            "STRAWBERRY": 13.301714285714285,
+            "CARROT": 16.125
+          }
+        },
+        "21": {
+          "changes": [
+            [
+              "CARROT",
+              2
+            ]
+          ],
+          "cow": -15.110833333333334,
+          "crops": {
+            "WHEAT": 16.678260869565214,
+            "STRAWBERRY": -8.875,
+            "CARROT": 17.182608695652174
+          }
+        }
+      }
+    },
+    {
+      "step": 410,
+      "day_ui": 18,
+      "turn_ui": 3,
+      "values": {
+        "19": {
+          "changes": [],
+          "cow": -4.372500000000002,
+          "crops": {
+            "WHEAT": 14.841666666666669,
+            "STRAWBERRY": 2.7083076923076916,
+            "CARROT": 17.8
+          }
+        },
+        "21": {
+          "changes": [],
+          "cow": -16.123076923076926,
+          "crops": {
+            "WHEAT": 17.199999999999996,
+            "STRAWBERRY": -6.05607476635514,
+            "CARROT": 18.9304347826087
+          }
+        }
+      }
+    }
+  ],
+  "ratings_snapshot": {
+    "source": "Authenticated Kaggle CLI competitions submissions kaggriculture --csv",
+    "as_observed_during_review": true,
+    "cycle19": {
+      "submission": 56193589,
+      "rating": 1154.0
+    },
+    "cycle20": {
+      "submission": 56193756,
+      "rating": 987.4
+    },
+    "cycle21": {
+      "submission": 56195190,
+      "rating": 629.8
+    }
+  },
+  "limits": [
+    "Two latest completed public matches are losses; not a randomized sample or whole-ladder estimate.",
+    "Validation is same-team self-play and is not evidence of a rated loss.",
+    "Ratings are a changing snapshot, not final scores.",
+    "Movement reversals are a diagnostic; some can be legitimate. Explicit traced reversals show repeated unfinished target changes.",
+    "Animal zero-care-bonus events are recorded outcomes; differences also reflect portfolio ages and feeding.",
+    "End-of-season intentional feed withdrawal is not automatically a service failure.",
+    "Net product receipts are a cash-accounting residual after product purchases, not independently reconstructed gross sales.",
+    "No counterfactual profit or rating uplift is measured.",
+    "The opponent has one ambiguous planting-at-night/weed event; own accounting has no unresolved events."
+  ]
+}

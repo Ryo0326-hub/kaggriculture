@@ -1,7 +1,9 @@
 # Cycle 21 — submission candidate
 
-Prepared September 12, 2026. Ready for user upload; **Kaggle validation and
-competitive performance remain pending**.
+Prepared September 12, 2026. **Update: server validation passed, but a routing
+and production regression is confirmed. Cycle 21 is not recommended as an
+improvement over Cycle 19.** [Server evidence and recovery direction](CYCLE_21_SERVER_REVIEW.md).
+The packaging and pre-upload checks below are retained as the release record.
 
 - Final artifact: `artifacts/submission-cycle-21-final/main.py`
 - SHA-256: `f56a3f597528265c8a7ecaeaaf1f08ad03035a5b1ce56809b2baa9c7c5fd2156`
