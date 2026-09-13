@@ -2,6 +2,8 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
+**New recorded-gameplay coverage:** [Nine top/mid/bottom recordings and 228 tests](docs/TIERED_GAMEPLAY_TESTS.md). Lossless archives are committed; full JSON copies are saved locally. Tests cover both seats using 136 selected snapshots and 36 four-observation histories, without running games or copying opponents' actions. Tier labels come from the user, not verified current rankings.
+
 **Research-led test extension:** [137 additional cases, sources and scenario analysis](docs/RESEARCH_SCENARIO_TESTS.md), written after external research: 132 pass and five expose three additional policy gaps. Together with the [original 245 optimization cases](docs/OPTIMIZATION_TESTS.md), this is 382 cases: 373 pass and nine strict expected failures document seven unresolved gaps. Current policy and submission bytes are unchanged.
 
 **Current work: Fresh Cycle 1**, independently implemented at the user's request without a reference policy. [Release, checks and upload command](docs/FRESH_CYCLE_1_RESULTS.md) · [Economics and CO notes](docs/FRESH_CYCLE_1_OPTIMIZATION.md). Source: `experiments/fresh_cycle1.py`; builder: `scripts/make_fresh_cycle1.py`. Packaged for user-run Kaggle submission, with bounded tests and recorded histories only. Upload and server validation are pending. Historical root `main.py` and all prior releases remain preserved.

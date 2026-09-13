@@ -1,0 +1,919 @@
+{
+  "batch": "2026-09-12",
+  "tier_provenance": "User labels: first three top; next three mid (about 2600); last three bottom (1000s). Not independently verified rankings.",
+  "method": "Read-only inspection of completed observations and recorded action lists; no engine, no candidate actions applied.",
+  "games": [
+    {
+      "episode": 108377045,
+      "tier": "top",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/top/108377045.json",
+      "archive_path": "docs/gameplays/2026-09-12/top/108377045.json.gz",
+      "raw_bytes": 34581113,
+      "archive_bytes": 608253,
+      "raw_sha256": "6c82955f3e08c2c1bbbb39d3cf65c77476034768fdf56d6518d840187a417b71",
+      "archive_sha256": "ecef6390fe7ca62ad62e0d8b196be917b573a3e576ec4678dce826a106b65ea3",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "Majkel1337",
+          "final_cash": 105635.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 218,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 253,
+              "value": 141
+            },
+            "decay-pressure": {
+              "state_index": 356,
+              "value": 1
+            },
+            "late-feed-risk": {
+              "state_index": 620,
+              "value": 3
+            },
+            "price-floor": {
+              "state_index": 552,
+              "value": 1
+            },
+            "duplicate-demand": {
+              "state_index": 288,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "BRUNCH_SPOT": 2,
+            "PET_CAFE": 1,
+            "ICE_CREAM_SHOP": 1,
+            "SMOOTHIE_SHOP": 2,
+            "BAKERY": 1,
+            "FARMERS_MARKET": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "M & M & P & Q",
+          "final_cash": 119255.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 362,
+              "value": 13
+            },
+            "peak-storage": {
+              "state_index": 715,
+              "value": 216
+            },
+            "decay-pressure": {
+              "state_index": 524,
+              "value": 4
+            },
+            "late-feed-risk": {
+              "state_index": 164,
+              "value": 3
+            },
+            "price-floor": {
+              "state_index": 552,
+              "value": 1
+            },
+            "duplicate-demand": {
+              "state_index": 288,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "BRUNCH_SPOT": 2,
+            "PET_CAFE": 1,
+            "ICE_CREAM_SHOP": 1,
+            "SMOOTHIE_SHOP": 2,
+            "BAKERY": 1,
+            "FARMERS_MARKET": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 0,
+        "worker_bundle_matches": 1,
+        "market_list_matches": 290,
+        "active_worker_pair_decisions": 718,
+        "active_worker_bundle_matches": 0,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 16
+    },
+    {
+      "episode": 108377042,
+      "tier": "top",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/top/108377042.json",
+      "archive_path": "docs/gameplays/2026-09-12/top/108377042.json.gz",
+      "raw_bytes": 34551248,
+      "archive_bytes": 502391,
+      "raw_sha256": "cf9a14592ce22e8327dc1a010758d9893edea5b7dca615eb8880b087936fd1dc",
+      "archive_sha256": "857358d6ed964a25c4e3f04407101b7d0f682c856d7594db584e83690a28b6f9",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "Majkel1337",
+          "final_cash": 147908.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 451,
+              "value": 164
+            },
+            "decay-pressure": {
+              "state_index": 332,
+              "value": 4
+            },
+            "late-feed-risk": {
+              "state_index": 692,
+              "value": 6
+            },
+            "price-floor": null,
+            "duplicate-demand": {
+              "state_index": 216,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "YARN_STORE": 2,
+            "FARMERS_MARKET": 2,
+            "SMOOTHIE_SHOP": 1,
+            "ICE_CREAM_SHOP": 1,
+            "BAKERY": 1,
+            "PET_CAFE": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "M & M & P & Q",
+          "final_cash": 134174.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 386,
+              "value": 13
+            },
+            "peak-storage": {
+              "state_index": 693,
+              "value": 138
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 4
+            },
+            "late-feed-risk": {
+              "state_index": 404,
+              "value": 6
+            },
+            "price-floor": null,
+            "duplicate-demand": {
+              "state_index": 216,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "YARN_STORE": 2,
+            "FARMERS_MARKET": 2,
+            "SMOOTHIE_SHOP": 1,
+            "ICE_CREAM_SHOP": 1,
+            "BAKERY": 1,
+            "PET_CAFE": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 0,
+        "worker_bundle_matches": 1,
+        "market_list_matches": 275,
+        "active_worker_pair_decisions": 718,
+        "active_worker_bundle_matches": 0,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 14
+    },
+    {
+      "episode": 108359085,
+      "tier": "top",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/top/108359085.json",
+      "archive_path": "docs/gameplays/2026-09-12/top/108359085.json.gz",
+      "raw_bytes": 32458654,
+      "archive_bytes": 450556,
+      "raw_sha256": "187c714bd20a715278fd5fb867f8e48676ff0f3dc236e555264228a7bf9442ec",
+      "archive_sha256": "0f37ef52c06ea197b121c325ce4944522244f3e230906982f39a141a9d1753fb",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "M & M & P & Q",
+          "final_cash": 83868.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 266,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 716,
+              "value": 182
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 3
+            },
+            "late-feed-risk": {
+              "state_index": 476,
+              "value": 5
+            },
+            "price-floor": {
+              "state_index": 430,
+              "value": 1
+            },
+            "duplicate-demand": {
+              "state_index": 288,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "BAKERY": 2,
+            "PET_CAFE": 2,
+            "YARN_STORE": 1,
+            "ICE_CREAM_SHOP": 1,
+            "BRUNCH_SPOT": 1,
+            "SMOOTHIE_SHOP": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "Majkel1337",
+          "final_cash": 87615.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 218,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 690,
+              "value": 148
+            },
+            "decay-pressure": {
+              "state_index": 548,
+              "value": 6
+            },
+            "late-feed-risk": {
+              "state_index": 692,
+              "value": 4
+            },
+            "price-floor": {
+              "state_index": 430,
+              "value": 1
+            },
+            "duplicate-demand": {
+              "state_index": 288,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "BAKERY": 2,
+            "PET_CAFE": 2,
+            "YARN_STORE": 1,
+            "ICE_CREAM_SHOP": 1,
+            "BRUNCH_SPOT": 1,
+            "SMOOTHIE_SHOP": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 0,
+        "worker_bundle_matches": 1,
+        "market_list_matches": 291,
+        "active_worker_pair_decisions": 717,
+        "active_worker_bundle_matches": 0,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 16
+    },
+    {
+      "episode": 108380097,
+      "tier": "mid",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/mid/108380097.json",
+      "archive_path": "docs/gameplays/2026-09-12/mid/108380097.json.gz",
+      "raw_bytes": 32706246,
+      "archive_bytes": 345655,
+      "raw_sha256": "d07a6cfd11c454e931d999a85be51a38ed37905aafd1f298cc1463d78a93a902",
+      "archive_sha256": "df1404553788d0378f086489373f48ea975e1c1edb7efd8fb636f5900e92ab74",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "rekhasri",
+          "final_cash": 123135.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 434,
+              "value": 15
+            },
+            "peak-storage": {
+              "state_index": 452,
+              "value": 125
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 4
+            },
+            "late-feed-risk": {
+              "state_index": 212,
+              "value": 1
+            },
+            "price-floor": {
+              "state_index": 558,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 576,
+              "value": 4
+            }
+          },
+          "final_shops": {
+            "YARN_STORE": 4,
+            "PIZZA_SHOP": 2,
+            "ICE_CREAM_SHOP": 1,
+            "BAKERY": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "Ilya Usmanov",
+          "final_cash": 109129.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 434,
+              "value": 13
+            },
+            "peak-storage": {
+              "state_index": 249,
+              "value": 117
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 4
+            },
+            "late-feed-risk": {
+              "state_index": 212,
+              "value": 1
+            },
+            "price-floor": {
+              "state_index": 558,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 576,
+              "value": 4
+            }
+          },
+          "final_shops": {
+            "YARN_STORE": 4,
+            "PIZZA_SHOP": 2,
+            "ICE_CREAM_SHOP": 1,
+            "BAKERY": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 304,
+        "worker_bundle_matches": 326,
+        "market_list_matches": 559,
+        "active_worker_pair_decisions": 714,
+        "active_worker_bundle_matches": 321,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 16
+    },
+    {
+      "episode": 108375914,
+      "tier": "mid",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/mid/108375914.json",
+      "archive_path": "docs/gameplays/2026-09-12/mid/108375914.json.gz",
+      "raw_bytes": 32566814,
+      "archive_bytes": 352693,
+      "raw_sha256": "959c927f955d8de4f401530b08c64f0c37d6aab155f8c41c71fd152e8eb855b5",
+      "archive_sha256": "7a3bfc2e3511aaf9468b610a59c34459375c3f6087eb5606cfe706f1523921cb",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "Ilya Usmanov",
+          "final_cash": 85513.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 250,
+              "value": 118
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 5
+            },
+            "late-feed-risk": {
+              "state_index": 428,
+              "value": 2
+            },
+            "price-floor": {
+              "state_index": 567,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 360,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "PIZZA_SHOP": 1,
+            "SMOOTHIE_SHOP": 1,
+            "PET_CAFE": 2,
+            "BRUNCH_SPOT": 2,
+            "ICE_CREAM_SHOP": 1,
+            "YARN_STORE": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "Silver Surfer",
+          "final_cash": 85668.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 555,
+              "value": 13
+            },
+            "peak-storage": {
+              "state_index": 646,
+              "value": 134
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 5
+            },
+            "late-feed-risk": {
+              "state_index": 428,
+              "value": 2
+            },
+            "price-floor": {
+              "state_index": 567,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 360,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "PIZZA_SHOP": 1,
+            "SMOOTHIE_SHOP": 1,
+            "PET_CAFE": 2,
+            "BRUNCH_SPOT": 2,
+            "ICE_CREAM_SHOP": 1,
+            "YARN_STORE": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 437,
+        "worker_bundle_matches": 537,
+        "market_list_matches": 526,
+        "active_worker_pair_decisions": 713,
+        "active_worker_bundle_matches": 531,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 16
+    },
+    {
+      "episode": 108371392,
+      "tier": "mid",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/mid/108371392.json",
+      "archive_path": "docs/gameplays/2026-09-12/mid/108371392.json.gz",
+      "raw_bytes": 33466251,
+      "archive_bytes": 363322,
+      "raw_sha256": "69370c5d6687c4028268081fb6378837caa37e3ca2335c6fb8d1fac6ff166f39",
+      "archive_sha256": "e84844fd45523e25fa9ed889acb7990146f925ef3c33c572011096524a9f8223",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "Lee Shit Hoo",
+          "final_cash": 143069.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 386,
+              "value": 14
+            },
+            "peak-storage": {
+              "state_index": 665,
+              "value": 145
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 5
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 616,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 432,
+              "value": 3
+            }
+          },
+          "final_shops": {
+            "SMOOTHIE_SHOP": 2,
+            "ICE_CREAM_SHOP": 1,
+            "YARN_STORE": 3,
+            "PIZZA_SHOP": 1,
+            "FARMERS_MARKET": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "Ilya Usmanov",
+          "final_cash": 132131.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 12
+            },
+            "peak-storage": {
+              "state_index": 250,
+              "value": 118
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 5
+            },
+            "late-feed-risk": {
+              "state_index": 380,
+              "value": 1
+            },
+            "price-floor": {
+              "state_index": 616,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 432,
+              "value": 3
+            }
+          },
+          "final_shops": {
+            "SMOOTHIE_SHOP": 2,
+            "ICE_CREAM_SHOP": 1,
+            "YARN_STORE": 3,
+            "PIZZA_SHOP": 1,
+            "FARMERS_MARKET": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 277,
+        "worker_bundle_matches": 325,
+        "market_list_matches": 485,
+        "active_worker_pair_decisions": 713,
+        "active_worker_bundle_matches": 319,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 15
+    },
+    {
+      "episode": 108378358,
+      "tier": "bottom",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/bottom/108378358.json",
+      "archive_path": "docs/gameplays/2026-09-12/bottom/108378358.json.gz",
+      "raw_bytes": 33039229,
+      "archive_bytes": 410333,
+      "raw_sha256": "2920de4e545045aea73395bab87bc187001e1b3258974671a3ab7782dc2d8170",
+      "archive_sha256": "1bdcac8df13d8281a599c352239a6fb1d225004bdb0bf8bac58e753c618434f7",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "nasu726",
+          "final_cash": 46620.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 15
+            },
+            "peak-storage": {
+              "state_index": 712,
+              "value": 122
+            },
+            "decay-pressure": {
+              "state_index": 500,
+              "value": 7
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 451,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 432,
+              "value": 3
+            }
+          },
+          "final_shops": {
+            "PIZZA_SHOP": 3,
+            "BAKERY": 2,
+            "PET_CAFE": 1,
+            "SMOOTHIE_SHOP": 1,
+            "YARN_STORE": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "nickyl",
+          "final_cash": 72160.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 434,
+              "value": 14
+            },
+            "peak-storage": {
+              "state_index": 693,
+              "value": 129
+            },
+            "decay-pressure": {
+              "state_index": 692,
+              "value": 5
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 451,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 432,
+              "value": 3
+            }
+          },
+          "final_shops": {
+            "PIZZA_SHOP": 3,
+            "BAKERY": 2,
+            "PET_CAFE": 1,
+            "SMOOTHIE_SHOP": 1,
+            "YARN_STORE": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 0,
+        "worker_bundle_matches": 3,
+        "market_list_matches": 218,
+        "active_worker_pair_decisions": 714,
+        "active_worker_bundle_matches": 1,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 14
+    },
+    {
+      "episode": 108365679,
+      "tier": "bottom",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/bottom/108365679.json",
+      "archive_path": "docs/gameplays/2026-09-12/bottom/108365679.json.gz",
+      "raw_bytes": 31913656,
+      "archive_bytes": 327883,
+      "raw_sha256": "2192c326765067494693efdac68745ffb51b1e075e86deddb10a129e2e3f3b38",
+      "archive_sha256": "1eab336743fa1f124dacaa44c042ab6af482eb4ea7e5c8acc816c221e5aefdf2",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "nasu726",
+          "final_cash": 115499.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 15
+            },
+            "peak-storage": {
+              "state_index": 712,
+              "value": 122
+            },
+            "decay-pressure": {
+              "state_index": 500,
+              "value": 7
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 518,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 360,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "ICE_CREAM_SHOP": 1,
+            "FARMERS_MARKET": 2,
+            "PIZZA_SHOP": 1,
+            "SMOOTHIE_SHOP": 1,
+            "BAKERY": 2,
+            "BRUNCH_SPOT": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "Electric Weasle",
+          "final_cash": 113055.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 15
+            },
+            "peak-storage": {
+              "state_index": 573,
+              "value": 105
+            },
+            "decay-pressure": {
+              "state_index": 500,
+              "value": 7
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 518,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 360,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "ICE_CREAM_SHOP": 1,
+            "FARMERS_MARKET": 2,
+            "PIZZA_SHOP": 1,
+            "SMOOTHIE_SHOP": 1,
+            "BAKERY": 2,
+            "BRUNCH_SPOT": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 439,
+        "worker_bundle_matches": 500,
+        "market_list_matches": 559,
+        "active_worker_pair_decisions": 642,
+        "active_worker_bundle_matches": 427,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 14
+    },
+    {
+      "episode": 108364290,
+      "tier": "bottom",
+      "module_version": "1.32.7",
+      "raw_path": "replays/user-tiered/2026-09-12/bottom/108364290.json",
+      "archive_path": "docs/gameplays/2026-09-12/bottom/108364290.json.gz",
+      "raw_bytes": 31905523,
+      "archive_bytes": 413776,
+      "raw_sha256": "78310fe1d2fbd7eb990454b1b0b7e424e83c8dfda2cb12c07f06dd7b7f39939d",
+      "archive_sha256": "a105d5ed473fa37d1e43f54f4a35ca84202c0598b8b77339e5c332e1fda9e1dc",
+      "states": 720,
+      "seats": [
+        {
+          "seat": 0,
+          "name": "Farmer",
+          "final_cash": 104065.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 410,
+              "value": 14
+            },
+            "peak-storage": {
+              "state_index": 525,
+              "value": 187
+            },
+            "decay-pressure": {
+              "state_index": 332,
+              "value": 5
+            },
+            "late-feed-risk": {
+              "state_index": 572,
+              "value": 6
+            },
+            "price-floor": {
+              "state_index": 503,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 144,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "PET_CAFE": 2,
+            "BRUNCH_SPOT": 1,
+            "FARMERS_MARKET": 2,
+            "YARN_STORE": 1,
+            "BAKERY": 1,
+            "SMOOTHIE_SHOP": 1
+          }
+        },
+        {
+          "seat": 1,
+          "name": "nasu726",
+          "final_cash": 62230.0,
+          "selected_witnesses": {
+            "peak-crew": {
+              "state_index": 242,
+              "value": 15
+            },
+            "peak-storage": {
+              "state_index": 712,
+              "value": 122
+            },
+            "decay-pressure": {
+              "state_index": 500,
+              "value": 7
+            },
+            "late-feed-risk": null,
+            "price-floor": {
+              "state_index": 503,
+              "value": 2
+            },
+            "duplicate-demand": {
+              "state_index": 144,
+              "value": 2
+            }
+          },
+          "final_shops": {
+            "PET_CAFE": 2,
+            "BRUNCH_SPOT": 1,
+            "FARMERS_MARKET": 2,
+            "YARN_STORE": 1,
+            "BAKERY": 1,
+            "SMOOTHIE_SHOP": 1
+          }
+        }
+      ],
+      "action_similarity": {
+        "decisions": 719,
+        "exact_action_dict_matches": 0,
+        "worker_bundle_matches": 0,
+        "market_list_matches": 398,
+        "active_worker_pair_decisions": 717,
+        "active_worker_bundle_matches": 0,
+        "same_algorithm_proven": false,
+        "alignment": "row i action produced row i observation from row i-1 observation"
+      },
+      "selected_snapshots": 15
+    }
+  ],
+  "fixture": {
+    "path": "docs/examples/tiered-gameplay-observations.json",
+    "expanded_sha256": "d0e01b1af19f0976cb7576ebc29f8b0ad90bb5b70dfd8b7384661626d70b8016",
+    "snapshots": 136,
+    "histories": 36,
+    "observations_per_history": 4,
+    "conditions": {
+      "opening": 18,
+      "peak-crew": 18,
+      "peak-storage": 18,
+      "duplicate-demand": 18,
+      "decay-pressure": 18,
+      "price-floor": 16,
+      "late-feed-risk": 12,
+      "final-action": 18
+    }
+  }
+}

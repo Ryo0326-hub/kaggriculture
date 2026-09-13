@@ -33,6 +33,8 @@ jobs:
         run: uv run --no-sync pytest -q -rx tests/test_optimization.py
       - name: Research-led uncertainty and terminal cash scenarios (bounded, no game engine)
         run: uv run --no-sync pytest -q -rx tests/test_research_scenarios.py
+      - name: User-tiered original gameplay observations (bounded, no game engine)
+        run: uv run --no-sync pytest -q tests/test_tiered_gameplays.py
       - name: Full simulation tests (explicit manual opt-in)
         if: github.event_name == 'workflow_dispatch' && inputs.simulation_tests
         run: |

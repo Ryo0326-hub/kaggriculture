@@ -1,0 +1,971 @@
+{
+  "suite": "user-tiered recorded gameplay scenarios",
+  "source_hashes": {
+    "experiments/fresh_cycle1.py": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "artifacts/submission-fresh-cycle-1-final/main.py": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "scripts/tiered_gameplays.py": "87909474d0ddd952251c4548f95ed37fc10571a52d8bc6872119b8504154ef24",
+    "tests/test_tiered_gameplays.py": "b2f664febccaf67fbe8300b8ab84ded34cd0e7375eeb588d8ab5acfad587ac3b",
+    "docs/examples/tiered-gameplay-observations.json": "3a468c401aba5e11c2663788211cb26a592bdd9ec069ad06b44ad8b2b00a603d",
+    "docs/gameplays/2026-09-12/manifest.json": "7945d8837aef0909bb6e612693ce2b9d17af87ad0cd0da4166f81270202df8cc"
+  },
+  "archive_count": 9,
+  "source_bytes": 297188734,
+  "lossless_archive_bytes": 3774862,
+  "tier_labels": "user supplied; not verified current ratings",
+  "snapshot_count": 136,
+  "snapshots_per_tier": {
+    "top": 46,
+    "mid": 47,
+    "bottom": 43
+  },
+  "history_count": 36,
+  "history_length": 4,
+  "unique_original_episode_seat_state_refs": 260,
+  "candidate_calls_on_original_observations": 604,
+  "candidate_calls_on_derived_seat_relabelings": 18,
+  "per_callback_deadline_seconds": 1,
+  "test_count": 228,
+  "outcomes": {
+    "passed": 228,
+    "failed": 0,
+    "expected_failures": 0
+  },
+  "combined_bounded_checks": {
+    "cases": 820,
+    "passed": 811,
+    "preexisting_expected_failures": 9
+  },
+  "families": {
+    "test_lossless_archive_and_selected_observations_match_original_recording": 9,
+    "test_recorded_economic_condition_has_feasible_nonmutating_decision": 136,
+    "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed": 18,
+    "test_recorded_town_composition_has_hand_calculated_demand": 9,
+    "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms": 18,
+    "test_short_original_history_handles_dawn_reset_and_terminal_delivery": 36,
+    "test_tier_fixture_has_both_seats_and_does_not_invent_missing_events": 1,
+    "test_archive_writer_refuses_to_replace_different_prior_bytes": 1
+  },
+  "all_nine_downloads_and_local_copies_hash_verified": true,
+  "prior_policy_fixture_test_and_artifact_hashes_verified": true,
+  "local_games_run": 0,
+  "engine_steps_run": 0,
+  "paid_compute_used": false,
+  "candidate_policy_changed": false,
+  "kaggle_upload_performed": false,
+  "candidate_actions_never_generate_observations": true,
+  "same_algorithm_hypothesis_not_proven": true,
+  "cases": [
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[top-108377045]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[top-108377042]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[top-108359085]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[mid-108380097]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[mid-108375914]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[mid-108371392]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[bottom-108378358]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[bottom-108365679]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_lossless_archive_and_selected_observations_match_original_recording[bottom-108364290]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state218-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state253-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state288-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state356-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state552-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state620-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state164-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state288-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state362-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state524-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state552-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state715-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377045-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state216-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state332-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state451-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state692-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state216-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state386-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state404-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state693-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108377042-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state266-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state288-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state430-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state476-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state716-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state218-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state288-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state430-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state548-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state690-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state692-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[top-108359085-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state212-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state434-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state452-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state558-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state576-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state212-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state249-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state434-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state558-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state576-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108380097-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state250-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state360-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state428-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state567-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state360-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state428-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state555-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state567-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state646-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108375914-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state386-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state432-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state616-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state665-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state250-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state380-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state432-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state616-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[mid-108371392-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state432-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state451-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state500-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state712-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state432-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state434-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state451-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state692-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state693-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108378358-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state360-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state500-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state518-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state712-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state360-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state500-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state518-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state573-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108365679-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state144-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state332-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state410-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state503-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state525-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state572-late-feed-risk]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat0-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state0-opening]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state144-duplicate-demand]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state242-peak-crew]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state500-decay-pressure]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state503-price-floor]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state712-peak-storage]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_economic_condition_has_feasible_nonmutating_decision[bottom-108364290-seat1-state718-final-action]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108377045-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108377045-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108377042-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108377042-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108359085-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[top-108359085-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108380097-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108380097-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108375914-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108375914-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108371392-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[mid-108371392-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108378358-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108378358-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108365679-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108365679-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108364290-seat0-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_final_turn_sells_all_deposited_products_and_reserves_no_feed[bottom-108364290-seat1-state718]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108377045-STRAWBERRY-37]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108377042-WOOL-25]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108359085-CARROT-25]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108380097-WOOL-49]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108375914-STRAWBERRY-25]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108371392-WOOL-37]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108378358-MILK-25]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108365679-WHEAT-43]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_recorded_town_composition_has_hand_calculated_demand[108364290-CARROT-37]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108377045-seat0-state218]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108377045-seat1-state362]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108377042-seat0-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108377042-seat1-state386]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108359085-seat0-state266]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[top-108359085-seat1-state218]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108380097-seat0-state434]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108380097-seat1-state434]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108375914-seat0-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108375914-seat1-state555]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108371392-seat0-state386]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[mid-108371392-seat1-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108378358-seat0-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108378358-seat1-state434]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108365679-seat0-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108365679-seat1-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108364290-seat0-state410]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_seat_relabeling_preserves_our_plan_on_recorded_large_farms[bottom-108364290-seat1-state242]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377045-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377045-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377045-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377045-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377042-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377042-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377042-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108377042-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108359085-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108359085-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108359085-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[top-108359085-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108380097-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108380097-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108380097-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108380097-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108375914-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108375914-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108375914-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108375914-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108371392-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108371392-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108371392-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[mid-108371392-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108378358-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108378358-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108378358-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108378358-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108365679-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108365679-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108365679-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108365679-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108364290-seat0-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108364290-seat0-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108364290-seat1-dawn-rehire]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_short_original_history_handles_dawn_reset_and_terminal_delivery[bottom-108364290-seat1-terminal-delivery]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_tier_fixture_has_both_seats_and_does_not_invent_missing_events",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_archive_writer_refuses_to_replace_different_prior_bytes",
+      "outcome": "passed"
+    }
+  ]
+}
