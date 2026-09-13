@@ -2,7 +2,9 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
-**Continuing in a new chat:** read the [Cycle 22 handoff](docs/HANDOFF_CYCLE_22.md) for the verified mechanics, protected artifacts, opponent research, Cycle 21 failure evidence, recommended implementation scope and server-first testing workflow. Cycle 22 is not implemented yet.
+**Current work: Fresh Cycle 1**, independently implemented at the user's request without a reference policy. [Release, checks and upload command](docs/FRESH_CYCLE_1_RESULTS.md) · [Economics and CO notes](docs/FRESH_CYCLE_1_OPTIMIZATION.md). Source: `experiments/fresh_cycle1.py`; builder: `scripts/make_fresh_cycle1.py`. Packaged for user-run Kaggle submission, with bounded tests and recorded histories only. Upload and server validation are pending. Historical root `main.py` and all prior releases remain preserved.
+
+**Historical handoff:** [Cycle 22 handoff](docs/HANDOFF_CYCLE_22.md). Its instruction to derive from Cycle 19 is superseded by the user's fresh-Cycle-1 request. The prior release reports below are historical evidence.
 
 **Cycle 21 server regression confirmed; preserve Cycle 19 as the recovery baseline.** Cycle 21 passes validation but two source-matched ladder games lose 57,930–104,432 and 88,858–123,317. Deadline preemption interrupts feasible routes for jobs assigned to other workers; movement, missed animal service and weak strawberry bonus coverage undermine production. All 2,876 own decisions across the supplied validation and these public games match the artifact when policy memory is retained. [Server review and recovery direction](docs/CYCLE_21_SERVER_REVIEW.md) · [Cycle 19 release](docs/CYCLE_19_RESULTS.md). No agent code or artifact changed, and no new upload or local simulation was run during this review. [Historical Cycle 21 release](docs/CYCLE_21_RESULTS.md) · [Implementation notes](docs/CYCLE_21_OPTIMIZATION.md).
 

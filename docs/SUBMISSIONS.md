@@ -1,5 +1,14 @@
 # Submission registry
 
+**Fresh Cycle 1 — packaged, not uploaded.** The independent policy on
+`codex/fresh-cycle-1` has SHA-256 `c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e`.
+Its new local artifact is `artifacts/submission-fresh-cycle-1-final/main.py`;
+source and builder reproduce the exact bytes. No reference policy was used.
+210 bounded tests and 525 recorded-observation callbacks pass; no local game
+or paid compute ran. [Release and user-run upload](FRESH_CYCLE_1_RESULTS.md).
+Kaggle submission ID and server validation remain pending. Entries below are
+historical and are not a refreshed latest-two snapshot.
+
 Cycle 3 fertilizer timing was uploaded as **56158876**, September 11 at 05:02:52 UTC. Its artifact is `artifacts/submission-cycle-3-fertilizer/main.py`, hash `47c281bfb411…`, preserved in `baselines/cycle_3.py`. The September 11, 11:28 UTC official CLI snapshot marks it COMPLETE at **734.6**, with Step 8 at 672.4; the latest-two pair is **Cycle 3 / Step 8**. Ratings are time-specific, not profit or a guarantee of strength. [Snapshot](benchmarks/cycle-4-submissions-snapshot.json).
 
 Three supplied public games match all 2,157 own source decisions and reproduce every economic state: one win and two losses, clean own execution, maximum server decision time 0.254936 seconds. The separate validation replay was not supplied in this cycle. [Server analysis](CYCLE_3_SERVER_ANALYSIS.md). No upload is performed as part of Cycle 4's spatial-admission experiment; a future upload would displace Step 8 if the pair remains unchanged.

@@ -1,5 +1,15 @@
 # Performance-first plan
 
+**Current direction: Fresh Cycle 1, without a reference.** The September 12 user
+request supersedes the historical Cycle 19 recovery recommendations below.
+The independent policy is in `experiments/fresh_cycle1.py`, with a standalone
+builder, bounded tests and original-observation histories. [Release/upload](FRESH_CYCLE_1_RESULTS.md) ·
+[Economics and CO notes](FRESH_CYCLE_1_OPTIMIZATION.md). Submission and competitive
+validation remain user-run. All prior policies and artifacts are preserved.
+Older sections below do not select a reference for the fresh policy.
+
+## Historical checkpoints
+
 **Current decision: preserve Cycle 19 as the recovery baseline; Cycle 21 has a confirmed server regression.** The [new review](CYCLE_21_SERVER_REVIEW.md) exactly reproduces all 2,876 own decisions across validation and two public losses while retaining policy memory. Cycle 21's preemption interrupts workers for urgent jobs subsequently assigned to other workers, causing repeated target reversals. Missed feed despite stocked wheat, delayed installation and low strawberry bonus coverage accompany the regression. Agent sources and artifacts remain unchanged by this review.
 
 **Next evidence gate:** begin the next bounded scheduling challenger from frozen Cycle 19, with its economic forecasts, opening, staffing and sales held fixed. Check the [recorded target-reversal histories](examples/cycle-21-route-regression.json), full animal-service bundles and executable input delivery. Any preemption must assign the replacement task to that worker and account for other workers' coverage. Use server play to evaluate competitive effects; no local matches are authorized. Revised investment forecasting, opening financing and speculative holding remain separate hypotheses. Do not promote another combined rewrite on legality checks alone.

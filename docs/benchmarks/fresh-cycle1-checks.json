@@ -1,0 +1,122 @@
+{
+  "source_sha256": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+  "fixture_sha256": "afe1f6c1ab92f8f73792efce7cc893d0cbf956dae1266a7fc3d8f1d000845bc5",
+  "method": "Original observations only; actions never generate states.",
+  "sources": [
+    {
+      "episode": "d484dfc2-af07-11f1-a560-0242ac130203",
+      "file": "108351109 (1).json",
+      "module_version": "1.32.7",
+      "sha256": "b1ec1296958a31d091bd7473a5ace4c95947857628c0240b4a82e96a0e5e52a6"
+    },
+    {
+      "episode": "ed08b758-af0c-11f1-b527-0242ac130203",
+      "file": "episode-108360391-replay.json",
+      "module_version": "1.32.7",
+      "sha256": "1cbde12993040e234b203cef0b6cd3cc7bb59960e9f8ecc26f58f63a5ec4c869"
+    },
+    {
+      "episode": "46401b82-af0c-11f1-b759-0242ac130204",
+      "file": "episode-108359367-replay.json",
+      "module_version": "1.32.7",
+      "sha256": "fff4464563ee198e22984cbf312ac88a6b38ac34e25feb752293422de2a0abc5"
+    }
+  ],
+  "histories": [
+    {
+      "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/0:16/opening",
+      "count": 16,
+      "warm_action_sha256": "3f739ad64e81d8356ba18aeece45815d61b9e4ce81f19bb8661c4d92174d50f0"
+    },
+    {
+      "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/240:264/feed-delivery",
+      "count": 24,
+      "warm_action_sha256": "2ad80b93f34eb58b7112728dc9320163b908fee321c92be949d49bc4f95641a0"
+    },
+    {
+      "label": "d484dfc2-af07-11f1-a560-0242ac130203/0/288:306/installation",
+      "count": 18,
+      "warm_action_sha256": "93a3dd3cb906ece56801c98a034f14eac4b80e269ccc235d4fab5f350d1e0564"
+    },
+    {
+      "label": "d484dfc2-af07-11f1-a560-0242ac130203/1/696:719/terminal-seat-1",
+      "count": 23,
+      "warm_action_sha256": "2e1357dfa0f49013843182b9be6ba375ffadecd656b337c36a9536c11e0fe5d0"
+    },
+    {
+      "label": "ed08b758-af0c-11f1-b527-0242ac130203/1/480:504/routing-history",
+      "count": 24,
+      "warm_action_sha256": "98ba9c125b7f1296288525e6d64f97cd654e16e8fe2035a3bdbbf26cd726cc5b"
+    },
+    {
+      "label": "ed08b758-af0c-11f1-b527-0242ac130203/1/696:719/terminal-seat-1",
+      "count": 23,
+      "warm_action_sha256": "2a675e7460548ba4a31581b21d5d1b34f0e5bdc5df10ae47bf25bdac1873350e"
+    },
+    {
+      "label": "46401b82-af0c-11f1-b759-0242ac130204/0/432:456/production-calendar",
+      "count": 24,
+      "warm_action_sha256": "987cf5a5eca0df098af7e8db1ed2a5bb98e0c50f815ff6322b10f19abb44823e"
+    },
+    {
+      "label": "46401b82-af0c-11f1-b759-0242ac130204/0/696:719/terminal-seat-0",
+      "count": 23,
+      "warm_action_sha256": "11ef40d6572286d97074f3a94d6468b4ec17cd131527ca4cc955bad9f2424ab0"
+    }
+  ],
+  "calls": 525,
+  "max_seconds": 0.06723370900726877,
+  "route_witness": [
+    {
+      "step": 492,
+      "worker": 3,
+      "action": [
+        "WEST"
+      ],
+      "target": [
+        [
+          3,
+          3
+        ],
+        "animal"
+      ]
+    },
+    {
+      "step": 493,
+      "worker": 3,
+      "action": [
+        "WEST"
+      ],
+      "target": [
+        [
+          3,
+          3
+        ],
+        "animal"
+      ]
+    },
+    {
+      "step": 494,
+      "worker": 3,
+      "action": [
+        "WEST"
+      ],
+      "target": [
+        [
+          3,
+          3
+        ],
+        "animal"
+      ]
+    }
+  ],
+  "bounded_tests": {
+    "total": 210,
+    "new_focused": 34,
+    "historical": 176
+  },
+  "local_games_run": 0,
+  "paid_compute_used": false,
+  "uploaded": false,
+  "package_bytes": 38438
+}
