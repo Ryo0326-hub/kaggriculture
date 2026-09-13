@@ -1,0 +1,1087 @@
+{
+  "suite": "economic optimization and opponent scenarios",
+  "candidate_sha256": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+  "tests_sha256": "86b3b11ed6d8325f321b4cbab8ad03554b954eac334ba86d00ad3d6c563edf55",
+  "oracles_sha256": "09a48c65039498084618cd00e6754c7c3ee951108cd751aacf52f0c66667bc1a",
+  "test_count": 245,
+  "outcomes": {
+    "passed": 241,
+    "known_optimization_gap": 4
+  },
+  "families": {
+    "test_price_anchors_preserve_expected_unit_economics": {
+      "passed": 27
+    },
+    "test_competing_supply_reduces_same_asset_marginal_value": {
+      "passed": 16
+    },
+    "test_rival_herd_creates_complementary_wheat_demand": {
+      "passed": 6
+    },
+    "test_rival_feed_supplier_improves_our_livestock_margins": {
+      "passed": 6
+    },
+    "test_revealed_demand_raises_target_product_value": {
+      "passed": 24
+    },
+    "test_actions_remain_feasible_against_each_opponent_style": {
+      "passed": 24
+    },
+    "test_final_shed_sale_is_best_response_to_rival_sales": {
+      "passed": 27
+    },
+    "test_unit_price_times_quantity_overstates_cash_against_dumping_rival": {
+      "passed": 9
+    },
+    "test_feed_budget_accounts_for_post_buy_price_impact": {
+      "passed": 6
+    },
+    "test_feed_price_shock_reduces_net_livestock_margin": {
+      "passed": 9
+    },
+    "test_no_capital_for_production_beyond_terminal_horizon": {
+      "passed": 16
+    },
+    "test_unfunded_feed_blocks_discretionary_expansion": {
+      "passed": 6
+    },
+    "test_rival_displayed_cash_alone_does_not_change_profit_plan": {
+      "passed": 8
+    },
+    "test_labor_marginal_costs_prevent_linear_wage_assumptions": {
+      "passed": 12
+    },
+    "test_idle_final_day_has_no_value_for_additional_hands": {
+      "passed": 4
+    },
+    "test_bonus_does_not_justify_expensive_fertilizer": {
+      "passed": 10
+    },
+    "test_expected_profit_best_responses_have_independent_answers": {
+      "passed": 5
+    },
+    "test_maximin_protects_worst_case_cash": {
+      "passed": 1
+    },
+    "test_minimax_regret_uses_each_opponent_states_best_feasible_choice": {
+      "passed": 1
+    },
+    "test_dominated_investment_never_beats_its_dominator": {
+      "passed": 3
+    },
+    "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land": {
+      "passed": 8
+    },
+    "test_abstaining_dominates_negative_net_margin_even_with_idle_resources": {
+      "passed": 3
+    },
+    "test_terminal_assignment_has_an_explicit_cash_delivery_deadline": {
+      "passed": 9
+    },
+    "test_scheduler_prioritizes_best_deliverable_value_under_competing_deadlines": {
+      "known_optimization_gap": 1
+    },
+    "test_matching_preserves_worker_with_exclusive_access_to_second_job": {
+      "known_optimization_gap": 1
+    },
+    "test_final_capacity_is_reserved_for_highest_total_receipts": {
+      "known_optimization_gap": 1
+    },
+    "test_neglected_rival_capacity_is_not_valued_as_fully_serviced_capacity": {
+      "known_optimization_gap": 1
+    },
+    "test_all_exact_oracles_enforce_small_problem_limits": {
+      "passed": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[scarcity-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[anchor-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_price_anchors_preserve_expected_unit_economics[glut-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[focused-competitor-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_competing_supply_reduces_same_asset_marginal_value[large-specialist-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[small-herd-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[small-herd-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[small-herd-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[large-herd-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[large-herd-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_herd_creates_complementary_wheat_demand[large-herd-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[modest-feed-supply-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[modest-feed-supply-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[modest-feed-supply-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[large-feed-supply-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[large-feed-supply-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_feed_supplier_improves_our_livestock_margins[large-feed-supply-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-BAKERY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-PIZZA_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-BRUNCH_SPOT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-YARN_STORE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-ICE_CREAM_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-PET_CAFE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-SMOOTHIE_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[one-shop-FARMERS_MARKET]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-BAKERY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-PIZZA_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-BRUNCH_SPOT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-YARN_STORE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-ICE_CREAM_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-PET_CAFE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-SMOOTHIE_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[duplicate-shops-FARMERS_MARKET]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-BAKERY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-PIZZA_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-BRUNCH_SPOT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-YARN_STORE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-ICE_CREAM_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-PET_CAFE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-SMOOTHIE_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_revealed_demand_raises_target_product_value[three-shops-FARMERS_MARKET]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-passive]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-dairy-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-wool-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-egg-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-berry-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-melon-dumper]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-feed-supplier]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[early-reinvestment-mixed-farm]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-passive]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-dairy-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-wool-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-egg-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-berry-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-melon-dumper]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-feed-supplier]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[maturing-farm-mixed-farm]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-passive]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-dairy-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-wool-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-egg-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-berry-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-melon-dumper]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-feed-supplier]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_actions_remain_feasible_against_each_opponent_style[final-liquidation-mixed-farm]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-holds-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[matched-sale-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_shed_sale_is_best_response_to_rival_sales[rival-dumps-FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unit_price_times_quantity_overstates_cash_against_dumping_rival[FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[scarce-two-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[scarce-four-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[neutral-two-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[neutral-four-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[oversupplied-two-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_budget_accounts_for_post_buy_price_impact[oversupplied-four-unit-budget]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[tight-feed-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[tight-feed-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[tight-feed-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[scarce-feed-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[scarce-feed-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[scarce-feed-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[feed-shock-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[feed-shock-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_feed_price_shock_reduces_net_livestock_margin[feed-shock-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[cannot-mature-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_no_capital_for_production_beyond_terminal_horizon[already-final-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[no-liquidity-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[no-liquidity-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[no-liquidity-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[insufficient-feed-cash-COW]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[insufficient-feed-cash-SHEEP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unfunded_feed_blocks_discretionary_expansion[insufficient-feed-cash-GOOSE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[passive]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[dairy-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[wool-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[egg-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[berry-specialist]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[melon-dumper]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[feed-supplier]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_displayed_cash_alone_does_not_change_profit_plan[mixed-farm]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[0-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[1-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[2-2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[3-3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[4-5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[5-8]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[6-13]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[7-21]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[8-34]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[9-55]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[10-89]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_labor_marginal_costs_prevent_linear_wage_assumptions[11-144]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_idle_final_day_has_no_value_for_additional_hands[0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_idle_final_day_has_no_value_for_additional_hands[1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_idle_final_day_has_no_value_for_additional_hands[3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_idle_final_day_has_no_value_for_additional_hands[20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[valuable-fertilizer-WHEAT-2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[valuable-fertilizer-CARROT-2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[valuable-fertilizer-MELON-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[valuable-fertilizer-TOMATO-7]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[valuable-fertilizer-STRAWBERRY-9]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[extreme-opportunity-cost-WHEAT-2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[extreme-opportunity-cost-CARROT-2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[extreme-opportunity-cost-MELON-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[extreme-opportunity-cost-TOMATO-7]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_bonus_does_not_justify_expensive_fertilizer[extreme-opportunity-cost-STRAWBERRY-9]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_expected_profit_best_responses_have_independent_answers[benign-rival]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_expected_profit_best_responses_have_independent_answers[aggressive-rival]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_expected_profit_best_responses_have_independent_answers[mostly-benign]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_expected_profit_best_responses_have_independent_answers[unknown-even]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_expected_profit_best_responses_have_independent_answers[mostly-aggressive]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_maximin_protects_worst_case_cash",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_minimax_regret_uses_each_opponent_states_best_feasible_choice",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_dominated_investment_never_beats_its_dominator[dominated0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_dominated_investment_never_beats_its_dominator[dominated1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_dominated_investment_never_beats_its_dominator[dominated2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[no-capital]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[ratio-greedy-trap]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[two-small-assets]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[all-assets]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[labor-bottleneck]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[land-bottleneck]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[no-actions]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_exact_integer_portfolio_respects_scarce_capital_labor_and_land[no-land]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_abstaining_dominates_negative_net_margin_even_with_idle_resources[-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_abstaining_dominates_negative_net_margin_even_with_idle_resources[-100]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_abstaining_dominates_negative_net_margin_even_with_idle_resources[-1000]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[1-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[1-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[1-3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[2-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[2-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[2-3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[5-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[5-1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_assignment_has_an_explicit_cash_delivery_deadline[5-3]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_scheduler_prioritizes_best_deliverable_value_under_competing_deadlines",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-001: slack priority loses 180 visit-value units"
+    },
+    {
+      "id": "test_matching_preserves_worker_with_exclusive_access_to_second_job",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-002: greedy matching loses 150 visit-value units"
+    },
+    {
+      "id": "test_final_capacity_is_reserved_for_highest_total_receipts",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-003: terminal capacity ordering leaves 270 feasible coins"
+    },
+    {
+      "id": "test_neglected_rival_capacity_is_not_valued_as_fully_serviced_capacity",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-004: forecast ignores observable rival service deterioration"
+    },
+    {
+      "id": "test_all_exact_oracles_enforce_small_problem_limits",
+      "outcome": "passed"
+    }
+  ],
+  "method": "Static arithmetic, fixed observations and capped integer assignments. No farm transitions, local games, tuning or paid compute. No candidate changes.",
+  "oracle_only_cases": 22,
+  "candidate_cases": 223,
+  "original_suite_passes_in_same_run": 34
+}

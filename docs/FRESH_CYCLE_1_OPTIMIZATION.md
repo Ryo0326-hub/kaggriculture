@@ -1,5 +1,11 @@
 # Fresh Cycle 1 — economics and CO notes
 
+**Subsequent test evidence:** [245 optimization cases](OPTIMIZATION_TESTS.md)
+identify four unmet targets in the preserved policy: value-aware deadline
+selection, joint worker assignment, terminal shed capacity and rival service
+calibration. The notes below describe the current implementation, not a claim
+that these optimization targets are satisfied.
+
 September 12, 2026, Toronto. This is a new policy line, independently written
 from the pinned game rules. The user's request supersedes the handoff's advice
 to derive from Cycle 19. No prior policy, helper extraction, opening schedule,

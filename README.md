@@ -2,6 +2,8 @@
 
 An optimization-based agent for Kaggle's farming simulation, developed in explicit, testable steps.
 
+**New economic test suite:** [245 optimization cases and four identified policy gaps](docs/OPTIMIZATION_TESTS.md). Covers opponent supply/demand, price impact, constrained allocation and terminal cash. 241 cases pass; four unmet optimization targets execute as strict expected failures. Current policy and submission bytes are unchanged.
+
 **Current work: Fresh Cycle 1**, independently implemented at the user's request without a reference policy. [Release, checks and upload command](docs/FRESH_CYCLE_1_RESULTS.md) · [Economics and CO notes](docs/FRESH_CYCLE_1_OPTIMIZATION.md). Source: `experiments/fresh_cycle1.py`; builder: `scripts/make_fresh_cycle1.py`. Packaged for user-run Kaggle submission, with bounded tests and recorded histories only. Upload and server validation are pending. Historical root `main.py` and all prior releases remain preserved.
 
 **Historical handoff:** [Cycle 22 handoff](docs/HANDOFF_CYCLE_22.md). Its instruction to derive from Cycle 19 is superseded by the user's fresh-Cycle-1 request. The prior release reports below are historical evidence.
