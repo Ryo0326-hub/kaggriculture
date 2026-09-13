@@ -1,5 +1,8 @@
 # Economic optimization tests
 
+Follow-up: [137 research-led scenarios](RESEARCH_SCENARIO_TESTS.md) extend this
+original suite without changing its cases, results or recorded benchmark.
+
 September 12, 2026, Toronto. Added **245 individually named pytest cases**:
 **241 pass and four expose unmet optimization targets**. Of these, 223 exercise
 the current policy or its economic/scheduling components; 22 verify independent

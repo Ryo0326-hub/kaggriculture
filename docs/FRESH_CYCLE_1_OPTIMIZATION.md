@@ -6,6 +6,12 @@ selection, joint worker assignment, terminal shed capacity and rival service
 calibration. The notes below describe the current implementation, not a claim
 that these optimization targets are satisfied.
 
+**Research-led extension:** [137 additional scenarios](RESEARCH_SCENARIO_TESTS.md)
+add uncertainty and terminal-cash analysis, with five strict expected failures
+covering three more gaps: market-slot allocation, mixed-product deposits and
+rival crop maturity. No policy changes or profit-improvement claim accompany
+these tests.
+
 September 12, 2026, Toronto. This is a new policy line, independently written
 from the pinned game rules. The user's request supersedes the handoff's advice
 to derive from Cycle 19. No prior policy, helper extraction, opening schedule,

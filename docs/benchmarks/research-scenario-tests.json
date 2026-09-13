@@ -1,0 +1,677 @@
+{
+  "suite": "research-led uncertainty and terminal cash scenarios",
+  "research_before_implementation_utc": "2026-09-13T02:02:42Z",
+  "mechanics_version": "1.32.7",
+  "official_engine_last_change_commit": "28b6d8af3ce73926b3d0fda1410c1ddd8384ab8c",
+  "official_and_pinned_engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "primary_sources": [
+    "https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/kaggriculture/README.md",
+    "https://github.com/Kaggle/kaggle-environments/blob/28b6d8af3ce73926b3d0fda1410c1ddd8384ab8c/kaggle_environments/envs/kaggriculture/kaggriculture.py",
+    "https://neos-guide.org/guide/types/stochastic/",
+    "https://pubsonline.informs.org/doi/10.1287/opre.1030.0065"
+  ],
+  "sha256": {
+    "experiments/fresh_cycle1.py": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "artifacts/submission-fresh-cycle-1-final/main.py": "c5d31b86d1120028114f058d0560f73036c7ae940fe5186cb8dc7e2a59ef585e",
+    "tests/test_research_scenarios.py": "fc05ea6fbbc0be53aaadad96f27dfb3285c5e560f575f25da92492600f6de333",
+    "scripts/research_oracles.py": "dea89c13a495f92f975b45a0720568ac35b346283f667b961e69f72c1a95eeab",
+    "tests/test_optimization.py": "86b3b11ed6d8325f321b4cbab8ad03554b954eac334ba86d00ad3d6c563edf55",
+    "scripts/optimization_oracles.py": "09a48c65039498084618cd00e6754c7c3ee951108cd751aacf52f0c66667bc1a",
+    "docs/examples/fresh-cycle1-histories.json": "afe1f6c1ab92f8f73792efce7cc893d0cbf956dae1266a7fc3d8f1d000845bc5"
+  },
+  "test_count": 137,
+  "candidate_or_component_cases": 101,
+  "independent_model_and_oracle_cases": 36,
+  "outcomes": {
+    "passed": 132,
+    "known_optimization_gap": 5
+  },
+  "new_gap_ids": [
+    "OPT-005",
+    "OPT-006",
+    "OPT-007"
+  ],
+  "combined_economic_suites": {
+    "cases": 382,
+    "passed": 373,
+    "expected_failures": 9,
+    "distinct_gap_ids": 7
+  },
+  "full_explicit_bounded_selection": {
+    "cases": 592,
+    "passed": 583,
+    "expected_failures": 9
+  },
+  "original_observation_callbacks": 525,
+  "prior_artifacts_and_histories_preserved": true,
+  "policy_changed": false,
+  "local_games_run": 0,
+  "engine_steps_run": 0,
+  "paid_compute_used": false,
+  "kaggle_upload_performed": false,
+  "no_profit_improvement_claim": true,
+  "families": {
+    "test_demand_shock_uses_nonlinear_scarcity_knee": {
+      "passed": 12
+    },
+    "test_observed_market_parameters_override_configuration": {
+      "passed": 9
+    },
+    "test_duplicate_shop_demand_respects_configured_clock": {
+      "passed": 16
+    },
+    "test_repeater_water_value_uses_finite_production_calendar": {
+      "passed": 14
+    },
+    "test_retired_rival_repeaters_have_no_new_production_capacity": {
+      "passed": 4
+    },
+    "test_survival_feed_precedes_cash_when_escape_is_imminent": {
+      "passed": 6
+    },
+    "test_held_output_is_collected_before_optional_care": {
+      "passed": 6
+    },
+    "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks": {
+      "passed": 12
+    },
+    "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots": {
+      "passed": 9
+    },
+    "test_terminal_mixed_deposit_control_respects_cash_and_capacity": {
+      "passed": 4,
+      "known_optimization_gap": 1
+    },
+    "test_rival_sale_order_position_changes_receipts": {
+      "passed": 6
+    },
+    "test_floor_still_rewards_liquidation_despite_unobservable_rival_sales": {
+      "passed": 4
+    },
+    "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit": {
+      "passed": 5
+    },
+    "test_equal_marginal_shocks_have_different_portfolio_downside": {
+      "passed": 3
+    },
+    "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty": {
+      "passed": 6
+    },
+    "test_joint_resource_relaxation_can_be_more_valuable_than_each_alone": {
+      "passed": 1
+    },
+    "test_terminal_order_cap_selects_total_receipts_not_unit_price": {
+      "known_optimization_gap": 1
+    },
+    "test_single_worker_terminal_deposit_selects_total_receipts_not_unit_price": {
+      "known_optimization_gap": 1
+    },
+    "test_immature_rival_repeaters_do_not_depress_one_day_output_price": {
+      "known_optimization_gap": 2
+    },
+    "test_deposit_oracle_has_hand_calculated_cash_witnesses": {
+      "passed": 5
+    },
+    "test_order_oracle_has_hand_calculated_cash_witnesses": {
+      "passed": 4
+    },
+    "test_research_oracles_reject_unbounded_or_invalid_inputs": {
+      "passed": 6
+    }
+  },
+  "cases": [
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[before-knee-CARROT-35-450-target0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[before-knee-TOMATO-60-200-target1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[before-knee-EGG-50-332-target2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[at-knee-CARROT-35-450-target0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[at-knee-TOMATO-60-200-target1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[at-knee-EGG-50-332-target2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[past-knee-CARROT-35-450-target0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[past-knee-TOMATO-60-200-target1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[past-knee-EGG-50-332-target2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[severe-scarcity-CARROT-35-450-target0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[severe-scarcity-TOMATO-60-200-target1]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_demand_shock_uses_nonlinear_scarcity_knee[severe-scarcity-EGG-50-332-target2]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[WHEAT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[CARROT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[MELON]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[TOMATO]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[STRAWBERRY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[MILK]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[WOOL]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[EGG]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_observed_market_parameters_override_configuration[FERTILIZER]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-BAKERY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-PIZZA_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-BRUNCH_SPOT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-YARN_STORE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-ICE_CREAM_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-PET_CAFE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-SMOOTHIE_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[slower-shops-faster-center-FARMERS_MARKET]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-BAKERY]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-PIZZA_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-BRUNCH_SPOT]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-YARN_STORE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-ICE_CREAM_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-PET_CAFE]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-SMOOTHIE_SHOP]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_duplicate_shop_demand_respects_configured_clock[short-day-FARMERS_MARKET]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age6-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age7-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age8-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age9-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age10-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age11-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[TOMATO-age12-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age8-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age9-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age10-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age11-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age13-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age15-produces]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_repeater_water_value_uses_finite_production_calendar[STRAWBERRY-age16-no-production]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_retired_rival_repeaters_have_no_new_production_capacity[one-retired-plant-TOMATO-12]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_retired_rival_repeaters_have_no_new_production_capacity[one-retired-plant-STRAWBERRY-17]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_retired_rival_repeaters_have_no_new_production_capacity[retired-specialist-TOMATO-12]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_retired_rival_repeaters_have_no_new_production_capacity[retired-specialist-STRAWBERRY-17]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[no-held-output-COW-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[no-held-output-SHEEP-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[no-held-output-GOOSE-4]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[valuable-held-output-COW-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[valuable-held-output-SHEEP-6]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_survival_feed_precedes_cash_when_escape_is_imminent[valuable-held-output-GOOSE-4]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[held-cap-full-COW-6-9]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[held-cap-full-SHEEP-6-8]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[held-cap-full-GOOSE-4-5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[one-slot-left-COW-6-9]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[one-slot-left-SHEEP-6-8]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_held_output_is_collected_before_optional_care[one-slot-left-GOOSE-4-5]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[COW-24-720]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[COW-12-360]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[COW-24-710]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[COW-8-160]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[SHEEP-24-720]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[SHEEP-12-360]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[SHEEP-24-710]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[SHEEP-8-160]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[GOOSE-24-720]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[GOOSE-12-360]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[GOOSE-24-710]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_final_action_has_no_feed_or_capital_reserve_on_alternative_clocks[GOOSE-8-160]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[1-premium-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[1-midprice-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[1-staple-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[2-premium-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[2-midprice-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[2-staple-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[3-premium-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[3-midprice-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_capacity_control_maximizes_terminal_receipts_for_equal_lots[3-staple-lots]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_mixed_deposit_control_respects_cash_and_capacity[0-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_mixed_deposit_control_respects_cash_and_capacity[1-160]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_mixed_deposit_control_respects_cash_and_capacity[2-320]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_mixed_deposit_control_respects_cash_and_capacity[3-345]",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-006: a mixed terminal DROP banks 345 instead of 320 coins"
+    },
+    {
+      "id": "test_terminal_mixed_deposit_control_respects_cash_and_capacity[4-370]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[deep-market-small-lot]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[deep-market-matched-lot]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[deep-market-dump]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[thin-market-small-lot]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[thin-market-matched-lot]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_rival_sale_order_position_changes_receipts[thin-market-dump]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_floor_still_rewards_liquidation_despite_unobservable_rival_sales[MILK-122]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_floor_still_rewards_liquidation_despite_unobservable_rival_sales[WOOL-105]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_floor_still_rewards_liquidation_despite_unobservable_rival_sales[MELON-300]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_floor_still_rewards_liquidation_despite_unobservable_rival_sales[STRAWBERRY-100]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit[berry_probability0-dairy-140]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit[berry_probability1-dairy-105]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit[berry_probability2-either-70]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit[berry_probability3-berries-105]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_unrevealed_shop_choice_does_not_receive_perfect_information_profit[berry_probability4-berries-140]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_equal_marginal_shocks_have_different_portfolio_downside[correlated-feed-and-price-shocks]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_equal_marginal_shocks_have_different_portfolio_downside[mutually-exclusive-shocks]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_equal_marginal_shocks_have_different_portfolio_downside[independent-shocks]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[cash-100-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[cash-200-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[labor-1-20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[labor-2-20]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[space-1-40]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_integer_resource_value_is_a_threshold_not_a_fixed_penalty[space-2-40]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_joint_resource_relaxation_can_be_more_valuable_than_each_alone",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_terminal_order_cap_selects_total_receipts_not_unit_price",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-005: one terminal order banks 160 instead of 500 coins"
+    },
+    {
+      "id": "test_single_worker_terminal_deposit_selects_total_receipts_not_unit_price",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-006: mixed cargo deposit banks 160 instead of 335 coins"
+    },
+    {
+      "id": "test_immature_rival_repeaters_do_not_depress_one_day_output_price[TOMATO-8]",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-007: newly planted rival output is forecast like next-day production"
+    },
+    {
+      "id": "test_immature_rival_repeaters_do_not_depress_one_day_output_price[STRAWBERRY-10]",
+      "outcome": "known_optimization_gap",
+      "reason": "OPT-007: newly planted rival output is forecast like next-day production"
+    },
+    {
+      "id": "test_deposit_oracle_has_hand_calculated_cash_witnesses[milk-first-overflow]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_deposit_oracle_has_hand_calculated_cash_witnesses[wheat-first-selective-place]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_deposit_oracle_has_hand_calculated_cash_witnesses[partly-filled-drop]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_deposit_oracle_has_hand_calculated_cash_witnesses[all-cargo-fits]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_deposit_oracle_has_hand_calculated_cash_witnesses[full-shed]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_oracle_has_hand_calculated_cash_witnesses[0-0]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_oracle_has_hand_calculated_cash_witnesses[1-500]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_oracle_has_hand_calculated_cash_witnesses[2-700]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_order_oracle_has_hand_calculated_cash_witnesses[3-860]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[products-cap]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[units-cap]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[order-cap]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[space-cap]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[negative-quantity]",
+      "outcome": "passed"
+    },
+    {
+      "id": "test_research_oracles_reject_unbounded_or_invalid_inputs[bad-price]",
+      "outcome": "passed"
+    }
+  ]
+}
